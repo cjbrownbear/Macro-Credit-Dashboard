@@ -5,7 +5,7 @@
   <title>Macro–Credit Stress Dashboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    :root {
+    :root{
       --bg:#0b0f19;
       --panel:#111827;
       --text:#e5e7eb;
@@ -15,110 +15,126 @@
       --bad:#ef4444;
       --border: rgba(255,255,255,0.08);
     }
-    body {
+    body{
       margin:0; padding:24px;
       background: linear-gradient(180deg, #0b0f19 0%, #070a12 100%);
       color: var(--text);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Arial, sans-serif;
     }
-    .wrap { max-width: 1160px; margin: 0 auto; }
-    h1 { margin: 0 0 6px 0; font-size: 22px; }
-    .sub { margin: 0 0 12px 0; color: var(--muted); font-size: 13px; line-height: 1.45; }
-    .legend { display:flex; gap:10px; margin: 10px 0 16px 0; flex-wrap:wrap; }
-    .pill { display:inline-block; padding:4px 10px; border-radius:999px; border:1px solid rgba(255,255,255,0.14); font-size:12px; }
-    .pill.healthy { color: var(--good); }
-    .pill.tripwire { color: var(--warn); }
-    .pill.stress { color: var(--bad); }
+    .wrap{ max-width:1160px; margin:0 auto; }
+    h1{ margin:0 0 6px 0; font-size:22px; }
+    .sub{ margin:0 0 12px 0; color:var(--muted); font-size:13px; line-height:1.45; }
+    code{ background:rgba(255,255,255,0.06); padding:2px 6px; border-radius:8px; }
 
-    .section { margin-top: 18px; }
-    h2 { font-size: 15px; margin: 0 0 10px 0; }
+    .legend{ display:flex; gap:10px; margin:10px 0 16px 0; flex-wrap:wrap; }
+    .pill{ display:inline-block; padding:4px 10px; border-radius:999px; border:1px solid rgba(255,255,255,0.14); font-size:12px; }
+    .pill.healthy{ color:var(--good); }
+    .pill.tripwire{ color:var(--warn); }
+    .pill.stress{ color:var(--bad); }
 
-    .chartgrid { display:grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 14px; margin-top: 10px; }
-    .chartcard { background: rgba(17,24,39,0.75); border: 1px solid var(--border); border-radius: 16px; padding: 12px; }
-    .charthead { display:flex; justify-content: space-between; align-items: baseline; gap: 12px; }
-    .charttitle { font-weight: 800; font-size: 13px; }
-    .chartsub { color: var(--muted); font-size: 12px; }
-    .svgwrap { position: relative; margin-top: 8px; }
-    svg.interactive { width: 100%; height: 220px; display:block; }
-    .axis { stroke: rgba(255,255,255,0.08); stroke-width: 1; }
-    .line { fill: none; stroke: rgba(229,231,235,0.92); stroke-width: 2; }
-    .tooltip {
+    .section{ margin-top:18px; }
+    h2{ font-size:15px; margin:0 0 10px 0; }
+
+    .chartgrid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(380px, 1fr)); gap:14px; margin-top:10px; }
+    .chartcard{ background:rgba(17,24,39,0.75); border:1px solid var(--border); border-radius:16px; padding:12px; }
+    .charthead{ display:flex; justify-content:space-between; align-items:baseline; gap:12px; }
+    .charttitle{ font-weight:800; font-size:13px; }
+    .chartsub{ color:var(--muted); font-size:12px; }
+
+    .svgwrap{ position:relative; margin-top:8px; }
+    svg.interactive{ width:100%; height:220px; display:block; }
+    .axis{ stroke:rgba(255,255,255,0.08); stroke-width:1; }
+    .line{ fill:none; stroke:rgba(229,231,235,0.92); stroke-width:2; }
+    .tooltip{
       position:absolute;
       pointer-events:none;
-      background: rgba(0,0,0,0.75);
-      border: 1px solid rgba(255,255,255,0.14);
-      color: var(--text);
-      padding: 8px 10px;
-      border-radius: 12px;
-      font-size: 12px;
-      line-height: 1.25;
-      transform: translate(10px, -10px);
-      opacity: 0;
-      transition: opacity 120ms linear;
-      white-space: nowrap;
-      z-index: 10;
+      background:rgba(0,0,0,0.75);
+      border:1px solid rgba(255,255,255,0.14);
+      color:var(--text);
+      padding:8px 10px;
+      border-radius:12px;
+      font-size:12px;
+      line-height:1.25;
+      transform:translate(10px,-10px);
+      opacity:0;
+      transition:opacity 120ms linear;
+      white-space:nowrap;
+      z-index:10;
     }
-    .dot { fill: rgba(250,204,21,0.95); stroke: rgba(0,0,0,0.3); stroke-width: 1; opacity: 0; }
-    .vline { stroke: rgba(250,204,21,0.6); stroke-width: 1; opacity: 0; }
+    .dot{ fill:rgba(250,204,21,0.95); stroke:rgba(0,0,0,0.3); stroke-width:1; opacity:0; }
+    .vline{ stroke:rgba(250,204,21,0.6); stroke-width:1; opacity:0; }
 
-    .foot { margin-top: 14px; color: var(--muted); font-size: 12px; line-height: 1.4; }
-    a.btn { display:inline-block; padding: 10px 12px; border-radius: 12px; border:1px solid rgba(255,255,255,0.14); text-decoration:none; color: var(--text); background: rgba(255,255,255,0.04); font-weight: 800; font-size: 12px; }
-    a.btn:hover { background: rgba(255,255,255,0.07); }
-    .btnrow { margin-top: 14px; display:flex; gap:10px; flex-wrap:wrap; }
-    code { background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 8px; }
+    a.btn{
+      display:inline-block; padding:10px 12px; border-radius:12px;
+      border:1px solid rgba(255,255,255,0.14);
+      text-decoration:none; color:var(--text);
+      background:rgba(255,255,255,0.04);
+      font-weight:800; font-size:12px;
+    }
+    a.btn:hover{ background:rgba(255,255,255,0.07); }
+    .btnrow{ margin-top:14px; display:flex; gap:10px; flex-wrap:wrap; }
+    .foot{ margin-top:14px; color:var(--muted); font-size:12px; line-height:1.4; }
 
     /* KPI tiles */
-    .kpigrid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 14px 0 10px 0; }
-    .kpicard { background: rgba(17,24,39,0.78); border: 1px solid var(--border); border-radius: 16px; padding: 12px; }
-    .kpihead { display:flex; justify-content: space-between; gap:10px; align-items:flex-start; }
-    .kpititle { font-weight: 900; font-size: 13px; }
-    .kpisub { color: var(--muted); font-size: 12px; margin-top: 2px; }
-    .kpivalue { font-size: 22px; font-weight: 950; margin-top: 8px; }
-    .kpimeta { display:flex; gap:12px; flex-wrap:wrap; margin-top: 6px; color: var(--muted); font-size: 12px; }
-    .kpimeta strong { color: var(--text); }
-    .badge { font-size: 11px; font-weight: 900; padding: 4px 10px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.14); }
-    .badge.healthy { color: var(--good); }
-    .badge.tripwire { color: var(--warn); }
-    .badge.stress { color: var(--bad); }
+    .kpigrid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:12px; margin:14px 0 10px 0; }
+    .kpicard{
+      position:relative;
+      background:rgba(17,24,39,0.78);
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:12px;
+      overflow:hidden;
+    }
+    .kpihead{ display:flex; justify-content:space-between; gap:10px; align-items:flex-start; padding-right:78px; }
+    .kpititle{ font-weight:900; font-size:13px; }
+    .kpisub{ color:var(--muted); font-size:12px; margin-top:2px; }
 
-    .kpispark {
-      width: 120px;
-      height: 34px;
-      opacity: 0.9;
+    .kpivalue{ font-size:22px; font-weight:950; margin-top:8px; }
+
+    .kpimeta{ display:flex; gap:12px; flex-wrap:wrap; margin-top:8px; color:var(--muted); font-size:12px; }
+    .kpimeta strong{ color:var(--text); }
+
+    .badge{
+      font-size:11px; font-weight:900; padding:4px 10px; border-radius:999px;
+      border:1px solid rgba(255,255,255,0.14);
+      background:rgba(0,0,0,0.12);
     }
-    .kpispark path {
-      fill: none;
-      stroke: rgba(229,231,235,0.92);
-      stroke-width: 2;
+    .badge.healthy{ color:var(--good); }
+    .badge.tripwire{ color:var(--warn); }
+    .badge.stress{ color:var(--bad); }
+    .kpibadge{
+      position:absolute;
+      top:12px;
+      right:12px;
     }
-    .kpispark .axis {
-      stroke: rgba(255,255,255,0.10);
-      stroke-width: 1;
-    }
+
+    .kpisparkwrap{ margin-top:10px; opacity:0.95; }
+    .kpispark{ width:100%; height:34px; display:block; }
+    .kpispark path{ fill:none; stroke:rgba(229,231,235,0.92); stroke-width:2; }
+    .kpispark .axis{ stroke:rgba(255,255,255,0.10); stroke-width:1; }
 
     /* News */
-    .newsCard {
-      background: rgba(17,24,39,0.75);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 12px;
+    .newsCard{
+      background:rgba(17,24,39,0.75);
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:12px;
+      min-height:132px;
     }
-    .newsItem { margin: 8px 0; }
-    .newsItem a { color: var(--text); text-decoration: none; font-weight: 800; }
-    .newsItem a:hover { text-decoration: underline; }
-    .newsMeta { color: var(--muted); font-size: 12px; margin-top: 2px; }
-    .newsTop { display:flex; justify-content:space-between; align-items:baseline; gap:10px; }
+    .newsTop{ display:flex; justify-content:space-between; align-items:baseline; gap:10px; }
+    .newsItem{ margin:8px 0; }
+    .newsItem a{ color:var(--text); text-decoration:none; font-weight:800; }
+    .newsItem a:hover{ text-decoration:underline; }
+    .newsMeta{ color:var(--muted); font-size:12px; margin-top:2px; }
   </style>
 </head>
 <body>
   <div class="wrap">
     <h1>Macro–Credit Stress Dashboard</h1>
-
     <p class="sub">
-      Tracks a few stress-sensitive signals that often move early when households get squeezed:
-      <b>card delinquencies</b>, <b>charge-offs</b>, <b>job openings</b>, and <b>revolving credit</b>.
-      Tiles show the latest value, the 10-year baseline, and the 1-year change (with clear units). Charts below show the full trend with hover-to-inspect values.
-      <span id="lastUpdated"></span>
+      Tracks early-moving household stress signals: <b>card delinquencies</b>, <b>charge-offs</b>, <b>job openings</b>, and <b>revolving credit</b>.
+      Tiles show the latest value, 10-year baseline, and a 1-year change with clear units
+      (<b>pp</b> for % series, plus % difference in parentheses). <span id="lastUpdated"></span>
     </p>
 
     <div class="section" style="margin-top:10px;">
@@ -139,6 +155,7 @@
 
     <div class="section">
       <h2>Trends (interactive)</h2>
+
       <div class="chartgrid">
         <div class="chartcard">
           <div class="charthead">
@@ -198,19 +215,20 @@
   </div>
 
 <script>
-function fmtValue(v, mode) {
+function fmtValue(v, mode){
   if (v === null || v === undefined || Number.isNaN(v)) return '—';
   if (mode === 'pct') return Number(v).toFixed(2).replace(/\.00$/,'') + '%';
   if (mode === 'mil') return Number(v).toFixed(2).replace(/\.00$/,'') + 'M';
   if (mode === 'usd_b') return '$' + Number(v).toFixed(0) + 'B';
   return String(v);
 }
-function fmtDate(d) {
+function fmtDate(d){
   const opts = { year:'numeric', month:'short' };
   return d.toLocaleDateString(undefined, opts);
 }
 
-function buildChart(container, raw) {
+/* ---------- interactive chart ---------- */
+function buildChart(container, raw){
   const seriesKey = container.dataset.series;
   const mode = container.dataset.format;
   const svg = container.querySelector('svg');
@@ -220,7 +238,7 @@ function buildChart(container, raw) {
     .filter(r => r[seriesKey] !== null && r[seriesKey] !== undefined && !Number.isNaN(r[seriesKey]))
     .map(r => ({ x: new Date(r.date + 'T00:00:00').getTime(), d: new Date(r.date + 'T00:00:00'), y: Number(r[seriesKey]) }));
 
-  if (pts.length < 2) {
+  if (pts.length < 2){
     tooltip.style.opacity = 1;
     tooltip.textContent = "No data available.";
     return;
@@ -242,11 +260,11 @@ function buildChart(container, raw) {
   ymin -= yr * 0.06;
   ymax += yr * 0.06;
 
-  function xScale(x) { return padL + (x - xmin) / (xmax - xmin) * innerW; }
-  function yScale(y) { return padT + (1 - (y - ymin) / (ymax - ymin)) * innerH; }
+  function xScale(x){ return padL + (x - xmin) / (xmax - xmin) * innerW; }
+  function yScale(y){ return padT + (1 - (y - ymin) / (ymax - ymin)) * innerH; }
 
   let pathD = '';
-  for (let i=0; i<pts.length; i++) {
+  for (let i=0; i<pts.length; i++){
     const px = xScale(pts[i].x);
     const py = yScale(pts[i].y);
     pathD += (i===0 ? 'M' : 'L') + px.toFixed(2) + ' ' + py.toFixed(2) + ' ';
@@ -254,7 +272,7 @@ function buildChart(container, raw) {
 
   while (svg.firstChild) svg.removeChild(svg.firstChild);
 
-  for (let g=0; g<4; g++) {
+  for (let g=0; g<4; g++){
     const y = padT + (innerH/3)*g;
     const gl = document.createElementNS('http://www.w3.org/2000/svg','line');
     gl.setAttribute('x1', padL);
@@ -283,10 +301,10 @@ function buildChart(container, raw) {
   dot.style.opacity = 0;
   svg.appendChild(dot);
 
-  function nearestPoint(mx) {
+  function nearestPoint(mx){
     const xVal = xmin + (mx - padL) / innerW * (xmax - xmin);
     let lo = 0, hi = pts.length - 1;
-    while (hi - lo > 1) {
+    while (hi - lo > 1){
       const mid = (lo + hi) >> 1;
       if (pts[mid].x < xVal) lo = mid; else hi = mid;
     }
@@ -294,7 +312,7 @@ function buildChart(container, raw) {
     return (Math.abs(a.x - xVal) <= Math.abs(b.x - xVal)) ? a : b;
   }
 
-  function onMove(evt) {
+  function onMove(evt){
     const rect = svg.getBoundingClientRect();
     const mx = (evt.clientX - rect.left) / rect.width * W;
     if (mx < padL || mx > W - padR) return;
@@ -319,7 +337,7 @@ function buildChart(container, raw) {
     tooltip.style.top = (evt.clientY - cRect.top) + 'px';
   }
 
-  function onLeave() {
+  function onLeave(){
     tooltip.style.opacity = 0;
     dot.style.opacity = 0;
     vline.style.opacity = 0;
@@ -329,7 +347,7 @@ function buildChart(container, raw) {
   svg.addEventListener('mouseleave', onLeave);
 }
 
-/* KPI + news helpers */
+/* ---------- KPI helpers ---------- */
 function mean(arr){ return arr.reduce((a,b)=>a+b,0)/arr.length; }
 function std(arr){
   if (arr.length < 2) return 0;
@@ -373,9 +391,10 @@ function pctDiff(newV, oldV){
   if (oldV === null || oldV === undefined || Number.isNaN(oldV) || oldV === 0) return null;
   return (newV - oldV) / Math.abs(oldV) * 100;
 }
-function sparkSVG(values, w=120, h=34) {
+function sparkSVG(values){
   const clean = values.filter(v => v !== null && v !== undefined && !Number.isNaN(v)).map(Number);
   if (clean.length < 2) return "";
+  const w = 240, h = 34;
   const xmin = 0, xmax = clean.length - 1;
   let ymin = Math.min(...clean), ymax = Math.max(...clean);
   if (ymax === ymin) ymax = ymin + 1e-9;
@@ -393,12 +412,13 @@ function sparkSVG(values, w=120, h=34) {
     </svg>
   `;
 }
+
 function renderKPI(raw){
   const defs = [
-    { key:"DRCCLACBS_pct", title:"Card 30+ Delinquency", sub:"FRED: DRCCLACBS (%, quarterly)", fmt:"pct", direction:+1, lookbackPoints: 24 },
-    { key:"CORCCACBS_pct", title:"Net Charge-off Rate", sub:"FRED: CORCCACBS (%, quarterly)", fmt:"pct", direction:+1, lookbackPoints: 24 },
-    { key:"JTSJOL_mil", title:"Job Openings", sub:"FRED: JTSJOL (millions, monthly)", fmt:"mil", direction:-1, lookbackPoints: 36 },
-    { key:"REVOLSL_bil_usd", title:"Revolving Consumer Credit", sub:"FRED: REVOLSL ($B, monthly)", fmt:"usd_b", direction:+1, lookbackPoints: 36 },
+    { key:"DRCCLACBS_pct", title:"Card 30+ Delinquency", sub:"FRED: DRCCLACBS (%, quarterly)", fmt:"pct", direction:+1, lookbackPoints:24 },
+    { key:"CORCCACBS_pct", title:"Net Charge-off Rate", sub:"FRED: CORCCACBS (%, quarterly)", fmt:"pct", direction:+1, lookbackPoints:24 },
+    { key:"JTSJOL_mil", title:"Job Openings", sub:"FRED: JTSJOL (millions, monthly)", fmt:"mil", direction:-1, lookbackPoints:36 },
+    { key:"REVOLSL_bil_usd", title:"Revolving Consumer Credit", sub:"FRED: REVOLSL ($B, monthly)", fmt:"usd_b", direction:+1, lookbackPoints:36 },
   ];
 
   const grid = document.getElementById("kpiGrid");
@@ -419,40 +439,42 @@ function renderKPI(raw){
     const sd10y = vals10y.length ? std(vals10y) : 0;
 
     const status = classify(latest.value, avg10y, sd10y, d.direction);
+
     const deltaAbs = (prior ? (latest.value - prior.value) : null);
     const deltaPct = (prior ? pctDiff(latest.value, prior.value) : null);
 
-    const seriesVals = raw
+    const allVals = raw
       .filter(r => r[d.key] !== null && r[d.key] !== undefined && !Number.isNaN(r[d.key]))
       .map(r => Number(r[d.key]));
-    const sparkVals = seriesVals.slice(Math.max(0, seriesVals.length - (d.lookbackPoints || 24)));
+    const sparkVals = allVals.slice(Math.max(0, allVals.length - d.lookbackPoints));
     const spark = sparkSVG(sparkVals);
 
     let deltaLabel = "Δ 1y: —";
-    if (deltaAbs !== null) {
-      if (d.fmt === "pct") {
-        const pp = deltaAbs; // percentage points
-        deltaLabel = `Δ 1y: <strong>${pp.toFixed(2).replace(/\.00$/,'')}pp</strong>${deltaPct===null?"":` <span>(${deltaPct.toFixed(1)}%)</span>`}`;
+    if (deltaAbs !== null){
+      if (d.fmt === "pct"){
+        deltaLabel = `Δ 1y: <strong>${deltaAbs.toFixed(2).replace(/\.00$/,'')}pp</strong>${deltaPct===null?"":` <span>(${deltaPct.toFixed(1)}%)</span>`}`;
       } else {
         deltaLabel = `Δ 1y: <strong>${fmtValue(deltaAbs, d.fmt)}</strong>${deltaPct===null?"":` <span>(${deltaPct.toFixed(1)}%)</span>`}`;
       }
     }
 
+    const badgeText = status === "healthy" ? "Healthy" : status === "tripwire" ? "Tripwire" : "Stress";
+
     const card = document.createElement("div");
     card.className = "kpicard";
     card.innerHTML = `
+      <span class="badge ${status} kpibadge">${badgeText}</span>
+
       <div class="kpihead">
         <div>
           <div class="kpititle">${d.title}</div>
           <div class="kpisub">${d.sub}</div>
         </div>
-        <div style="display:flex; gap:10px; align-items:flex-start;">
-          ${spark}
-          <span class="badge ${status}">${status === "healthy" ? "Healthy" : status === "tripwire" ? "Tripwire" : "Stress"}</span>
-        </div>
       </div>
 
       <div class="kpivalue">${fmtValue(latest.value, d.fmt)}</div>
+
+      <div class="kpisparkwrap">${spark}</div>
 
       <div class="kpimeta">
         <span>As of: <strong>${fmtDate(latest.date)}</strong></span>
@@ -464,6 +486,7 @@ function renderKPI(raw){
   }
 }
 
+/* ---------- News ---------- */
 function renderNews(items){
   const grid = document.getElementById("newsGrid");
   if (!grid) return;
@@ -495,34 +518,36 @@ function renderNews(items){
 }
 
 async function loadNews(){
-  try {
+  try{
     const r = await fetch("news.json", { cache: "no-store" });
-    if (!r.ok) throw new Error("news.json not found");
+    if (!r.ok) throw new Error("news.json missing");
     const payload = await r.json();
     renderNews(payload.items || []);
-  } catch (e) {
+  } catch(e){
     const grid = document.getElementById("newsGrid");
-    if (grid) grid.innerHTML = `<div class="newsCard"><div class="charttitle">News feed</div><div class="newsMeta">news.json not available yet.</div></div>`;
+    if (grid){
+      grid.innerHTML = `<div class="newsCard"><div class="charttitle">News feed</div><div class="newsMeta">news.json not available yet.</div></div>`;
+    }
   }
 }
 
-async function main() {
+async function main(){
   await loadNews();
 
-  const resp = await fetch('data.json', { cache: 'no-store' });
+  const resp = await fetch("data.json", { cache: "no-store" });
   const payload = await resp.json();
 
   const lu = payload?.meta?.last_updated_utc;
-  if (lu) document.getElementById('lastUpdated').textContent = ` (Last updated: ${lu})`;
+  if (lu) document.getElementById("lastUpdated").textContent = ` (Last updated: ${lu})`;
 
   const raw = payload.data || [];
   renderKPI(raw);
-  document.querySelectorAll('.svgwrap').forEach(el => buildChart(el, raw));
+  document.querySelectorAll(".svgwrap").forEach(el => buildChart(el, raw));
 }
 
 main().catch(err => {
   console.error(err);
-  document.getElementById('lastUpdated').textContent = ' (Data failed to load)';
+  document.getElementById("lastUpdated").textContent = " (Data failed to load)";
 });
 </script>
 </body>
