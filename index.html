@@ -65,6 +65,17 @@
     a.btn:hover { background: rgba(255,255,255,0.07); }
     .btnrow { margin-top: 14px; display:flex; gap:10px; flex-wrap:wrap; }
     code { background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 8px; }
+    .kpigrid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 14px 0 10px 0; }
+    .kpicard { background: rgba(17,24,39,0.78); border: 1px solid var(--border); border-radius: 16px; padding: 12px; }
+    .kpihead { display:flex; justify-content: space-between; gap:10px; align-items:flex-start; }
+    .kpititle { font-weight: 900; font-size: 13px; }
+    .kpisub { color: var(--muted); font-size: 12px; margin-top: 2px; }
+    .kpivalue { font-size: 22px; font-weight: 950; margin-top: 8px; }
+    .kpimeta { display:flex; gap:12px; flex-wrap:wrap; margin-top: 6px; color: var(--muted); font-size: 12px; }
+    .badge { font-size: 11px; font-weight: 900; padding: 4px 10px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.14); }
+    .badge.healthy { color: var(--good); }
+    .badge.tripwire { color: var(--warn); }
+    .badge.stress { color: var(--bad); }
   </style>
 </head>
 <body>
@@ -79,6 +90,11 @@
       <span class="pill healthy">Healthy</span>
       <span class="pill tripwire">Tripwire / Watch</span>
       <span class="pill stress">Stress</span>
+    </div>
+
+    <div class="section">
+      <h2>Latest snapshot</h2>
+      <div class="kpigrid" id="kpiGrid"></div>
     </div>
 
     <div class="section">
@@ -275,7 +291,102 @@ function buildChart(container, raw) {
   svg.addEventListener('mousemove', onMove);
   svg.addEventListener('mouseleave', onLeave);
 }
+function mean(arr){ return arr.reduce((a,b)=>a+b,0)/arr.length; }
+function std(arr){
+  if (arr.length < 2) return 0;
+  const m = mean(arr);
+  const v = mean(arr.map(x => (x-m)*(x-m)));
+  return Math.sqrt(v);
+}
 
+function latestPoint(raw, key){
+  for (let i = raw.length - 1; i >= 0; i--){
+    const v = raw[i][key];
+    if (v !== null && v !== undefined && !Number.isNaN(v)) return { date: new Date(raw[i].date+'T00:00:00'), value: Number(v) };
+  }
+  return null;
+}
+
+function nearestPointAtOrBefore(raw, key, targetDate){
+  for (let i = raw.length - 1; i >= 0; i--){
+    const d = new Date(raw[i].date+'T00:00:00');
+    const v = raw[i][key];
+    if (d <= targetDate && v !== null && v !== undefined && !Number.isNaN(v)) return { date: d, value: Number(v) };
+  }
+  return null;
+}
+
+function windowValues(raw, key, startDate){
+  const out = [];
+  for (const r of raw){
+    const d = new Date(r.date+'T00:00:00');
+    const v = r[key];
+    if (d >= startDate && v !== null && v !== undefined && !Number.isNaN(v)) out.push(Number(v));
+  }
+  return out;
+}
+
+// direction: +1 means "higher is worse", -1 means "lower is worse"
+function classify(current, avg, sd, direction){
+  if (!sd || sd === 0) return "healthy";
+  const z = (current - avg) / sd;
+  const risk = direction * z;  // flip sign for "lower is worse"
+  if (risk >= 2.0) return "stress";
+  if (risk >= 1.0) return "tripwire";
+  return "healthy";
+}
+
+function renderKPI(raw){
+  const defs = [
+    { key:"DRCCLACBS_pct", title:"Card 30+ Delinquency", sub:"FRED: DRCCLACBS (%, quarterly)", fmt:"pct", direction:+1 },
+    { key:"CORCCACBS_pct", title:"Net Charge-off Rate", sub:"FRED: CORCCACBS (%, quarterly)", fmt:"pct", direction:+1 },
+    { key:"JTSJOL_mil", title:"Job Openings", sub:"FRED: JTSJOL (millions, monthly)", fmt:"mil", direction:-1 },
+    { key:"REVOLSL_bil_usd", title:"Revolving Consumer Credit", sub:"FRED: REVOLSL ($B, monthly)", fmt:"usd_b", direction:+1 },
+  ];
+
+  const grid = document.getElementById("kpiGrid");
+  grid.innerHTML = "";
+
+  for (const d of defs){
+    const latest = latestPoint(raw, d.key);
+    if (!latest) continue;
+
+    const oneYrAgo = new Date(latest.date.getTime());
+    oneYrAgo.setFullYear(oneYrAgo.getFullYear() - 1);
+    const prior = nearestPointAtOrBefore(raw, d.key, oneYrAgo);
+
+    const tenYrAgo = new Date(latest.date.getTime());
+    tenYrAgo.setFullYear(tenYrAgo.getFullYear() - 10);
+    const vals10y = windowValues(raw, d.key, tenYrAgo);
+    const avg10y = vals10y.length ? mean(vals10y) : latest.value;
+    const sd10y = vals10y.length ? std(vals10y) : 0;
+
+    const status = classify(latest.value, avg10y, sd10y, d.direction);
+
+    const delta = (prior && prior.value !== 0) ? (latest.value - prior.value) : null;
+
+    const card = document.createElement("div");
+    card.className = "kpicard";
+    card.innerHTML = `
+      <div class="kpihead">
+        <div>
+          <div class="kpititle">${d.title}</div>
+          <div class="kpisub">${d.sub}</div>
+        </div>
+        <span class="badge ${status}">${status === "healthy" ? "Healthy" : status === "tripwire" ? "Tripwire" : "Stress"}</span>
+      </div>
+      <div class="kpivalue">${fmtValue(latest.value, d.fmt)}</div>
+      <div class="kpimeta">
+        <span>As of: ${fmtDate(latest.date)}</span>
+        <span>10y avg: ${fmtValue(avg10y, d.fmt)}</span>
+        ${delta === null ? "" : `<span>Δ 1y: ${fmtValue(delta, d.fmt)}</span>`}
+      </div>
+    `;
+    grid.appendChild(card);
+  }
+}
+
+  
 async function main() {
   const resp = await fetch('data.json', { cache: 'no-store' });
   const payload = await resp.json();
