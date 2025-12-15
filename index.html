@@ -219,7 +219,21 @@ function fmtValue(v, mode){
   if (v === null || v === undefined || Number.isNaN(v)) return '—';
   if (mode === 'pct') return Number(v).toFixed(2).replace(/\.00$/,'') + '%';
   if (mode === 'mil') return Number(v).toFixed(2).replace(/\.00$/,'') + 'M';
-  if (mode === 'usd_b') return '$' + Number(v).toFixed(0) + 'B';
+  if (mode === 'usd_b') {
+    const n = Number(v);
+    if (!Number.isFinite(n)) return '—';
+  
+    // If the number looks absurdly large for "billions" (e.g., 1,316,781),
+    // it's probably in millions or dollars — rescale to billions.
+    // This is a safety valve; ideally the pipeline always outputs true $B.
+    let b = n;
+    if (b > 100000) b = b / 1000;       // millions -> billions
+    if (b > 1000000) b = b / 1000;      // thousands-of-millions -> billions
+  
+    const rounded = Math.round(b);
+    return '$' + rounded.toLocaleString() + 'B';
+  }
+
   return String(v);
 }
 function fmtDate(d){
