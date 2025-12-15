@@ -23,7 +23,7 @@
     }
     .wrap { max-width: 1160px; margin: 0 auto; }
     h1 { margin: 0 0 6px 0; font-size: 22px; }
-    .sub { margin: 0 0 12px 0; color: var(--muted); font-size: 13px; line-height: 1.35; }
+    .sub { margin: 0 0 12px 0; color: var(--muted); font-size: 13px; line-height: 1.45; }
     .legend { display:flex; gap:10px; margin: 10px 0 16px 0; flex-wrap:wrap; }
     .pill { display:inline-block; padding:4px 10px; border-radius:999px; border:1px solid rgba(255,255,255,0.14); font-size:12px; }
     .pill.healthy { color: var(--good); }
@@ -60,6 +60,7 @@
     }
     .dot { fill: rgba(250,204,21,0.95); stroke: rgba(0,0,0,0.3); stroke-width: 1; opacity: 0; }
     .vline { stroke: rgba(250,204,21,0.6); stroke-width: 1; opacity: 0; }
+
     .foot { margin-top: 14px; color: var(--muted); font-size: 12px; line-height: 1.4; }
     a.btn { display:inline-block; padding: 10px 12px; border-radius: 12px; border:1px solid rgba(255,255,255,0.14); text-decoration:none; color: var(--text); background: rgba(255,255,255,0.04); font-weight: 800; font-size: 12px; }
     a.btn:hover { background: rgba(255,255,255,0.07); }
@@ -74,19 +75,56 @@
     .kpisub { color: var(--muted); font-size: 12px; margin-top: 2px; }
     .kpivalue { font-size: 22px; font-weight: 950; margin-top: 8px; }
     .kpimeta { display:flex; gap:12px; flex-wrap:wrap; margin-top: 6px; color: var(--muted); font-size: 12px; }
+    .kpimeta strong { color: var(--text); }
     .badge { font-size: 11px; font-weight: 900; padding: 4px 10px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.14); }
     .badge.healthy { color: var(--good); }
     .badge.tripwire { color: var(--warn); }
     .badge.stress { color: var(--bad); }
+
+    .kpispark {
+      width: 120px;
+      height: 34px;
+      opacity: 0.9;
+    }
+    .kpispark path {
+      fill: none;
+      stroke: rgba(229,231,235,0.92);
+      stroke-width: 2;
+    }
+    .kpispark .axis {
+      stroke: rgba(255,255,255,0.10);
+      stroke-width: 1;
+    }
+
+    /* News */
+    .newsCard {
+      background: rgba(17,24,39,0.75);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 12px;
+    }
+    .newsItem { margin: 8px 0; }
+    .newsItem a { color: var(--text); text-decoration: none; font-weight: 800; }
+    .newsItem a:hover { text-decoration: underline; }
+    .newsMeta { color: var(--muted); font-size: 12px; margin-top: 2px; }
+    .newsTop { display:flex; justify-content:space-between; align-items:baseline; gap:10px; }
   </style>
 </head>
 <body>
   <div class="wrap">
     <h1>Macro–Credit Stress Dashboard</h1>
+
     <p class="sub">
-      Interactive charts: hover over a line to snap to the nearest data point and see value + date.
-      Data loads from <code>data.json</code>. <span id="lastUpdated"></span>
+      Tracks a few stress-sensitive signals that often move early when households get squeezed:
+      <b>card delinquencies</b>, <b>charge-offs</b>, <b>job openings</b>, and <b>revolving credit</b>.
+      Tiles show the latest value, the 10-year baseline, and the 1-year change (with clear units). Charts below show the full trend with hover-to-inspect values.
+      <span id="lastUpdated"></span>
     </p>
+
+    <div class="section" style="margin-top:10px;">
+      <h2>Latest headlines</h2>
+      <div id="newsGrid" class="chartgrid"></div>
+    </div>
 
     <div class="legend">
       <span class="pill healthy">Healthy</span>
@@ -154,20 +192,19 @@
       </div>
 
       <div class="foot">
-        If charts don’t load, confirm <code>data.json</code> is in the repo root next to <code>index.html</code>.
+        If something doesn’t load, confirm <code>data.json</code> and <code>news.json</code> are in the repo root next to <code>index.html</code>.
       </div>
     </div>
   </div>
 
 <script>
 function fmtValue(v, mode) {
-  if (v === null || Number.isNaN(v)) return '—';
-  if (mode === 'pct') return v.toFixed(2).replace(/\.00$/,'') + '%';
-  if (mode === 'mil') return v.toFixed(2).replace(/\.00$/,'') + 'M';
-  if (mode === 'usd_b') return '$' + v.toFixed(0) + 'B';
+  if (v === null || v === undefined || Number.isNaN(v)) return '—';
+  if (mode === 'pct') return Number(v).toFixed(2).replace(/\.00$/,'') + '%';
+  if (mode === 'mil') return Number(v).toFixed(2).replace(/\.00$/,'') + 'M';
+  if (mode === 'usd_b') return '$' + Number(v).toFixed(0) + 'B';
   return String(v);
 }
-
 function fmtDate(d) {
   const opts = { year:'numeric', month:'short' };
   return d.toLocaleDateString(undefined, opts);
@@ -278,10 +315,8 @@ function buildChart(container, raw) {
     tooltip.innerHTML = `<b>${fmtValue(p.y, mode)}</b><br>${fmtDate(p.d)}`;
 
     const cRect = container.getBoundingClientRect();
-    const tx = (evt.clientX - cRect.left);
-    const ty = (evt.clientY - cRect.top);
-    tooltip.style.left = tx + 'px';
-    tooltip.style.top = ty + 'px';
+    tooltip.style.left = (evt.clientX - cRect.left) + 'px';
+    tooltip.style.top = (evt.clientY - cRect.top) + 'px';
   }
 
   function onLeave() {
@@ -294,7 +329,7 @@ function buildChart(container, raw) {
   svg.addEventListener('mouseleave', onLeave);
 }
 
-/* KPI helpers */
+/* KPI + news helpers */
 function mean(arr){ return arr.reduce((a,b)=>a+b,0)/arr.length; }
 function std(arr){
   if (arr.length < 2) return 0;
@@ -302,28 +337,21 @@ function std(arr){
   const v = mean(arr.map(x => (x-m)*(x-m)));
   return Math.sqrt(v);
 }
-
 function latestPoint(raw, key){
   for (let i = raw.length - 1; i >= 0; i--){
     const v = raw[i][key];
-    if (v !== null && v !== undefined && !Number.isNaN(v)) {
-      return { date: new Date(raw[i].date+'T00:00:00'), value: Number(v) };
-    }
+    if (v !== null && v !== undefined && !Number.isNaN(v)) return { date: new Date(raw[i].date+'T00:00:00'), value: Number(v) };
   }
   return null;
 }
-
 function nearestPointAtOrBefore(raw, key, targetDate){
   for (let i = raw.length - 1; i >= 0; i--){
     const d = new Date(raw[i].date+'T00:00:00');
     const v = raw[i][key];
-    if (d <= targetDate && v !== null && v !== undefined && !Number.isNaN(v)) {
-      return { date: d, value: Number(v) };
-    }
+    if (d <= targetDate && v !== null && v !== undefined && !Number.isNaN(v)) return { date: d, value: Number(v) };
   }
   return null;
 }
-
 function windowValues(raw, key, startDate){
   const out = [];
   for (const r of raw){
@@ -333,8 +361,6 @@ function windowValues(raw, key, startDate){
   }
   return out;
 }
-
-// direction: +1 means "higher is worse", -1 means "lower is worse"
 function classify(current, avg, sd, direction){
   if (!sd || sd === 0) return "healthy";
   const z = (current - avg) / sd;
@@ -343,17 +369,39 @@ function classify(current, avg, sd, direction){
   if (risk >= 1.0) return "tripwire";
   return "healthy";
 }
-
+function pctDiff(newV, oldV){
+  if (oldV === null || oldV === undefined || Number.isNaN(oldV) || oldV === 0) return null;
+  return (newV - oldV) / Math.abs(oldV) * 100;
+}
+function sparkSVG(values, w=120, h=34) {
+  const clean = values.filter(v => v !== null && v !== undefined && !Number.isNaN(v)).map(Number);
+  if (clean.length < 2) return "";
+  const xmin = 0, xmax = clean.length - 1;
+  let ymin = Math.min(...clean), ymax = Math.max(...clean);
+  if (ymax === ymin) ymax = ymin + 1e-9;
+  const pad = 2;
+  const x = i => pad + (i - xmin) / (xmax - xmin) * (w - pad*2);
+  const y = v => pad + (1 - (v - ymin) / (ymax - ymin)) * (h - pad*2);
+  let d = "";
+  for (let i=0; i<clean.length; i++){
+    d += (i===0 ? "M" : "L") + x(i).toFixed(2) + " " + y(clean[i]).toFixed(2) + " ";
+  }
+  return `
+    <svg class="kpispark" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" aria-hidden="true">
+      <line class="axis" x1="0" y1="${h-1}" x2="${w}" y2="${h-1}"></line>
+      <path d="${d.trim()}"></path>
+    </svg>
+  `;
+}
 function renderKPI(raw){
   const defs = [
-    { key:"DRCCLACBS_pct", title:"Card 30+ Delinquency", sub:"FRED: DRCCLACBS (%, quarterly)", fmt:"pct", direction:+1 },
-    { key:"CORCCACBS_pct", title:"Net Charge-off Rate", sub:"FRED: CORCCACBS (%, quarterly)", fmt:"pct", direction:+1 },
-    { key:"JTSJOL_mil", title:"Job Openings", sub:"FRED: JTSJOL (millions, monthly)", fmt:"mil", direction:-1 },
-    { key:"REVOLSL_bil_usd", title:"Revolving Consumer Credit", sub:"FRED: REVOLSL ($B, monthly)", fmt:"usd_b", direction:+1 },
+    { key:"DRCCLACBS_pct", title:"Card 30+ Delinquency", sub:"FRED: DRCCLACBS (%, quarterly)", fmt:"pct", direction:+1, lookbackPoints: 24 },
+    { key:"CORCCACBS_pct", title:"Net Charge-off Rate", sub:"FRED: CORCCACBS (%, quarterly)", fmt:"pct", direction:+1, lookbackPoints: 24 },
+    { key:"JTSJOL_mil", title:"Job Openings", sub:"FRED: JTSJOL (millions, monthly)", fmt:"mil", direction:-1, lookbackPoints: 36 },
+    { key:"REVOLSL_bil_usd", title:"Revolving Consumer Credit", sub:"FRED: REVOLSL ($B, monthly)", fmt:"usd_b", direction:+1, lookbackPoints: 36 },
   ];
 
   const grid = document.getElementById("kpiGrid");
-  if (!grid) return;
   grid.innerHTML = "";
 
   for (const d of defs){
@@ -371,7 +419,24 @@ function renderKPI(raw){
     const sd10y = vals10y.length ? std(vals10y) : 0;
 
     const status = classify(latest.value, avg10y, sd10y, d.direction);
-    const delta = (prior ? (latest.value - prior.value) : null);
+    const deltaAbs = (prior ? (latest.value - prior.value) : null);
+    const deltaPct = (prior ? pctDiff(latest.value, prior.value) : null);
+
+    const seriesVals = raw
+      .filter(r => r[d.key] !== null && r[d.key] !== undefined && !Number.isNaN(r[d.key]))
+      .map(r => Number(r[d.key]));
+    const sparkVals = seriesVals.slice(Math.max(0, seriesVals.length - (d.lookbackPoints || 24)));
+    const spark = sparkSVG(sparkVals);
+
+    let deltaLabel = "Δ 1y: —";
+    if (deltaAbs !== null) {
+      if (d.fmt === "pct") {
+        const pp = deltaAbs; // percentage points
+        deltaLabel = `Δ 1y: <strong>${pp.toFixed(2).replace(/\.00$/,'')}pp</strong>${deltaPct===null?"":` <span>(${deltaPct.toFixed(1)}%)</span>`}`;
+      } else {
+        deltaLabel = `Δ 1y: <strong>${fmtValue(deltaAbs, d.fmt)}</strong>${deltaPct===null?"":` <span>(${deltaPct.toFixed(1)}%)</span>`}`;
+      }
+    }
 
     const card = document.createElement("div");
     card.className = "kpicard";
@@ -381,41 +446,84 @@ function renderKPI(raw){
           <div class="kpititle">${d.title}</div>
           <div class="kpisub">${d.sub}</div>
         </div>
-        <span class="badge ${status}">${status === "healthy" ? "Healthy" : status === "tripwire" ? "Tripwire" : "Stress"}</span>
+        <div style="display:flex; gap:10px; align-items:flex-start;">
+          ${spark}
+          <span class="badge ${status}">${status === "healthy" ? "Healthy" : status === "tripwire" ? "Tripwire" : "Stress"}</span>
+        </div>
       </div>
+
       <div class="kpivalue">${fmtValue(latest.value, d.fmt)}</div>
+
       <div class="kpimeta">
-        <span>As of: ${fmtDate(latest.date)}</span>
-        <span>10y avg: ${fmtValue(avg10y, d.fmt)}</span>
-        ${delta === null ? "" : `<span>Δ 1y: ${fmtValue(delta, d.fmt)}</span>`}
+        <span>As of: <strong>${fmtDate(latest.date)}</strong></span>
+        <span>10y avg: <strong>${fmtValue(avg10y, d.fmt)}</strong></span>
+        <span>${deltaLabel}</span>
       </div>
     `;
     grid.appendChild(card);
   }
 }
 
+function renderNews(items){
+  const grid = document.getElementById("newsGrid");
+  if (!grid) return;
+
+  const left = items.slice(0, 5);
+  const right = items.slice(5, 10);
+
+  function card(title, subset){
+    const div = document.createElement("div");
+    div.className = "newsCard";
+    div.innerHTML = `
+      <div class="newsTop">
+        <div class="charttitle">${title}</div>
+        <div class="chartsub">auto-updated weekly</div>
+      </div>
+      ${subset.map(it => `
+        <div class="newsItem">
+          <a href="${it.link}" target="_blank" rel="noopener noreferrer">${it.title}</a>
+          <div class="newsMeta">${it.source || "Source"}${it.date ? " • " + it.date : ""}</div>
+        </div>
+      `).join("")}
+    `;
+    return div;
+  }
+
+  grid.innerHTML = "";
+  grid.appendChild(card("Credit / consumer stress", left));
+  grid.appendChild(card("Labor / macro signals", right));
+}
+
+async function loadNews(){
+  try {
+    const r = await fetch("news.json", { cache: "no-store" });
+    if (!r.ok) throw new Error("news.json not found");
+    const payload = await r.json();
+    renderNews(payload.items || []);
+  } catch (e) {
+    const grid = document.getElementById("newsGrid");
+    if (grid) grid.innerHTML = `<div class="newsCard"><div class="charttitle">News feed</div><div class="newsMeta">news.json not available yet.</div></div>`;
+  }
+}
+
 async function main() {
+  await loadNews();
+
   const resp = await fetch('data.json', { cache: 'no-store' });
   const payload = await resp.json();
 
   const lu = payload?.meta?.last_updated_utc;
-  if (lu) {
-    document.getElementById('lastUpdated').textContent = `(Last updated: ${lu})`;
-  }
+  if (lu) document.getElementById('lastUpdated').textContent = ` (Last updated: ${lu})`;
 
   const raw = payload.data || [];
-
-  // This line is what was missing in your version
   renderKPI(raw);
-
   document.querySelectorAll('.svgwrap').forEach(el => buildChart(el, raw));
 }
 
 main().catch(err => {
   console.error(err);
-  document.getElementById('lastUpdated').textContent = '(Data failed to load)';
+  document.getElementById('lastUpdated').textContent = ' (Data failed to load)';
 });
 </script>
 </body>
 </html>
-
