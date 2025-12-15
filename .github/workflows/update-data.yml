@@ -2,17 +2,23 @@ name: Update dashboard data
 
 on:
   schedule:
-    - cron: "0 14 * * 1"  # Mondays 14:00 UTC (9am ET)
+    # Mondays at 14:00 UTC (9am ET / 6am PT)
+    - cron: "0 14 * * 1"
   workflow_dispatch:
 
 permissions:
   contents: write
 
+concurrency:
+  group: update-dashboard-data
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout repo
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -29,10 +35,22 @@ jobs:
         run: |
           python update_data.py
 
+      - name: Show outputs (debug)
+        run: |
+          ls -la
+          echo "----"
+          test -f data.json && echo "✅ data.json exists" || (echo "❌ data.json missing" && exit 1)
+          test -f news.json && echo "✅ news.json exists" || (echo "❌ news.json missing" && exit 1)
+          test -f macro_credit_metrics.xlsx && echo "✅ macro_credit_metrics.xlsx exists" || (echo "❌ macro_credit_metrics.xlsx missing" && exit 1)
+          test -f macro_credit_timeseries.xlsx && echo "✅ macro_credit_timeseries.xlsx exists" || (echo "❌ macro_credit_timeseries.xlsx missing" && exit 1)
+
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data.json news.json macro_credit_timeseries.xlsx macro_credit_metrics.xlsx
-          git diff --cached --quiet || git commit -m "Auto-update dashboard data"
+
+          git add data.json news.json macro_credit_metrics.xlsx macro_credit_timeseries.xlsx
+
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
+          git commit -m "Auto-update dashboard data"
           git push
