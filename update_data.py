@@ -1,80 +1,54 @@
-#!/usr/bin/env python3
+# --- NEWS FEED (RSS -> news.json) ---
 import json
-import datetime as dt
-from pathlib import Path
-
-import pandas as pd
 import requests
-from io import StringIO
+import xml.etree.ElementTree as ET
+from datetime import datetime
 
-FRED_CSV = "https://fred.stlouisfed.org/graph/fredgraph.csv?id={series}"
+RSS_FEEDS = [
+    # RSS feeds avoid CORS and work great with GitHub Pages
+    ("CNBC Top News", "https://www.cnbc.com/id/100003114/device/rss/rss.html"),
+    ("CNBC Economy", "https://www.cnbc.com/id/20910258/device/rss/rss.html"),
+    ("Yahoo Finance", "https://finance.yahoo.com/news/rss"),
+]
 
-ROOT = Path(__file__).resolve().parent
+def _fetch_rss_items(url: str, limit: int = 8):
+    resp = requests.get(url, timeout=25, headers={"User-Agent": "Mozilla/5.0"})
+    resp.raise_for_status()
+    root = ET.fromstring(resp.text)
 
-def fetch_fred(series_id: str) -> pd.DataFrame:
-    url = FRED_CSV.format(series=series_id)
-    r = requests.get(url, timeout=60)
-    r.raise_for_status()
-    df = pd.read_csv(StringIO(r.text))
-    df.columns = ["date","value"]
-    df["date"] = pd.to_datetime(df["date"])
-    df["value"] = pd.to_numeric(df["value"], errors="coerce")
-    return df.dropna().sort_values("date")
+    out = []
+    for item in root.findall(".//item")[:limit]:
+        title = (item.findtext("title") or "").strip()
+        link = (item.findtext("link") or "").strip()
+        pub = (item.findtext("pubDate") or "").strip()
+        if title and link:
+            out.append({"title": title, "link": link, "date": pub})
+    return out
 
-def main():
-    drcc = fetch_fred("DRCCLACBS").rename(columns={"value":"DRCCLACBS_pct"})
-    corc = fetch_fred("CORCCACBS").rename(columns={"value":"CORCCACBS_pct"})
-    jts  = fetch_fred("JTSJOL").rename(columns={"value":"JTSJOL_raw"})
-    rev  = fetch_fred("REVOLSL").rename(columns={"value":"REVOLSL_raw"})
-
-    # Unit conversions
-    jts["JTSJOL_mil"] = jts["JTSJOL_raw"] / 1000.0     # thousands -> millions
-    rev["REVOLSL_bil_usd"] = rev["REVOLSL_raw"] / 1000.0  # millions -> billions
-
-    all_dates = pd.DataFrame({
-        "date": pd.concat([drcc["date"], corc["date"], jts["date"], rev["date"]]).drop_duplicates().sort_values()
-    })
-
-    ts = (all_dates
-          .merge(drcc, on="date", how="left")
-          .merge(corc, on="date", how="left")
-          .merge(jts[["date","JTSJOL_mil"]], on="date", how="left")
-          .merge(rev[["date","REVOLSL_bil_usd"]], on="date", how="left"))
-
-    # Keep last 12 years
-    cutoff = ts["date"].max() - pd.DateOffset(years=12)
-    ts = ts[ts["date"] >= cutoff].reset_index(drop=True)
-
-    last_updated = dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
-    data = []
-    for _, r in ts.iterrows():
-        data.append({
-            "date": r["date"].strftime("%Y-%m-%d"),
-            "DRCCLACBS_pct": None if pd.isna(r["DRCCLACBS_pct"]) else float(r["DRCCLACBS_pct"]),
-            "CORCCACBS_pct": None if pd.isna(r["CORCCACBS_pct"]) else float(r["CORCCACBS_pct"]),
-            "JTSJOL_mil": None if pd.isna(r["JTSJOL_mil"]) else float(r["JTSJOL_mil"]),
-            "REVOLSL_bil_usd": None if pd.isna(r["REVOLSL_bil_usd"]) else float(r["REVOLSL_bil_usd"]),
-        })
-
+def build_news_json(out_path: str = "news.json"):
     payload = {
-        "meta": {
-            "last_updated_utc": last_updated,
-            "source_notes": {
-                "DRCCLACBS_pct": "FRED DRCCLACBS (quarterly, %)",
-                "CORCCACBS_pct": "FRED CORCCACBS (quarterly, %)",
-                "JTSJOL_mil": "FRED JTSJOL (monthly, millions; converted from thousands)",
-                "REVOLSL_bil_usd": "FRED REVOLSL (monthly, $ billions; converted from millions)"
-            }
-        },
-        "data": data
+        "meta": {"generated_utc": datetime.utcnow().isoformat(timespec="seconds") + "Z"},
+        "items": []
     }
 
-    (ROOT / "data.json").write_text(json.dumps(payload, separators=(",",":"), ensure_ascii=False), encoding="utf-8")
+    for source, url in RSS_FEEDS:
+        try:
+            for item in _fetch_rss_items(url, limit=6):
+                item["source"] = source
+                payload["items"].append(item)
+        except Exception:
+            payload["items"].append({
+                "title": f"(Failed to load feed: {source})",
+                "link": url,
+                "date": "",
+                "source": source
+            })
 
-    # Export timeseries workbook (for download)
-    out_xlsx = ROOT / "macro_credit_timeseries.xlsx"
-    with pd.ExcelWriter(out_xlsx, engine="openpyxl") as w:
-        ts.to_excel(w, index=False, sheet_name="timeseries")
+    # keep feed compact and “tile-sized”
+    payload["items"] = payload["items"][:12]
 
-if __name__ == "__main__":
-    main()
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False)
+
+# Call it
+build_news_json("news.json")
