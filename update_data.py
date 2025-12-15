@@ -85,6 +85,7 @@ def utc_now_iso() -> str:
 def fetch_fred_series(series_id: str) -> pd.DataFrame:
     """
     Fetch a single FRED series via fredgraph.csv (no API key).
+    Robust to header name differences.
     Returns df with columns: date (datetime64), value (float)
     """
     url = FRED_CSV_URL.format(series_id=series_id)
@@ -92,16 +93,35 @@ def fetch_fred_series(series_id: str) -> pd.DataFrame:
     r.raise_for_status()
 
     df = pd.read_csv(StringIO(r.text))
-    if "DATE" not in df.columns:
-        raise ValueError(f"Unexpected FRED CSV format for {series_id}: missing DATE")
-    value_cols = [c for c in df.columns if c != "DATE"]
+
+    # ---- Robust date column detection ----
+    date_col = None
+    for c in df.columns:
+        c_low = c.lower()
+        if c_low in ("date", "observation_date", "time"):
+            date_col = c
+            break
+
+    if date_col is None:
+        raise ValueError(
+            f"Unexpected FRED CSV format for {series_id}: no recognizable date column. "
+            f"Columns={list(df.columns)}"
+        )
+
+    # ---- Value column = first non-date column ----
+    value_cols = [c for c in df.columns if c != date_col]
     if not value_cols:
-        raise ValueError(f"Unexpected FRED CSV format for {series_id}: missing value column")
+        raise ValueError(
+            f"Unexpected FRED CSV format for {series_id}: missing value column. "
+            f"Columns={list(df.columns)}"
+        )
 
     val_col = value_cols[0]
-    df = df.rename(columns={"DATE": "date", val_col: "value"})
+
+    df = df.rename(columns={date_col: "date", val_col: "value"})
     df["date"] = pd.to_datetime(df["date"], errors="coerce")
     df["value"] = pd.to_numeric(df["value"], errors="coerce")
+
     df = df.dropna(subset=["date"]).sort_values("date").reset_index(drop=True)
     return df
 
