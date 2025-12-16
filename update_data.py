@@ -72,6 +72,7 @@ SERIES: List[SeriesDef] = [
     SeriesDef("TDSP", "TDSP_pct", "quarterly", "Household Debt Service Payments as % of Disposable Personal Income (%)."),
     SeriesDef("JTSJOL", "JTSJOL_mil", "monthly", "Job Openings: Total Nonfarm (millions)."),
     SeriesDef("REVOLSL", "REVOLSL_bil_usd", "monthly", "Revolving Consumer Credit Outstanding ($ billions)."),
+    SeriesDef("DRMDLQ", "DRMDLQ_pct", "quarterly", "Mortgage Delinquency Rate (All Banks), (%)."),
 ]
 
 
