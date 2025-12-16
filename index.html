@@ -115,6 +115,20 @@
       font-size: 12px;
     }
 
+        <div class="chartcard">
+      <div class="charthead">
+        <div class="charttitle">Mortgage Delinquency Rate (All banks)</div>
+        <div class="chartsub">FRED: DRMDLQ (quarterly, %)</div>
+      </div>
+      <div class="chartdesc">Share of mortgage loan balances that are delinquent — tends to lag labor stress but confirms household strain.</div>
+      <div class="svgwrap" data-series="DRMDLQ_pct" data-format="pct">
+        <div class="tooltip"></div>
+        <svg class="interactive" viewBox="0 0 640 220" preserveAspectRatio="none"></svg>
+      </div>
+    </div>
+
+    .chartdesc { color: var(--muted); font-size: 12px; margin-top: 6px; line-height: 1.35; }
+    
     /* Charts */
     .chartgrid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 14px; margin-top: 10px; }
     .chartcard{ background: rgba(17,24,39,0.65); border:1px solid var(--border); border-radius: 16px; padding: 12px; box-shadow: var(--shadow); }
