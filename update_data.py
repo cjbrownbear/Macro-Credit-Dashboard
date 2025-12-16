@@ -1,188 +1,317 @@
 #!/usr/bin/env python3
-import csv
-import io
+"""
+Macro-Credit Dashboard updater
+
+Outputs (repo root):
+- data.json
+- news.json
+- macro_credit_metrics.xlsx
+- macro_credit_timeseries.xlsx
+
+Design goals:
+- Never fail the entire run because one series fails (skip + warn).
+- Robust to FRED CSV format quirks (missing headers, extra lines).
+- JSON-safe output (no NaN/Infinity).
+- Minimal dependencies (requests, pandas, openpyxl, feedparser).
+"""
+
+from __future__ import annotations
+
 import json
 import math
+import os
+import re
 import sys
+import time
 from dataclasses import dataclass
 from datetime import datetime, timezone
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Tuple
 
 import pandas as pd
 import requests
+
+# RSS parsing for the news feed
 import feedparser
 
-OUTPUT_DATA_JSON = "data.json"
-OUTPUT_NEWS_JSON = "news.json"
-OUTPUT_METRICS_XLSX = "macro_credit_metrics.xlsx"
-OUTPUT_TIMESERIES_XLSX = "macro_credit_timeseries.xlsx"
 
-HEADERS = {"User-Agent": "MacroCreditDashboard/1.0 (GitHub Actions)"}
-TIMEOUT = 30
+# -----------------------------
+# Config
+# -----------------------------
 
-@dataclass(frozen=True)
-class SeriesDef:
-    series_id: str
-    out_key: str
-    freq: str        # "weekly" | "monthly" | "quarterly"
-    note: str
+OUT_DATA_JSON = "data.json"
+OUT_NEWS_JSON = "news.json"
+OUT_METRICS_XLSX = "macro_credit_metrics.xlsx"
+OUT_TIMESERIES_XLSX = "macro_credit_timeseries.xlsx"
 
-SERIES: List[SeriesDef] = [
-    # Credit / household
-    SeriesDef("DRCCLACBS",   "DRCCLACBS_pct",   "quarterly", "FRED DRCCLACBS: Delinquency Rate on Credit Card Loans, All Commercial Banks (%)."),
-    SeriesDef("CORCCACBS",   "CORCCACBS_pct",   "quarterly", "FRED CORCCACBS: Charge-Off Rate on Credit Card Loans, All Commercial Banks (%)."),
-    SeriesDef("REVOLSL",     "REVOLSL_bil_usd", "monthly",   "FRED REVOLSL: Revolving consumer credit outstanding ($ billions)."),
-    SeriesDef("TDSP",        "TDSP_pct",        "quarterly", "FRED TDSP: Household Debt Service Payments as a Percent of Disposable Personal Income (%)."),
+USER_AGENT = "MacroCreditDashboard/1.0 (+https://github.com/cjbrownbear/Macro-Credit-Dashboard)"
+HTTP_TIMEOUT = 30
 
-    # Mortgage delinquency (trend chart only, still in data.json)
-    SeriesDef("DRSFRMACBS",  "DRSFRMACBS_pct",  "quarterly", "FRED DRSFRMACBS: Delinquency Rate on Single-Family Residential Mortgages, All Commercial Banks (%)."),
+# FRED endpoints
+FRED_GRAPH_CSV = "https://fred.stlouisfed.org/graph/fredgraph.csv"
+FRED_API_BASE = "https://api.stlouisfed.org/fred/series/observations"
 
-    # Labor / income
-    SeriesDef("JTSJOL",      "JTSJOL_mil",      "monthly",   "FRED JTSJOL: Job Openings (Total nonfarm, millions)."),
-    SeriesDef("UNRATE",      "UNRATE_pct",      "monthly",   "FRED UNRATE: Unemployment Rate (%)."),
-    SeriesDef("ICSA",        "ICSA_k",          "weekly",    "FRED ICSA: Initial Claims (weekly level)."),
-    SeriesDef("DSPIC96",     "DSPIC96_bil_usd", "monthly",   "FRED DSPIC96: Real Disposable Personal Income (chained dollars; level)."),
+# If you set this secret in GitHub Actions (recommended), we’ll use the JSON API:
+# Settings → Secrets and variables → Actions → New repository secret:
+# Name: FRED_API_KEY, Value: <your key>
+FRED_API_KEY = os.getenv("FRED_API_KEY", "").strip()
+
+# Core series list: (FRED_SERIES_ID, output_key, unit_mode)
+# unit_mode used for formatting/metadata only; values remain numeric.
+SERIES = [
+    ("DRCCLACBS", "DRCCLACBS_pct", "pct"),         # Card 30+ delinquency rate (%), quarterly
+    ("CORCCACBS", "CORCCACBS_pct", "pct"),         # Card net charge-off rate (%), quarterly
+    ("REVOLSL", "REVOLSL_bil_usd", "usd_b"),       # Revolving consumer credit ($B), monthly
+    ("TDSP", "TDSP_pct", "pct"),                   # Household debt service burden (%), quarterly
+    ("JTSJOL", "JTSJOL_mil", "mil"),               # Job openings (millions), monthly
+    ("UNRATE", "UNRATE_pct", "pct"),               # Unemployment rate (%), monthly
+    ("ICSA", "ICSA_k", "k"),                       # Initial jobless claims (thousands), weekly
+    ("DRSFRMACBS", "DRSFRMACBS_pct", "pct"),       # 90+ day mortgage delinquency rate (%), quarterly
 ]
 
-# RSS feeds (server-side, so no CORS issues)
-NEWS_SOURCES = [
-    # credit / consumer stress
-    ("credit", "CNBC Top News", "https://www.cnbc.com/id/100003114/device/rss/rss.html"),
-    ("credit", "Yahoo Finance", "https://finance.yahoo.com/rss/"),
-    # labor / macro
-    ("labor",  "CNBC Economy",  "https://www.cnbc.com/id/20910258/device/rss/rss.html"),
-    ("labor",  "Reuters Business (via RSSHub fallback not used)", ""),  # placeholder (kept simple)
+SOURCE_NOTES = {
+    "DRCCLACBS_pct": "FRED DRCCLACBS (quarterly, %)",
+    "CORCCACBS_pct": "FRED CORCCACBS (quarterly, %)",
+    "REVOLSL_bil_usd": "FRED REVOLSL (monthly, $ billions)",
+    "TDSP_pct": "FRED TDSP (quarterly, %)",
+    "JTSJOL_mil": "FRED JTSJOL (monthly, millions)",
+    "UNRATE_pct": "FRED UNRATE (monthly, %)",
+    "ICSA_k": "FRED ICSA (weekly, level; stored here as thousands)",
+    "DRSFRMACBS_pct": "FRED DRSFRMACBS (quarterly, %)",
+}
+
+# News RSS feeds (reputable + reliable RSS availability)
+NEWS_FEEDS = [
+    # CNBC
+    ("CNBC Top News", "https://www.cnbc.com/id/100003114/device/rss/rss.html"),
+    ("CNBC Economy", "https://www.cnbc.com/id/20910258/device/rss/rss.html"),
+    # Yahoo Finance
+    ("Yahoo Finance Top", "https://finance.yahoo.com/news/rssindex"),
+    # WSJ/Forbes often restrict RSS or require auth; keep it simple + stable.
 ]
 
-def http_get(url: str) -> requests.Response:
-    r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
-    r.raise_for_status()
-    return r
+NEWS_MAX_ITEMS_PER_FEED = 8
+
+
+# -----------------------------
+# Helpers
+# -----------------------------
+
+def utc_now_iso() -> str:
+    return datetime.now(timezone.utc).replace(microsecond=0).isoformat()
+
+def log(msg: str) -> None:
+    print(msg, flush=True)
+
+def warn(msg: str) -> None:
+    print(f"[WARN] {msg}", flush=True)
+
+def is_finite_number(x) -> bool:
+    try:
+        return x is not None and isinstance(x, (int, float)) and math.isfinite(float(x))
+    except Exception:
+        return False
+
+def to_float_or_none(x) -> Optional[float]:
+    if x is None:
+        return None
+    try:
+        if isinstance(x, str):
+            x = x.strip()
+            if x == "" or x.upper() in {"NA", "N/A", "NULL", "."}:
+                return None
+        v = float(x)
+        if not math.isfinite(v):
+            return None
+        return v
+    except Exception:
+        return None
+
+def http_get(url: str, params: Optional[dict] = None, retries: int = 3) -> requests.Response:
+    headers = {"User-Agent": USER_AGENT}
+    last_err = None
+    for attempt in range(1, retries + 1):
+        try:
+            r = requests.get(url, params=params, headers=headers, timeout=HTTP_TIMEOUT)
+            # Retry transient 5xx
+            if r.status_code >= 500:
+                warn(f"HTTP {r.status_code} from {url}; retry {attempt}/{retries}")
+                time.sleep(1.25 * attempt)
+                continue
+            r.raise_for_status()
+            return r
+        except Exception as e:
+            last_err = e
+            warn(f"HTTP error on {url}: {e} (retry {attempt}/{retries})")
+            time.sleep(1.25 * attempt)
+    raise RuntimeError(f"Failed HTTP GET after retries: {url} ({last_err})")
+
+def parse_fred_csv_text(text: str, series_id: str) -> pd.DataFrame:
+    """
+    Robustly parse the FRED fredgraph.csv output, which may include:
+    - comments/blank lines
+    - unexpected headers
+    - missing DATE header in error cases
+    """
+    lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
+
+    # Try to find a header line that contains DATE + something
+    header_idx = None
+    for i, ln in enumerate(lines[:20]):  # headers should be early
+        if re.search(r"\bDATE\b", ln, flags=re.IGNORECASE) and "," in ln:
+            header_idx = i
+            break
+
+    if header_idx is None:
+        raise ValueError(f"Unexpected FRED CSV format for {series_id}: missing DATE")
+
+    csv_text = "\n".join(lines[header_idx:])
+
+    # Let pandas parse; accept additional columns
+    df = pd.read_csv(pd.io.common.StringIO(csv_text))
+    # Normalize column names
+    cols = [c.strip() for c in df.columns]
+    df.columns = cols
+
+    # Identify date column
+    date_col = None
+    for c in df.columns:
+        if c.upper() == "DATE":
+            date_col = c
+            break
+    if date_col is None:
+        raise ValueError(f"Unexpected FRED CSV format for {series_id}: missing DATE col")
+
+    # Identify a value column (often the series id)
+    value_col = None
+    # Prefer exact match to series id
+    for c in df.columns:
+        if c.strip().upper() == series_id.upper():
+            value_col = c
+            break
+    # Fallback: first non-DATE column
+    if value_col is None:
+        for c in df.columns:
+            if c != date_col:
+                value_col = c
+                break
+    if value_col is None:
+        raise ValueError(f"Unexpected FRED CSV format for {series_id}: missing VALUE col")
+
+    out = df[[date_col, value_col]].copy()
+    out.columns = ["date", "value"]
+    out["date"] = pd.to_datetime(out["date"], errors="coerce")
+    out["value"] = pd.to_numeric(out["value"], errors="coerce")
+
+    out = out.dropna(subset=["date"])
+    out = out.sort_values("date")
+    return out
 
 def fetch_fred_series(series_id: str) -> pd.DataFrame:
     """
-    Fetch using FRED's fredgraph CSV endpoint.
+    Fetch a FRED series into a DataFrame with columns: date (datetime), value (float)
+    Prefers FRED JSON API if FRED_API_KEY is set; falls back to fredgraph.csv.
     """
-    url = f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={series_id}"
-    r = http_get(url)
-    text = r.text.strip().splitlines()
+    # 1) JSON API (more stable), requires key
+    if FRED_API_KEY:
+        params = {
+            "series_id": series_id,
+            "api_key": FRED_API_KEY,
+            "file_type": "json",
+        }
+        r = http_get(FRED_API_BASE, params=params, retries=3)
+        payload = r.json()
+        obs = payload.get("observations", [])
+        rows = []
+        for o in obs:
+            d = pd.to_datetime(o.get("date"), errors="coerce")
+            v = to_float_or_none(o.get("value"))
+            if pd.isna(d):
+                continue
+            rows.append((d, v))
+        df = pd.DataFrame(rows, columns=["date", "value"]).dropna(subset=["date"])
+        df = df.sort_values("date")
+        return df
 
-    # Parse CSV manually to handle edge cases
-    reader = csv.DictReader(io.StringIO("\n".join(text)))
-    if not reader.fieldnames or "DATE" not in reader.fieldnames:
-        raise ValueError(f"Unexpected FRED CSV format for {series_id}: missing DATE")
+    # 2) Fallback: fredgraph.csv (no key)
+    params = {"id": series_id}
+    r = http_get(FRED_GRAPH_CSV, params=params, retries=4)
+    return parse_fred_csv_text(r.text, series_id=series_id)
 
-    rows = []
-    for row in reader:
-        d = row.get("DATE")
-        v = row.get(series_id)
-        if not d:
-            continue
-        # '.' is missing in fredgraph CSV
-        if v is None or v.strip() == "." or v.strip() == "":
-            rows.append((d, None))
-        else:
-            try:
-                rows.append((d, float(v)))
-            except ValueError:
-                rows.append((d, None))
-
-    df = pd.DataFrame(rows, columns=["date", "value"])
-    df["date"] = pd.to_datetime(df["date"], errors="coerce")
-    df = df.dropna(subset=["date"]).sort_values("date")
-    return df
-
-def clean_for_json(obj):
+def safe_json(obj):
     """
-    Recursively replace NaN/inf with None to keep JSON strict.
+    Recursively replace NaN/inf with None so json.dump(..., allow_nan=False) won’t explode.
     """
+    if isinstance(obj, dict):
+        return {k: safe_json(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [safe_json(v) for v in obj]
     if isinstance(obj, float):
-        if math.isnan(obj) or math.isinf(obj):
+        if not math.isfinite(obj):
             return None
         return obj
-    if isinstance(obj, dict):
-        return {k: clean_for_json(v) for k, v in obj.items()}
-    if isinstance(obj, list):
-        return [clean_for_json(v) for v in obj]
     return obj
 
-def compute_metrics(raw_rows: List[Dict], defs: List[SeriesDef]) -> pd.DataFrame:
+def compact_date(dt: pd.Timestamp) -> str:
+    # YYYY-MM-DD
+    return dt.strftime("%Y-%m-%d")
+
+def build_union_timeseries(series_map: Dict[str, pd.DataFrame]) -> pd.DataFrame:
     """
-    Compute snapshot metrics per series: latest, as_of, 10y avg/sd, 1y delta abs + pct.
+    Union all series into a single wide df indexed by date with columns = output keys.
     """
-    df = pd.DataFrame(raw_rows)
-    df["date"] = pd.to_datetime(df["date"])
+    dfs = []
+    for key, df in series_map.items():
+        tmp = df.copy()
+        tmp = tmp.rename(columns={"value": key})
+        tmp = tmp.set_index("date")
+        dfs.append(tmp[[key]])
 
-    out = []
-    for s in defs:
-        if s.out_key not in df.columns:
-            continue
+    if not dfs:
+        return pd.DataFrame(columns=["date"])
 
-        sub = df[["date", s.out_key]].dropna()
-        if sub.empty:
-            continue
+    wide = pd.concat(dfs, axis=1, join="outer").sort_index()
+    wide = wide.reset_index().rename(columns={"index": "date"})
+    return wide
 
-        latest_row = sub.iloc[-1]
-        latest_date = latest_row["date"]
-        latest_val = float(latest_row[s.out_key])
+def series_unit_normalize(output_key: str, unit_mode: str, df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Optional normalization:
+    - ICSA is level; store as thousands for UI readability
+    - REVOLSL is in $ billions already; keep as-is
+    """
+    out = df.copy()
+    if output_key == "ICSA_k":
+        # FRED ICSA is weekly level (claims). Convert to thousands.
+        out["value"] = out["value"] / 1000.0
+    return out
 
-        # 10y window
-        start_10y = latest_date - pd.DateOffset(years=10)
-        win10 = sub[sub["date"] >= start_10y][s.out_key].astype(float)
-        avg10 = float(win10.mean()) if len(win10) else latest_val
-        sd10  = float(win10.std(ddof=0)) if len(win10) else 0.0
 
-        # 1y prior: nearest <= latest_date - 1y
-        target = latest_date - pd.DateOffset(years=1)
-        prior_sub = sub[sub["date"] <= target]
-        prior_val = float(prior_sub.iloc[-1][s.out_key]) if len(prior_sub) else None
+# -----------------------------
+# News
+# -----------------------------
 
-        delta_abs = (latest_val - prior_val) if prior_val is not None else None
-        delta_pct = ((latest_val - prior_val) / abs(prior_val) * 100.0) if (prior_val not in (None, 0.0)) else None
-
-        out.append({
-            "key": s.out_key,
-            "series_id": s.series_id,
-            "freq": s.freq,
-            "latest_value": latest_val,
-            "as_of": latest_date.strftime("%Y-%m-%d"),
-            "avg_10y": avg10,
-            "sd_10y": sd10,
-            "delta_1y_abs": delta_abs,
-            "delta_1y_pct": delta_pct,
-            "note": s.note,
-        })
-
-    return pd.DataFrame(out)
-
-def fetch_news() -> Dict:
+def build_news_json() -> dict:
     items = []
-    now = datetime.now(timezone.utc)
-    for cat, source, url in NEWS_SOURCES:
-        if not url:
-            continue
+    for source_name, url in NEWS_FEEDS:
         try:
-            fp = feedparser.parse(url)
-            for e in fp.entries[:10]:
-                title = getattr(e, "title", "").strip()
-                link = getattr(e, "link", "").strip()
-                published = getattr(e, "published", "") or getattr(e, "updated", "")
-                published = published.strip()
+            feed = feedparser.parse(url)
+            entries = feed.entries[:NEWS_MAX_ITEMS_PER_FEED]
+            for e in entries:
+                title = (e.get("title") or "").strip()
+                link = (e.get("link") or "").strip()
+                published = (e.get("published") or e.get("updated") or "").strip()
                 if not title or not link:
                     continue
-
-                # Normalize published string (keep simple)
                 items.append({
-                    "category": cat,
-                    "source": source,
+                    "source": source_name,
                     "title": title,
                     "url": link,
-                    "published": published if published else now.strftime("%a, %d %b %Y %H:%M:%S GMT"),
+                    "published": published
                 })
         except Exception as ex:
-            print(f"[WARN] news fetch failed for {source}: {ex}")
+            warn(f"News feed failed for {source_name}: {ex}")
 
-    # Simple de-dupe by URL
+    # Basic dedupe by url
     seen = set()
     deduped = []
     for it in items:
@@ -193,105 +322,132 @@ def fetch_news() -> Dict:
 
     return {
         "meta": {
-            "last_updated_utc": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
-            "sources": [s for s in NEWS_SOURCES if s[2]],
+            "last_updated_utc": utc_now_iso(),
+            "sources": [n for (n, _) in NEWS_FEEDS],
         },
         "items": deduped
     }
 
-def to_timeseries_rows(merged: pd.DataFrame) -> List[Dict]:
-    merged = merged.copy()
-    merged["date"] = merged["date"].dt.strftime("%Y-%m-%d")
-    rows = merged.to_dict(orient="records")
-    # convert pandas NaN to None
-    cleaned = []
-    for r in rows:
-        cleaned.append({k: (None if (isinstance(v, float) and (math.isnan(v) or math.isinf(v))) else v) for k, v in r.items()})
-    return cleaned
 
-def main():
-    now = datetime.now(timezone.utc)
+# -----------------------------
+# Excel exports
+# -----------------------------
 
-    series_frames = []
-    source_notes = {}
+def write_excel_metrics(wide: pd.DataFrame) -> None:
+    """
+    Create:
+    - macro_credit_metrics.xlsx : latest snapshot table
+    - macro_credit_timeseries.xlsx : full time series (wide)
+    """
+    # Build latest snapshot per series
+    metrics_rows = []
+    for _, out_key, unit_mode in SERIES:
+        if out_key not in wide.columns:
+            continue
+        s = wide[["date", out_key]].dropna()
+        if s.empty:
+            continue
+        latest = s.iloc[-1]
+        metrics_rows.append({
+            "metric_key": out_key,
+            "latest_date": latest["date"],
+            "latest_value": float(latest[out_key]),
+            "unit_mode": unit_mode,
+            "source_note": SOURCE_NOTES.get(out_key, ""),
+        })
+    metrics_df = pd.DataFrame(metrics_rows)
 
-    # Fetch series with soft-fail (one bad ID doesn't kill the run)
-    for s in SERIES:
+    # Write metrics-only workbook
+    with pd.ExcelWriter(OUT_METRICS_XLSX, engine="openpyxl") as w:
+        metrics_df.to_excel(w, index=False, sheet_name="metrics")
+
+    # Write combined workbook
+    with pd.ExcelWriter(OUT_TIMESERIES_XLSX, engine="openpyxl") as w:
+        metrics_df.to_excel(w, index=False, sheet_name="metrics")
+        # Timeseries: keep date as YYYY-MM-DD string for readability
+        ts = wide.copy()
+        ts["date"] = pd.to_datetime(ts["date"]).dt.date.astype(str)
+        ts.to_excel(w, index=False, sheet_name="timeseries")
+
+
+# -----------------------------
+# Main
+# -----------------------------
+
+def main() -> int:
+    log("Starting macro-credit updater...")
+
+    series_map: Dict[str, pd.DataFrame] = {}
+    fetched_count = 0
+
+    for series_id, out_key, unit_mode in SERIES:
         try:
-            df = fetch_fred_series(s.series_id)
-            df = df.rename(columns={"value": s.out_key})
-            series_frames.append(df)
-            source_notes[s.out_key] = s.note
-            print(f"[OK] {s.series_id} -> {s.out_key} ({len(df)} rows)")
-        except requests.HTTPError as he:
-            print(f"[WARN] {s.series_id} HTTP error: {he}")
+            df = fetch_fred_series(series_id)
+            df = df.dropna(subset=["date"]).copy()
+            df["value"] = pd.to_numeric(df["value"], errors="coerce")
+            df = df.dropna(subset=["value"])
+            df = series_unit_normalize(out_key, unit_mode, df)
+
+            if df.empty:
+                warn(f"{series_id} fetched but empty after cleaning; skipping")
+                continue
+
+            # Keep only last 15 years to keep JSON light
+            cutoff = pd.Timestamp.now(tz=None) - pd.Timedelta(days=365 * 15)
+            df = df[df["date"] >= cutoff]
+
+            series_map[out_key] = df[["date", "value"]].copy()
+            fetched_count += 1
+            log(f"Fetched {series_id} -> {out_key} ({len(df)} rows)")
         except Exception as e:
-            print(f"[WARN] {s.series_id} error: {e}")
+            warn(f"{series_id} error: {e}")
 
-    if not series_frames:
-        raise RuntimeError("No FRED series could be fetched. Check connectivity and series IDs.")
+    if fetched_count == 0:
+        # IMPORTANT: do not "fatal" the site by deleting/blanking files.
+        # Exit non-zero so you see it, but preserve existing artifacts.
+        warn("[FATAL] No series could be fetched. Leaving existing artifacts untouched.")
+        return 1
 
-    # Merge on date (outer)
-    merged = series_frames[0][["date", series_frames[0].columns[1]]].copy()
-    for df in series_frames[1:]:
-        merged = pd.merge(merged, df, on="date", how="outer")
+    wide = build_union_timeseries(series_map)
 
-    merged = merged.sort_values("date").reset_index(drop=True)
-
-    # Additional transforms:
-    # ICSA is weekly "level" -> convert to thousands for nicer display
-    if "ICSA_k" in merged.columns:
-        merged["ICSA_k"] = merged["ICSA_k"].apply(lambda x: (x/1000.0) if (x is not None and not (isinstance(x,float) and math.isnan(x))) else x)
-
-    # DSPIC96 is already a level series; keep in billions by dividing by 1e9 if it looks too large
-    # FRED DSPIC96 is often in billions already depending on series; we normalize heuristically.
-    if "DSPIC96_bil_usd" in merged.columns:
-        # If median is > 100000, assume it's in millions or dollars and scale down.
-        med = pd.to_numeric(merged["DSPIC96_bil_usd"], errors="coerce").median()
-        if pd.notna(med) and med > 100000:
-            merged["DSPIC96_bil_usd"] = merged["DSPIC96_bil_usd"] / 1000.0
-
-    # REVOLSL should be in $ billions already; do NOT rescale
-    # TDSP/Delinq/Chargeoff/Mortgage delinq are percents; do NOT rescale
-    # JTSJOL is millions already; do NOT rescale
-    # UNRATE percent already; do NOT rescale
-
-    raw_rows = to_timeseries_rows(merged)
+    # Convert date to YYYY-MM-DD
+    wide["date"] = pd.to_datetime(wide["date"]).dt.date.astype(str)
 
     payload = {
         "meta": {
-            "last_updated_utc": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
-            "source_notes": source_notes
+            "last_updated_utc": utc_now_iso(),
+            "source_notes": SOURCE_NOTES,
+            "fred_api": "json" if bool(FRED_API_KEY) else "fredgraph.csv",
         },
-        "data": raw_rows
+        "data": wide.to_dict(orient="records"),
     }
 
-    payload = clean_for_json(payload)
-    with open(OUTPUT_DATA_JSON, "w", encoding="utf-8") as f:
-        json.dump(payload, f, ensure_ascii=False)
+    payload = safe_json(payload)
 
-    # Metrics workbook
-    metrics_df = compute_metrics(raw_rows, SERIES)
-    with pd.ExcelWriter(OUTPUT_METRICS_XLSX, engine="openpyxl") as writer:
-        metrics_df.to_excel(writer, sheet_name="metrics", index=False)
+    # Write data.json (strict JSON, no NaN)
+    with open(OUT_DATA_JSON, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, allow_nan=False)
 
-    # Timeseries workbook (metrics + timeseries)
-    ts_df = pd.DataFrame(raw_rows)
-    with pd.ExcelWriter(OUTPUT_TIMESERIES_XLSX, engine="openpyxl") as writer:
-        metrics_df.to_excel(writer, sheet_name="metrics", index=False)
-        ts_df.to_excel(writer, sheet_name="timeseries", index=False)
+    log(f"Wrote {OUT_DATA_JSON} with {len(payload['data'])} date rows")
 
     # News
-    news = fetch_news()
-    news = clean_for_json(news)
-    with open(OUTPUT_NEWS_JSON, "w", encoding="utf-8") as f:
-        json.dump(news, f, ensure_ascii=False)
+    news = build_news_json()
+    news = safe_json(news)
+    with open(OUT_NEWS_JSON, "w", encoding="utf-8") as f:
+        json.dump(news, f, ensure_ascii=False, allow_nan=False)
+    log(f"Wrote {OUT_NEWS_JSON} with {len(news.get('items', []))} items")
 
-    print("[DONE] wrote:", OUTPUT_DATA_JSON, OUTPUT_NEWS_JSON, OUTPUT_METRICS_XLSX, OUTPUT_TIMESERIES_XLSX)
+    # Excel exports
+    wide_for_excel = pd.DataFrame(payload["data"])
+    wide_for_excel["date"] = pd.to_datetime(wide_for_excel["date"], errors="coerce")
+    wide_for_excel = wide_for_excel.sort_values("date")
+
+    write_excel_metrics(wide_for_excel)
+    log(f"Wrote {OUT_METRICS_XLSX} and {OUT_TIMESERIES_XLSX}")
+
+    log("Updater finished successfully.")
+    return 0
+
 
 if __name__ == "__main__":
-    try:
-        main()
-    except Exception as e:
-        print("[FATAL]", e)
-        sys.exit(1)
+    sys.exit(main())
