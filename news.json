@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2025-12-16T04:35:22Z",
+  "generated_utc": "2025-12-16T05:15:00Z",
   "sections": {
     "Credit / consumer stress": [
       {
@@ -25,6 +25,12 @@
         "source": "US Top News and Analysis",
         "link": "https://www.cnbc.com/2025/12/15/tesla-tests-driverless-cars-in-austin-without-humans-on-board.html",
         "published_utc": "2025-12-15T23:53:57Z"
+      },
+      {
+        "title": "New York AG sues UPS for allegedly shorting Christmas season workers' wages",
+        "source": "US Top News and Analysis",
+        "link": "https://www.cnbc.com/2025/12/15/new-york-lawsuit-ups-christmas-wage-steal-seasonal-workers.html",
+        "published_utc": "2025-12-15T23:08:22Z"
       },
       {
         "title": "Zillow shares are getting crushed. Here's why",
@@ -55,12 +61,6 @@
         "source": "US Top News and Analysis",
         "link": "https://www.cnbc.com/2025/12/15/trump-ai-tech-force-amazon-apple.html",
         "published_utc": "2025-12-15T16:40:02Z"
-      },
-      {
-        "title": "High cost of goods is causing consumers to spend less for the holidays, CNBC survey finds",
-        "source": "US Top News and Analysis",
-        "link": "https://www.cnbc.com/2025/12/15/inflation-causing-less-holiday-spending-cnbc-all-america-economic-survey.html",
-        "published_utc": "2025-12-15T14:39:06Z"
       }
     ],
     "Labor / macro signals": [
@@ -107,22 +107,22 @@
         "published_utc": "2025-12-14T18:00:02Z"
       },
       {
-        "title": "Investors lose 15% of returns over 10 years due to common mistakes. Are you getting the most from your investments?",
-        "source": "Yahoo Finance",
-        "link": "https://finance.yahoo.com/news/investors-lose-15-returns-over-180000911.html",
-        "published_utc": "2025-12-14T18:00:00Z"
-      },
-      {
         "title": "The AI Boom Is Pushing Data Centers Past the Thermal Wall",
         "source": "Yahoo Finance",
         "link": "https://finance.yahoo.com/news/ai-boom-pushing-data-centers-180000874.html",
         "published_utc": "2025-12-14T18:00:00Z"
       },
       {
-        "title": "‘Say Ja To Germany:’ 3 Top Business Schools Partner To Woo World’s Students",
+        "title": "Investors lose 15% of returns over 10 years due to common mistakes. Are you getting the most from your investments?",
         "source": "Yahoo Finance",
-        "link": "https://finance.yahoo.com/news/ja-germany-3-top-business-172038493.html",
-        "published_utc": "2025-12-14T17:20:38Z"
+        "link": "https://finance.yahoo.com/news/investors-lose-15-returns-over-180000911.html",
+        "published_utc": "2025-12-14T18:00:00Z"
+      },
+      {
+        "title": "46-year-old casual restaurant chain closed over 140 locations",
+        "source": "Yahoo Finance",
+        "link": "https://finance.yahoo.com/news/popular-sports-bar-chain-chili-174700356.html",
+        "published_utc": "2025-12-14T17:47:00Z"
       }
     ]
   }
