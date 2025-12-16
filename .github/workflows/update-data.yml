@@ -1,9 +1,10 @@
-name: update
+name: Update dashboard data
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 14 * * 1"  # Mondays 14:00 UTC (weekly)
+    # Weekly (Mondays at 11:15 UTC). Adjust if you want.
+    - cron: "15 11 * * 1"
 
 permissions:
   contents: write
@@ -11,6 +12,7 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -23,9 +25,13 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pandas requests openpyxl feedparser
+          pip install pandas requests openpyxl feedparser python-dateutil
 
       - name: Run updater
+        env:
+          # Optional but strongly recommended:
+          # Add to repo secrets: FRED_API_KEY
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
         run: |
           python update_data.py
 
@@ -34,7 +40,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add data.json news.json macro_credit_metrics.xlsx macro_credit_timeseries.xlsx
+          git add data.json news.json macro_credit_timeseries.xlsx macro_credit_metrics.xlsx || true
 
           if git diff --cached --quiet; then
             echo "No changes to commit."
@@ -43,5 +49,3 @@ jobs:
 
           git commit -m "Auto-update dashboard data"
           git push
-
-
