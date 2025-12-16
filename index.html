@@ -4,8 +4,9 @@
   <meta charset="utf-8">
   <title>Macro–Credit Stress Dashboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
-    :root {
+    :root{
       --bg:#0b0f19;
       --panel:#111827;
       --text:#e5e7eb;
@@ -14,109 +15,140 @@
       --warn:#facc15;
       --bad:#ef4444;
       --border: rgba(255,255,255,0.10);
-      --panel2: rgba(17,24,39,0.78);
+      --shadow: rgba(0,0,0,0.35);
     }
-    body {
+    body{
       margin:0; padding:24px;
-      background: radial-gradient(900px 600px at 18% 12%, rgba(99,102,241,0.18), transparent 60%),
-                  radial-gradient(900px 600px at 82% 18%, rgba(16,185,129,0.10), transparent 60%),
+      background: radial-gradient(1200px 700px at 15% 10%, rgba(55,65,81,0.35), transparent 55%),
+                  radial-gradient(900px 700px at 85% 30%, rgba(34,197,94,0.10), transparent 60%),
                   linear-gradient(180deg, #0b0f19 0%, #070a12 100%);
       color: var(--text);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Arial, sans-serif;
     }
-    .wrap { max-width: 1160px; margin: 0 auto; }
-    .titleRow { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; }
-    h1 { margin: 0 0 6px 0; font-size: 26px; letter-spacing: -0.01em; }
-    .overallBadge {
-      margin-top: 2px;
+    .wrap{ max-width: 1160px; margin:0 auto; }
+    h1{ margin:0 0 8px 0; font-size: 28px; letter-spacing: 0.2px; }
+    .toprow{ display:flex; gap:12px; align-items:flex-start; justify-content:space-between; flex-wrap:wrap; }
+    .desc{
+      margin:0 0 16px 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+      max-width: 900px;
+    }
+    .overall{
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 6px 12px;
       font-size: 12px;
       font-weight: 900;
-      padding: 8px 12px;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,0.16);
       background: rgba(255,255,255,0.04);
-      white-space: nowrap;
+      white-space:nowrap;
     }
-    .overallBadge.healthy { color: var(--good); }
-    .overallBadge.tripwire { color: var(--warn); }
-    .overallBadge.stress { color: var(--bad); }
+    .overall.good{ color: var(--good); }
+    .overall.warn{ color: var(--warn); }
+    .overall.bad{ color: var(--bad); }
 
-    .sub { margin: 0 0 12px 0; color: var(--muted); font-size: 13px; line-height: 1.45; max-width: 980px; }
-    .sub b { color: #fff; }
+    .legend{ display:flex; gap:10px; margin: 10px 0 16px 0; flex-wrap:wrap; }
+    .pill{ display:inline-block; padding:4px 10px; border-radius:999px; border:1px solid rgba(255,255,255,0.14); font-size:12px; }
+    .pill.healthy{ color: var(--good); }
+    .pill.tripwire{ color: var(--warn); }
+    .pill.stress{ color: var(--bad); }
 
-    .legend { display:flex; gap:10px; margin: 10px 0 16px 0; flex-wrap:wrap; }
-    .pill { display:inline-block; padding:4px 10px; border-radius:999px; border:1px solid rgba(255,255,255,0.14); font-size:12px; }
-    .pill.healthy { color: var(--good); }
-    .pill.tripwire { color: var(--warn); }
-    .pill.stress { color: var(--bad); }
+    .section{ margin-top: 18px; }
+    h2{ font-size: 15px; margin: 0 0 10px 0; color: var(--text); }
 
-    .section { margin-top: 18px; }
-    h2 { font-size: 15px; margin: 0 0 10px 0; }
-
-    .newsGrid {
+    /* News */
+    .newsgrid{
       display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-      gap: 12px;
-      margin-bottom: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+      gap: 14px;
+      margin-top: 10px;
     }
-    .newsCard {
-      background: var(--panel2);
+    .newscard{
+      background: rgba(17,24,39,0.72);
       border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 12px;
-      min-height: 136px;
+      border-radius: 18px;
+      padding: 14px;
+      box-shadow: 0 10px 30px var(--shadow);
+      min-height: 150px;
     }
-    .newsHead { display:flex; justify-content:space-between; gap:10px; align-items:baseline; }
-    .newsTitle { font-weight: 950; font-size: 13px; }
-    .newsMeta { color: var(--muted); font-size: 12px; }
-    .newsList { margin-top: 10px; display:flex; flex-direction:column; gap: 8px; }
-    .newsItem { display:flex; flex-direction:column; gap: 2px; }
-    .newsItem a { color: var(--text); text-decoration:none; font-weight: 800; font-size: 13px; }
-    .newsItem a:hover { text-decoration: underline; }
-    .newsItem .subline { color: var(--muted); font-size: 12px; }
+    .newshead{ display:flex; align-items:baseline; justify-content:space-between; gap: 12px; }
+    .newstitle{ font-weight: 950; font-size: 13px; }
+    .newsmeta{ font-size: 12px; color: var(--muted); }
+    .newslist{ margin: 10px 0 0 0; padding: 0; list-style:none; display:flex; flex-direction:column; gap: 8px; }
+    .newsitem a{ color: var(--text); text-decoration:none; font-weight: 800; }
+    .newsitem a:hover{ text-decoration:underline; }
+    .newsitem .subline{ color: var(--muted); font-size: 12px; margin-top: 2px; }
 
-    .kpigrid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 14px 0 10px 0; }
-    .kpicard { background: var(--panel2); border: 1px solid var(--border); border-radius: 16px; padding: 12px; position:relative; overflow:hidden; }
-    .kpihead { display:flex; justify-content: space-between; gap:10px; align-items:flex-start; }
-    .kpititle { font-weight: 950; font-size: 13px; }
-    .kpisub { color: var(--muted); font-size: 12px; margin-top: 2px; }
-    .badge {
-      position:absolute;
-      right: 10px;
-      top: 10px;
+    /* KPI tiles */
+    .kpigrid{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+      margin: 14px 0 10px 0;
+    }
+    .kpicard{
+      background: rgba(17,24,39,0.78);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 14px;
+      box-shadow: 0 10px 30px var(--shadow);
+      overflow:hidden;
+      position:relative;
+    }
+    .kpihead{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-start;
+      gap: 10px;
+    }
+    .kpititle{ font-weight: 950; font-size: 13px; line-height: 1.15; }
+    .kpisub{ color: var(--muted); font-size: 12px; margin-top: 3px; }
+    .badge{
       font-size: 11px;
       font-weight: 950;
       padding: 4px 10px;
       border-radius: 999px;
       border: 1px solid rgba(255,255,255,0.14);
-      background: rgba(0,0,0,0.10);
+      background: rgba(255,255,255,0.03);
+      flex: 0 0 auto;
+      max-width: 120px;
+      text-align:center;
     }
-    .badge.healthy { color: var(--good); }
-    .badge.tripwire { color: var(--warn); }
-    .badge.stress { color: var(--bad); }
+    .badge.healthy{ color: var(--good); }
+    .badge.tripwire{ color: var(--warn); }
+    .badge.stress{ color: var(--bad); }
 
-    .kpivalue { font-size: 22px; font-weight: 950; margin-top: 10px; }
-    .kpimeta { display:flex; gap:12px; flex-wrap:wrap; margin-top: 6px; color: var(--muted); font-size: 12px; }
-    .spark {
+    .kpivalue{ font-size: 24px; font-weight: 980; margin-top: 10px; }
+    .kpimeta{ display:flex; gap:12px; flex-wrap:wrap; margin-top: 6px; color: var(--muted); font-size: 12px; }
+    .kpisparkwrap{ margin-top: 10px; }
+    svg.spark{ width: 100%; height: 44px; display:block; }
+    .sparkline{ fill:none; stroke: rgba(229,231,235,0.92); stroke-width: 2; }
+    .sparkaxis{ stroke: rgba(255,255,255,0.07); stroke-width: 1; }
+
+    /* Trend charts */
+    .chartgrid{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      gap: 14px;
       margin-top: 10px;
-      width: 100%;
-      height: 34px;
-      display:block;
     }
-    .spark path { fill:none; stroke: rgba(229,231,235,0.90); stroke-width: 2; }
-    .spark .axis { stroke: rgba(255,255,255,0.08); stroke-width: 1; }
-
-    .chartgrid { display:grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 14px; margin-top: 10px; }
-    .chartcard { background: rgba(17,24,39,0.75); border: 1px solid var(--border); border-radius: 16px; padding: 12px; }
-    .charthead { display:flex; justify-content: space-between; align-items: baseline; gap: 12px; }
-    .charttitle { font-weight: 950; font-size: 13px; }
-    .chartsub { color: var(--muted); font-size: 12px; }
-    .chartdesc { color: var(--muted); font-size: 12px; margin-top: 6px; line-height: 1.35; }
-    .svgwrap { position: relative; margin-top: 8px; }
-    svg.interactive { width: 100%; height: 220px; display:block; }
-    .axisLine { stroke: rgba(255,255,255,0.08); stroke-width: 1; }
-    .line { fill: none; stroke: rgba(229,231,235,0.92); stroke-width: 2; }
-    .tooltip {
+    .chartcard{
+      background: rgba(17,24,39,0.75);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 12px;
+      box-shadow: 0 10px 30px var(--shadow);
+    }
+    .charthead{ display:flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+    .charttitle{ font-weight: 950; font-size: 13px; }
+    .chartsub{ color: var(--muted); font-size: 12px; text-align:right; }
+    .chartdef{ margin-top: 6px; color: rgba(229,231,235,0.80); font-size: 12px; line-height: 1.35; }
+    .svgwrap{ position: relative; margin-top: 8px; }
+    svg.interactive{ width: 100%; height: 220px; display:block; }
+    .axis{ stroke: rgba(255,255,255,0.08); stroke-width: 1; }
+    .line{ fill:none; stroke: rgba(229,231,235,0.92); stroke-width: 2; }
+    .tooltip{
       position:absolute;
       pointer-events:none;
       background: rgba(0,0,0,0.75);
@@ -132,49 +164,41 @@
       white-space: nowrap;
       z-index: 10;
     }
-    .dot { fill: rgba(250,204,21,0.95); stroke: rgba(0,0,0,0.3); stroke-width: 1; opacity: 0; }
-    .vline { stroke: rgba(250,204,21,0.6); stroke-width: 1; opacity: 0; }
+    .dot{ fill: rgba(250,204,21,0.95); stroke: rgba(0,0,0,0.3); stroke-width:1; opacity:0; }
+    .vline{ stroke: rgba(250,204,21,0.6); stroke-width:1; opacity:0; }
 
-    .btnrow { margin-top: 14px; display:flex; gap:10px; flex-wrap:wrap; }
-    a.btn { display:inline-block; padding: 10px 12px; border-radius: 12px; border:1px solid rgba(255,255,255,0.14); text-decoration:none; color: var(--text); background: rgba(255,255,255,0.04); font-weight: 900; font-size: 12px; }
-    a.btn:hover { background: rgba(255,255,255,0.07); }
-    code { background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 8px; }
-    .foot { margin-top: 14px; color: var(--muted); font-size: 12px; line-height: 1.4; }
+    .btnrow{ margin-top: 14px; display:flex; gap:10px; flex-wrap:wrap; }
+    a.btn{
+      display:inline-block; padding: 10px 12px;
+      border-radius: 12px; border:1px solid rgba(255,255,255,0.14);
+      text-decoration:none; color: var(--text);
+      background: rgba(255,255,255,0.04);
+      font-weight: 900; font-size: 12px;
+    }
+    a.btn:hover{ background: rgba(255,255,255,0.07); }
+    code{ background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 8px; }
+    .foot{ margin-top: 12px; color: var(--muted); font-size: 12px; line-height: 1.4; }
   </style>
 </head>
+
 <body>
   <div class="wrap">
-    <div class="titleRow">
+    <div class="toprow">
       <div>
         <h1>Macro–Credit Stress Dashboard</h1>
-        <p class="sub">
-          A lightweight read on household stress and labor softening, built from public series that tend to move early:
-          <b>card delinquencies</b>, <b>charge-offs</b>, <b>revolving credit</b>, <b>debt service burden</b>, plus labor & income signals.
-          Tiles show: latest value, a 10-year baseline, and the 1-year change (with clear units).
+        <p class="desc">
+          A weekly snapshot of consumer credit stress and labor softening using public macro series (FRED).
+          Tiles show the latest value, a 10-year baseline, and the 1-year change with clear units.
+          Hover charts to inspect point-in-time values. Data loads from <code>data.json</code> and <code>news.json</code>.
           <span id="lastUpdated"></span>
         </p>
       </div>
-      <div id="overall" class="overallBadge">Overall: —</div>
+      <div id="overallBadge" class="overall good">Overall: —</div>
     </div>
 
     <div class="section">
       <h2>Latest headlines</h2>
-      <div class="newsGrid">
-        <div class="newsCard">
-          <div class="newsHead">
-            <div class="newsTitle">Credit / consumer stress</div>
-            <div class="newsMeta">auto-updated weekly</div>
-          </div>
-          <div class="newsList" id="newsCredit"><div class="newsMeta">Loading <code>news.json</code>…</div></div>
-        </div>
-        <div class="newsCard">
-          <div class="newsHead">
-            <div class="newsTitle">Labor / macro signals</div>
-            <div class="newsMeta">auto-updated weekly</div>
-          </div>
-          <div class="newsList" id="newsLabor"><div class="newsMeta">Loading <code>news.json</code>…</div></div>
-        </div>
-      </div>
+      <div class="newsgrid" id="newsGrid"></div>
     </div>
 
     <div class="legend">
@@ -191,8 +215,102 @@
     <div class="section">
       <h2>Trends (interactive)</h2>
 
-      <div class="chartgrid" id="chartGrid">
-        <!-- Chart cards injected from JS -->
+      <div class="chartgrid">
+        <div class="chartcard">
+          <div class="charthead">
+            <div class="charttitle">Card 30+ Delinquency (All banks)</div>
+            <div class="chartsub">FRED: DRCCLACBS (quarterly, %)</div>
+          </div>
+          <div class="chartdef">Share of card balances 30+ days past due — early consumer stress signal.</div>
+          <div class="svgwrap" data-series="DRCCLACBS_pct" data-format="pct">
+            <div class="tooltip"></div>
+            <svg class="interactive" viewBox="0 0 640 220" preserveAspectRatio="none"></svg>
+          </div>
+        </div>
+
+        <div class="chartcard">
+          <div class="charthead">
+            <div class="charttitle">Net Charge-off Rate (All banks)</div>
+            <div class="chartsub">FRED: CORCCACBS (quarterly, %)</div>
+          </div>
+          <div class="chartdef">Portion of card loans written off as uncollectible — confirms deterioration.</div>
+          <div class="svgwrap" data-series="CORCCACBS_pct" data-format="pct">
+            <div class="tooltip"></div>
+            <svg class="interactive" viewBox="0 0 640 220" preserveAspectRatio="none"></svg>
+          </div>
+        </div>
+
+        <div class="chartcard">
+          <div class="charthead">
+            <div class="charttitle">Revolving Consumer Credit</div>
+            <div class="chartsub">FRED: REVOLSL (monthly, $ billions)</div>
+          </div>
+          <div class="chartdef">Outstanding revolving consumer credit — rising levels can amplify stress if incomes soften.</div>
+          <div class="svgwrap" data-series="REVOLSL_bil_usd" data-format="usd_b">
+            <div class="tooltip"></div>
+            <svg class="interactive" viewBox="0 0 640 220" preserveAspectRatio="none"></svg>
+          </div>
+        </div>
+
+        <div class="chartcard">
+          <div class="charthead">
+            <div class="charttitle">Debt Service Burden (Households)</div>
+            <div class="chartsub">FRED: TDSP (quarterly, %)</div>
+          </div>
+          <div class="chartdef">Household debt payments as % of disposable income — “squeeze” measure.</div>
+          <div class="svgwrap" data-series="TDSP_pct" data-format="pct">
+            <div class="tooltip"></div>
+            <svg class="interactive" viewBox="0 0 640 220" preserveAspectRatio="none"></svg>
+          </div>
+        </div>
+
+        <div class="chartcard">
+          <div class="charthead">
+            <div class="charttitle">Job Openings (Total nonfarm)</div>
+            <div class="chartsub">FRED: JTSJOL (monthly, millions)</div>
+          </div>
+          <div class="chartdef">Labor demand proxy — a sustained drop usually precedes weaker hiring.</div>
+          <div class="svgwrap" data-series="JTSJOL_mil" data-format="mil">
+            <div class="tooltip"></div>
+            <svg class="interactive" viewBox="0 0 640 220" preserveAspectRatio="none"></svg>
+          </div>
+        </div>
+
+        <div class="chartcard">
+          <div class="charthead">
+            <div class="charttitle">Mortgage 30+ Delinquency (All banks)</div>
+            <div class="chartsub">FRED: DRSFRMACBS (quarterly, %)</div>
+          </div>
+          <div class="chartdef">Share of mortgage balances 30+ days past due — housing stress proxy.</div>
+          <div class="svgwrap" data-series="DRSFRMACBS_pct" data-format="pct">
+            <div class="tooltip"></div>
+            <svg class="interactive" viewBox="0 0 640 220" preserveAspectRatio="none"></svg>
+          </div>
+        </div>
+
+        <div class="chartcard">
+          <div class="charthead">
+            <div class="charttitle">Unemployment Rate</div>
+            <div class="chartsub">FRED: UNRATE (monthly, %)</div>
+          </div>
+          <div class="chartdef">Broad unemployment measure — tends to lag, but persistent rises worsen credit performance.</div>
+          <div class="svgwrap" data-series="UNRATE_pct" data-format="pct">
+            <div class="tooltip"></div>
+            <svg class="interactive" viewBox="0 0 640 220" preserveAspectRatio="none"></svg>
+          </div>
+        </div>
+
+        <div class="chartcard">
+          <div class="charthead">
+            <div class="charttitle">Initial Jobless Claims</div>
+            <div class="chartsub">FRED: ICSA (weekly, thousands)</div>
+          </div>
+          <div class="chartdef">Faster-turn labor stress signal — spikes can precede unemployment increases.</div>
+          <div class="svgwrap" data-series="ICSA_thou" data-format="thou">
+            <div class="tooltip"></div>
+            <svg class="interactive" viewBox="0 0 640 220" preserveAspectRatio="none"></svg>
+          </div>
+        </div>
       </div>
 
       <div class="btnrow">
@@ -209,101 +327,80 @@
   </div>
 
 <script>
-/* ---------------- formatting ---------------- */
+/* -------------------------
+   Formatting
+------------------------- */
+function fmtNum(n, digits=2){
+  if (n === null || Number.isNaN(n)) return "—";
+  return Number(n).toLocaleString(undefined, { maximumFractionDigits: digits, minimumFractionDigits: 0 });
+}
 function fmtValue(v, mode) {
-  if (v === null || v === undefined || Number.isNaN(v)) return '—';
-  if (mode === 'pct') return v.toFixed(2).replace(/\.00$/,'') + '%';
-  if (mode === 'pp') return v.toFixed(2).replace(/\.00$/,'') + 'pp';
-  if (mode === 'mil') return v.toFixed(2).replace(/\.00$/,'') + 'M';
-  if (mode === 'k') return v.toFixed(0) + 'K';
-  if (mode === 'usd_b') return '$' + v.toFixed(0) + 'B';
-  return String(v);
+  if (v === null || Number.isNaN(v)) return "—";
+  const x = Number(v);
+  if (mode === "pct") return fmtNum(x, 2) + "%";
+  if (mode === "mil") return fmtNum(x, 2) + "M";
+  if (mode === "thou") return fmtNum(x, 0) + "K";
+  if (mode === "usd_b") return "$" + fmtNum(x, 0) + "B";
+  return String(x);
 }
 function fmtDate(d) {
-  const opts = { year:'numeric', month:'short' };
+  const opts = { year:"numeric", month:"short" };
   return d.toLocaleDateString(undefined, opts);
 }
-function mean(arr){ return arr.reduce((a,b)=>a+b,0)/arr.length; }
-function std(arr){
-  if (arr.length < 2) return 0;
-  const m = mean(arr);
-  const v = mean(arr.map(x => (x-m)*(x-m)));
-  return Math.sqrt(v);
-}
-function classify(current, avg, sd, direction){
-  // direction: +1 means higher is worse; -1 means lower is worse
-  if (!sd || sd === 0) return "healthy";
-  const z = (current - avg) / sd;
-  const risk = direction * z;
-  if (risk >= 2.0) return "stress";
-  if (risk >= 1.0) return "tripwire";
-  return "healthy";
-}
-function latestPoint(raw, key){
-  for (let i = raw.length - 1; i >= 0; i--){
-    const v = raw[i][key];
-    if (v !== null && v !== undefined && !Number.isNaN(v)) return { date: new Date(raw[i].date+'T00:00:00'), value: Number(v) };
-  }
-  return null;
-}
-function nearestPointAtOrBefore(raw, key, targetDate){
-  for (let i = raw.length - 1; i >= 0; i--){
-    const d = new Date(raw[i].date+'T00:00:00');
-    const v = raw[i][key];
-    if (d <= targetDate && v !== null && v !== undefined && !Number.isNaN(v)) return { date: d, value: Number(v) };
-  }
-  return null;
-}
-function windowValues(raw, key, startDate){
-  const out = [];
-  for (const r of raw){
-    const d = new Date(r.date+'T00:00:00');
-    const v = r[key];
-    if (d >= startDate && v !== null && v !== undefined && !Number.isNaN(v)) out.push(Number(v));
-  }
-  return out;
-}
 
-/* ---------------- mini sparkline ---------------- */
-function buildSparkline(svg, pts){
-  const W = 220, H = 34;
-  svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
-  while (svg.firstChild) svg.removeChild(svg.firstChild);
+/* -------------------------
+   Mini sparkline
+------------------------- */
+function buildSpark(svg, pts){
+  const vb = svg.viewBox.baseVal;
+  const W = vb.width || 200, H = vb.height || 44;
+  const pad = 4;
+  const innerW = W - pad*2;
+  const innerH = H - pad*2;
 
-  const pad = 2;
-  const xs = pts.map((_, i) => i);
-  const ys = pts.map(p => p.y);
+  const xs = pts.map(p=>p.x), ys = pts.map(p=>p.y);
+  const xmin = Math.min(...xs), xmax = Math.max(...xs);
   let ymin = Math.min(...ys), ymax = Math.max(...ys);
   if (ymax === ymin) ymax = ymin + 1e-9;
 
-  function xScale(i){ return pad + (i/(pts.length-1))*(W-2*pad); }
-  function yScale(y){ return pad + (1-(y-ymin)/(ymax-ymin))*(H-2*pad); }
+  function xScale(x){ return pad + (x - xmin) / (xmax - xmin) * innerW; }
+  function yScale(y){ return pad + (1 - (y - ymin) / (ymax - ymin)) * innerH; }
 
-  const gl = document.createElementNS('http://www.w3.org/2000/svg','line');
-  gl.setAttribute('x1', 0); gl.setAttribute('x2', W);
-  gl.setAttribute('y1', H-1); gl.setAttribute('y2', H-1);
-  gl.setAttribute('class','axis');
-  svg.appendChild(gl);
-
-  let d = '';
-  for (let i=0;i<pts.length;i++){
-    d += (i===0?'M':'L') + xScale(i).toFixed(2) + ' ' + yScale(pts[i].y).toFixed(2) + ' ';
+  let d = "";
+  for (let i=0; i<pts.length; i++){
+    const px = xScale(pts[i].x);
+    const py = yScale(pts[i].y);
+    d += (i===0 ? "M" : "L") + px.toFixed(2) + " " + py.toFixed(2) + " ";
   }
-  const path = document.createElementNS('http://www.w3.org/2000/svg','path');
-  path.setAttribute('d', d.trim());
+
+  while (svg.firstChild) svg.removeChild(svg.firstChild);
+
+  const axis = document.createElementNS("http://www.w3.org/2000/svg","line");
+  axis.setAttribute("x1", pad);
+  axis.setAttribute("x2", W - pad);
+  axis.setAttribute("y1", H - pad);
+  axis.setAttribute("y2", H - pad);
+  axis.setAttribute("class","sparkaxis");
+  svg.appendChild(axis);
+
+  const path = document.createElementNS("http://www.w3.org/2000/svg","path");
+  path.setAttribute("d", d.trim());
+  path.setAttribute("class","sparkline");
   svg.appendChild(path);
 }
 
-/* ---------------- interactive chart ---------------- */
+/* -------------------------
+   Interactive trend chart
+------------------------- */
 function buildChart(container, raw) {
   const seriesKey = container.dataset.series;
   const mode = container.dataset.format;
-  const svg = container.querySelector('svg');
-  const tooltip = container.querySelector('.tooltip');
+  const svg = container.querySelector("svg");
+  const tooltip = container.querySelector(".tooltip");
 
   const pts = raw
     .filter(r => r[seriesKey] !== null && r[seriesKey] !== undefined && !Number.isNaN(r[seriesKey]))
-    .map(r => ({ x: new Date(r.date + 'T00:00:00').getTime(), d: new Date(r.date + 'T00:00:00'), y: Number(r[seriesKey]) }));
+    .map(r => ({ x: new Date(r.date + "T00:00:00").getTime(), d: new Date(r.date + "T00:00:00"), y: Number(r[seriesKey]) }));
 
   if (pts.length < 2) {
     tooltip.style.opacity = 1;
@@ -330,41 +427,41 @@ function buildChart(container, raw) {
   function xScale(x) { return padL + (x - xmin) / (xmax - xmin) * innerW; }
   function yScale(y) { return padT + (1 - (y - ymin) / (ymax - ymin)) * innerH; }
 
-  let pathD = '';
+  let pathD = "";
   for (let i=0; i<pts.length; i++) {
     const px = xScale(pts[i].x);
     const py = yScale(pts[i].y);
-    pathD += (i===0 ? 'M' : 'L') + px.toFixed(2) + ' ' + py.toFixed(2) + ' ';
+    pathD += (i===0 ? "M" : "L") + px.toFixed(2) + " " + py.toFixed(2) + " ";
   }
 
   while (svg.firstChild) svg.removeChild(svg.firstChild);
 
   for (let g=0; g<4; g++) {
     const y = padT + (innerH/3)*g;
-    const gl = document.createElementNS('http://www.w3.org/2000/svg','line');
-    gl.setAttribute('x1', padL);
-    gl.setAttribute('x2', W - padR);
-    gl.setAttribute('y1', y);
-    gl.setAttribute('y2', y);
-    gl.setAttribute('class','axisLine');
+    const gl = document.createElementNS("http://www.w3.org/2000/svg","line");
+    gl.setAttribute("x1", padL);
+    gl.setAttribute("x2", W - padR);
+    gl.setAttribute("y1", y);
+    gl.setAttribute("y2", y);
+    gl.setAttribute("class","axis");
     svg.appendChild(gl);
   }
 
-  const path = document.createElementNS('http://www.w3.org/2000/svg','path');
-  path.setAttribute('d', pathD.trim());
-  path.setAttribute('class','line');
+  const path = document.createElementNS("http://www.w3.org/2000/svg","path");
+  path.setAttribute("d", pathD.trim());
+  path.setAttribute("class","line");
   svg.appendChild(path);
 
-  const vline = document.createElementNS('http://www.w3.org/2000/svg','line');
-  vline.setAttribute('y1', padT);
-  vline.setAttribute('y2', padT + innerH);
-  vline.setAttribute('class','vline');
+  const vline = document.createElementNS("http://www.w3.org/2000/svg","line");
+  vline.setAttribute("y1", padT);
+  vline.setAttribute("y2", padT + innerH);
+  vline.setAttribute("class","vline");
   vline.style.opacity = 0;
   svg.appendChild(vline);
 
-  const dot = document.createElementNS('http://www.w3.org/2000/svg','circle');
-  dot.setAttribute('r', 4.5);
-  dot.setAttribute('class','dot');
+  const dot = document.createElementNS("http://www.w3.org/2000/svg","circle");
+  dot.setAttribute("r", 4.5);
+  dot.setAttribute("class","dot");
   dot.style.opacity = 0;
   svg.appendChild(dot);
 
@@ -388,22 +485,20 @@ function buildChart(container, raw) {
     const px = xScale(p.x);
     const py = yScale(p.y);
 
-    vline.setAttribute('x1', px);
-    vline.setAttribute('x2', px);
+    vline.setAttribute("x1", px);
+    vline.setAttribute("x2", px);
     vline.style.opacity = 1;
 
-    dot.setAttribute('cx', px);
-    dot.setAttribute('cy', py);
+    dot.setAttribute("cx", px);
+    dot.setAttribute("cy", py);
     dot.style.opacity = 1;
 
     tooltip.style.opacity = 1;
     tooltip.innerHTML = `<b>${fmtValue(p.y, mode)}</b><br>${fmtDate(p.d)}`;
 
     const cRect = container.getBoundingClientRect();
-    const tx = (evt.clientX - cRect.left);
-    const ty = (evt.clientY - cRect.top);
-    tooltip.style.left = tx + 'px';
-    tooltip.style.top = ty + 'px';
+    tooltip.style.left = (evt.clientX - cRect.left) + "px";
+    tooltip.style.top = (evt.clientY - cRect.top) + "px";
   }
 
   function onLeave() {
@@ -412,240 +507,264 @@ function buildChart(container, raw) {
     vline.style.opacity = 0;
   }
 
-  svg.addEventListener('mousemove', onMove);
-  svg.addEventListener('mouseleave', onLeave);
+  svg.addEventListener("mousemove", onMove);
+  svg.addEventListener("mouseleave", onLeave);
 }
 
-/* ---------------- KPI render (8 tiles) ---------------- */
-function renderKPI(raw){
-  const defs = [
-    // Order requested: delinq, chargeoff, revolving, TDSP, then labor row
-    { key:"DRCCLACBS_pct",    title:"Card 30+ Delinquency", sub:"FRED: DRCCLACBS (%, quarterly)", fmt:"pct",   direction:+1 },
-    { key:"CORCCACBS_pct",    title:"Net Charge-off Rate",  sub:"FRED: CORCCACBS (%, quarterly)", fmt:"pct",   direction:+1 },
-    { key:"REVOLSL_bil_usd",  title:"Revolving Consumer Credit", sub:"FRED: REVOLSL ($B, monthly)", fmt:"usd_b", direction:+1 },
-    { key:"TDSP_pct",         title:"Debt Service Burden",  sub:"FRED: TDSP (%, quarterly)",      fmt:"pct",   direction:+1 },
+/* -------------------------
+   KPI rendering
+------------------------- */
+function mean(arr){ return arr.reduce((a,b)=>a+b,0)/arr.length; }
+function std(arr){
+  if (arr.length < 2) return 0;
+  const m = mean(arr);
+  const v = mean(arr.map(x => (x-m)*(x-m)));
+  return Math.sqrt(v);
+}
 
-    { key:"JTSJOL_mil",       title:"Job Openings",         sub:"FRED: JTSJOL (millions, monthly)", fmt:"mil", direction:-1 },
-    { key:"UNRATE_pct",       title:"Unemployment Rate",    sub:"FRED: UNRATE (%, monthly)",        fmt:"pct", direction:+1 },
-    { key:"ICSA_k",           title:"Initial Jobless Claims", sub:"FRED: ICSA (thousands, weekly)", fmt:"k",   direction:+1 },
-    { key:"DSPIC96_bil_usd",  title:"Real Disposable Income", sub:"FRED: DSPIC96 ($B, monthly)",   fmt:"usd_b", direction:-1 },
+function latestPoint(raw, key){
+  for (let i = raw.length - 1; i >= 0; i--){
+    const v = raw[i][key];
+    if (v !== null && v !== undefined && !Number.isNaN(v)) return { date: new Date(raw[i].date+"T00:00:00"), value: Number(v) };
+  }
+  return null;
+}
+
+function nearestPointAtOrBefore(raw, key, targetDate){
+  for (let i = raw.length - 1; i >= 0; i--){
+    const d = new Date(raw[i].date+"T00:00:00");
+    const v = raw[i][key];
+    if (d <= targetDate && v !== null && v !== undefined && !Number.isNaN(v)) return { date: d, value: Number(v) };
+  }
+  return null;
+}
+
+function windowValues(raw, key, startDate){
+  const out = [];
+  for (const r of raw){
+    const d = new Date(r.date+"T00:00:00");
+    const v = r[key];
+    if (d >= startDate && v !== null && v !== undefined && !Number.isNaN(v)) out.push(Number(v));
+  }
+  return out;
+}
+
+// direction: +1 higher is worse, -1 lower is worse
+function classify(current, avg, sd, direction){
+  if (!sd || sd === 0) return "healthy";
+  const z = (current - avg) / sd;
+  const risk = direction * z;
+  if (risk >= 2.0) return "stress";
+  if (risk >= 1.0) return "tripwire";
+  return "healthy";
+}
+
+function renderOverall(meta){
+  const el = document.getElementById("overallBadge");
+  const h = meta?.overall_health || "—";
+  el.textContent = `Overall: ${h}`;
+  el.classList.remove("good","warn","bad");
+  if (h.toLowerCase().includes("stress")) el.classList.add("bad");
+  else if (h.toLowerCase().includes("tripwire")) el.classList.add("warn");
+  else el.classList.add("good");
+}
+
+function renderKPI(raw, metrics){
+  const order = [
+    // order you asked for in the first row logic:
+    "DRCCLACBS_pct",
+    "CORCCACBS_pct",
+    "REVOLSL_bil_usd",
+    "JTSJOL_mil",
+    // second row:
+    "TDSP_pct",
+    "DRSFRMACBS_pct",
+    "UNRATE_pct",
+    "ICSA_thou"
   ];
+
+  const defs = {
+    "DRCCLACBS_pct": { title:"Card 30+ Delinquency", sub:"FRED: DRCCLACBS (%, quarterly)", fmt:"pct", direction:+1 },
+    "CORCCACBS_pct": { title:"Net Charge-off Rate", sub:"FRED: CORCCACBS (%, quarterly)", fmt:"pct", direction:+1 },
+    "REVOLSL_bil_usd": { title:"Revolving Consumer Credit", sub:"FRED: REVOLSL ($B, monthly)", fmt:"usd_b", direction:+1 },
+    "JTSJOL_mil": { title:"Job Openings", sub:"FRED: JTSJOL (millions, monthly)", fmt:"mil", direction:-1 },
+    "TDSP_pct": { title:"Debt Service Burden", sub:"FRED: TDSP (%, quarterly)", fmt:"pct", direction:+1 },
+    "DRSFRMACBS_pct": { title:"Mortgage 30+ Delinquency", sub:"FRED: DRSFRMACBS (%, quarterly)", fmt:"pct", direction:+1 },
+    "UNRATE_pct": { title:"Unemployment Rate", sub:"FRED: UNRATE (%, monthly)", fmt:"pct", direction:+1 },
+    "ICSA_thou": { title:"Initial Jobless Claims", sub:"FRED: ICSA (thousands, weekly)", fmt:"thou", direction:+1 },
+  };
 
   const grid = document.getElementById("kpiGrid");
   grid.innerHTML = "";
 
-  const statuses = [];
+  for (const key of order){
+    const d = defs[key];
+    const latest = latestPoint(raw, key);
 
-  for (const d of defs){
-    const latest = latestPoint(raw, d.key);
-    if (!latest) continue;
-
-    const oneYrAgo = new Date(latest.date.getTime());
-    oneYrAgo.setFullYear(oneYrAgo.getFullYear() - 1);
-    const prior = nearestPointAtOrBefore(raw, d.key, oneYrAgo);
-
-    const tenYrAgo = new Date(latest.date.getTime());
-    tenYrAgo.setFullYear(tenYrAgo.getFullYear() - 10);
-    const vals10y = windowValues(raw, d.key, tenYrAgo);
-    const avg10y = vals10y.length ? mean(vals10y) : latest.value;
-    const sd10y  = vals10y.length ? std(vals10y) : 0;
-
-    const status = classify(latest.value, avg10y, sd10y, d.direction);
-    statuses.push(status);
-
-    // delta: show both absolute and percent change (clear units)
-    const deltaAbs = (prior ? (latest.value - prior.value) : null);
-    const deltaPct = (prior && prior.value !== 0) ? ((latest.value - prior.value) / Math.abs(prior.value)) * 100 : null;
-
-    // sparkline: last ~24 points (or fewer)
-    const sparkPts = raw
-      .filter(r => r[d.key] !== null && r[d.key] !== undefined && !Number.isNaN(r[d.key]))
-      .slice(-24)
-      .map((r) => ({ y: Number(r[d.key]) }));
+    // pull status/deltas from metrics (preferred), fall back to calc
+    const mrow = (metrics || []).find(x => x.key === key);
+    const status = mrow?.status || (latest ? "healthy" : "healthy");
 
     const card = document.createElement("div");
     card.className = "kpicard";
+
+    if (!latest){
+      card.innerHTML = `
+        <div class="kpihead">
+          <div>
+            <div class="kpititle">${d.title}</div>
+            <div class="kpisub">${d.sub}</div>
+          </div>
+          <span class="badge healthy">Healthy</span>
+        </div>
+        <div class="kpivalue">—</div>
+        <div class="kpimeta"><span>No data available.</span></div>
+      `;
+      grid.appendChild(card);
+      continue;
+    }
+
+    const oneYrAgo = new Date(latest.date.getTime()); oneYrAgo.setFullYear(oneYrAgo.getFullYear() - 1);
+    const prior = nearestPointAtOrBefore(raw, key, oneYrAgo);
+
+    const tenYrAgo = new Date(latest.date.getTime()); tenYrAgo.setFullYear(tenYrAgo.getFullYear() - 10);
+    const vals10y = windowValues(raw, key, tenYrAgo);
+    const avg10y = (mrow && mrow.avg_10y != null) ? Number(mrow.avg_10y) : (vals10y.length ? mean(vals10y) : latest.value);
+
+    // 1y delta displayed in:
+    // - absolute units (pp for pct series, otherwise native units)
+    // - and % change in parentheses if available
+    const deltaAbs = (mrow && mrow.delta_1y_abs != null) ? Number(mrow.delta_1y_abs) : (prior ? (latest.value - prior.value) : null);
+    const deltaPct = (mrow && mrow.delta_1y_pct != null) ? Number(mrow.delta_1y_pct) : null;
+
+    const badgeText = status === "healthy" ? "Healthy" : status === "tripwire" ? "Tripwire" : "Stress";
+
+    // Sparkline = last 24 points for monthly/weekly; last 20 for quarterly.
+    const maxPts = (key.includes("ICSA") ? 30 : (key.includes("JTSJOL") || key.includes("UNRATE") || key.includes("REVOLSL") ? 24 : 20));
+    const pts = raw
+      .filter(r => r[key] !== null && r[key] !== undefined && !Number.isNaN(r[key]))
+      .slice(-maxPts)
+      .map(r => ({ x: new Date(r.date+"T00:00:00").getTime(), y: Number(r[key]) }));
+
     card.innerHTML = `
       <div class="kpihead">
         <div>
           <div class="kpititle">${d.title}</div>
           <div class="kpisub">${d.sub}</div>
         </div>
+        <span class="badge ${status}">${badgeText}</span>
       </div>
-      <span class="badge ${status}">${status === "healthy" ? "Healthy" : status === "tripwire" ? "Tripwire" : "Stress"}</span>
 
       <div class="kpivalue">${fmtValue(latest.value, d.fmt)}</div>
+
       <div class="kpimeta">
-        <span>As of: <b style="color:#fff">${fmtDate(latest.date)}</b></span>
-        <span>10y avg: ${fmtValue(avg10y, d.fmt)}</span>
+        <span>As of: <b>${fmtDate(latest.date)}</b></span>
+        <span>10y avg: <b>${fmtValue(avg10y, d.fmt)}</b></span>
+        ${
+          deltaAbs === null ? "" :
+          `<span>Δ 1y: <b>${
+            d.fmt === "pct" ? fmtNum(deltaAbs,2) + "pp" : fmtValue(deltaAbs, d.fmt)
+          }</b>${deltaPct === null ? "" : ` <span style="color:rgba(229,231,235,0.75)">(${fmtNum(deltaPct,1)}%)</span>`}</span>`
+        }
       </div>
-      <svg class="spark" aria-hidden="true"></svg>
-      <div class="kpimeta">
-        <span>Δ 1y: ${
-          deltaAbs === null ? "—" :
-          (d.fmt === "pct" ? fmtValue(deltaAbs, "pp") : fmtValue(deltaAbs, d.fmt))
-        } ${deltaPct === null ? "" : `(${deltaPct.toFixed(1)}%)`}</span>
+
+      <div class="kpisparkwrap">
+        <svg class="spark" viewBox="0 0 200 44" preserveAspectRatio="none"></svg>
       </div>
     `;
 
     grid.appendChild(card);
-    const sparkSvg = card.querySelector(".spark");
-    if (sparkPts.length >= 2) buildSparkline(sparkSvg, sparkPts);
+
+    // draw spark
+    const svg = card.querySelector("svg.spark");
+    if (pts.length >= 2) buildSpark(svg, pts);
   }
-
-  // overall badge: simple composite
-  const score = statuses.reduce((acc, s) => acc + (s === "healthy" ? 0 : s === "tripwire" ? 1 : 2), 0);
-  let overall = "healthy";
-  if (score >= 8) overall = "stress";
-  else if (score >= 4) overall = "tripwire";
-
-  const el = document.getElementById("overall");
-  el.className = `overallBadge ${overall}`;
-  el.textContent = `Overall: ${overall === "healthy" ? "Healthy" : overall === "tripwire" ? "Tripwire / Watch" : "Stress"}`;
 }
 
-/* ---------------- news render ---------------- */
-function renderNews(items){
-  function renderList(elId, filterCat){
-    const el = document.getElementById(elId);
-    const subset = items.filter(x => x.category === filterCat).slice(0, 6);
-    if (!subset.length){
-      el.innerHTML = `<div class="newsMeta">No headlines available.</div>`;
-      return;
-    }
-    el.innerHTML = "";
-    for (const it of subset){
-      const div = document.createElement("div");
-      div.className = "newsItem";
-      div.innerHTML = `
-        <a href="${it.url}" target="_blank" rel="noopener noreferrer">${it.title}</a>
-        <div class="subline">${it.source} • ${it.published}</div>
-      `;
-      el.appendChild(div);
-    }
-  }
-  renderList("newsCredit", "credit");
-  renderList("newsLabor", "labor");
-}
-
-/* ---------------- chart registry ---------------- */
-const CHARTS = [
-  {
-    key: "DRCCLACBS_pct",
-    title: "Card 30+ Delinquency (All banks)",
-    sub: "FRED: DRCCLACBS (quarterly, %)",
-    desc: "Share of card balances at least 30 days past due — often an early consumer stress signal.",
-    fmt: "pct",
-  },
-  {
-    key: "CORCCACBS_pct",
-    title: "Net Charge-off Rate (All banks)",
-    sub: "FRED: CORCCACBS (quarterly, %)",
-    desc: "Portion of card loans written off as uncollectible — tends to lag delinquencies but confirms deterioration.",
-    fmt: "pct",
-  },
-  {
-    key: "REVOLSL_bil_usd",
-    title: "Revolving Consumer Credit",
-    sub: "FRED: REVOLSL (monthly, $ billions)",
-    desc: "Total revolving credit outstanding — can rise when households lean on cards to bridge expenses.",
-    fmt: "usd_b",
-  },
-  {
-    key: "TDSP_pct",
-    title: "Debt Service Burden (Households)",
-    sub: "FRED: TDSP (quarterly, %)",
-    desc: "Household debt payments as a % of disposable income — a ‘squeeze’ measure that can rise before delinquencies spike.",
-    fmt: "pct",
-  },
-  {
-    key: "DRSFRMACBS_pct",
-    title: "Mortgage Delinquency (Single-family, all banks)",
-    sub: "FRED: DRSFRMACBS (quarterly, %)",
-    desc: "Delinquency rate on single-family residential mortgages at commercial banks — lagging, but a strong confirmation signal.",
-    fmt: "pct",
-  },
-  {
-    key: "JTSJOL_mil",
-    title: "Job Openings (Total nonfarm)",
-    sub: "FRED: JTSJOL (monthly, millions)",
-    desc: "Labor demand proxy — weakens as hiring appetite drops (lower is worse for the labor market).",
-    fmt: "mil",
-  },
-  {
-    key: "UNRATE_pct",
-    title: "Unemployment Rate",
-    sub: "FRED: UNRATE (monthly, %)",
-    desc: "Broad unemployment measure — tends to lag, but persistent increases typically worsen credit performance.",
-    fmt: "pct",
-  },
-  {
-    key: "ICSA_k",
-    title: "Initial Jobless Claims",
-    sub: "FRED: ICSA (weekly, thousands)",
-    desc: "Faster-turn labor stress signal — spikes can precede unemployment increases.",
-    fmt: "k",
-  },
-  {
-    key: "DSPIC96_bil_usd",
-    title: "Real Disposable Personal Income",
-    sub: "FRED: DSPIC96 (monthly, $ billions)",
-    desc: "Inflation-adjusted income available to households — falling levels can pressure debt repayment capacity.",
-    fmt: "usd_b",
-  },
-];
-
-function renderCharts(raw){
-  const grid = document.getElementById("chartGrid");
+/* -------------------------
+   News rendering
+------------------------- */
+function renderNews(news){
+  const grid = document.getElementById("newsGrid");
   grid.innerHTML = "";
-  for (const c of CHARTS){
+
+  const sections = news?.sections || {};
+  const sectionNames = Object.keys(sections);
+
+  if (!sectionNames.length){
+    const c = document.createElement("div");
+    c.className = "newscard";
+    c.innerHTML = `<div class="newshead"><div class="newstitle">News feed</div><div class="newsmeta">auto-updated weekly</div></div>
+                   <div class="newsmeta" style="margin-top:10px;">No headlines available.</div>`;
+    grid.appendChild(c);
+    return;
+  }
+
+  for (const name of sectionNames){
+    const items = sections[name] || [];
     const card = document.createElement("div");
-    card.className = "chartcard";
+    card.className = "newscard";
     card.innerHTML = `
-      <div class="charthead">
-        <div class="charttitle">${c.title}</div>
-        <div class="chartsub">${c.sub}</div>
+      <div class="newshead">
+        <div class="newstitle">${name}</div>
+        <div class="newsmeta">auto-updated weekly</div>
       </div>
-      <div class="chartdesc">${c.desc}</div>
-      <div class="svgwrap" data-series="${c.key}" data-format="${c.fmt}">
-        <div class="tooltip"></div>
-        <svg class="interactive" viewBox="0 0 640 220" preserveAspectRatio="none"></svg>
-      </div>
+      <ul class="newslist"></ul>
     `;
+    const ul = card.querySelector(".newslist");
+
+    if (!items.length){
+      const li = document.createElement("li");
+      li.className = "newsitem";
+      li.innerHTML = `<div class="newsmeta">No headlines available.</div>`;
+      ul.appendChild(li);
+    } else {
+      for (const it of items.slice(0,6)){
+        const li = document.createElement("li");
+        li.className = "newsitem";
+        const when = it.published_utc ? new Date(it.published_utc).toUTCString() : "";
+        li.innerHTML = `
+          <a href="${it.link}" target="_blank" rel="noopener noreferrer">${it.title || "Untitled"}</a>
+          <div class="subline">${it.source || ""}${when ? " • " + when : ""}</div>
+        `;
+        ul.appendChild(li);
+      }
+    }
     grid.appendChild(card);
   }
-  document.querySelectorAll('.svgwrap').forEach(el => buildChart(el, raw));
 }
 
-/* ---------------- main ---------------- */
-async function main() {
-  const resp = await fetch('data.json', { cache: 'no-store' });
-  if (!resp.ok) throw new Error("Failed to load data.json");
+/* -------------------------
+   Main
+------------------------- */
+async function main(){
+  const resp = await fetch("data.json", { cache:"no-store" });
   const payload = await resp.json();
 
   const lu = payload?.meta?.last_updated_utc;
-  if (lu) document.getElementById('lastUpdated').textContent = ` (Last updated: ${lu})`;
+  if (lu) document.getElementById("lastUpdated").textContent = `(Last updated: ${lu})`;
 
+  renderOverall(payload.meta || {});
   const raw = payload.data || [];
-  renderKPI(raw);
-  renderCharts(raw);
+  const metrics = payload.metrics || [];
+  renderKPI(raw, metrics);
+
+  // trends
+  document.querySelectorAll(".svgwrap").forEach(el => buildChart(el, raw));
 
   // news
   try{
-    const nr = await fetch('news.json', { cache: 'no-store' });
-    if (!nr.ok) throw new Error("news.json not found");
-    const news = await nr.json();
-    renderNews(news.items || []);
+    const nresp = await fetch("news.json", { cache:"no-store" });
+    const news = await nresp.json();
+    renderNews(news);
   }catch(e){
-    document.getElementById("newsCredit").innerHTML = `<div class="newsMeta">News feed unavailable.</div>`;
-    document.getElementById("newsLabor").innerHTML = `<div class="newsMeta">News feed unavailable.</div>`;
+    renderNews({ sections: {} });
   }
 }
 
 main().catch(err => {
   console.error(err);
-  document.getElementById('lastUpdated').textContent = ' (Data failed to load)';
-  document.getElementById("kpiGrid").innerHTML = `<div class="newsMeta">Dashboard data failed to load. Check <code>data.json</code>.</div>`;
+  document.getElementById("lastUpdated").textContent = "(Data failed to load)";
 });
 </script>
 </body>
