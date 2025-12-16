@@ -1,377 +1,348 @@
 #!/usr/bin/env python3
 """
-update_data.py
+Macro–Credit Dashboard updater
 
-Generates dashboard artifacts in the REPO ROOT:
-  - data.json  (dashboard reads this)
-  - news.json  (RSS-based headlines; dashboard reads this)
-  - macro_credit_metrics.xlsx (metrics tab)
-  - macro_credit_timeseries.xlsx (metrics + timeseries)
+Outputs (repo root):
+- data.json
+- news.json
+- macro_credit_timeseries.xlsx
+- macro_credit_metrics.xlsx
 
-Notes:
-- No git commands belong in this file. Committing is handled by the GitHub Action workflow.
-- Uses FRED "fredgraph.csv" endpoints (no API key required).
+Data sources:
+- FRED CSV (fredgraph.csv) for time series
+- RSS feeds for headlines
+
+Designed to run in GitHub Actions weekly + manual dispatch.
 """
 
 from __future__ import annotations
 
 import json
 import math
+import os
+import sys
+from dataclasses import dataclass
 from datetime import datetime, timezone
 from typing import Dict, List, Optional, Tuple
 
 import pandas as pd
 import requests
-import xml.etree.ElementTree as ET
-from io import StringIO
+
+# Optional dependency (we install it in workflow)
+try:
+    import feedparser  # type: ignore
+except Exception:
+    feedparser = None
 
 
-# -----------------------------
-# Configuration
-# -----------------------------
+# -------------------------
+# Config
+# -------------------------
 
 FRED_CSV_URL = "https://fred.stlouisfed.org/graph/fredgraph.csv?id={series_id}"
 
-SERIES_CONFIG = {
-    # quarterly %, already percent units
-    "DRCCLACBS_pct": {
-        "fred_id": "DRCCLACBS",
-        "transform": lambda s: s,
-        "notes": "FRED DRCCLACBS (quarterly, %)"
-    },
-    "CORCCACBS_pct": {
-        "fred_id": "CORCCACBS",
-        "transform": lambda s: s,
-        "notes": "FRED CORCCACBS (quarterly, %)"
-    },
-    # JTSJOL on FRED is in thousands of persons -> convert to millions
-    "JTSJOL_mil": {
-        "fred_id": "JTSJOL",
-        "transform": lambda s: s / 1000.0,
-        "notes": "FRED JTSJOL (monthly, thousands -> millions)"
-    },
-    # REVOLSL on FRED is in $ billions -> keep as $B
-    "REVOLSL_bil_usd": {
-        "fred_id": "REVOLSL",
-        "transform": lambda s: s,
-        "notes": "FRED REVOLSL (monthly, $ billions)"
-    },
-}
+OUTPUT_DATA_JSON = "data.json"
+OUTPUT_NEWS_JSON = "news.json"
+OUTPUT_TIMESERIES_XLSX = "macro_credit_timeseries.xlsx"
+OUTPUT_METRICS_XLSX = "macro_credit_metrics.xlsx"
 
-# direction: +1 means "higher is worse", -1 means "lower is worse"
-METRIC_DEFS = [
-    {"key": "DRCCLACBS_pct", "title": "Card 30+ Delinquency", "unit": "pct", "direction": +1},
-    {"key": "CORCCACBS_pct", "title": "Net Charge-off Rate", "unit": "pct", "direction": +1},
-    {"key": "JTSJOL_mil", "title": "Job Openings", "unit": "mil", "direction": -1},
-    {"key": "REVOLSL_bil_usd", "title": "Revolving Consumer Credit", "unit": "usd_b", "direction": +1},
+USER_AGENT = "macro-credit-dashboard/1.0 (github actions)"
+
+REQUEST_TIMEOUT = 30
+
+
+@dataclass(frozen=True)
+class SeriesDef:
+    series_id: str
+    out_key: str
+    frequency: str
+    units_note: str
+
+
+# KPI + chart series we persist into data.json.
+# NOTE: KPI tiles are computed in index.html, but we keep a single canonical dataset.
+SERIES: List[SeriesDef] = [
+    SeriesDef("DRCCLACBS", "DRCCLACBS_pct", "quarterly", "Card Delinquency Rate, 30+ Days Past Due (%)."),
+    SeriesDef("CORCCACBS", "CORCCACBS_pct", "quarterly", "Net Charge-off Rate on Credit Card Loans (%)."),
+    SeriesDef("TDSP", "TDSP_pct", "quarterly", "Household Debt Service Payments as a Percent of Disposable Personal Income (%)."),
+    SeriesDef("JTSJOL", "JTSJOL_mil", "monthly", "Job Openings: Total Nonfarm (millions)."),
+    SeriesDef("REVOLSL", "REVOLSL_bil_usd", "monthly", "Revolving Consumer Credit Outstanding ($ billions)."),
 ]
 
-# RSS feeds (RSS avoids CORS; the Action writes news.json; index.html fetches it)
-RSS_FEEDS: List[Tuple[str, str]] = [
+# RSS feeds (reputable, stable). CNBC provides RSS; Yahoo Finance provides RSS topics; Reuters RSS can be inconsistent.
+# If you want more sources later, add them here.
+NEWS_FEEDS: List[Tuple[str, str]] = [
     ("CNBC Top News", "https://www.cnbc.com/id/100003114/device/rss/rss.html"),
     ("CNBC Economy", "https://www.cnbc.com/id/20910258/device/rss/rss.html"),
-    ("Yahoo Finance", "https://finance.yahoo.com/news/rss"),
+    ("Yahoo Finance - Economy", "https://finance.yahoo.com/news/rssindex"),
 ]
 
+# Basic keyword routing into two columns (optional, used by the HTML layout you now have)
+NEWS_BUCKETS = {
+    "Credit / consumer stress": ["credit", "consumer", "delinquen", "charge-off", "loan", "debt", "card", "bank", "default"],
+    "Labor / macro signals": ["jobs", "job", "labor", "unemploy", "layoff", "inflation", "fed", "rates", "growth", "recession"],
+}
 
-# -----------------------------
+
+# -------------------------
 # Helpers
-# -----------------------------
+# -------------------------
 
-def utc_now_iso() -> str:
-    return datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+def _now_utc_iso() -> str:
+    return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+
+
+def _http_get(url: str) -> requests.Response:
+    headers = {"User-Agent": USER_AGENT}
+    r = requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT)
+    r.raise_for_status()
+    return r
 
 
 def fetch_fred_series(series_id: str) -> pd.DataFrame:
     """
-    Fetch a single FRED series via fredgraph.csv (no API key).
-    Robust to header name differences.
-    Returns df with columns: date (datetime64), value (float)
+    Fetch FRED series as a DataFrame with columns:
+      - date (YYYY-MM-DD)
+      - value (float or NaN)
+    Robust to unexpected header names.
     """
     url = FRED_CSV_URL.format(series_id=series_id)
-    r = requests.get(url, timeout=30, headers={"User-Agent": "Mozilla/5.0"})
-    r.raise_for_status()
+    r = _http_get(url)
 
-    df = pd.read_csv(StringIO(r.text))
+    # Some FRED responses can have BOM or weird leading spaces.
+    text = r.text.strip()
+    if not text:
+        raise ValueError(f"Empty response from FRED for {series_id}")
 
-    # ---- Robust date column detection ----
+    from io import StringIO
+    df = pd.read_csv(StringIO(text))
+
+    # Try to identify date + value columns robustly
+    cols = [c.strip() for c in df.columns.tolist()]
+    df.columns = cols
+
+    # Expected: DATE and {series_id}
     date_col = None
-    for c in df.columns:
-        c_low = c.lower()
-        if c_low in ("date", "observation_date", "time"):
-            date_col = c
+    for candidate in ["DATE", "date", "Date"]:
+        if candidate in df.columns:
+            date_col = candidate
             break
-
     if date_col is None:
-        raise ValueError(
-            f"Unexpected FRED CSV format for {series_id}: no recognizable date column. "
-            f"Columns={list(df.columns)}"
-        )
+        # fallback: first column
+        date_col = df.columns[0]
 
-    # ---- Value column = first non-date column ----
-    value_cols = [c for c in df.columns if c != date_col]
-    if not value_cols:
-        raise ValueError(
-            f"Unexpected FRED CSV format for {series_id}: missing value column. "
-            f"Columns={list(df.columns)}"
-        )
+    value_col = None
+    if series_id in df.columns:
+        value_col = series_id
+    else:
+        # fallback: second column if present
+        if len(df.columns) >= 2:
+            value_col = df.columns[1]
+        else:
+            raise ValueError(f"Unexpected FRED CSV format for {series_id}: columns={df.columns.tolist()}")
 
-    val_col = value_cols[0]
+    out = df[[date_col, value_col]].copy()
+    out.rename(columns={date_col: "date", value_col: "value"}, inplace=True)
 
-    df = df.rename(columns={date_col: "date", val_col: "value"})
-    df["date"] = pd.to_datetime(df["date"], errors="coerce")
-    df["value"] = pd.to_numeric(df["value"], errors="coerce")
+    out["date"] = pd.to_datetime(out["date"], errors="coerce").dt.date.astype(str)
 
-    df = df.dropna(subset=["date"]).sort_values("date").reset_index(drop=True)
-    return df
-
-
-def to_month_start(d: pd.Timestamp) -> pd.Timestamp:
-    return pd.Timestamp(year=d.year, month=d.month, day=1)
-
-
-def build_monthly_index(start: pd.Timestamp, end: pd.Timestamp) -> pd.DatetimeIndex:
-    return pd.date_range(to_month_start(start), to_month_start(end), freq="MS")
-
-
-def mean(arr: List[float]) -> float:
-    return sum(arr) / len(arr)
-
-
-def std_pop(arr: List[float]) -> float:
-    """Population standard deviation (ddof=0)"""
-    if len(arr) < 2:
-        return 0.0
-    m = mean(arr)
-    v = mean([(x - m) ** 2 for x in arr])
-    return math.sqrt(v)
-
-
-def zscore_classify(current: float, avg: float, sd: float, direction: int) -> str:
-    """
-    Tripwire if risk >= 1.0, Stress if risk >= 2.0
-    risk = direction * z
-      - direction +1: higher is worse
-      - direction -1: lower is worse
-    """
-    if sd is None or sd == 0 or math.isnan(sd):
-        return "healthy"
-    z = (current - avg) / sd
-    risk = direction * z
-    if risk >= 2.0:
-        return "stress"
-    if risk >= 1.0:
-        return "tripwire"
-    return "healthy"
-
-
-def last_non_null(series: pd.Series) -> Tuple[Optional[pd.Timestamp], Optional[float]]:
-    s = series.dropna()
-    if s.empty:
-        return None, None
-    idx = s.index[-1]
-    return idx, float(s.iloc[-1])
-
-
-def nearest_at_or_before(series: pd.Series, target_date: pd.Timestamp) -> Tuple[Optional[pd.Timestamp], Optional[float]]:
-    s = series.dropna()
-    if s.empty:
-        return None, None
-    s = s[s.index <= target_date]
-    if s.empty:
-        return None, None
-    idx = s.index[-1]
-    return idx, float(s.iloc[-1])
-
-
-def compute_10y_window(series: pd.Series, end_date: pd.Timestamp) -> pd.Series:
-    start = end_date - pd.DateOffset(years=10)
-    return series[(series.index >= start) & (series.index <= end_date)].dropna()
-
-
-# -----------------------------
-# News builder (RSS -> news.json)
-# -----------------------------
-
-def fetch_rss_items(url: str, limit: int = 6) -> List[Dict[str, str]]:
-    r = requests.get(url, timeout=25, headers={"User-Agent": "Mozilla/5.0"})
-    r.raise_for_status()
-    root = ET.fromstring(r.text)
-
-    items: List[Dict[str, str]] = []
-    for item in root.findall(".//item")[:limit]:
-        title = (item.findtext("title") or "").strip()
-        link = (item.findtext("link") or "").strip()
-        pub = (item.findtext("pubDate") or "").strip()
-        if title and link:
-            items.append({"title": title, "link": link, "date": pub})
-    return items
-
-
-def build_news_json(out_path: str = "news.json") -> None:
-    payload = {"meta": {"generated_utc": utc_now_iso()}, "items": []}
-
-    for source, url in RSS_FEEDS:
+    def _coerce(v):
+        if isinstance(v, str):
+            v = v.strip()
+            if v in (".", "", "NaN", "nan"):
+                return math.nan
         try:
-            for it in fetch_rss_items(url, limit=6):
-                it["source"] = source
-                payload["items"].append(it)
+            return float(v)
         except Exception:
-            # Don't fail the whole pipeline if a feed is down
-            payload["items"].append({
-                "title": f"(Feed unavailable: {source})",
-                "link": url,
-                "date": "",
-                "source": source
-            })
+            return math.nan
 
-    payload["items"] = payload["items"][:12]
-    with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(payload, f, ensure_ascii=False, indent=2)
+    out["value"] = out["value"].apply(_coerce)
+
+    # Drop rows with invalid dates
+    out = out[out["date"].notna() & (out["date"] != "NaT")]
+
+    return out
 
 
-# -----------------------------
-# Main
-# -----------------------------
+def build_news() -> Dict:
+    """
+    Build a small news.json feed using RSS.
+    Output format expected by index.html:
+      { "meta": {...}, "items": [...], "buckets": {bucket: [items...] } }
+    """
+    meta = {"last_updated_utc": _now_utc_iso(), "sources": []}
+
+    if feedparser is None:
+        # Provide a valid file that tells the UI it isn't available.
+        return {"meta": meta, "items": [], "buckets": {}}
+
+    items: List[Dict] = []
+
+    for source_name, url in NEWS_FEEDS:
+        try:
+            d = feedparser.parse(url)
+            meta["sources"].append({"name": source_name, "url": url})
+            for e in d.entries[:20]:
+                title = (getattr(e, "title", "") or "").strip()
+                link = (getattr(e, "link", "") or "").strip()
+                published = (getattr(e, "published", "") or getattr(e, "updated", "") or "").strip()
+                if not title or not link:
+                    continue
+                items.append(
+                    {
+                        "source": source_name,
+                        "title": title,
+                        "url": link,
+                        "published": published,
+                    }
+                )
+        except Exception:
+            # ignore feed errors; we still write a file
+            continue
+
+    # De-dupe by URL
+    seen = set()
+    deduped = []
+    for it in items:
+        if it["url"] in seen:
+            continue
+        seen.add(it["url"])
+        deduped.append(it)
+
+    # Bucket items by keywords
+    buckets: Dict[str, List[Dict]] = {k: [] for k in NEWS_BUCKETS.keys()}
+    for it in deduped:
+        t = it["title"].lower()
+        placed = False
+        for bucket, keys in NEWS_BUCKETS.items():
+            if any(k in t for k in keys):
+                buckets[bucket].append(it)
+                placed = True
+                break
+        if not placed:
+            # put unclassified into labor/macro by default
+            buckets["Labor / macro signals"].append(it)
+
+    # Trim to reasonable sizes
+    for k in buckets:
+        buckets[k] = buckets[k][:8]
+
+    return {"meta": meta, "items": deduped[:30], "buckets": buckets}
+
 
 def main() -> None:
-    # 1) Fetch series and track global date range
-    raw_series: Dict[str, pd.Series] = {}
+    # Fetch and join series
+    series_frames: List[pd.DataFrame] = []
     source_notes: Dict[str, str] = {}
 
-    min_date: Optional[pd.Timestamp] = None
-    max_date: Optional[pd.Timestamp] = None
+    for s in SERIES:
+        df = fetch_fred_series(s.series_id)
+        df.rename(columns={"value": s.out_key}, inplace=True)
+        series_frames.append(df)
+        source_notes[s.out_key] = f"FRED {s.series_id} ({s.frequency}) — {s.units_note}"
 
-    for dash_key, cfg in SERIES_CONFIG.items():
-        fred_id = cfg["fred_id"]
-        df = fetch_fred_series(fred_id)
+    # Outer join on date (string YYYY-MM-DD)
+    merged = None
+    for df in series_frames:
+        merged = df if merged is None else merged.merge(df, on="date", how="outer")
 
-        df["value"] = cfg["transform"](df["value"].astype(float))
-        df = df.dropna(subset=["value"]).copy()
+    assert merged is not None
+    merged.sort_values("date", inplace=True)
 
-        if df.empty:
-            raw_series[dash_key] = pd.Series(dtype=float)
-        else:
-            s = pd.Series(df["value"].values, index=pd.to_datetime(df["date"]))
-            s = s.sort_index()
-            raw_series[dash_key] = s
+    # Keep numeric columns as floats, ensure NaNs rather than None
+    for s in SERIES:
+        merged[s.out_key] = pd.to_numeric(merged[s.out_key], errors="coerce")
 
-            d0 = s.index.min()
-            d1 = s.index.max()
-            min_date = d0 if min_date is None else min(min_date, d0)
-            max_date = d1 if max_date is None else max(max_date, d1)
-
-        source_notes[dash_key] = cfg.get("notes", f"FRED {fred_id}")
-
-    if min_date is None or max_date is None:
-        raise RuntimeError("No data fetched from FRED (all series empty).")
-
-    # 2) Build monthly master frame
-    master_idx = build_monthly_index(min_date, max_date)
-    master = pd.DataFrame(index=master_idx)
-    master.index.name = "date"
-
-    # 3) Map series to month-start and forward-fill into monthly frame
-    for dash_key, s in raw_series.items():
-        if s.empty:
-            master[dash_key] = pd.NA
-            continue
-
-        s2 = s.copy()
-        s2.index = s2.index.map(to_month_start)
-        s2 = s2[~s2.index.duplicated(keep="last")].sort_index()
-
-        m = s2.reindex(master_idx).astype(float).ffill()
-        master[dash_key] = m
-
-    # 4) Compute metric rows for summary + export
-    metrics_rows: List[Dict[str, object]] = []
-
-    for md in METRIC_DEFS:
-        key = md["key"]
-        series = master[key].astype(float)
-
-        latest_dt, latest_val = last_non_null(series)
-        if latest_dt is None or latest_val is None:
-            continue
-
-        teny = compute_10y_window(series, latest_dt)
-        vals = teny.dropna().tolist()
-        avg10 = mean(vals) if vals else float(latest_val)
-        sd10 = std_pop(vals) if vals else 0.0
-
-        status = zscore_classify(float(latest_val), float(avg10), float(sd10), int(md["direction"]))
-
-        one_year_ago = latest_dt - pd.DateOffset(years=1)
-        prior_dt, prior_val = nearest_at_or_before(series, one_year_ago)
-
-        delta_abs = None
-        delta_pct = None
-        if prior_val is not None:
-            delta_abs = float(latest_val - prior_val)
-            if prior_val != 0:
-                delta_pct = float((latest_val - prior_val) / abs(prior_val) * 100.0)
-
-        metrics_rows.append({
-            "metric_key": key,
-            "title": md["title"],
-            "unit": md["unit"],
-            "direction": int(md["direction"]),
-            "latest_date": latest_dt.strftime("%Y-%m-%d"),
-            "latest_value": float(latest_val),
-            "avg_10y": float(avg10),
-            "sd_10y": float(sd10),
-            "status": status,
-            # For pct series: delta_1y_abs is in percentage points (pp)
-            "delta_1y_abs": delta_abs if delta_abs is not None else pd.NA,
-            "delta_1y_pct": delta_pct if delta_pct is not None else pd.NA,
-            "source_note": source_notes.get(key, ""),
-        })
-
-    metrics_df = pd.DataFrame(metrics_rows)
-
-    # 5) Write data.json
-    out_data: List[Dict[str, object]] = []
-    master_reset = master.reset_index()
-    for _, row in master_reset.iterrows():
-        d: Dict[str, object] = {"date": row["date"].strftime("%Y-%m-%d")}
-        for k in SERIES_CONFIG.keys():
-            v = row.get(k, pd.NA)
-            d[k] = None if pd.isna(v) else float(v)
-        out_data.append(d)
-
+    # Build data.json payload
     payload = {
         "meta": {
-            "last_updated_utc": utc_now_iso(),
+            "last_updated_utc": _now_utc_iso(),
             "source_notes": source_notes,
-            "delta_notes": {
-                "pct_series_delta_abs_unit": "percentage points (pp)",
-                "delta_1y_pct_unit": "percent difference (%)"
-            }
         },
-        "data": out_data,
-        "metrics": metrics_rows
+        "data": merged.to_dict(orient="records"),
     }
 
-    with open("data.json", "w", encoding="utf-8") as f:
-        json.dump(payload, f, ensure_ascii=False, indent=2)
+    with open(OUTPUT_DATA_JSON, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False)
 
-    # 6) Write Excel outputs
-    with pd.ExcelWriter("macro_credit_metrics.xlsx", engine="openpyxl") as writer:
-        metrics_df.to_excel(writer, sheet_name="metrics", index=False)
+    # Build news.json
+    news_payload = build_news()
+    with open(OUTPUT_NEWS_JSON, "w", encoding="utf-8") as f:
+        json.dump(news_payload, f, ensure_ascii=False)
 
-    timeseries_df = master.reset_index()
-    timeseries_df["date"] = timeseries_df["date"].dt.strftime("%Y-%m-%d")
+    # Write Excel outputs
+    # 1) timeseries workbook
+    with pd.ExcelWriter(OUTPUT_TIMESERIES_XLSX, engine="openpyxl") as xw:
+        merged.to_excel(xw, sheet_name="timeseries", index=False)
+        # lightweight dictionary sheet
+        pd.DataFrame(
+            [{"field": k, "source": v} for k, v in source_notes.items()]
+        ).to_excel(xw, sheet_name="dictionary", index=False)
 
-    with pd.ExcelWriter("macro_credit_timeseries.xlsx", engine="openpyxl") as writer:
-        metrics_df.to_excel(writer, sheet_name="metrics", index=False)
-        timeseries_df.to_excel(writer, sheet_name="timeseries", index=False)
+    # 2) metrics workbook (keep "metrics" tab name because you referenced it earlier)
+    # We'll provide a "metrics" sheet that's the latest snapshot + 10y avg/std + 1y delta.
+    # (index.html calculates on the fly too; this is for your export.)
+    metric_rows = []
+    merged_dt = merged.copy()
+    merged_dt["date_dt"] = pd.to_datetime(merged_dt["date"], errors="coerce")
 
-    # 7) Write news.json
-    build_news_json("news.json")
+    def last_valid(col: str) -> Optional[pd.Series]:
+        s = merged_dt.dropna(subset=[col]).tail(1)
+        if s.empty:
+            return None
+        return s.iloc[0]
 
-    print("✅ Wrote: data.json, news.json, macro_credit_metrics.xlsx, macro_credit_timeseries.xlsx")
+    for s in SERIES:
+        lv = last_valid(s.out_key)
+        if lv is None:
+            continue
+        as_of = lv["date_dt"]
+        val = float(lv[s.out_key])
+
+        ten_years_ago = as_of - pd.DateOffset(years=10)
+        one_year_ago = as_of - pd.DateOffset(years=1)
+
+        w10 = merged_dt[(merged_dt["date_dt"] >= ten_years_ago) & (~merged_dt[s.out_key].isna())][s.out_key].astype(float).tolist()
+        avg10 = float(pd.Series(w10).mean()) if w10 else val
+        sd10 = float(pd.Series(w10).std(ddof=0)) if w10 else 0.0
+
+        # nearest at-or-before 1y
+        prior = merged_dt[(merged_dt["date_dt"] <= one_year_ago) & (~merged_dt[s.out_key].isna())].tail(1)
+        if prior.empty:
+            d1_abs = math.nan
+            d1_pct = math.nan
+        else:
+            pv = float(prior.iloc[0][s.out_key])
+            d1_abs = val - pv
+            d1_pct = ((val / pv) - 1.0) * 100.0 if pv not in (0.0, -0.0) else math.nan
+
+        metric_rows.append(
+            {
+                "field": s.out_key,
+                "fred_series_id": s.series_id,
+                "as_of": as_of.date().isoformat(),
+                "latest_value": val,
+                "avg_10y": avg10,
+                "std_10y": sd10,
+                "delta_1y_abs": d1_abs,
+                "delta_1y_pct": d1_pct,
+            }
+        )
+
+    metrics_df = pd.DataFrame(metric_rows)
+    with pd.ExcelWriter(OUTPUT_METRICS_XLSX, engine="openpyxl") as xw:
+        metrics_df.to_excel(xw, sheet_name="metrics", index=False)
+        pd.DataFrame(
+            [{"field": k, "source": v} for k, v in source_notes.items()]
+        ).to_excel(xw, sheet_name="dictionary", index=False)
+
+    print("Wrote:", OUTPUT_DATA_JSON, OUTPUT_NEWS_JSON, OUTPUT_TIMESERIES_XLSX, OUTPUT_METRICS_XLSX)
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        print("ERROR:", e, file=sys.stderr)
+        raise
+
