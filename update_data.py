@@ -11,14 +11,10 @@ import requests
 import pandas as pd
 
 try:
-    import feedparser  # installed in workflow
+    import feedparser
 except Exception:
     feedparser = None
 
-
-# ----------------------------
-# Config
-# ----------------------------
 
 FRED_API_KEY = os.getenv("FRED_API_KEY", "").strip()
 USER_AGENT = "Macro-Credit-Dashboard/1.0 (GitHub Actions)"
@@ -35,108 +31,47 @@ OUT_XLSX_TS = "macro_credit_timeseries.xlsx"
 @dataclass
 class SeriesDef:
     series_id: str
-    key: str                 # key used in data.json rows
+    key: str
     title: str
-    units: str               # "pct", "mil", "usd_b", "index", "usd_bil", etc.
-    freq: str                # "monthly" / "weekly" / "quarterly"
-    direction: int           # +1 higher=worse, -1 lower=worse
+    units: str        # "pct", "mil", "usd_b", "thou"
+    freq: str
+    direction: int    # +1 higher=worse, -1 lower=worse (used only for status)
     description: str
+    scale: float = 1.0  # applied to raw FRED values before storing (e.g., ICSA / 1000)
 
 
-# 8 KPI tiles (and also used for trends)
 SERIES: List[SeriesDef] = [
-    SeriesDef(
-        series_id="DRCCLACBS",
-        key="DRCCLACBS_pct",
-        title="Card 30+ Delinquency",
-        units="pct",
-        freq="quarterly",
-        direction=+1,
-        description="Share of credit card balances 30+ days past due (all banks)."
-    ),
-    SeriesDef(
-        series_id="CORCCACBS",
-        key="CORCCACBS_pct",
-        title="Net Charge-off Rate",
-        units="pct",
-        freq="quarterly",
-        direction=+1,
-        description="Share of card balances charged off as uncollectible (all banks)."
-    ),
-    SeriesDef(
-        series_id="REVOLSL",
-        key="REVOLSL_bil_usd",
-        title="Revolving Consumer Credit",
-        units="usd_b",
-        freq="monthly",
-        direction=+1,
-        description="Outstanding revolving consumer credit ($ billions)."
-    ),
-    SeriesDef(
-        series_id="TDSP",
-        key="TDSP_pct",
-        title="Debt Service Burden",
-        units="pct",
-        freq="quarterly",
-        direction=+1,
-        description="Household debt service payments as a share of disposable income."
-    ),
-    SeriesDef(
-        series_id="JTSJOL",
-        key="JTSJOL_mil",
-        title="Job Openings",
-        units="mil",
-        freq="monthly",
-        direction=-1,
-        description="Total nonfarm job openings (labor demand proxy; lower is worse)."
-    ),
-    SeriesDef(
-        series_id="UNRATE",
-        key="UNRATE_pct",
-        title="Unemployment Rate",
-        units="pct",
-        freq="monthly",
-        direction=+1,
-        description="Unemployment rate (U-3)."
-    ),
-    SeriesDef(
-        series_id="ICSA",
-        key="ICSA_thou",
-        title="Initial Jobless Claims",
-        units="thou",
-        freq="weekly",
-        direction=+1,
-        description="Weekly initial unemployment insurance claims (higher can signal stress)."
-    ),
-    # Mortgage delinquency (all banks). This one is common on FRED.
-    SeriesDef(
-        series_id="DRSFRMACBS",
-        key="DRSFRMACBS_pct",
-        title="Mortgage 30+ Delinquency",
-        units="pct",
-        freq="quarterly",
-        direction=+1,
-        description="Share of residential mortgage balances 30+ days past due (all banks)."
-    ),
+    SeriesDef("DRCCLACBS", "DRCCLACBS_pct", "Card 30+ Delinquency", "pct", "quarterly", +1,
+              "Share of credit card balances 30+ days past due (all banks).", 1.0),
+    SeriesDef("CORCCACBS", "CORCCACBS_pct", "Net Charge-off Rate", "pct", "quarterly", +1,
+              "Share of card balances charged off as uncollectible (all banks).", 1.0),
+    SeriesDef("REVOLSL", "REVOLSL_bil_usd", "Revolving Consumer Credit", "usd_b", "monthly", +1,
+              "Outstanding revolving consumer credit ($ billions).", 1.0),
+    SeriesDef("TDSP", "TDSP_pct", "Debt Service Burden", "pct", "quarterly", +1,
+              "Household debt service payments as a share of disposable income.", 1.0),
+    SeriesDef("JTSJOL", "JTSJOL_mil", "Job Openings", "mil", "monthly", -1,
+              "Total nonfarm job openings (labor demand proxy; lower is worse).", 1.0),
+    SeriesDef("UNRATE", "UNRATE_pct", "Unemployment Rate", "pct", "monthly", +1,
+              "Unemployment rate (U-3).", 1.0),
+    # FRED ICSA is a raw count; dashboard wants "thousands"
+    SeriesDef("ICSA", "ICSA_thou", "Initial Jobless Claims", "thou", "weekly", +1,
+              "Weekly initial unemployment insurance claims (higher can signal stress).", 1.0 / 1000.0),
+    SeriesDef("DRSFRMACBS", "DRSFRMACBS_pct", "Mortgage 30+ Delinquency", "pct", "quarterly", +1,
+              "Share of residential mortgage balances 30+ days past due (all banks).", 1.0),
 ]
 
-# News feed (RSS). Avoid scraping (more reliable, fewer ToS issues).
+
 NEWS_FEEDS = {
     "Credit / consumer stress": [
-        # You can add/remove sources; RSS is safest for Actions.
         "https://finance.yahoo.com/rss/topstories",
-        "https://www.cnbc.com/id/100003114/device/rss/rss.html",  # Top News
+        "https://www.cnbc.com/id/100003114/device/rss/rss.html",
     ],
     "Labor / macro signals": [
-        "https://www.cnbc.com/id/10001147/device/rss/rss.html",   # Economy
+        "https://www.cnbc.com/id/10001147/device/rss/rss.html",
         "https://finance.yahoo.com/rss/economy",
     ],
 }
 
-
-# ----------------------------
-# Helpers
-# ----------------------------
 
 def utc_now_iso() -> str:
     return dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
@@ -149,10 +84,6 @@ def http_get(url: str, params: Optional[dict] = None, timeout: int = 30) -> requ
 
 
 def fred_observations(series_id: str) -> pd.DataFrame:
-    """
-    Fetch observations via official FRED API.
-    Requires FRED_API_KEY (free).
-    """
     if not FRED_API_KEY:
         raise RuntimeError("FRED_API_KEY is missing. Add it as a GitHub Actions secret.")
 
@@ -161,7 +92,6 @@ def fred_observations(series_id: str) -> pd.DataFrame:
         "series_id": series_id,
         "api_key": FRED_API_KEY,
         "file_type": "json",
-        # keep it generous; we’ll slice later
         "observation_start": "2000-01-01",
     }
     data = http_get(url, params=params).json()
@@ -201,9 +131,6 @@ def safe_float(x) -> Optional[float]:
 
 
 def sanitize_records(records: List[dict]) -> List[dict]:
-    """
-    Ensure JSON-compliant output (no NaN/inf).
-    """
     clean = []
     for r in records:
         rr = {}
@@ -251,11 +178,6 @@ def values_since(df: pd.DataFrame, start_date: pd.Timestamp) -> List[float]:
 
 
 def classify(current: float, avg10: float, sd10: float, direction: int) -> str:
-    """
-    Tripwire = >= 1 sd “worse” than 10y mean
-    Stress   = >= 2 sd “worse” than 10y mean
-    direction: +1 higher=worse, -1 lower=worse
-    """
     if sd10 <= 0 or any(map(lambda z: z is None or math.isnan(z), [current, avg10, sd10])):
         return "healthy"
     z = (current - avg10) / sd10
@@ -268,14 +190,9 @@ def classify(current: float, avg10: float, sd10: float, direction: int) -> str:
 
 
 def fetch_news() -> dict:
-    """
-    Creates a compact RSS-based news.json:
-    { "generated_utc": ..., "sections": { "Title": [ {title, source, published_utc, link}, ... ] } }
-    """
     out = {"generated_utc": utc_now_iso(), "sections": {}}
 
     if feedparser is None:
-        # If dependency fails, return empty but valid object.
         for section in NEWS_FEEDS:
             out["sections"][section] = []
         return out
@@ -287,7 +204,6 @@ def fetch_news() -> dict:
             title = (e.get("title") or "").strip()
             link = (e.get("link") or "").strip()
             source = (d.feed.get("title") or "").strip()
-            # try to normalize time
             published = None
             if "published_parsed" in e and e.published_parsed:
                 published = dt.datetime.fromtimestamp(time.mktime(e.published_parsed), tz=dt.timezone.utc)
@@ -309,8 +225,6 @@ def fetch_news() -> dict:
                 agg.extend(parse_feed(url))
             except Exception:
                 continue
-
-        # simple sort: newest first when timestamp exists
         agg.sort(key=lambda x: x["published_utc"] or "", reverse=True)
         out["sections"][section] = agg[:10]
 
@@ -318,10 +232,6 @@ def fetch_news() -> dict:
 
 
 def build_timeseries_frame(series_frames: Dict[str, pd.DataFrame]) -> pd.DataFrame:
-    """
-    Union-merge series by date into one long time series table.
-    Output columns: date, <key1>, <key2>, ...
-    """
     base = None
     for s in SERIES:
         df = series_frames.get(s.key)
@@ -341,31 +251,15 @@ def build_timeseries_frame(series_frames: Dict[str, pd.DataFrame]) -> pd.DataFra
 
 
 def build_metrics_table(series_frames: Dict[str, pd.DataFrame]) -> pd.DataFrame:
-    """
-    Table with latest, 10y avg/sd, 1y delta in BOTH:
-      - delta_abs (pp for pct, same units otherwise)
-      - delta_pct (percent change vs 1y ago; where meaningful)
-    """
     rows = []
     for s in SERIES:
-        df = series_frames.get(s.key, pd.DataFrame(columns=["date", "value"]))
-        df = df.copy()
+        df = series_frames.get(s.key, pd.DataFrame(columns=["date", "value"])).copy()
         if df.empty:
             rows.append({
-                "key": s.key,
-                "series_id": s.series_id,
-                "title": s.title,
-                "units": s.units,
-                "freq": s.freq,
-                "direction": s.direction,
-                "latest_date": None,
-                "latest_value": None,
-                "avg_10y": None,
-                "sd_10y": None,
-                "delta_1y_abs": None,
-                "delta_1y_pct": None,
-                "status": "healthy",
-                "description": s.description
+                "key": s.key, "series_id": s.series_id, "title": s.title, "units": s.units, "freq": s.freq,
+                "direction": s.direction, "latest_date": None, "latest_value": None,
+                "avg_10y": None, "sd_10y": None, "delta_1y_abs": None, "delta_1y_pct": None,
+                "status": "healthy", "description": s.description
             })
             continue
 
@@ -393,9 +287,10 @@ def build_metrics_table(series_frames: Dict[str, pd.DataFrame]) -> pd.DataFrame:
 
         status = classify(latest_value, avg10, sd10, s.direction)
 
+        # IMPORTANT: always true direction
         delta_abs = (latest_value - prev_value) if prev_value is not None else None
         delta_pct = None
-        if prev_value not in (None, 0):
+        if prev_value is not None and prev_value != 0:
             delta_pct = (latest_value - prev_value) / prev_value * 100.0
 
         rows.append({
@@ -419,9 +314,6 @@ def build_metrics_table(series_frames: Dict[str, pd.DataFrame]) -> pd.DataFrame:
 
 
 def compute_overall_health(metrics_df: pd.DataFrame) -> str:
-    """
-    Simple rule: if 2+ stress => Stress, else if 2+ tripwire => Tripwire, else Healthy.
-    """
     s = (metrics_df["status"] == "stress").sum()
     t = (metrics_df["status"] == "tripwire").sum()
     if s >= 2:
@@ -432,29 +324,26 @@ def compute_overall_health(metrics_df: pd.DataFrame) -> str:
 
 
 def main():
-    # Fetch all series
     series_frames: Dict[str, pd.DataFrame] = {}
     source_notes = {}
 
     for s in SERIES:
         try:
             df = fred_observations(s.series_id)
-            df = df.rename(columns={"value": "value"})
+            # Apply scaling for normalized display units
+            if not df.empty:
+                df["value"] = df["value"] * s.scale
             series_frames[s.key] = df
-            source_notes[s.key] = f"FRED series {s.series_id} ({s.freq}, {s.units})"
+            source_notes[s.key] = f"FRED series {s.series_id} ({s.freq}, {s.units}) scale={s.scale}"
         except Exception as e:
-            # Keep running; dashboard can still load partially
             series_frames[s.key] = pd.DataFrame(columns=["date", "value"])
             source_notes[s.key] = f"ERROR fetching {s.series_id}: {type(e).__name__}"
 
-    # Build timeseries + metrics
     ts_df = build_timeseries_frame(series_frames)
     metrics_df = build_metrics_table(series_frames)
     overall = compute_overall_health(metrics_df)
 
-    # Create data.json payload (for the dashboard)
-    data_records = ts_df.to_dict(orient="records")
-    data_records = sanitize_records(data_records)
+    data_records = sanitize_records(ts_df.to_dict(orient="records"))
 
     payload = {
         "meta": {
@@ -469,12 +358,10 @@ def main():
     with open(OUT_DATA_JSON, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2, allow_nan=False)
 
-    # News
     news = fetch_news()
     with open(OUT_NEWS_JSON, "w", encoding="utf-8") as f:
         json.dump(news, f, ensure_ascii=False, indent=2, allow_nan=False)
 
-    # Excel exports
     with pd.ExcelWriter(OUT_XLSX_METRICS, engine="openpyxl") as w:
         metrics_df.to_excel(w, index=False, sheet_name="metrics")
 
