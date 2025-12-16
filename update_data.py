@@ -33,6 +33,20 @@ except Exception:
     feedparser = None
 
 
+import math
+
+def clean_for_json(obj):
+    if isinstance(obj, float):
+        if math.isnan(obj) or math.isinf(obj):
+            return None
+        return obj
+    if isinstance(obj, dict):
+        return {k: clean_for_json(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [clean_for_json(v) for v in obj]
+    return obj
+
+
 FRED_CSV_URL = "https://fred.stlouisfed.org/graph/fredgraph.csv?id={series_id}"
 
 OUTPUT_DATA_JSON = "data.json"
@@ -225,11 +239,13 @@ def main() -> None:
 
     # IMPORTANT: allow_nan=False forces failure if NaN sneaks in
     with open(OUTPUT_DATA_JSON, "w", encoding="utf-8") as f:
-        json.dump(payload, f, ensure_ascii=False, allow_nan=False)
+        payload = clean_for_json(payload)
+        json.dump(payload, f, ensure_ascii=False)
 
     news_payload = build_news()
     with open(OUTPUT_NEWS_JSON, "w", encoding="utf-8") as f:
-        json.dump(news_payload, f, ensure_ascii=False, allow_nan=False)
+        news_payload = clean_for_json(news_payload)
+        json.dump(news_payload, f, ensure_ascii=False)
 
     with pd.ExcelWriter(OUTPUT_TIMESERIES_XLSX, engine="openpyxl") as xw:
         merged.to_excel(xw, sheet_name="timeseries", index=False)
