@@ -1,773 +1,1022 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Macro–Credit Stress Dashboard</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <style>
     :root{
-      --bg:#0b0f19;
-      --panel:#111827;
-      --text:#e5e7eb;
-      --muted:#9ca3af;
+      --bg0:#060a12;
+      --bg1:#0a1020;
+      --card:#0b1224cc;
+      --card2:#0b1224aa;
+      --border:#2b3550aa;
+      --text:#e7ecf6;
+      --muted:#b8c0d6;
+      --muted2:#7f8aa8;
       --good:#22c55e;
-      --warn:#facc15;
+      --watch:#fbbf24;
       --bad:#ef4444;
-      --border: rgba(255,255,255,0.10);
-      --shadow: rgba(0,0,0,0.35);
+      --shadow: 0 24px 80px rgba(0,0,0,.55);
+      --radius: 18px;
+      --radius2: 14px;
     }
+
+    html,body{height:100%}
     body{
-      margin:0; padding:24px;
-      background: radial-gradient(1200px 700px at 15% 10%, rgba(55,65,81,0.35), transparent 55%),
-                  radial-gradient(900px 700px at 85% 30%, rgba(34,197,94,0.10), transparent 60%),
-                  linear-gradient(180deg, #0b0f19 0%, #070a12 100%);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Arial, sans-serif;
+      margin:0;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 900px at 15% 25%, rgba(59,130,246,.28), transparent 60%),
+        radial-gradient(1100px 900px at 85% 70%, rgba(16,185,129,.18), transparent 55%),
+        radial-gradient(900px 700px at 55% 15%, rgba(244,63,94,.12), transparent 55%),
+        linear-gradient(180deg, var(--bg0), var(--bg1));
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
-    .wrap{ max-width: 1160px; margin:0 auto; }
-    h1{ margin:0 0 8px 0; font-size: 28px; letter-spacing: 0.2px; }
-    .toprow{ display:flex; gap:12px; align-items:flex-start; justify-content:space-between; flex-wrap:wrap; }
-    .desc{
-      margin:0 0 16px 0;
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.45;
-      max-width: 900px;
+
+    .wrap{max-width:1160px; margin:0 auto; padding:34px 18px 60px;}
+    h1{margin:0 0 8px; font-size:40px; letter-spacing:-0.02em;}
+    p{margin:0}
+    .sub{
+      color:var(--muted);
+      max-width:980px;
+      line-height:1.45;
+      font-size:14px;
     }
-    .overall{
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      padding: 6px 12px;
-      font-size: 12px;
-      font-weight: 900;
-      background: rgba(255,255,255,0.04);
+    .topbar{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:16px;
+      margin-bottom:18px;
+    }
+
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:rgba(10,16,32,.55);
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+      font-weight:650;
+      letter-spacing:0.01em;
+      font-size:13px;
       white-space:nowrap;
     }
-    .overall.good{ color: var(--good); }
-    .overall.warn{ color: var(--warn); }
-    .overall.bad{ color: var(--bad); }
+    .badge-dot{width:8px; height:8px; border-radius:999px; background:var(--good)}
+    .badge.watch .badge-dot{background:var(--watch)}
+    .badge.bad .badge-dot{background:var(--bad)}
 
-    .legend{ display:flex; gap:10px; margin: 10px 0 16px 0; flex-wrap:wrap; }
-    .pill{ display:inline-block; padding:4px 10px; border-radius:999px; border:1px solid rgba(255,255,255,0.14); font-size:12px; }
-    .pill.healthy{ color: var(--good); }
-    .pill.tripwire{ color: var(--warn); }
-    .pill.stress{ color: var(--bad); }
+    .statusSummary{
+      margin-top:10px;
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.5;
+      padding:12px 14px;
+      border-radius:14px;
+      border:1px solid var(--border);
+      background:rgba(10,16,32,.35);
+      max-width:980px;
+    }
 
-    .section{ margin-top: 18px; }
-    h2{ font-size: 15px; margin: 0 0 10px 0; color: var(--text); }
+    .sectionTitle{
+      margin:26px 0 10px;
+      font-size:18px;
+      font-weight:750;
+      letter-spacing:-0.01em;
+    }
 
-    .newsgrid{
+    .cards{
       display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-      gap: 14px;
-      margin-top: 10px;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:14px;
     }
-    .newscard{
-      background: rgba(17,24,39,0.72);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 14px;
-      box-shadow: 0 10px 30px var(--shadow);
-      min-height: 150px;
+    @media (max-width: 900px){
+      .cards{grid-template-columns:1fr;}
+      h1{font-size:34px;}
     }
-    .newshead{ display:flex; align-items:baseline; justify-content:space-between; gap: 12px; }
-    .newstitle{ font-weight: 950; font-size: 13px; }
-    .newsmeta{ font-size: 12px; color: var(--muted); }
-    .newslist{ margin: 10px 0 0 0; padding: 0; list-style:none; display:flex; flex-direction:column; gap: 8px; }
-    .newsitem a{ color: var(--text); text-decoration:none; font-weight: 800; }
-    .newsitem a:hover{ text-decoration:underline; }
-    .newsitem .subline{ color: var(--muted); font-size: 12px; margin-top: 2px; }
 
-    .kpigrid{
-      display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 12px;
-      margin: 14px 0 10px 0;
+    .card{
+      border-radius:var(--radius);
+      border:1px solid var(--border);
+      background:linear-gradient(180deg, rgba(14,22,44,.66), rgba(10,16,32,.40));
+      box-shadow: var(--shadow);
+      overflow:hidden;
     }
-    .kpicard{
-      background: rgba(17,24,39,0.78);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 14px;
-      box-shadow: 0 10px 30px var(--shadow);
+
+    .cardPad{padding:14px 14px 12px;}
+
+    /* News */
+    .newsHead{
+      display:flex;
+      align-items:baseline;
+      justify-content:space-between;
+      gap:10px;
+      margin-bottom:8px;
+    }
+    .newsTitle{
+      font-weight:800;
+      font-size:14px;
+      letter-spacing:-0.01em;
+    }
+    .newsMeta{
+      color:var(--muted2);
+      font-size:12px;
+    }
+    .newsList{
+      list-style:none;
+      margin:0;
+      padding:0;
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+    }
+    .newsList a{
+      color:var(--text);
+      text-decoration:none;
+      font-size:13px;
+      line-height:1.35;
+      display:block;
+    }
+    .newsList a:hover{text-decoration:underline}
+    .newsItemMeta{
+      color:var(--muted2);
+      font-size:11px;
+      margin-top:2px;
+    }
+
+    /* Legend chips */
+    .legend{
+      display:flex;
+      gap:10px;
+      margin:14px 0 0;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .chip{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:5px 10px;
+      border-radius:999px;
+      font-size:12px;
+      border:1px solid var(--border);
+      background:rgba(10,16,32,.35);
+      color:var(--muted);
+    }
+    .chipDot{width:8px; height:8px; border-radius:999px;}
+    .chip.good{color:var(--good); border-color:rgba(34,197,94,.35)}
+    .chip.good .chipDot{background:var(--good)}
+    .chip.watch{color:var(--watch); border-color:rgba(251,191,36,.35)}
+    .chip.watch .chipDot{background:var(--watch)}
+    .chip.bad{color:var(--bad); border-color:rgba(239,68,68,.35)}
+    .chip.bad .chipDot{background:var(--bad)}
+
+    /* KPI tiles */
+    .kpiGrid{
+      display:grid;
+      grid-template-columns:repeat(4, minmax(0,1fr));
+      gap:14px;
+    }
+    @media (max-width: 1100px){
+      .kpiGrid{grid-template-columns:repeat(2, minmax(0,1fr));}
+    }
+    .kpi{
+      position:relative;
+      padding:14px 14px 12px;
+      border-radius:var(--radius);
+      border:1px solid var(--border);
+      background:linear-gradient(180deg, rgba(14,22,44,.70), rgba(10,16,32,.45));
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      min-height:140px;
+    }
+    .kpiTitle{
+      font-size:14px;
+      font-weight:800;
+      letter-spacing:-0.01em;
+      margin:0 0 2px;
+      padding-right:86px; /* room for status pill */
+    }
+    .kpiSub{
+      color:var(--muted2);
+      font-size:12px;
+      margin:0;
+      line-height:1.2;
+    }
+    .kpiValue{
+      margin-top:10px;
+      font-size:30px;
+      font-weight:850;
+      letter-spacing:-0.02em;
+    }
+    .kpiMetaRow{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      margin-top:4px;
+      flex-wrap:wrap;
+      color:var(--muted);
+      font-size:12px;
+    }
+    .kpiDelta{
+      margin-top:8px;
+      font-size:12px;
+      color:var(--muted);
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+    .kpiDelta .pos{color:var(--text)}
+    .kpiDelta .neg{color:var(--text)}
+    .kpiSpark{
+      margin-top:8px;
+      width:100%;
+      height:34px;
+      opacity:.95;
+    }
+
+    .pill{
+      position:absolute;
+      top:12px;
+      right:12px;
+      padding:5px 10px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:750;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(0,0,0,.20);
+    }
+    .pill.good{color:var(--good); border-color:rgba(34,197,94,.35)}
+    .pill.watch{color:var(--watch); border-color:rgba(251,191,36,.35)}
+    .pill.bad{color:var(--bad); border-color:rgba(239,68,68,.35)}
+
+    /* Charts */
+    .trendControls{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      flex-wrap:wrap;
+      margin:0 0 12px;
+    }
+    .toggle{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      color:var(--muted);
+      font-size:13px;
+    }
+    .toggle input{transform:scale(1.1)}
+    .help{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:18px; height:18px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      color:var(--muted2);
+      font-size:12px;
+      cursor:default;
+    }
+    .chartsGrid{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:14px;
+    }
+    @media (max-width: 900px){
+      .chartsGrid{grid-template-columns:1fr;}
+    }
+
+    .chartCard{padding:14px 14px 12px;}
+    .chartHead{
+      display:flex;
+      align-items:baseline;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:4px;
+    }
+    .chartTitle{
+      font-size:14px;
+      font-weight:850;
+      letter-spacing:-0.01em;
+      margin:0;
+    }
+    .chartMeta{
+      font-size:12px;
+      color:var(--muted2);
+      white-space:nowrap;
+    }
+    .chartDef{
+      color:var(--muted);
+      font-size:12.5px;
+      line-height:1.35;
+      margin:4px 0 8px;
+    }
+    .chartSummary{
+      color:var(--muted);
+      font-size:12.5px;
+      line-height:1.35;
+      margin:0 0 10px;
+      padding:10px 10px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(0,0,0,.16);
+      border-radius:12px;
+    }
+
+    .canvasWrap{
+      height:270px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(0,0,0,.18);
       overflow:hidden;
       position:relative;
     }
-    .kpihead{
+    canvas{display:block; width:100%; height:100%}
+
+    .footer{
+      margin-top:18px;
       display:flex;
-      justify-content:space-between;
-      align-items:flex-start;
-      gap: 10px;
+      gap:10px;
+      flex-wrap:wrap;
     }
-    .kpititle{ font-weight: 950; font-size: 13px; line-height: 1.15; }
-    .kpisub{ color: var(--muted); font-size: 12px; margin-top: 3px; }
-    .badge{
-      font-size: 11px;
-      font-weight: 950;
-      padding: 4px 10px;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,0.14);
-      background: rgba(255,255,255,0.03);
-      flex: 0 0 auto;
-      max-width: 130px;
-      text-align:center;
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 12px;
+      border-radius:12px;
+      border:1px solid var(--border);
+      background:rgba(10,16,32,.38);
+      color:var(--text);
+      text-decoration:none;
+      font-weight:700;
+      font-size:13px;
     }
-    .badge.healthy{ color: var(--good); }
-    .badge.tripwire{ color: var(--warn); }
-    .badge.stress{ color: var(--bad); }
-
-    .kpivalue{ font-size: 24px; font-weight: 980; margin-top: 10px; }
-    .kpimeta{ display:flex; gap:12px; flex-wrap:wrap; margin-top: 6px; color: var(--muted); font-size: 12px; }
-    .kpisparkwrap{ margin-top: 10px; }
-    svg.spark{ width: 100%; height: 44px; display:block; }
-    .sparkline{ fill:none; stroke: rgba(229,231,235,0.92); stroke-width: 2; }
-    .sparkaxis{ stroke: rgba(255,255,255,0.07); stroke-width: 1; }
-
-    .chartgrid{
-      display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-      gap: 14px;
-      margin-top: 10px;
-    }
-    .chartcard{
-      background: rgba(17,24,39,0.75);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 12px;
-      box-shadow: 0 10px 30px var(--shadow);
-    }
-    .charthead{ display:flex; justify-content: space-between; align-items: baseline; gap: 12px; }
-    .charttitle{ font-weight: 950; font-size: 13px; }
-    .chartsub{ color: var(--muted); font-size: 12px; text-align:right; }
-    .chartdef{ margin-top: 6px; color: rgba(229,231,235,0.80); font-size: 12px; line-height: 1.35; }
-    .svgwrap{ position: relative; margin-top: 8px; }
-    svg.interactive{ width: 100%; height: 220px; display:block; }
-    .axis{ stroke: rgba(255,255,255,0.08); stroke-width: 1; }
-    .line{ fill:none; stroke: rgba(229,231,235,0.92); stroke-width: 2; }
-
-    /* Benchmark lines */
-    .bench{ fill:none; stroke-width: 1.4; }
-    .bench.mean{ stroke: rgba(148,163,184,0.65); stroke-dasharray: 5 4; }
-    .bench.trip{ stroke: rgba(250,204,21,0.70); stroke-dasharray: 3 4; }
-    .bench.stress{ stroke: rgba(239,68,68,0.70); stroke-dasharray: 2 4; }
-
-    .tooltip{
-      position:absolute;
-      pointer-events:none;
-      background: rgba(0,0,0,0.75);
-      border: 1px solid rgba(255,255,255,0.14);
-      color: var(--text);
-      padding: 8px 10px;
-      border-radius: 12px;
-      font-size: 12px;
-      line-height: 1.25;
-      transform: translate(10px, -10px);
-      opacity: 0;
-      transition: opacity 120ms linear;
-      white-space: nowrap;
-      z-index: 10;
-    }
-    .dot{ fill: rgba(250,204,21,0.95); stroke: rgba(0,0,0,0.3); stroke-width:1; opacity:0; }
-    .vline{ stroke: rgba(250,204,21,0.6); stroke-width:1; opacity:0; }
-
-    .btnrow{ margin-top: 14px; display:flex; gap:10px; flex-wrap:wrap; }
-    a.btn{
-      display:inline-block; padding: 10px 12px;
-      border-radius: 12px; border:1px solid rgba(255,255,255,0.14);
-      text-decoration:none; color: var(--text);
-      background: rgba(255,255,255,0.04);
-      font-weight: 900; font-size: 12px;
-    }
-    a.btn:hover{ background: rgba(255,255,255,0.07); }
-    code{ background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 8px; }
-    .foot{ margin-top: 12px; color: var(--muted); font-size: 12px; line-height: 1.4; }
+    .btn:hover{background:rgba(10,16,32,.55)}
   </style>
 </head>
-
 <body>
   <div class="wrap">
-    <div class="toprow">
+    <div class="topbar">
       <div>
         <h1>Macro–Credit Stress Dashboard</h1>
-        <p class="desc">
-          A weekly snapshot of consumer credit stress, household squeeze, housing stress, and labor softening using public macro series (FRED).
-          Tiles show the latest value, a 10-year baseline, and the 1-year change with clear units.
-          Hover charts to inspect point-in-time values. Data loads from <code>data.json</code> and <code>news.json</code>.
-          <span id="lastUpdated"></span>
+        <p class="sub">
+          A lightweight read on household stress and labor softening, built from public series that tend to move early:
+          <b>card delinquencies</b>, <b>charge-offs</b>, <b>debt service burden</b>, <b>mortgage delinquencies</b>,
+          and <b>labor</b> signals. Tiles show the latest value, a 10-year baseline, and the 1-year change
+          (with clear units). Charts below show the full trend with hover-to-inspect values.
+          (<span id="lastUpdated">Last updated: —</span>)
         </p>
+        <div id="statusSummary" class="statusSummary" style="display:none;"></div>
       </div>
-      <div id="overallBadge" class="overall good">Overall: —</div>
+      <div id="overallBadge" class="badge">
+        <span class="badge-dot"></span>
+        <span id="overallText">Overall: —</span>
+      </div>
     </div>
 
-    <div class="section">
-      <h2>Latest headlines</h2>
-      <div class="newsgrid" id="newsGrid"></div>
-    </div>
-
-    <div class="legend">
-      <span class="pill healthy">Healthy</span>
-      <span class="pill tripwire">Tripwire / Watch</span>
-      <span class="pill stress">Stress</span>
-    </div>
-
-    <div class="section">
-      <h2>Latest snapshot</h2>
-      <div class="kpigrid" id="kpiGrid"></div>
-    </div>
-
-    <div class="section">
-      <h2>Trends (interactive)</h2>
-
-      <div class="chartgrid">
-        <div class="chartcard">
-          <div class="charthead">
-            <div class="charttitle">Card 30+ Delinquency (All banks)</div>
-            <div class="chartsub">FRED: DRCCLACBS (quarterly, %)</div>
+    <div class="sectionTitle">Latest headlines</div>
+    <div class="cards">
+      <div class="card">
+        <div class="cardPad">
+          <div class="newsHead">
+            <div class="newsTitle" id="newsLeftTitle">Credit / consumer stress</div>
+            <div class="newsMeta">auto-updated</div>
           </div>
-          <div class="chartdef">Share of card balances 30+ days past due — early consumer stress signal.</div>
-          <div class="svgwrap" data-series="DRCCLACBS_pct" data-format="pct" data-direction="1">
-            <div class="tooltip"></div>
-            <svg class="interactive" viewBox="0 0 640 220" preserveAspectRatio="none"></svg>
-          </div>
-        </div>
-
-        <div class="chartcard">
-          <div class="charthead">
-            <div class="charttitle">Net Charge-off Rate (All banks)</div>
-            <div class="chartsub">FRED: CORCCACBS (quarterly, %)</div>
-          </div>
-          <div class="chartdef">Portion of card loans written off as uncollectible — confirms deterioration.</div>
-          <div class="svgwrap" data-series="CORCCACBS_pct" data-format="pct" data-direction="1">
-            <div class="tooltip"></div>
-            <svg class="interactive" viewBox="0 0 640 220" preserveAspectRatio="none"></svg>
-          </div>
-        </div>
-
-        <div class="chartcard">
-          <div class="charthead">
-            <div class="charttitle">Debt Service Burden (Households)</div>
-            <div class="chartsub">FRED: TDSP (quarterly, %)</div>
-          </div>
-          <div class="chartdef">Household debt payments as % of disposable income — “squeeze” measure.</div>
-          <div class="svgwrap" data-series="TDSP_pct" data-format="pct" data-direction="1">
-            <div class="tooltip"></div>
-            <svg class="interactive" viewBox="0 0 640 220" preserveAspectRatio="none"></svg>
-          </div>
-        </div>
-
-        <div class="chartcard">
-          <div class="charthead">
-            <div class="charttitle">Mortgage 30+ Delinquency (All banks)</div>
-            <div class="chartsub">FRED: DRSFRMACBS (quarterly, %)</div>
-          </div>
-          <div class="chartdef">Share of mortgage balances 30+ days past due — housing stress proxy.</div>
-          <div class="svgwrap" data-series="DRSFRMACBS_pct" data-format="pct" data-direction="1">
-            <div class="tooltip"></div>
-            <svg class="interactive" viewBox="0 0 640 220" preserveAspectRatio="none"></svg>
-          </div>
-        </div>
-
-        <div class="chartcard">
-          <div class="charthead">
-            <div class="charttitle">Revolving Consumer Credit</div>
-            <div class="chartsub">FRED: REVOLSL (monthly, $ billions)</div>
-          </div>
-          <div class="chartdef">Outstanding revolving consumer credit — rising levels can amplify stress if incomes soften.</div>
-          <div class="svgwrap" data-series="REVOLSL_bil_usd" data-format="usd_b" data-direction="1">
-            <div class="tooltip"></div>
-            <svg class="interactive" viewBox="0 0 640 220" preserveAspectRatio="none"></svg>
-          </div>
-        </div>
-
-        <div class="chartcard">
-          <div class="charthead">
-            <div class="charttitle">Job Openings (Total nonfarm)</div>
-            <div class="chartsub">FRED: JTSJOL (monthly, millions)</div>
-          </div>
-          <div class="chartdef">Labor demand proxy — a sustained drop usually precedes weaker hiring.</div>
-          <div class="svgwrap" data-series="JTSJOL_mil" data-format="mil" data-direction="-1">
-            <div class="tooltip"></div>
-            <svg class="interactive" viewBox="0 0 640 220" preserveAspectRatio="none"></svg>
-          </div>
-        </div>
-
-        <div class="chartcard">
-          <div class="charthead">
-            <div class="charttitle">Unemployment Rate</div>
-            <div class="chartsub">FRED: UNRATE (monthly, %)</div>
-          </div>
-          <div class="chartdef">Broad unemployment measure — tends to lag, but persistent rises worsen credit performance.</div>
-          <div class="svgwrap" data-series="UNRATE_pct" data-format="pct" data-direction="1">
-            <div class="tooltip"></div>
-            <svg class="interactive" viewBox="0 0 640 220" preserveAspectRatio="none"></svg>
-          </div>
-        </div>
-
-        <div class="chartcard">
-          <div class="charthead">
-            <div class="charttitle">Initial Jobless Claims</div>
-            <div class="chartsub">FRED: ICSA (weekly, thousands)</div>
-          </div>
-          <div class="chartdef">Faster-turn labor stress signal — spikes can precede unemployment increases.</div>
-          <div class="svgwrap" data-series="ICSA_thou" data-format="thou" data-direction="1">
-            <div class="tooltip"></div>
-            <svg class="interactive" viewBox="0 0 640 220" preserveAspectRatio="none"></svg>
-          </div>
+          <ul class="newsList" id="newsLeft"></ul>
         </div>
       </div>
-
-      <div class="btnrow">
-        <a class="btn" href="data.json">Download data.json</a>
-        <a class="btn" href="news.json">Download news.json</a>
-        <a class="btn" href="macro_credit_timeseries.xlsx">Download Excel (metrics + timeseries)</a>
-        <a class="btn" href="macro_credit_metrics.xlsx">Download Excel (metrics)</a>
+      <div class="card">
+        <div class="cardPad">
+          <div class="newsHead">
+            <div class="newsTitle" id="newsRightTitle">Labor / macro signals</div>
+            <div class="newsMeta">auto-updated</div>
+          </div>
+          <ul class="newsList" id="newsRight"></ul>
+        </div>
       </div>
+    </div>
 
-      <div class="foot">
-        If something doesn’t load: confirm <code>index.html</code>, <code>data.json</code>, and <code>news.json</code> are in the repo root.
+    <div class="legend" aria-label="Legend">
+      <span class="chip good"><span class="chipDot"></span>Healthy</span>
+      <span class="chip watch"><span class="chipDot"></span>Tripwire / Watch</span>
+      <span class="chip bad"><span class="chipDot"></span>Stress</span>
+    </div>
+
+    <div class="sectionTitle">Latest snapshot</div>
+    <div class="kpiGrid" id="kpiGrid"></div>
+
+    <div class="sectionTitle">Trends (interactive)</div>
+    <div class="trendControls">
+      <div class="toggle">
+        <label style="display:flex; align-items:center; gap:10px;">
+          <input id="normToggle" type="checkbox" />
+          Normalize charts (Index=100 at 10-year average)
+        </label>
+        <span class="help" title="When enabled, each series is indexed to its 10-year average (100). This makes cross-series shapes comparable even when units differ. Benchmarks and moving averages are shown in indexed space.">?</span>
       </div>
+      <div class="toggle" style="color:var(--muted2);">
+        Benchmarks: dotted = 10y avg; dashed = tripwire/stress; thin dash = moving avg
+      </div>
+    </div>
+
+    <div class="chartsGrid" id="chartsGrid"></div>
+
+    <div class="footer">
+      <a class="btn" href="./data.json" download>Download data.json</a>
+      <a class="btn" href="./news.json" download>Download news.json</a>
+      <a class="btn" href="./macro_credit_timeseries.xlsx" download>Download Excel (metrics + timeseries)</a>
+      <a class="btn" href="./macro_credit_metrics.xlsx" download>Download Excel (metrics)</a>
     </div>
   </div>
 
-<script>
-function fmtNum(n, digits=2){
-  if (n === null || Number.isNaN(n)) return "—";
-  return Number(n).toLocaleString(undefined, { maximumFractionDigits: digits, minimumFractionDigits: 0 });
-}
+  <script>
+    const KPI_ORDER = [
+      // Row 1
+      "DRCCLACBS_pct",
+      "CORCCACBS_pct",
+      "TDSP_pct",
+      "DRSFRMACBS_pct",
+      // Row 2
+      "REVOLSL_bil_usd",
+      "JTSJOL_mil",
+      "UNRATE_pct",
+      "ICSA_thou",
+    ];
 
-function fmtValue(v, mode) {
-  if (v === null || Number.isNaN(v)) return "—";
-  const x = Number(v);
+    // Trend chart cards (you can add non-KPI series here)
+    const CHART_DEFS = [
+      { key:"DRCCLACBS_pct" },
+      { key:"CORCCACBS_pct" },
+      { key:"TDSP_pct" },
+      // Mortgage delinquency with a leading housing overlay (permits)
+      { key:"DRSFRMACBS_pct", secondary:"PERMIT_thou_units", secondaryLabel:"Building Permits (PERMIT)" },
 
-  if (mode === "pct") return fmtNum(x, 2) + "%";
-  if (mode === "mil") return fmtNum(x, 2) + "M";
-  if (mode === "thou") return fmtNum(x, 0) + "K";
+      // Revolving credit with income overlay
+      { key:"REVOLSL_bil_usd", secondary:"DSPIC96_bil_usd", secondaryLabel:"Real Disposable Income (DSPIC96)" },
+      { key:"JTSJOL_mil" },
+      { key:"UNRATE_pct" },
+      { key:"ICSA_thou" },
 
-  // usd_b means "billions of dollars"
-  // Show B nicely; optionally switch to T if very large
-  if (mode === "usd_b") {
-    if (x >= 10000) return "$" + fmtNum(x/1000, 2) + "T";
-    return "$" + fmtNum(x, 1) + "B";
-  }
+      // Extra housing cycle chart (not a KPI)
+      { key:"CSUSHPINSA_index", secondary:"PERMIT_thou_units", secondaryLabel:"Building Permits (PERMIT)" },
+    ];
 
-  return String(x);
-}
+    const $ = (id) => document.getElementById(id);
 
-function fmtDeltaAbs(v, mode){
-  if (v === null || Number.isNaN(v)) return "—";
-  const x = Number(v);
-  const sign = x > 0 ? "+" : x < 0 ? "−" : "";
-  const ax = Math.abs(x);
-
-  if (mode === "pct") return `${sign}${fmtNum(ax,2)}pp`;
-  if (mode === "thou") return `${sign}${fmtNum(ax,0)}K`;
-  if (mode === "mil") return `${sign}${fmtNum(ax,2)}M`;
-  if (mode === "usd_b") return `${sign}$${fmtNum(ax,1)}B`;
-  return `${sign}${fmtNum(ax,2)}`;
-}
-
-function fmtDeltaPct(v){
-  if (v === null || Number.isNaN(v)) return "—";
-  const x = Number(v);
-  const sign = x > 0 ? "+" : x < 0 ? "−" : "";
-  return `${sign}${fmtNum(Math.abs(x),1)}%`;
-}
-
-function fmtDate(d) {
-  const opts = { year:"numeric", month:"short" };
-  return d.toLocaleDateString(undefined, opts);
-}
-
-function buildSpark(svg, pts){
-  const vb = svg.viewBox.baseVal;
-  const W = vb.width || 200, H = vb.height || 44;
-  const pad = 4;
-  const innerW = W - pad*2;
-  const innerH = H - pad*2;
-
-  const xs = pts.map(p=>p.x), ys = pts.map(p=>p.y);
-  const xmin = Math.min(...xs), xmax = Math.max(...xs);
-  let ymin = Math.min(...ys), ymax = Math.max(...ys);
-  if (ymax === ymin) ymax = ymin + 1e-9;
-
-  function xScale(x){ return pad + (x - xmin) / (xmax - xmin) * innerW; }
-  function yScale(y){ return pad + (1 - (y - ymin) / (ymax - ymin)) * innerH; }
-
-  let d = "";
-  for (let i=0; i<pts.length; i++){
-    const px = xScale(pts[i].x);
-    const py = yScale(pts[i].y);
-    d += (i===0 ? "M" : "L") + px.toFixed(2) + " " + py.toFixed(2) + " ";
-  }
-
-  while (svg.firstChild) svg.removeChild(svg.firstChild);
-
-  const axis = document.createElementNS("http://www.w3.org/2000/svg","line");
-  axis.setAttribute("x1", pad);
-  axis.setAttribute("x2", W - pad);
-  axis.setAttribute("y1", H - pad);
-  axis.setAttribute("y2", H - pad);
-  axis.setAttribute("class","sparkaxis");
-  svg.appendChild(axis);
-
-  const path = document.createElementNS("http://www.w3.org/2000/svg","path");
-  path.setAttribute("d", d.trim());
-  path.setAttribute("class","sparkline");
-  svg.appendChild(path);
-}
-
-function mean(arr){ return arr.reduce((a,b)=>a+b,0)/arr.length; }
-function std(arr){
-  if (arr.length < 2) return 0;
-  const m = mean(arr);
-  const v = mean(arr.map(x => (x-m)*(x-m)));
-  return Math.sqrt(v);
-}
-
-function latestPoint(raw, key){
-  for (let i = raw.length - 1; i >= 0; i--){
-    const v = raw[i][key];
-    if (v !== null && v !== undefined && !Number.isNaN(v)) return { date: new Date(raw[i].date + "T00:00:00"), value: Number(v) };
-  }
-  return null;
-}
-
-function renderOverall(meta){
-  const el = document.getElementById("overallBadge");
-  const h = meta?.overall_health || "—";
-  el.textContent = `Overall: ${h}`;
-  el.classList.remove("good","warn","bad");
-  if (h.toLowerCase().includes("stress")) el.classList.add("bad");
-  else if (h.toLowerCase().includes("tripwire")) el.classList.add("warn");
-  else el.classList.add("good");
-}
-
-/* KPI tiles */
-function renderKPI(raw, metrics){
-  // Your requested order:
-  // Row 1: card delinq, charge-off, debt service, mortgage delinq
-  // Row 2: revolving credit, job openings, unemployment, jobless claims
-  const order = [
-    "DRCCLACBS_pct",
-    "CORCCACBS_pct",
-    "TDSP_pct",
-    "DRSFRMACBS_pct",
-    "REVOLSL_bil_usd",
-    "JTSJOL_mil",
-    "UNRATE_pct",
-    "ICSA_thou"
-  ];
-
-  const defs = {
-    "DRCCLACBS_pct": { title:"Card 30+ Delinquency", sub:"FRED: DRCCLACBS (%, quarterly)", fmt:"pct" },
-    "CORCCACBS_pct": { title:"Net Charge-off Rate", sub:"FRED: CORCCACBS (%, quarterly)", fmt:"pct" },
-    "TDSP_pct": { title:"Debt Service Burden", sub:"FRED: TDSP (%, quarterly)", fmt:"pct" },
-    "DRSFRMACBS_pct": { title:"Mortgage 30+ Delinquency", sub:"FRED: DRSFRMACBS (%, quarterly)", fmt:"pct" },
-    "REVOLSL_bil_usd": { title:"Revolving Consumer Credit", sub:"FRED: REVOLSL ($B, monthly)", fmt:"usd_b" },
-    "JTSJOL_mil": { title:"Job Openings", sub:"FRED: JTSJOL (millions, monthly)", fmt:"mil" },
-    "UNRATE_pct": { title:"Unemployment Rate", sub:"FRED: UNRATE (%, monthly)", fmt:"pct" },
-    "ICSA_thou": { title:"Initial Jobless Claims", sub:"FRED: ICSA (thousands, weekly)", fmt:"thou" },
-  };
-
-  const grid = document.getElementById("kpiGrid");
-  grid.innerHTML = "";
-
-  for (const key of order){
-    const d = defs[key];
-    const latest = latestPoint(raw, key);
-    const mrow = (metrics || []).find(x => x.key === key);
-    const status = mrow?.status || "healthy";
-    const badgeText = status === "healthy" ? "Healthy" : status === "tripwire" ? "Tripwire" : "Stress";
-
-    const card = document.createElement("div");
-    card.className = "kpicard";
-
-    if (!latest){
-      card.innerHTML = `
-        <div class="kpihead">
-          <div>
-            <div class="kpititle">${d.title}</div>
-            <div class="kpisub">${d.sub}</div>
-          </div>
-          <span class="badge healthy">Healthy</span>
-        </div>
-        <div class="kpivalue">—</div>
-        <div class="kpimeta"><span>No data available.</span></div>
-      `;
-      grid.appendChild(card);
-      continue;
+    function statusToClass(s){
+      if (s === "stress") return "bad";
+      if (s === "tripwire") return "watch";
+      return "good";
     }
 
-    const avg10y = (mrow && mrow.avg_10y != null) ? Number(mrow.avg_10y) : null;
-    const deltaAbs = (mrow && mrow.delta_1y_abs != null) ? Number(mrow.delta_1y_abs) : null;
-    const deltaPct = (mrow && mrow.delta_1y_pct != null) ? Number(mrow.delta_1y_pct) : null;
+    function fmtNum(x, decimals=0){
+      if (x === null || x === undefined) return "—";
+      const n = Number(x);
+      if (!Number.isFinite(n)) return "—";
+      return n.toLocaleString(undefined, {minimumFractionDigits:decimals, maximumFractionDigits:decimals});
+    }
 
-    const maxPts = (key.includes("ICSA") ? 30 : (key.includes("JTSJOL") || key.includes("UNRATE") || key.includes("REVOLSL") ? 24 : 20));
-    const pts = raw
-      .filter(r => r[key] !== null && r[key] !== undefined && !Number.isNaN(r[key]))
-      .slice(-maxPts)
-      .map(r => ({ x: new Date(r.date+"T00:00:00").getTime(), y: Number(r[key]) }));
+    function fmtValue(v, units){
+      if (v === null || v === undefined) return "—";
+      const n = Number(v);
+      if (!Number.isFinite(n)) return "—";
+      if (units === "pct") return fmtNum(n, 2) + "%";
+      if (units === "mil") return fmtNum(n, 2).replace(/\.00$/,"") + "M";
+      if (units === "thou") return fmtNum(n, 0) + "K";
+      if (units === "usd_b") return "$" + fmtNum(n, 0) + "B";
+      if (units === "index") return fmtNum(n, 1);
+      return fmtNum(n, 2);
+    }
 
-    card.innerHTML = `
-      <div class="kpihead">
-        <div>
-          <div class="kpititle">${d.title}</div>
-          <div class="kpisub">${d.sub}</div>
-        </div>
-        <span class="badge ${status}">${badgeText}</span>
-      </div>
+    function fmtDeltaAbs(d, units){
+      if (d === null || d === undefined) return "—";
+      const n = Number(d);
+      if (!Number.isFinite(n)) return "—";
+      const sign = n > 0 ? "+" : n < 0 ? "−" : "";
+      const abs = Math.abs(n);
+      if (units === "pct") return sign + fmtNum(abs, 2) + "pp";
+      if (units === "mil") return sign + fmtNum(abs, 2).replace(/\.00$/,"") + "M";
+      if (units === "thou") return sign + fmtNum(abs, 0) + "K";
+      if (units === "usd_b") return sign + "$" + fmtNum(abs, 0) + "B";
+      if (units === "index") return sign + fmtNum(abs, 1);
+      return sign + fmtNum(abs, 2);
+    }
 
-      <div class="kpivalue">${fmtValue(latest.value, d.fmt)}</div>
+    function fmtDeltaPct(d){
+      if (d === null || d === undefined) return "—";
+      const n = Number(d);
+      if (!Number.isFinite(n)) return "—";
+      const sign = n > 0 ? "+" : n < 0 ? "−" : "";
+      return sign + fmtNum(Math.abs(n), 1) + "%";
+    }
 
-      <div class="kpimeta">
-        <span>As of: <b>${fmtDate(latest.date)}</b></span>
-        <span>10y avg: <b>${avg10y == null ? "—" : fmtValue(avg10y, d.fmt)}</b></span>
-        <span>Δ 1y: <b>${deltaAbs == null ? "—" : fmtDeltaAbs(deltaAbs, d.fmt)}</b>
-          <span style="color:rgba(229,231,235,0.75)">(${deltaPct == null ? "—" : fmtDeltaPct(deltaPct)})</span>
-        </span>
-      </div>
+    function makePill(status){
+      const cls = statusToClass(status);
+      const label = status === "stress" ? "Stress" : status === "tripwire" ? "Tripwire" : "Healthy";
+      return `<span class="pill ${cls}">${label}</span>`;
+    }
 
-      <div class="kpisparkwrap">
-        <svg class="spark" viewBox="0 0 200 44" preserveAspectRatio="none"></svg>
-      </div>
-    `;
+    function seriesToPoints(rows, key){
+      const pts = [];
+      for (const r of rows){
+        const v = r[key];
+        if (v === null || v === undefined) continue;
+        const n = Number(v);
+        if (!Number.isFinite(n)) continue;
+        pts.push({ t: new Date(r.date + "T00:00:00Z"), v: n });
+      }
+      return pts;
+    }
 
-    grid.appendChild(card);
-    const svg = card.querySelector("svg.spark");
-    if (pts.length >= 2) buildSpark(svg, pts);
-  }
-}
+    function movingAverage(values, window){
+      if (window <= 1) return values.map(v => v);
+      const out = [];
+      let sum = 0;
+      const q = [];
+      for (const v of values){
+        q.push(v);
+        sum += v;
+        if (q.length > window) sum -= q.shift();
+        out.push(sum / q.length);
+      }
+      return out;
+    }
 
-/* News */
-function renderNews(news){
-  const grid = document.getElementById("newsGrid");
-  grid.innerHTML = "";
+    function drawLine(ctx, xs, ys, opts={}){
+      const {dash=[], alpha=1, width=2} = opts;
+      ctx.save();
+      ctx.globalAlpha = alpha;
+      ctx.lineWidth = width;
+      ctx.setLineDash(dash);
+      ctx.beginPath();
+      for (let i=0;i<xs.length;i++){
+        const x = xs[i], y = ys[i];
+        if (i===0) ctx.moveTo(x,y);
+        else ctx.lineTo(x,y);
+      }
+      ctx.stroke();
+      ctx.restore();
+    }
 
-  const sections = news?.sections || {};
-  const sectionNames = Object.keys(sections);
+    function buildChart(canvas, pointsA, pointsB, metaA, metaB, normalize){
+      const ctx = canvas.getContext("2d");
 
-  if (!sectionNames.length){
-    const c = document.createElement("div");
-    c.className = "newscard";
-    c.innerHTML = `<div class="newshead"><div class="newstitle">News feed</div><div class="newsmeta">auto-updated weekly</div></div>
-                   <div class="newsmeta" style="margin-top:10px;">No headlines available.</div>`;
-    grid.appendChild(c);
-    return;
-  }
+      // Cache device sizes
+      function resize(){
+        const w = canvas.width = canvas.clientWidth * devicePixelRatio;
+        const h = canvas.height = canvas.clientHeight * devicePixelRatio;
+        return {w,h};
+      }
 
-  for (const name of sectionNames){
-    const items = sections[name] || [];
-    const card = document.createElement("div");
-    card.className = "newscard";
-    card.innerHTML = `
-      <div class="newshead">
-        <div class="newstitle">${name}</div>
-        <div class="newsmeta">auto-updated weekly</div>
-      </div>
-      <ul class="newslist"></ul>
-    `;
-    const ul = card.querySelector(".newslist");
+      // Padding
+      const padL = 12 * devicePixelRatio;
+      const padR = 10 * devicePixelRatio;
+      const padT = 12 * devicePixelRatio;
+      const padB = 14 * devicePixelRatio;
 
-    if (!items.length){
-      const li = document.createElement("li");
-      li.className = "newsitem";
-      li.innerHTML = `<div class="newsmeta">No headlines available.</div>`;
-      ul.appendChild(li);
-    } else {
-      for (const it of items.slice(0,6)){
-        const li = document.createElement("li");
-        li.className = "newsitem";
-        const when = it.published_utc ? new Date(it.published_utc).toUTCString() : "";
-        li.innerHTML = `
-          <a href="${it.link}" target="_blank" rel="noopener noreferrer">${it.title || "Untitled"}</a>
-          <div class="subline">${it.source || ""}${when ? " • " + when : ""}</div>
+      const ptsA = (pointsA || []).slice();
+      const ptsB = (pointsB || []).slice();
+
+      function roundRect(ctx, x, y, w, h, r){
+        ctx.beginPath();
+        ctx.moveTo(x+r, y);
+        ctx.arcTo(x+w, y, x+w, y+h, r);
+        ctx.arcTo(x+w, y+h, x, y+h, r);
+        ctx.arcTo(x, y+h, x, y, r);
+        ctx.arcTo(x, y, x+w, y, r);
+        ctx.closePath();
+      }
+
+      function renderBase(hoverIdx=-1){
+        const {w,h} = resize();
+        ctx.clearRect(0,0,w,h);
+
+        if (ptsA.length < 2){
+          ctx.fillStyle = "rgba(184,192,214,.85)";
+          ctx.font = `${13*devicePixelRatio}px system-ui`;
+          ctx.fillText("No data available.", padL, padT + 16*devicePixelRatio);
+          return;
+        }
+
+        // Domain from primary series
+        const t0 = ptsA[0].t.getTime();
+        const t1 = ptsA[ptsA.length-1].t.getTime();
+
+        function normPoint(p, meta){
+          const base = (meta && meta.avg_10y !== null && meta.avg_10y !== undefined && Number.isFinite(meta.avg_10y))
+            ? Number(meta.avg_10y)
+            : ptsA[0].v;
+          if (!Number.isFinite(base) || base === 0) return p.v;
+          return (p.v / base) * 100.0;
+        }
+
+        const ysA_raw = ptsA.map(p => p.v);
+        const ysB_raw = ptsB.map(p => p.v);
+
+        const ysA = normalize ? ptsA.map(p => normPoint(p, metaA)) : ysA_raw;
+        const ysB = (normalize && ptsB.length) ? ptsB.map(p => normPoint(p, metaB || metaA)) : ysB_raw;
+
+        // Moving average window by cadence
+        const maWin = (metaA && metaA.freq === "weekly") ? 13 : (metaA && metaA.freq === "monthly") ? 6 : 4;
+        const ysA_ma = movingAverage(ysA, maWin);
+
+        // y-scale
+        const allY = ysB.length ? ysA.concat(ysB) : ysA.slice();
+        const yMin = Math.min(...allY);
+        const yMax = Math.max(...allY);
+        const pad = (yMax - yMin) * 0.12 || 1;
+        const ymin = yMin - pad;
+        const ymax = yMax + pad;
+
+        const x = (t) => {
+          const tt = t.getTime();
+          return padL + ( (tt - t0) / (t1 - t0) ) * (w - padL - padR);
+        };
+        const y = (v) => padT + (1 - (v - ymin) / (ymax - ymin)) * (h - padT - padB);
+
+        // Background
+        ctx.fillStyle = "rgba(0,0,0,.12)";
+        ctx.fillRect(0,0,w,h);
+
+        // Grid lines
+        ctx.strokeStyle = "rgba(255,255,255,.06)";
+        ctx.lineWidth = 1 * devicePixelRatio;
+        ctx.setLineDash([]);
+        for (let i=0;i<=4;i++){
+          const yy = padT + i * (h - padT - padB) / 4;
+          ctx.beginPath(); ctx.moveTo(padL, yy); ctx.lineTo(w - padR, yy); ctx.stroke();
+        }
+
+        // Benchmarks from primary series meta
+        if (metaA && metaA.avg_10y !== null && metaA.sd_10y !== null && Number.isFinite(metaA.avg_10y) && Number.isFinite(metaA.sd_10y)){
+          const base = normalize ? 100.0 : Number(metaA.avg_10y);
+          const sd = Number(metaA.sd_10y);
+          const sdEff = normalize ? (sd / Number(metaA.avg_10y)) * 100.0 : sd;
+          const trip = base + metaA.direction * sdEff;
+          const stress = base + metaA.direction * 2 * sdEff;
+
+          // Mean dotted
+          ctx.strokeStyle = "rgba(184,192,214,.55)";
+          drawLine(ctx, [padL, w-padR], [y(base), y(base)], {dash:[2*devicePixelRatio, 5*devicePixelRatio], alpha:1, width:1.2*devicePixelRatio});
+
+          // Tripwire dashed
+          ctx.strokeStyle = "rgba(251,191,36,.60)";
+          drawLine(ctx, [padL, w-padR], [y(trip), y(trip)], {dash:[7*devicePixelRatio, 6*devicePixelRatio], alpha:1, width:1.1*devicePixelRatio});
+
+          // Stress dashed
+          ctx.strokeStyle = "rgba(239,68,68,.55)";
+          drawLine(ctx, [padL, w-padR], [y(stress), y(stress)], {dash:[10*devicePixelRatio, 6*devicePixelRatio], alpha:1, width:1.1*devicePixelRatio});
+        }
+
+        // Primary series
+        const xsA = ptsA.map(p => x(p.t));
+        const ysA_px = ysA.map(v => y(v));
+        ctx.strokeStyle = "rgba(231,236,246,.95)";
+        drawLine(ctx, xsA, ysA_px, {dash:[], alpha:1, width:2.2*devicePixelRatio});
+
+        // Moving average
+        const ysA_ma_px = ysA_ma.map(v => y(v));
+        ctx.strokeStyle = "rgba(184,192,214,.55)";
+        drawLine(ctx, xsA, ysA_ma_px, {dash:[4*devicePixelRatio, 6*devicePixelRatio], alpha:1, width:1.4*devicePixelRatio});
+
+        // Secondary overlay
+        if (ptsB.length >= 2){
+          const xsB = ptsB.map(p => x(p.t));
+          const ysB_px = ysB.map(v => y(v));
+          ctx.strokeStyle = "rgba(96,165,250,.65)";
+          drawLine(ctx, xsB, ysB_px, {dash:[], alpha:1, width:1.8*devicePixelRatio});
+        }
+
+        // Hover overlay
+        if (hoverIdx >= 0){
+          const hx = xsA[hoverIdx];
+          const hv = ysA[hoverIdx];
+          const hy = y(hv);
+
+          ctx.save();
+          ctx.strokeStyle = "rgba(255,255,255,.14)";
+          ctx.lineWidth = 1 * devicePixelRatio;
+          ctx.setLineDash([4*devicePixelRatio, 6*devicePixelRatio]);
+          ctx.beginPath();
+          ctx.moveTo(hx, padT);
+          ctx.lineTo(hx, h - padB);
+          ctx.stroke();
+          ctx.setLineDash([]);
+
+          ctx.fillStyle = "rgba(231,236,246,.95)";
+          ctx.beginPath();
+          ctx.arc(hx, hy, 3.2*devicePixelRatio, 0, Math.PI*2);
+          ctx.fill();
+
+          const dateStr = ptsA[hoverIdx].t.toISOString().slice(0,10);
+          const rawA = ysA_raw[hoverIdx];
+          const txtA = normalize ? `${fmtValue(rawA, metaA.units)}  (idx ${fmtNum(hv,1)})` : fmtValue(rawA, metaA.units);
+
+          let txtB = "";
+          if (ptsB.length){
+            const t = ptsA[hoverIdx].t.getTime();
+            let bi = 0, bd = Infinity;
+            for (let i=0;i<ptsB.length;i++){
+              const d = Math.abs(ptsB[i].t.getTime() - t);
+              if (d < bd){ bd = d; bi = i; }
+            }
+            const bRaw = ptsB[bi].v;
+            const baseB = (normalize && metaB && metaB.avg_10y !== null && metaB.avg_10y !== undefined && Number.isFinite(metaB.avg_10y))
+              ? Number(metaB.avg_10y)
+              : (ptsB[0] ? ptsB[0].v : bRaw);
+            const bVal = normalize && baseB ? (bRaw / baseB) * 100.0 : bRaw;
+            const labelB = metaB && metaB.title ? metaB.title : "Overlay";
+            txtB = normalize
+              ? `\n${labelB}: ${fmtValue(bRaw, (metaB && metaB.units) ? metaB.units : "index")}  (idx ${fmtNum(bVal,1)})`
+              : `\n${labelB}: ${fmtValue(bRaw, (metaB && metaB.units) ? metaB.units : "index")}`;
+          }
+
+          const text = `${dateStr}\n${metaA.title}: ${txtA}${txtB}`;
+          ctx.font = `${12*devicePixelRatio}px system-ui`;
+          const lines = text.split("\n");
+          const lineH = 15*devicePixelRatio;
+          const padBox = 10*devicePixelRatio;
+          const tw = Math.max(...lines.map(l => ctx.measureText(l).width));
+          const th = lines.length * lineH + padBox;
+
+          let bx = hx + 10*devicePixelRatio;
+          let by = padT + 8*devicePixelRatio;
+          if (bx + tw + 2*padBox > w - padR) bx = hx - (tw + 2*padBox + 10*devicePixelRatio);
+
+          ctx.fillStyle = "rgba(0,0,0,.70)";
+          ctx.strokeStyle = "rgba(255,255,255,.16)";
+          ctx.lineWidth = 1 * devicePixelRatio;
+          roundRect(ctx, bx, by, tw + 2*padBox, th, 10*devicePixelRatio);
+          ctx.fill();
+          ctx.stroke();
+
+          ctx.fillStyle = "rgba(231,236,246,.95)";
+          for (let i=0;i<lines.length;i++){
+            ctx.fillText(lines[i], bx + padBox, by + padBox + (i+1)*lineH - 4*devicePixelRatio);
+          }
+          ctx.restore();
+        }
+      }
+
+      // Initial render
+      let hoverIdx = -1;
+      renderBase(-1);
+
+      // Bind hover
+      canvas.onmousemove = (ev) => {
+        if (ptsA.length < 2) return;
+        const rect = canvas.getBoundingClientRect();
+        const mx = (ev.clientX - rect.left) * devicePixelRatio;
+
+        // Find nearest x in primary
+        const w = canvas.clientWidth * devicePixelRatio;
+        const t0 = ptsA[0].t.getTime();
+        const t1 = ptsA[ptsA.length-1].t.getTime();
+        const x = (t) => {
+          const tt = t.getTime();
+          return padL + ( (tt - t0) / (t1 - t0) ) * (w - padL - padR);
+        };
+        const xsA = ptsA.map(p => x(p.t));
+
+        let best = 0, bestDist = Infinity;
+        for (let i=0;i<xsA.length;i++){
+          const d = Math.abs(xsA[i] - mx);
+          if (d < bestDist){ bestDist = d; best = i; }
+        }
+        hoverIdx = best;
+        renderBase(hoverIdx);
+      };
+
+      canvas.onmouseleave = () => {
+        hoverIdx = -1;
+        renderBase(-1);
+      };
+    }
+
+    function renderNews(news){
+      const b = (news && news.buckets) ? news.buckets : {};
+      const left = b.credit_consumer || {title:"Credit / consumer stress", items:[]};
+      const right = b.labor_macro || {title:"Labor / macro signals", items:[]};
+
+      $("newsLeftTitle").textContent = left.title || "Credit / consumer stress";
+      $("newsRightTitle").textContent = right.title || "Labor / macro signals";
+
+      function renderList(el, items){
+        el.innerHTML = "";
+        if (!items || !items.length){
+          el.innerHTML = `<li style="color:var(--muted); font-size:13px;">No headlines available.</li>`;
+          return;
+        }
+        for (const it of items){
+          const title = it.title || "Untitled";
+          const link = it.link || "#";
+          const source = it.source || "";
+          const published = it.published || "";
+          const li = document.createElement("li");
+          li.innerHTML = `
+            <a href="${link}" target="_blank" rel="noopener noreferrer">${escapeHtml(title)}</a>
+            <div class="newsItemMeta">${escapeHtml(source)}${published ? " · " + escapeHtml(published) : ""}</div>
+          `;
+          el.appendChild(li);
+        }
+      }
+
+      renderList($("newsLeft"), left.items);
+      renderList($("newsRight"), right.items);
+    }
+
+    function escapeHtml(str){
+      return String(str).replace(/[&<>"']/g, (m) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
+    }
+
+    function renderKPIs(payload){
+      const rows = payload.data || [];
+      const metrics = payload.metrics || [];
+      const byKey = {};
+      for (const m of metrics){
+        byKey[m.key] = m;
+      }
+
+      const grid = $("kpiGrid");
+      grid.innerHTML = "";
+
+      for (const key of KPI_ORDER){
+        const m = byKey[key];
+        if (!m){
+          continue;
+        }
+        const status = m.status || "healthy";
+        const units = m.units || "";
+        const latestValue = m.latest_value;
+        const latestDate = m.latest_date;
+        const avg10 = m.avg_10y;
+        const deltaAbs = m.delta_1y_abs;
+        const deltaPct = m.delta_1y_pct;
+
+        // Sparkline uses last ~36 points
+        const pts = seriesToPoints(rows, key);
+        const tail = pts.slice(Math.max(0, pts.length - 36));
+
+        const el = document.createElement("div");
+        el.className = "kpi";
+        el.innerHTML = `
+          <div class="kpiTitle">${escapeHtml(m.title || key)}</div>
+          <div class="kpiSub">FRED: ${escapeHtml(m.series_id || "")} (${escapeHtml(m.freq || "")}${units === "pct" ? ", %" : units === "mil" ? ", millions" : units === "thou" ? ", thousands" : units === "usd_b" ? ", $B" : units === "index" ? ", index" : ""})</div>
+          ${makePill(status)}
+          <div class="kpiValue">${fmtValue(latestValue, units)}</div>
+          <div class="kpiMetaRow">
+            <span>As of: <b>${escapeHtml(latestDate || "—")}</b></span>
+            <span>10y avg: <b>${fmtValue(avg10, units)}</b></span>
+          </div>
+          <canvas class="kpiSpark"></canvas>
+          <div class="kpiDelta">
+            <span>Change vs year-ago:</span>
+            <span class="${(deltaAbs || 0) >= 0 ? "pos" : "neg"}"><b>${fmtDeltaAbs(deltaAbs, units)}</b></span>
+            <span>(${fmtDeltaPct(deltaPct)})</span>
+          </div>
         `;
-        ul.appendChild(li);
+        grid.appendChild(el);
+
+        const canvas = el.querySelector("canvas");
+        drawSparkline(canvas, tail.map(p => p.v));
       }
     }
-    grid.appendChild(card);
-  }
-}
 
-/* Trend chart + benchmarks */
-function buildChart(container, raw, metricsIndex) {
-  const seriesKey = container.dataset.series;
-  const mode = container.dataset.format;
-  const direction = Number(container.dataset.direction || "1");
-  const svg = container.querySelector("svg");
-  const tooltip = container.querySelector(".tooltip");
+    function drawSparkline(canvas, values){
+      const ctx = canvas.getContext("2d");
+      const w = canvas.width = canvas.clientWidth * devicePixelRatio;
+      const h = canvas.height = canvas.clientHeight * devicePixelRatio;
+      ctx.clearRect(0,0,w,h);
+      if (!values || values.length < 2){
+        ctx.strokeStyle = "rgba(184,192,214,.35)";
+        ctx.beginPath(); ctx.moveTo(6, h/2); ctx.lineTo(w-6, h/2); ctx.stroke();
+        return;
+      }
+      const min = Math.min(...values), max = Math.max(...values);
+      const pad = (max-min)*0.12 || 1;
+      const ymin = min - pad, ymax = max + pad;
+      const x = (i) => (i/(values.length-1))*(w-14*devicePixelRatio) + 7*devicePixelRatio;
+      const y = (v) => (1 - (v - ymin)/(ymax-ymin))*(h-10*devicePixelRatio) + 5*devicePixelRatio;
 
-  const pts = raw
-    .filter(r => r[seriesKey] !== null && r[seriesKey] !== undefined && !Number.isNaN(r[seriesKey]))
-    .map(r => ({ x: new Date(r.date + "T00:00:00").getTime(), d: new Date(r.date + "T00:00:00"), y: Number(r[seriesKey]) }));
-
-  if (pts.length < 2) {
-    tooltip.style.opacity = 1;
-    tooltip.textContent = "No data available.";
-    return;
-  }
-
-  const vb = svg.viewBox.baseVal;
-  const W = vb.width, H = vb.height;
-  const padL = 44, padR = 14, padT = 12, padB = 28;
-  const innerW = W - padL - padR;
-  const innerH = H - padT - padB;
-
-  const xs = pts.map(p => p.x);
-  const ys = pts.map(p => p.y);
-  const xmin = Math.min(...xs), xmax = Math.max(...xs);
-  let ymin = Math.min(...ys), ymax = Math.max(...ys);
-  if (ymax === ymin) ymax = ymin + 1e-9;
-
-  const yr = ymax - ymin;
-  ymin -= yr * 0.06;
-  ymax += yr * 0.06;
-
-  function xScale(x) { return padL + (x - xmin) / (xmax - xmin) * innerW; }
-  function yScale(y) { return padT + (1 - (y - ymin) / (ymax - ymin)) * innerH; }
-
-  let pathD = "";
-  for (let i=0; i<pts.length; i++) {
-    const px = xScale(pts[i].x);
-    const py = yScale(pts[i].y);
-    pathD += (i===0 ? "M" : "L") + px.toFixed(2) + " " + py.toFixed(2) + " ";
-  }
-
-  while (svg.firstChild) svg.removeChild(svg.firstChild);
-
-  for (let g=0; g<4; g++) {
-    const y = padT + (innerH/3)*g;
-    const gl = document.createElementNS("http://www.w3.org/2000/svg","line");
-    gl.setAttribute("x1", padL);
-    gl.setAttribute("x2", W - padR);
-    gl.setAttribute("y1", y);
-    gl.setAttribute("y2", y);
-    gl.setAttribute("class","axis");
-    svg.appendChild(gl);
-  }
-
-  // Benchmarks from metrics: mean + sd bands
-  const m = metricsIndex?.[seriesKey];
-  if (m && m.avg_10y != null && m.sd_10y != null) {
-    const mean10 = Number(m.avg_10y);
-    const sd10 = Number(m.sd_10y);
-
-    const trip = mean10 + direction * sd10;
-    const stress = mean10 + direction * 2 * sd10;
-
-    function addHLine(yVal, cls){
-      const y = yScale(yVal);
-      const ln = document.createElementNS("http://www.w3.org/2000/svg","line");
-      ln.setAttribute("x1", padL);
-      ln.setAttribute("x2", W - padR);
-      ln.setAttribute("y1", y);
-      ln.setAttribute("y2", y);
-      ln.setAttribute("class", "bench " + cls);
-      svg.appendChild(ln);
+      // line
+      ctx.strokeStyle = "rgba(231,236,246,.90)";
+      ctx.lineWidth = 2*devicePixelRatio;
+      ctx.beginPath();
+      for (let i=0;i<values.length;i++){
+        const xx=x(i), yy=y(values[i]);
+        if (i===0) ctx.moveTo(xx,yy);
+        else ctx.lineTo(xx,yy);
+      }
+      ctx.stroke();
     }
 
-    addHLine(mean10, "mean");
-    addHLine(trip, "trip");
-    addHLine(stress, "stress");
-  }
+    function renderCharts(payload, normalize){
+      const rows = payload.data || [];
+      const metrics = payload.metrics || [];
+      const byKey = {};
+      for (const m of metrics) byKey[m.key] = m;
 
-  const path = document.createElementNS("http://www.w3.org/2000/svg","path");
-  path.setAttribute("d", pathD.trim());
-  path.setAttribute("class","line");
-  svg.appendChild(path);
+      const grid = $("chartsGrid");
+      grid.innerHTML = "";
 
-  const vline = document.createElementNS("http://www.w3.org/2000/svg","line");
-  vline.setAttribute("y1", padT);
-  vline.setAttribute("y2", padT + innerH);
-  vline.setAttribute("class","vline");
-  vline.style.opacity = 0;
-  svg.appendChild(vline);
+      for (const def of CHART_DEFS){
+        const m = byKey[def.key];
+        if (!m) continue;
 
-  const dot = document.createElementNS("http://www.w3.org/2000/svg","circle");
-  dot.setAttribute("r", 4.5);
-  dot.setAttribute("class","dot");
-  dot.style.opacity = 0;
-  svg.appendChild(dot);
+        const m2 = def.secondary ? byKey[def.secondary] : null;
 
-  function nearestPoint(mx) {
-    const xVal = xmin + (mx - padL) / innerW * (xmax - xmin);
-    let lo = 0, hi = pts.length - 1;
-    while (hi - lo > 1) {
-      const mid = (lo + hi) >> 1;
-      if (pts[mid].x < xVal) lo = mid; else hi = mid;
+        const card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML = `
+          <div class="chartCard">
+            <div class="chartHead">
+              <h3 class="chartTitle">${escapeHtml(m.title || def.key)}</h3>
+              <div class="chartMeta">FRED: ${escapeHtml(m.series_id || "")} (${escapeHtml(m.freq || "")})</div>
+            </div>
+            <div class="chartDef">${escapeHtml(m.definition || "")}${m2 ? "  •  Overlay: " + escapeHtml(m2.title || def.secondary) : ""}</div>
+            <div class="chartSummary">${escapeHtml(m.summary || "—")}</div>
+            <div class="canvasWrap"><canvas></canvas></div>
+          </div>
+        `;
+        grid.appendChild(card);
+
+        const canvas = card.querySelector("canvas");
+        const ptsA = seriesToPoints(rows, def.key);
+        const ptsB = def.secondary ? seriesToPoints(rows, def.secondary) : null;
+
+        // Build the chart
+        buildChart(canvas, ptsA, ptsB, m, m2, normalize);
+        // Redraw on resize
+        const ro = new ResizeObserver(() => buildChart(canvas, ptsA, ptsB, m, m2, normalize));
+        ro.observe(canvas.parentElement);
+      }
     }
-    const a = pts[lo], b = pts[hi];
-    return (Math.abs(a.x - xVal) <= Math.abs(b.x - xVal)) ? a : b;
-  }
 
-  function onMove(evt) {
-    const rect = svg.getBoundingClientRect();
-    const mx = (evt.clientX - rect.left) / rect.width * W;
-    if (mx < padL || mx > W - padR) return;
+    function renderOverall(payload){
+      const meta = payload.meta || {};
+      const status = meta.overall_status || "healthy";
+      const summary = meta.overall_summary || "";
+      const badge = $("overallBadge");
+      badge.classList.remove("watch","bad");
+      const cls = statusToClass(status);
+      if (cls === "watch") badge.classList.add("watch");
+      if (cls === "bad") badge.classList.add("bad");
+      $("overallText").textContent = `Overall: ${status === "stress" ? "Stress" : status === "tripwire" ? "Tripwire / Watch" : "Healthy"}`;
 
-    const p = nearestPoint(mx);
-    const px = xScale(p.x);
-    const py = yScale(p.y);
+      const ss = $("statusSummary");
+      if (summary){
+        ss.style.display = "block";
+        ss.textContent = summary;
+      }
+      if (meta.last_updated_utc){
+        $("lastUpdated").textContent = "Last updated: " + meta.last_updated_utc;
+      }
+    }
 
-    vline.setAttribute("x1", px);
-    vline.setAttribute("x2", px);
-    vline.style.opacity = 1;
+    async function main(){
+      // normalize toggle persistence
+      const normToggle = $("normToggle");
+      const normSaved = localStorage.getItem("normCharts") === "1";
+      normToggle.checked = normSaved;
 
-    dot.setAttribute("cx", px);
-    dot.setAttribute("cy", py);
-    dot.style.opacity = 1;
+      let payload = null;
+      let news = null;
 
-    tooltip.style.opacity = 1;
-    tooltip.innerHTML = `<b>${fmtValue(p.y, mode)}</b><br>${fmtDate(p.d)}`;
+      try{
+        const r = await fetch("./data.json", {cache:"no-store"});
+        payload = await r.json();
+      }catch(e){
+        console.error("Failed to load data.json", e);
+        payload = {meta:{overall_status:"healthy", overall_summary:"Data failed to load."}, data:[], metrics:[]};
+      }
 
-    const cRect = container.getBoundingClientRect();
-    tooltip.style.left = (evt.clientX - cRect.left) + "px";
-    tooltip.style.top = (evt.clientY - cRect.top) + "px";
-  }
+      try{
+        const r2 = await fetch("./news.json", {cache:"no-store"});
+        news = await r2.json();
+      }catch(e){
+        console.error("Failed to load news.json", e);
+        news = {buckets:{}};
+      }
 
-  function onLeave() {
-    tooltip.style.opacity = 0;
-    dot.style.opacity = 0;
-    vline.style.opacity = 0;
-  }
+      renderOverall(payload);
+      renderNews(news);
+      renderKPIs(payload);
+      renderCharts(payload, normToggle.checked);
 
-  svg.addEventListener("mousemove", onMove);
-  svg.addEventListener("mouseleave", onLeave);
-}
+      normToggle.onchange = () => {
+        localStorage.setItem("normCharts", normToggle.checked ? "1" : "0");
+        renderCharts(payload, normToggle.checked);
+      };
+    }
 
-async function main(){
-  const resp = await fetch("data.json", { cache:"no-store" });
-  const payload = await resp.json();
-
-  const lu = payload?.meta?.last_updated_utc;
-  if (lu) document.getElementById("lastUpdated").textContent = `(Last updated: ${lu})`;
-
-  renderOverall(payload.meta || {});
-  const raw = payload.data || [];
-  const metrics = payload.metrics || [];
-
-  // build quick index by series key for chart benchmarks
-  const metricsIndex = {};
-  for (const m of metrics) metricsIndex[m.key] = m;
-
-  renderKPI(raw, metrics);
-
-  document.querySelectorAll(".svgwrap").forEach(el => buildChart(el, raw, metricsIndex));
-
-  try{
-    const nresp = await fetch("news.json", { cache:"no-store" });
-    const news = await nresp.json();
-    renderNews(news);
-  }catch(e){
-    renderNews({ sections: {} });
-  }
-}
-
-main().catch(err => {
-  console.error(err);
-  document.getElementById("lastUpdated").textContent = "(Data failed to load)";
-});
-</script>
+    main();
+  </script>
 </body>
 </html>
