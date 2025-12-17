@@ -1,99 +1,145 @@
 {
-  "generated_utc": "2025-12-17T13:48:55Z",
+  "meta": {
+    "last_updated_utc": "2025-12-17T19:00:57Z",
+    "sources": [
+      "CNBC Top News",
+      "CNBC Economy",
+      "Yahoo Finance",
+      "Reuters Business"
+    ]
+  },
   "buckets": {
-    "credit_consumer": {
-      "title": "Credit / consumer stress",
-      "items": [
-        {
-          "title": "Investors Parse Jobs Data, Look Ahead to Inflation Report as US Futures Rise Pre-Bell",
-          "link": "https://finance.yahoo.com/news/investors-parse-jobs-data-look-131206420.html?.tsrc=rss",
-          "published": "Wed, 17 Dec 2025 13:12:06 +0000",
-          "source": "feeds.finance.yahoo.com"
-        },
-        {
-          "title": "Jefferies Bullish on CRH plc (CRH), Cites Passive Capital Inflows and S&P500 Inclusion",
-          "link": "https://finance.yahoo.com/news/jefferies-bullish-crh-plc-crh-131116149.html?.tsrc=rss",
-          "published": "Wed, 17 Dec 2025 13:11:16 +0000",
-          "source": "feeds.finance.yahoo.com"
-        },
-        {
-          "title": "Stock Market Today: Dow Rises Ahead Of Retail Sales Data; Tesla Extends Gains (Live Coverage)",
-          "link": "https://finance.yahoo.com/m/08034984-b2ec-32ee-b4d6-81730f186925/stock-market-today%3A-dow-rises.html?.tsrc=rss",
-          "published": "Wed, 17 Dec 2025 13:07:30 +0000",
-          "source": "feeds.finance.yahoo.com"
-        },
-        {
-          "title": "Dow Jones Futures Rise, Nasdaq Eyes Key Level; Tesla, Amazon, Defense Firms In Focus",
-          "link": "https://finance.yahoo.com/m/afcad7eb-8f2f-3059-bb7a-bcf340349bbd/dow-jones-futures-rise%2C.html?.tsrc=rss",
-          "published": "Wed, 17 Dec 2025 13:07:22 +0000",
-          "source": "feeds.finance.yahoo.com"
-        },
-        {
-          "title": "Cantor Sees Semiconductors Outperforming in 2026 as AI Spending Heats up",
-          "link": "https://finance.yahoo.com/news/cantor-sees-semiconductors-outperforming-2026-124710345.html?.tsrc=rss",
-          "published": "Wed, 17 Dec 2025 12:47:10 +0000",
-          "source": "feeds.finance.yahoo.com"
-        },
-        {
-          "title": "Buy! Analysts Pound The Table For 11 S&P 500 Stocks In 2026",
-          "link": "https://finance.yahoo.com/m/6c8b793b-8d2d-3015-94f6-0d287e5a5eda/buy%21-analysts-pound-the-table.html?.tsrc=rss",
-          "published": "Wed, 17 Dec 2025 12:46:44 +0000",
-          "source": "feeds.finance.yahoo.com"
-        },
-        {
-          "title": "S&P 500 Stocks: These 2 Lagging Retailers Become Leaders In December",
-          "link": "https://finance.yahoo.com/m/a0d31115-4b7a-32d0-aeea-2c24eaf6d056/s%26p-500-stocks%3A-these-2.html?.tsrc=rss",
-          "published": "Wed, 17 Dec 2025 12:44:33 +0000",
-          "source": "feeds.finance.yahoo.com"
-        }
-      ]
-    },
-    "labor_macro": {
-      "title": "Labor / macro signals",
-      "items": [
-        {
-          "title": "Fed chair candidate Waller says he will 'absolutely' emphasize importance of the central bank's independence to Trump",
-          "link": "https://www.cnbc.com/2025/12/17/fed-chair-candidate-waller-says-he-will-absolutely-emphasize-importance-of-the-central-banks-independence-to-trump.html",
-          "published": "Wed, 17 Dec 2025 13:47:31 GMT",
-          "source": "www.cnbc.com"
-        },
-        {
-          "title": "Tricolor executives charged with 'systematic fraud' after subprime auto lender roiled banking sector",
-          "link": "https://www.cnbc.com/2025/12/17/tricolor-execs-charged-with-systematic-fraud-after-subprime-auto-lender-roiled-banking-sector.html",
-          "published": "Wed, 17 Dec 2025 13:44:57 GMT",
-          "source": "www.cnbc.com"
-        },
-        {
-          "title": "WBD tells shareholders Netflix deal is superior to Paramount offer: 'It was not a hard choice,' chairman tells CNBC",
-          "link": "https://www.cnbc.com/2025/12/17/wbd-board-paramount-skydance-reject-value.html",
-          "published": "Wed, 17 Dec 2025 13:44:42 GMT",
-          "source": "www.cnbc.com"
-        },
-        {
-          "title": "Oil rebounds from lowest levels since 2021 after Trump orders Venezuela oil tanker blockade",
-          "link": "https://www.cnbc.com/2025/12/17/crude-oil-prices-today.html",
-          "published": "Wed, 17 Dec 2025 13:14:17 GMT",
-          "source": "www.cnbc.com"
-        },
-        {
-          "title": "Why this billionaire real estate developer is waving a red flag over data centers",
-          "link": "https://www.cnbc.com/2025/12/17/billionaire-real-estate-developer-red-flag-data-centers.html",
-          "published": "Wed, 17 Dec 2025 12:31:02 GMT",
-          "source": "www.cnbc.com"
-        },
-        {
-          "title": "‘Orwellian’: Ben & Jerry’s founder tells CNBC he’s alarmed by Magnum’s board overhaul",
-          "link": "https://www.cnbc.com/2025/12/17/ben-jerrys-founder-lashes-out-against-parent-magnums-board-changes.html",
-          "published": "Wed, 17 Dec 2025 12:20:55 GMT",
-          "source": "www.cnbc.com"
-        },
-        {
-          "title": "Apple punted on AI this year. Next year will be critical",
-          "link": "https://www.cnbc.com/2025/12/17/apple-ai-delay-siri.html",
-          "published": "Wed, 17 Dec 2025 12:00:01 GMT",
-          "source": "www.cnbc.com"
-        }
-      ]
-    }
+    "credit": [
+      {
+        "source": "CNBC Top News",
+        "title": "Mortgage rates move higher after the Fed rate cut, causing loan demand to drop",
+        "link": "https://www.cnbc.com/2025/12/17/mortgage-rates-moved-higher-after-fed-rate-cut.html",
+        "published": "Wed, 17 Dec 2025 16:56:17 GMT",
+        "bucket": "credit"
+      },
+      {
+        "source": "CNBC Economy",
+        "title": "Consumer confidence hits lowest point since April as job worries grow",
+        "link": "https://www.cnbc.com/2025/11/25/consumer-confidence-lowest-point-since-april.html",
+        "published": "Tue, 25 Nov 2025 17:40:53 GMT",
+        "bucket": "credit"
+      }
+    ],
+    "labor": [
+      {
+        "source": "CNBC Economy",
+        "title": "Payrolls rose by 64,000 in November after falling by 105,000 in October, delayed jobs numbers show",
+        "link": "https://www.cnbc.com/2025/12/16/jobs-report-november-2025-.html",
+        "published": "Tue, 16 Dec 2025 17:29:04 GMT",
+        "bucket": "labor"
+      },
+      {
+        "source": "CNBC Economy",
+        "title": "The case for more Fed rate cuts could rest on a 'systematic overcount' of jobs numbers",
+        "link": "https://www.cnbc.com/2025/12/11/case-for-more-fed-rate-cuts-could-rest-on-systemic-overcount-of-jobs.html",
+        "published": "Thu, 11 Dec 2025 19:50:52 GMT",
+        "bucket": "labor"
+      },
+      {
+        "source": "CNBC Economy",
+        "title": "Layoff announcements top 1.1 million this year, the most since 2020 pandemic, Challenger says",
+        "link": "https://www.cnbc.com/2025/12/04/layoff-announcements-this-year-top-1point1-million-the-most-since-2020-when-pandemic-hit-challenger-says.html",
+        "published": "Thu, 04 Dec 2025 14:20:21 GMT",
+        "bucket": "labor"
+      },
+      {
+        "source": "CNBC Economy",
+        "title": "November private payrolls unexpectedly fell by 32,000, led by steep small business job cuts, ADP reports",
+        "link": "https://www.cnbc.com/2025/12/03/adp-jobs-report-november-2025-private-payrolls-unexpectedly-fell-by-32000-.html",
+        "published": "Wed, 03 Dec 2025 19:13:15 GMT",
+        "bucket": "labor"
+      },
+      {
+        "source": "CNBC Economy",
+        "title": "Private payroll losses accelerated in the past four weeks, ADP reports",
+        "link": "https://www.cnbc.com/2025/11/25/private-payroll-losses-accelerated-in-the-past-four-weeks-adp-reports-.html",
+        "published": "Tue, 25 Nov 2025 16:21:59 GMT",
+        "bucket": "labor"
+      },
+      {
+        "source": "CNBC Economy",
+        "title": "Delayed September report shows U.S. added 119,000 jobs, more than expected; unemployment rate at 4.4%",
+        "link": "https://www.cnbc.com/2025/11/20/jobs-report-september-2025.html",
+        "published": "Thu, 20 Nov 2025 17:22:20 GMT",
+        "bucket": "labor"
+      },
+      {
+        "source": "Yahoo Finance",
+        "title": "Jobs Data, Inflation Report, Micron Earnings: Coming This Week",
+        "link": "https://www.wsj.com/livecoverage/jobs-report-stock-market-today-12-16-2025/card/jobs-data-inflation-report-micron-earnings-coming-this-week-XziUxWmQQmIFm3mmpn6R?siteid=yhoof2&yptr=yahoo",
+        "published": "2025-12-16T09:31:28Z",
+        "bucket": "labor"
+      },
+      {
+        "source": "Yahoo Finance",
+        "title": "Is Charles River Laboratories Stock Underperforming the Dow?",
+        "link": "https://finance.yahoo.com/news/charles-river-laboratories-stock-underperforming-102433866.html",
+        "published": "2025-12-16T10:24:33Z",
+        "bucket": "labor"
+      }
+    ],
+    "other": [
+      {
+        "source": "CNBC Top News",
+        "title": "ACA subsidies extension to get vote after 4 Republicans buck leadership",
+        "link": "https://www.cnbc.com/2025/12/17/johnson-aca-republicans-health.html",
+        "published": "Wed, 17 Dec 2025 17:20:11 GMT",
+        "bucket": "other"
+      },
+      {
+        "source": "CNBC Top News",
+        "title": "FCC chief Brendan Carr tells Senate that his agency is 'not formally ... independent'",
+        "link": "https://www.cnbc.com/2025/12/17/fcc-carr-senate-jimmy-kimmel-kirk.html",
+        "published": "Wed, 17 Dec 2025 18:37:49 GMT",
+        "bucket": "other"
+      },
+      {
+        "source": "CNBC Top News",
+        "title": "The Oscars are heading to YouTube in 2029",
+        "link": "https://www.cnbc.com/2025/12/17/youtube-stream-oscars-2029.html",
+        "published": "Wed, 17 Dec 2025 18:21:55 GMT",
+        "bucket": "other"
+      },
+      {
+        "source": "CNBC Top News",
+        "title": "FBI Deputy Director Dan Bongino plans to step down early next year, MS NOW reports",
+        "link": "https://www.cnbc.com/2025/12/17/fbi-dan-bongino-steps-down-epstein-jan-6.html",
+        "published": "Wed, 17 Dec 2025 18:57:23 GMT",
+        "bucket": "other"
+      },
+      {
+        "source": "CNBC Top News",
+        "title": "Oracle stock dips 5% on report Blue Owl Capital won't back $10 billion data center",
+        "link": "https://www.cnbc.com/2025/12/17/oracle-stock-blue-owl-michigan-data-center.html",
+        "published": "Wed, 17 Dec 2025 18:41:02 GMT",
+        "bucket": "other"
+      },
+      {
+        "source": "CNBC Top News",
+        "title": "Medical supply firm Medline jumps more than 25% in debut after biggest IPO of 2025",
+        "link": "https://www.cnbc.com/2025/12/17/medline-debuts-nasdaq-biggest-ipo-2025.html",
+        "published": "Wed, 17 Dec 2025 18:34:18 GMT",
+        "bucket": "other"
+      },
+      {
+        "source": "CNBC Top News",
+        "title": "Trump vowed to block tankers carrying Venezuela's oil — nearly a dozen are at sea right now",
+        "link": "https://www.cnbc.com/2025/12/17/trump-venezuela-tankers-oil.html",
+        "published": "Wed, 17 Dec 2025 18:23:15 GMT",
+        "bucket": "other"
+      },
+      {
+        "source": "CNBC Top News",
+        "title": "Why this billionaire real estate developer is waving a red flag over data centers",
+        "link": "https://www.cnbc.com/2025/12/17/billionaire-real-estate-developer-red-flag-data-centers.html",
+        "published": "Wed, 17 Dec 2025 14:31:41 GMT",
+        "bucket": "other"
+      }
+    ]
   }
 }
