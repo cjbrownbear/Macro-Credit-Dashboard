@@ -1,129 +1,99 @@
 {
-  "generated_utc": "2025-12-16T05:15:00Z",
-  "sections": {
-    "Credit / consumer stress": [
-      {
-        "title": "Trump sues BBC for $10 billion, claims defamation from Panorama documentary",
-        "source": "US Top News and Analysis",
-        "link": "https://www.cnbc.com/2025/12/16/trump-bbc-panorama-election-defamation-lawsuit.html",
-        "published_utc": "2025-12-16T04:32:46Z"
-      },
-      {
-        "title": "Korea Zinc sinks 13% as largest shareholder group challenges U.S.-backed plans for Tennessee smelter",
-        "source": "US Top News and Analysis",
-        "link": "https://www.cnbc.com/2025/12/16/korea-zinc-mbk-yoongpoong-us-jv-texas-pentagon.html",
-        "published_utc": "2025-12-16T02:44:38Z"
-      },
-      {
-        "title": "South Korea stocks lead losses in Asia for a second day as tech sell-off continues on Wall Street",
-        "source": "US Top News and Analysis",
-        "link": "https://www.cnbc.com/2025/12/16/asia-markets-nikkei-kospi-hang-seng-australia.html",
-        "published_utc": "2025-12-16T02:28:22Z"
-      },
-      {
-        "title": "Tesla stock closes at 2025 high after Musk confirms driverless Robotaxi tests underway in Austin",
-        "source": "US Top News and Analysis",
-        "link": "https://www.cnbc.com/2025/12/15/tesla-tests-driverless-cars-in-austin-without-humans-on-board.html",
-        "published_utc": "2025-12-15T23:53:57Z"
-      },
-      {
-        "title": "New York AG sues UPS for allegedly shorting Christmas season workers' wages",
-        "source": "US Top News and Analysis",
-        "link": "https://www.cnbc.com/2025/12/15/new-york-lawsuit-ups-christmas-wage-steal-seasonal-workers.html",
-        "published_utc": "2025-12-15T23:08:22Z"
-      },
-      {
-        "title": "Zillow shares are getting crushed. Here's why",
-        "source": "US Top News and Analysis",
-        "link": "https://www.cnbc.com/2025/12/15/zillow-shares-are-getting-crushed-heres-why.html",
-        "published_utc": "2025-12-15T22:49:41Z"
-      },
-      {
-        "title": "PayPal applies to form bank that can offer small business loans and savings accounts",
-        "source": "US Top News and Analysis",
-        "link": "https://www.cnbc.com/2025/12/15/paypal-seeks-us-approval-to-form-bank-offer-small-business-loans.html",
-        "published_utc": "2025-12-15T22:11:08Z"
-      },
-      {
-        "title": "Trump says he's 'strongly' considering reclassifying pot via executive order",
-        "source": "US Top News and Analysis",
-        "link": "https://www.cnbc.com/2025/12/15/trump-pot-executive-order-reclassification.html",
-        "published_utc": "2025-12-15T21:46:30Z"
-      },
-      {
-        "title": "New Trump tariffs collection hits $200 billion, Customs says",
-        "source": "US Top News and Analysis",
-        "link": "https://www.cnbc.com/2025/12/15/trump-tariffs-trade-customs-imports.html",
-        "published_utc": "2025-12-15T21:31:59Z"
-      },
-      {
-        "title": "Trump admin to hire 1,000 specialists for 'Tech Force' to build AI, finance projects",
-        "source": "US Top News and Analysis",
-        "link": "https://www.cnbc.com/2025/12/15/trump-ai-tech-force-amazon-apple.html",
-        "published_utc": "2025-12-15T16:40:02Z"
-      }
-    ],
-    "Labor / macro signals": [
-      {
-        "title": "Ford to record $19.5 billion in special charges related to EV pullback",
-        "source": "Business News",
-        "link": "https://www.cnbc.com/2025/12/15/ford-ev-pullback.html",
-        "published_utc": "2025-12-16T00:28:37Z"
-      },
-      {
-        "title": "Frontier Airlines replaces CEO Barry Biffle with carrier's president",
-        "source": "Business News",
-        "link": "https://www.cnbc.com/2025/12/15/frontier-airlines-replaces-ceo-biffle-with-carriers-president.html",
-        "published_utc": "2025-12-15T22:56:52Z"
-      },
-      {
-        "title": "From puppies to superheroes, Chinese AI toys are bringing hugs — and hesitation",
-        "source": "Business News",
-        "link": "https://www.cnbc.com/2025/12/15/china-ai-toys-haivivi-ultraman-chongker-cat.html",
-        "published_utc": "2025-12-15T15:53:18Z"
-      },
-      {
-        "title": "'Stranger Things' ushered in a new era for Netflix",
-        "source": "Business News",
-        "link": "https://www.cnbc.com/2025/12/13/stranger-things-netflix.html",
-        "published_utc": "2025-12-15T11:13:35Z"
-      },
-      {
-        "title": "Evercore Reiterates Outperform on Arista Networks (ANET), Removes Stock From Tactical List",
-        "source": "Yahoo Finance",
-        "link": "https://finance.yahoo.com/news/evercore-reiterates-outperform-arista-networks-184209259.html",
-        "published_utc": "2025-12-14T18:42:09Z"
-      },
-      {
-        "title": "Bank of America Calls Synopsys (SNPS) a Lower-Beta AI Play With Catch-Up Potential",
-        "source": "Yahoo Finance",
-        "link": "https://finance.yahoo.com/news/bank-america-calls-synopsys-snps-184104284.html",
-        "published_utc": "2025-12-14T18:41:04Z"
-      },
-      {
-        "title": "Inflation Data, AI Earnings and Other Can't Miss Items this Week",
-        "source": "Yahoo Finance",
-        "link": "https://finance.yahoo.com/news/inflation-data-ai-earnings-other-180002235.html",
-        "published_utc": "2025-12-14T18:00:02Z"
-      },
-      {
-        "title": "The AI Boom Is Pushing Data Centers Past the Thermal Wall",
-        "source": "Yahoo Finance",
-        "link": "https://finance.yahoo.com/news/ai-boom-pushing-data-centers-180000874.html",
-        "published_utc": "2025-12-14T18:00:00Z"
-      },
-      {
-        "title": "Investors lose 15% of returns over 10 years due to common mistakes. Are you getting the most from your investments?",
-        "source": "Yahoo Finance",
-        "link": "https://finance.yahoo.com/news/investors-lose-15-returns-over-180000911.html",
-        "published_utc": "2025-12-14T18:00:00Z"
-      },
-      {
-        "title": "46-year-old casual restaurant chain closed over 140 locations",
-        "source": "Yahoo Finance",
-        "link": "https://finance.yahoo.com/news/popular-sports-bar-chain-chili-174700356.html",
-        "published_utc": "2025-12-14T17:47:00Z"
-      }
-    ]
+  "generated_utc": "2025-12-17T00:04:25Z",
+  "buckets": {
+    "credit_consumer": {
+      "title": "Credit / consumer stress",
+      "items": [
+        {
+          "title": "Stock market today: Dow, S&P 500, Nasdaq futures wobble as Wall Street weighs jobs, inflation signals",
+          "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-wobble-as-wall-street-weighs-jobs-inflation-signals-235109589.html?.tsrc=rss",
+          "published": "Tue, 16 Dec 2025 23:51:09 +0000",
+          "source": "feeds.finance.yahoo.com"
+        },
+        {
+          "title": "Dow Jones Futures Fall; The Market's Key Level As Tesla Runs To Highs, Palantir Eyes Buy Point",
+          "link": "https://finance.yahoo.com/m/afcad7eb-8f2f-3059-bb7a-bcf340349bbd/dow-jones-futures-fall%3B-the.html?.tsrc=rss",
+          "published": "Tue, 16 Dec 2025 23:42:32 +0000",
+          "source": "feeds.finance.yahoo.com"
+        },
+        {
+          "title": "Wall St ends mixed, healthcare and energy stocks weigh on S&P",
+          "link": "https://finance.yahoo.com/video/wall-st-ends-mixed-healthcare-233728831.html?.tsrc=rss",
+          "published": "Tue, 16 Dec 2025 23:37:28 +0000",
+          "source": "feeds.finance.yahoo.com"
+        },
+        {
+          "title": "The Best Stocks to Invest $1,000 in Right Now",
+          "link": "https://www.fool.com/investing/2025/12/16/the-best-stocks-to-invest-1000-in-right-now/?.tsrc=rss",
+          "published": "Tue, 16 Dec 2025 23:35:00 +0000",
+          "source": "feeds.finance.yahoo.com"
+        },
+        {
+          "title": "Can Plug Power (PLUG) Stock Beat The Market?",
+          "link": "https://www.fool.com/investing/2025/12/16/can-plug-power-plug-stock-beat-the-market/?.tsrc=rss",
+          "published": "Tue, 16 Dec 2025 23:35:00 +0000",
+          "source": "feeds.finance.yahoo.com"
+        },
+        {
+          "title": "Why Tilray Stock Soared 27.5% Today",
+          "link": "https://www.fool.com/investing/2025/12/16/why-tilray-stock-soared-275-today/?.tsrc=rss",
+          "published": "Tue, 16 Dec 2025 23:32:42 +0000",
+          "source": "feeds.finance.yahoo.com"
+        },
+        {
+          "title": "Why Trulieve Cannabis Skyrocketed 14.1% Today",
+          "link": "https://www.fool.com/investing/2025/12/16/why-trulieve-cannabis-skyrocketed-141-today/?.tsrc=rss",
+          "published": "Tue, 16 Dec 2025 23:24:57 +0000",
+          "source": "feeds.finance.yahoo.com"
+        }
+      ]
+    },
+    "labor_macro": {
+      "title": "Labor / macro signals",
+      "items": [
+        {
+          "title": "California judge rules that Tesla engaged in deceptive marketing around Autopilot",
+          "link": "https://www.cnbc.com/2025/12/16/california-judge-says-tesla-engaged-in-deceptive-autopilot-marketing-.html",
+          "published": "Wed, 17 Dec 2025 00:00:10 GMT",
+          "source": "www.cnbc.com"
+        },
+        {
+          "title": "This market's strength lies in the non-tech growth stocks, Jim Cramer says",
+          "link": "https://www.cnbc.com/2025/12/16/strength-non-tech-growth-stocks-jim-cramer.html",
+          "published": "Wed, 17 Dec 2025 00:00:01 GMT",
+          "source": "www.cnbc.com"
+        },
+        {
+          "title": "Asia-Pacific markets set to open mixed ahead of Japan trade data",
+          "link": "https://www.cnbc.com/2025/12/17/asia-pacific-markets-nikkei-225-kospi-csi-300.html",
+          "published": "Tue, 16 Dec 2025 23:53:41 GMT",
+          "source": "www.cnbc.com"
+        },
+        {
+          "title": "Hyperscaler AI spending could slow down if Oracle shows 'discipline'",
+          "link": "https://www.cnbc.com/2025/12/16/hyperscaler-ai-spending-could-slow-down-if-oracle-shows-discipline.html",
+          "published": "Tue, 16 Dec 2025 23:22:55 GMT",
+          "source": "www.cnbc.com"
+        },
+        {
+          "title": "Why China’s young are flocking to government jobs in record numbers",
+          "link": "https://www.cnbc.com/2025/12/17/china-youth-unemployment-civil-service-jobs-economy-slowdown.html",
+          "published": "Tue, 16 Dec 2025 22:59:31 GMT",
+          "source": "www.cnbc.com"
+        },
+        {
+          "title": "Bill to ease Big Tech project permits advances in House",
+          "link": "https://www.cnbc.com/2025/12/16/ai-congres-permitting-speed-act.html",
+          "published": "Tue, 16 Dec 2025 22:42:04 GMT",
+          "source": "www.cnbc.com"
+        },
+        {
+          "title": "Nick Reiner to be charged with murder of dad Rob Reiner, mom Michele: LA DA",
+          "link": "https://www.cnbc.com/2025/12/16/rob-reiner-nick-reiner-murder-charge.html",
+          "published": "Tue, 16 Dec 2025 22:22:34 GMT",
+          "source": "www.cnbc.com"
+        }
+      ]
+    }
   }
 }
