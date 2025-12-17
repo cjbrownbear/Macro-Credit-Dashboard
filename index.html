@@ -1,918 +1,558 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <title>Macro–Credit Stress Dashboard</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    :root{
-      --bg:#0b0f19;
-      --panel:#111827;
-      --text:#e5e7eb;
-      --muted:#9ca3af;
-      --good:#22c55e;
-      --warn:#facc15;
-      --bad:#ef4444;
-      --border: rgba(255,255,255,0.10);
-      --shadow: rgba(0,0,0,0.35);
+#!/usr/bin/env python3
+"""
+update_data.py — Macro/Credit Stress Dashboard updater
+
+Outputs (repo root):
+- data.json  (timeseries + computed KPI tiles + meta summary)
+- news.json  (headline feed from RSS)
+- macro_credit_timeseries.xlsx
+- macro_credit_metrics.xlsx
+
+Requires env var:
+- FRED_API_KEY  (https://fred.stlouisfed.org/docs/api/api_key.html)
+
+Notes:
+- Uses FRED "series/observations" JSON endpoint (more stable than fredgraph.csv).
+- Sanitizes NaN/Inf to None to keep JSON compliant.
+"""
+
+from __future__ import annotations
+
+import os
+import json
+import math
+import time
+import datetime as dt
+from typing import Any, Dict, List, Optional, Tuple
+
+import requests
+import pandas as pd
+
+# Optional, for RSS headlines (install in workflow via pip)
+try:
+    import feedparser  # type: ignore
+except Exception:
+    feedparser = None
+
+
+# -----------------------------
+# Config
+# -----------------------------
+
+FRED_BASE = "https://api.stlouisfed.org/fred"
+UA = "Macro-Credit-Dashboard/1.0 (+github-actions)"
+
+# Primary KPI tiles (8) — keys MUST match what index.html expects
+SERIES: List[Dict[str, Any]] = [
+    # 1) Consumer credit stress
+    dict(
+        key="DRCCLACBS_pct",
+        series_id="DRCCLACBS",
+        title="Card 30+ Delinquency",
+        subtitle="FRED: DRCCLACBS (%; quarterly)",
+        unit="pct",
+        fmt="pct",
+        direction=+1,  # higher is worse
+        definition="Share of credit-card balances at least 30 days past due (all banks).",
+        why="Rising delinquency is an early sign of household strain.",
+    ),
+    dict(
+        key="CORCCACBS_pct",
+        series_id="CORCCACBS",
+        title="Net Charge-off Rate",
+        subtitle="FRED: CORCCACBS (%; quarterly)",
+        unit="pct",
+        fmt="pct",
+        direction=+1,  # higher is worse
+        definition="Portion of credit-card loans written off as uncollectible (all banks).",
+        why="Charge-offs typically lag delinquencies but confirm credit deterioration.",
+    ),
+    dict(
+        key="TDSP_pct",
+        series_id="TDSP",
+        title="Debt Service Burden",
+        subtitle="FRED: TDSP (%; quarterly)",
+        unit="pct",
+        fmt="pct",
+        direction=+1,  # higher is worse
+        definition="Household debt payments as a percent of disposable personal income.",
+        why="Higher debt service leaves less buffer to absorb shocks.",
+    ),
+    dict(
+        key="DRSFRMACBS_pct",
+        series_id="DRSFRMACBS",
+        title="Mortgage 30+ Delinquency",
+        subtitle="FRED: DRSFRMACBS (%; quarterly)",
+        unit="pct",
+        fmt="pct",
+        direction=+1,  # higher is worse
+        definition="Share of residential mortgages 30+ days delinquent (all commercial banks).",
+        why="Mortgage delinquencies can jump in downturns and housing stress episodes.",
+    ),
+
+    # 2) Leverage / liquidity / labor
+    dict(
+        key="REVOLSL_bil_usd",
+        series_id="REVOLSL",
+        title="Revolving Consumer Credit",
+        subtitle="FRED: REVOLSL ($B; monthly)",
+        unit="usd_b",
+        fmt="usd_b",
+        direction=+1,  # higher is worse (more leverage)
+        definition="Total revolving consumer credit outstanding (primarily credit cards).",
+        why="Rapid growth can signal households leaning on credit.",
+    ),
+    dict(
+        key="JTSJOL_mil",
+        series_id="JTSJOL",
+        title="Job Openings",
+        subtitle="FRED: JTSJOL (millions; monthly)",
+        unit="mil",
+        fmt="mil",
+        direction=-1,  # lower openings is worse
+        transform=lambda x: x / 1000.0,  # FRED is 'thousands of persons' -> millions
+        definition="Job openings (JOLTS). Proxy for labor demand.",
+        why="Falling openings often precede labor market cooling.",
+    ),
+    dict(
+        key="UNRATE_pct",
+        series_id="UNRATE",
+        title="Unemployment Rate",
+        subtitle="FRED: UNRATE (%; monthly)",
+        unit="pct",
+        fmt="pct",
+        direction=+1,  # higher is worse
+        definition="Headline unemployment rate (U-3).",
+        why="Rising unemployment tends to worsen credit performance.",
+    ),
+    dict(
+        key="ICSA_thou",
+        series_id="ICSA",
+        title="Initial Jobless Claims",
+        subtitle="FRED: ICSA (thousands; weekly)",
+        unit="thou",
+        fmt="thou",
+        direction=+1,  # higher is worse
+        # IMPORTANT: keep as thousands; do NOT multiply by 1,000 (prevents 236,000K)
+        definition="Weekly initial claims for unemployment insurance.",
+        why="Claims are a fast-turn labor stress signal; spikes can precede higher unemployment.",
+    ),
+]
+
+# Overlay series used in charts (not KPI tiles)
+EXTRA_SERIES: List[Dict[str, Any]] = [
+    dict(
+        key="DSPIC96_bil_usd",
+        series_id="DSPIC96",
+        title="Real Disposable Personal Income",
+        unit="usd_b",
+        fmt="usd_b",
+        direction=-1,
+        definition="Inflation-adjusted disposable personal income (billions of chained dollars).",
+        why="Income growth supports debt repayment capacity.",
+    ),
+]
+
+# RSS feeds for headlines
+RSS_SECTIONS = [
+    ("Credit / consumer stress", [
+        ("CNBC Top News", "https://www.cnbc.com/id/100003114/device/rss/rss.html"),
+        ("Yahoo Finance", "https://finance.yahoo.com/news/rssindex"),
+    ]),
+    ("Labor / macro signals", [
+        ("CNBC Economy", "https://www.cnbc.com/id/20910258/device/rss/rss.html"),
+        ("Reuters Business (RSS)", "https://feeds.reuters.com/reuters/businessNews"),
+    ]),
+]
+
+
+# -----------------------------
+# Helpers
+# -----------------------------
+
+def utc_now_iso() -> str:
+    return dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
+
+def _http_get(url: str, params: Optional[dict] = None, timeout: int = 30) -> requests.Response:
+    r = requests.get(url, params=params, headers={"User-Agent": UA}, timeout=timeout)
+    r.raise_for_status()
+    return r
+
+def _fred_observations(series_id: str, api_key: str) -> pd.DataFrame:
+    """Return DataFrame(date, value_float_or_none) for a FRED series."""
+    url = f"{FRED_BASE}/series/observations"
+    params = {"series_id": series_id, "api_key": api_key, "file_type": "json"}
+    r = _http_get(url, params=params)
+    payload = r.json()
+    obs = payload.get("observations", [])
+    out = []
+    for o in obs:
+        ds = o.get("date")
+        vs = o.get("value")
+        if not ds:
+            continue
+        try:
+            d = pd.to_datetime(ds)
+        except Exception:
+            continue
+        if vs is None or vs == ".":
+            v = None
+        else:
+            try:
+                v = float(vs)
+                if math.isnan(v) or math.isinf(v):
+                    v = None
+            except Exception:
+                v = None
+        out.append((d, v))
+    return pd.DataFrame(out, columns=["date", "value"]).sort_values("date").reset_index(drop=True)
+
+def _apply_transform(v: Optional[float], sdef: Dict[str, Any]) -> Optional[float]:
+    if v is None:
+        return None
+    fn = sdef.get("transform")
+    if callable(fn):
+        try:
+            vv = float(fn(v))
+            if math.isnan(vv) or math.isinf(vv):
+                return None
+            return vv
+        except Exception:
+            return None
+    return v
+
+def _safe_float(x: Any) -> Optional[float]:
+    if x is None:
+        return None
+    try:
+        v = float(x)
+        if math.isnan(v) or math.isinf(v):
+            return None
+        return v
+    except Exception:
+        return None
+
+def _mean_std(vals: List[float]) -> Tuple[Optional[float], Optional[float]]:
+    if not vals:
+        return None, None
+    if len(vals) == 1:
+        return vals[0], 0.0
+    m = sum(vals) / len(vals)
+    var = sum((v - m) ** 2 for v in vals) / len(vals)
+    return m, math.sqrt(var)
+
+def _latest_point(df: pd.DataFrame, col: str) -> Optional[Tuple[pd.Timestamp, float]]:
+    s = df[["date", col]].dropna()
+    if s.empty:
+        return None
+    row = s.iloc[-1]
+    return row["date"], float(row[col])
+
+def _value_at_or_before(df: pd.DataFrame, col: str, target: pd.Timestamp) -> Optional[Tuple[pd.Timestamp, float]]:
+    s = df[df["date"] <= target][["date", col]].dropna()
+    if s.empty:
+        return None
+    row = s.iloc[-1]
+    return row["date"], float(row[col])
+
+def _window_values(df: pd.DataFrame, col: str, start: pd.Timestamp) -> List[float]:
+    s = df[df["date"] >= start][col].dropna()
+    return [float(x) for x in s.tolist() if x is not None]
+
+def fmt_units(unit: str) -> str:
+    return {"pct": "%", "mil": "M", "usd_b": "$B", "thou": "K"}.get(unit, "")
+
+def classify_status(current: float, avg: Optional[float], sd: Optional[float], direction: int) -> str:
+    """
+    direction:
+      +1 => higher is worse
+      -1 => lower is worse
+    """
+    if avg is None or sd is None or sd == 0:
+        return "healthy"
+    z = (current - avg) / sd
+    risk = direction * z
+    if risk >= 2.0:
+        return "stress"
+    if risk >= 1.0:
+        return "tripwire"
+    return "healthy"
+
+def _to_jsonable(obj: Any) -> Any:
+    """Convert pandas/float NaN/Inf/etc to JSON-safe primitives."""
+    if obj is None:
+        return None
+    if isinstance(obj, (dt.datetime, dt.date, pd.Timestamp)):
+        return str(obj)[:10]
+    if isinstance(obj, float):
+        if math.isnan(obj) or math.isinf(obj):
+            return None
+        return obj
+    if isinstance(obj, (int, str, bool)):
+        return obj
+    if isinstance(obj, dict):
+        return {k: _to_jsonable(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [_to_jsonable(v) for v in obj]
+    return obj
+
+
+# -----------------------------
+# KPI computation
+# -----------------------------
+
+def compute_metrics(df: pd.DataFrame, sdefs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    metrics: List[Dict[str, Any]] = []
+    for s in sdefs:
+        key = s["key"]
+        latest = _latest_point(df, key)
+        if not latest:
+            continue
+        latest_date, latest_val = latest
+
+        one_year_ago = latest_date - pd.DateOffset(years=1)
+        prior = _value_at_or_before(df, key, one_year_ago)
+
+        ten_years_ago = latest_date - pd.DateOffset(years=10)
+        vals10 = _window_values(df, key, ten_years_ago)
+        avg10, sd10 = _mean_std(vals10)
+
+        status = classify_status(latest_val, avg10, sd10, int(s.get("direction", +1)))
+
+        # YoY deltas:
+        # - Always store TRUE numeric movement (not "good vs bad")
+        # - For pct series, yoy_abs is "percentage points" delta
+        yoy_abs = None
+        yoy_pct = None
+        yoy_note = ""
+        if prior:
+            _, prior_val = prior
+            yoy_abs = latest_val - prior_val
+            if prior_val != 0:
+                yoy_pct = (latest_val - prior_val) / abs(prior_val) * 100.0
+            if s.get("unit") == "pct":
+                yoy_note = "pp"
+
+        why_status = []
+        if avg10 is not None and sd10 is not None and sd10 != 0:
+            z = (latest_val - avg10) / sd10
+            risk = int(s.get("direction", +1)) * z
+            why_status.append(f"10y avg {avg10:.2f}{fmt_units(s.get('unit',''))}, σ {sd10:.2f}{fmt_units(s.get('unit',''))}.")
+            if risk >= 2:
+                why_status.append("≥2σ worse than baseline (Stress threshold).")
+            elif risk >= 1:
+                why_status.append("≥1σ worse than baseline (Tripwire threshold).")
+            else:
+                why_status.append("Within ~1σ of baseline (Healthy range).")
+        else:
+            why_status.append("Insufficient variance in 10y window; defaulted to Healthy.")
+
+        metrics.append({
+            "key": key,
+            "series_id": s.get("series_id"),
+            "title": s.get("title"),
+            "subtitle": s.get("subtitle"),
+            "unit": s.get("unit"),
+            "format": s.get("fmt"),
+            "direction": int(s.get("direction", +1)),
+            "status": status,
+            "definition": s.get("definition", ""),
+            "why": s.get("why", ""),
+            "why_status": " ".join(why_status),
+            "latest_date": str(latest_date.date()),
+            "latest_value": _safe_float(latest_val),
+            "baseline_10y_avg": _safe_float(avg10),
+            "baseline_10y_sd": _safe_float(sd10),
+            "yoy_abs": _safe_float(yoy_abs),
+            "yoy_pct": _safe_float(yoy_pct),
+            "yoy_abs_unit": yoy_note,  # "pp" for percent series
+        })
+
+    order = {s["key"]: i for i, s in enumerate(sdefs)}
+    metrics.sort(key=lambda x: order.get(x["key"], 999))
+    return metrics
+
+def overall_health(metrics: List[Dict[str, Any]]) -> Tuple[str, Dict[str, int]]:
+    counts = {"healthy": 0, "tripwire": 0, "stress": 0}
+    for m in metrics:
+        st = m.get("status")
+        if st in counts:
+            counts[st] += 1
+
+    if counts["stress"] >= 2:
+        overall = "stress"
+    elif counts["stress"] == 1 or counts["tripwire"] >= 3:
+        overall = "tripwire"
+    else:
+        overall = "healthy"
+    return overall, counts
+
+def executive_summary(metrics: List[Dict[str, Any]], counts: Dict[str, int]) -> str:
+    """Deterministic, rule-based summary (no external AI calls)."""
+    if not metrics:
+        return "No KPI data available yet."
+
+    movers = []
+    for m in metrics:
+        # rate series: rank by absolute pp move; other series: by abs % move
+        if m.get("unit") == "pct":
+            abs_move = abs(_safe_float(m.get("yoy_abs")) or 0.0)
+        else:
+            abs_move = abs(_safe_float(m.get("yoy_pct")) or 0.0)
+        movers.append((abs_move, m))
+    movers.sort(key=lambda t: t[0], reverse=True)
+
+    top = [mm for _, mm in movers[:3] if (_safe_float(mm.get("yoy_abs")) or _safe_float(mm.get("yoy_pct")))]
+    top_bits = []
+    for m in top:
+        if m.get("unit") == "pct":
+            da = m.get("yoy_abs")
+            if da is not None:
+                top_bits.append(f"{m['title']} is {'up' if da > 0 else 'down'} {abs(da):.2f}pp YoY.")
+        else:
+            dp = m.get("yoy_pct")
+            if dp is not None:
+                top_bits.append(f"{m['title']} is {'up' if dp > 0 else 'down'} {abs(dp):.1f}% YoY.")
+
+    status_line = f"System status: {counts['healthy']} healthy, {counts['tripwire']} tripwire, {counts['stress']} stress."
+    if top_bits:
+        return status_line + " Biggest moves: " + " ".join(top_bits)
+    return status_line
+
+
+# -----------------------------
+# News (RSS) -> news.json
+# -----------------------------
+
+def build_news() -> Dict[str, Any]:
+    if feedparser is None:
+        return {
+            "meta": {"last_updated_utc": utc_now_iso(), "note": "feedparser not installed; skipping RSS"},
+            "sections": [],
+        }
+
+    sections_out = []
+    for section_title, feeds in RSS_SECTIONS:
+        items = []
+        for source, url in feeds:
+            try:
+                fp = feedparser.parse(url)
+                for e in fp.entries[:8]:
+                    title = getattr(e, "title", "").strip()
+                    link = getattr(e, "link", "").strip()
+                    if not title or not link:
+                        continue
+                    published = None
+                    if getattr(e, "published_parsed", None):
+                        published = dt.datetime.fromtimestamp(
+                            time.mktime(e.published_parsed), tz=dt.timezone.utc
+                        ).isoformat().replace("+00:00", "Z")
+                    items.append({
+                        "title": title,
+                        "url": link,
+                        "source": source,
+                        "published_utc": published,
+                    })
+            except Exception:
+                continue
+
+        # de-dupe by url
+        seen = set()
+        dedup = []
+        for it in items:
+            if it["url"] in seen:
+                continue
+            seen.add(it["url"])
+            dedup.append(it)
+
+        sections_out.append({"title": section_title, "items": dedup[:10]})
+
+    return {"meta": {"last_updated_utc": utc_now_iso()}, "sections": sections_out}
+
+
+# -----------------------------
+# Main
+# -----------------------------
+
+def main() -> None:
+    api_key = os.getenv("FRED_API_KEY", "").strip()
+    if not api_key:
+        raise SystemExit("Missing env var FRED_API_KEY. Set it in GitHub repo secrets and workflow env.")
+
+    all_defs = SERIES + EXTRA_SERIES
+
+    # Fetch all series
+    frames = []
+    for s in all_defs:
+        sid = s["series_id"]
+        df = _fred_observations(sid, api_key)
+        df.rename(columns={"value": s["key"]}, inplace=True)
+
+        if "transform" in s:
+            df[s["key"]] = df[s["key"]].apply(lambda v: _apply_transform(v, s))
+
+        frames.append(df)
+
+    # Merge on date
+    merged = frames[0]
+    for df in frames[1:]:
+        merged = pd.merge(merged, df, on="date", how="outer")
+    merged = merged.sort_values("date").reset_index(drop=True)
+
+    # Derived overlay
+    if "REVOLSL_bil_usd" in merged.columns and "DSPIC96_bil_usd" in merged.columns:
+        ratio = []
+        for a, b in zip(merged["REVOLSL_bil_usd"].tolist(), merged["DSPIC96_bil_usd"].tolist()):
+            av = _safe_float(a)
+            bv = _safe_float(b)
+            if av is None or bv in (None, 0.0):
+                ratio.append(None)
+            else:
+                ratio.append(av / bv)
+        merged["REVOLSL_to_DSPIC96_ratio"] = ratio
+
+    # Metrics + system state
+    metrics = compute_metrics(merged, SERIES)
+    overall, counts = overall_health(metrics)
+    exec_sum = executive_summary(metrics, counts)
+
+    payload = {
+        "meta": {
+            "last_updated_utc": utc_now_iso(),
+            "overall_health": overall,
+            "health_counts": counts,
+            "executive_summary": exec_sum,
+        },
+        "metrics": metrics,
+        "data": [],
     }
-    body{
-      margin:0; padding:24px;
-      background: linear-gradient(180deg, #0b0f19 0%, #070a12 100%);
-      color: var(--text);
-      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Arial,sans-serif;
-    }
-    .wrap{ max-width: 1180px; margin: 0 auto; }
-    h1{ margin:0 0 6px 0; font-size: 22px; letter-spacing:0.2px; }
-    h2{ font-size: 15px; margin: 0 0 10px 0; }
-    .toprow{ display:flex; justify-content: space-between; align-items:flex-start; gap: 16px; }
-    .desc{ margin:0; color: var(--muted); font-size: 13px; line-height: 1.45; max-width: 880px; }
-    code{ background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 8px; }
 
-    .overall{
-      padding: 10px 12px;
-      border-radius: 14px;
-      border: 1px solid rgba(255,255,255,0.14);
-      background: rgba(255,255,255,0.04);
-      font-weight: 950;
-      font-size: 12px;
-      white-space: nowrap;
-      flex: 0 0 auto;
-      align-self: flex-start;
-      box-shadow: 0 10px 30px var(--shadow);
-    }
-    .overall.good{ color: var(--good); }
-    .overall.warn{ color: var(--warn); }
-    .overall.bad{ color: var(--bad); }
+    # Timeseries rows
+    for _, row in merged.iterrows():
+        rec = {"date": str(pd.to_datetime(row["date"]).date())}
+        for c in merged.columns:
+            if c == "date":
+                continue
+            rec[c] = _safe_float(row[c])
+        payload["data"].append(rec)
 
-    .section{ margin-top: 18px; }
-    .legend{ display:flex; gap:10px; margin: 10px 0 10px 0; flex-wrap:wrap; }
-    .pill{
-      display:inline-block;
-      padding:4px 10px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,0.14);
-      font-size:12px;
-      background: rgba(255,255,255,0.02);
-    }
-    .pill.healthy{ color: var(--good); }
-    .pill.tripwire{ color: var(--warn); }
-    .pill.stress{ color: var(--bad); }
+    # Write JSON (no NaN)
+    with open("data.json", "w", encoding="utf-8") as f:
+        json.dump(_to_jsonable(payload), f, ensure_ascii=False, indent=2)
 
-    .execsum{
-      background: rgba(17,24,39,0.78);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 14px;
-      box-shadow: 0 10px 30px var(--shadow);
-      color: var(--text);
-      font-size: 13px;
-      line-height: 1.5;
-    }
-    .execmeta{ margin-top: 8px; color: var(--muted); font-size: 12px; }
+    news = build_news()
+    with open("news.json", "w", encoding="utf-8") as f:
+        json.dump(_to_jsonable(news), f, ensure_ascii=False, indent=2)
 
-    .newsgrid{
-      display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 12px;
-    }
-    .newscard{
-      background: rgba(17,24,39,0.70);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 12px;
-      box-shadow: 0 10px 30px var(--shadow);
-      min-height: 118px;
-    }
-    .newstitle{ font-weight: 950; font-size: 13px; margin-bottom: 6px; }
-    .newsitem{ margin: 8px 0; }
-    .newsitem a{ color: var(--text); text-decoration: none; font-size: 12px; line-height: 1.35; }
-    .newsitem a:hover{ text-decoration: underline; }
-    .newssrc{ color: var(--muted); font-size: 11px; margin-top: 2px; }
+    # Excel outputs
+    merged_out = merged.copy()
+    merged_out["date"] = merged_out["date"].dt.date
+    merged_out.to_excel("macro_credit_timeseries.xlsx", index=False)
 
-    .kpigrid{
-      display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 12px;
-      margin-top: 10px;
-    }
-    .kpicard{
-      background: rgba(17,24,39,0.78);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 14px;
-      box-shadow: 0 10px 30px var(--shadow);
-      overflow:hidden;
-      position:relative;
-    }
-    .kpihead{
-      display:flex;
-      justify-content: space-between;
-      gap: 10px;
-      align-items:flex-start;
-    }
-    .kpihead > div{ min-width: 0; }
-    .kpititle{
-      font-weight: 950;
-      font-size: 13px;
-      display:flex;
-      align-items:center;
-      gap:8px;
-      min-width: 0;
-    }
-    .kpititle span.label{
-      overflow:hidden;
-      text-overflow:ellipsis;
-      white-space:nowrap;
-      max-width: 100%;
-    }
-    .info{
-      width: 18px; height: 18px;
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,0.14);
-      background: rgba(255,255,255,0.03);
-      color: rgba(229,231,235,0.9);
-      font-size: 11px;
-      font-weight: 950;
-      flex: 0 0 auto;
-      cursor: default;
-    }
-    .kpisub{ color: var(--muted); font-size: 12px; margin-top: 3px; }
-    .badge{
-      font-size: 11px;
-      font-weight: 950;
-      padding: 4px 10px;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,0.14);
-      background: rgba(255,255,255,0.03);
-      white-space: nowrap;
-      flex: 0 0 auto;
-      max-width: 132px;
-      text-align:center;
-    }
-    .badge.healthy{ color: var(--good); }
-    .badge.tripwire{ color: var(--warn); }
-    .badge.stress{ color: var(--bad); }
+    pd.DataFrame(metrics).to_excel("macro_credit_metrics.xlsx", index=False)
 
-    .kpivalue{ font-size: 22px; font-weight: 980; margin-top: 10px; }
-    .kpimeta{
-      display:flex;
-      gap:12px;
-      flex-wrap:wrap;
-      margin-top: 8px;
-      color: var(--muted);
-      font-size: 12px;
-      line-height: 1.3;
-    }
-    .kpisparkwrap{ margin-top: 10px; }
-    svg.spark{ width: 100%; height: 44px; display:block; }
-    .sparkline{ fill:none; stroke: rgba(229,231,235,0.92); stroke-width: 2; }
-    .sparkaxis{ stroke: rgba(255,255,255,0.07); stroke-width: 1; }
+    print("Wrote: data.json, news.json, macro_credit_timeseries.xlsx, macro_credit_metrics.xlsx")
 
-    /* KPI hover popup */
-    .kpiPopup{
-      position:absolute;
-      left: 12px;
-      right: 12px;
-      top: 46px;
-      background: rgba(0,0,0,0.82);
-      border: 1px solid rgba(255,255,255,0.14);
-      border-radius: 14px;
-      padding: 10px 12px;
-      font-size: 12px;
-      line-height: 1.35;
-      color: var(--text);
-      opacity: 0;
-      transform: translateY(4px);
-      transition: opacity 120ms linear, transform 120ms linear;
-      pointer-events: none;
-      z-index: 20;
-    }
-    .kpicard:hover .kpiPopup{ opacity: 1; transform: translateY(0px); }
-    .kpiPopup .ptitle{ font-weight: 950; margin-bottom: 6px; }
-    .kpiPopup .pmuted{ color: rgba(229,231,235,0.70); }
 
-    /* Trends + window controls */
-    .windowbar{
-      display:flex;
-      gap:10px;
-      align-items:center;
-      flex-wrap:wrap;
-      margin: 10px 0 12px 0;
-      padding: 10px 12px;
-      border-radius: 16px;
-      border: 1px solid rgba(255,255,255,0.12);
-      background: rgba(255,255,255,0.03);
-    }
-    .windowlabel{ color: var(--muted); font-size: 12px; }
-    input[type="range"]{ width: 360px; max-width: 100%; }
-    button.small{
-      padding: 8px 10px;
-      border-radius: 12px;
-      border: 1px solid rgba(255,255,255,0.14);
-      background: rgba(255,255,255,0.04);
-      color: var(--text);
-      font-weight: 950;
-      font-size: 12px;
-      cursor: pointer;
-    }
-    button.small:hover{ background: rgba(255,255,255,0.07); }
-
-    .chartgrid{
-      display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-      gap: 14px;
-      margin-top: 10px;
-    }
-    .chartcard{
-      background: rgba(17,24,39,0.72);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 12px;
-      box-shadow: 0 10px 30px var(--shadow);
-    }
-    .charthead{
-      display:flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 12px;
-    }
-    .charttitle{ font-weight: 950; font-size: 13px; }
-    .chartsub{ color: var(--muted); font-size: 12px; }
-    .chartdef{ color: rgba(229,231,235,0.72); font-size: 12px; margin-top: 6px; line-height: 1.35; }
-    .chartsum{
-      margin-top: 8px;
-      padding: 10px 12px;
-      border-radius: 14px;
-      border: 1px solid rgba(255,255,255,0.10);
-      background: rgba(255,255,255,0.03);
-      font-size: 12px;
-      line-height: 1.35;
-    }
-    .svgwrap{ position: relative; margin-top: 10px; }
-    svg.interactive{ width: 100%; height: 240px; display:block; }
-    .axis{ stroke: rgba(255,255,255,0.08); stroke-width: 1; }
-    .line{ fill:none; stroke: rgba(229,231,235,0.92); stroke-width: 2; }
-    .tooltip{
-      position:absolute;
-      pointer-events:none;
-      background: rgba(0,0,0,0.78);
-      border: 1px solid rgba(255,255,255,0.14);
-      color: var(--text);
-      padding: 8px 10px;
-      border-radius: 12px;
-      font-size: 12px;
-      line-height: 1.25;
-      transform: translate(10px, -10px);
-      opacity: 0;
-      transition: opacity 120ms linear;
-      white-space: nowrap;
-      z-index: 10;
-    }
-    .dot{ fill: rgba(250,204,21,0.95); stroke: rgba(0,0,0,0.3); stroke-width: 1; opacity: 0; }
-    .vline{ stroke: rgba(250,204,21,0.6); stroke-width: 1; opacity: 0; }
-
-    .btnrow{ margin-top: 14px; display:flex; gap:10px; flex-wrap:wrap; }
-    a.btn{
-      display:inline-block;
-      padding: 10px 12px;
-      border-radius: 12px;
-      border: 1px solid rgba(255,255,255,0.14);
-      text-decoration:none;
-      color: var(--text);
-      background: rgba(255,255,255,0.04);
-      font-weight: 950;
-      font-size: 12px;
-    }
-    a.btn:hover{ background: rgba(255,255,255,0.07); }
-    .foot{ margin-top: 14px; color: var(--muted); font-size: 12px; line-height: 1.4; }
-  </style>
-</head>
-
-<body>
-  <div class="wrap">
-    <div class="toprow">
-      <div>
-        <h1>Macro–Credit Stress Dashboard</h1>
-        <p class="desc">
-          A continuously-updated snapshot of consumer credit stress, household leverage, housing conditions, and labor market softness using public macro series (primarily FRED).
-          KPI tiles show the latest reading, a 10-year baseline, and true YoY movement (in clear units—percentage points for rate series). Hover a tile for “why” the health status is what it is.
-          <span id="lastUpdated"></span>
-        </p>
-      </div>
-      <div id="overallBadge" class="overall good">Overall: —</div>
-    </div>
-
-    <div class="section">
-      <h2>Executive summary</h2>
-      <div class="execsum" id="execSummary">Loading…</div>
-      <div class="execmeta" id="execMeta"></div>
-    </div>
-
-    <div class="section">
-      <h2>Latest headlines</h2>
-      <div class="newsgrid" id="newsGrid"></div>
-    </div>
-
-    <div class="legend">
-      <span class="pill healthy">Healthy</span>
-      <span class="pill tripwire">Tripwire / Watch</span>
-      <span class="pill stress">Stress</span>
-    </div>
-
-    <div class="section">
-      <h2>Latest snapshot</h2>
-      <div class="kpigrid" id="kpiGrid"></div>
-    </div>
-
-    <div class="section">
-      <h2>Trends (interactive)</h2>
-      <div class="windowbar">
-        <div class="windowlabel">View window: <b><span id="windowLabel">—</span></b> (10-year window, drag slider or scroll on a chart)</div>
-        <input id="windowEnd" type="range" min="0" max="100" value="100" step="1" />
-        <button id="windowReset" class="small" type="button">Latest</button>
-      </div>
-
-      <div class="chartgrid">
-        <div class="chartcard">
-          <div class="charthead">
-            <div class="charttitle">Card 30+ Delinquency (All banks)</div>
-            <div class="chartsub">FRED: DRCCLACBS (quarterly, %)</div>
-          </div>
-          <div class="chartdef" data-def-for="DRCCLACBS_pct"></div>
-          <div class="chartsum" data-sum-for="DRCCLACBS_pct"></div>
-          <div class="svgwrap" data-series="DRCCLACBS_pct" data-format="pct">
-            <div class="tooltip"></div>
-            <svg class="interactive" viewBox="0 0 640 240" preserveAspectRatio="none"></svg>
-          </div>
-        </div>
-
-        <div class="chartcard">
-          <div class="charthead">
-            <div class="charttitle">Net Charge-off Rate (All banks)</div>
-            <div class="chartsub">FRED: CORCCACBS (quarterly, %)</div>
-          </div>
-          <div class="chartdef" data-def-for="CORCCACBS_pct"></div>
-          <div class="chartsum" data-sum-for="CORCCACBS_pct"></div>
-          <div class="svgwrap" data-series="CORCCACBS_pct" data-format="pct">
-            <div class="tooltip"></div>
-            <svg class="interactive" viewBox="0 0 640 240" preserveAspectRatio="none"></svg>
-          </div>
-        </div>
-
-        <div class="chartcard">
-          <div class="charthead">
-            <div class="charttitle">Debt Service Burden</div>
-            <div class="chartsub">FRED: TDSP (quarterly, %)</div>
-          </div>
-          <div class="chartdef" data-def-for="TDSP_pct"></div>
-          <div class="chartsum" data-sum-for="TDSP_pct"></div>
-          <div class="svgwrap" data-series="TDSP_pct" data-format="pct">
-            <div class="tooltip"></div>
-            <svg class="interactive" viewBox="0 0 640 240" preserveAspectRatio="none"></svg>
-          </div>
-        </div>
-
-        <div class="chartcard">
-          <div class="charthead">
-            <div class="charttitle">Mortgage 30+ Delinquency (All banks)</div>
-            <div class="chartsub">FRED: DRSFRMACBS (quarterly, %)</div>
-          </div>
-          <div class="chartdef" data-def-for="DRSFRMACBS_pct"></div>
-          <div class="chartsum" data-sum-for="DRSFRMACBS_pct"></div>
-          <div class="svgwrap" data-series="DRSFRMACBS_pct" data-format="pct">
-            <div class="tooltip"></div>
-            <svg class="interactive" viewBox="0 0 640 240" preserveAspectRatio="none"></svg>
-          </div>
-        </div>
-
-        <div class="chartcard">
-          <div class="charthead">
-            <div class="charttitle">Revolving Consumer Credit</div>
-            <div class="chartsub">FRED: REVOLSL (monthly, $ billions)</div>
-          </div>
-          <div class="chartdef" data-def-for="REVOLSL_bil_usd"></div>
-          <div class="chartsum" data-sum-for="REVOLSL_bil_usd"></div>
-          <div class="svgwrap" data-series="REVOLSL_bil_usd" data-format="usd_b">
-            <div class="tooltip"></div>
-            <svg class="interactive" viewBox="0 0 640 240" preserveAspectRatio="none"></svg>
-          </div>
-        </div>
-
-        <div class="chartcard">
-          <div class="charthead">
-            <div class="charttitle">Job Openings (Total nonfarm)</div>
-            <div class="chartsub">FRED: JTSJOL (monthly, millions)</div>
-          </div>
-          <div class="chartdef" data-def-for="JTSJOL_mil"></div>
-          <div class="chartsum" data-sum-for="JTSJOL_mil"></div>
-          <div class="svgwrap" data-series="JTSJOL_mil" data-format="mil">
-            <div class="tooltip"></div>
-            <svg class="interactive" viewBox="0 0 640 240" preserveAspectRatio="none"></svg>
-          </div>
-        </div>
-
-        <div class="chartcard">
-          <div class="charthead">
-            <div class="charttitle">Unemployment Rate (U-3)</div>
-            <div class="chartsub">FRED: UNRATE (monthly, %)</div>
-          </div>
-          <div class="chartdef" data-def-for="UNRATE_pct"></div>
-          <div class="chartsum" data-sum-for="UNRATE_pct"></div>
-          <div class="svgwrap" data-series="UNRATE_pct" data-format="pct">
-            <div class="tooltip"></div>
-            <svg class="interactive" viewBox="0 0 640 240" preserveAspectRatio="none"></svg>
-          </div>
-        </div>
-
-        <div class="chartcard">
-          <div class="charthead">
-            <div class="charttitle">Initial Jobless Claims</div>
-            <div class="chartsub">FRED: ICSA (weekly, thousands)</div>
-          </div>
-          <div class="chartdef" data-def-for="ICSA_thou"></div>
-          <div class="chartsum" data-sum-for="ICSA_thou"></div>
-          <div class="svgwrap" data-series="ICSA_thou" data-format="thou">
-            <div class="tooltip"></div>
-            <svg class="interactive" viewBox="0 0 640 240" preserveAspectRatio="none"></svg>
-          </div>
-        </div>
-      </div>
-
-      <div class="btnrow">
-        <a class="btn" href="data.json">Download data.json</a>
-        <a class="btn" href="news.json">Download news.json</a>
-        <a class="btn" href="macro_credit_timeseries.xlsx">Download Excel (metrics + timeseries)</a>
-        <a class="btn" href="macro_credit_metrics.xlsx">Download Excel (metrics)</a>
-      </div>
-
-      <div class="foot">
-        If anything fails to load, confirm these files exist in the repo root next to <code>index.html</code>: <code>data.json</code>, <code>news.json</code>, <code>macro_credit_timeseries.xlsx</code>, <code>macro_credit_metrics.xlsx</code>.
-      </div>
-    </div>
-  </div>
-
-<script>
-/* -----------------------------
-   Global state
-------------------------------*/
-let RAW = [];
-let METRICS = [];
-let METRICS_INDEX = {};
-let DATE_MS = [];             // sorted unique dates from RAW
-let VIEW_END_IDX = null;      // index into DATE_MS
-const SPAN_MS = Math.round(10 * 365.25 * 24 * 3600 * 1000); // ~10 years
-
-/* -----------------------------
-   Formatting
-------------------------------*/
-function fmtNum(n, digits=2){
-  if (n === null || n === undefined || Number.isNaN(n)) return '—';
-  return n.toLocaleString(undefined, { maximumFractionDigits: digits, minimumFractionDigits: digits });
-}
-function fmtValue(v, mode){
-  if (v === null || v === undefined || Number.isNaN(v)) return '—';
-  if (mode === 'pct') return fmtNum(v,2).replace(/\.00$/,'') + '%';
-  if (mode === 'mil') return fmtNum(v,2).replace(/\.00$/,'') + 'M';
-  if (mode === 'thou') return fmtNum(v,0) + 'K';
-  if (mode === 'usd_b'){
-    // billions
-    if (v >= 10000) return '$' + fmtNum(v/1000,2) + 'T';
-    return '$' + fmtNum(v,0) + 'B';
-  }
-  return String(v);
-}
-function fmtDeltaAbs(d, mode){
-  if (d === null || d === undefined || Number.isNaN(d)) return '—';
-  const sign = d > 0 ? '+' : '';
-  if (mode === 'pct') return sign + fmtNum(d,2).replace(/\.00$/,'') + ' pp';
-  if (mode === 'mil') return sign + fmtNum(d,2).replace(/\.00$/,'') + 'M';
-  if (mode === 'thou') return sign + fmtNum(d,0) + 'K';
-  if (mode === 'usd_b') return sign + '$' + fmtNum(d,0) + 'B';
-  return sign + String(d);
-}
-function fmtDeltaPct(d){
-  if (d === null || d === undefined || Number.isNaN(d)) return '—';
-  const sign = d > 0 ? '+' : '';
-  return sign + fmtNum(d,1) + '%';
-}
-function fmtDate(d){
-  const opts = { year:'numeric', month:'short' };
-  return d.toLocaleDateString(undefined, opts);
-}
-function escapeHtml(str){
-  return String(str ?? '').replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
-}
-
-/* -----------------------------
-   Overall badge + executive summary
-------------------------------*/
-function renderOverall(meta){
-  const el = document.getElementById("overallBadge");
-  const h = meta?.overall_health || "—";
-  el.textContent = `Overall: ${h}`;
-  el.classList.remove("good","warn","bad");
-  if (String(h).toLowerCase().includes("stress")) el.classList.add("bad");
-  else if (String(h).toLowerCase().includes("tripwire")) el.classList.add("warn");
-  else el.classList.add("good");
-}
-
-function renderExec(meta){
-  const el = document.getElementById("execSummary");
-  const metaEl = document.getElementById("execMeta");
-  const txt = meta?.executive_summary || "—";
-  el.textContent = txt;
-  const lu = meta?.last_updated_utc;
-  metaEl.textContent = lu ? `Last updated: ${lu}` : "";
-}
-
-/* -----------------------------
-   KPI sparklines + tiles (8)
-------------------------------*/
-function buildSpark(svg, pts){
-  // pts: [{x(ms), y(num)}], already filtered, usually last ~40
-  const vb = svg.viewBox.baseVal;
-  const W = vb.width || 200, H = vb.height || 44;
-  const pad = 4;
-  const xs = pts.map(p=>p.x), ys = pts.map(p=>p.y);
-  const xmin = Math.min(...xs), xmax = Math.max(...xs);
-  let ymin = Math.min(...ys), ymax = Math.max(...ys);
-  if (ymax === ymin) ymax = ymin + 1e-9;
-
-  function xScale(x){ return pad + (x-xmin)/(xmax-xmin) * (W-2*pad); }
-  function yScale(y){ return pad + (1-(y-ymin)/(ymax-ymin)) * (H-2*pad); }
-
-  while (svg.firstChild) svg.removeChild(svg.firstChild);
-
-  const mid = document.createElementNS('http://www.w3.org/2000/svg','line');
-  mid.setAttribute('x1', pad);
-  mid.setAttribute('x2', W-pad);
-  mid.setAttribute('y1', H-pad);
-  mid.setAttribute('y2', H-pad);
-  mid.setAttribute('class','sparkaxis');
-  svg.appendChild(mid);
-
-  let d = '';
-  for (let i=0;i<pts.length;i++){
-    const px = xScale(pts[i].x);
-    const py = yScale(pts[i].y);
-    d += (i===0?'M':'L') + px.toFixed(2) + ' ' + py.toFixed(2) + ' ';
-  }
-  const path = document.createElementNS('http://www.w3.org/2000/svg','path');
-  path.setAttribute('d', d.trim());
-  path.setAttribute('class','sparkline');
-  svg.appendChild(path);
-}
-
-function renderKPI(){
-  // Order requested:
-  // Row 1: card delinq, charge-off, debt service, mortgage delinq
-  // Row 2: revolving credit, job openings, unemployment, jobless claims
-  const order = [
-    "DRCCLACBS_pct","CORCCACBS_pct","TDSP_pct","DRSFRMACBS_pct",
-    "REVOLSL_bil_usd","JTSJOL_mil","UNRATE_pct","ICSA_thou"
-  ];
-  const grid = document.getElementById("kpiGrid");
-  grid.innerHTML = "";
-
-  for (const key of order){
-    const m = METRICS_INDEX[key];
-    if (!m) continue;
-
-    // build sparkline points from RAW (last ~40 non-null)
-    const pts = RAW
-      .filter(r => r[key] !== null && r[key] !== undefined && !Number.isNaN(r[key]))
-      .map(r => ({ x: new Date(r.date+'T00:00:00').getTime(), y: Number(r[key]) }));
-
-    const maxPts = (m.freq === "weekly") ? 50 : (m.freq === "monthly") ? 42 : 28;
-    const sparkPts = pts.slice(Math.max(0, pts.length - maxPts));
-
-    const badgeText = m.status === "healthy" ? "Healthy" : m.status === "tripwire" ? "Tripwire" : "Stress";
-
-    const card = document.createElement("div");
-    card.className = "kpicard";
-    card.innerHTML = `
-      <div class="kpihead">
-        <div>
-          <div class="kpititle"><span class="label">${escapeHtml(m.title)}</span><span class="info">i</span></div>
-          <div class="kpisub">${escapeHtml(m.series_id)} • ${escapeHtml(m.freq)}</div>
-        </div>
-        <span class="badge ${escapeHtml(m.status)}">${badgeText}</span>
-      </div>
-
-      <div class="kpivalue">${fmtValue(m.latest_value, m.units)}</div>
-
-      <div class="kpimeta">
-        <span>As of: <b>${escapeHtml(m.latest_date || "—")}</b></span>
-        <span>10y avg: <b>${m.avg_10y == null ? "—" : fmtValue(m.avg_10y, m.units)}</b></span>
-        <span>YoY: <b>${m.delta_1y_abs == null ? "—" : fmtDeltaAbs(m.delta_1y_abs, m.units)}</b>
-          <span style="color:rgba(229,231,235,0.72)">(${m.delta_1y_pct == null ? "—" : fmtDeltaPct(m.delta_1y_pct)})</span>
-        </span>
-      </div>
-
-      <div class="kpisparkwrap">
-        <svg class="spark" viewBox="0 0 200 44" preserveAspectRatio="none"></svg>
-      </div>
-
-      <div class="kpiPopup">
-        <div class="ptitle">${escapeHtml(m.title)} — why ${badgeText}</div>
-        <div class="pmuted">${escapeHtml(m.description || "")}</div>
-        <div style="margin-top:8px">${escapeHtml(m.why_status || "")}</div>
-        <div style="margin-top:8px" class="pmuted">
-          Tripwire: ${m.tripwire_level == null || Number.isNaN(m.tripwire_level) ? "—" : fmtValue(m.tripwire_level, m.units)} •
-          Stress: ${m.stress_level == null || Number.isNaN(m.stress_level) ? "—" : fmtValue(m.stress_level, m.units)}
-        </div>
-        <div style="margin-top:8px">${escapeHtml(m.how_to_read || "")}</div>
-      </div>
-    `;
-    grid.appendChild(card);
-
-    const svg = card.querySelector("svg.spark");
-    if (sparkPts.length >= 2) buildSpark(svg, sparkPts);
-  }
-}
-
-/* -----------------------------
-   News
-------------------------------*/
-function renderNews(news){
-  const grid = document.getElementById("newsGrid");
-  grid.innerHTML = "";
-  const sections = news?.sections || {};
-
-  // Show up to 4 cards so the section roughly matches KPI tile area
-  const sectionNames = Object.keys(sections).slice(0,4);
-  for (const name of sectionNames){
-    const items = sections[name] || [];
-    const card = document.createElement("div");
-    card.className = "newscard";
-    const topItems = items.slice(0,3).map(it => {
-      const t = escapeHtml(it.title || "—");
-      const s = escapeHtml(it.source || "");
-      const d = it.published_utc ? new Date(it.published_utc).toISOString().slice(0,10) : "";
-      const srcLine = (s || d) ? `<div class="newssrc">${s}${s && d ? " • " : ""}${d}</div>` : "";
-      return `<div class="newsitem"><a href="${it.link}" target="_blank" rel="noopener">${t}</a>${srcLine}</div>`;
-    }).join("");
-
-    card.innerHTML = `<div class="newstitle">${escapeHtml(name)}</div>${topItems || `<div class="newssrc">No items</div>`}`;
-    grid.appendChild(card);
-  }
-}
-
-/* -----------------------------
-   Trends
-------------------------------*/
-function windowStartEnd(){
-  if (!DATE_MS.length) return null;
-  const endIdx = (VIEW_END_IDX == null) ? (DATE_MS.length - 1) : VIEW_END_IDX;
-  const endMs = DATE_MS[endIdx];
-  const startMs = Math.max(DATE_MS[0], endMs - SPAN_MS);
-  return { startMs, endMs, endIdx };
-}
-
-function initWindowControls(){
-  if (!DATE_MS.length) return;
-  const end = DATE_MS[DATE_MS.length - 1];
-  const minEndMs = DATE_MS[0] + SPAN_MS;
-  let minIdx = 0;
-  while (minIdx < DATE_MS.length && DATE_MS[minIdx] < minEndMs) minIdx++;
-
-  const slider = document.getElementById("windowEnd");
-  slider.min = String(minIdx);
-  slider.max = String(DATE_MS.length - 1);
-  slider.value = String(DATE_MS.length - 1);
-  VIEW_END_IDX = DATE_MS.length - 1;
-
-  slider.addEventListener("input", () => {
-    VIEW_END_IDX = Number(slider.value);
-    updateWindowLabel();
-    renderCharts();
-  });
-
-  document.getElementById("windowReset").addEventListener("click", () => {
-    VIEW_END_IDX = DATE_MS.length - 1;
-    slider.value = String(VIEW_END_IDX);
-    updateWindowLabel();
-    renderCharts();
-  });
-
-  updateWindowLabel();
-}
-
-function updateWindowLabel(){
-  const w = windowStartEnd();
-  if (!w) return;
-  const start = new Date(w.startMs);
-  const end = new Date(w.endMs);
-  document.getElementById("windowLabel").textContent = `${fmtDate(start)} → ${fmtDate(end)}`;
-}
-
-/* Interactive SVG line chart with hover tooltip */
-function buildChart(container){
-  const seriesKey = container.dataset.series;
-  const mode = container.dataset.format;
-  const svg = container.querySelector("svg");
-  const tooltip = container.querySelector(".tooltip");
-
-  const w = windowStartEnd();
-  const startMs = w ? w.startMs : -Infinity;
-  const endMs = w ? w.endMs : Infinity;
-
-  const pts = RAW
-    .filter(r => r[seriesKey] !== null && r[seriesKey] !== undefined && !Number.isNaN(r[seriesKey]))
-    .map(r => ({ x: new Date(r.date + 'T00:00:00').getTime(), d: new Date(r.date + 'T00:00:00'), y: Number(r[seriesKey]) }))
-    .filter(p => p.x >= startMs && p.x <= endMs);
-
-  // header summary + definition
-  const defEl = container.parentElement.querySelector(`[data-def-for="${seriesKey}"]`);
-  const sumEl = container.parentElement.querySelector(`[data-sum-for="${seriesKey}"]`);
-  const m = METRICS_INDEX[seriesKey];
-  if (defEl && m && !defEl.textContent) defEl.textContent = m.description || "";
-  if (sumEl && m) sumEl.textContent = m.chart_summary || "";
-
-  if (pts.length < 2) {
-    tooltip.style.opacity = 1;
-    tooltip.textContent = "No data available for this window.";
-    return;
-  }
-
-  const vb = svg.viewBox.baseVal;
-  const W = vb.width, H = vb.height;
-  const padL = 46, padR = 14, padT = 12, padB = 28;
-  const innerW = W - padL - padR;
-  const innerH = H - padT - padB;
-
-  const xs = pts.map(p => p.x);
-  const ys = pts.map(p => p.y);
-  const xmin = Math.min(...xs), xmax = Math.max(...xs);
-  let ymin = Math.min(...ys), ymax = Math.max(...ys);
-  if (ymax === ymin) ymax = ymin + 1e-9;
-
-  const yr = ymax - ymin;
-  ymin -= yr * 0.06;
-  ymax += yr * 0.06;
-
-  function xScale(x){ return padL + (x - xmin) / (xmax - xmin) * innerW; }
-  function yScale(y){ return padT + (1 - (y - ymin) / (ymax - ymin)) * innerH; }
-
-  let pathD = '';
-  for (let i=0; i<pts.length; i++){
-    const px = xScale(pts[i].x);
-    const py = yScale(pts[i].y);
-    pathD += (i===0 ? 'M' : 'L') + px.toFixed(2) + ' ' + py.toFixed(2) + ' ';
-  }
-
-  while (svg.firstChild) svg.removeChild(svg.firstChild);
-
-  for (let g=0; g<4; g++){
-    const y = padT + (innerH/3)*g;
-    const gl = document.createElementNS('http://www.w3.org/2000/svg','line');
-    gl.setAttribute('x1', padL);
-    gl.setAttribute('x2', W - padR);
-    gl.setAttribute('y1', y);
-    gl.setAttribute('y2', y);
-    gl.setAttribute('class','axis');
-    svg.appendChild(gl);
-  }
-
-  const path = document.createElementNS('http://www.w3.org/2000/svg','path');
-  path.setAttribute('d', pathD.trim());
-  path.setAttribute('class','line');
-  svg.appendChild(path);
-
-  const vline = document.createElementNS('http://www.w3.org/2000/svg','line');
-  vline.setAttribute('y1', padT);
-  vline.setAttribute('y2', padT + innerH);
-  vline.setAttribute('class','vline');
-  vline.style.opacity = 0;
-  svg.appendChild(vline);
-
-  const dot = document.createElementNS('http://www.w3.org/2000/svg','circle');
-  dot.setAttribute('r', 4.5);
-  dot.setAttribute('class','dot');
-  dot.style.opacity = 0;
-  svg.appendChild(dot);
-
-  function nearestPoint(mx){
-    const xVal = xmin + (mx - padL) / innerW * (xmax - xmin);
-    let lo = 0, hi = pts.length - 1;
-    while (hi - lo > 1){
-      const mid = (lo + hi) >> 1;
-      if (pts[mid].x < xVal) lo = mid; else hi = mid;
-    }
-    const a = pts[lo], b = pts[hi];
-    return (Math.abs(a.x - xVal) <= Math.abs(b.x - xVal)) ? a : b;
-  }
-
-  function onMove(evt){
-    const rect = svg.getBoundingClientRect();
-    const mx = (evt.clientX - rect.left) / rect.width * W;
-    if (mx < padL || mx > W - padR) return;
-
-    const p = nearestPoint(mx);
-    const px = xScale(p.x);
-    const py = yScale(p.y);
-
-    vline.setAttribute('x1', px);
-    vline.setAttribute('x2', px);
-    vline.style.opacity = 1;
-
-    dot.setAttribute('cx', px);
-    dot.setAttribute('cy', py);
-    dot.style.opacity = 1;
-
-    tooltip.style.opacity = 1;
-    tooltip.innerHTML = `<b>${fmtValue(p.y, mode)}</b><br>${fmtDate(p.d)}`;
-
-    const cRect = container.getBoundingClientRect();
-    tooltip.style.left = (evt.clientX - cRect.left) + 'px';
-    tooltip.style.top = (evt.clientY - cRect.top) + 'px';
-  }
-  function onLeave(){
-    tooltip.style.opacity = 0;
-    dot.style.opacity = 0;
-    vline.style.opacity = 0;
-  }
-  function onWheel(evt){
-    // scroll moves the window end date (roughly 1 month per notch)
-    evt.preventDefault();
-    if (!DATE_MS.length) return;
-    const step = 30 * 24 * 3600 * 1000;
-    const dir = (evt.deltaY > 0) ? -1 : 1;
-    const cur = DATE_MS[VIEW_END_IDX ?? (DATE_MS.length-1)];
-    const target = cur + dir * step;
-    // find nearest index
-    let best = 0;
-    let bestDist = Infinity;
-    for (let i=0;i<DATE_MS.length;i++){
-      const dist = Math.abs(DATE_MS[i] - target);
-      if (dist < bestDist){
-        bestDist = dist;
-        best = i;
-      }
-    }
-    const slider = document.getElementById("windowEnd");
-    const min = Number(slider.min), max = Number(slider.max);
-    VIEW_END_IDX = Math.max(min, Math.min(max, best));
-    slider.value = String(VIEW_END_IDX);
-    updateWindowLabel();
-    renderCharts();
-  }
-
-  // Reset listeners (avoid stacking)
-  svg.onmousemove = onMove;
-  svg.onmouseleave = onLeave;
-  svg.onwheel = onWheel;
-}
-
-function renderCharts(){
-  document.querySelectorAll(".svgwrap").forEach(el => buildChart(el));
-}
-
-/* -----------------------------
-   Main
-------------------------------*/
-async function main(){
-  const resp = await fetch("data.json", { cache:"no-store" });
-  const payload = await resp.json();
-
-  const lu = payload?.meta?.last_updated_utc;
-  if (lu) document.getElementById("lastUpdated").textContent = ` (Last updated: ${lu})`;
-
-  RAW = payload.data || [];
-  METRICS = payload.metrics || [];
-  METRICS_INDEX = {};
-  for (const m of METRICS) METRICS_INDEX[m.key] = m;
-
-  renderOverall(payload.meta || {});
-  renderExec(payload.meta || {});
-  renderKPI();
-
-  // build global date list
-  DATE_MS = RAW.map(r => new Date(r.date + 'T00:00:00').getTime())
-               .filter(x => !Number.isNaN(x));
-  DATE_MS = Array.from(new Set(DATE_MS)).sort((a,b)=>a-b);
-
-  initWindowControls();
-  renderCharts();
-
-  try{
-    const nresp = await fetch("news.json", { cache:"no-store" });
-    const news = await nresp.json();
-    renderNews(news);
-  }catch(e){
-    console.warn(e);
-    renderNews({ sections: {} });
-  }
-}
-
-main().catch(err => {
-  console.error(err);
-  document.getElementById("execSummary").textContent = "Data failed to load. Confirm data.json is in the repo root and GitHub Pages is serving it.";
-});
-</script>
-</body>
-</html>
+if __name__ == "__main__":
+    main()
