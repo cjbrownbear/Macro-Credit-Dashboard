@@ -1,83 +1,165 @@
 #!/usr/bin/env python3
 """
-update_data.py
+update_data.py — Macro/Credit Stress Dashboard updater
 
-Pulls selected FRED time series + builds:
-- data.json (meta + merged time series)
-- macro_credit_metrics.xlsx (latest snapshot table)
-- macro_credit_timeseries.xlsx (wide time series table)
-- news.json (optional stub / simple RSS-ready structure)
+Outputs (repo root):
+- data.json  (timeseries + computed KPI tiles + meta summary)
+- news.json  (headline feed from RSS)
+- macro_credit_timeseries.xlsx
+- macro_credit_metrics.xlsx
 
-Required env:
-- FRED_API_KEY : your FRED API key (store in GitHub Actions Secrets)
-Optional:
-- GITHUB_REPOSITORY, GITHUB_RUN_ID for metadata
+Requires env var:
+- FRED_API_KEY  (https://fred.stlouisfed.org/docs/api/api_key.html)
+
+Notes:
+- Uses FRED "series/observations" JSON endpoint (stable).
+- Sanitizes NaN/Inf to None to keep JSON compliant.
+- If a single series fails (bad ID, transient error), we skip it and continue.
 """
 
 from __future__ import annotations
 
+import os
 import json
 import math
-import os
-import sys
 import time
-from dataclasses import dataclass
-from datetime import datetime, timezone
+import datetime as dt
 from typing import Any, Dict, List, Optional, Tuple
 
-import pandas as pd
 import requests
+import pandas as pd
+
+# Optional, for RSS headlines (install in workflow via pip)
+try:
+    import feedparser  # type: ignore
+except Exception:
+    feedparser = None
 
 
 # -----------------------------
 # Config
 # -----------------------------
 
-FRED_API_KEY = os.getenv("FRED_API_KEY", "").strip()
-FRED_BASE = "https://api.stlouisfed.org/fred/series/observations"
-USER_AGENT = "macro-credit-dashboard/1.0 (github-actions)"
+FRED_BASE = "https://api.stlouisfed.org/fred"
+UA = "Macro-Credit-Dashboard/1.1 (+github-actions)"
 
-TIMEOUT = 30
-RETRIES = 3
-BACKOFF_S = 1.5
+# KPI tiles (8)
+SERIES: List[Dict[str, Any]] = [
+    dict(
+        key="DRCCLACBS_pct",
+        series_id="DRCCLACBS",
+        title="Card 30+ Delinquency",
+        subtitle="FRED: DRCCLACBS (%; quarterly)",
+        unit="pct",
+        fmt="pct",
+        direction=+1,  # higher is worse
+        definition="Share of credit-card balances at least 30 days past due (all banks).",
+        why="Rising delinquency is an early sign of household strain.",
+    ),
+    dict(
+        key="CORCCACBS_pct",
+        series_id="CORCCACBS",
+        title="Net Charge-off Rate",
+        subtitle="FRED: CORCCACBS (%; quarterly)",
+        unit="pct",
+        fmt="pct",
+        direction=+1,  # higher is worse
+        definition="Portion of credit-card loans written off as uncollectible (all banks).",
+        why="Charge-offs typically lag delinquencies but confirm credit deterioration.",
+    ),
+    dict(
+        key="TDSP_pct",
+        series_id="TDSP",
+        title="Debt Service Burden",
+        subtitle="FRED: TDSP (%; quarterly)",
+        unit="pct",
+        fmt="pct",
+        direction=+1,  # higher is worse
+        definition="Household debt payments as a percent of disposable personal income.",
+        why="Higher debt service leaves less buffer to absorb shocks.",
+    ),
+    dict(
+        key="DRSFRMACBS_pct",
+        series_id="DRSFRMACBS",
+        title="Mortgage 30+ Delinquency",
+        subtitle="FRED: DRSFRMACBS (%; quarterly)",
+        unit="pct",
+        fmt="pct",
+        direction=+1,  # higher is worse
+        definition="Share of residential mortgages 30+ days delinquent (all commercial banks).",
+        why="Mortgage delinquencies can jump in downturns and housing stress episodes.",
+    ),
+    dict(
+        key="REVOLSL_bil_usd",
+        series_id="REVOLSL",
+        title="Revolving Consumer Credit",
+        subtitle="FRED: REVOLSL ($B; monthly)",
+        unit="usd_b",
+        fmt="usd_b",
+        direction=+1,  # higher is worse (more leverage)
+        definition="Total revolving consumer credit outstanding (primarily credit cards).",
+        why="Rapid growth can signal households leaning on credit.",
+    ),
+    dict(
+        key="JTSJOL_mil",
+        series_id="JTSJOL",
+        title="Job Openings",
+        subtitle="FRED: JTSJOL (millions; monthly)",
+        unit="mil",
+        fmt="mil",
+        direction=-1,  # lower openings is worse
+        transform=lambda x: x / 1000.0,  # FRED is 'thousands of persons' -> millions
+        definition="Job openings (JOLTS). Proxy for labor demand.",
+        why="Falling openings often precede labor market cooling.",
+    ),
+    dict(
+        key="UNRATE_pct",
+        series_id="UNRATE",
+        title="Unemployment Rate",
+        subtitle="FRED: UNRATE (%; monthly)",
+        unit="pct",
+        fmt="pct",
+        direction=+1,  # higher is worse
+        definition="Headline unemployment rate (U-3).",
+        why="Rising unemployment tends to worsen credit performance.",
+    ),
+    dict(
+        key="ICSA_thou",
+        series_id="ICSA",
+        title="Initial Jobless Claims",
+        subtitle="FRED: ICSA (thousands; weekly)",
+        unit="thou",
+        fmt="thou",
+        direction=+1,  # higher is worse
+        # IMPORTANT: keep as thousands; do NOT multiply by 1,000
+        definition="Weekly initial claims for unemployment insurance.",
+        why="Claims are a fast-turn labor stress signal; spikes can precede higher unemployment.",
+    ),
+]
 
-# Dashboard expects these keys/units:
-# - *_pct : percent level (e.g., 2.98)
-# - *_mil : millions level (e.g., 7.67)
-# - *_bil_usd : USD billions (e.g., 1316.8)
-# - *_k : thousands (e.g., 236.0)
+# Optional overlay series (not KPI tiles)
+EXTRA_SERIES: List[Dict[str, Any]] = [
+    dict(
+        key="DSPIC96_bil_usd",
+        series_id="DSPIC96",
+        title="Real Disposable Personal Income",
+        unit="usd_b",
+        fmt="usd_b",
+        direction=-1,
+        definition="Inflation-adjusted disposable personal income (billions of chained dollars).",
+        why="Income growth supports debt repayment capacity.",
+    ),
+]
 
-@dataclass(frozen=True)
-class SeriesDef:
-    series_id: str
-    key: str
-    title: str
-    subtitle: str
-    frequency_hint: str
-    fmt: str  # pct | mil | usd_b | k | raw
-    # direction only used for risk classification logic if you do it here;
-    # your UI can still decide how to colorize. We'll keep it for completeness.
-    direction_higher_worse: bool
-    include_in_kpi: bool = True
-
-
-SERIES: List[SeriesDef] = [
-    SeriesDef("DRCCLACBS", "DRCCLACBS_pct", "Card 30+ Delinquency (All banks)", "FRED: DRCCLACBS (quarterly, %)", "quarterly", "pct", True, True),
-    SeriesDef("CORCCACBS", "CORCCACBS_pct", "Net Charge-off Rate (All banks)", "FRED: CORCCACBS (quarterly, %)", "quarterly", "pct", True, True),
-    SeriesDef("TDSP",      "TDSP_pct",      "Debt Service Burden (Households)", "FRED: TDSP (quarterly, %)", "quarterly", "pct", True, True),
-    # Mortgage 30+ delinquency (if you’re using a different series id, swap it here)
-    SeriesDef("DRM30",     "DRM30_pct",     "Mortgage 30+ Delinquency", "FRED: DRM30 (quarterly, %)", "quarterly", "pct", True, True),
-
-    SeriesDef("REVOLSL",   "REVOLSL_bil_usd", "Revolving Consumer Credit", "FRED: REVOLSL (monthly, $ billions)", "monthly", "usd_b", True, True),
-    SeriesDef("JTSJOL",    "JTSJOL_mil",      "Job Openings (Total nonfarm)", "FRED: JTSJOL (monthly, millions)", "monthly", "mil", False, True),
-    SeriesDef("UNRATE",    "UNRATE_pct",      "Unemployment Rate", "FRED: UNRATE (monthly, %)", "monthly", "pct", True, True),
-    SeriesDef("ICSA",      "ICSA_k",          "Initial Jobless Claims", "FRED: ICSA (weekly, thousands)", "weekly", "k", True, True),
-
-    # Overlay / supporting series (NOT KPI tiles by default)
-    SeriesDef("DSPIC96",   "DSPIC96_bil_usd", "Real Disposable Personal Income", "FRED: DSPIC96 (monthly, $ billions)", "monthly", "usd_b", False, False),
-    # Optional housing-leading indicators you mentioned (trend-only)
-    SeriesDef("PERMIT",    "PERMIT_k",        "Building Permits", "FRED: PERMIT (monthly, thousands)", "monthly", "k", False, False),
-    SeriesDef("CSUSHPINSA","CSUSHPINSA_idx",  "Case-Shiller Home Price Index", "FRED: CSUSHPINSA (monthly, index)", "monthly", "raw", False, False),
+RSS_SECTIONS = [
+    ("Credit / consumer stress", [
+        ("CNBC Top News", "https://www.cnbc.com/id/100003114/device/rss/rss.html"),
+        ("Yahoo Finance", "https://finance.yahoo.com/news/rssindex"),
+    ]),
+    ("Labor / macro signals", [
+        ("CNBC Economy", "https://www.cnbc.com/id/20910258/device/rss/rss.html"),
+        ("Reuters Business (RSS)", "https://feeds.reuters.com/reuters/businessNews"),
+    ]),
 ]
 
 
@@ -86,265 +168,330 @@ SERIES: List[SeriesDef] = [
 # -----------------------------
 
 def utc_now_iso() -> str:
-    return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    return dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
 
+def _req_session() -> requests.Session:
+    s = requests.Session()
+    s.headers.update({"User-Agent": UA})
+    return s
 
-def http_get_json(url: str, params: Dict[str, Any]) -> Dict[str, Any]:
-    headers = {"User-Agent": USER_AGENT}
+def _http_get_json(
+    sess: requests.Session,
+    url: str,
+    params: dict,
+    timeout: int = 30,
+    retries: int = 4,
+    backoff_s: float = 1.2,
+) -> dict:
+    """
+    GET JSON with retry for transient failures.
+    - Retries on 429 and 5xx
+    - Raises immediately on 400/401/403 (bad request/key)
+    """
     last_err: Optional[Exception] = None
-
-    for attempt in range(1, RETRIES + 1):
+    for i in range(retries + 1):
         try:
-            r = requests.get(url, params=params, headers=headers, timeout=TIMEOUT)
+            r = sess.get(url, params=params, timeout=timeout)
+            if r.status_code in (429, 500, 502, 503, 504):
+                # transient
+                time.sleep(backoff_s * (2 ** i))
+                continue
             r.raise_for_status()
             return r.json()
         except Exception as e:
             last_err = e
-            if attempt < RETRIES:
-                time.sleep(BACKOFF_S * attempt)
-            else:
-                raise
+            # If we got here due to a non-transient HTTP error, don't spin forever
+            if isinstance(e, requests.HTTPError):
+                status = e.response.status_code if e.response is not None else None
+                if status in (400, 401, 403, 404):
+                    raise
+            if i < retries:
+                time.sleep(backoff_s * (2 ** i))
+                continue
+            raise
+    raise RuntimeError(f"HTTP failed: {last_err}")
 
-    raise RuntimeError(f"Unreachable: {last_err}")
+def _fred_observations(sess: requests.Session, series_id: str, api_key: str) -> pd.DataFrame:
+    url = f"{FRED_BASE}/series/observations"
+    params = {
+        "series_id": series_id,
+        "api_key": api_key,
+        "file_type": "json",
+        "sort_order": "asc",
+    }
+    payload = _http_get_json(sess, url, params=params)
+    obs = payload.get("observations", [])
+    out: List[Tuple[pd.Timestamp, Optional[float]]] = []
+    for o in obs:
+        ds = o.get("date")
+        vs = o.get("value")
+        if not ds:
+            continue
+        try:
+            d = pd.to_datetime(ds)
+        except Exception:
+            continue
+        if vs is None or vs == ".":
+            v = None
+        else:
+            try:
+                v = float(vs)
+                if math.isnan(v) or math.isinf(v):
+                    v = None
+            except Exception:
+                v = None
+        out.append((d, v))
+    return pd.DataFrame(out, columns=["date", "value"]).sort_values("date").reset_index(drop=True)
 
-
-def to_float_or_none(v: Any) -> Optional[float]:
-    try:
-        if v is None:
-            return None
-        if isinstance(v, str):
-            v = v.strip()
-            if v == "" or v.lower() in {"nan", "na", "null", "."}:
+def _apply_transform(v: Optional[float], sdef: Dict[str, Any]) -> Optional[float]:
+    if v is None:
+        return None
+    fn = sdef.get("transform")
+    if callable(fn):
+        try:
+            vv = float(fn(v))
+            if math.isnan(vv) or math.isinf(vv):
                 return None
-        f = float(v)
-        if not math.isfinite(f):
+            return vv
+        except Exception:
             return None
-        return f
+    return v
+
+def _safe_float(x: Any) -> Optional[float]:
+    if x is None:
+        return None
+    try:
+        v = float(x)
+        if math.isnan(v) or math.isinf(v):
+            return None
+        return v
     except Exception:
         return None
 
-
-def convert_units(value: Optional[float], fmt: str) -> Optional[float]:
-    """
-    Convert raw FRED observation to the dashboard unit conventions.
-
-    IMPORTANT:
-    - REVOLSL is already in $ billions -> keep as-is for usd_b
-    - ICSA is already in thousands -> keep as-is for k
-    - JTSJOL is already in millions -> keep as-is for mil
-    """
-    if value is None:
-        return None
-    # For most FRED series, value already matches the label in subtitle.
-    # So we largely pass through.
-    return value
-
-
-def parse_observations(series_id: str) -> pd.DataFrame:
-    if not FRED_API_KEY:
-        raise RuntimeError("FRED_API_KEY is not set. Add it as a GitHub Actions Secret and export to env.")
-
-    params = {
-        "series_id": series_id,
-        "api_key": FRED_API_KEY,
-        "file_type": "json",
-        # Keep as full history; UI will window to last 10y etc.
-        "sort_order": "asc",
-    }
-    payload = http_get_json(FRED_BASE, params=params)
-    obs = payload.get("observations", [])
-    rows: List[Tuple[str, Optional[float]]] = []
-    for o in obs:
-        date = o.get("date")
-        val = to_float_or_none(o.get("value"))
-        rows.append((date, val))
-
-    df = pd.DataFrame(rows, columns=["date", "value"])
-    df["date"] = pd.to_datetime(df["date"], errors="coerce").dt.date.astype("string")
-    df = df.dropna(subset=["date"])
-    return df
-
-
-def merge_series() -> pd.DataFrame:
-    dfs = []
-    for s in SERIES:
-        df = parse_observations(s.series_id)
-        # convert units
-        df["value"] = df["value"].apply(lambda x: convert_units(x, s.fmt))
-        df = df.rename(columns={"value": s.key})
-        dfs.append(df)
-
-    # outer merge on date
-    out = dfs[0]
-    for df in dfs[1:]:
-        out = out.merge(df, on="date", how="outer")
-
-    out = out.sort_values("date").reset_index(drop=True)
-    return out
-
-
-def last_valid_point(df: pd.DataFrame, key: str) -> Optional[Tuple[pd.Timestamp, float]]:
-    s = df[["date", key]].dropna()
-    if s.empty:
-        return None
-    d = pd.to_datetime(s.iloc[-1]["date"])
-    v = float(s.iloc[-1][key])
-    return d, v
-
-
-def point_at_or_before(df: pd.DataFrame, key: str, target: pd.Timestamp) -> Optional[Tuple[pd.Timestamp, float]]:
-    s = df[["date", key]].dropna()
-    if s.empty:
-        return None
-    s["date_ts"] = pd.to_datetime(s["date"])
-    s = s[s["date_ts"] <= target]
-    if s.empty:
-        return None
-    d = pd.to_datetime(s.iloc[-1]["date_ts"])
-    v = float(s.iloc[-1][key])
-    return d, v
-
-
-def window_values(df: pd.DataFrame, key: str, start: pd.Timestamp) -> List[float]:
-    s = df[["date", key]].dropna()
-    if s.empty:
-        return []
-    s["date_ts"] = pd.to_datetime(s["date"])
-    s = s[s["date_ts"] >= start]
-    return [float(x) for x in s[key].tolist() if x is not None and math.isfinite(float(x))]
-
-
-def mean_std(vals: List[float]) -> Tuple[Optional[float], Optional[float]]:
+def _mean_std(vals: List[float]) -> Tuple[Optional[float], Optional[float]]:
     if not vals:
         return None, None
+    if len(vals) == 1:
+        return vals[0], 0.0
     m = sum(vals) / len(vals)
-    if len(vals) < 2:
-        return m, 0.0
-    var = sum((x - m) ** 2 for x in vals) / len(vals)
+    var = sum((v - m) ** 2 for v in vals) / len(vals)
     return m, math.sqrt(var)
 
+def _latest_point(df: pd.DataFrame, col: str) -> Optional[Tuple[pd.Timestamp, float]]:
+    s = df[["date", col]].dropna()
+    if s.empty:
+        return None
+    row = s.iloc[-1]
+    return row["date"], float(row[col])
 
-def classify_status(current: float, avg: Optional[float], sd: Optional[float], higher_worse: bool) -> str:
-    """
-    Simple z-score classification vs 10y distribution.
-    """
+def _value_at_or_before(df: pd.DataFrame, col: str, target: pd.Timestamp) -> Optional[Tuple[pd.Timestamp, float]]:
+    s = df[df["date"] <= target][["date", col]].dropna()
+    if s.empty:
+        return None
+    row = s.iloc[-1]
+    return row["date"], float(row[col])
+
+def _window_values(df: pd.DataFrame, col: str, start: pd.Timestamp) -> List[float]:
+    s = df[df["date"] >= start][col].dropna()
+    return [float(x) for x in s.tolist() if x is not None]
+
+def fmt_units(unit: str) -> str:
+    return {"pct": "%", "mil": "M", "usd_b": "$B", "thou": "K"}.get(unit, "")
+
+def classify_status(current: float, avg: Optional[float], sd: Optional[float], direction: int) -> str:
+    # direction: +1 higher worse; -1 lower worse
     if avg is None or sd is None or sd == 0:
         return "healthy"
     z = (current - avg) / sd
-    risk = z if higher_worse else (-z)
+    risk = direction * z
     if risk >= 2.0:
         return "stress"
     if risk >= 1.0:
         return "tripwire"
     return "healthy"
 
-
-def safe_number(x: Any) -> Any:
-    """
-    Recursively convert NaN/inf to None for JSON compliance.
-    """
-    if x is None:
+def _to_jsonable(obj: Any) -> Any:
+    if obj is None:
         return None
-    if isinstance(x, float):
-        return x if math.isfinite(x) else None
-    if isinstance(x, (int, str, bool)):
-        return x
-    if isinstance(x, dict):
-        return {k: safe_number(v) for k, v in x.items()}
-    if isinstance(x, list):
-        return [safe_number(v) for v in x]
-    # pandas types
-    try:
-        if pd.isna(x):
+    if isinstance(obj, (dt.datetime, dt.date, pd.Timestamp)):
+        return str(obj)[:10]
+    if isinstance(obj, float):
+        if math.isnan(obj) or math.isinf(obj):
             return None
-    except Exception:
-        pass
-    return x
+        return obj
+    if isinstance(obj, (int, str, bool)):
+        return obj
+    if isinstance(obj, dict):
+        return {k: _to_jsonable(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [_to_jsonable(v) for v in obj]
+    return obj
 
 
-def build_metrics(ts: pd.DataFrame) -> List[Dict[str, Any]]:
+# -----------------------------
+# KPI computation
+# -----------------------------
+
+def compute_metrics(df: pd.DataFrame, sdefs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     metrics: List[Dict[str, Any]] = []
-
-    for s in SERIES:
-        if not s.include_in_kpi:
-            continue
-
-        latest = last_valid_point(ts, s.key)
+    for s in sdefs:
+        key = s["key"]
+        latest = _latest_point(df, key)
         if not latest:
             continue
-        latest_date, latest_value = latest
+        latest_date, latest_val = latest
 
-        # 1y comparison
         one_year_ago = latest_date - pd.DateOffset(years=1)
-        prior = point_at_or_before(ts, s.key, one_year_ago)
-        delta_abs = None
-        delta_pct = None
-        if prior and prior[1] is not None:
-            prior_value = float(prior[1])
-            delta_abs = latest_value - prior_value
-            if prior_value != 0:
-                delta_pct = (delta_abs / prior_value) * 100.0
+        prior = _value_at_or_before(df, key, one_year_ago)
 
-        # 10y baseline (distribution)
         ten_years_ago = latest_date - pd.DateOffset(years=10)
-        vals_10y = window_values(ts, s.key, ten_years_ago)
-        avg_10y, sd_10y = mean_std(vals_10y)
+        vals10 = _window_values(df, key, ten_years_ago)
+        avg10, sd10 = _mean_std(vals10)
 
-        status = classify_status(latest_value, avg_10y, sd_10y, s.direction_higher_worse)
+        status = classify_status(latest_val, avg10, sd10, int(s.get("direction", +1)))
+
+        # TRUE YoY movement (not "good vs bad"):
+        yoy_abs = None
+        yoy_pct = None
+        yoy_note = ""
+        if prior:
+            _, prior_val = prior
+            yoy_abs = latest_val - prior_val
+            if prior_val != 0:
+                yoy_pct = (latest_val - prior_val) / abs(prior_val) * 100.0
+            if s.get("unit") == "pct":
+                yoy_note = "pp"  # percentage points
+
+        why_status = []
+        if avg10 is not None and sd10 is not None and sd10 != 0:
+            z = (latest_val - avg10) / sd10
+            risk = int(s.get("direction", +1)) * z
+            why_status.append(f"10y avg {avg10:.2f}{fmt_units(s.get('unit',''))}, σ {sd10:.2f}{fmt_units(s.get('unit',''))}.")
+            if risk >= 2:
+                why_status.append("≥2σ worse than baseline (Stress).")
+            elif risk >= 1:
+                why_status.append("≥1σ worse than baseline (Tripwire).")
+            else:
+                why_status.append("Within ~1σ of baseline (Healthy).")
+        else:
+            why_status.append("Insufficient variance in 10y window; defaulted to Healthy.")
 
         metrics.append({
-            "key": s.key,
-            "series_id": s.series_id,
-            "title": s.title,
-            "subtitle": s.subtitle,
-            "fmt": s.fmt,
-            "latest_date": latest_date.date().isoformat(),
-            "latest_value": latest_value,
-            "avg_10y": avg_10y,
-            "sd_10y": sd_10y,
-            # YoY: keep *true arithmetic sign* (no “good/bad” flipping)
-            "delta_1y_abs": delta_abs,
-            "delta_1y_pct": delta_pct,
+            "key": key,
+            "series_id": s.get("series_id"),
+            "title": s.get("title"),
+            "subtitle": s.get("subtitle"),
+            "unit": s.get("unit"),
+            "format": s.get("fmt"),
+            "direction": int(s.get("direction", +1)),
             "status": status,
+            "definition": s.get("definition", ""),
+            "why": s.get("why", ""),
+            "why_status": " ".join(why_status),
+            "latest_date": str(latest_date.date()),
+            "latest_value": _safe_float(latest_val),
+            "baseline_10y_avg": _safe_float(avg10),
+            "baseline_10y_sd": _safe_float(sd10),
+            "yoy_abs": _safe_float(yoy_abs),
+            "yoy_pct": _safe_float(yoy_pct),
+            "yoy_abs_unit": yoy_note,  # "pp" for percent series
         })
 
+    order = {s["key"]: i for i, s in enumerate(sdefs)}
+    metrics.sort(key=lambda x: order.get(x["key"], 999))
     return metrics
 
+def overall_health(metrics: List[Dict[str, Any]]) -> Tuple[str, Dict[str, int]]:
+    counts = {"healthy": 0, "tripwire": 0, "stress": 0}
+    for m in metrics:
+        st = m.get("status")
+        if st in counts:
+            counts[st] += 1
 
-def compute_overall_health(metrics: List[Dict[str, Any]]) -> str:
-    # Simple rollup: if any stress => stress; else if any tripwire => tripwire; else healthy
-    statuses = [m.get("status") for m in metrics if m.get("status")]
-    if "stress" in statuses:
-        return "stress"
-    if "tripwire" in statuses:
-        return "tripwire"
-    return "healthy"
+    if counts["stress"] >= 2:
+        overall = "stress"
+    elif counts["stress"] == 1 or counts["tripwire"] >= 3:
+        overall = "tripwire"
+    else:
+        overall = "healthy"
+    return overall, counts
+
+def executive_summary(metrics: List[Dict[str, Any]], counts: Dict[str, int]) -> str:
+    if not metrics:
+        return "No KPI data available yet."
+
+    movers = []
+    for m in metrics:
+        if m.get("unit") == "pct":
+            abs_move = abs(_safe_float(m.get("yoy_abs")) or 0.0)
+        else:
+            abs_move = abs(_safe_float(m.get("yoy_pct")) or 0.0)
+        movers.append((abs_move, m))
+    movers.sort(key=lambda t: t[0], reverse=True)
+
+    top = [mm for _, mm in movers[:3] if (_safe_float(mm.get("yoy_abs")) or _safe_float(mm.get("yoy_pct")))]
+    top_bits = []
+    for m in top:
+        if m.get("unit") == "pct":
+            da = m.get("yoy_abs")
+            if da is not None:
+                top_bits.append(f"{m['title']} is {'up' if da > 0 else 'down'} {abs(da):.2f}pp YoY.")
+        else:
+            dp = m.get("yoy_pct")
+            if dp is not None:
+                top_bits.append(f"{m['title']} is {'up' if dp > 0 else 'down'} {abs(dp):.1f}% YoY.")
+
+    status_line = f"System status: {counts['healthy']} healthy, {counts['tripwire']} tripwire, {counts['stress']} stress."
+    return status_line + (" Biggest moves: " + " ".join(top_bits) if top_bits else "")
 
 
-def build_news_stub() -> Dict[str, Any]:
-    """
-    You can replace this with a real RSS pull later.
-    Keeping it stable prevents the UI from breaking if news.json exists but is empty.
-    """
-    return {
-        "meta": {"last_updated_utc": utc_now_iso()},
-        "sections": {
-            "Credit / consumer stress": [],
-            "Labor / macro signals": [],
+# -----------------------------
+# News (RSS)
+# -----------------------------
+
+def build_news() -> Dict[str, Any]:
+    if feedparser is None:
+        return {
+            "meta": {"last_updated_utc": utc_now_iso(), "note": "feedparser not installed; skipping RSS"},
+            "sections": [],
         }
-    }
 
+    sections_out = []
+    for section_title, feeds in RSS_SECTIONS:
+        items = []
+        for source, url in feeds:
+            try:
+                fp = feedparser.parse(url)
+                for e in fp.entries[:8]:
+                    title = getattr(e, "title", "").strip()
+                    link = getattr(e, "link", "").strip()
+                    if not title or not link:
+                        continue
+                    published = None
+                    if getattr(e, "published_parsed", None):
+                        published = dt.datetime.fromtimestamp(
+                            time.mktime(e.published_parsed), tz=dt.timezone.utc
+                        ).isoformat().replace("+00:00", "Z")
+                    items.append({
+                        "title": title,
+                        "url": link,
+                        "source": source,
+                        "published_utc": published,
+                    })
+            except Exception:
+                continue
 
-def write_excels(ts: pd.DataFrame, metrics: List[Dict[str, Any]]) -> None:
-    metrics_df = pd.DataFrame(metrics)
-    ts_df = ts.copy()
+        seen = set()
+        dedup = []
+        for it in items:
+            if it["url"] in seen:
+                continue
+            seen.add(it["url"])
+            dedup.append(it)
 
-    # Make sure excel doesn’t get NaN string weirdness
-    ts_df = ts_df.replace([math.inf, -math.inf], pd.NA)
-    metrics_df = metrics_df.replace([math.inf, -math.inf], pd.NA)
+        sections_out.append({"title": section_title, "items": dedup[:10]})
 
-    metrics_df.to_excel("macro_credit_metrics.xlsx", index=False)
-    ts_df.to_excel("macro_credit_timeseries.xlsx", index=False)
+    return {"meta": {"last_updated_utc": utc_now_iso()}, "sections": sections_out}
 
 
 # -----------------------------
@@ -352,43 +499,106 @@ def write_excels(ts: pd.DataFrame, metrics: List[Dict[str, Any]]) -> None:
 # -----------------------------
 
 def main() -> None:
-    ts = merge_series()
+    api_key = os.getenv("FRED_API_KEY", "").strip()
+    if not api_key:
+        raise SystemExit("Missing env var FRED_API_KEY. Set it in GitHub repo secrets and workflow env.")
 
-    metrics = build_metrics(ts)
-    overall = compute_overall_health(metrics)
+    sess = _req_session()
 
-    meta = {
-        "last_updated_utc": utc_now_iso(),
-        "overall_health": overall,
-        "repo": os.getenv("GITHUB_REPOSITORY"),
-        "run_id": os.getenv("GITHUB_RUN_ID"),
-    }
+    all_defs = SERIES + EXTRA_SERIES
+
+    frames: List[pd.DataFrame] = []
+    fetched_any = False
+
+    for s in all_defs:
+        sid = s["series_id"]
+        try:
+            df = _fred_observations(sess, sid, api_key)
+        except requests.HTTPError as e:
+            code = e.response.status_code if e.response is not None else None
+            if code in (400, 401, 403):
+                # This is NOT transient: either bad key or bad series_id params.
+                # Raise with a clearer message.
+                raise SystemExit(
+                    f"FRED request failed ({code}) for series_id={sid}. "
+                    f"Most likely: invalid FRED_API_KEY OR invalid series_id."
+                ) from e
+            print(f"[WARN] Skipping {sid}: HTTP error {code}")
+            continue
+        except Exception as e:
+            print(f"[WARN] Skipping {sid}: {e}")
+            continue
+
+        if df.empty:
+            print(f"[WARN] {sid} returned 0 observations; skipping")
+            continue
+
+        fetched_any = True
+        df.rename(columns={"value": s["key"]}, inplace=True)
+
+        if "transform" in s:
+            df[s["key"]] = df[s["key"]].apply(lambda v: _apply_transform(v, s))
+
+        frames.append(df)
+
+    if not fetched_any or not frames:
+        raise SystemExit("No FRED series could be fetched. Check FRED_API_KEY and series IDs.")
+
+    merged = frames[0]
+    for df in frames[1:]:
+        merged = pd.merge(merged, df, on="date", how="outer")
+    merged = merged.sort_values("date").reset_index(drop=True)
+
+    # Derived overlay ratio (optional)
+    if "REVOLSL_bil_usd" in merged.columns and "DSPIC96_bil_usd" in merged.columns:
+        ratio = []
+        for a, b in zip(merged["REVOLSL_bil_usd"].tolist(), merged["DSPIC96_bil_usd"].tolist()):
+            av = _safe_float(a)
+            bv = _safe_float(b)
+            if av is None or bv in (None, 0.0):
+                ratio.append(None)
+            else:
+                ratio.append(av / bv)
+        merged["REVOLSL_to_DSPIC96_ratio"] = ratio
+
+    metrics = compute_metrics(merged, SERIES)
+    overall, counts = overall_health(metrics)
+    exec_sum = executive_summary(metrics, counts)
 
     payload = {
-        "meta": meta,
+        "meta": {
+            "last_updated_utc": utc_now_iso(),
+            "overall_health": overall,
+            "health_counts": counts,
+            "executive_summary": exec_sum,
+        },
         "metrics": metrics,
-        "data": ts.to_dict(orient="records"),
+        "data": [],
     }
 
-    # HARD sanitize for JSON compliance
-    payload = safe_number(payload)
+    for _, row in merged.iterrows():
+        rec = {"date": str(pd.to_datetime(row["date"]).date())}
+        for c in merged.columns:
+            if c == "date":
+                continue
+            rec[c] = _safe_float(row[c])
+        payload["data"].append(rec)
 
     with open("data.json", "w", encoding="utf-8") as f:
-        json.dump(payload, f, ensure_ascii=False, indent=2, allow_nan=False)
+        json.dump(_to_jsonable(payload), f, ensure_ascii=False, indent=2)
 
-    # Keep a stable news.json available for the UI
-    news = safe_number(build_news_stub())
+    news = build_news()
     with open("news.json", "w", encoding="utf-8") as f:
-        json.dump(news, f, ensure_ascii=False, indent=2, allow_nan=False)
+        json.dump(_to_jsonable(news), f, ensure_ascii=False, indent=2)
 
-    write_excels(ts, metrics)
+    merged_out = merged.copy()
+    merged_out["date"] = merged_out["date"].dt.date
+    merged_out.to_excel("macro_credit_timeseries.xlsx", index=False)
 
-    print("[OK] Wrote data.json, news.json, and Excel outputs")
+    pd.DataFrame(metrics).to_excel("macro_credit_metrics.xlsx", index=False)
+
+    print("Wrote: data.json, news.json, macro_credit_timeseries.xlsx, macro_credit_metrics.xlsx")
 
 
 if __name__ == "__main__":
-    try:
-        main()
-    except Exception as e:
-        print(f"[FATAL] {e}", file=sys.stderr)
-        raise
+    main()
