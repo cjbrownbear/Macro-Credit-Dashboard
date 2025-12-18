@@ -1,145 +1,125 @@
 {
   "meta": {
-    "last_updated_utc": "2025-12-17T19:00:57Z",
-    "sources": [
-      "CNBC Top News",
-      "CNBC Economy",
-      "Yahoo Finance",
-      "Reuters Business"
-    ]
+    "last_updated_utc": "2025-12-18T23:53:56Z"
   },
-  "buckets": {
-    "credit": [
-      {
-        "source": "CNBC Top News",
-        "title": "Mortgage rates move higher after the Fed rate cut, causing loan demand to drop",
-        "link": "https://www.cnbc.com/2025/12/17/mortgage-rates-moved-higher-after-fed-rate-cut.html",
-        "published": "Wed, 17 Dec 2025 16:56:17 GMT",
-        "bucket": "credit"
-      },
-      {
-        "source": "CNBC Economy",
-        "title": "Consumer confidence hits lowest point since April as job worries grow",
-        "link": "https://www.cnbc.com/2025/11/25/consumer-confidence-lowest-point-since-april.html",
-        "published": "Tue, 25 Nov 2025 17:40:53 GMT",
-        "bucket": "credit"
-      }
-    ],
-    "labor": [
-      {
-        "source": "CNBC Economy",
-        "title": "Payrolls rose by 64,000 in November after falling by 105,000 in October, delayed jobs numbers show",
-        "link": "https://www.cnbc.com/2025/12/16/jobs-report-november-2025-.html",
-        "published": "Tue, 16 Dec 2025 17:29:04 GMT",
-        "bucket": "labor"
-      },
-      {
-        "source": "CNBC Economy",
-        "title": "The case for more Fed rate cuts could rest on a 'systematic overcount' of jobs numbers",
-        "link": "https://www.cnbc.com/2025/12/11/case-for-more-fed-rate-cuts-could-rest-on-systemic-overcount-of-jobs.html",
-        "published": "Thu, 11 Dec 2025 19:50:52 GMT",
-        "bucket": "labor"
-      },
-      {
-        "source": "CNBC Economy",
-        "title": "Layoff announcements top 1.1 million this year, the most since 2020 pandemic, Challenger says",
-        "link": "https://www.cnbc.com/2025/12/04/layoff-announcements-this-year-top-1point1-million-the-most-since-2020-when-pandemic-hit-challenger-says.html",
-        "published": "Thu, 04 Dec 2025 14:20:21 GMT",
-        "bucket": "labor"
-      },
-      {
-        "source": "CNBC Economy",
-        "title": "November private payrolls unexpectedly fell by 32,000, led by steep small business job cuts, ADP reports",
-        "link": "https://www.cnbc.com/2025/12/03/adp-jobs-report-november-2025-private-payrolls-unexpectedly-fell-by-32000-.html",
-        "published": "Wed, 03 Dec 2025 19:13:15 GMT",
-        "bucket": "labor"
-      },
-      {
-        "source": "CNBC Economy",
-        "title": "Private payroll losses accelerated in the past four weeks, ADP reports",
-        "link": "https://www.cnbc.com/2025/11/25/private-payroll-losses-accelerated-in-the-past-four-weeks-adp-reports-.html",
-        "published": "Tue, 25 Nov 2025 16:21:59 GMT",
-        "bucket": "labor"
-      },
-      {
-        "source": "CNBC Economy",
-        "title": "Delayed September report shows U.S. added 119,000 jobs, more than expected; unemployment rate at 4.4%",
-        "link": "https://www.cnbc.com/2025/11/20/jobs-report-september-2025.html",
-        "published": "Thu, 20 Nov 2025 17:22:20 GMT",
-        "bucket": "labor"
-      },
-      {
-        "source": "Yahoo Finance",
-        "title": "Jobs Data, Inflation Report, Micron Earnings: Coming This Week",
-        "link": "https://www.wsj.com/livecoverage/jobs-report-stock-market-today-12-16-2025/card/jobs-data-inflation-report-micron-earnings-coming-this-week-XziUxWmQQmIFm3mmpn6R?siteid=yhoof2&yptr=yahoo",
-        "published": "2025-12-16T09:31:28Z",
-        "bucket": "labor"
-      },
-      {
-        "source": "Yahoo Finance",
-        "title": "Is Charles River Laboratories Stock Underperforming the Dow?",
-        "link": "https://finance.yahoo.com/news/charles-river-laboratories-stock-underperforming-102433866.html",
-        "published": "2025-12-16T10:24:33Z",
-        "bucket": "labor"
-      }
-    ],
-    "other": [
-      {
-        "source": "CNBC Top News",
-        "title": "ACA subsidies extension to get vote after 4 Republicans buck leadership",
-        "link": "https://www.cnbc.com/2025/12/17/johnson-aca-republicans-health.html",
-        "published": "Wed, 17 Dec 2025 17:20:11 GMT",
-        "bucket": "other"
-      },
-      {
-        "source": "CNBC Top News",
-        "title": "FCC chief Brendan Carr tells Senate that his agency is 'not formally ... independent'",
-        "link": "https://www.cnbc.com/2025/12/17/fcc-carr-senate-jimmy-kimmel-kirk.html",
-        "published": "Wed, 17 Dec 2025 18:37:49 GMT",
-        "bucket": "other"
-      },
-      {
-        "source": "CNBC Top News",
-        "title": "The Oscars are heading to YouTube in 2029",
-        "link": "https://www.cnbc.com/2025/12/17/youtube-stream-oscars-2029.html",
-        "published": "Wed, 17 Dec 2025 18:21:55 GMT",
-        "bucket": "other"
-      },
-      {
-        "source": "CNBC Top News",
-        "title": "FBI Deputy Director Dan Bongino plans to step down early next year, MS NOW reports",
-        "link": "https://www.cnbc.com/2025/12/17/fbi-dan-bongino-steps-down-epstein-jan-6.html",
-        "published": "Wed, 17 Dec 2025 18:57:23 GMT",
-        "bucket": "other"
-      },
-      {
-        "source": "CNBC Top News",
-        "title": "Oracle stock dips 5% on report Blue Owl Capital won't back $10 billion data center",
-        "link": "https://www.cnbc.com/2025/12/17/oracle-stock-blue-owl-michigan-data-center.html",
-        "published": "Wed, 17 Dec 2025 18:41:02 GMT",
-        "bucket": "other"
-      },
-      {
-        "source": "CNBC Top News",
-        "title": "Medical supply firm Medline jumps more than 25% in debut after biggest IPO of 2025",
-        "link": "https://www.cnbc.com/2025/12/17/medline-debuts-nasdaq-biggest-ipo-2025.html",
-        "published": "Wed, 17 Dec 2025 18:34:18 GMT",
-        "bucket": "other"
-      },
-      {
-        "source": "CNBC Top News",
-        "title": "Trump vowed to block tankers carrying Venezuela's oil — nearly a dozen are at sea right now",
-        "link": "https://www.cnbc.com/2025/12/17/trump-venezuela-tankers-oil.html",
-        "published": "Wed, 17 Dec 2025 18:23:15 GMT",
-        "bucket": "other"
-      },
-      {
-        "source": "CNBC Top News",
-        "title": "Why this billionaire real estate developer is waving a red flag over data centers",
-        "link": "https://www.cnbc.com/2025/12/17/billionaire-real-estate-developer-red-flag-data-centers.html",
-        "published": "Wed, 17 Dec 2025 14:31:41 GMT",
-        "bucket": "other"
-      }
-    ]
-  }
+  "sections": [
+    {
+      "title": "Credit / consumer stress",
+      "items": [
+        {
+          "title": "Trust these numbers? Economists see a lot of flaws in delayed CPI report showing downward inflation",
+          "url": "https://www.cnbc.com/2025/12/18/trust-these-numbers-economists-see-a-lot-of-flaws-in-delayed-cpi-report-showing-downward-inflation.html",
+          "source": "CNBC Top News",
+          "published_utc": "2025-12-18T22:46:42Z"
+        },
+        {
+          "title": "Friday could be a wild day of trading on Wall Street. Here's why",
+          "url": "https://www.cnbc.com/2025/12/18/friday-could-be-a-wild-day-of-trading-on-wall-street-heres-why.html",
+          "source": "CNBC Top News",
+          "published_utc": "2025-12-18T19:51:24Z"
+        },
+        {
+          "title": "Trump signs executive order reclassifying cannabis, opening door to broader weed access",
+          "url": "https://www.cnbc.com/2025/12/18/trump-pot-reclassification-cannabis-stocks-medicare-cbd.html",
+          "source": "CNBC Top News",
+          "published_utc": "2025-12-18T22:11:31Z"
+        },
+        {
+          "title": "TikTok signs agreement to create new U.S. joint venture, memo says",
+          "url": "https://www.cnbc.com/2025/12/18/tik-tok-us-sale-china.html",
+          "source": "CNBC Top News",
+          "published_utc": "2025-12-18T23:53:41Z"
+        },
+        {
+          "title": "Japan's consumer inflation stays above cenbank's target for 44th month, boosting case for a rate hike",
+          "url": "https://www.cnbc.com/2025/12/19/japan-cpi-consumer-inflation-rate-policy-meeting.html",
+          "source": "CNBC Top News",
+          "published_utc": "2025-12-18T23:51:46Z"
+        },
+        {
+          "title": "Nike shares fall 10% as China sales plunge, tariffs hit profits",
+          "url": "https://www.cnbc.com/2025/12/18/nike-nke-q2-2026-earnings.html",
+          "source": "CNBC Top News",
+          "published_utc": "2025-12-18T23:05:58Z"
+        },
+        {
+          "title": "Congressional stock trading ban bill to get a vote in new year, House Republicans say",
+          "url": "https://www.cnbc.com/2025/12/18/congress-stock-trading-ban-trump.html",
+          "source": "CNBC Top News",
+          "published_utc": "2025-12-18T23:37:07Z"
+        },
+        {
+          "title": "House passes bill to ease permits for building out AI infrastructure",
+          "url": "https://www.cnbc.com/2025/12/18/house-passes-permit-reform-bill-ai.html",
+          "source": "CNBC Top News",
+          "published_utc": "2025-12-18T20:47:39Z"
+        },
+        {
+          "title": "Stocks Retreat as AI Infrastructure Companies and Chip Makers Fall",
+          "url": "https://finance.yahoo.com/news/stocks-retreat-ai-infrastructure-companies-162419987.html",
+          "source": "Yahoo Finance",
+          "published_utc": "2025-12-17T16:24:19Z"
+        },
+        {
+          "title": "DTCC Handles $3.7 Quadrillion in Transactions a Year—Now It's Tokenizing Treasuries on Canton",
+          "url": "https://finance.yahoo.com/news/dtcc-handles-3-7-quadrillion-162255289.html",
+          "source": "Yahoo Finance",
+          "published_utc": "2025-12-17T16:22:55Z"
+        }
+      ]
+    },
+    {
+      "title": "Labor / macro signals",
+      "items": [
+        {
+          "title": "Trust these numbers? Economists see a lot of flaws in delayed CPI report showing downward inflation",
+          "url": "https://www.cnbc.com/2025/12/18/trust-these-numbers-economists-see-a-lot-of-flaws-in-delayed-cpi-report-showing-downward-inflation.html",
+          "source": "CNBC Economy",
+          "published_utc": "2025-12-18T22:46:42Z"
+        },
+        {
+          "title": "November consumer prices rose at a 2.7% annual rate, lower than expected, delayed data shows",
+          "url": "https://www.cnbc.com/2025/12/18/cpi-inflation-report-november-2025.html",
+          "source": "CNBC Economy",
+          "published_utc": "2025-12-18T14:57:28Z"
+        },
+        {
+          "title": "Bank of England cuts interest rates, in welcome Christmas boost for consumers",
+          "url": "https://www.cnbc.com/2025/12/18/bank-of-england-cuts-interest-rates-to-3point75percent.html",
+          "source": "CNBC Economy",
+          "published_utc": "2025-12-18T12:52:06Z"
+        },
+        {
+          "title": "November's inflation report is the first to be released after the shutdown. Here's what to expect",
+          "url": "https://www.cnbc.com/2025/12/17/novembers-inflation-report-is-the-first-to-be-released-after-the-shutdown.html",
+          "source": "CNBC Economy",
+          "published_utc": "2025-12-18T11:27:57Z"
+        },
+        {
+          "title": "Watch Fed Governor Christopher Waller speak on interest rates and the race to succeed Powell",
+          "url": "https://www.cnbc.com/2025/12/17/watch-fed-governor-christopher-waller-speak-on-interest-rates-and-the-race-to-succeed-powell.html",
+          "source": "CNBC Economy",
+          "published_utc": "2025-12-17T13:39:38Z"
+        },
+        {
+          "title": "Hassett says Fed independence is ‘really important’ and chair candidates shouldn’t be disqualified for being Trump’s friend",
+          "url": "https://www.cnbc.com/2025/12/16/fed-chief-candidate-hassett-says-central-banks-independence-is-really-important-would-move-rates-by-consensus.html",
+          "source": "CNBC Economy",
+          "published_utc": "2025-12-16T18:30:37Z"
+        },
+        {
+          "title": "Payrolls rose by 64,000 in November after falling by 105,000 in October, delayed jobs numbers show",
+          "url": "https://www.cnbc.com/2025/12/16/jobs-report-november-2025-.html",
+          "source": "CNBC Economy",
+          "published_utc": "2025-12-16T17:29:04Z"
+        },
+        {
+          "title": "China lowers anti-dumping tariffs on European pork exporters",
+          "url": "https://www.cnbc.com/2025/12/16/china-lowers-anti-dumping-tariffs-on-european-pork-exporters-.html",
+          "source": "CNBC Economy",
+          "published_utc": "2025-12-16T09:17:24Z"
+        }
+      ]
+    }
+  ]
 }
