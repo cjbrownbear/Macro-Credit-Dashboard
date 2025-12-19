@@ -1,22 +1,22 @@
 {
   "meta": {
-    "last_updated_utc": "2025-12-19T03:53:18Z"
+    "last_updated_utc": "2025-12-19T06:59:41Z"
   },
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
+          "title": "Bank of Japan raises benchmark rates to highest in 30 years, lifting 10-year JGB yield past 2%",
+          "url": "https://www.cnbc.com/2025/12/19/bank-of-japan-boj-rate-cpi-inflation-takaichi-ueda.html",
+          "source": "CNBC Top News",
+          "published_utc": "2025-12-19T05:47:06Z"
+        },
+        {
           "title": "Trust these numbers? Economists see a lot of flaws in delayed CPI report showing downward inflation",
           "url": "https://www.cnbc.com/2025/12/18/trust-these-numbers-economists-see-a-lot-of-flaws-in-delayed-cpi-report-showing-downward-inflation.html",
           "source": "CNBC Top News",
           "published_utc": "2025-12-18T22:46:42Z"
-        },
-        {
-          "title": "Suspected Brown and MIT prof shooter Valente is found dead, authorities say",
-          "url": "https://www.cnbc.com/2025/12/19/brown-mit-shooter-dead-valente.html",
-          "source": "CNBC Top News",
-          "published_utc": "2025-12-19T03:53:01Z"
         },
         {
           "title": "Friday could be a wild day of trading on Wall Street. Here's why",
@@ -25,46 +25,46 @@
           "published_utc": "2025-12-18T19:51:24Z"
         },
         {
+          "title": "European Union approves over $105 billion toward Ukraine aid package for next two years",
+          "url": "https://www.cnbc.com/2025/12/19/european-union-ukraine-aid-package-russia-war.html",
+          "source": "CNBC Top News",
+          "published_utc": "2025-12-19T06:23:33Z"
+        },
+        {
+          "title": "Brown and MIT prof shooter suspect Neves Valente is found dead, authorities say",
+          "url": "https://www.cnbc.com/2025/12/19/brown-mit-shooter-dead-valente.html",
+          "source": "CNBC Top News",
+          "published_utc": "2025-12-19T05:44:56Z"
+        },
+        {
+          "title": "Here’s the inflation breakdown for November 2025 — in one chart",
+          "url": "https://www.cnbc.com/2025/12/18/cpi-inflation-breakdown.html",
+          "source": "CNBC Top News",
+          "published_utc": "2025-12-18T17:36:08Z"
+        },
+        {
+          "title": "Nike shares fall 10% as China sales plunge, tariffs hit profits",
+          "url": "https://www.cnbc.com/2025/12/18/nike-nke-q2-2026-earnings.html",
+          "source": "CNBC Top News",
+          "published_utc": "2025-12-18T23:05:58Z"
+        },
+        {
           "title": "Trump signs executive order reclassifying cannabis, opening door to broader weed access",
           "url": "https://www.cnbc.com/2025/12/18/trump-pot-reclassification-cannabis-stocks-medicare-cbd.html",
           "source": "CNBC Top News",
           "published_utc": "2025-12-18T22:11:31Z"
         },
         {
-          "title": "European Union approves over $105 billion toward Ukraine aid package for next two years",
-          "url": "https://www.cnbc.com/2025/12/19/european-union-ukraine-aid-package-russia-war.html",
-          "source": "CNBC Top News",
-          "published_utc": "2025-12-19T03:47:34Z"
-        },
-        {
-          "title": "TikTok signs agreement to create new U.S. joint venture, memo says",
-          "url": "https://www.cnbc.com/2025/12/18/tik-tok-us-sale-china.html",
-          "source": "CNBC Top News",
-          "published_utc": "2025-12-19T01:12:21Z"
-        },
-        {
-          "title": "Bank of Japan raises rates to highest in 30 years as inflation stays above target",
-          "url": "https://www.cnbc.com/2025/12/19/bank-of-japan-boj-rate-cpi-inflation-takaichi-ueda.html",
-          "source": "CNBC Top News",
-          "published_utc": "2025-12-19T03:35:41Z"
-        },
-        {
-          "title": "Trump promises 'largest tax refund season of all time.' What you can expect",
-          "url": "https://www.cnbc.com/2025/12/18/trump-bigger-tax-refunds.html",
-          "source": "CNBC Top News",
-          "published_utc": "2025-12-18T23:53:53Z"
-        },
-        {
-          "title": "Shop for deals as rates rise: Mortgage lenders with the best rates this week, Dec. 15-21, 2025",
-          "url": "https://finance.yahoo.com/personal-finance/mortgages/article/shop-for-deals-as-rates-rise-mortgage-lenders-with-the-best-rates-this-week-dec-15-21-2025-170834305.html",
+          "title": "Robinhood CEO: Prediction Markets at Beginning of Supercycle",
+          "url": "https://finance.yahoo.com/video/robinhood-ceo-prediction-markets-beginning-184327539.html",
           "source": "Yahoo Finance",
-          "published_utc": "2025-11-03T17:08:34Z"
+          "published_utc": "2025-12-17T18:43:27Z"
         },
         {
-          "title": "Amazon Eyes a Big Investment in OpenAI. Is This the Latest Sign of an AI Bubble?",
-          "url": "https://finance.yahoo.com/news/amazon-eyes-big-investment-openai-154549123.html",
+          "title": "IBM and Pearson Team Up on AI-Powered Learning",
+          "url": "https://finance.yahoo.com/news/ibm-pearson-team-ai-powered-184317544.html",
           "source": "Yahoo Finance",
-          "published_utc": "2025-12-17T15:45:49Z"
+          "published_utc": "2025-12-17T18:43:17Z"
         }
       ]
     },
