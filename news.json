@@ -1,28 +1,40 @@
 {
   "meta": {
-    "last_updated_utc": "2025-12-19T13:48:07Z"
+    "last_updated_utc": "2025-12-19T18:57:24Z"
   },
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
+          "title": "Oracle stock jumps 8% as cloud provider joins investor group to run TikTok's U.S. business",
+          "url": "https://www.cnbc.com/2025/12/19/oracle-stock-tiktok-us-trump-china.html",
+          "source": "CNBC Top News",
+          "published_utc": "2025-12-19T18:16:11Z"
+        },
+        {
           "title": "NY Fed President Williams says some 'technical factors' distorted November's CPI reading downward",
           "url": "https://www.cnbc.com/2025/12/19/ny-fed-president-williams-says-some-technical-factors-distorted-novembers-cpi-reading-downward.html",
           "source": "CNBC Top News",
-          "published_utc": "2025-12-19T13:45:38Z"
+          "published_utc": "2025-12-19T15:48:35Z"
         },
         {
-          "title": "UnitedHealth Group commits to improvements after independent audit, patient backlash",
-          "url": "https://www.cnbc.com/2025/12/19/unitedhealth-group-results-independent-audit-investigation.html",
+          "title": "Palo Alto Networks announces multibillion-dollar deal with Google Cloud",
+          "url": "https://www.cnbc.com/2025/12/19/palo-alto-networks-google-cloud-ai-threats.html",
           "source": "CNBC Top News",
-          "published_utc": "2025-12-19T13:29:44Z"
+          "published_utc": "2025-12-19T14:37:44Z"
         },
         {
-          "title": "Waller had a 'strong interview' for Fed chair with Trump as president appears to turn focus to job market",
-          "url": "https://www.cnbc.com/2025/12/19/waller-had-a-strong-interview-for-fed-chair-with-trump.html",
+          "title": "Jeffrey Epstein: Dems say DOJ breaking law with plan to release files over time",
+          "url": "https://www.cnbc.com/2025/12/19/jeffrey-epstein-files-doj-release-order-maxwell.html",
           "source": "CNBC Top News",
-          "published_utc": "2025-12-19T13:26:35Z"
+          "published_utc": "2025-12-19T17:30:45Z"
+        },
+        {
+          "title": "Google's boomerang year: 20% of AI software engineers hired in 2025 were ex-employees",
+          "url": "https://www.cnbc.com/2025/12/19/google-boomerang-year-20percent-ai-software-devs-hired-2025-ex-employees.html",
+          "source": "CNBC Top News",
+          "published_utc": "2025-12-19T17:54:59Z"
         },
         {
           "title": "CNBC's Official College Sports Valuations 2025: Top 75 athletic programs",
@@ -31,40 +43,28 @@
           "published_utc": "2025-12-19T12:07:08Z"
         },
         {
-          "title": "Wall Street banked on a flurry of deals under Trump in 2025. It wasn't that simple",
-          "url": "https://www.cnbc.com/2025/12/19/wall-street-deals-2025-trump-tariffs-uncertainty.html",
+          "title": "November home sales struggle as supply stalls",
+          "url": "https://www.cnbc.com/2025/12/19/november-home-sales.html",
           "source": "CNBC Top News",
-          "published_utc": "2025-12-19T12:30:02Z"
-        },
-        {
-          "title": "TikTok signs agreement to create new U.S. joint venture, memo says",
-          "url": "https://www.cnbc.com/2025/12/18/tik-tok-us-sale-china.html",
-          "source": "CNBC Top News",
-          "published_utc": "2025-12-19T13:29:24Z"
-        },
-        {
-          "title": "Nike shares drop 10% as China sales plunge, tariffs hit profits",
-          "url": "https://www.cnbc.com/2025/12/18/nike-nke-q2-2026-earnings.html",
-          "source": "CNBC Top News",
-          "published_utc": "2025-12-19T13:01:05Z"
+          "published_utc": "2025-12-19T16:39:44Z"
         },
         {
           "title": "Trump suspends U.S. green card lottery after Brown University shooting",
           "url": "https://www.cnbc.com/2025/12/19/us-green-card-lottery-suspended-after-brown-shooting-officials-say.html",
           "source": "CNBC Top News",
-          "published_utc": "2025-12-19T13:36:23Z"
+          "published_utc": "2025-12-19T18:54:13Z"
         },
         {
-          "title": "Prediction: These 2 Stocks Will Be the First to Join the $5 Trillion Market Cap Club in 2026",
-          "url": "https://finance.yahoo.com/news/prediction-2-stocks-first-join-015000593.html",
+          "title": "8 CFO strategies to promote healthy work-life balance",
+          "url": "https://finance.yahoo.com/news/8-cfo-strategies-promote-healthy-085650991.html",
           "source": "Yahoo Finance",
-          "published_utc": "2025-12-18T01:50:00Z"
+          "published_utc": "2025-12-18T08:56:50Z"
         },
         {
-          "title": "Fermi denies report that Amazon was prospective tenant in stalled project",
-          "url": "https://finance.yahoo.com/news/amazon-prospective-tenant-withdrew-funding-014933872.html",
+          "title": "Dollar Trades Steady Ahead of U.S. Inflation Data",
+          "url": "https://www.barrons.com/livecoverage/stock-market-news-today-121825/card/dollar-trades-steady-ahead-of-u-s-inflation-data-Hbw0RU8Udg4XAWgthRx1?siteid=yhoof2&yptr=yahoo",
           "source": "Yahoo Finance",
-          "published_utc": "2025-12-18T01:49:33Z"
+          "published_utc": "2025-12-18T08:55:51Z"
         }
       ]
     },
