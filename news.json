@@ -1,16 +1,22 @@
 {
   "meta": {
-    "last_updated_utc": "2025-12-19T18:57:24Z"
+    "last_updated_utc": "2025-12-20T03:43:04Z"
   },
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
-          "title": "Oracle stock jumps 8% as cloud provider joins investor group to run TikTok's U.S. business",
-          "url": "https://www.cnbc.com/2025/12/19/oracle-stock-tiktok-us-trump-china.html",
+          "title": "Nine of the largest pharma companies ink deals with Trump to lower drug prices",
+          "url": "https://www.cnbc.com/2025/12/19/nine-pharma-companies-ink-deals-with-trump-to-lower-drug-prices.html",
           "source": "CNBC Top News",
-          "published_utc": "2025-12-19T18:16:11Z"
+          "published_utc": "2025-12-19T22:14:26Z"
+        },
+        {
+          "title": "Epstein files released by DOJ",
+          "url": "https://www.cnbc.com/2025/12/19/jeffrey-epstein-files-doj-release-order-maxwell.html",
+          "source": "CNBC Top News",
+          "published_utc": "2025-12-20T00:05:20Z"
         },
         {
           "title": "NY Fed President Williams says some 'technical factors' distorted November's CPI reading downward",
@@ -19,22 +25,16 @@
           "published_utc": "2025-12-19T15:48:35Z"
         },
         {
-          "title": "Palo Alto Networks announces multibillion-dollar deal with Google Cloud",
-          "url": "https://www.cnbc.com/2025/12/19/palo-alto-networks-google-cloud-ai-threats.html",
+          "title": "Oracle stock jumps 7% as cloud provider joins investor group to run TikTok's U.S. business",
+          "url": "https://www.cnbc.com/2025/12/19/oracle-stock-tiktok-us-trump-china.html",
           "source": "CNBC Top News",
-          "published_utc": "2025-12-19T14:37:44Z"
+          "published_utc": "2025-12-19T21:00:27Z"
         },
         {
-          "title": "Jeffrey Epstein: Dems say DOJ breaking law with plan to release files over time",
-          "url": "https://www.cnbc.com/2025/12/19/jeffrey-epstein-files-doj-release-order-maxwell.html",
+          "title": "Former Trump advisor Dina Powell McCormick leaves Meta board after eight-month stint",
+          "url": "https://www.cnbc.com/2025/12/19/former-trump-advisor-dina-powell-mccormick-leaves-meta-board.html",
           "source": "CNBC Top News",
-          "published_utc": "2025-12-19T17:30:45Z"
-        },
-        {
-          "title": "Google's boomerang year: 20% of AI software engineers hired in 2025 were ex-employees",
-          "url": "https://www.cnbc.com/2025/12/19/google-boomerang-year-20percent-ai-software-devs-hired-2025-ex-employees.html",
-          "source": "CNBC Top News",
-          "published_utc": "2025-12-19T17:54:59Z"
+          "published_utc": "2025-12-19T23:09:46Z"
         },
         {
           "title": "CNBC's Official College Sports Valuations 2025: Top 75 athletic programs",
@@ -43,28 +43,28 @@
           "published_utc": "2025-12-19T12:07:08Z"
         },
         {
-          "title": "November home sales struggle as supply stalls",
-          "url": "https://www.cnbc.com/2025/12/19/november-home-sales.html",
+          "title": "Musk's $56 billion Tesla pay package must be restored as court rules cancellation was too extreme",
+          "url": "https://www.cnbc.com/2025/12/19/musk-tesla-pay-delaware-supreme-court.html",
           "source": "CNBC Top News",
-          "published_utc": "2025-12-19T16:39:44Z"
+          "published_utc": "2025-12-19T23:44:32Z"
         },
         {
-          "title": "Trump suspends U.S. green card lottery after Brown University shooting",
-          "url": "https://www.cnbc.com/2025/12/19/us-green-card-lottery-suspended-after-brown-shooting-officials-say.html",
+          "title": "Inside the dealmaking that pushed Trump to reclassify pot, expand access",
+          "url": "https://www.cnbc.com/2025/12/19/trump-pot-executive-order-medicare-cbd-lobbying-donors.html",
           "source": "CNBC Top News",
-          "published_utc": "2025-12-19T18:54:13Z"
+          "published_utc": "2025-12-19T22:29:34Z"
         },
         {
-          "title": "8 CFO strategies to promote healthy work-life balance",
-          "url": "https://finance.yahoo.com/news/8-cfo-strategies-promote-healthy-085650991.html",
+          "title": "Scholastic Widens Second-Quarter Profit On Rising Back-to-School Revenue",
+          "url": "https://www.wsj.com/business/earnings/scholastic-widens-second-quarter-profit-on-rising-back-to-school-revenue-e51bc5dd?siteid=yhoof2&yptr=yahoo",
           "source": "Yahoo Finance",
-          "published_utc": "2025-12-18T08:56:50Z"
+          "published_utc": "2025-12-18T21:35:00Z"
         },
         {
-          "title": "Dollar Trades Steady Ahead of U.S. Inflation Data",
-          "url": "https://www.barrons.com/livecoverage/stock-market-news-today-121825/card/dollar-trades-steady-ahead-of-u-s-inflation-data-Hbw0RU8Udg4XAWgthRx1?siteid=yhoof2&yptr=yahoo",
+          "title": "Chevron Ships Venezuelan Crude Despite Rising U.S. Pressure",
+          "url": "https://finance.yahoo.com/news/chevron-ships-venezuelan-crude-despite-213833702.html",
           "source": "Yahoo Finance",
-          "published_utc": "2025-12-18T08:55:51Z"
+          "published_utc": "2025-12-18T21:38:33Z"
         }
       ]
     },
