@@ -1,70 +1,56 @@
 {
-  "meta": {
-    "last_updated_utc": "2025-12-20T18:51:22Z"
-  },
+  "updated": "2025-12-20T20:56:26Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
+          "source": "CNBC Top News",
           "title": "Google was at risk of losing its dominance — until it promoted this AI executive",
-          "url": "https://www.cnbc.com/2025/12/20/josh-woodward-google-gemini-ai-safety.html",
-          "source": "CNBC Top News",
-          "published_utc": "2025-12-20T12:00:01Z"
+          "link": "https://www.cnbc.com/2025/12/20/josh-woodward-google-gemini-ai-safety.html",
+          "published": "Sat, 20 Dec 2025 12:00:01 GMT"
         },
         {
+          "source": "CNBC Top News",
           "title": "Epstein files released by DOJ",
-          "url": "https://www.cnbc.com/2025/12/19/jeffrey-epstein-files-doj-release-order-maxwell.html",
-          "source": "CNBC Top News",
-          "published_utc": "2025-12-20T00:05:20Z"
+          "link": "https://www.cnbc.com/2025/12/19/jeffrey-epstein-files-doj-release-order-maxwell.html",
+          "published": "Sat, 20 Dec 2025 00:05:20 GMT"
         },
         {
+          "source": "CNBC Top News",
           "title": "Abel takes over for Buffett in less than two weeks. Wall Street has some advice for new Berkshire CEO",
-          "url": "https://www.cnbc.com/2025/12/20/abel-takes-over-for-buffett-in-less-than-two-weeks-wall-street-has-some-advice-for-new-berkshire-ceo.html",
-          "source": "CNBC Top News",
-          "published_utc": "2025-12-20T13:32:04Z"
+          "link": "https://www.cnbc.com/2025/12/20/abel-takes-over-for-buffett-in-less-than-two-weeks-wall-street-has-some-advice-for-new-berkshire-ceo.html",
+          "published": "Sat, 20 Dec 2025 13:32:04 GMT"
         },
         {
+          "source": "CNBC Top News",
           "title": "Roomba's bankruptcy may wreck a lot more than one robot vacuum maker",
-          "url": "https://www.cnbc.com/2025/12/20/roomba-bankruptcy-robot-vacuum-maker.html",
-          "source": "CNBC Top News",
-          "published_utc": "2025-12-20T14:21:45Z"
+          "link": "https://www.cnbc.com/2025/12/20/roomba-bankruptcy-robot-vacuum-maker.html",
+          "published": "Sat, 20 Dec 2025 14:21:45 GMT"
         },
         {
-          "title": "Lucid's big SUV arrives with high expectations, and big risks",
-          "url": "https://www.cnbc.com/2025/12/20/lucids-gravity-suv-arrives-with-high-expectations-and-big-risks.html",
           "source": "CNBC Top News",
-          "published_utc": "2025-12-20T13:30:01Z"
-        },
-        {
           "title": "CNBC's Official College Sports Valuations 2025: Top 75 athletic programs",
-          "url": "https://www.cnbc.com/2025/12/19/cnbc-official-college-sports-valuations-2025-top-75-athletic-programs.html",
-          "source": "CNBC Top News",
-          "published_utc": "2025-12-19T12:07:08Z"
+          "link": "https://www.cnbc.com/2025/12/19/cnbc-official-college-sports-valuations-2025-top-75-athletic-programs.html",
+          "published": "Fri, 19 Dec 2025 12:07:08 GMT"
         },
         {
-          "title": "Activist Ananym Capital urges LKQ to sell its European auto parts business",
-          "url": "https://www.cnbc.com/2025/12/20/activist-ananym-capital-urges-lkq-to-sell-its-european-auto-parts-business.html",
           "source": "CNBC Top News",
-          "published_utc": "2025-12-20T13:39:10Z"
+          "title": "Lucid's big SUV arrives with high expectations, and big risks",
+          "link": "https://www.cnbc.com/2025/12/20/lucids-gravity-suv-arrives-with-high-expectations-and-big-risks.html",
+          "published": "Sat, 20 Dec 2025 13:30:01 GMT"
         },
         {
-          "title": "What the Christmas movie ‘Elf’ can teach us about today's cost of living",
-          "url": "https://www.cnbc.com/2025/12/20/what-the-christmas-movie-elf-can-teach-us-about-todays-cost-of-living.html",
-          "source": "CNBC Top News",
-          "published_utc": "2025-12-20T14:45:02Z"
-        },
-        {
-          "title": "3 Top Dividend Stocks I Plan to Buy Hand Over Fist in 2026",
-          "url": "https://finance.yahoo.com/news/3-top-dividend-stocks-plan-183500286.html",
           "source": "Yahoo Finance",
-          "published_utc": "2025-12-20T18:35:00Z"
+          "title": "This Payments Stock Is Down 37% This Past Year as One Fund Trimmed a $40 Million Stake",
+          "link": "https://finance.yahoo.com/news/payments-stock-down-37-past-204330879.html",
+          "published": "2025-12-20T20:43:30Z"
         },
         {
-          "title": "With the US government no longer making pennies, some people smell an opportunity to cash in on these discontinued coins",
-          "url": "https://finance.yahoo.com/news/us-government-no-longer-making-180000974.html",
           "source": "Yahoo Finance",
-          "published_utc": "2025-12-20T18:00:00Z"
+          "title": "HELOC rates today, December 20, 2025: Lowest rates in 3 years",
+          "link": "https://finance.yahoo.com/personal-finance/mortgages/article/heloc-interest-rates-today-saturday-december-20-2025-110018016.html",
+          "published": "2025-12-20T11:00:18Z"
         }
       ]
     },
@@ -72,52 +58,40 @@
       "title": "Labor / macro signals",
       "items": [
         {
+          "source": "CNBC Economy",
           "title": "Trust these numbers? Economists see a lot of flaws in delayed CPI report showing downward inflation",
-          "url": "https://www.cnbc.com/2025/12/18/trust-these-numbers-economists-see-a-lot-of-flaws-in-delayed-cpi-report-showing-downward-inflation.html",
-          "source": "CNBC Economy",
-          "published_utc": "2025-12-18T22:46:42Z"
+          "link": "https://www.cnbc.com/2025/12/18/trust-these-numbers-economists-see-a-lot-of-flaws-in-delayed-cpi-report-showing-downward-inflation.html",
+          "published": "Thu, 18 Dec 2025 22:46:42 GMT"
         },
         {
+          "source": "CNBC Economy",
           "title": "November consumer prices rose at a 2.7% annual rate, lower than expected, delayed data shows",
-          "url": "https://www.cnbc.com/2025/12/18/cpi-inflation-report-november-2025.html",
-          "source": "CNBC Economy",
-          "published_utc": "2025-12-18T14:57:28Z"
+          "link": "https://www.cnbc.com/2025/12/18/cpi-inflation-report-november-2025.html",
+          "published": "Thu, 18 Dec 2025 14:57:28 GMT"
         },
         {
+          "source": "CNBC Economy",
           "title": "Bank of England cuts interest rates, in welcome Christmas boost for consumers",
-          "url": "https://www.cnbc.com/2025/12/18/bank-of-england-cuts-interest-rates-to-3point75percent.html",
-          "source": "CNBC Economy",
-          "published_utc": "2025-12-18T12:52:06Z"
+          "link": "https://www.cnbc.com/2025/12/18/bank-of-england-cuts-interest-rates-to-3point75percent.html",
+          "published": "Thu, 18 Dec 2025 12:52:06 GMT"
         },
         {
+          "source": "CNBC Economy",
           "title": "November's inflation report is the first to be released after the shutdown. Here's what to expect",
-          "url": "https://www.cnbc.com/2025/12/17/novembers-inflation-report-is-the-first-to-be-released-after-the-shutdown.html",
-          "source": "CNBC Economy",
-          "published_utc": "2025-12-18T11:27:57Z"
+          "link": "https://www.cnbc.com/2025/12/17/novembers-inflation-report-is-the-first-to-be-released-after-the-shutdown.html",
+          "published": "Thu, 18 Dec 2025 11:27:57 GMT"
         },
         {
+          "source": "CNBC Economy",
           "title": "Watch Fed Governor Christopher Waller speak on interest rates and the race to succeed Powell",
-          "url": "https://www.cnbc.com/2025/12/17/watch-fed-governor-christopher-waller-speak-on-interest-rates-and-the-race-to-succeed-powell.html",
-          "source": "CNBC Economy",
-          "published_utc": "2025-12-17T13:39:38Z"
+          "link": "https://www.cnbc.com/2025/12/17/watch-fed-governor-christopher-waller-speak-on-interest-rates-and-the-race-to-succeed-powell.html",
+          "published": "Wed, 17 Dec 2025 13:39:38 GMT"
         },
         {
+          "source": "CNBC Economy",
           "title": "Hassett says Fed independence is ‘really important’ and chair candidates shouldn’t be disqualified for being Trump’s friend",
-          "url": "https://www.cnbc.com/2025/12/16/fed-chief-candidate-hassett-says-central-banks-independence-is-really-important-would-move-rates-by-consensus.html",
-          "source": "CNBC Economy",
-          "published_utc": "2025-12-16T18:30:37Z"
-        },
-        {
-          "title": "Payrolls rose by 64,000 in November after falling by 105,000 in October, delayed jobs numbers show",
-          "url": "https://www.cnbc.com/2025/12/16/jobs-report-november-2025-.html",
-          "source": "CNBC Economy",
-          "published_utc": "2025-12-16T17:29:04Z"
-        },
-        {
-          "title": "China lowers anti-dumping tariffs on European pork exporters",
-          "url": "https://www.cnbc.com/2025/12/16/china-lowers-anti-dumping-tariffs-on-european-pork-exporters-.html",
-          "source": "CNBC Economy",
-          "published_utc": "2025-12-16T09:17:24Z"
+          "link": "https://www.cnbc.com/2025/12/16/fed-chief-candidate-hassett-says-central-banks-independence-is-really-important-would-move-rates-by-consensus.html",
+          "published": "Tue, 16 Dec 2025 18:30:37 GMT"
         }
       ]
     }
