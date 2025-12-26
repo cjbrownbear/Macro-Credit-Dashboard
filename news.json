@@ -1,14 +1,26 @@
 {
-  "updated": "2025-12-25T13:56:25Z",
+  "updated": "2025-12-26T13:57:38Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Wall Street wrote off Palantir as too expensive. Retail investors can't get enough",
-          "link": "https://www.cnbc.com/2025/12/25/palantir-retail-investors-valuation-karp.html",
-          "published": "Thu, 25 Dec 2025 13:00:01 GMT"
+          "title": "Oracle shares on pace for worst quarter since 2001 as new CEOs face concerns about AI build-out",
+          "link": "https://www.cnbc.com/2025/12/26/oracle-stock-on-pace-for-worst-quarter-since-2001-ai-concerns.html",
+          "published": "Fri, 26 Dec 2025 13:04:10 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "Google is rolling out a new feature allowing users to change their Gmail address",
+          "link": "https://www.cnbc.com/2025/12/26/google-gmail-change-email-address-without-new-account-india-hindi-support.html",
+          "published": "Fri, 26 Dec 2025 08:58:52 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "The Trump-class battleship faces a large obstacle in its way: Reality",
+          "link": "https://www.cnbc.com/2025/12/26/trump-class-battleship-uss-defiant-golden-fleet-rail-gun-laser-reality-defense-war-experts-skeptical.html",
+          "published": "Fri, 26 Dec 2025 12:24:55 GMT"
         },
         {
           "source": "CNBC Top News",
@@ -18,39 +30,27 @@
         },
         {
           "source": "CNBC Top News",
-          "title": "Tariffs hit boots, bags and more as leather prices jump — and relief could be years away",
-          "link": "https://www.cnbc.com/2025/12/25/leather-prices-tariffs-trump-boots-handbags-furniture-twisted-x.html",
-          "published": "Thu, 25 Dec 2025 13:00:01 GMT"
+          "title": "Free streaming service Tubi is rivaling major players for viewership. Here's how it's winning",
+          "link": "https://www.cnbc.com/2025/12/24/tubi-fox-streaming-free.html",
+          "published": "Wed, 24 Dec 2025 16:53:21 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Exclusive: Nvidia buying AI chip startup Groq's assets for about $20 billion in its largest deal on record",
-          "link": "https://www.cnbc.com/2025/12/24/nvidia-buying-ai-chip-startup-groq-for-about-20-billion-biggest-deal.html",
-          "published": "Thu, 25 Dec 2025 11:31:17 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "Monetizers vs manufactures: How the AI market could splinter in 2026",
-          "link": "https://www.cnbc.com/2025/12/25/how-the-ai-market-could-splinter-in-2026-.html",
-          "published": "Thu, 25 Dec 2025 05:06:31 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "DOJ says more than 1 million potential Epstein files newly uncovered",
-          "link": "https://www.cnbc.com/2025/12/24/epstein-files-senators-call-for-audit-into-dojs-release.html",
-          "published": "Wed, 24 Dec 2025 21:28:47 GMT"
+          "title": "Unmarried couples aren't viewed as 'a default unit' at end of life, advisor says. Why that matters",
+          "link": "https://www.cnbc.com/2025/12/26/unmarried-couples-arent-default-unit-if-one-dies-why-that-matters.html",
+          "published": "Fri, 26 Dec 2025 13:30:01 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Spotify Technology S.A. (SPOT): Evaluating Cash Flow Generation Potential vs. Current Share Price",
-          "link": "https://finance.yahoo.com/news/spotify-technology-spot-evaluating-cash-133459231.html",
-          "published": "2025-12-25T13:34:59Z"
+          "title": "The Boss Who Gave His Employees a $240 Million Gift",
+          "link": "https://www.wsj.com/business/fibrebond-eaton-bonus-walker-30844d62?siteid=yhoof2&yptr=yahoo",
+          "published": "2025-12-25T02:00:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "What Makes Arista Networks (ANET) a Good Investment?",
-          "link": "https://finance.yahoo.com/news/makes-arista-networks-anet-good-133352684.html",
-          "published": "2025-12-25T13:33:52Z"
+          "title": "Asian shares are mixed after US stocks drift to more records",
+          "link": "https://finance.yahoo.com/news/asian-shares-mixed-us-stocks-054719723.html",
+          "published": "2025-12-25T05:47:19Z"
         }
       ]
     },
