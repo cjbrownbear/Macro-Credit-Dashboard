@@ -1,9 +1,9 @@
 {
-  "updated": "2025-12-29T13:57:19Z",
+  "updated": "2025-12-30T14:01:40Z",
   "overall_status": "tripwire",
   "executive_summary": {
     "text": "Overall status is Tripwire / Watch. Across the dashboard: 5 healthy, 3 tripwire, 0 stress. Biggest YoY moves: Revolving Consumer Credit (Δ 1y: -33519B (-2.5%)); Initial Jobless Claims (Δ 1y: -8000K (-3.6%)); Net Charge-off Rate (Δ 1y: -0.51pp (-10.9%)).",
-    "updated": "2025-12-29T13:57:18Z",
+    "updated": "2025-12-30T14:01:40Z",
     "overall": "tripwire"
   },
   "kpis": [
@@ -54740,33 +54740,33 @@
         },
         {
           "date": "2025-04-01",
-          "value": 18168.6,
-          "value_str": "$18,169B"
+          "value": 18132.9,
+          "value_str": "$18,133B"
         },
         {
           "date": "2025-05-01",
-          "value": 18041.7,
-          "value_str": "$18,042B"
+          "value": 17980.9,
+          "value_str": "$17,981B"
         },
         {
           "date": "2025-06-01",
-          "value": 18036.2,
-          "value_str": "$18,036B"
+          "value": 17962.1,
+          "value_str": "$17,962B"
         },
         {
           "date": "2025-07-01",
-          "value": 18084.5,
-          "value_str": "$18,084B"
+          "value": 18011.3,
+          "value_str": "$18,011B"
         },
         {
           "date": "2025-08-01",
-          "value": 18105.1,
-          "value_str": "$18,105B"
+          "value": 18030.5,
+          "value_str": "$18,030B"
         },
         {
           "date": "2025-09-01",
-          "value": 18116.1,
-          "value_str": "$18,116B"
+          "value": 18040.2,
+          "value_str": "$18,040B"
         }
       ],
       "bench_points": [
@@ -57908,27 +57908,27 @@
         },
         {
           "date": "2025-04-01",
-          "value": 15995.694166666666
+          "value": 15995.396666666667
         },
         {
           "date": "2025-05-01",
-          "value": 16030.494999999999
+          "value": 16029.690833333334
         },
         {
           "date": "2025-06-01",
-          "value": 16065.179166666667
+          "value": 16063.7575
         },
         {
           "date": "2025-07-01",
-          "value": 16100.0025
+          "value": 16097.970833333333
         },
         {
           "date": "2025-08-01",
-          "value": 16134.746666666666
+          "value": 16132.093333333332
         },
         {
           "date": "2025-09-01",
-          "value": 16169.279166666667
+          "value": 16165.993333333334
         }
       ],
       "summary_text": "Latest reading shown with a 10-year rolling mean benchmark."
