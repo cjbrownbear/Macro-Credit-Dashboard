@@ -1,62 +1,68 @@
 {
-  "updated": "2025-12-31T13:52:13Z",
+  "updated": "2026-01-01T13:53:16Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Retail investors close out one of their best years ever. How they beat Wall Street at their own game",
-          "link": "https://www.cnbc.com/2025/12/31/retail-investors-dip-buying-taco-trade-strong-2025.html",
-          "published": "Wed, 31 Dec 2025 13:00:56 GMT"
+          "title": "Dust to data centers: The year AI tech giants, and billions in debt, began remaking the American landscape",
+          "link": "https://www.cnbc.com/2025/12/31/ai-data-centers-debt-sam-altman-elon-musk-mark-zuckerberg.html",
+          "published": "Thu, 01 Jan 2026 03:13:37 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Gold, silver prices fall after CME raises precious metals margins — again",
-          "link": "https://www.cnbc.com/2025/12/31/gold-and-silver-prices-fall-after-cme-raises-precious-metals-margins.html",
-          "published": "Wed, 31 Dec 2025 13:18:45 GMT"
+          "title": "Trump’s first vetoes of his second term hit bipartisan infrastructure projects, draw accusations of retribution",
+          "link": "https://www.cnbc.com/2025/12/31/trumps-first-vetoes-hit-bipartisan-infrastructure-projects.html",
+          "published": "Wed, 31 Dec 2025 19:54:16 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Space and defense boom lifted these satellite stocks by more than 200% in 2025",
-          "link": "https://www.cnbc.com/2025/12/31/space-and-defense-boom-lifted-these-satellite-stocks-by-200percent-in-2025.html",
-          "published": "Wed, 31 Dec 2025 13:19:08 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "Khanna calls for nationwide fraud investigation after wealth tax proposal caused firestorm",
-          "link": "https://www.cnbc.com/2025/12/30/ro-khanna-calls-for-fraud-probe-after-california-wealth-tax-firestorm.html",
-          "published": "Wed, 31 Dec 2025 00:47:53 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "How $160 million worth of export-controlled Nvidia chips were allegedly smuggled into China",
-          "link": "https://www.cnbc.com/2025/12/31/160-million-export-controlled-nvidia-gpus-allegedly-smuggled-to-china.html",
-          "published": "Wed, 31 Dec 2025 13:27:41 GMT"
+          "title": "Google wraps up best year on Wall Street since 2009, beating megacap peers as AI story strengthens",
+          "link": "https://www.cnbc.com/2025/12/31/google-stock-wraps-best-year-since-2009-as-ai-excites-wall-street-.html",
+          "published": "Wed, 31 Dec 2025 22:41:45 GMT"
         },
         {
           "source": "CNBC Top News",
           "title": "'Big Short' investor Michael Burry says he's not shorting Tesla",
           "link": "https://www.cnbc.com/2025/12/31/big-short-investor-michael-burry-denies-shorting-tesla-stock.html",
-          "published": "Wed, 31 Dec 2025 13:20:52 GMT"
+          "published": "Wed, 31 Dec 2025 17:40:18 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "Novo Nordisk enters 2026 on the defense as it faces a ‘must-win’ battle in the U.S. market",
+          "link": "https://www.cnbc.com/2026/01/01/novo-nordisk-faces-must-win-battle-over-us-wegovy-ozempic-in-2026.html",
+          "published": "Thu, 01 Jan 2026 06:00:01 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "Gold, silver prices fall after CME raises precious metals margins — again",
+          "link": "https://www.cnbc.com/2025/12/31/gold-and-silver-prices-fall-after-cme-raises-precious-metals-margins.html",
+          "published": "Wed, 31 Dec 2025 16:41:19 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Gold and Silver Stumble at the End of Best Year Since the 1970s",
-          "link": "https://finance.yahoo.com/news/gold-stumbles-end-record-setting-064926212.html",
-          "published": "2025-12-31T12:56:13Z"
+          "title": "Dow Jones Futures: Market Shut, Faces Test To Start 2026; Tesla Deliveries, Musk Deadline In Focus",
+          "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-2025-2026-tesla-deliveries-palantir-nvidia-chipmaker-taiwan-semi/?src=A00220&yptr=yahoo",
+          "published": "2026-01-01T13:35:58Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Be a good person and buy boring stocks: Wall Street reflects on Warren Buffett's wisdom",
-          "link": "https://finance.yahoo.com/news/be-a-good-person-and-buy-boring-stocks-wall-street-reflects-on-warren-buffetts-wisdom-134023905.html",
-          "published": "2025-12-31T13:40:23Z"
+          "title": "A frugal Kentucky couple lives entirely on Social Security. But can you retire comfortably on benefit payments alone?",
+          "link": "https://finance.yahoo.com/news/frugal-kentucky-couple-lives-entirely-133000966.html",
+          "published": "2026-01-01T13:30:00Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Economist Mark Zandi sees the Fed surprising with three rate cuts in first half of 2026",
+          "link": "https://www.cnbc.com/2025/12/31/economist-mark-zandi-sees-the-fed-surprising-with-three-rate-cuts-in-first-half-of-2026-.html",
+          "published": "Wed, 31 Dec 2025 18:48:56 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Gas prices fall to four-year lows as millions embark on holiday road trips",
@@ -86,12 +92,6 @@
           "title": "November's inflation report is the first to be released after the shutdown. Here's what to expect",
           "link": "https://www.cnbc.com/2025/12/17/novembers-inflation-report-is-the-first-to-be-released-after-the-shutdown.html",
           "published": "Thu, 18 Dec 2025 11:27:57 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Watch Fed Governor Christopher Waller speak on interest rates and the race to succeed Powell",
-          "link": "https://www.cnbc.com/2025/12/17/watch-fed-governor-christopher-waller-speak-on-interest-rates-and-the-race-to-succeed-powell.html",
-          "published": "Wed, 17 Dec 2025 13:39:38 GMT"
         }
       ]
     }
