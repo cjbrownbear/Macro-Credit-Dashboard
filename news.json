@@ -1,56 +1,56 @@
 {
-  "updated": "2026-01-02T13:52:27Z",
+  "updated": "2026-01-03T13:53:41Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
+          "title": "U.S. attacks Venezuela, captures Maduro and his wife; AG Bondi says charges include 'Narco-Terrorism'",
+          "link": "https://www.cnbc.com/2026/01/03/trump-us-operation-captured-venezuela-president-nicolas-maduro.html",
+          "published": "Sat, 03 Jan 2026 13:39:54 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "Berkshire Hathaway shares dip as Warren Buffett exits and Greg Abel era begins",
+          "link": "https://www.cnbc.com/2026/01/02/berkshire-hathaway-shares-dip-as-warren-buffett-exits-and-greg-abel-era-begins.html",
+          "published": "Fri, 02 Jan 2026 23:22:58 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "Trump orders Chinese-controlled firm to unwind chip asset deal, citing national security risks",
+          "link": "https://www.cnbc.com/2026/01/03/trump-orders-unwind-chinese-chip-acquisition-emcore-hiefo-emcore-velocity-one-navgiation-gyro.html",
+          "published": "Sat, 03 Jan 2026 09:31:04 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "Anthropic's 'do more with less' bet has kept it at the AI frontier, co-founder Amodei tells CNBC",
+          "link": "https://www.cnbc.com/2026/01/03/anthropic-daniela-amodei-do-more-with-less-bet.html",
+          "published": "Sat, 03 Jan 2026 13:53:16 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "Tesla reports 418,227 deliveries for the fourth quarter, down 16%",
+          "link": "https://www.cnbc.com/2026/01/02/tesla-tsla-q4-2025-vehicle-deliveries.html",
+          "published": "Fri, 02 Jan 2026 23:52:52 GMT"
+        },
+        {
+          "source": "CNBC Top News",
           "title": "Buffett says Berkshire has the best odds of any company for lasting 100 more years as he hands over reins",
           "link": "https://www.cnbc.com/2026/01/02/warren-buffett-retirement-final-interview-berkshire-has-the-best-odds-of-lasting-a-century.html",
-          "published": "Fri, 02 Jan 2026 13:51:45 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "Meet the 2026 stock market. It's the same AI-reliant market of 2025",
-          "link": "https://www.cnbc.com/2026/01/02/meet-the-2026-stock-market-its-the-same-ai-reliant-market-of-2025.html",
-          "published": "Fri, 02 Jan 2026 13:43:40 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "Will he stay or will he go? Powell is not saying whether he'll stay on Fed board when chair term ends",
-          "link": "https://www.cnbc.com/2026/01/02/fed-chair-powell-staying-on-fed-board-or-going.html",
-          "published": "Fri, 02 Jan 2026 12:35:04 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "Behind the mesh curtain: Why airline class wars will intensify in 2026",
-          "link": "https://www.cnbc.com/2026/01/02/airline-industry-2026.html",
-          "published": "Fri, 02 Jan 2026 12:30:01 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "Trump says U.S. will intervene if Iran 'violently kills' protestors",
-          "link": "https://www.cnbc.com/2026/01/02/trump-says-us-will-intervene-if-iran-violently-kills-protestors.html",
-          "published": "Fri, 02 Jan 2026 11:05:28 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "Bernie Sanders and Ron DeSantis speak out against data center boom. It's a bad sign for AI industry",
-          "link": "https://www.cnbc.com/2026/01/01/ai-data-centers-bernie-sanders-ron-desantis-electricity-prices.html",
-          "published": "Thu, 01 Jan 2026 15:39:54 GMT"
+          "published": "Fri, 02 Jan 2026 14:16:55 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "1 Top Dividend Stock For 2026 That Could Perform Well Even If AI Stocks Fall",
-          "link": "https://finance.yahoo.com/news/1-top-dividend-stock-2026-015100147.html",
-          "published": "2026-01-01T01:51:00Z"
+          "title": "Mark Cuban Says We Could Pay Off The National Debt If Insurers Were Fined $100 Every Time They Over-Billed Or Denied Care",
+          "link": "https://finance.yahoo.com/news/mark-cuban-says-could-pay-173107627.html",
+          "published": "2026-01-02T17:31:07Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Prologis (PLD) CEO Says Energy is Key For Data Center Buildout, Says Jim Cramer",
-          "link": "https://finance.yahoo.com/news/prologis-pld-ceo-says-energy-060751933.html",
-          "published": "2026-01-01T06:07:51Z"
+          "title": "Dow Jones Futures: Trump Says U.S. Seizes Venezuela's Maduro; Nvidia, AMD, Taiwan Semi Due",
+          "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-amd-taiwan-semi-tesla-palantir-applovin-sell-signals/?src=A00220&yptr=yahoo",
+          "published": "2026-01-03T13:16:10Z"
         }
       ]
     },
