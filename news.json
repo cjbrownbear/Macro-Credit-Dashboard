@@ -1,56 +1,56 @@
 {
-  "updated": "2026-01-09T14:03:50Z",
+  "updated": "2026-01-10T13:53:03Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "U.S. payrolls rose 50,000 in December, less than expected; unemployment rate falls to 4.4%",
-          "link": "https://www.cnbc.com/2026/01/09/jobs-report-december-2025.html",
-          "published": "Fri, 09 Jan 2026 14:02:00 GMT"
+          "title": "AI memory is sold out, causing an unprecedented surge in prices",
+          "link": "https://www.cnbc.com/2026/01/10/micron-ai-memory-shortage-hbm-nvidia-samsung.html",
+          "published": "Sat, 10 Jan 2026 12:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump suggests U.S. military will hit cartels on ‘land’ in Mexico",
-          "link": "https://www.cnbc.com/2026/01/09/trump-us-military-cartels-mexico-land.html",
-          "published": "Fri, 09 Jan 2026 13:54:20 GMT"
+          "title": "What the Big Oil executives told Trump about investing in Venezuela",
+          "link": "https://www.cnbc.com/2026/01/10/what-the-big-oil-executives-told-trump-about-investing-in-venezuela.html",
+          "published": "Sat, 10 Jan 2026 12:59:40 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Iran's leader accuses protesters of acting for Trump",
-          "link": "https://www.cnbc.com/2026/01/09/iran-protests-supreme-leader-khamenei-trump-oil.html",
-          "published": "Fri, 09 Jan 2026 13:02:34 GMT"
+          "title": "Abel's $25 million Berkshire paycheck is in the same league as other S&P 500 CEOs",
+          "link": "https://www.cnbc.com/2026/01/10/abels-25-million-berkshire-paycheck-is-in-the-same-league-as-other-sp-500-ceos.html",
+          "published": "Sat, 10 Jan 2026 12:50:43 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump says he’s canceled second wave of attacks on Venezuela",
-          "link": "https://www.cnbc.com/2026/01/09/trump-says-hes-cancelled-attacks-on-venezuela-touts-100bn-oil-investment.html",
-          "published": "Fri, 09 Jan 2026 12:29:02 GMT"
+          "title": "2026 is the year of obesity pills. Here's how they could reshape the GLP-1 market",
+          "link": "https://www.cnbc.com/2026/01/10/2026-is-the-year-of-obesity-pills-from-novo-nordisk-eli-lilly-.html",
+          "published": "Sat, 10 Jan 2026 13:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Meta signs nuclear energy deals to power Prometheus AI supercluster",
-          "link": "https://www.cnbc.com/2026/01/09/meta-signs-nuclear-energy-deals-to-power-prometheus-ai-supercluster.html",
-          "published": "Fri, 09 Jan 2026 13:09:35 GMT"
+          "title": "Activist Elliott shakes up leadership at Lululemon. How the firm can help reinvigorate the athleisure giant",
+          "link": "https://www.cnbc.com/2026/01/10/how-activist-elliott-can-help-reinvigorate-athleisure-giant-lululemon.html",
+          "published": "Sat, 10 Jan 2026 13:01:11 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Humanoid robots take over CES in Las Vegas as tech industry touts future of AI",
-          "link": "https://www.cnbc.com/2026/01/09/humanoid-robots-take-over-las-vegas-at-ces-tech-touts-future-of-ai.html",
-          "published": "Fri, 09 Jan 2026 13:00:01 GMT"
+          "title": "Supreme Court holds off on Trump tariff ruling for now — what's at stake for economy",
+          "link": "https://www.cnbc.com/2026/01/08/the-supreme-court-may-rule-friday-on-trumps-tariffs-heres-whats-at-stake-for-the-economy.html",
+          "published": "Fri, 09 Jan 2026 16:59:14 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Baby blues for Nestlé’s new CEO",
-          "link": "https://finance.yahoo.com/news/baby-blues-nestl-ceo-135513632.html",
-          "published": "2026-01-09T13:55:13Z"
+          "title": "Freedom Capital Downgrades Alibaba (BABA) Despite Raising Price Target to $180",
+          "link": "https://finance.yahoo.com/news/freedom-capital-downgrades-alibaba-baba-133538153.html",
+          "published": "2026-01-10T13:35:38Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Stock market today: S&P 500, Nasdaq futures rise, with key jobs report, SCOTUS tariff ruling in focus",
-          "link": "https://finance.yahoo.com/news/live/stock-market-today-sp-500-nasdaq-futures-rise-with-key-jobs-report-scotus-tariff-ruling-in-focus-234631970.html",
-          "published": "2026-01-08T23:46:31Z"
+          "title": "Truist Starts Coverage on Accenture (ACN) With $317 Price Target",
+          "link": "https://finance.yahoo.com/news/truist-starts-coverage-accenture-acn-133407324.html",
+          "published": "2026-01-10T13:34:07Z"
         }
       ]
     },
@@ -59,9 +59,15 @@
       "items": [
         {
           "source": "CNBC Economy",
+          "title": "Trump revealed some of Friday's jobs data early in post the prior day",
+          "link": "https://www.cnbc.com/2026/01/09/trump-revealed-jobs-data-early.html",
+          "published": "Fri, 09 Jan 2026 19:13:21 GMT"
+        },
+        {
+          "source": "CNBC Economy",
           "title": "U.S. payrolls rose 50,000 in December, less than expected; unemployment rate falls to 4.4%",
           "link": "https://www.cnbc.com/2026/01/09/jobs-report-december-2025.html",
-          "published": "Fri, 09 Jan 2026 14:02:00 GMT"
+          "published": "Fri, 09 Jan 2026 14:36:13 GMT"
         },
         {
           "source": "CNBC Economy",
@@ -71,9 +77,9 @@
         },
         {
           "source": "CNBC Economy",
-          "title": "The Supreme Court may rule Friday on Trump's tariffs. Here's what's at stake for the economy",
+          "title": "Supreme Court holds off on Trump tariff ruling for now — what's at stake for economy",
           "link": "https://www.cnbc.com/2026/01/08/the-supreme-court-may-rule-friday-on-trumps-tariffs-heres-whats-at-stake-for-the-economy.html",
-          "published": "Thu, 08 Jan 2026 20:55:48 GMT"
+          "published": "Fri, 09 Jan 2026 16:59:14 GMT"
         },
         {
           "source": "CNBC Economy",
@@ -86,12 +92,6 @@
           "title": "Treasury Secretary Bessent says more Fed rate cuts are 'only ingredient missing' for stronger economy",
           "link": "https://www.cnbc.com/2026/01/08/treasury-secretary-bessent-says-more-fed-rate-cuts-are-only-ingredient-missing-for-stronger-economy.html",
           "published": "Thu, 08 Jan 2026 18:04:21 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Layoff pace in December hit lowest level since mid-2024, Challenger says",
-          "link": "https://www.cnbc.com/2026/01/08/layoff-pace-in-december-hit-lowest-level-since-mid-2024-challenger-says.html",
-          "published": "Thu, 08 Jan 2026 14:49:54 GMT"
         }
       ]
     }
