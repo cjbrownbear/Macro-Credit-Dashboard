@@ -1,62 +1,74 @@
 {
-  "updated": "2026-01-12T14:02:16Z",
+  "updated": "2026-01-13T14:01:45Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Republican Sen. Thom Tillis vows to block Trump's Fed nominees following Powell probe",
-          "link": "https://www.cnbc.com/2026/01/12/republican-sen-thom-tillis-vows-to-block-trumps-fed-nominees-following-powell-probe.html",
-          "published": "Mon, 12 Jan 2026 12:50:21 GMT"
+          "title": "December core consumer prices rose at a 2.6% annual rate, less than expected",
+          "link": "https://www.cnbc.com/2026/01/13/cpi-inflation-report-december-2026.html",
+          "published": "Tue, 13 Jan 2026 14:01:29 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump's credit card rate cap plan has unclear path, 'devastating' risks, bank insiders say",
-          "link": "https://www.cnbc.com/2026/01/12/trump-credit-card-rate-cap-enforcement-path-risks.html",
-          "published": "Mon, 12 Jan 2026 13:53:14 GMT"
+          "title": "JPMorgan Chase says banks could fight Trump credit card rate cap: 'Everything's on the table'",
+          "link": "https://www.cnbc.com/2026/01/13/trump-credit-card-rate-cap-jpmorgan-chase-banks-fight.html",
+          "published": "Tue, 13 Jan 2026 14:00:12 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump threatens to sideline Exxon from Venezuela's oil: 'They're playing too cute’",
-          "link": "https://www.cnbc.com/2026/01/12/oil-trump-venezuela-exxon-mobil-darren-woods.html",
-          "published": "Mon, 12 Jan 2026 13:33:05 GMT"
+          "title": "Global central bankers unite in defense of Fed Chair Jerome Powell",
+          "link": "https://www.cnbc.com/2026/01/13/jerome-powell-defended-european-central-bankers.html",
+          "published": "Tue, 13 Jan 2026 13:31:33 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Ho hum holiday: Retail's early results show modest growth in critical shopping season",
-          "link": "https://www.cnbc.com/2026/01/12/retails-early-holiday-2025-results-show-modest-growth.html",
-          "published": "Mon, 12 Jan 2026 13:50:51 GMT"
+          "title": "JPMorgan Chase tops estimates as trading revenue exceeds expectations",
+          "link": "https://www.cnbc.com/2026/01/13/jpmorgan-chase-jpm-earnings-q4-2025.html",
+          "published": "Tue, 13 Jan 2026 13:41:13 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "JPMorgan's looming question: What happens when CEO Jamie Dimon leaves?",
-          "link": "https://www.cnbc.com/2026/01/12/jpmorgans-looming-question-what-happens-when-ceo-jamie-dimon-leaves.html",
-          "published": "Mon, 12 Jan 2026 12:00:01 GMT"
+          "title": "Salesforce releases updated Slackbot powered by Anthropic's AI model",
+          "link": "https://www.cnbc.com/2026/01/13/salesforce-releases-updated-slackbot-powered-by-anthropics-ai-model.html",
+          "published": "Tue, 13 Jan 2026 13:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Capital One drops 10%, other banks hit after Trump calls for credit card rate cap; Affirm gains",
-          "link": "https://www.cnbc.com/2026/01/12/trump-credit-card-limit-banks-jpmorgan-citi.html",
-          "published": "Mon, 12 Jan 2026 14:00:05 GMT"
+          "title": "Trump says Microsoft will make changes to ensure consumers don't pay for power used in AI buildout",
+          "link": "https://www.cnbc.com/2026/01/12/trump-microsoft-changes-ensure-ensure-consumers-dont-pay-for-power-ai.html",
+          "published": "Tue, 13 Jan 2026 00:41:24 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Why Affirm and SoFi Are Winners From Trump’s Call to Cap Credit Card Interest Rates",
-          "link": "https://www.barrons.com/articles/affirm-stock-price-sofi-trump-credit-card-plan-8abd6b3f?siteid=yhoof2&yptr=yahoo",
-          "published": "2026-01-12T13:41:00Z"
+          "title": "Stock market today: Dow, S&P 500, Nasdaq futures turn higher after CPI inflation eases",
+          "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-turn-higher-after-cpi-inflation-eases-234952607.html",
+          "published": "2026-01-12T23:49:52Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Solid Results Lifted TJX Companies (TJX) in Q4",
-          "link": "https://finance.yahoo.com/news/solid-results-lifted-tjx-companies-133656754.html",
-          "published": "2026-01-12T13:36:56Z"
+          "title": "Up 40% In 2025, Warren Buffett Sold This Top Stock Before Its Hot Streak. Is It Too Late To Buy Now?",
+          "link": "https://finance.yahoo.com/news/40-2025-warren-buffett-sold-135000494.html",
+          "published": "2026-01-13T13:50:00Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "December core consumer prices rose at a 2.6% annual rate, less than expected",
+          "link": "https://www.cnbc.com/2026/01/13/cpi-inflation-report-december-2026.html",
+          "published": "Tue, 13 Jan 2026 13:48:47 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Global central bankers unite in defense of Fed Chair Jerome Powell",
+          "link": "https://www.cnbc.com/2026/01/13/jerome-powell-defended-european-central-bankers.html",
+          "published": "Tue, 13 Jan 2026 13:31:33 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Trump revealed some of Friday's jobs data early in post the prior day",
@@ -80,18 +92,6 @@
           "title": "Supreme Court holds off on Trump tariff ruling for now — what's at stake for economy",
           "link": "https://www.cnbc.com/2026/01/08/the-supreme-court-may-rule-friday-on-trumps-tariffs-heres-whats-at-stake-for-the-economy.html",
           "published": "Fri, 09 Jan 2026 16:59:14 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Trade deficit in October hits smallest since 2009 after Trump's tariff moves",
-          "link": "https://www.cnbc.com/2026/01/08/trade-deficit-in-october-hits-smallest-since-2009-after-trumps-tariff-moves.html",
-          "published": "Thu, 08 Jan 2026 16:53:53 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Treasury Secretary Bessent says more Fed rate cuts are 'only ingredient missing' for stronger economy",
-          "link": "https://www.cnbc.com/2026/01/08/treasury-secretary-bessent-says-more-fed-rate-cuts-are-only-ingredient-missing-for-stronger-economy.html",
-          "published": "Thu, 08 Jan 2026 18:04:21 GMT"
         }
       ]
     }
