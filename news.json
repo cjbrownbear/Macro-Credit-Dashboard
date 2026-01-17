@@ -1,62 +1,68 @@
 {
-  "updated": "2026-01-16T13:49:23Z",
+  "updated": "2026-01-17T13:38:54Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "'Markets are callous': Why stocks aren't fazed by Iran, Greenland or Venezuela",
-          "link": "https://www.cnbc.com/2026/01/16/trump-sp-500-iran-greenland-venezuela-geopolitics.html",
-          "published": "Fri, 16 Jan 2026 11:03:54 GMT"
+          "title": "Disney dominated the 2025 box office. Here's how it could keep the crown in 2026",
+          "link": "https://www.cnbc.com/2026/01/17/disney-dominated-2025-box-office.html",
+          "published": "Sat, 17 Jan 2026 13:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Russia says it's monitoring Trump's 'extraordinary' push to take over Greenland",
-          "link": "https://www.cnbc.com/2026/01/16/greenland-russia-trump-takeover-threats-annex-denmark.html",
-          "published": "Fri, 16 Jan 2026 11:29:11 GMT"
+          "title": "Trump floats new tariffs in push to acquire Greenland",
+          "link": "https://www.cnbc.com/2026/01/16/trump-greenland-tariffs.html",
+          "published": "Fri, 16 Jan 2026 19:32:38 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump's proposed ban on buying single-family homes introduces uncertainty for family offices",
-          "link": "https://www.cnbc.com/2026/01/16/trump-investors-homes-family-offices.html",
-          "published": "Fri, 16 Jan 2026 12:30:01 GMT"
+          "title": "Hassett pivots to possible 'Trump cards' amid credit card interest rate battle with banks",
+          "link": "https://www.cnbc.com/2026/01/16/white-house-hassett-trump-cards-credit-card-battle.html",
+          "published": "Fri, 16 Jan 2026 19:33:45 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Amazon threatens 'drastic' action after Saks bankruptcy, says $475M stake is now worthless",
-          "link": "https://www.cnbc.com/2026/01/15/amazon-says-saks-investment-is-worthless-after-bankruptcy.html",
-          "published": "Thu, 15 Jan 2026 21:39:10 GMT"
+          "title": "The founders of billion-dollar AI startups are getting younger — here’s why",
+          "link": "https://www.cnbc.com/2026/01/17/billion-dollar-ai-startup-founders-are-getting-younger-heres-why.html",
+          "published": "Sat, 17 Jan 2026 09:54:08 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump unveils health-care plan outline as Congress wrestles over Obamacare subsidies",
-          "link": "https://www.cnbc.com/2026/01/15/trump-congress-aca-subsidies-health-care.html",
-          "published": "Thu, 15 Jan 2026 18:37:03 GMT"
+          "title": "Trump tells Hassett he wants to keep him where he is; Warsh Fed chair odds jump",
+          "link": "https://www.cnbc.com/2026/01/16/warsh-sprints-ahead-in-fed-chair-race-following-trump-comments-on-hassett-prediction-markets-show.html",
+          "published": "Fri, 16 Jan 2026 20:28:14 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Venezuela oil fetching 30% higher price, U.S. energy chief says, after first sale worth $500 million",
-          "link": "https://www.cnbc.com/2026/01/16/venezuela-oil-takeover-us-shipment-trump-.html",
-          "published": "Fri, 16 Jan 2026 02:18:33 GMT"
+          "title": "Labor Department accused of echoing Nazi slogan in social media post",
+          "link": "https://www.cnbc.com/2026/01/16/trump-labor-nazi-slogan-social-media.html",
+          "published": "Sat, 17 Jan 2026 11:18:57 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Can XRP Ever Hit $100?",
-          "link": "https://finance.yahoo.com/news/xrp-ever-hit-100-014304251.html",
-          "published": "2026-01-15T01:43:04Z"
+          "title": "The solar panel contracts that can kill home sales",
+          "link": "https://finance.yahoo.com/news/the-solar-panel-contracts-that-can-kill-home-sales-133039793.html",
+          "published": "2026-01-17T13:30:39Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Wall Street steadies as chip stocks bounce back and oil prices ease",
-          "link": "https://finance.yahoo.com/news/asian-shares-mostly-lower-oil-044124151.html",
-          "published": "2026-01-15T04:41:24Z"
+          "title": "The secret investing formula that experts really don’t show US retirees. Know it well and you can stop worrying in 2026",
+          "link": "https://finance.yahoo.com/news/secret-investing-formula-experts-really-133000025.html",
+          "published": "2026-01-17T13:30:00Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Trump tells Hassett he wants to keep him where he is; Warsh Fed chair odds jump",
+          "link": "https://www.cnbc.com/2026/01/16/warsh-sprints-ahead-in-fed-chair-race-following-trump-comments-on-hassett-prediction-markets-show.html",
+          "published": "Fri, 16 Jan 2026 20:28:14 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "UK economy surprises with stronger-than-expected 0.3% growth in November",
@@ -86,12 +92,6 @@
           "title": "December core consumer prices rose at a 2.6% annual rate, less than expected",
           "link": "https://www.cnbc.com/2026/01/13/cpi-inflation-report-december-2026.html",
           "published": "Tue, 13 Jan 2026 16:22:01 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Global central bankers unite in defense of Fed Chair Jerome Powell",
-          "link": "https://www.cnbc.com/2026/01/13/jerome-powell-defended-european-central-bankers.html",
-          "published": "Tue, 13 Jan 2026 13:31:33 GMT"
         }
       ]
     }
