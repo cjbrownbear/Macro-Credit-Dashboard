@@ -1,62 +1,80 @@
 {
-  "updated": "2026-01-18T13:40:03Z",
+  "updated": "2026-01-19T13:53:18Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Trump says 8 European nations face tariffs rising to 25% if Greenland isn't sold to the U.S.",
-          "link": "https://www.cnbc.com/2026/01/17/trump-greenland-tariffs-nato.html",
-          "published": "Sun, 18 Jan 2026 11:36:33 GMT"
+          "title": "Europe weighs using trade 'bazooka' against the U.S. as Greenland crisis deepens",
+          "link": "https://www.cnbc.com/2026/01/19/europe-retaliatory-tariffs-aci-greenland-trump-threat-us.html",
+          "published": "Mon, 19 Jan 2026 10:06:10 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Global week ahead: Hopes that cooler heads can prevail in Davos",
-          "link": "https://www.cnbc.com/2026/01/18/trump-davos.html",
-          "published": "Sun, 18 Jan 2026 11:45:28 GMT"
+          "title": "Trump wants nations to pay $1 billion for permanent Board of Peace seats",
+          "link": "https://www.cnbc.com/2026/01/18/trump-board-of-peace.html",
+          "published": "Sun, 18 Jan 2026 19:01:42 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump threatens to sue JPMorgan Chase for 'debanking' him",
-          "link": "https://www.cnbc.com/2026/01/17/trump-jpmorgan-chase-debanking.html",
-          "published": "Sun, 18 Jan 2026 12:09:43 GMT"
+          "title": "Putin invited to join Trump's 'Board of Peace,' Kremlin says",
+          "link": "https://www.cnbc.com/2026/01/19/putin-trump-board-of-peace-kremlin.html",
+          "published": "Mon, 19 Jan 2026 11:10:32 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Who will be next to implement an Australia-style under-16s social media ban?",
-          "link": "https://www.cnbc.com/2026/01/18/uk-australia-style-under-16s-social-media-ban.html",
-          "published": "Sun, 18 Jan 2026 12:19:41 GMT"
+          "title": "Greenland PM issues defiant rebuke over Trump's tariff threats: 'We will not be pressured'",
+          "link": "https://www.cnbc.com/2026/01/19/greenland-nielsen-trump-tariffs-europe.html",
+          "published": "Mon, 19 Jan 2026 13:00:53 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Top Wall Street analysts are confident about these three stocks for the long term",
-          "link": "https://www.cnbc.com/2026/01/18/top-wall-street-analysts-are-confident-about-these-three-stocks-for-the-long-term.html",
-          "published": "Sun, 18 Jan 2026 12:30:59 GMT"
+          "title": "Gold and silver surge to fresh highs as investors digest Trump's push for Greenland and flock to safer assets",
+          "link": "https://www.cnbc.com/2026/01/19/gold-silver-hit-record-highs-greenland-geopolitics-market-reaction.html",
+          "published": "Mon, 19 Jan 2026 11:16:39 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Warren Buffett used to ask college students this question—it can help you become richer and more successful",
-          "link": "https://www.cnbc.com/2026/01/17/warren-buffett-to-maximize-your-potential-ask-yourself-this-question.html",
-          "published": "Sat, 17 Jan 2026 14:00:02 GMT"
+          "title": "Supreme Court unlikely to overturn Trump tariffs, his ‘signature economic policy’: Bessent",
+          "link": "https://www.cnbc.com/2026/01/18/trump-tariffs-supreme-court-bessent-trade-greenland.html",
+          "published": "Sun, 18 Jan 2026 19:04:48 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Why Analysts Stay Bullish on ServiceNow, Inc. (NOW) Despite a 28% Slide",
-          "link": "https://finance.yahoo.com/news/why-analysts-stay-bullish-servicenow-114536666.html",
-          "published": "2026-01-17T11:45:36Z"
+          "title": "Dow, S&P 500, Nasdaq futures skid after Trump threatens added European tariffs over Greenland",
+          "link": "https://finance.yahoo.com/news/us-futures-sink-trump-warns-064219161.html",
+          "published": "2026-01-19T06:42:19Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Why Citi Remains Bullish on Micron Technology, Inc. (MU)",
-          "link": "https://finance.yahoo.com/news/why-citi-remains-bullish-micron-114535236.html",
-          "published": "2026-01-17T11:45:35Z"
+          "title": "Oil Falls as Iran Tensions Ease and Trump Threatens Greenland",
+          "link": "https://finance.yahoo.com/news/oil-steadies-iran-trump-greenland-060600895.html",
+          "published": "2026-01-19T13:14:59Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Europe weighs using trade 'bazooka' against the U.S. as Greenland crisis deepens",
+          "link": "https://www.cnbc.com/2026/01/19/europe-retaliatory-tariffs-aci-greenland-trump-threat-us.html",
+          "published": "Mon, 19 Jan 2026 10:06:10 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "China fourth-quarter growth slows to 4.5%, weakest in nearly three years as consumption misses forecasts",
+          "link": "https://www.cnbc.com/2026/01/19/china-q4-gdp-growth-2025-target-retail-sales-industrial-output-investment-income-employment.html",
+          "published": "Mon, 19 Jan 2026 04:48:08 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "What the U.S.-Taiwan deal means for the island's 'silicon shield'",
+          "link": "https://www.cnbc.com/2026/01/19/us-taiwan-chip-deal-silicon-shield-tsmc-trump-tapei-ai-semiconductor-supply-chain.html",
+          "published": "Mon, 19 Jan 2026 01:38:58 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Trump tells Hassett he wants to keep him where he is; Warsh Fed chair odds jump",
@@ -74,24 +92,6 @@
           "title": "Wholesale inflation was softer than expected, retail sales moved higher in November",
           "link": "https://www.cnbc.com/2026/01/14/wholesale-inflation-was-softer-than-expected-retail-sales-moved-higher-in-november.html",
           "published": "Wed, 14 Jan 2026 16:19:17 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "China's annual trade surplus hits a record $1.2 trillion, even as exports to U.S. decline by 20%",
-          "link": "https://www.cnbc.com/2026/01/14/china-trade-data-surplus-exports-imports-december-tariffs-tensions.html",
-          "published": "Wed, 14 Jan 2026 07:50:52 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "A major development in Trump's Fed feud is set to happen next week in the Supreme Court",
-          "link": "https://www.cnbc.com/2026/01/13/a-major-development-in-trumps-fed-feud-is-set-to-happen-next-week-in-the-supreme-court.html",
-          "published": "Wed, 14 Jan 2026 18:17:29 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "December core consumer prices rose at a 2.6% annual rate, less than expected",
-          "link": "https://www.cnbc.com/2026/01/13/cpi-inflation-report-december-2026.html",
-          "published": "Tue, 13 Jan 2026 16:22:01 GMT"
         }
       ]
     }
