@@ -1,62 +1,80 @@
 {
-  "updated": "2026-01-20T13:55:00Z",
+  "updated": "2026-01-21T13:55:00Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Tech stocks lead Wall Street sell-off as tensions over Greenland escalate",
-          "link": "https://www.cnbc.com/2026/01/20/tech-stocks-lead-wall-street-sell-off-as-tensions-over-greenland-escalate.html",
-          "published": "Tue, 20 Jan 2026 13:48:23 GMT"
+          "title": "Watch: Trump speaks at Davos as Greenland push, tariff threats take center stage",
+          "link": "https://www.cnbc.com/2026/01/21/trump-greenland-tariffs-davos-europe.html",
+          "published": "Wed, 21 Jan 2026 13:49:39 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "'This is sell America' — U.S. dollar, Treasury prices tumble and gold spikes as globe flees U.S. assets",
-          "link": "https://www.cnbc.com/2026/01/20/sell-america-trade-dollar-treasury-gold-us-trump-greenland.html",
-          "published": "Tue, 20 Jan 2026 13:53:32 GMT"
+          "title": "Berkshire prepares to exit 28% stake in Kraft Heinz as new CEO aims to move on from rare Buffett gaffe",
+          "link": "https://www.cnbc.com/2026/01/21/berkshire-set-to-exit-28percent-stake-in-kraft-heinz-after-rare-buffett-blunder.html",
+          "published": "Wed, 21 Jan 2026 13:24:16 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump is showing the world the U.S. is 'back,' Scott Bessent tells CNBC as Greenland tensions ratchet up",
-          "link": "https://www.cnbc.com/2026/01/20/trump-greenland-bessent-leadership-denmark-davos.html",
-          "published": "Tue, 20 Jan 2026 12:54:14 GMT"
+          "title": "Natural gas prices soar as Arctic cold to blast Upper Midwest and descend across U.S.",
+          "link": "https://www.cnbc.com/2026/01/21/nautral-gas-prices-soar-as-winter-storm-arctic-cold-to-blast-us.html",
+          "published": "Wed, 21 Jan 2026 13:48:13 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Amazon CEO Jassy says Trump's tariffs have started to 'creep' into prices",
-          "link": "https://www.cnbc.com/2026/01/20/amazon-jassy-trump-tariffs-prices-shoppers.html",
-          "published": "Tue, 20 Jan 2026 13:50:21 GMT"
+          "title": "Scott Bessent says U.S. is unconcerned by Treasury sell-off over Greenland, calls Denmark ‘irrelevant’",
+          "link": "https://www.cnbc.com/2026/01/21/bessent-davos-denmark-greenland-treasuries.html",
+          "published": "Wed, 21 Jan 2026 13:41:27 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump threatens 200% tariff on French wines as Macron reportedly snubs 'Board of Peace' seat",
-          "link": "https://www.cnbc.com/2026/01/20/trump-threatens-200percent-tariff-on-french-wines-and-champagnes-.html",
-          "published": "Tue, 20 Jan 2026 06:40:29 GMT"
+          "title": "Crypto markets 'will reach an all-time high' this year, says Ripple CEO",
+          "link": "https://www.cnbc.com/2026/01/21/crypto-price-high-ripple-davos-bitcoin.html",
+          "published": "Wed, 21 Jan 2026 13:52:05 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Bessent says Trump's pick for the next Fed chair could happen next week",
-          "link": "https://www.cnbc.com/2026/01/20/bessent-says-trumps-pick-for-the-next-fed-chair-could-happen-next-week.html",
-          "published": "Tue, 20 Jan 2026 13:21:05 GMT"
+          "title": "OpenEvidence, the 'ChatGPT for doctors,' doubles valuation to $12 billion",
+          "link": "https://www.cnbc.com/2026/01/21/openevidence-chatgpt-for-doctors-doubles-valuation-to-12-billion.html",
+          "published": "Wed, 21 Jan 2026 13:37:41 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Earnings live: 3M stock sinks, D.R. Horton rises to kick off busy week of earnings",
-          "link": "https://finance.yahoo.com/news/live/earnings-live-3m-stock-sinks-dr-horton-rises-to-kick-off-busy-week-of-earnings-132604810.html",
-          "published": "2026-01-20T13:26:04Z"
+          "title": "Butterfly Network price target raised to $5.50 from $4 at Lake Street",
+          "link": "https://finance.yahoo.com/news/butterfly-network-price-target-raised-134538846.html",
+          "published": "2026-01-21T13:45:38Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Stock market today: Dow, S&P 500, Nasdaq futures sink as Trump tariff threats and bond sell-off rattle nerves",
-          "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-sink-as-trump-tariff-threats-and-bond-sell-off-rattle-nerves-235748016.html",
-          "published": "2026-01-19T23:57:48Z"
+          "title": "Stock market today: Dow, S&P 500, Nasdaq futures slip after brutal sell-off as Trump speaks in Davos",
+          "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-slip-after-brutal-sell-off-as-trump-speaks-in-davos-234525806.html",
+          "published": "2026-01-20T23:45:25Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "China's investment crash raises credit risks for homebuilders, banks, government: Fitch",
+          "link": "https://www.cnbc.com/2026/01/21/chinas-investment-crash-credit-default-risks-real-estate-banks-fitch.html",
+          "published": "Wed, 21 Jan 2026 08:44:07 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "China says trade deal with U.S. will 'drain Taiwan’s economy' for American benefits",
+          "link": "https://www.cnbc.com/2026/01/21/china-us-taiwan-deal-semiconductors-chips-supply-chain-trade-deal.html",
+          "published": "Wed, 21 Jan 2026 12:02:58 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "UK inflation rises to 3.4% in December, above forecasts",
+          "link": "https://www.cnbc.com/2026/01/21/uk-inflation-december-2025-uk-prices.html",
+          "published": "Wed, 21 Jan 2026 10:05:36 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "China keeps benchmark lending rates unchanged despite slowing economic growth",
@@ -74,24 +92,6 @@
           "title": "China fourth-quarter growth slows to 4.5%, weakest in nearly three years as consumption misses forecasts",
           "link": "https://www.cnbc.com/2026/01/19/china-q4-gdp-growth-2025-target-retail-sales-industrial-output-investment-income-employment.html",
           "published": "Mon, 19 Jan 2026 04:48:08 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "What the U.S.-Taiwan deal means for the island's 'silicon shield'",
-          "link": "https://www.cnbc.com/2026/01/19/us-taiwan-chip-deal-silicon-shield-tsmc-trump-tapei-ai-semiconductor-supply-chain.html",
-          "published": "Mon, 19 Jan 2026 01:38:58 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Trump tells Hassett he wants to keep him where he is; Warsh Fed chair odds jump",
-          "link": "https://www.cnbc.com/2026/01/16/warsh-sprints-ahead-in-fed-chair-race-following-trump-comments-on-hassett-prediction-markets-show.html",
-          "published": "Fri, 16 Jan 2026 20:28:14 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "UK economy surprises with stronger-than-expected 0.3% growth in November",
-          "link": "https://www.cnbc.com/2026/01/15/uk-gdp-november-2025-data.html",
-          "published": "Thu, 15 Jan 2026 07:43:03 GMT"
         }
       ]
     }
