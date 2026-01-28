@@ -1,62 +1,68 @@
 {
-  "updated": "2026-01-27T13:55:38Z",
+  "updated": "2026-01-28T13:55:41Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Fed is likely to lower rates only two more times, even under Trump's next chair pick: CNBC Fed survey",
-          "link": "https://www.cnbc.com/2026/01/27/fed-is-likely-to-lower-rates-only-two-more-times-even-under-trumps-next-chair-pick-cnbc-fed-survey.html",
-          "published": "Tue, 27 Jan 2026 13:16:43 GMT"
+          "title": "Amazon laying off about 16,000 corporate workers in latest anti-bureaucracy push",
+          "link": "https://www.cnbc.com/2026/01/28/amazon-layoffs-anti-bureaucracy-ai.html",
+          "published": "Wed, 28 Jan 2026 13:20:54 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "All eyes are on Trump's reaction to the 'mother of all deals' between India and the EU",
-          "link": "https://www.cnbc.com/2026/01/27/trump-reaction-eu-india-trade-deal-fta.html",
-          "published": "Tue, 27 Jan 2026 12:12:03 GMT"
+          "title": "Chip stocks rally after bumper earnings and a report of a game-changing China approval for Nvidia",
+          "link": "https://www.cnbc.com/2026/01/28/global-chip-stocks-today-nvidia-china-asml-sk-hynix.html",
+          "published": "Wed, 28 Jan 2026 13:21:37 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Tech's massive AI spend is under scrutiny ahead of earnings. Here's what to watch",
-          "link": "https://www.cnbc.com/2026/01/27/big-tech-earnings-2026-ai-spend.html",
-          "published": "Tue, 27 Jan 2026 11:00:01 GMT"
+          "title": "Starbucks stock jumps as coffee chain's traffic grows for the first time in two years",
+          "link": "https://www.cnbc.com/2026/01/28/starbucks-is-about-to-report-earnings-heres-what-to-expect.html",
+          "published": "Wed, 28 Jan 2026 13:49:07 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Health insurers tumble after Trump administration proposes keeping Medicare Advantage rates flat next year",
-          "link": "https://www.cnbc.com/2026/01/26/health-insurers-tumble-after-trump-proposes-keeping-medicare-rates-flat.html",
-          "published": "Tue, 27 Jan 2026 13:45:03 GMT"
+          "title": "Southwest ends open seating after 54 years. Here's what the last flight was like",
+          "link": "https://www.cnbc.com/2026/01/28/southwest-airlines-ends-open-seating.html",
+          "published": "Wed, 28 Jan 2026 13:22:27 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Pinterest laying off 15% of workforce in push toward AI roles and teams",
-          "link": "https://www.cnbc.com/2026/01/27/pinterest-layoffs-stock-ai.html",
-          "published": "Tue, 27 Jan 2026 13:51:51 GMT"
+          "title": "The Fed releases its latest interest rate decision Wednesday. Here's what to expect",
+          "link": "https://www.cnbc.com/2026/01/27/fed-preview-january-2026.html",
+          "published": "Tue, 27 Jan 2026 19:43:34 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Blockbuster social media trial kicks off, with more to come this year",
-          "link": "https://www.cnbc.com/2026/01/27/blockbuster-social-media-trial-kicks-off-with-more-to-come-this-year.html",
-          "published": "Tue, 27 Jan 2026 13:00:01 GMT"
+          "title": "Greenland will not give in, PM says, as Denmark warns world order as we know it is over",
+          "link": "https://www.cnbc.com/2026/01/28/greenland-trump-nato-denmark-security-defense.html",
+          "published": "Wed, 28 Jan 2026 13:26:10 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "American Airlines forecasts upbeat 2026, flags up to $200 million hit from winter storm",
-          "link": "https://finance.yahoo.com/news/american-airlines-forecasts-upbeat-2026-134351433.html",
-          "published": "2026-01-27T13:43:51Z"
+          "title": "Earnings live: Starbucks stock pops, GE Vernova slips, ASML surges",
+          "link": "https://finance.yahoo.com/news/live/earnings-live-starbucks-stock-pops-ge-vernova-slips-asml-surges-133036401.html",
+          "published": "2026-01-28T13:30:36Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "4 money market accounts with interest rates of 4% APY and higher (updated weekly)",
-          "link": "https://finance.yahoo.com/personal-finance/banking/article/4-percent-interest-money-market-accounts-160154289.html",
-          "published": "2025-04-15T16:01:54Z"
+          "title": "Trump Disses The Sector. This Stock Gears For A Breakout Anyway.",
+          "link": "https://www.investors.com/news/nextpower-breakout-earnings-trump-dislikes-like-this-sector/?src=A00220&yptr=yahoo",
+          "published": "2026-01-28T13:30:34Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "The market thinks BlackRock's Rick Rieder will be the next Fed chair. Here's what's at stake",
+          "link": "https://www.cnbc.com/2026/01/27/market-thinks-blackrocks-rieder-will-next-chair-the-fed-whats-at-stake.html",
+          "published": "Tue, 27 Jan 2026 21:23:21 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "U.S.-India trade deal at 'very advanced stage,' Indian petroleum minister tells CNBC",
@@ -86,12 +92,6 @@
           "title": "Fed's main gauge shows inflation at 2.8% in November, edging further away from target",
           "link": "https://www.cnbc.com/2026/01/22/pce-inflation-november-2026.html",
           "published": "Thu, 22 Jan 2026 18:59:35 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "'Nobody’s going to believe him': Trump’s Greenland 'deal' sparks relief — and confusion",
-          "link": "https://www.cnbc.com/2026/01/22/trumps-greenland-deal-framework-and-tariff-backdown-confuse.html",
-          "published": "Thu, 22 Jan 2026 15:15:18 GMT"
         }
       ]
     }
