@@ -1,62 +1,68 @@
 {
-  "updated": "2026-01-28T13:55:41Z",
+  "updated": "2026-01-29T14:05:00Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Amazon laying off about 16,000 corporate workers in latest anti-bureaucracy push",
-          "link": "https://www.cnbc.com/2026/01/28/amazon-layoffs-anti-bureaucracy-ai.html",
-          "published": "Wed, 28 Jan 2026 13:20:54 GMT"
+          "title": "‘Climate of fear’: ICE violence in Minnesota forces CEOs to weigh the risks of speaking out against Trump",
+          "link": "https://www.cnbc.com/2026/01/29/trump-minnesota-ice-action-ceos-speaking-out.html",
+          "published": "Thu, 29 Jan 2026 13:25:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Chip stocks rally after bumper earnings and a report of a game-changing China approval for Nvidia",
-          "link": "https://www.cnbc.com/2026/01/28/global-chip-stocks-today-nvidia-china-asml-sk-hynix.html",
-          "published": "Wed, 28 Jan 2026 13:21:37 GMT"
+          "title": "Oil prices rise more than 2% as Trump weighs strikes on Iran",
+          "link": "https://www.cnbc.com/2026/01/29/oil-prices-rise-more-than-2percent-as-trump-weighs-strikes-on-iran.html",
+          "published": "Thu, 29 Jan 2026 13:51:26 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Starbucks stock jumps as coffee chain's traffic grows for the first time in two years",
-          "link": "https://www.cnbc.com/2026/01/28/starbucks-is-about-to-report-earnings-heres-what-to-expect.html",
-          "published": "Wed, 28 Jan 2026 13:49:07 GMT"
+          "title": "Government shutdown: Republicans consider escape hatch as Congress careens toward deadline",
+          "link": "https://www.cnbc.com/2026/01/28/government-shutdown-republicans-mull-escape-hatch-.html",
+          "published": "Thu, 29 Jan 2026 12:57:05 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Southwest ends open seating after 54 years. Here's what the last flight was like",
-          "link": "https://www.cnbc.com/2026/01/28/southwest-airlines-ends-open-seating.html",
-          "published": "Wed, 28 Jan 2026 13:22:27 GMT"
+          "title": "Meta's Mark Zuckerberg gets green light from Wall Street to keep pouring money into AI",
+          "link": "https://www.cnbc.com/2026/01/28/metas-zuckerberg-gets-green-light-from-wall-street-to-invest-in-ai.html",
+          "published": "Thu, 29 Jan 2026 13:28:39 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "The Fed releases its latest interest rate decision Wednesday. Here's what to expect",
-          "link": "https://www.cnbc.com/2026/01/27/fed-preview-january-2026.html",
-          "published": "Tue, 27 Jan 2026 19:43:34 GMT"
+          "title": "Comcast posts mixed quarter as broadband pressures weigh on business",
+          "link": "https://www.cnbc.com/2026/01/29/comcast-cmcsa-earnings-q4-2025.html",
+          "published": "Thu, 29 Jan 2026 13:11:10 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Greenland will not give in, PM says, as Denmark warns world order as we know it is over",
-          "link": "https://www.cnbc.com/2026/01/28/greenland-trump-nato-denmark-security-defense.html",
-          "published": "Wed, 28 Jan 2026 13:26:10 GMT"
+          "title": "Starbucks to unveil long-term outlook at investor day, as Niccol says turnaround is just beginning",
+          "link": "https://www.cnbc.com/2026/01/29/starbucks-investor-day-updates-brian-niccol-turnaround.html",
+          "published": "Thu, 29 Jan 2026 13:11:51 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Earnings live: Starbucks stock pops, GE Vernova slips, ASML surges",
-          "link": "https://finance.yahoo.com/news/live/earnings-live-starbucks-stock-pops-ge-vernova-slips-asml-surges-133036401.html",
-          "published": "2026-01-28T13:30:36Z"
+          "title": "TAL Education Group Q3 Earnings Call Highlights",
+          "link": "https://finance.yahoo.com/news/tal-education-group-q3-earnings-133745958.html",
+          "published": "2026-01-29T13:37:45Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Trump Disses The Sector. This Stock Gears For A Breakout Anyway.",
-          "link": "https://www.investors.com/news/nextpower-breakout-earnings-trump-dislikes-like-this-sector/?src=A00220&yptr=yahoo",
-          "published": "2026-01-28T13:30:34Z"
+          "title": "Meta Stock Jumps. Zuckerberg Touts 'Major AI Acceleration' As Sales Forecast Wows.",
+          "link": "https://www.investors.com/news/technology/meta-stock-q4-2025-earnings-results-zuckerberg-ai/?src=A00220&yptr=yahoo",
+          "published": "2026-01-29T13:37:11Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "China and the UK are attempting to reset their relationship — here's how",
+          "link": "https://www.cnbc.com/2026/01/29/china-uk-starmer-xi-relations-visit-businesses-.html",
+          "published": "Thu, 29 Jan 2026 11:23:13 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "The market thinks BlackRock's Rick Rieder will be the next Fed chair. Here's what's at stake",
@@ -86,12 +92,6 @@
           "title": "Trump withdraws 'Board of Peace' invitation to Carney in widening rift with Canada",
           "link": "https://www.cnbc.com/2026/01/23/trump-withdraws-board-of-peace-invitation-to-carney-in-widening-rift-with-canada.html",
           "published": "Sat, 24 Jan 2026 16:01:31 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Fed's main gauge shows inflation at 2.8% in November, edging further away from target",
-          "link": "https://www.cnbc.com/2026/01/22/pce-inflation-november-2026.html",
-          "published": "Thu, 22 Jan 2026 18:59:35 GMT"
         }
       ]
     }
