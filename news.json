@@ -1,62 +1,86 @@
 {
-  "updated": "2026-01-29T14:05:00Z",
+  "updated": "2026-01-30T14:01:32Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "‘Climate of fear’: ICE violence in Minnesota forces CEOs to weigh the risks of speaking out against Trump",
-          "link": "https://www.cnbc.com/2026/01/29/trump-minnesota-ice-action-ceos-speaking-out.html",
-          "published": "Thu, 29 Jan 2026 13:25:01 GMT"
+          "title": "Trump nominates Kevin Warsh for Federal Reserve chair to succeed Jerome Powell",
+          "link": "https://www.cnbc.com/2026/01/30/trump-nominates-kevin-warsh-for-federal-reserve-chair-to-succeed-jerome-powell.html",
+          "published": "Fri, 30 Jan 2026 13:43:50 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Oil prices rise more than 2% as Trump weighs strikes on Iran",
-          "link": "https://www.cnbc.com/2026/01/29/oil-prices-rise-more-than-2percent-as-trump-weighs-strikes-on-iran.html",
-          "published": "Thu, 29 Jan 2026 13:51:26 GMT"
+          "title": "Ford to record $600 million pretax pension charge in fourth quarter",
+          "link": "https://www.cnbc.com/2026/01/30/ford-q4-earnings-pension-charge.html",
+          "published": "Fri, 30 Jan 2026 13:03:19 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Government shutdown: Republicans consider escape hatch as Congress careens toward deadline",
-          "link": "https://www.cnbc.com/2026/01/28/government-shutdown-republicans-mull-escape-hatch-.html",
-          "published": "Thu, 29 Jan 2026 12:57:05 GMT"
+          "title": "Gold and Silver tumble as Trump's Fed Chair pick Warsh seen as preserving central bank independence",
+          "link": "https://www.cnbc.com/2026/01/30/silver-gold-fall-price-usd-dollar-fed-warsh-chair-trump-metals.html",
+          "published": "Fri, 30 Jan 2026 12:59:00 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Meta's Mark Zuckerberg gets green light from Wall Street to keep pouring money into AI",
-          "link": "https://www.cnbc.com/2026/01/28/metas-zuckerberg-gets-green-light-from-wall-street-to-invest-in-ai.html",
-          "published": "Thu, 29 Jan 2026 13:28:39 GMT"
+          "title": "Trump backs Senate government funding deal that includes DHS extension",
+          "link": "https://www.cnbc.com/2026/01/29/trump-congress-government-shutdown.html",
+          "published": "Fri, 30 Jan 2026 02:50:28 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Comcast posts mixed quarter as broadband pressures weigh on business",
-          "link": "https://www.cnbc.com/2026/01/29/comcast-cmcsa-earnings-q4-2025.html",
-          "published": "Thu, 29 Jan 2026 13:11:10 GMT"
+          "title": "Hollywood has an IP problem: Box office sales are banking on franchise hits that keep falling flat",
+          "link": "https://www.cnbc.com/2026/01/30/hollywood-ip-franchise-hits-keep-falling-flat-weighing-on-box-office.html",
+          "published": "Fri, 30 Jan 2026 13:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Starbucks to unveil long-term outlook at investor day, as Niccol says turnaround is just beginning",
-          "link": "https://www.cnbc.com/2026/01/29/starbucks-investor-day-updates-brian-niccol-turnaround.html",
-          "published": "Thu, 29 Jan 2026 13:11:51 GMT"
+          "title": "Elon Musk's $20 billion spending plan signals 'Tesla of yesterday is gone'",
+          "link": "https://www.cnbc.com/2026/01/29/musks-20-billion-spending-plan-signals-tesla-of-yesterday-is-gone.html",
+          "published": "Fri, 30 Jan 2026 13:17:44 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "TAL Education Group Q3 Earnings Call Highlights",
-          "link": "https://finance.yahoo.com/news/tal-education-group-q3-earnings-133745958.html",
-          "published": "2026-01-29T13:37:45Z"
+          "title": "It’s Time to Start Tooting Your Own Horn at Work",
+          "link": "https://www.wsj.com/lifestyle/careers/its-time-to-start-tooting-your-own-horn-at-work-7838f92a?siteid=yhoof2&yptr=yahoo",
+          "published": "2026-01-29T02:00:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Meta Stock Jumps. Zuckerberg Touts 'Major AI Acceleration' As Sales Forecast Wows.",
-          "link": "https://www.investors.com/news/technology/meta-stock-q4-2025-earnings-results-zuckerberg-ai/?src=A00220&yptr=yahoo",
-          "published": "2026-01-29T13:37:11Z"
+          "title": "Insurance platform Ethos Technologies, backers raise about $200 million in US IPO",
+          "link": "https://finance.yahoo.com/news/ethos-technologies-prices-us-ipo-020542323.html",
+          "published": "2026-01-29T02:05:42Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Wealth inequality and the 'K-shaped' economy are more striking than ever, data shows",
+          "link": "https://www.cnbc.com/2026/01/30/wealth-inequality-k-shaped-economy-united-states-consumer-spending-trump.html",
+          "published": "Fri, 30 Jan 2026 13:00:49 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Scenic trains, cruises and concerts: China’s new plan to get consumers spending again",
+          "link": "https://www.cnbc.com/2026/01/30/china-services-consumption-plan-domestic-demand-reform.html",
+          "published": "Fri, 30 Jan 2026 06:57:36 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Trump to announce Fed chair nominee Friday; Kevin Warsh may be his pick, according to reports",
+          "link": "https://www.cnbc.com/2026/01/29/trump-says-he-will-announce-a-replacement-for-powell-as-fed-chair-friday-morning.html",
+          "published": "Fri, 30 Jan 2026 12:17:06 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Trade deficit soared 94% in November and was higher than a year ago, despite tariff efforts",
+          "link": "https://www.cnbc.com/2026/01/29/trade-balance-soared-94percent-in-november-and-was-higher-than-a-year-ago-despite-tariff-efforts.html",
+          "published": "Thu, 29 Jan 2026 21:31:45 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "China and the UK are attempting to reset their relationship — here's how",
@@ -68,30 +92,6 @@
           "title": "The market thinks BlackRock's Rick Rieder will be the next Fed chair. Here's what's at stake",
           "link": "https://www.cnbc.com/2026/01/27/market-thinks-blackrocks-rieder-will-next-chair-the-fed-whats-at-stake.html",
           "published": "Tue, 27 Jan 2026 21:23:21 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "U.S.-India trade deal at 'very advanced stage,' Indian petroleum minister tells CNBC",
-          "link": "https://www.cnbc.com/2026/01/27/us-india-trade-deal-progress-advanced-stage-oil-minister-eu.html",
-          "published": "Tue, 27 Jan 2026 11:00:38 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "China's industrial profits edge up in 2025, reversing three years of declines as Beijing curbs price wars",
-          "link": "https://www.cnbc.com/2026/01/27/china-industrial-profits-2025-december-growth-factory-consumer-demand.html",
-          "published": "Tue, 27 Jan 2026 03:49:24 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "AI spending wasn't the biggest engine of U.S. economic growth in 2025, despite popular assumptions",
-          "link": "https://www.cnbc.com/2026/01/26/ai-wasnt-the-biggest-engine-of-us-gdp-growth-in-2025.html",
-          "published": "Mon, 26 Jan 2026 21:02:08 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Trump withdraws 'Board of Peace' invitation to Carney in widening rift with Canada",
-          "link": "https://www.cnbc.com/2026/01/23/trump-withdraws-board-of-peace-invitation-to-carney-in-widening-rift-with-canada.html",
-          "published": "Sat, 24 Jan 2026 16:01:31 GMT"
         }
       ]
     }
