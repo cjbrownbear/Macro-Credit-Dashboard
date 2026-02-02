@@ -1,62 +1,74 @@
 {
-  "updated": "2026-02-01T13:51:51Z",
+  "updated": "2026-02-02T14:07:09Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "AstraZeneca is listing in New York, as Big Pharma balances the huge U.S. market with China's tempting innovation",
-          "link": "https://www.cnbc.com/2026/02/01/astrazeneca-nyse-listing-china-pharma-pours-15-billion-into-china.html",
-          "published": "Sun, 01 Feb 2026 10:51:30 GMT"
+          "title": "Nvidia shares are down after a report that its OpenAI investment stalled. Here's what's happening",
+          "link": "https://www.cnbc.com/2026/02/02/nvidia-stock-price-openai-funding.html",
+          "published": "Mon, 02 Feb 2026 13:48:55 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "How the EV pullback is affecting factories and jobs in the South",
-          "link": "https://www.cnbc.com/2026/02/01/ev-pullback-factories-jobs-south.html",
-          "published": "Sun, 01 Feb 2026 12:00:01 GMT"
+          "title": "Oracle rises 5% after announcing $50 billion fundraising plans. Here's why",
+          "link": "https://www.cnbc.com/2026/02/02/oracle-stock-price-funding-plans.html",
+          "published": "Mon, 02 Feb 2026 13:56:23 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "U.S. government partially shuts down; House vote could reopen it by Monday",
-          "link": "https://www.cnbc.com/2026/01/30/government-shutdown-senate-vote-dhs.html",
-          "published": "Sat, 31 Jan 2026 05:01:44 GMT"
+          "title": "Rare earth miners jump as Trump is reportedly eyeing mineral stockpile to reduce China dependence",
+          "link": "https://www.cnbc.com/2026/02/02/rare-earth-miners-jump-as-trump-is-reportedly-eyeing-mineral-stockpile-.html",
+          "published": "Mon, 02 Feb 2026 13:48:08 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Everything you need to know about Kevin Warsh, Trump's pick to lead the Federal Reserve",
-          "link": "https://www.cnbc.com/2026/01/30/who-is-kevin-warsh-trumps-fed-chair-pick.html",
-          "published": "Fri, 30 Jan 2026 18:28:58 GMT"
+          "title": "Disney beats Wall Street expectations propelled by theme parks and streaming",
+          "link": "https://www.cnbc.com/2026/02/02/disney-dis-earnings-q1-26.html",
+          "published": "Mon, 02 Feb 2026 13:34:54 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Top Wall Street analysts suggest these 3 dividend stocks for stable income",
-          "link": "https://www.cnbc.com/2026/02/01/top-analysts-suggest-these-3-dividend-stocks-for-stable-income.html",
-          "published": "Sun, 01 Feb 2026 13:40:25 GMT"
+          "title": "Housing affordability isn't just hurting buyers: More homeowners are falling behind on their mortgages",
+          "link": "https://www.cnbc.com/2026/02/02/mortgage-delinquencies-housing-affordability.html",
+          "published": "Mon, 02 Feb 2026 13:30:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "NYC's iconic Flatiron Building officially has apartments for sale, starting at nearly $11 million—take a look inside",
-          "link": "https://www.cnbc.com/2026/01/31/flatiron-building-apartments-for-sale.html",
-          "published": "Sat, 31 Jan 2026 15:00:01 GMT"
+          "title": "Why the catastrophe bond market is so hot right now",
+          "link": "https://www.cnbc.com/2026/02/02/catastrophe-bonds-insurance-climate-change-markets.html",
+          "published": "Mon, 02 Feb 2026 06:31:19 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "The Market Hasn't Done This in 25 Years: Should You Be Concerned?",
-          "link": "https://finance.yahoo.com/news/market-hasnt-done-25-years-115500686.html",
-          "published": "2026-01-31T11:55:00Z"
+          "title": "Stock market today: S&P 500, Nasdaq futures slide as AI doubts swirl, precious metals whipsaw",
+          "link": "https://finance.yahoo.com/news/live/stock-market-today-sp-500-nasdaq-futures-slide-as-ai-doubts-swirl-precious-metals-whipsaw-002413190.html",
+          "published": "2026-02-02T00:24:13Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "This man built a treehouse, rents it out for up to $700 a night. How his unique idea became a successful side hustle",
-          "link": "https://finance.yahoo.com/news/man-built-treehouse-rents-700-120000217.html",
-          "published": "2026-01-31T12:00:00Z"
+          "title": "Stock Market Today: Dow Futures Fall; Disney, Palantir, Oracle, Tesla Are Early Market Movers (Live Coverage)",
+          "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-disney-palantir-oracle-tesla/?src=A00220&yptr=yahoo",
+          "published": "2026-02-02T13:51:43Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "From PopMart to JD.com: Britain and China rush to forge business deals as diplomatic thaw takes hold",
+          "link": "https://www.cnbc.com/2026/02/02/china-uk-business-starmer-visit-popmart-jdcom.html",
+          "published": "Mon, 02 Feb 2026 12:11:19 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "China's factory activity grows at fastest pace since October, private survey shows, beating official reading",
+          "link": "https://www.cnbc.com/2026/02/02/china-factory-activity-private-survey-official-reading-pmi-january-lunar-new-year-ratingdog.html",
+          "published": "Mon, 02 Feb 2026 05:32:40 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Hassett praises Trump's pick of Warsh to lead Fed, says he has his 'dream job' already",
@@ -80,18 +92,6 @@
           "title": "Trump to announce Fed chair nominee Friday; Kevin Warsh may be his pick, according to reports",
           "link": "https://www.cnbc.com/2026/01/29/trump-says-he-will-announce-a-replacement-for-powell-as-fed-chair-friday-morning.html",
           "published": "Fri, 30 Jan 2026 12:17:06 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Trade deficit soared 94% in November and was higher than a year ago, despite tariff efforts",
-          "link": "https://www.cnbc.com/2026/01/29/trade-balance-soared-94percent-in-november-and-was-higher-than-a-year-ago-despite-tariff-efforts.html",
-          "published": "Thu, 29 Jan 2026 21:31:45 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "China and the UK are attempting to reset their relationship — here's how",
-          "link": "https://www.cnbc.com/2026/01/29/china-uk-starmer-xi-relations-visit-businesses-.html",
-          "published": "Thu, 29 Jan 2026 11:23:13 GMT"
         }
       ]
     }
