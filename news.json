@@ -1,56 +1,56 @@
 {
-  "updated": "2026-02-03T14:09:58Z",
+  "updated": "2026-02-04T14:09:01Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Disney names parks boss Josh D’Amaro as its next CEO to succeed Bob Iger, effective March 18",
-          "link": "https://www.cnbc.com/2026/02/03/disney-ceo-josh-damaro-successor-bob-iger.html",
-          "published": "Tue, 03 Feb 2026 14:04:50 GMT"
+          "title": "AMD is down 9% after reporting earnings. Here's why",
+          "link": "https://www.cnbc.com/2026/02/04/amd-stock-earnings-forecast-chips.html",
+          "published": "Wed, 04 Feb 2026 13:56:46 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Ray Dalio warns the world is ‘on the brink’ of a capital war",
-          "link": "https://www.cnbc.com/2026/02/03/ray-dalio-warns-capital-war-gold-hedge.html",
-          "published": "Tue, 03 Feb 2026 13:13:24 GMT"
+          "title": "Fed pick: Tillis doubles down on Warsh blockade over concerns about Fed independence",
+          "link": "https://www.cnbc.com/2026/02/04/fed-warsh-tillis-confirmation.html",
+          "published": "Wed, 04 Feb 2026 14:02:44 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump refuses to be outdone by Europe, signing his own U.S.-India trade deal",
-          "link": "https://www.cnbc.com/2026/02/03/trump-us-india-trade-deal-europe-india-deal-compared.html",
-          "published": "Tue, 03 Feb 2026 10:36:45 GMT"
+          "title": "Private payrolls rose by just 22,000 in January, far short of expectations, ADP says",
+          "link": "https://www.cnbc.com/2026/02/04/adp-jobs-report-january-2026.html",
+          "published": "Wed, 04 Feb 2026 14:07:46 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Palantir surges 11% after beating earnings estimates",
-          "link": "https://www.cnbc.com/2026/02/03/palantir-stock-earnings.html",
-          "published": "Tue, 03 Feb 2026 13:35:19 GMT"
+          "title": "Amazon makes Alexa+ AI assistant available to everyone in the U.S. nearly a year after launch",
+          "link": "https://www.cnbc.com/2026/02/04/amazon-alexa-plus-us-releas.html",
+          "published": "Wed, 04 Feb 2026 14:05:15 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "December CRE deal volume sinks further, but office is a surprising bright spot",
-          "link": "https://www.cnbc.com/2026/02/03/moodys-december-cre-deal-volume-sinks-further.html",
-          "published": "Tue, 03 Feb 2026 13:54:05 GMT"
+          "title": "Uber reports 20% revenue growth in fourth-quarter, fueled by food delivery",
+          "link": "https://www.cnbc.com/2026/02/04/uber-uber-2025-q4-earnings.html",
+          "published": "Wed, 04 Feb 2026 13:52:28 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "House hardliners complicate ending government shutdown as Speaker Johnson moves ahead",
-          "link": "https://www.cnbc.com/2026/02/02/government-shutdown-house-mike-johnson.html",
-          "published": "Tue, 03 Feb 2026 13:34:23 GMT"
+          "title": "Eli Lilly blows past quarterly estimates, posts strong outlook as Zepbound and Mounjaro sales soar",
+          "link": "https://www.cnbc.com/2026/02/04/eli-lilly-lly-earnings-q4-2025.html",
+          "published": "Wed, 04 Feb 2026 14:03:49 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Erste Group Sees Limited Upside for Ecolab (ECL) at Current Valuation",
-          "link": "https://finance.yahoo.com/news/erste-group-sees-limited-upside-135457288.html",
-          "published": "2026-02-03T13:54:57Z"
+          "title": "How to insure deposits over $250,000",
+          "link": "https://finance.yahoo.com/personal-finance/banking/article/insuring-deposits-over-250000-220312903.html",
+          "published": "2024-04-11T22:03:12Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Casella Waste Systems (CWST) Positioned for Long-Term Compounding Growth",
-          "link": "https://finance.yahoo.com/news/casella-waste-systems-cwst-positioned-135243851.html",
-          "published": "2026-02-03T13:52:43Z"
+          "title": "Stock market today: Dow, S&P 500, Nasdaq futures wobble after tech-led losses, with Google earnings on deck",
+          "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-wobble-after-tech-led-losses-with-google-earnings-on-deck-234546341.html",
+          "published": "2026-02-03T23:45:46Z"
         }
       ]
     },
@@ -59,9 +59,15 @@
       "items": [
         {
           "source": "CNBC Economy",
+          "title": "Private payrolls rose by just 22,000 in January, far short of expectations, ADP says",
+          "link": "https://www.cnbc.com/2026/02/04/adp-jobs-report-january-2026.html",
+          "published": "Wed, 04 Feb 2026 14:07:46 GMT"
+        },
+        {
+          "source": "CNBC Economy",
           "title": "Trump refuses to be outdone by Europe, signing his own U.S.-India trade deal",
           "link": "https://www.cnbc.com/2026/02/03/trump-us-india-trade-deal-europe-india-deal-compared.html",
-          "published": "Tue, 03 Feb 2026 10:36:45 GMT"
+          "published": "Tue, 03 Feb 2026 19:22:33 GMT"
         },
         {
           "source": "CNBC Economy",
@@ -86,12 +92,6 @@
           "title": "Hassett praises Trump's pick of Warsh to lead Fed, says he has his 'dream job' already",
           "link": "https://www.cnbc.com/2026/01/30/hassett-praises-trumps-pick-of-warsh-to-lead-fed-says-he-has-his-dream-job-already.html",
           "published": "Fri, 30 Jan 2026 18:39:29 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Wealth inequality and the 'K-shaped' economy are more striking than ever, data shows",
-          "link": "https://www.cnbc.com/2026/01/30/wealth-inequality-k-shaped-economy-united-states-consumer-spending-trump.html",
-          "published": "Fri, 30 Jan 2026 20:08:17 GMT"
         }
       ]
     }
