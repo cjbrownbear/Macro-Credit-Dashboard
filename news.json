@@ -1,56 +1,56 @@
 {
-  "updated": "2026-02-04T14:09:01Z",
+  "updated": "2026-02-05T14:10:49Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "AMD is down 9% after reporting earnings. Here's why",
-          "link": "https://www.cnbc.com/2026/02/04/amd-stock-earnings-forecast-chips.html",
-          "published": "Wed, 04 Feb 2026 13:56:46 GMT"
+          "title": "Google parent Alphabet shares are down premarket after its earnings beat. Here's what's happening",
+          "link": "https://www.cnbc.com/2026/02/05/alphabet-earnings-share-price-google-beat-artifical-intelligence.html",
+          "published": "Thu, 05 Feb 2026 12:50:19 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Fed pick: Tillis doubles down on Warsh blockade over concerns about Fed independence",
-          "link": "https://www.cnbc.com/2026/02/04/fed-warsh-tillis-confirmation.html",
-          "published": "Wed, 04 Feb 2026 14:02:44 GMT"
+          "title": "Layoffs in January were the highest to start a year since 2009, Challenger says",
+          "link": "https://www.cnbc.com/2026/02/05/layoff-and-hiring-announcements-hit-their-worst-january-levels-since-2009-challenger-says.html",
+          "published": "Thu, 05 Feb 2026 13:44:42 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Private payrolls rose by just 22,000 in January, far short of expectations, ADP says",
-          "link": "https://www.cnbc.com/2026/02/04/adp-jobs-report-january-2026.html",
-          "published": "Wed, 04 Feb 2026 14:07:46 GMT"
+          "title": "Bitcoin drops below $70,000 as sell-off continues",
+          "link": "https://www.cnbc.com/2026/02/05/bitcoin-price-today-70000-in-focus.html",
+          "published": "Thu, 05 Feb 2026 14:07:23 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Amazon makes Alexa+ AI assistant available to everyone in the U.S. nearly a year after launch",
-          "link": "https://www.cnbc.com/2026/02/04/amazon-alexa-plus-us-releas.html",
-          "published": "Wed, 04 Feb 2026 14:05:15 GMT"
+          "title": "OpenAI launches new enterprise platform in bid to win more business customers",
+          "link": "https://www.cnbc.com/2026/02/05/open-ai-frontier-enterprise-customers.html",
+          "published": "Thu, 05 Feb 2026 14:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Uber reports 20% revenue growth in fourth-quarter, fueled by food delivery",
-          "link": "https://www.cnbc.com/2026/02/04/uber-uber-2025-q4-earnings.html",
-          "published": "Wed, 04 Feb 2026 13:52:28 GMT"
+          "title": "Peloton posts weak holiday quarter after splashy product overhaul fails to land",
+          "link": "https://www.cnbc.com/2026/02/05/peloton-pton-earnings-q2-2026.html",
+          "published": "Thu, 05 Feb 2026 14:05:52 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Eli Lilly blows past quarterly estimates, posts strong outlook as Zepbound and Mounjaro sales soar",
-          "link": "https://www.cnbc.com/2026/02/04/eli-lilly-lly-earnings-q4-2025.html",
-          "published": "Wed, 04 Feb 2026 14:03:49 GMT"
+          "title": "Silver resumes its slide, plunging 12%, after short-lived rebound",
+          "link": "https://www.cnbc.com/2026/02/05/silver-resumes-its-slide-plunging-12percent-after-short-lived-rebound.html",
+          "published": "Thu, 05 Feb 2026 13:40:15 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "How to insure deposits over $250,000",
-          "link": "https://finance.yahoo.com/personal-finance/banking/article/insuring-deposits-over-250000-220312903.html",
-          "published": "2024-04-11T22:03:12Z"
+          "title": "Morning Movers: Eli Lilly rises, Boston Scientific falls after quarterly results",
+          "link": "https://finance.yahoo.com/news/morning-movers-eli-lilly-rises-140052306.html",
+          "published": "2026-02-05T14:00:52Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Stock market today: Dow, S&P 500, Nasdaq futures wobble after tech-led losses, with Google earnings on deck",
-          "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-wobble-after-tech-led-losses-with-google-earnings-on-deck-234546341.html",
-          "published": "2026-02-03T23:45:46Z"
+          "title": "What is early direct deposit, and which banks offer it?",
+          "link": "https://finance.yahoo.com/personal-finance/banking/article/what-is-early-direct-deposit-224611221.html",
+          "published": "2024-03-13T22:46:11Z"
         }
       ]
     },
@@ -59,9 +59,27 @@
       "items": [
         {
           "source": "CNBC Economy",
+          "title": "Layoffs in January were the highest to start a year since 2009, Challenger says",
+          "link": "https://www.cnbc.com/2026/02/05/layoff-and-hiring-announcements-hit-their-worst-january-levels-since-2009-challenger-says.html",
+          "published": "Thu, 05 Feb 2026 13:44:42 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "China's Xi reasserts Taiwan stance in call with Trump, while U.S. president pushes trade",
+          "link": "https://www.cnbc.com/2026/02/05/chinas-xi-taiwan-trump-trade-talks-iran-russia.html",
+          "published": "Thu, 05 Feb 2026 03:21:40 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "January jobs report will be released on Feb. 11 after shutdown delay",
+          "link": "https://www.cnbc.com/2026/02/04/january-jobs-report-government-shutdown.html",
+          "published": "Wed, 04 Feb 2026 18:45:04 GMT"
+        },
+        {
+          "source": "CNBC Economy",
           "title": "Private payrolls rose by just 22,000 in January, far short of expectations, ADP says",
           "link": "https://www.cnbc.com/2026/02/04/adp-jobs-report-january-2026.html",
-          "published": "Wed, 04 Feb 2026 14:07:46 GMT"
+          "published": "Wed, 04 Feb 2026 16:14:00 GMT"
         },
         {
           "source": "CNBC Economy",
@@ -74,24 +92,6 @@
           "title": "Friday's jobs report will be delayed because of the partial government shutdown",
           "link": "https://www.cnbc.com/2026/02/02/fridays-jobs-report-will-be-delayed-because-of-the-partial-government-shutdown.html",
           "published": "Mon, 02 Feb 2026 18:44:43 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "From PopMart to JD.com: Britain and China rush to forge business deals as diplomatic thaw takes hold",
-          "link": "https://www.cnbc.com/2026/02/02/china-uk-business-starmer-visit-popmart-jdcom.html",
-          "published": "Mon, 02 Feb 2026 23:59:06 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "China's factory activity grows at fastest pace since October, private survey shows, beating official reading",
-          "link": "https://www.cnbc.com/2026/02/02/china-factory-activity-private-survey-official-reading-pmi-january-lunar-new-year-ratingdog.html",
-          "published": "Mon, 02 Feb 2026 05:32:40 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Hassett praises Trump's pick of Warsh to lead Fed, says he has his 'dream job' already",
-          "link": "https://www.cnbc.com/2026/01/30/hassett-praises-trumps-pick-of-warsh-to-lead-fed-says-he-has-his-dream-job-already.html",
-          "published": "Fri, 30 Jan 2026 18:39:29 GMT"
         }
       ]
     }
