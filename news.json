@@ -1,56 +1,56 @@
 {
-  "updated": "2026-02-10T14:37:47Z",
+  "updated": "2026-02-11T14:19:15Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Disappointing holiday season: December retail sales were flat, falling well short of estimate",
-          "link": "https://www.cnbc.com/2026/02/10/december-retail-sales-were-flat-missing-expectations.html",
-          "published": "Tue, 10 Feb 2026 14:01:45 GMT"
+          "title": "U.S. payrolls rose by 130,000 in January, more than expected; unemployment rate at 4.3%",
+          "link": "https://www.cnbc.com/2026/02/11/jobs-report-january-2026-.html",
+          "published": "Wed, 11 Feb 2026 14:15:39 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Kalshi says Super Bowl trading volume surpassed $1 billion",
-          "link": "https://www.cnbc.com/2026/02/10/kalshi-super-bowl.html",
-          "published": "Tue, 10 Feb 2026 14:34:09 GMT"
+          "title": "FAA abruptly lifts order halting El Paso airport flights for 10 days",
+          "link": "https://www.cnbc.com/2026/02/11/faa-el-paso-airport.html",
+          "published": "Wed, 11 Feb 2026 14:03:00 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Paramount sweetens WBD bid, but stops short of raising its per-share value",
-          "link": "https://www.cnbc.com/2026/02/10/paramount-sweetens-wbd-bid-stops-short-of-raising-value-.html",
-          "published": "Tue, 10 Feb 2026 14:10:40 GMT"
+          "title": "Kraft Heinz pauses work to split the company as new CEO says 'challenges are fixable'",
+          "link": "https://www.cnbc.com/2026/02/11/kraft-heinz-pauses-split-new-ceo-challenges.html",
+          "published": "Wed, 11 Feb 2026 12:52:29 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "'Impossible': Taiwan pushes back against Washington’s 40% chip supply relocation goal",
-          "link": "https://www.cnbc.com/2026/02/10/taiwan-chips-us-supply-chain-lutnick-trade-deal.html",
-          "published": "Tue, 10 Feb 2026 06:26:59 GMT"
+          "title": "Scripps launches cost cutting, AI integration in latest effort to generate earnings growth",
+          "link": "https://www.cnbc.com/2026/02/11/scripps-cost-cutting-ai-integration-earnings.html",
+          "published": "Wed, 11 Feb 2026 14:00:02 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Spotify pops 14% on strong user growth, earnings beat",
-          "link": "https://www.cnbc.com/2026/02/10/spotify-spot-q4-2025-earnings.html",
-          "published": "Tue, 10 Feb 2026 14:34:12 GMT"
+          "title": "Apptronik raises $520 million to beat Chinese humanoids, Tesla Optimus to market",
+          "link": "https://www.cnbc.com/2026/02/11/apptronik-raises-520-million-at-5-billion-valuation-for-apollo-robot.html",
+          "published": "Wed, 11 Feb 2026 14:00:02 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Alphabet calls out new AI-related risks, as it taps debt market to fund build-out",
-          "link": "https://www.cnbc.com/2026/02/09/alphabet-highlights-new-ai-related-risks-in-tapping-debt-market.html",
-          "published": "Tue, 10 Feb 2026 07:01:17 GMT"
+          "title": "Heineken to slash up to 6,000 jobs in AI 'productivity savings' amid slump in beer sales",
+          "link": "https://www.cnbc.com/2026/02/11/heineken-slash-6000-jobs-ai-productivity-savings-.html",
+          "published": "Wed, 11 Feb 2026 13:24:53 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "The Cooper Companies (COO) Moved Higher as Multiple Tailwinds Align",
-          "link": "https://finance.yahoo.com/news/cooper-companies-coo-moved-higher-142344543.html",
-          "published": "2026-02-10T14:23:44Z"
+          "title": "Cooper Investors Global Equities Fund’s Views on Its Largest 2025 Contributor: TKO Group Holdings (TKO)",
+          "link": "https://finance.yahoo.com/news/cooper-investors-global-equities-fund-140746080.html",
+          "published": "2026-02-11T14:07:46Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Salesforce (CRM) Signals Stable Growth Signs",
-          "link": "https://finance.yahoo.com/news/salesforce-crm-signals-stable-growth-142200715.html",
-          "published": "2026-02-10T14:22:00Z"
+          "title": "Enterprise Products Partners vs. Chevron: Which High-Yield Energy Stock Will Outperform in 2026?",
+          "link": "https://finance.yahoo.com/news/enterprise-products-partners-vs-chevron-140600232.html",
+          "published": "2026-02-11T14:06:00Z"
         }
       ]
     },
@@ -59,9 +59,21 @@
       "items": [
         {
           "source": "CNBC Economy",
+          "title": "U.S. payrolls rose by 130,000 in January, more than expected; unemployment rate at 4.3%",
+          "link": "https://www.cnbc.com/2026/02/11/jobs-report-january-2026-.html",
+          "published": "Wed, 11 Feb 2026 14:15:39 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "The delayed January jobs report will be released Wednesday. Here's what to expect",
+          "link": "https://www.cnbc.com/2026/02/10/jobs-report-preview-january-2026.html",
+          "published": "Tue, 10 Feb 2026 20:52:41 GMT"
+        },
+        {
+          "source": "CNBC Economy",
           "title": "Disappointing holiday season: December retail sales were flat, falling well short of estimate",
           "link": "https://www.cnbc.com/2026/02/10/december-retail-sales-were-flat-missing-expectations.html",
-          "published": "Tue, 10 Feb 2026 14:01:45 GMT"
+          "published": "Tue, 10 Feb 2026 16:05:59 GMT"
         },
         {
           "source": "CNBC Economy",
@@ -80,18 +92,6 @@
           "title": "January jobs report will be released on Feb. 11 after shutdown delay",
           "link": "https://www.cnbc.com/2026/02/04/january-jobs-report-government-shutdown.html",
           "published": "Wed, 04 Feb 2026 18:45:04 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Private payrolls rose by just 22,000 in January, far short of expectations, ADP says",
-          "link": "https://www.cnbc.com/2026/02/04/adp-jobs-report-january-2026.html",
-          "published": "Wed, 04 Feb 2026 16:14:00 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Trump refuses to be outdone by Europe, signing his own U.S.-India trade deal",
-          "link": "https://www.cnbc.com/2026/02/03/trump-us-india-trade-deal-europe-india-deal-compared.html",
-          "published": "Tue, 03 Feb 2026 19:22:33 GMT"
         }
       ]
     }
