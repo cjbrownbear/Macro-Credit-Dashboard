@@ -1,62 +1,68 @@
 {
-  "updated": "2026-02-18T14:11:58Z",
+  "updated": "2026-02-19T14:14:28Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Oil jumps more than 2% after Vance says Iran ignored key U.S. demand, military strikes on the table",
-          "link": "https://www.cnbc.com/2026/02/18/oil-prices-today-iran-trump-nuclear-talks.html",
-          "published": "Wed, 18 Feb 2026 13:53:58 GMT"
+          "title": "Walmart reports strong holiday growth, but earnings outlook falls short of estimates",
+          "link": "https://www.cnbc.com/2026/02/19/walmart-wmt-q4-2026-earnings.html",
+          "published": "Thu, 19 Feb 2026 14:09:20 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "FDA chief Marty Makary says 'everything should be over-the-counter' unless drug is unsafe or addictive",
-          "link": "https://www.cnbc.com/2026/02/18/fda-chief-marty-makary-more-drugs-should-be-over-the-counter.html",
-          "published": "Wed, 18 Feb 2026 13:56:49 GMT"
+          "title": "King Charles' brother Andrew arrested on suspicion of misconduct",
+          "link": "https://www.cnbc.com/2026/02/19/prince-andrew-arrest-misconduct-epstein-mountbatten-windsor.html",
+          "published": "Thu, 19 Feb 2026 12:37:26 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "The 'boomcession': Why Americans feel left behind by a growing economy",
-          "link": "https://www.cnbc.com/2026/02/18/boomcession-econonomy-gdp-recession-consumer-sentiment.html",
-          "published": "Wed, 18 Feb 2026 13:56:56 GMT"
+          "title": "United Airlines is paring back rewards for travelers who don't have its credit card in MileagePlus overhaul",
+          "link": "https://www.cnbc.com/2026/02/19/united-airlines-frequent-flyer-mileage-plus-program-credit-card.html",
+          "published": "Thu, 19 Feb 2026 12:55:53 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Meta CEO Mark Zuckerberg set to testify in LA social media safety trial",
-          "link": "https://www.cnbc.com/2026/02/18/meta-mark-zuckerberg-social-media-safety-trial.html",
-          "published": "Wed, 18 Feb 2026 14:03:00 GMT"
+          "title": "Small furniture retailers face existential tariff threat, regardless of Supreme Court ruling",
+          "link": "https://www.cnbc.com/2026/02/19/supreme-court-tariffs-furniture-retailers-threat.html",
+          "published": "Thu, 19 Feb 2026 13:00:02 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "As Walmart and Target head in different directions, all eyes are on their new CEOs",
-          "link": "https://www.cnbc.com/2026/02/18/walmart-target-earnings-new-ceos-furner-fiddelke.html",
-          "published": "Wed, 18 Feb 2026 12:52:44 GMT"
+          "title": "Why New Balance's 'dad shoes' are beating Nike as sales surge 19%",
+          "link": "https://www.cnbc.com/2026/02/19/new-balance-2025-sales-jump-19percent-as-brand-takes-share-from-nike.html",
+          "published": "Thu, 19 Feb 2026 13:30:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump lauds Japan’s pledge to invest $36 billion in U.S. oil, gas and critical mineral projects",
-          "link": "https://www.cnbc.com/2026/02/18/trump-us-japan-oil-gas-mineral-projects-trade-deal.html",
-          "published": "Wed, 18 Feb 2026 13:03:53 GMT"
+          "title": "Blue Owl curbs investor liquidity following asset sale, shares down 3% in pre-market trading",
+          "link": "https://www.cnbc.com/2026/02/19/blue-owl-private-debt-investor-loan-liquidity-restriction-market-shares.html",
+          "published": "Thu, 19 Feb 2026 13:13:37 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Stock market today: Dow, S&P 500, Nasdaq futures rise as AI worries recede, with Fed minutes ahead",
-          "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-rise-as-ai-worries-recede-with-fed-minutes-ahead-235322996.html",
-          "published": "2026-02-17T23:53:22Z"
+          "title": "Stock market today: Dow, S&P 500, Nasdaq futures edge lower with rate-cut bets, Walmart earnings in focus",
+          "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-edge-lower-with-rate-cut-bets-walmart-earnings-in-focus-234005059.html",
+          "published": "2026-02-18T23:40:05Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Gator Capital Management’s Investment Thesis for TFS Financial Corporation (TFSL)",
-          "link": "https://finance.yahoo.com/news/gator-capital-management-investment-thesis-135034704.html",
-          "published": "2026-02-18T13:50:34Z"
+          "title": "EBay Strikes $1.2 Billion Deal To Buy Depop From Etsy. Both E-Commerce Stocks Are Rallying.",
+          "link": "https://www.investors.com/news/technology/ebay-stock-etsy-stock-depop-deal-q4-2025-results/?src=A00220&yptr=yahoo",
+          "published": "2026-02-19T13:48:56Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Hassett says authors of New York Fed tariff study should be disciplined: 'Worst paper I've ever seen'",
+          "link": "https://www.cnbc.com/2026/02/18/hassett-says-authors-of-new-york-fed-tariff-study-should-be-disciplined-worst-paper-ive-ever-seen.html",
+          "published": "Wed, 18 Feb 2026 19:16:09 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "The 'boomcession': Why Americans feel left behind by a growing economy",
@@ -86,12 +92,6 @@
           "title": "UK economy ekes out 0.1% growth in the fourth quarter",
           "link": "https://www.cnbc.com/2026/02/12/uk-q4-gdp-economy.html",
           "published": "Thu, 12 Feb 2026 07:38:57 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "The jobs picture still looks muddy, even with surprisingly strong January growth",
-          "link": "https://www.cnbc.com/2026/02/11/the-jobs-picture-still-looks-muddy-even-with-surprisingly-strong-january-growth.html",
-          "published": "Wed, 11 Feb 2026 20:22:20 GMT"
         }
       ]
     }
