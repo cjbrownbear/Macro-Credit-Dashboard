@@ -1,62 +1,68 @@
 {
-  "updated": "2026-02-22T13:51:34Z",
+  "updated": "2026-02-23T14:13:11Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "The world's largest energy lender has a new head: Here's how it could shape U.S. policy",
-          "link": "https://www.cnbc.com/2026/02/22/the-worlds-largest-energy-lender-has-a-new-head-heres-how-it-could-shape-us-policy.html",
-          "published": "Sun, 22 Feb 2026 12:32:18 GMT"
+          "title": "Europe hits back at 'pure tariff chaos' from the U.S., warning trade deals are at risk",
+          "link": "https://www.cnbc.com/2026/02/23/trump-15percent-global-tariff-europe-eu-uk-reaction.html",
+          "published": "Mon, 23 Feb 2026 11:30:25 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump to hike global tariffs to 15% from 10%, 'effective immediately'",
-          "link": "https://www.cnbc.com/2026/02/21/trump-tariffs.html",
-          "published": "Sat, 21 Feb 2026 18:49:29 GMT"
+          "title": "Airlines halt Puerto Vallarta flights after violence following Mexican cartel leader's killing",
+          "link": "https://www.cnbc.com/2026/02/23/puerto-vallarta-flights-mexico.html",
+          "published": "Mon, 23 Feb 2026 13:38:34 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Airlines cancel thousands of flights ahead of another monster winter storm",
-          "link": "https://www.cnbc.com/2026/02/21/blizzard-prompts-airlines-waive-flight-change-fees.html",
-          "published": "Sun, 22 Feb 2026 12:07:51 GMT"
+          "title": "Eli Lilly launches new form of obesity drug Zepbound with a month’s worth of doses in one pen",
+          "link": "https://www.cnbc.com/2026/02/23/eli-lilly-launches-zepbound-obesity-drug-pen-one-month-doses.html",
+          "published": "Mon, 23 Feb 2026 14:00:14 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Five key takeaways from the Supreme Court's landmark decision against Trump's tariffs",
-          "link": "https://www.cnbc.com/2026/02/21/supreme-courts-trump-tariff-decision-five-takeaways.html",
-          "published": "Sat, 21 Feb 2026 14:44:42 GMT"
+          "title": "OpenAI lands multiyear deals with consulting giants in enterprise push",
+          "link": "https://www.cnbc.com/2026/02/23/open-ai-consulting-accenture-boston-capgemini-mckinsey-frontier.html",
+          "published": "Mon, 23 Feb 2026 14:05:56 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "India delays Washington trade visit as U.S. tariff policy shifts, source tells CNBC",
-          "link": "https://www.cnbc.com/2026/02/22/trump-tariffs-india-trade-deal.html",
-          "published": "Sun, 22 Feb 2026 10:45:11 GMT"
+          "title": "Google spinout Aalyria valued at $1.3 billion as investors pour into space-based communications",
+          "link": "https://www.cnbc.com/2026/02/23/google-spinout-aalyria-valued-at-1point3-billion-in-100-million-round.html",
+          "published": "Mon, 23 Feb 2026 13:30:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Top Wall Street analysts are bullish on the growth potential of these three stocks",
-          "link": "https://www.cnbc.com/2026/02/22/top-analysts-are-bullish-on-the-growth-potential-of-these-3-stocks.html",
-          "published": "Sun, 22 Feb 2026 12:33:12 GMT"
+          "title": "Novo Nordisk sinks 15% after weight loss drug fails to match Eli Lilly's in trial",
+          "link": "https://www.cnbc.com/2026/02/23/novo-nordisk-stock-cagrisema-trial-fails-weight-loss.html",
+          "published": "Mon, 23 Feb 2026 13:10:54 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Survey says 80% of Gen Xers and boomers regret not saving sooner. Here’s how to maximize your retirement savings now",
-          "link": "https://finance.yahoo.com/news/survey-says-80-gen-xers-120000964.html",
-          "published": "2026-02-21T12:00:00Z"
+          "title": "Chase reboots its 'mortgage rate sale,' this time on purchases and refinances",
+          "link": "https://finance.yahoo.com/personal-finance/mortgages/article/chase-mortgage-rate-sale-purchases-and-refinances-140015474.html",
+          "published": "2026-02-23T14:00:15Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "President Donald Trump's Nomination of Kevin Warsh to Become Fed Chair May Come With Unintended Consequences for Wall Street",
-          "link": "https://finance.yahoo.com/news/president-donald-trumps-nomination-kevin-115600375.html",
-          "published": "2026-02-21T11:56:00Z"
+          "title": "BUMA secures contract with Adaro at South Tutupan mine in Indonesia",
+          "link": "https://finance.yahoo.com/news/buma-secures-contract-adaro-south-135220800.html",
+          "published": "2026-02-23T13:52:20Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "China’s leverage rises before high-stakes summit as Supreme Court curbs Trump tariffs",
+          "link": "https://www.cnbc.com/2026/02/23/trumps-tariff-setback-in-supreme-court-ruling-boosts-china-april-summit-leverage-xi.html",
+          "published": "Mon, 23 Feb 2026 05:52:44 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Five key takeaways from the Supreme Court's landmark decision against Trump's tariffs",
@@ -86,12 +92,6 @@
           "title": "U.S. trade deficit totaled $901 billion in 2025, barely budging despite Trump's tariffs",
           "link": "https://www.cnbc.com/2026/02/19/us-trade-deficit-totaled-901-billion-in-2025-despite-trumps-tariffs.html",
           "published": "Fri, 20 Feb 2026 15:39:18 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Hassett says authors of New York Fed tariff study should be disciplined: 'Worst paper I've ever seen'",
-          "link": "https://www.cnbc.com/2026/02/18/hassett-says-authors-of-new-york-fed-tariff-study-should-be-disciplined-worst-paper-ive-ever-seen.html",
-          "published": "Wed, 18 Feb 2026 19:16:09 GMT"
         }
       ]
     }
