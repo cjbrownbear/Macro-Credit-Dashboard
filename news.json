@@ -1,62 +1,68 @@
 {
-  "updated": "2026-02-26T14:14:32Z",
+  "updated": "2026-02-27T14:04:30Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Nvidia's stock sees only marginal gains after better-than-expected results. Here's the latest",
-          "link": "https://www.cnbc.com/2026/02/26/nvidia-nvda-stock-price-q4-earnings.html",
-          "published": "Thu, 26 Feb 2026 12:44:06 GMT"
+          "title": "Core wholesale prices rose 0.8% in January, much more than expected",
+          "link": "https://www.cnbc.com/2026/02/27/ppi-january-2026-.html",
+          "published": "Fri, 27 Feb 2026 13:55:42 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump said beef, egg and chicken prices are falling. Here's what the data shows",
-          "link": "https://www.cnbc.com/2026/02/26/trump-beef-egg-chicken-food-prices.html",
-          "published": "Thu, 26 Feb 2026 12:35:01 GMT"
+          "title": "OpenAI closes $110 billion funding round with backing from Amazon, Nvidia, Softbank",
+          "link": "https://www.cnbc.com/2026/02/27/open-ai-funding-round-amazon.html",
+          "published": "Fri, 27 Feb 2026 14:00:08 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Democrat senators press Commerce Secretary Lutnick on conflict of interest concerns in USA Rare Earth deal",
-          "link": "https://www.cnbc.com/2026/02/26/warren-lutnick-usa-rare-earth-usar-critical-minerals.html",
-          "published": "Thu, 26 Feb 2026 14:05:26 GMT"
+          "title": "Netflix ditches deal for Warner Bros. Discovery after Paramount’s offer is deemed superior",
+          "link": "https://www.cnbc.com/2026/02/26/warner-bros-discovery-paramount-skydance-deal-superior-netflix.html",
+          "published": "Fri, 27 Feb 2026 12:48:46 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Russia says Cuba situation is escalating after deadly incident with U.S.-tagged speedboat",
-          "link": "https://www.cnbc.com/2026/02/26/cuba-crisis-russia-boat-incident-florida-trump-oil.html",
-          "published": "Thu, 26 Feb 2026 13:09:36 GMT"
+          "title": "Block shares soar as much as 24% as company slashes workforce by nearly half",
+          "link": "https://www.cnbc.com/2026/02/26/block-laying-off-about-4000-employees-nearly-half-of-its-workforce.html",
+          "published": "Fri, 27 Feb 2026 10:05:10 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Jeep maker Stellantis posts first annual loss in company history after EV writedowns",
-          "link": "https://www.cnbc.com/2026/02/26/stellantis-earnings-full-year-2025-autos-evs.html",
-          "published": "Thu, 26 Feb 2026 14:00:59 GMT"
+          "title": "Anthropic CEO Amodei says Pentagon's threats 'do not change our position' on AI",
+          "link": "https://www.cnbc.com/2026/02/26/anthropic-pentagon-ai-amodei.html",
+          "published": "Fri, 27 Feb 2026 12:55:21 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Warren calls Trump’s bluff on affordability after State of the Union",
-          "link": "https://www.cnbc.com/2026/02/26/warren-calls-trumps-bluff-on-affordability-after-state-of-the-union.html",
-          "published": "Thu, 26 Feb 2026 12:30:01 GMT"
+          "title": "U.S. and Iran wrap up 'most intense' nuclear talks with no deal — more negotiations ahead",
+          "link": "https://www.cnbc.com/2026/02/27/us-iran-nuclear-talks-oil-middle-east.html",
+          "published": "Fri, 27 Feb 2026 13:11:16 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "What’s a Typical Upper Class Spending Profile in America’s Richest ZIP Code?",
-          "link": "https://finance.yahoo.com/news/typical-upper-class-spending-profile-135524518.html",
-          "published": "2026-02-26T13:55:24Z"
+          "title": "The Remote-Work Dream Isn’t Dead, but It’s Slipping Away",
+          "link": "https://www.wsj.com/lifestyle/careers/the-remote-work-dream-isnt-dead-but-its-slipping-away-a19ae9e8?siteid=yhoof2&yptr=yahoo",
+          "published": "2026-02-26T02:00:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Stock market today: Dow, S&P 500, Nasdaq futures waver as Nvidia leaves investors wanting more",
-          "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-waver-as-nvidia-leaves-investors-wanting-more-234839338.html",
-          "published": "2026-02-25T23:48:39Z"
+          "title": "Street Optimism Builds Around Walmart Inc. (WMT)",
+          "link": "https://finance.yahoo.com/news/street-optimism-builds-around-walmart-015637184.html",
+          "published": "2026-02-26T01:56:37Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Core wholesale prices rose 0.8% in January, much more than expected",
+          "link": "https://www.cnbc.com/2026/02/27/ppi-january-2026-.html",
+          "published": "Fri, 27 Feb 2026 13:55:42 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Trump insists trade deals safe after Supreme Court ruling upends tariff authority, but partners aren’t so sure",
@@ -86,12 +92,6 @@
           "title": "With Trump's 'reciprocal' tariffs struck down, here are the industries still facing higher rates",
           "link": "https://www.cnbc.com/2026/02/20/trump-tariffs-supreme-court-ruling-industry-higher-rates.html",
           "published": "Fri, 20 Feb 2026 19:23:06 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Fourth-quarter U.S. GDP up just 1.4%, badly missing estimate; inflation firms at 3%",
-          "link": "https://www.cnbc.com/2026/02/20/pce-inflation-december-2025.html",
-          "published": "Fri, 20 Feb 2026 16:05:02 GMT"
         }
       ]
     }
