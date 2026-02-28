@@ -1,56 +1,56 @@
 {
-  "updated": "2026-02-27T14:04:30Z",
+  "updated": "2026-02-28T13:47:17Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Core wholesale prices rose 0.8% in January, much more than expected",
-          "link": "https://www.cnbc.com/2026/02/27/ppi-january-2026-.html",
-          "published": "Fri, 27 Feb 2026 13:55:42 GMT"
+          "title": "U.S.-Israel launch massive attack on Iran; 4 U.S. military bases hit in retaliation",
+          "link": "https://www.cnbc.com/2026/02/28/trump-us-military-iran-strikes-middle-east-oil.html",
+          "published": "Sat, 28 Feb 2026 13:15:27 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "OpenAI closes $110 billion funding round with backing from Amazon, Nvidia, Softbank",
-          "link": "https://www.cnbc.com/2026/02/27/open-ai-funding-round-amazon.html",
-          "published": "Fri, 27 Feb 2026 14:00:08 GMT"
+          "title": "Berkshire Hathaway operating earnings fell nearly 30% in Warren Buffett's final quarter as CEO",
+          "link": "https://www.cnbc.com/2026/02/28/berkshire-hathaway-brka-q4-2025-earnings.html",
+          "published": "Sat, 28 Feb 2026 13:43:06 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Netflix ditches deal for Warner Bros. Discovery after Paramount’s offer is deemed superior",
-          "link": "https://www.cnbc.com/2026/02/26/warner-bros-discovery-paramount-skydance-deal-superior-netflix.html",
-          "published": "Fri, 27 Feb 2026 12:48:46 GMT"
+          "title": "OpenAI strikes deal with Pentagon, hours after rival Anthropic was blacklisted by Trump",
+          "link": "https://www.cnbc.com/2026/02/27/openai-strikes-deal-with-pentagon-hours-after-rival-anthropic-was-blacklisted-by-trump.html",
+          "published": "Sat, 28 Feb 2026 04:25:34 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Block shares soar as much as 24% as company slashes workforce by nearly half",
-          "link": "https://www.cnbc.com/2026/02/26/block-laying-off-about-4000-employees-nearly-half-of-its-workforce.html",
-          "published": "Fri, 27 Feb 2026 10:05:10 GMT"
+          "title": "WBD employees fear coming wave of job losses as Paramount tops Netflix's bid to acquire company",
+          "link": "https://www.cnbc.com/2026/02/27/warner-bros-employees-paramount.html",
+          "published": "Fri, 27 Feb 2026 22:02:49 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Anthropic CEO Amodei says Pentagon's threats 'do not change our position' on AI",
-          "link": "https://www.cnbc.com/2026/02/26/anthropic-pentagon-ai-amodei.html",
-          "published": "Fri, 27 Feb 2026 12:55:21 GMT"
+          "title": "NASA is sending its first Black and first female astronauts to the moon",
+          "link": "https://www.cnbc.com/2026/02/28/nasa-astronauts-moon-artemis.html",
+          "published": "Sat, 28 Feb 2026 13:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "U.S. and Iran wrap up 'most intense' nuclear talks with no deal — more negotiations ahead",
-          "link": "https://www.cnbc.com/2026/02/27/us-iran-nuclear-talks-oil-middle-east.html",
-          "published": "Fri, 27 Feb 2026 13:11:16 GMT"
+          "title": "AI just leveled up and there are no guardrails anymore",
+          "link": "https://www.cnbc.com/2026/02/28/ai-selloff-politics-agents.html",
+          "published": "Sat, 28 Feb 2026 13:00:01 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "The Remote-Work Dream Isn’t Dead, but It’s Slipping Away",
-          "link": "https://www.wsj.com/lifestyle/careers/the-remote-work-dream-isnt-dead-but-its-slipping-away-a19ae9e8?siteid=yhoof2&yptr=yahoo",
-          "published": "2026-02-26T02:00:00Z"
+          "title": "Warren Buffett's successor Greg Abel publishes his first letter to Berkshire Hathaway shareholders",
+          "link": "https://finance.yahoo.com/news/warren-buffetts-successor-greg-abel-131701152.html",
+          "published": "2026-02-28T13:17:01Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Street Optimism Builds Around Walmart Inc. (WMT)",
-          "link": "https://finance.yahoo.com/news/street-optimism-builds-around-walmart-015637184.html",
-          "published": "2026-02-26T01:56:37Z"
+          "title": "Trump, Israel Launch 'Massive' Attacks On Iran; How Will Dow Jones Futures React?",
+          "link": "https://www.investors.com/market-trend/stock-market-today/trump-us-israel-massive-attacks-iran-dow-jones-futures-oil-prices/?src=A00220&yptr=yahoo",
+          "published": "2026-02-28T13:13:38Z"
         }
       ]
     },
@@ -59,9 +59,15 @@
       "items": [
         {
           "source": "CNBC Economy",
+          "title": "Are Jack Dorsey's aggressive job cuts the start of an AI jobs apocalypse? Economists weigh in",
+          "link": "https://www.cnbc.com/2026/02/27/are-dorseys-giant-job-cuts-the-start-of-an-ai-jobs-apocalypse-economists-weigh-in.html",
+          "published": "Fri, 27 Feb 2026 19:53:56 GMT"
+        },
+        {
+          "source": "CNBC Economy",
           "title": "Core wholesale prices rose 0.8% in January, much more than expected",
           "link": "https://www.cnbc.com/2026/02/27/ppi-january-2026-.html",
-          "published": "Fri, 27 Feb 2026 13:55:42 GMT"
+          "published": "Fri, 27 Feb 2026 14:29:19 GMT"
         },
         {
           "source": "CNBC Economy",
@@ -86,12 +92,6 @@
           "title": "Five key takeaways from the Supreme Court's landmark decision against Trump's tariffs",
           "link": "https://www.cnbc.com/2026/02/21/supreme-courts-trump-tariff-decision-five-takeaways.html",
           "published": "Mon, 23 Feb 2026 15:53:24 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "With Trump's 'reciprocal' tariffs struck down, here are the industries still facing higher rates",
-          "link": "https://www.cnbc.com/2026/02/20/trump-tariffs-supreme-court-ruling-industry-higher-rates.html",
-          "published": "Fri, 20 Feb 2026 19:23:06 GMT"
         }
       ]
     }
