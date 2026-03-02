@@ -1,62 +1,74 @@
 {
-  "updated": "2026-03-01T13:48:09Z",
+  "updated": "2026-03-02T14:07:19Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Iran may 'lash out harder' as Khamenei's death puts Tehran on a war footing, leaving the world bracing for what's next",
-          "link": "https://www.cnbc.com/2026/03/01/us-israel-attacks-strikes-iran-retaliate-china-russia-allies.html",
-          "published": "Sun, 01 Mar 2026 09:21:20 GMT"
+          "title": "Iran strikes halt Qatar LNG output, shaking global energy markets",
+          "link": "https://www.cnbc.com/2026/03/02/qatars-state-owned-energy-company-halts-lng-production-after-iran-drone-attacks.html",
+          "published": "Mon, 02 Mar 2026 14:04:12 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "$100 oil? Prolonged Hormuz closure could spark a 1970s-style energy shock",
-          "link": "https://www.cnbc.com/2026/03/01/experts-weigh-potential-scenarios-for-oil-if-strait-of-hormuz-closes.html",
-          "published": "Sun, 01 Mar 2026 10:57:52 GMT"
+          "title": "Steve Eisman says investors should ignore U.S.-Iran war, will be long-term 'positive'",
+          "link": "https://www.cnbc.com/2026/03/02/steve-eisman-says-investors-should-ignore-us-iran-war-will-be-long-term-positive.html",
+          "published": "Mon, 02 Mar 2026 13:54:56 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Iran after Khamenei: What's next and what it means for the country?",
-          "link": "https://www.cnbc.com/2026/03/01/iran-khamenei-dead-us-israel-strike-trump-netanyahu.html",
-          "published": "Sun, 01 Mar 2026 08:40:22 GMT"
+          "title": "Travel stocks sink after thousands of flights grounded following Iran strikes",
+          "link": "https://www.cnbc.com/2026/03/02/iran-strikes-flights-travel-stocks.html",
+          "published": "Mon, 02 Mar 2026 13:56:23 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "All the highlights from Berkshire CEO Abel's first shareholder letter",
-          "link": "https://www.cnbc.com/2026/03/01/all-the-highlights-from-berkshire-ceo-abels-first-shareholder-letter.html",
-          "published": "Sun, 01 Mar 2026 12:20:34 GMT"
+          "title": "Nvidia to invest $4 billion in two photonics companies",
+          "link": "https://www.cnbc.com/2026/03/02/nvidia-investment-coherent-lumentum.html",
+          "published": "Mon, 02 Mar 2026 14:00:13 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Top Wall Street analysts recommend these dividend stocks for enhanced returns",
-          "link": "https://www.cnbc.com/2026/03/01/top-wall-street-analysts-recommend-these-dividend-stocks-for-enhanced-returns.html",
-          "published": "Sun, 01 Mar 2026 12:38:29 GMT"
+          "title": "Defense stocks jump as U.S., Iran exchange attacks",
+          "link": "https://www.cnbc.com/2026/03/02/defense-stocks-us-iran-israel-attacks-lockheed-renk-leonardo.html",
+          "published": "Mon, 02 Mar 2026 12:53:31 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "How the attack on Iran could impact the global oil market and economy",
-          "link": "https://www.cnbc.com/2026/02/28/iran-us-attack-oil-market-economy.html",
-          "published": "Sat, 28 Feb 2026 23:47:47 GMT"
+          "title": "Khamenei's death raises questions about Trump's China trip",
+          "link": "https://www.cnbc.com/2026/03/02/khameneis-death-trump-china-visit-uncertainty-iran-strikes-trade-truce.html",
+          "published": "Mon, 02 Mar 2026 09:49:08 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Where Each Generation Is Putting Their Retirement Savings — Beyond 401(k) Plans",
-          "link": "https://finance.yahoo.com/news/where-generation-putting-retirement-savings-115505910.html",
-          "published": "2026-02-28T11:55:05Z"
+          "title": "Tune In To Live Stock Analysis — And Beyond. Here's How.",
+          "link": "https://www.investors.com/how-to-invest/stock-analysis-how-to-invest-in-stocks-newsletter/?src=A00220&yptr=yahoo",
+          "published": "2026-03-02T13:45:24Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "US retirees think you need a whopping $830K for retirement — are you ready? 3 tips to get your nest egg in shape",
-          "link": "https://finance.yahoo.com/news/us-retirees-think-whopping-830k-121100065.html",
-          "published": "2026-02-28T12:11:00Z"
+          "title": "Two-Thirds of Russian Pyramid Scams Now Run on Crypto — Over 4,600 Criminal Wallets Exposed",
+          "link": "https://finance.yahoo.com/news/two-thirds-russian-pyramid-scams-134215247.html",
+          "published": "2026-03-02T13:42:15Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Why Iran should not count on allies Russia and China to come to its aid",
+          "link": "https://www.cnbc.com/2026/03/02/iran-china-russia-strikes-assistance-alliance-weapons-missiles-geopolitics-oil-prices-ukraine.html",
+          "published": "Mon, 02 Mar 2026 11:55:35 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Iran conflict: Where things stand, global responses — and what comes next",
+          "link": "https://www.cnbc.com/2026/03/02/iran-israel-us-conflict-oil-jumps-trump-netanyahu-what-is-next.html",
+          "published": "Mon, 02 Mar 2026 13:20:45 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Are Jack Dorsey's aggressive job cuts the start of an AI jobs apocalypse? Economists weigh in",
@@ -80,18 +92,6 @@
           "title": "Top earners are more afraid for their employment than lower income as AI threat increases",
           "link": "https://www.cnbc.com/2026/02/25/top-earners-are-more-afraid-for-their-employment-than-lower-income-as-ai-threat-increases.html",
           "published": "Wed, 25 Feb 2026 18:58:58 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "China’s leverage rises before high-stakes summit as Supreme Court curbs Trump tariffs",
-          "link": "https://www.cnbc.com/2026/02/23/trumps-tariff-setback-in-supreme-court-ruling-boosts-china-april-summit-leverage-xi.html",
-          "published": "Thu, 26 Feb 2026 03:16:07 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Five key takeaways from the Supreme Court's landmark decision against Trump's tariffs",
-          "link": "https://www.cnbc.com/2026/02/21/supreme-courts-trump-tariff-decision-five-takeaways.html",
-          "published": "Mon, 23 Feb 2026 15:53:24 GMT"
         }
       ]
     }
