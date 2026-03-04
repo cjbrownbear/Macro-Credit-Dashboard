@@ -1,62 +1,74 @@
 {
-  "updated": "2026-03-03T14:04:56Z",
+  "updated": "2026-03-04T14:03:36Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Target says it's on track to end its sales slump after another lackluster quarter",
-          "link": "https://www.cnbc.com/2026/03/03/target-tgt-q4-2025-earnings.html",
-          "published": "Tue, 03 Mar 2026 13:51:03 GMT"
+          "title": "Bessent says global 15% tariff starts this week, predicts Trump duties will return to old levels later this year",
+          "link": "https://www.cnbc.com/2026/03/04/bessent-says-global-15percent-tariff-starts-this-week-move-back-to-prior-rates-within-5-months.html",
+          "published": "Wed, 04 Mar 2026 13:44:43 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Pinterest shares pop 8% as activist Elliott Management takes $1 billion stake",
-          "link": "https://www.cnbc.com/2026/03/03/pinterest-pins-elliott-management.html",
-          "published": "Tue, 03 Mar 2026 13:46:59 GMT"
+          "title": "Private companies added 63,000 jobs in February, January revised to just 11,000 additions, ADP says",
+          "link": "https://www.cnbc.com/2026/03/04/private-companies-added-63000-jobs-in-february-january-revised-to-just-11000-additions-adp-says.html",
+          "published": "Wed, 04 Mar 2026 13:48:37 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Middle East war sends natural gas prices soaring, raising growth shock risk for Europe and Asia",
-          "link": "https://www.cnbc.com/2026/03/03/middle-east-war-gas-energy-lng-drone-qatar-strait-hormuz-price-shock.html",
-          "published": "Tue, 03 Mar 2026 13:59:59 GMT"
+          "title": "'No to war’: Spain PM hits back at Trump threat to cut trade over air base dispute",
+          "link": "https://www.cnbc.com/2026/03/04/spain-pm-sanchez-trump-trade-nato-defense-iran-israel-crisis.html",
+          "published": "Wed, 04 Mar 2026 13:13:07 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Swiss sneaker maker falls 11% after record sales, as guidance falls short of expectations",
-          "link": "https://www.cnbc.com/2026/03/03/on-onon-stock-q4-earnings-record-sales-guidance.html",
-          "published": "Tue, 03 Mar 2026 10:08:23 GMT"
+          "title": "Remember Twitter? Elon Musk expected to testify over flip-flop in $44 billion buyout",
+          "link": "https://www.cnbc.com/2026/03/04/elon-musk-to-testify-securities-fraud-trial-over-twitter-deal-in-sf.html",
+          "published": "Wed, 04 Mar 2026 13:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Versant debut earnings report shows continued pay TV pressure, digital growth",
-          "link": "https://www.cnbc.com/2026/03/03/versant-vsnt-debut-earnings-report-digital-growth.html",
-          "published": "Tue, 03 Mar 2026 13:40:00 GMT"
+          "title": "U.S. crude oil retreats for the first session since Iran war began as Bessent pledges support",
+          "link": "https://www.cnbc.com/2026/03/04/crude-oil-prices-today-iran-war.html",
+          "published": "Wed, 04 Mar 2026 13:35:26 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Best Buy’s holiday sales disappoint, but retailer shows progress in growing profits",
-          "link": "https://www.cnbc.com/2026/03/03/best-buy-bby-q4-2026-earnings.html",
-          "published": "Tue, 03 Mar 2026 12:53:39 GMT"
+          "title": "Big investors have been fleeing for-sale housing market, even before Trump ordered ban",
+          "link": "https://www.cnbc.com/2026/03/04/institutional-investors-housing-market.html",
+          "published": "Wed, 04 Mar 2026 12:55:27 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Average price for a gallon of gas rises 11 cents overnight to about $3.11 in US, AAA says",
-          "link": "https://finance.yahoo.com/news/average-price-gallon-gas-rises-135037000.html",
-          "published": "2026-03-03T13:50:37Z"
+          "title": "Tomi Environmental Solutions enters partnership agreement with Total Clean Air",
+          "link": "https://finance.yahoo.com/news/tomi-environmental-solutions-enters-partnership-135056314.html",
+          "published": "2026-03-04T13:50:56Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Viking Bucks Cruise Decline. U.S. Names These Destinations Unsafe.",
-          "link": "https://www.investors.com/news/viking-cruises-earnings-vik-stock-travel-warning-middle-east/?src=A00220&yptr=yahoo",
-          "published": "2026-03-03T13:43:46Z"
+          "title": "What Makes Oshkosh Corporation (OSK) an Attractive Opportunity?",
+          "link": "https://finance.yahoo.com/news/makes-oshkosh-corporation-osk-attractive-134724792.html",
+          "published": "2026-03-04T13:47:24Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Private companies added 63,000 jobs in February, January revised to just 11,000 additions, ADP says",
+          "link": "https://www.cnbc.com/2026/03/04/private-companies-added-63000-jobs-in-february-january-revised-to-just-11000-additions-adp-says.html",
+          "published": "Wed, 04 Mar 2026 13:48:37 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Middle East conflict poses fresh test to central banks as oil shock fuels inflation",
+          "link": "https://www.cnbc.com/2026/03/04/iran-israel-us-war-middle-east-conflict-oil-gas-lng-surge-central-banks-inflation-risk.html",
+          "published": "Wed, 04 Mar 2026 05:32:45 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "As Trump declares inflation tamed, Iran conflict threatens new price pressures",
@@ -80,18 +92,6 @@
           "title": "Are Jack Dorsey's aggressive job cuts the start of an AI jobs apocalypse? Economists weigh in",
           "link": "https://www.cnbc.com/2026/02/27/are-dorseys-giant-job-cuts-the-start-of-an-ai-jobs-apocalypse-economists-weigh-in.html",
           "published": "Fri, 27 Feb 2026 19:53:56 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Core wholesale prices rose 0.8% in January, much more than expected",
-          "link": "https://www.cnbc.com/2026/02/27/ppi-january-2026-.html",
-          "published": "Fri, 27 Feb 2026 14:29:19 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Trump insists trade deals safe after Supreme Court ruling upends tariff authority, but partners aren’t so sure",
-          "link": "https://www.cnbc.com/2026/02/26/trump-state-of-the-union-supreme-court-tariffs-trade-deals-ieepa-section-301-232-122.html",
-          "published": "Thu, 26 Feb 2026 07:45:05 GMT"
         }
       ]
     }
