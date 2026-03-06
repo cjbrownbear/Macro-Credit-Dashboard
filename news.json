@@ -1,62 +1,86 @@
 {
-  "updated": "2026-03-05T14:06:27Z",
+  "updated": "2026-03-06T14:00:37Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Berkshire Hathaway begins repurchasing shares, CEO Greg Abel buys $15 million in stock",
-          "link": "https://www.cnbc.com/2026/03/05/berkshire-hathaway-begins-repurchasing-shares-ceo-greg-abel-buys-15-million-in-stock-.html",
-          "published": "Thu, 05 Mar 2026 13:22:32 GMT"
+          "title": "U.S. payrolls unexpectedly fell by 92,000 in February; unemployment rate rises to 4.4%",
+          "link": "https://www.cnbc.com/2026/03/06/february-2026-jobs-report.html",
+          "published": "Fri, 06 Mar 2026 13:58:35 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Iran war threatens $11.7 trillion global travel industry as passengers get caught in crossfire",
-          "link": "https://www.cnbc.com/2026/03/05/iran-war-travel-flights-cruise-hotels.html",
-          "published": "Thu, 05 Mar 2026 12:49:07 GMT"
+          "title": "Global oil benchmark Brent crude breaks above $90 a barrel amid Iran war, U.S. crude tops $87",
+          "link": "https://www.cnbc.com/2026/03/06/iran-us-war-oil-prices-brent-wti-barrel-futures.html",
+          "published": "Fri, 06 Mar 2026 14:00:14 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Merkley proposes prediction market ban for government officials after Maduro, Iran bets",
-          "link": "https://www.cnbc.com/2026/03/05/prediction-markets-merkley-ban-iran.html",
-          "published": "Thu, 05 Mar 2026 13:54:47 GMT"
+          "title": "Trump wants U.S. Navy to escort tankers through the Gulf. Why that plan may not work",
+          "link": "https://www.cnbc.com/2026/03/06/trump-navy-strait-hormuz-iran-oil-tanker.html",
+          "published": "Fri, 06 Mar 2026 12:04:40 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Spain rejects White House claim it agreed to cooperate with U.S. forces amid Iran war",
-          "link": "https://www.cnbc.com/2026/03/05/iran-war-us-spain-trump-sanchez-defense-trade-eu.html",
-          "published": "Thu, 05 Mar 2026 12:11:43 GMT"
+          "title": "Samsung reveals first details of its AI smart glasses to CNBC",
+          "link": "https://www.cnbc.com/2026/03/06/samsung-ai-smart-glasses-first-details-specs-release-date.html",
+          "published": "Fri, 06 Mar 2026 13:15:43 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Why Iran war oil price shock won't stop Fed pick Kevin Warsh from cutting interest rates",
-          "link": "https://www.cnbc.com/2026/03/05/iran-oil-fed-kevin-warsh.html",
-          "published": "Thu, 05 Mar 2026 12:12:15 GMT"
+          "title": "Here's how the U.S.-Iran war is already hitting consumers' pocketbooks",
+          "link": "https://www.cnbc.com/2026/03/06/us-iran-war-gas-mortgage-markets.html",
+          "published": "Fri, 06 Mar 2026 13:57:57 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Dubai scrambles to save its reputation as a haven for the rich amid U.S.-Iran war",
-          "link": "https://www.cnbc.com/2026/03/05/iran-war-dubai-rich.html",
-          "published": "Thu, 05 Mar 2026 13:59:50 GMT"
+          "title": "United Airlines CEO: Fuel spike will hit results, but travel demand hasn't taken 'even a tiny step back'",
+          "link": "https://www.cnbc.com/2026/03/06/united-airlines-ceo-scott-kirby.html",
+          "published": "Fri, 06 Mar 2026 13:22:56 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Stock market today: Dow, S&P 500, Nasdaq futures fall after Wall Street's bounce back",
-          "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-fall-after-wall-streets-bounce-back-235517929.html",
-          "published": "2026-03-04T23:55:17Z"
+          "title": "SES AI Q4 Earnings Call Highlights",
+          "link": "https://finance.yahoo.com/news/ses-ai-q4-earnings-call-014828059.html",
+          "published": "2026-03-05T01:48:28Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Meros Investment Management Sold 396,804 Shares of Photronics Stock",
-          "link": "https://finance.yahoo.com/news/meros-investment-management-sold-396-135146236.html",
-          "published": "2026-03-05T13:51:46Z"
+          "title": "Mizuho Downgrades AES After $10.7 Billion Takeover Agreement",
+          "link": "https://finance.yahoo.com/news/mizuho-downgrades-aes-10-7-014738114.html",
+          "published": "2026-03-05T01:47:38Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "U.S. payrolls unexpectedly fell by 92,000 in February; unemployment rate rises to 4.4%",
+          "link": "https://www.cnbc.com/2026/03/06/february-2026-jobs-report.html",
+          "published": "Fri, 06 Mar 2026 13:58:35 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Here's how the U.S.-Iran war is already hitting consumers' pocketbooks",
+          "link": "https://www.cnbc.com/2026/03/06/us-iran-war-gas-mortgage-markets.html",
+          "published": "Fri, 06 Mar 2026 13:57:57 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "UAE mulls freezing Iranian assets as Middle East conflict escalates: WSJ",
+          "link": "https://www.cnbc.com/2026/03/06/uae-mulls-freezing-iranian-assets-as-middle-east-conflict-escalates-wsj-.html",
+          "published": "Fri, 06 Mar 2026 13:01:34 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "The February jobs numbers are coming out Friday. Here's what to expect",
+          "link": "https://www.cnbc.com/2026/03/05/february-2026-jobs-report-preview.html",
+          "published": "Thu, 05 Mar 2026 19:49:12 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Private companies added 63,000 jobs in February, January revised to just 11,000 additions, ADP says",
@@ -68,30 +92,6 @@
           "title": "Middle East conflict poses fresh test to central banks as oil shock fuels inflation",
           "link": "https://www.cnbc.com/2026/03/04/iran-israel-us-war-middle-east-conflict-oil-gas-lng-surge-central-banks-inflation-risk.html",
           "published": "Wed, 04 Mar 2026 05:32:45 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "As Trump declares inflation tamed, Iran conflict threatens new price pressures",
-          "link": "https://www.cnbc.com/2026/03/02/as-trump-declares-inflation-tamed-iran-conflict-threatens-new-price-pressures.html",
-          "published": "Mon, 02 Mar 2026 20:24:54 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Why Iran should not count on allies Russia and China to come to its aid",
-          "link": "https://www.cnbc.com/2026/03/02/iran-china-russia-strikes-assistance-alliance-weapons-missiles-geopolitics-oil-prices-ukraine.html",
-          "published": "Tue, 03 Mar 2026 06:11:17 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Iran conflict: Where things stand, global responses — and what comes next",
-          "link": "https://www.cnbc.com/2026/03/02/iran-israel-us-conflict-oil-jumps-trump-netanyahu-what-is-next.html",
-          "published": "Mon, 02 Mar 2026 14:34:45 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Are Jack Dorsey's aggressive job cuts the start of an AI jobs apocalypse? Economists weigh in",
-          "link": "https://www.cnbc.com/2026/02/27/are-dorseys-giant-job-cuts-the-start-of-an-ai-jobs-apocalypse-economists-weigh-in.html",
-          "published": "Fri, 27 Feb 2026 19:53:56 GMT"
         }
       ]
     }
