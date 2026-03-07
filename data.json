@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-06T14:00:36Z",
+  "updated": "2026-03-07T13:48:09Z",
   "overall_status": "tripwire",
   "executive_summary": {
-    "text": "Overall status is Tripwire / Watch. Across the dashboard: 6 healthy, 2 tripwire, 0 stress. Biggest YoY moves: Revolving Consumer Credit (Δ 1y: +31594B (+2.4%)); Initial Jobless Claims (Δ 1y: -30000K (-12.3%)); Job Openings (Δ 1y: -0.97M (-12.9%)).",
-    "updated": "2026-03-06T14:00:36Z",
+    "text": "Overall status is Tripwire / Watch. Across the dashboard: 6 healthy, 2 tripwire, 0 stress. Biggest YoY moves: Initial Jobless Claims (Δ 1y: -30000K (-12.3%)); Revolving Consumer Credit (Δ 1y: +24724B (+1.9%)); Job Openings (Δ 1y: -0.97M (-12.9%)).",
+    "updated": "2026-03-07T13:48:09Z",
     "overall": "tripwire"
   },
   "kpis": [
@@ -195,16 +195,15 @@
       "unit": "usd_b",
       "status": "tripwire",
       "status_label": "Tripwire",
-      "value": 1328559.61,
-      "value_str": "$1,328,560B",
-      "as_of": "Dec 2025",
-      "avg10": 1101106.887024793,
-      "avg_str": "$1,101,107B",
-      "delta_abs": 31594.050000000047,
-      "delta_pct": 0.024359976065979765,
-      "delta_str": "Δ 1y: +31594B (+2.4%)",
+      "value": 1328986.66,
+      "value_str": "$1,328,987B",
+      "as_of": "Jan 2026",
+      "avg10": 1104597.8125619835,
+      "avg_str": "$1,104,598B",
+      "delta_abs": 24724.11999999988,
+      "delta_pct": 0.01895639814971599,
+      "delta_str": "Δ 1y: +24724B (+1.9%)",
       "spark": [
-        1310033.54,
         1320172.41,
         1322156.8,
         1324876.54,
@@ -222,12 +221,13 @@
         1301496.38,
         1300226.33,
         1300318.0,
-        1310909.44,
-        1306123.16,
-        1310561.74,
-        1316400.1,
-        1314713.24,
-        1328559.61
+        1310908.54,
+        1306121.23,
+        1310561.76,
+        1315011.6,
+        1311884.89,
+        1324277.25,
+        1328986.66
       ],
       "definition": "Total revolving consumer credit outstanding (primarily credit cards).",
       "why": "Rapid growth can signal households leaning on credit."
@@ -285,16 +285,15 @@
       "unit": "pct",
       "status": "healthy",
       "status_label": "Healthy",
-      "value": 4.3,
-      "value_str": "4.30%",
-      "as_of": "Jan 2026",
-      "avg10": 4.581666666666664,
+      "value": 4.4,
+      "value_str": "4.40%",
+      "as_of": "Feb 2026",
+      "avg10": 4.578333333333331,
       "avg_str": "4.58%",
-      "delta_abs": 0.2999999999999998,
-      "delta_pct": 0.07499999999999996,
-      "delta_str": "Δ 1y: +0.30pp (+7.5%)",
+      "delta_abs": 0.20000000000000018,
+      "delta_pct": 0.04761904761904766,
+      "delta_str": "Δ 1y: +0.20pp (+4.8%)",
       "spark": [
-        3.7,
         3.9,
         3.9,
         3.9,
@@ -317,7 +316,8 @@
         4.4,
         4.5,
         4.4,
-        4.3
+        4.3,
+        4.4
       ],
       "definition": "Headline unemployment rate (U-3).",
       "why": "Rising unemployment tends to worsen credit performance."
@@ -8443,33 +8443,38 @@
         },
         {
           "date": "2025-07-01",
-          "value": 1310909.44,
+          "value": 1310908.54,
           "value_str": "$1,310,909B"
         },
         {
           "date": "2025-08-01",
-          "value": 1306123.16,
-          "value_str": "$1,306,123B"
+          "value": 1306121.23,
+          "value_str": "$1,306,121B"
         },
         {
           "date": "2025-09-01",
-          "value": 1310561.74,
+          "value": 1310561.76,
           "value_str": "$1,310,562B"
         },
         {
           "date": "2025-10-01",
-          "value": 1316400.1,
-          "value_str": "$1,316,400B"
+          "value": 1315011.6,
+          "value_str": "$1,315,012B"
         },
         {
           "date": "2025-11-01",
-          "value": 1314713.24,
-          "value_str": "$1,314,713B"
+          "value": 1311884.89,
+          "value_str": "$1,311,885B"
         },
         {
           "date": "2025-12-01",
-          "value": 1328559.61,
-          "value_str": "$1,328,560B"
+          "value": 1324277.25,
+          "value_str": "$1,324,277B"
+        },
+        {
+          "date": "2026-01-01",
+          "value": 1328986.66,
+          "value_str": "$1,328,987B"
         }
       ],
       "bench_points": [
@@ -11191,30 +11196,34 @@
         },
         {
           "date": "2025-07-01",
-          "value": 1086103.49375
+          "value": 1086103.48625
         },
         {
           "date": "2025-08-01",
-          "value": 1089366.2358333333
+          "value": 1089366.21225
         },
         {
           "date": "2025-09-01",
-          "value": 1092615.0930833335
+          "value": 1092615.0696666667
         },
         {
           "date": "2025-10-01",
-          "value": 1095904.00025
+          "value": 1095892.406
         },
         {
           "date": "2025-11-01",
-          "value": 1099211.4476666667
+          "value": 1099176.2838333333
         },
         {
           "date": "2025-12-01",
-          "value": 1102798.7556666667
+          "value": 1102727.9054999999
+        },
+        {
+          "date": "2026-01-01",
+          "value": 1106272.8379166669
         }
       ],
-      "summary_text": "Latest: $1,328,560B (Tripwire). Δ 1y: +31594B (+2.4%)."
+      "summary_text": "Latest: $1,328,987B (Tripwire). Δ 1y: +24724B (+1.9%)."
     },
     {
       "key": "JTSJOL_mil",
@@ -18579,6 +18588,11 @@
           "date": "2026-01-01",
           "value": 4.3,
           "value_str": "4.30%"
+        },
+        {
+          "date": "2026-02-01",
+          "value": 4.4,
+          "value_str": "4.40%"
         }
       ],
       "bench_points": [
@@ -22281,9 +22295,13 @@
         {
           "date": "2026-01-01",
           "value": 4.581666666666667
+        },
+        {
+          "date": "2026-02-01",
+          "value": 4.578333333333333
         }
       ],
-      "summary_text": "Latest: 4.30% (Healthy). Δ 1y: +0.30pp (+7.5%)."
+      "summary_text": "Latest: 4.40% (Healthy). Δ 1y: +0.20pp (+4.8%)."
     },
     {
       "key": "ICSA_thou",
@@ -61160,6 +61178,7 @@
     "2026-01-17",
     "2026-01-24",
     "2026-01-31",
+    "2026-02-01",
     "2026-02-07",
     "2026-02-14",
     "2026-02-21",

@@ -1,56 +1,56 @@
 {
-  "updated": "2026-03-06T14:00:37Z",
+  "updated": "2026-03-07T13:48:10Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "U.S. payrolls unexpectedly fell by 92,000 in February; unemployment rate rises to 4.4%",
-          "link": "https://www.cnbc.com/2026/03/06/february-2026-jobs-report.html",
-          "published": "Fri, 06 Mar 2026 13:58:35 GMT"
+          "title": "Iran war threatens to scramble the 'affordability' midterm",
+          "link": "https://www.cnbc.com/2026/03/07/iran-war-affordability-midterm.html",
+          "published": "Sat, 07 Mar 2026 13:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Global oil benchmark Brent crude breaks above $90 a barrel amid Iran war, U.S. crude tops $87",
+          "title": "Berkshire CEO Greg Abel on working with Buffett, Kraft Heinz and using all his salary to buy the stock",
+          "link": "https://www.cnbc.com/2026/03/07/berkshire-ceo-greg-abel-on-working-with-buffett-kraft-heinz-and-using-all-his-salary-to-buy-the-stock.html",
+          "published": "Sat, 07 Mar 2026 13:31:42 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "How China is challenging the U.S. to become the next great space power",
+          "link": "https://www.cnbc.com/2026/03/07/china-us-space-race-rockets.html",
+          "published": "Sat, 07 Mar 2026 13:00:01 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "Oil surges 35% this week for biggest gain in futures trading history dating back to 1983",
           "link": "https://www.cnbc.com/2026/03/06/iran-us-war-oil-prices-brent-wti-barrel-futures.html",
-          "published": "Fri, 06 Mar 2026 14:00:14 GMT"
+          "published": "Fri, 06 Mar 2026 20:23:08 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump wants U.S. Navy to escort tankers through the Gulf. Why that plan may not work",
-          "link": "https://www.cnbc.com/2026/03/06/trump-navy-strait-hormuz-iran-oil-tanker.html",
-          "published": "Fri, 06 Mar 2026 12:04:40 GMT"
+          "title": "Inside the booming business of wellness third spaces and membership clubs",
+          "link": "https://www.cnbc.com/2026/03/07/wellness-third-spaces-othership-bathhouse-glo30.html",
+          "published": "Sat, 07 Mar 2026 13:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Samsung reveals first details of its AI smart glasses to CNBC",
-          "link": "https://www.cnbc.com/2026/03/06/samsung-ai-smart-glasses-first-details-specs-release-date.html",
-          "published": "Fri, 06 Mar 2026 13:15:43 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "Here's how the U.S.-Iran war is already hitting consumers' pocketbooks",
-          "link": "https://www.cnbc.com/2026/03/06/us-iran-war-gas-mortgage-markets.html",
-          "published": "Fri, 06 Mar 2026 13:57:57 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "United Airlines CEO: Fuel spike will hit results, but travel demand hasn't taken 'even a tiny step back'",
-          "link": "https://www.cnbc.com/2026/03/06/united-airlines-ceo-scott-kirby.html",
-          "published": "Fri, 06 Mar 2026 13:22:56 GMT"
+          "title": "FDA vaccine head will step down in April after string of controversial decisions",
+          "link": "https://www.cnbc.com/2026/03/06/fda-vaccine-head-prasad-step-down.html",
+          "published": "Fri, 06 Mar 2026 23:23:33 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "SES AI Q4 Earnings Call Highlights",
-          "link": "https://finance.yahoo.com/news/ses-ai-q4-earnings-call-014828059.html",
-          "published": "2026-03-05T01:48:28Z"
+          "title": "EPR Properties price target raised to $62 from $60 at Truist",
+          "link": "https://finance.yahoo.com/news/epr-properties-price-target-raised-132636137.html",
+          "published": "2026-03-07T13:26:36Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Mizuho Downgrades AES After $10.7 Billion Takeover Agreement",
-          "link": "https://finance.yahoo.com/news/mizuho-downgrades-aes-10-7-014738114.html",
-          "published": "2026-03-05T01:47:38Z"
+          "title": "23-year-old inherited $450K, parked it and doesn't know what to do next. What Dave Ramsey says will get the 'most lift'",
+          "link": "https://finance.yahoo.com/news/23-old-inherited-450k-parked-131300791.html",
+          "published": "2026-03-07T13:13:00Z"
         }
       ]
     },
@@ -59,15 +59,21 @@
       "items": [
         {
           "source": "CNBC Economy",
+          "title": "San Francisco Fed's Daly says jobs report complicates interest rate call",
+          "link": "https://www.cnbc.com/2026/03/06/san-francisco-feds-daly-says-jobs-report-complicates-interest-rate-call.html",
+          "published": "Fri, 06 Mar 2026 16:11:33 GMT"
+        },
+        {
+          "source": "CNBC Economy",
           "title": "U.S. payrolls unexpectedly fell by 92,000 in February; unemployment rate rises to 4.4%",
           "link": "https://www.cnbc.com/2026/03/06/february-2026-jobs-report.html",
-          "published": "Fri, 06 Mar 2026 13:58:35 GMT"
+          "published": "Fri, 06 Mar 2026 16:12:55 GMT"
         },
         {
           "source": "CNBC Economy",
           "title": "Here's how the U.S.-Iran war is already hitting consumers' pocketbooks",
           "link": "https://www.cnbc.com/2026/03/06/us-iran-war-gas-mortgage-markets.html",
-          "published": "Fri, 06 Mar 2026 13:57:57 GMT"
+          "published": "Fri, 06 Mar 2026 17:01:36 GMT"
         },
         {
           "source": "CNBC Economy",
@@ -86,12 +92,6 @@
           "title": "Private companies added 63,000 jobs in February, January revised to just 11,000 additions, ADP says",
           "link": "https://www.cnbc.com/2026/03/04/private-companies-added-63000-jobs-in-february-january-revised-to-just-11000-additions-adp-says.html",
           "published": "Wed, 04 Mar 2026 15:17:46 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Middle East conflict poses fresh test to central banks as oil shock fuels inflation",
-          "link": "https://www.cnbc.com/2026/03/04/iran-israel-us-war-middle-east-conflict-oil-gas-lng-surge-central-banks-inflation-risk.html",
-          "published": "Wed, 04 Mar 2026 05:32:45 GMT"
         }
       ]
     }
