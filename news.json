@@ -1,62 +1,68 @@
 {
-  "updated": "2026-03-07T13:48:10Z",
+  "updated": "2026-03-08T13:48:48Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Iran war threatens to scramble the 'affordability' midterm",
+          "title": "Iran continues to hit Gulf countries as Israeli strikes intensify; Tehran says new leader appointed",
+          "link": "https://www.cnbc.com/2026/03/08/iranian-projectiles-continue-to-strike-gulf-countries-infrastructure.html",
+          "published": "Sun, 08 Mar 2026 13:42:34 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "China says 'thorough preparations' needed as Trump-Xi meeting hangs in the balance amid Iran war",
+          "link": "https://www.cnbc.com/2026/03/08/china-says-thorough-preparations-needed-ahead-of-trump-xi-meeting.html",
+          "published": "Sun, 08 Mar 2026 07:17:53 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "Global week ahead: Diplomacy in ruins as G7 meets on Iran",
+          "link": "https://www.cnbc.com/2026/03/08/global-week-ahead-diplomacy-in-ruins-as-g7-meets-on-iran.html",
+          "published": "Sun, 08 Mar 2026 11:12:45 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "Top Wall Street analysts are bullish on these 3 stocks despite ongoing volatility",
+          "link": "https://www.cnbc.com/2026/03/08/top-analysts-are-bullish-on-these-3-stocks-despite-ongoing-volatility.html",
+          "published": "Sun, 08 Mar 2026 12:56:07 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "Iran war could make affordability bigger issue in 2026 elections",
           "link": "https://www.cnbc.com/2026/03/07/iran-war-affordability-midterm.html",
-          "published": "Sat, 07 Mar 2026 13:00:01 GMT"
+          "published": "Sat, 07 Mar 2026 17:27:55 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Berkshire CEO Greg Abel on working with Buffett, Kraft Heinz and using all his salary to buy the stock",
-          "link": "https://www.cnbc.com/2026/03/07/berkshire-ceo-greg-abel-on-working-with-buffett-kraft-heinz-and-using-all-his-salary-to-buy-the-stock.html",
-          "published": "Sat, 07 Mar 2026 13:31:42 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "How China is challenging the U.S. to become the next great space power",
-          "link": "https://www.cnbc.com/2026/03/07/china-us-space-race-rockets.html",
-          "published": "Sat, 07 Mar 2026 13:00:01 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "Oil surges 35% this week for biggest gain in futures trading history dating back to 1983",
-          "link": "https://www.cnbc.com/2026/03/06/iran-us-war-oil-prices-brent-wti-barrel-futures.html",
-          "published": "Fri, 06 Mar 2026 20:23:08 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "Inside the booming business of wellness third spaces and membership clubs",
-          "link": "https://www.cnbc.com/2026/03/07/wellness-third-spaces-othership-bathhouse-glo30.html",
-          "published": "Sat, 07 Mar 2026 13:00:01 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "FDA vaccine head will step down in April after string of controversial decisions",
-          "link": "https://www.cnbc.com/2026/03/06/fda-vaccine-head-prasad-step-down.html",
-          "published": "Fri, 06 Mar 2026 23:23:33 GMT"
+          "title": "In a jobs apocalypse, look to ‘AI-proof’ skilled trades, career experts say",
+          "link": "https://www.cnbc.com/2026/03/08/jobs-apocalypse-ai-proof-skilled-trades.html",
+          "published": "Sun, 08 Mar 2026 13:30:01 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "EPR Properties price target raised to $62 from $60 at Truist",
-          "link": "https://finance.yahoo.com/news/epr-properties-price-target-raised-132636137.html",
-          "published": "2026-03-07T13:26:36Z"
+          "title": "I’ve been advising wealthy family offices on real estate for decades. This market requires another look at your 100-year plan",
+          "link": "https://finance.yahoo.com/news/ve-advising-wealthy-family-offices-120000971.html",
+          "published": "2026-03-07T12:00:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "23-year-old inherited $450K, parked it and doesn't know what to do next. What Dave Ramsey says will get the 'most lift'",
-          "link": "https://finance.yahoo.com/news/23-old-inherited-450k-parked-131300791.html",
-          "published": "2026-03-07T13:13:00Z"
+          "title": "Ray Dalio says America is facing a ‘debt death spiral’ — but you can protect your portfolio with these 3 assets",
+          "link": "https://finance.yahoo.com/news/ray-dalio-says-america-facing-120500455.html",
+          "published": "2026-03-07T12:05:00Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "One year after Trump’s sovereignty threats, Canadians keep ‘elbows up’",
+          "link": "https://www.cnbc.com/2026/03/07/canada-boycott-trump-travel-alcohol-economy.html",
+          "published": "Sat, 07 Mar 2026 20:09:03 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "San Francisco Fed's Daly says jobs report complicates interest rate call",
@@ -86,12 +92,6 @@
           "title": "The February jobs numbers are coming out Friday. Here's what to expect",
           "link": "https://www.cnbc.com/2026/03/05/february-2026-jobs-report-preview.html",
           "published": "Thu, 05 Mar 2026 19:49:12 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Private companies added 63,000 jobs in February, January revised to just 11,000 additions, ADP says",
-          "link": "https://www.cnbc.com/2026/03/04/private-companies-added-63000-jobs-in-february-january-revised-to-just-11000-additions-adp-says.html",
-          "published": "Wed, 04 Mar 2026 15:17:46 GMT"
         }
       ]
     }
