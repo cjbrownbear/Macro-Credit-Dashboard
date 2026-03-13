@@ -1,62 +1,74 @@
 {
-  "updated": "2026-03-12T14:09:14Z",
+  "updated": "2026-03-13T14:05:34Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Strait of Hormuz must remain closed as 'tool to pressure enemy,' Iran's new supreme leader says",
-          "link": "https://www.cnbc.com/2026/03/12/strait-of-hormuz-closure-iran-oil-prices-mojtaba-khamenei.html",
-          "published": "Thu, 12 Mar 2026 14:07:22 GMT"
+          "title": "Fourth-quarter GDP revised down to just 0.7% growth; January core inflation was 3.1%",
+          "link": "https://www.cnbc.com/2026/03/13/fourth-quarter-gdp-revised-down-to-just-0point7percent-growth-january-core-inflation-was-3point1percent.html",
+          "published": "Fri, 13 Mar 2026 14:03:05 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Energy Secretary Wright says U.S. 'not ready' to escort oil tankers through Strait of Hormuz yet",
-          "link": "https://www.cnbc.com/2026/03/12/energy-secretary-wright-says-us-not-ready-to-escort-tankers-through-strait-of-hormuz-yet.html",
-          "published": "Thu, 12 Mar 2026 13:59:19 GMT"
+          "title": "Pete Hegseth on Strait of Hormuz: 'Don't need to worry about it'",
+          "link": "https://www.cnbc.com/2026/03/13/iran-war-strait-of-hormuz-hegseth.html",
+          "published": "Fri, 13 Mar 2026 13:17:24 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Anthropic’s Claude would ‘pollute’ defense supply chain: Pentagon CTO",
-          "link": "https://www.cnbc.com/2026/03/12/anthropic-claude-emil-michael-defense.html",
-          "published": "Thu, 12 Mar 2026 13:44:26 GMT"
+          "title": "Oil holds near $100 as Trump says America has 'ammunition, and plenty of time’ to fight Iran war",
+          "link": "https://www.cnbc.com/2026/03/13/oil-100-price-brent-wti-trump-iran-war-surrender-khamenei.html",
+          "published": "Fri, 13 Mar 2026 13:05:17 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Palantir is still using Anthropic's Claude as Pentagon blacklist plays out, CEO Karp says",
-          "link": "https://www.cnbc.com/2026/03/12/karp-palantir-anthropic-claude-pentagon-blacklist.html",
-          "published": "Thu, 12 Mar 2026 13:48:03 GMT"
+          "title": "Four crew killed in U.S. refueling plane that crashed in Iraq, Pentagon says",
+          "link": "https://www.cnbc.com/2026/03/13/us-kc135-crash-iraq-iran-threats-shipping-attacks.html",
+          "published": "Fri, 13 Mar 2026 12:22:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "The two oil pipelines helping Saudi Arabia and UAE bypass the Strait of Hormuz",
-          "link": "https://www.cnbc.com/2026/03/12/strait-of-hormuz-oil-pipelines-iran-war-saudi-arabia-uae.html",
-          "published": "Thu, 12 Mar 2026 13:57:48 GMT"
+          "title": "U.S. launches fresh Section 301 probes into 60 economies over forced-labor trade practices",
+          "link": "https://www.cnbc.com/2026/03/13/us-section-301-probe-trade-trump-labor-practices.html",
+          "published": "Fri, 13 Mar 2026 06:25:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Dick's Sporting Goods issues weak profit guidance as Foot Locker merger weighs on bottom line",
-          "link": "https://www.cnbc.com/2026/03/12/dicks-sporting-goods-dks-earnings-q4-2025.html",
-          "published": "Thu, 12 Mar 2026 13:18:29 GMT"
+          "title": "India's Modi reaches out to Iran as energy crunch fears grip the South Asian nation",
+          "link": "https://www.cnbc.com/2026/03/13/indias-modi-reaches-out-to-iran-as-energy-crunch-fears-grip-the-south-asian-nation-.html",
+          "published": "Fri, 13 Mar 2026 13:27:18 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Should You Buy the iShares Silver ETF After Its 28% Correction? History Says This Could Happen Next.",
-          "link": "https://finance.yahoo.com/news/buy-ishares-silver-etf-28-133700787.html",
-          "published": "2026-03-12T13:37:00Z"
+          "title": "Asia rolls out four-day weeks and work-from-home as emergency measures to solve a fuel crisis caused by Iran war",
+          "link": "https://finance.yahoo.com/news/asia-rolls-four-day-weeks-020204436.html",
+          "published": "2026-03-12T02:02:04Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Garrett Motion (GTX) Had a Remarkable 2025. Here’s Why",
-          "link": "https://finance.yahoo.com/news/garrett-motion-gtx-had-remarkable-133615564.html",
-          "published": "2026-03-12T13:36:15Z"
+          "title": "Oil jumps to $100 per barrel and stocks sink worldwide with no clear end in sight for the Iran war",
+          "link": "https://finance.yahoo.com/news/brent-crude-oil-tops-100-030802210.html",
+          "published": "2026-03-12T03:08:02Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Fourth-quarter GDP revised down to just 0.7% growth; January core inflation was 3.1%",
+          "link": "https://www.cnbc.com/2026/03/13/fourth-quarter-gdp-revised-down-to-just-0point7percent-growth-january-core-inflation-was-3point1percent.html",
+          "published": "Fri, 13 Mar 2026 14:03:05 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Gig workers feel pain at the pump as gas prices hit 21-month highs",
+          "link": "https://www.cnbc.com/2026/03/12/gig-workers-gas-prices-aaa-iran.html",
+          "published": "Thu, 12 Mar 2026 15:40:51 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Why Section 301 probes matter — and what they mean for Trump's tariffs",
@@ -67,31 +79,19 @@
           "source": "CNBC Economy",
           "title": "Trump raises the stakes on China with Section 301 trade probe, weeks before Beijing summit",
           "link": "https://www.cnbc.com/2026/03/12/section-301-trade-probe-china-trump-xi-beijing-summit.html",
-          "published": "Thu, 12 Mar 2026 10:55:08 GMT"
+          "published": "Thu, 12 Mar 2026 14:36:35 GMT"
         },
         {
           "source": "CNBC Economy",
           "title": "U.S. deficit tops $1 trillion through February but runs below year-ago pace",
           "link": "https://www.cnbc.com/2026/03/11/us-deficit-tops-1-trillion-through-february-but-runs-below-year-ago-pace.html",
-          "published": "Wed, 11 Mar 2026 18:44:39 GMT"
+          "published": "Thu, 12 Mar 2026 14:46:48 GMT"
         },
         {
           "source": "CNBC Economy",
           "title": "Consumer prices rose 2.4% annually in February, as expected",
           "link": "https://www.cnbc.com/2026/03/11/cpi-inflation-report-february-2026.html",
           "published": "Wed, 11 Mar 2026 17:04:40 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Iran sends millions of oil barrels to China through Strait of Hormuz even as war chokes the waterway",
-          "link": "https://www.cnbc.com/2026/03/11/iran-ships-oil-china-strait-hormuz-closure-.html",
-          "published": "Wed, 11 Mar 2026 14:18:51 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Kevin Warsh faces an economic 'perfect storm' as he waits to take over as Fed chair",
-          "link": "https://www.cnbc.com/2026/03/10/kevin-warsh-faces-economic-perfect-storm-as-he-waits-to-take-over-as-fed-chair.html",
-          "published": "Tue, 10 Mar 2026 18:56:36 GMT"
         }
       ]
     }
