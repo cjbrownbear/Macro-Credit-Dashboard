@@ -1,62 +1,68 @@
 {
-  "updated": "2026-03-20T14:06:13Z",
+  "updated": "2026-03-21T13:50:54Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Super Micro shares tank 25% after employees charged with smuggling Nvidia chips to China",
-          "link": "https://www.cnbc.com/2026/03/19/us-tech-execs-smuggled-nvidia-chips-to-china-prosecutors-say.html",
-          "published": "Fri, 20 Mar 2026 13:13:23 GMT"
+          "title": "Trump says he doesn't want Iran war ceasefire, but is considering 'winding down' military ops",
+          "link": "https://www.cnbc.com/2026/03/20/trump-iran-war-ceasefire.html",
+          "published": "Fri, 20 Mar 2026 22:23:55 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump admin unveils national AI policy framework to limit state power",
-          "link": "https://www.cnbc.com/2026/03/20/trump-ai-policy-framework.html",
-          "published": "Fri, 20 Mar 2026 13:57:56 GMT"
+          "title": "OpenClaw's ChatGPT moment sparks concern that AI models are becoming commodities",
+          "link": "https://www.cnbc.com/2026/03/21/openclaw-chatgpt-moment-sparks-concern-ai-models-becoming-commodities.html",
+          "published": "Sat, 21 Mar 2026 12:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Fed Governor Waller urges caution for now, says rate cuts possible later in the year",
-          "link": "https://www.cnbc.com/2026/03/20/fed-gov-waller-urges-caution-for-now-cuts-possible-later-in-the-year.html",
-          "published": "Fri, 20 Mar 2026 13:36:43 GMT"
+          "title": "Analysis: Trump's unshackled presidency puts him at the center of the economy",
+          "link": "https://www.cnbc.com/2026/03/21/trump-oil-fed-economy-iran-war.html",
+          "published": "Sat, 21 Mar 2026 12:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "U.S. says Cuba is prohibited from taking Russian oil as two tankers head to island",
-          "link": "https://www.cnbc.com/2026/03/20/cuba-crisis-fuel-tankers-russia-oil-gas-energy-us-trump.html",
-          "published": "Fri, 20 Mar 2026 08:54:28 GMT"
+          "title": "GLP-1 drugs are changing how Americans eat. Food companies are racing to catch up",
+          "link": "https://www.cnbc.com/2026/03/21/glp-1-diets-restaurants-protein-fiber-weight-loss-drugs.html",
+          "published": "Sat, 21 Mar 2026 12:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump invokes emergency powers with $23 billion in Gulf arms sales as Iran war wages on: WSJ report",
-          "link": "https://www.cnbc.com/2026/03/20/us-arms-weapon-sales-middle-east-iran-israel-war.html",
-          "published": "Fri, 20 Mar 2026 07:35:51 GMT"
+          "title": "Buffett defends 'Giving Pledge' against Thiel and 'billionaire backlash'",
+          "link": "https://www.cnbc.com/2026/03/21/buffett-defends-giving-pledge-against-thiel-and-billionaire-backlash.html",
+          "published": "Sat, 21 Mar 2026 12:22:34 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Nvidia's Huang pitches AI tokens on top of salary as agents reshape how humans work",
-          "link": "https://www.cnbc.com/2026/03/20/nvidia-ai-agents-tokens-human-workers-engineer-jobs-unemployment-jensen-huang.html",
-          "published": "Fri, 20 Mar 2026 07:57:45 GMT"
+          "title": "How CNBC Cures is bringing rare disease stories to a national audience",
+          "link": "https://www.cnbc.com/2026/03/20/how-cnbc-cures-is-bringing-rare-disease-stories-to-a-national-audience.html",
+          "published": "Fri, 20 Mar 2026 10:10:01 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Is NVIDIA Really a “Value Stock” at Under $200?",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-really-value-stock-under-135626977.html",
-          "published": "2026-03-20T13:56:26Z"
+          "title": "1 Clear Signal to Buy International Business Machines Stock Right Now",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/1-clear-signal-buy-international-133500244.html",
+          "published": "2026-03-21T13:35:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Super Micro Dives As U.S. Accuses Execs Of Smuggling Nvidia Chips To China",
-          "link": "https://www.investors.com/news/technology/super-micro-stock-dives-us-accuses-execs-smuggling-nvidia-chips-china/?src=A00220&yptr=yahoo",
-          "published": "2026-03-20T13:52:13Z"
+          "title": "Is Chevron (CVX) The Best Stock to Benefit From Oil Price Surge Amid Iran War?",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/chevron-cvx-best-stock-benefit-132440515.html",
+          "published": "2026-03-21T13:24:40Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Elizabeth Warren demands answers on costs, economic impact of 'illegal and reckless war'",
+          "link": "https://www.cnbc.com/2026/03/20/elizabeth-warren-demands-answers-on-costs-economic-impact-of-illegal-and-reckless-war.html",
+          "published": "Fri, 20 Mar 2026 15:33:25 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Traders now see little chance of an interest rate cut this year following Fed decision",
@@ -86,12 +92,6 @@
           "title": "Trump signals possible delay to Beijing summit as U.S. pressures China to help reopen Strait of Hormuz",
           "link": "https://www.cnbc.com/2026/03/16/trump-possible-delay-beijing-summit-china-iran-strait-of-hormuz-.html",
           "published": "Mon, 16 Mar 2026 12:07:55 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Fourth-quarter GDP revised down to just 0.7% growth; January core inflation was 3.1%",
-          "link": "https://www.cnbc.com/2026/03/13/fourth-quarter-gdp-revised-down-to-just-0point7percent-growth-january-core-inflation-was-3point1percent.html",
-          "published": "Fri, 13 Mar 2026 16:47:25 GMT"
         }
       ]
     }
