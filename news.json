@@ -1,62 +1,68 @@
 {
-  "updated": "2026-03-23T14:19:56Z",
+  "updated": "2026-03-24T14:22:30Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Trump tells CNBC 'we are very intent on making a deal' with Iran",
-          "link": "https://www.cnbc.com/2026/03/23/trump-iran-war-power-plants-energy-infrastructure-middle-east.html",
-          "published": "Mon, 23 Mar 2026 14:08:26 GMT"
+          "title": "Moody's cuts rating on private credit fund run by KKR and Future Standard to junk as bad loans grow",
+          "link": "https://www.cnbc.com/2026/03/24/moodys-private-credit-fund-kkr-future-standard-junk.html",
+          "published": "Tue, 24 Mar 2026 14:11:40 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Oil tumbles after Trump puts hold on U.S. strikes against Iran energy infrastructure for five days",
-          "link": "https://www.cnbc.com/2026/03/23/oil-prices-trump-iran-strait-of-hormuz-wti-crude-middle-east-lng-gas.html",
-          "published": "Mon, 23 Mar 2026 14:10:39 GMT"
+          "title": "Oil rises with Brent climbing back above $100 as optimism fades over Iran war de-escalation",
+          "link": "https://www.cnbc.com/2026/03/24/oil-prices-today-wti-brent-middle-east-iran-war.html",
+          "published": "Tue, 24 Mar 2026 13:07:24 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Fed's Goolsbee says he's worried about inflation in 'fraught but intense' climate",
-          "link": "https://www.cnbc.com/2026/03/23/feds-goolsbee-says-hes-worried-about-inflation-in-fraught-but-intense-climate.html",
-          "published": "Mon, 23 Mar 2026 13:49:54 GMT"
+          "title": "United ditches more economy seats to make room for bigger premium cabins with new layouts",
+          "link": "https://www.cnbc.com/2026/03/24/united-airlines-premium-seats.html",
+          "published": "Tue, 24 Mar 2026 12:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "'This is insane.' Long lines plague U.S. airports as TSA officers face second missed paycheck in shutdown",
-          "link": "https://www.cnbc.com/2026/03/23/airport-lines-government-shutdown-tsa.html",
-          "published": "Mon, 23 Mar 2026 14:07:01 GMT"
+          "title": "EV battery startup pivots to defense industry amid Iran war, weak electric vehicle market",
+          "link": "https://www.cnbc.com/2026/03/24/ev-battery-startup-sion-power-defense-drones.html",
+          "published": "Tue, 24 Mar 2026 12:52:29 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "BlackRock’s Larry Fink warns against market timing, says missing best days can halve returns",
-          "link": "https://www.cnbc.com/2026/03/23/blackrocks-larry-fink-warns-against-trying-to-time-the-market-.html",
-          "published": "Mon, 23 Mar 2026 14:06:43 GMT"
+          "title": "Amazon's Zoox to debut robotaxis in Austin, Miami later this year as it awaits paid ride approval",
+          "link": "https://www.cnbc.com/2026/03/24/amazon-zoox-robotaxi-rides-austin-miami.html",
+          "published": "Tue, 24 Mar 2026 13:23:11 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "U.S. executives, from Apple to Eli Lilly, revamp their push into the world's second-largest economy at the China Development Forum",
-          "link": "https://www.cnbc.com/2026/03/23/apple-eli-lilly-us-china-market-push-trade-truce.html",
-          "published": "Mon, 23 Mar 2026 14:05:47 GMT"
+          "title": "DCCC launches geotargeted digital ad campaign hitting GOP for gas prices",
+          "link": "https://www.cnbc.com/2026/03/24/dccc-ad-campaign-gas-prices-trump-2026-election.html",
+          "published": "Tue, 24 Mar 2026 11:30:01 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Rio Tinto, LCL sign agreement for Ono Project in Papua New Guinea",
-          "link": "https://finance.yahoo.com/markets/commodities/articles/rio-tinto-lcl-sign-agreement-140033551.html",
-          "published": "2026-03-23T14:00:33Z"
+          "title": "Tesla’s European Sales Finally Increase. The Stock Rises.",
+          "link": "https://www.barrons.com/articles/tesla-stock-price-europe-ev-sales-9775dfdb?siteid=yhoof2&yptr=yahoo",
+          "published": "2026-03-24T14:09:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Stock market today: Dow, S&P 500, Nasdaq soar as Trump postpones Iran strike, citing 'very good' talks",
-          "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-soar-as-trump-postpones-iran-strike-citing-very-good-talks-133200376.html",
-          "published": "2026-03-23T13:32:00Z"
+          "title": "Why Citi still sees $150 oil",
+          "link": "https://finance.yahoo.com/news/why-citi-still-sees-150-oil-135622313.html",
+          "published": "2026-03-24T13:56:22Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "White House to pay TotalEnergies $1 billion to kill off East Coast wind farm projects",
+          "link": "https://www.cnbc.com/2026/03/24/us-to-pay-totalenergies-1-billion-to-kill-east-coast-wind-projects.html",
+          "published": "Tue, 24 Mar 2026 07:26:02 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Elizabeth Warren demands answers on costs, economic impact of 'illegal and reckless war'",
@@ -86,12 +92,6 @@
           "title": "Bessent says Treasury is not intervening in oil commodities markets and has no authority to do so",
           "link": "https://www.cnbc.com/2026/03/16/bessent-says-treasury-is-not-intervening-in-oil-commodities-markets-and-has-no-authority-to-do-so.html",
           "published": "Mon, 16 Mar 2026 14:25:00 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Trump signals possible delay to Beijing summit as U.S. pressures China to help reopen Strait of Hormuz",
-          "link": "https://www.cnbc.com/2026/03/16/trump-possible-delay-beijing-summit-china-iran-strait-of-hormuz-.html",
-          "published": "Mon, 16 Mar 2026 12:07:55 GMT"
         }
       ]
     }
