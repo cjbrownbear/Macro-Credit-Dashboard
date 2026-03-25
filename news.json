@@ -1,62 +1,74 @@
 {
-  "updated": "2026-03-24T14:22:30Z",
+  "updated": "2026-03-25T14:21:45Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Moody's cuts rating on private credit fund run by KKR and Future Standard to junk as bad loans grow",
-          "link": "https://www.cnbc.com/2026/03/24/moodys-private-credit-fund-kkr-future-standard-junk.html",
-          "published": "Tue, 24 Mar 2026 14:11:40 GMT"
+          "title": "Iran won't accept U.S. effort at ceasefire in war, state media reports",
+          "link": "https://www.cnbc.com/2026/03/25/iran-war-us-trump.html",
+          "published": "Wed, 25 Mar 2026 13:15:45 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Oil rises with Brent climbing back above $100 as optimism fades over Iran war de-escalation",
-          "link": "https://www.cnbc.com/2026/03/24/oil-prices-today-wti-brent-middle-east-iran-war.html",
-          "published": "Tue, 24 Mar 2026 13:07:24 GMT"
+          "title": "Recession odds climb on Wall Street as economy shows cracks beneath the surface",
+          "link": "https://www.cnbc.com/2026/03/25/recession-odds-climb-on-wall-street-as-economy-shows-cracks-beneath-the-surface.html",
+          "published": "Wed, 25 Mar 2026 13:22:06 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "United ditches more economy seats to make room for bigger premium cabins with new layouts",
-          "link": "https://www.cnbc.com/2026/03/24/united-airlines-premium-seats.html",
-          "published": "Tue, 24 Mar 2026 12:00:01 GMT"
+          "title": "Hugo Barra's return to Meta 5 years after exit underscores Zuckerberg's AI urgency",
+          "link": "https://www.cnbc.com/2026/03/25/hugo-barras-return-to-meta-5-years-after-exit-underscores-ai-urgency.html",
+          "published": "Wed, 25 Mar 2026 13:11:46 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "EV battery startup pivots to defense industry amid Iran war, weak electric vehicle market",
-          "link": "https://www.cnbc.com/2026/03/24/ev-battery-startup-sion-power-defense-drones.html",
-          "published": "Tue, 24 Mar 2026 12:52:29 GMT"
+          "title": "Mortgage demand drops more than 10% as rates hit the highest level since October",
+          "link": "https://www.cnbc.com/2026/03/25/mortgage-demand-drops-highest-level-since-october.html",
+          "published": "Wed, 25 Mar 2026 13:09:42 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Amazon's Zoox to debut robotaxis in Austin, Miami later this year as it awaits paid ride approval",
-          "link": "https://www.cnbc.com/2026/03/24/amazon-zoox-robotaxi-rides-austin-miami.html",
-          "published": "Tue, 24 Mar 2026 13:23:11 GMT"
+          "title": "Arm jumps 15% as company expects revenue windfall from new chip, a 'significant shift'",
+          "link": "https://www.cnbc.com/2026/03/25/arm-stock-chip-revenue-agi-cpu.html",
+          "published": "Wed, 25 Mar 2026 13:46:54 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "DCCC launches geotargeted digital ad campaign hitting GOP for gas prices",
-          "link": "https://www.cnbc.com/2026/03/24/dccc-ad-campaign-gas-prices-trump-2026-election.html",
-          "published": "Tue, 24 Mar 2026 11:30:01 GMT"
+          "title": "Swiss sneaker maker On Holding shakes up leadership amid slowing growth",
+          "link": "https://www.cnbc.com/2026/03/25/on-onon-ceo-sneaker-maker-leadership-change-slowing-growth.html",
+          "published": "Wed, 25 Mar 2026 13:35:06 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Tesla’s European Sales Finally Increase. The Stock Rises.",
-          "link": "https://www.barrons.com/articles/tesla-stock-price-europe-ev-sales-9775dfdb?siteid=yhoof2&yptr=yahoo",
-          "published": "2026-03-24T14:09:00Z"
+          "title": "Meta to lay off hundreds of employees, The Information reports",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/meta-lay-off-hundreds-employees-141106014.html",
+          "published": "2026-03-25T14:11:06Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Why Citi still sees $150 oil",
-          "link": "https://finance.yahoo.com/news/why-citi-still-sees-150-oil-135622313.html",
-          "published": "2026-03-24T13:56:22Z"
+          "title": "Jefferies says Mingledorff’s deal expands Home Depot-SRS’ TAM by $100B",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/jefferies-says-mingledorff-deal-expands-141017546.html",
+          "published": "2026-03-25T14:10:17Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Recession odds climb on Wall Street as economy shows cracks beneath the surface",
+          "link": "https://www.cnbc.com/2026/03/25/recession-odds-climb-on-wall-street-as-economy-shows-cracks-beneath-the-surface.html",
+          "published": "Wed, 25 Mar 2026 13:22:06 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Don't be fooled by the UK's pre-war inflation print — a 'brutal' surge could be coming",
+          "link": "https://www.cnbc.com/2026/03/25/uk-inflation-february-2026-iran-war-energy-prices-cpi.html",
+          "published": "Wed, 25 Mar 2026 08:30:52 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "White House to pay TotalEnergies $1 billion to kill off East Coast wind farm projects",
@@ -79,19 +91,7 @@
           "source": "CNBC Economy",
           "title": "European Central Bank holds rates steady, warns outlook is 'significantly more uncertain'",
           "link": "https://www.cnbc.com/2026/03/19/ecb-boe-swiss-national-bank-riksbank-interest-rate-decisions.html",
-          "published": "Thu, 19 Mar 2026 14:24:39 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Wholesale prices rose 0.7% in February, much more than expected and up 3.4% annually",
-          "link": "https://www.cnbc.com/2026/03/18/ppi-inflation-february-2026.html",
-          "published": "Wed, 18 Mar 2026 15:20:06 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Bessent says Treasury is not intervening in oil commodities markets and has no authority to do so",
-          "link": "https://www.cnbc.com/2026/03/16/bessent-says-treasury-is-not-intervening-in-oil-commodities-markets-and-has-no-authority-to-do-so.html",
-          "published": "Mon, 16 Mar 2026 14:25:00 GMT"
+          "published": "Wed, 25 Mar 2026 11:21:28 GMT"
         }
       ]
     }
