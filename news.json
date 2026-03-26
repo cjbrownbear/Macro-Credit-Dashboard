@@ -1,62 +1,68 @@
 {
-  "updated": "2026-03-25T14:21:45Z",
+  "updated": "2026-03-26T14:43:15Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Iran won't accept U.S. effort at ceasefire in war, state media reports",
-          "link": "https://www.cnbc.com/2026/03/25/iran-war-us-trump.html",
-          "published": "Wed, 25 Mar 2026 13:15:45 GMT"
+          "title": "Trump says Iranian negotiators 'better get serious soon, before it is too late'",
+          "link": "https://www.cnbc.com/2026/03/26/trump-iran-negotiations.html",
+          "published": "Thu, 26 Mar 2026 13:20:20 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Recession odds climb on Wall Street as economy shows cracks beneath the surface",
-          "link": "https://www.cnbc.com/2026/03/25/recession-odds-climb-on-wall-street-as-economy-shows-cracks-beneath-the-surface.html",
-          "published": "Wed, 25 Mar 2026 13:22:06 GMT"
+          "title": "Meta's court defeats add to Zuckerberg's recent woes, represent 'watershed event' for social media",
+          "link": "https://www.cnbc.com/2026/03/26/meta-lawsuit-decision-zuckerberg-woes.html",
+          "published": "Thu, 26 Mar 2026 13:26:30 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Hugo Barra's return to Meta 5 years after exit underscores Zuckerberg's AI urgency",
-          "link": "https://www.cnbc.com/2026/03/25/hugo-barras-return-to-meta-5-years-after-exit-underscores-ai-urgency.html",
-          "published": "Wed, 25 Mar 2026 13:11:46 GMT"
+          "title": "Global forecasting group sees U.S. inflation at 4.2% this year, much higher than Fed estimate",
+          "link": "https://www.cnbc.com/2026/03/26/global-forecasting-group-sees-us-inflation-at-4point2percent-this-year-much-higher-than-fed-estimate.html",
+          "published": "Thu, 26 Mar 2026 14:02:43 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Mortgage demand drops more than 10% as rates hit the highest level since October",
-          "link": "https://www.cnbc.com/2026/03/25/mortgage-demand-drops-highest-level-since-october.html",
-          "published": "Wed, 25 Mar 2026 13:09:42 GMT"
+          "title": "Iran war will spare no major economy, says OECD — but the UK is more vulnerable than others",
+          "link": "https://www.cnbc.com/2026/03/26/uk-could-be-worse-hit-from-iran-war-of-all-major-economies-oecd.html",
+          "published": "Thu, 26 Mar 2026 14:39:08 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Arm jumps 15% as company expects revenue windfall from new chip, a 'significant shift'",
-          "link": "https://www.cnbc.com/2026/03/25/arm-stock-chip-revenue-agi-cpu.html",
-          "published": "Wed, 25 Mar 2026 13:46:54 GMT"
+          "title": "What comes next? Three attack scenarios as U.S. sends thousands more troops to Middle East",
+          "link": "https://www.cnbc.com/2026/03/26/iran-war-trump-us-troops-kharg-island-qeshm-island-nuclear-middle-east.html",
+          "published": "Thu, 26 Mar 2026 13:35:30 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Swiss sneaker maker On Holding shakes up leadership amid slowing growth",
-          "link": "https://www.cnbc.com/2026/03/25/on-onon-ceo-sneaker-maker-leadership-change-slowing-growth.html",
-          "published": "Wed, 25 Mar 2026 13:35:06 GMT"
+          "title": "Tom Brady says he's asked NFL about potential comeback: 'They don't like that idea very much'",
+          "link": "https://www.cnbc.com/2026/03/26/tom-brady-nfl-potential-comeback.html",
+          "published": "Thu, 26 Mar 2026 12:55:24 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Meta to lay off hundreds of employees, The Information reports",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/meta-lay-off-hundreds-employees-141106014.html",
-          "published": "2026-03-25T14:11:06Z"
+          "title": "Stock market today: Dow, S&P 500, Nasdaq slide as Wall Street weighs prospects for Iran truce",
+          "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-slide-as-wall-street-weighs-prospects-for-iran-truce-133318192.html",
+          "published": "2026-03-26T13:33:18Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Jefferies says Mingledorff’s deal expands Home Depot-SRS’ TAM by $100B",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/jefferies-says-mingledorff-deal-expands-141017546.html",
-          "published": "2026-03-25T14:10:17Z"
+          "title": "Golar LNG launches strategic review to advance FLNG growth plans",
+          "link": "https://finance.yahoo.com/sectors/energy/articles/golar-lng-launches-strategic-review-143124765.html",
+          "published": "2026-03-26T14:31:24Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Global forecasting group sees U.S. inflation at 4.2% this year, much higher than Fed estimate",
+          "link": "https://www.cnbc.com/2026/03/26/global-forecasting-group-sees-us-inflation-at-4point2percent-this-year-much-higher-than-fed-estimate.html",
+          "published": "Thu, 26 Mar 2026 14:02:43 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Recession odds climb on Wall Street as economy shows cracks beneath the surface",
@@ -86,12 +92,6 @@
           "title": "Traders now see little chance of an interest rate cut this year following Fed decision",
           "link": "https://www.cnbc.com/2026/03/19/traders-rate-cut.html",
           "published": "Thu, 19 Mar 2026 17:05:52 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "European Central Bank holds rates steady, warns outlook is 'significantly more uncertain'",
-          "link": "https://www.cnbc.com/2026/03/19/ecb-boe-swiss-national-bank-riksbank-interest-rate-decisions.html",
-          "published": "Wed, 25 Mar 2026 11:21:28 GMT"
         }
       ]
     }
