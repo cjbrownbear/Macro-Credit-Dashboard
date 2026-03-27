@@ -1,62 +1,74 @@
 {
-  "updated": "2026-03-26T14:43:15Z",
+  "updated": "2026-03-27T14:16:34Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Trump says Iranian negotiators 'better get serious soon, before it is too late'",
-          "link": "https://www.cnbc.com/2026/03/26/trump-iran-negotiations.html",
-          "published": "Thu, 26 Mar 2026 13:20:20 GMT"
+          "title": "Brent oil tops $110 again after Chinese ships are turned away from Strait of Hormuz",
+          "link": "https://www.cnbc.com/2026/03/27/oil-price-wti-brent-crude-trump-strait-hormuz-tensions-iran-ships.html",
+          "published": "Fri, 27 Mar 2026 12:44:36 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Meta's court defeats add to Zuckerberg's recent woes, represent 'watershed event' for social media",
-          "link": "https://www.cnbc.com/2026/03/26/meta-lawsuit-decision-zuckerberg-woes.html",
-          "published": "Thu, 26 Mar 2026 13:26:30 GMT"
+          "title": "Markets now see the Fed's next move as a potential rate hike as inflation fears mount",
+          "link": "https://www.cnbc.com/2026/03/27/markets-see-the-feds-next-move-as-a-potential-hike-as-oil-prices-inflation-fears-rise.html",
+          "published": "Fri, 27 Mar 2026 14:14:44 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Global forecasting group sees U.S. inflation at 4.2% this year, much higher than Fed estimate",
-          "link": "https://www.cnbc.com/2026/03/26/global-forecasting-group-sees-us-inflation-at-4point2percent-this-year-much-higher-than-fed-estimate.html",
-          "published": "Thu, 26 Mar 2026 14:02:43 GMT"
+          "title": "TSA funding update: Senate advances DHS bill, tees up House vote to end government shutdown",
+          "link": "https://www.cnbc.com/2026/03/27/dhs-tsa-shutdown-congress.html",
+          "published": "Fri, 27 Mar 2026 13:56:18 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Iran war will spare no major economy, says OECD — but the UK is more vulnerable than others",
-          "link": "https://www.cnbc.com/2026/03/26/uk-could-be-worse-hit-from-iran-war-of-all-major-economies-oecd.html",
-          "published": "Thu, 26 Mar 2026 14:39:08 GMT"
+          "title": "Iran war wipes out $100 billion from luxury stocks",
+          "link": "https://www.cnbc.com/2026/03/27/iran-war-wipes-out-100-billion-from-luxury-stocks.html",
+          "published": "Fri, 27 Mar 2026 14:01:07 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "What comes next? Three attack scenarios as U.S. sends thousands more troops to Middle East",
-          "link": "https://www.cnbc.com/2026/03/26/iran-war-trump-us-troops-kharg-island-qeshm-island-nuclear-middle-east.html",
-          "published": "Thu, 26 Mar 2026 13:35:30 GMT"
+          "title": "Netflix raises prices across all streaming plans",
+          "link": "https://www.cnbc.com/2026/03/26/netflix-raises-prices-across-all-streaming-plans.html",
+          "published": "Thu, 26 Mar 2026 21:44:47 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Tom Brady says he's asked NFL about potential comeback: 'They don't like that idea very much'",
-          "link": "https://www.cnbc.com/2026/03/26/tom-brady-nfl-potential-comeback.html",
-          "published": "Thu, 26 Mar 2026 12:55:24 GMT"
+          "title": "Why one hedge fund veteran is urging investors to 'prepare for the worst'",
+          "link": "https://www.cnbc.com/2026/03/27/iran-to-economic-risks-markets-ability-to-forecast-world-in-question.html",
+          "published": "Fri, 27 Mar 2026 11:00:01 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Stock market today: Dow, S&P 500, Nasdaq slide as Wall Street weighs prospects for Iran truce",
-          "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-slide-as-wall-street-weighs-prospects-for-iran-truce-133318192.html",
-          "published": "2026-03-26T13:33:18Z"
+          "title": "Bitcoin Skids, $14 Bil In Options Due; Cathie Wood Raises Cash",
+          "link": "https://www.investors.com/news/bitcoin-price-options-expire-14-billion-liquidations-cathie-wood-ark-invest/?src=A00220&yptr=yahoo",
+          "published": "2026-03-27T14:04:55Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Golar LNG launches strategic review to advance FLNG growth plans",
-          "link": "https://finance.yahoo.com/sectors/energy/articles/golar-lng-launches-strategic-review-143124765.html",
-          "published": "2026-03-26T14:31:24Z"
+          "title": "Wave Life Sciences Slips as Obesity Data Fails to Convince",
+          "link": "https://finance.yahoo.com/sectors/healthcare/articles/wave-life-sciences-slips-obesity-140035664.html",
+          "published": "2026-03-27T14:00:35Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Markets now see the Fed's next move as a potential rate hike as inflation fears mount",
+          "link": "https://www.cnbc.com/2026/03/27/markets-see-the-feds-next-move-as-a-potential-hike-as-oil-prices-inflation-fears-rise.html",
+          "published": "Fri, 27 Mar 2026 14:14:44 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "China industrial profits surge 15% to start year, but oil price shock threatens outlook",
+          "link": "https://www.cnbc.com/2026/03/27/china-industrial-profits-jan-feb-surge-oil-price-shock-threatens-outlook.html",
+          "published": "Fri, 27 Mar 2026 04:40:22 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Global forecasting group sees U.S. inflation at 4.2% this year, much higher than Fed estimate",
@@ -80,18 +92,6 @@
           "title": "White House to pay TotalEnergies $1 billion to kill off East Coast wind farm projects",
           "link": "https://www.cnbc.com/2026/03/24/us-to-pay-totalenergies-1-billion-to-kill-east-coast-wind-projects.html",
           "published": "Tue, 24 Mar 2026 07:26:02 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Elizabeth Warren demands answers on costs, economic impact of 'illegal and reckless war'",
-          "link": "https://www.cnbc.com/2026/03/20/elizabeth-warren-demands-answers-on-costs-economic-impact-of-illegal-and-reckless-war.html",
-          "published": "Sat, 21 Mar 2026 17:28:42 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Traders now see little chance of an interest rate cut this year following Fed decision",
-          "link": "https://www.cnbc.com/2026/03/19/traders-rate-cut.html",
-          "published": "Thu, 19 Mar 2026 17:05:52 GMT"
         }
       ]
     }
