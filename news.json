@@ -1,62 +1,68 @@
 {
-  "updated": "2026-03-30T14:44:08Z",
+  "updated": "2026-03-31T14:42:21Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Trump says U.S. will destroy Iran’s oil wells, Kharg Island without deal to 'immediately' reopen Hormuz Strait",
-          "link": "https://www.cnbc.com/2026/03/30/trump-iran-war-obliterate-kharg-island-strait-of-hormuz-peace-deal.html",
-          "published": "Mon, 30 Mar 2026 14:43:49 GMT"
+          "title": "Warren Buffett says he sold Apple too soon and would buy more of it, though not in this market",
+          "link": "https://www.cnbc.com/2026/03/31/warren-buffett-says-he-sold-apple-too-soon-and-would-buy-more-of-it-though-not-in-this-market-.html",
+          "published": "Tue, 31 Mar 2026 13:11:29 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "401(k) alternative asset rule proposed by Labor Department",
-          "link": "https://www.cnbc.com/2026/03/30/401ks-alternative-investments.html",
-          "published": "Mon, 30 Mar 2026 14:35:08 GMT"
+          "title": "Trump lashes out at UK and France, telling allies 'the U.S.A. won't be there to help you anymore'",
+          "link": "https://www.cnbc.com/2026/03/31/trump-attacks-uk-france-x-posts-tells-allies-the-usa-wont-help-anymore.html",
+          "published": "Tue, 31 Mar 2026 14:38:27 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Watch Fed Chair Jerome Powell speak live to an economics class at Harvard",
-          "link": "https://www.cnbc.com/2026/03/30/watch-fed-chair-jerome-powell-speak-live-to-an-economics-class-at-harvard.html",
-          "published": "Mon, 30 Mar 2026 14:39:41 GMT"
+          "title": "McCormick buys Unilever's food business in deal that values it at nearly $45 billion",
+          "link": "https://www.cnbc.com/2026/03/31/mccormick-buys-unilever-food-business.html",
+          "published": "Tue, 31 Mar 2026 14:10:14 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Iran's attacks on aluminum producers are sending 'shockwaves' through the metals market",
-          "link": "https://www.cnbc.com/2026/03/30/iran-attacks-aluminum-producers-shockwaves-market-metals.html",
-          "published": "Mon, 30 Mar 2026 14:40:19 GMT"
+          "title": "Epstein files: Buffett says he hasn't talked to Bill Gates 'since the whole thing was unveiled'",
+          "link": "https://www.cnbc.com/2026/03/31/warren-buffett-bill-gates-epstein.html",
+          "published": "Tue, 31 Mar 2026 14:18:17 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump reportedly wants to 'take the oil in Iran' as Tehran targets water, power facilities in Kuwait",
-          "link": "https://www.cnbc.com/2026/03/30/trump-iran-oil-middle-east-war-israel-us-kuwait-attack-.html",
-          "published": "Mon, 30 Mar 2026 13:07:30 GMT"
+          "title": "Marvell stock pops 8% as Nvidia takes $2 billion stake, continuing run of similar bets",
+          "link": "https://www.cnbc.com/2026/03/31/marvell-nvidia-stock-stake.html",
+          "published": "Tue, 31 Mar 2026 14:19:10 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Fed Governor Miran still backs cuts, says interest rates could be 'about a point' lower this year",
-          "link": "https://www.cnbc.com/2026/03/30/fed-governor-miran-still-backs-cuts-says-interest-rates-could-be-about-a-point-lower-this-year.html",
-          "published": "Mon, 30 Mar 2026 14:29:43 GMT"
+          "title": "'Project Hail Mary' is the box office proof point Amazon MGM has been waiting for",
+          "link": "https://www.cnbc.com/2026/03/31/project-hail-mary-box-office-amazon-mgm.html",
+          "published": "Tue, 31 Mar 2026 14:33:07 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "7 things to know about Schwab's new brokerage account for teenagers",
-          "link": "https://finance.yahoo.com/personal-finance/investing/article/7-things-to-know-about-schwabs-new-brokerage-account-for-teenagers-142336241.html",
-          "published": "2026-03-30T14:23:36Z"
+          "title": "Rocket Lab Gains 6%, Virgin Galactic Surges 19%: Is the Space Sector Finally Ready for Its Breakout?",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/rocket-lab-gains-6-virgin-141651183.html",
+          "published": "2026-03-31T14:16:51Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Mars CEO gets board role at GLP-1 supplier Novo Nordisk",
-          "link": "https://finance.yahoo.com/sectors/healthcare/articles/mars-ceo-gets-board-role-124823663.html",
-          "published": "2026-03-30T14:23:25Z"
+          "title": "JPMorgan's Jamie Dimon plans small business lending, hiring push to shore up American Dream",
+          "link": "https://finance.yahoo.com/news/jpmorgans-jamie-dimon-plans-small-business-lending-hiring-push-to-shore-up-american-dream-100044580.html",
+          "published": "2026-03-31T10:00:44Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "China suppliers warn of higher prices for Americans due to Strait of Hormuz closure",
+          "link": "https://www.cnbc.com/2026/03/30/china-suppliers-warn-higher-us-prices-hormuz-closure.html",
+          "published": "Mon, 30 Mar 2026 20:19:38 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "New fees, fewer flights: Higher fuel prices pinch consumer budgets beyond the gas pump",
@@ -86,12 +92,6 @@
           "title": "Recession odds climb on Wall Street as economy shows cracks beneath the surface",
           "link": "https://www.cnbc.com/2026/03/25/recession-odds-climb-on-wall-street-as-economy-shows-cracks-beneath-the-surface.html",
           "published": "Wed, 25 Mar 2026 13:22:06 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Don't be fooled by the UK's pre-war inflation print — a 'brutal' surge could be coming",
-          "link": "https://www.cnbc.com/2026/03/25/uk-inflation-february-2026-iran-war-energy-prices-cpi.html",
-          "published": "Wed, 25 Mar 2026 08:30:52 GMT"
         }
       ]
     }

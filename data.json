@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-30T14:44:08Z",
+  "updated": "2026-03-31T14:42:20Z",
   "overall_status": "tripwire",
   "executive_summary": {
-    "text": "Overall status is Tripwire / Watch. Across the dashboard: 6 healthy, 2 tripwire, 0 stress. Biggest YoY moves: Revolving Consumer Credit (Δ 1y: +24724B (+1.9%)); Initial Jobless Claims (Δ 1y: -15000K (-6.7%)); Job Openings (Δ 1y: -0.49M (-6.5%)).",
-    "updated": "2026-03-30T14:44:08Z",
+    "text": "Overall status is Tripwire / Watch. Across the dashboard: 6 healthy, 2 tripwire, 0 stress. Biggest YoY moves: Revolving Consumer Credit (Δ 1y: +24724B (+1.9%)); Initial Jobless Claims (Δ 1y: -15000K (-6.7%)); Net Charge-off Rate (Δ 1y: -0.47pp (-10.3%)).",
+    "updated": "2026-03-31T14:42:19Z",
     "overall": "tripwire"
   },
   "kpis": [
@@ -240,16 +240,15 @@
       "unit": "mil",
       "status": "healthy",
       "status_label": "Healthy",
-      "value": 6.946,
-      "value_str": "6.95M",
-      "as_of": "Jan 2026",
-      "avg10": 7.769818181818183,
-      "avg_str": "7.77M",
-      "delta_abs": -0.4850000000000003,
-      "delta_pct": -0.06526712420939312,
-      "delta_str": "Δ 1y: -0.49M (-6.5%)",
+      "value": 6.882,
+      "value_str": "6.88M",
+      "as_of": "Feb 2026",
+      "avg10": 7.779438016528926,
+      "avg_str": "7.78M",
+      "delta_abs": -0.3600000000000003,
+      "delta_pct": -0.04971002485501247,
+      "delta_str": "Δ 1y: -0.36M (-5.0%)",
       "spark": [
-        8.44,
         8.206,
         7.529,
         7.782,
@@ -272,7 +271,8 @@
         7.17,
         6.846,
         6.55,
-        6.946
+        7.24,
+        6.882
       ],
       "definition": "Job openings (JOLTS). Proxy for labor demand.",
       "why": "Falling openings often precede labor market cooling."
@@ -12748,8 +12748,13 @@
         },
         {
           "date": "2026-01-01",
-          "value": 6.946,
-          "value_str": "6.95M"
+          "value": 7.24,
+          "value_str": "7.24M"
+        },
+        {
+          "date": "2026-02-01",
+          "value": 6.882,
+          "value_str": "6.88M"
         }
       ],
       "bench_points": [
@@ -13915,10 +13920,14 @@
         },
         {
           "date": "2026-01-01",
-          "value": 7.784466666666668
+          "value": 7.786916666666667
+        },
+        {
+          "date": "2026-02-01",
+          "value": 7.7961833333333335
         }
       ],
-      "summary_text": "Latest: 6.95M (Healthy). Δ 1y: -0.49M (-6.5%)."
+      "summary_text": "Latest: 6.88M (Healthy). Δ 1y: -0.36M (-5.0%)."
     },
     {
       "key": "UNRATE_pct",
