@@ -1,62 +1,74 @@
 {
-  "updated": "2026-03-31T14:42:21Z",
+  "updated": "2026-04-01T14:44:16Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Warren Buffett says he sold Apple too soon and would buy more of it, though not in this market",
-          "link": "https://www.cnbc.com/2026/03/31/warren-buffett-says-he-sold-apple-too-soon-and-would-buy-more-of-it-though-not-in-this-market-.html",
-          "published": "Tue, 31 Mar 2026 13:11:29 GMT"
+          "title": "Trump says Iran's president asked for ceasefire, but U.S. wants Hormuz Strait open first",
+          "link": "https://www.cnbc.com/2026/04/01/trump-iran-war-ceasefire.html",
+          "published": "Wed, 01 Apr 2026 13:36:41 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump lashes out at UK and France, telling allies 'the U.S.A. won't be there to help you anymore'",
-          "link": "https://www.cnbc.com/2026/03/31/trump-attacks-uk-france-x-posts-tells-allies-the-usa-wont-help-anymore.html",
-          "published": "Tue, 31 Mar 2026 14:38:27 GMT"
+          "title": "Iran threatens Nvidia, Apple and other tech giants with attacks",
+          "link": "https://www.cnbc.com/2026/04/01/iran-irgc-nvidia-appple-attack-threat.html",
+          "published": "Wed, 01 Apr 2026 14:37:46 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "McCormick buys Unilever's food business in deal that values it at nearly $45 billion",
-          "link": "https://www.cnbc.com/2026/03/31/mccormick-buys-unilever-food-business.html",
-          "published": "Tue, 31 Mar 2026 14:10:14 GMT"
+          "title": "Supreme Court hears birthright citizenship case with Trump in room",
+          "link": "https://www.cnbc.com/2026/04/01/trump-supreme-court-birthright-citizenship.html",
+          "published": "Wed, 01 Apr 2026 14:42:34 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Epstein files: Buffett says he hasn't talked to Bill Gates 'since the whole thing was unveiled'",
-          "link": "https://www.cnbc.com/2026/03/31/warren-buffett-bill-gates-epstein.html",
-          "published": "Tue, 31 Mar 2026 14:18:17 GMT"
+          "title": "Private sector hiring totaled 62,000 in March, better than expected, ADP says",
+          "link": "https://www.cnbc.com/2026/04/01/private-sector-hiring-totaled-62000-in-march-better-than-expected-adp-says.html",
+          "published": "Wed, 01 Apr 2026 13:31:33 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Marvell stock pops 8% as Nvidia takes $2 billion stake, continuing run of similar bets",
-          "link": "https://www.cnbc.com/2026/03/31/marvell-nvidia-stock-stake.html",
-          "published": "Tue, 31 Mar 2026 14:19:10 GMT"
+          "title": "Visa launches new AI tools to manage the charge dispute process",
+          "link": "https://www.cnbc.com/2026/04/01/visa-ai-tools-dispute-management.html",
+          "published": "Wed, 01 Apr 2026 12:51:58 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "'Project Hail Mary' is the box office proof point Amazon MGM has been waiting for",
-          "link": "https://www.cnbc.com/2026/03/31/project-hail-mary-box-office-amazon-mgm.html",
-          "published": "Tue, 31 Mar 2026 14:33:07 GMT"
+          "title": "Five key questions Apple faces entering its second half-century",
+          "link": "https://www.cnbc.com/2026/04/01/five-key-questions-apple-faces-entering-its-second-half-century.html",
+          "published": "Wed, 01 Apr 2026 12:00:01 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Rocket Lab Gains 6%, Virgin Galactic Surges 19%: Is the Space Sector Finally Ready for Its Breakout?",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/rocket-lab-gains-6-virgin-141651183.html",
-          "published": "2026-03-31T14:16:51Z"
+          "title": "Nike Tumbles On Outlook, Turnaround Efforts Continue. China Sales Lag.",
+          "link": "https://www.investors.com/news/nike-stock-earnings-q3-2026-turnaround-dow-jones-nke/?src=A00220&yptr=yahoo",
+          "published": "2026-04-01T14:36:41Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "JPMorgan's Jamie Dimon plans small business lending, hiring push to shore up American Dream",
-          "link": "https://finance.yahoo.com/news/jpmorgans-jamie-dimon-plans-small-business-lending-hiring-push-to-shore-up-american-dream-100044580.html",
-          "published": "2026-03-31T10:00:44Z"
+          "title": "Wall Street Turns Bullish on Sempra Energy: Wells Fargo Sets $115 Price Target",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/wall-street-turns-bullish-sempra-143523900.html",
+          "published": "2026-04-01T14:35:23Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Private sector hiring totaled 62,000 in March, better than expected, ADP says",
+          "link": "https://www.cnbc.com/2026/04/01/private-sector-hiring-totaled-62000-in-march-better-than-expected-adp-says.html",
+          "published": "Wed, 01 Apr 2026 13:31:33 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Why $4 a gallon gas prices won’t trigger Fed interest rate hikes — and could lead to cuts",
+          "link": "https://www.cnbc.com/2026/03/31/why-4-a-gallon-gas-prices-wont-trigger-fed-interest-rate-hikes-and-could-lead-to-cuts.html",
+          "published": "Tue, 31 Mar 2026 18:35:23 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "China suppliers warn of higher prices for Americans due to Strait of Hormuz closure",
@@ -80,18 +92,6 @@
           "title": "China industrial profits surge 15% to start year, but oil price shock threatens outlook",
           "link": "https://www.cnbc.com/2026/03/27/china-industrial-profits-jan-feb-surge-oil-price-shock-threatens-outlook.html",
           "published": "Fri, 27 Mar 2026 04:40:22 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Global forecasting group sees U.S. inflation at 4.2% this year, much higher than Fed estimate",
-          "link": "https://www.cnbc.com/2026/03/26/global-forecasting-group-sees-us-inflation-at-4point2percent-this-year-much-higher-than-fed-estimate.html",
-          "published": "Thu, 26 Mar 2026 14:02:43 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Recession odds climb on Wall Street as economy shows cracks beneath the surface",
-          "link": "https://www.cnbc.com/2026/03/25/recession-odds-climb-on-wall-street-as-economy-shows-cracks-beneath-the-surface.html",
-          "published": "Wed, 25 Mar 2026 13:22:06 GMT"
         }
       ]
     }
