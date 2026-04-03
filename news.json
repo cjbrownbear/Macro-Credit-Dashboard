@@ -1,62 +1,74 @@
 {
-  "updated": "2026-04-02T14:35:29Z",
+  "updated": "2026-04-03T14:06:45Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Oil prices soar 13% as Trump's Iran war speech stokes fears of further escalation",
-          "link": "https://www.cnbc.com/2026/04/02/oil-prices-today-wti-brent-trump-speech-iran-war-.html",
-          "published": "Thu, 02 Apr 2026 13:27:45 GMT"
+          "title": "U.S. payrolls rose by 178,000 in March, more than expected; unemployment at 4.3%",
+          "link": "https://www.cnbc.com/2026/04/03/jobs-report-march-2026-.html",
+          "published": "Fri, 03 Apr 2026 13:35:34 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Tesla reports 358,000 first-quarter vehicle deliveries, down 14% from last quarter",
-          "link": "https://www.cnbc.com/2026/04/02/tesla-tsla-q1-2026-vehicle-delivery-production.html",
-          "published": "Thu, 02 Apr 2026 14:02:35 GMT"
+          "title": "Trump threatens to destroy Iranian infrastructure, saying its government 'knows what has to be done'",
+          "link": "https://www.cnbc.com/2026/04/03/trump-iran-threats-un-resolution-blocked-strait-of-hormuz-f35-shot-down.html",
+          "published": "Fri, 03 Apr 2026 13:13:41 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Coca-Cola unveils ad campaign with 13 restaurant chains to boost drink sales as diner traffic falls",
-          "link": "https://www.cnbc.com/2026/04/02/coca-cola-ad-campaign-dominos-wendys-wingstop.html",
-          "published": "Thu, 02 Apr 2026 13:12:14 GMT"
+          "title": "Trump tariff fallout: Some industries grapple with lingering effects one year later",
+          "link": "https://www.cnbc.com/2026/04/03/trump-tariffs-trade-war-impact.html",
+          "published": "Fri, 03 Apr 2026 11:30:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "One year on from Trump's 'liberation day,' global investors are rethinking American exceptionalism",
-          "link": "https://www.cnbc.com/2026/04/02/liberation-day-1-year-on-investors-are-rethinking-us-assets.html",
-          "published": "Thu, 02 Apr 2026 12:58:41 GMT"
+          "title": "Meta, Google under attack as court cases bypass 30-year-old legal shield",
+          "link": "https://www.cnbc.com/2026/04/03/meta-google-under-attack-court-cases-bypass-30-year-old-legal-shield.html",
+          "published": "Fri, 03 Apr 2026 12:30:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "DHS shutdown: Senate advances deal to fund agency with TSA, waits on House",
-          "link": "https://www.cnbc.com/2026/04/02/tsa-dhs-shutdown-senate-house.html",
-          "published": "Thu, 02 Apr 2026 13:28:24 GMT"
+          "title": "'Chasing vibes' — OpenAI's M&A strategy gets more confusing with TBPN purchase",
+          "link": "https://www.cnbc.com/2026/04/03/chasing-vibes-openai-ma-strategy-gets-more-confusing-with-tbpn-.html",
+          "published": "Fri, 03 Apr 2026 12:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Starbucks to award bonuses to baristas, expand tipping to promote turnaround efforts",
-          "link": "https://www.cnbc.com/2026/04/02/starbucks-to-award-bonuses-to-baristas-expand-tipping.html",
-          "published": "Thu, 02 Apr 2026 13:59:17 GMT"
+          "title": "United unveils basic Polaris business fare in premium cabin overhaul",
+          "link": "https://www.cnbc.com/2026/04/03/united-base-polaris-business-class.html",
+          "published": "Fri, 03 Apr 2026 12:05:47 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "PVH beats Q4 guidance, flags tariff pressure in 2026 outlook",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/pvh-beats-q4-guidance-flags-141253369.html",
-          "published": "2026-04-02T14:12:53Z"
+          "title": "Blue Owl falls after capping withdrawals in two private credit funds",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/blue-owl-falls-capping-withdrawals-140054682.html",
+          "published": "2026-04-03T14:00:54Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Booking Holdings Inc. (BKNG): Billionaire Ray Dalio Likes This Travel Company",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/booking-holdings-inc-bkng-billionaire-140854700.html",
-          "published": "2026-04-02T14:08:54Z"
+          "title": "OpenAI buys tech news show TBPN in AI giant's biggest media push yet",
+          "link": "https://finance.yahoo.com/sectors/technology/article/openai-buys-tech-news-show-tbpn-in-ai-giants-biggest-media-push-yet-175749747.html",
+          "published": "2026-04-02T17:57:49Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "U.S. payrolls rose by 178,000 in March, more than expected; unemployment at 4.3%",
+          "link": "https://www.cnbc.com/2026/04/03/jobs-report-march-2026-.html",
+          "published": "Fri, 03 Apr 2026 13:35:34 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "The March jobs report will be released on Friday. Here's what to expect",
+          "link": "https://www.cnbc.com/2026/04/02/the-march-jobs-report-will-be-released-on-friday-heres-what-to-expect.html",
+          "published": "Thu, 02 Apr 2026 20:04:41 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Private sector hiring totaled 62,000 in March, better than expected, ADP says",
@@ -80,18 +92,6 @@
           "title": "New fees, fewer flights: Higher fuel prices pinch consumer budgets beyond the gas pump",
           "link": "https://www.cnbc.com/2026/03/28/oil-doordash-lyft-usps-united.html",
           "published": "Mon, 30 Mar 2026 12:00:47 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Markets now see the Fed's next move as a potential rate hike as inflation fears mount",
-          "link": "https://www.cnbc.com/2026/03/27/markets-see-the-feds-next-move-as-a-potential-hike-as-oil-prices-inflation-fears-rise.html",
-          "published": "Fri, 27 Mar 2026 18:02:40 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "China industrial profits surge 15% to start year, but oil price shock threatens outlook",
-          "link": "https://www.cnbc.com/2026/03/27/china-industrial-profits-jan-feb-surge-oil-price-shock-threatens-outlook.html",
-          "published": "Fri, 27 Mar 2026 04:40:22 GMT"
         }
       ]
     }
