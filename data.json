@@ -1,9 +1,9 @@
 {
-  "updated": "2026-04-08T14:49:00Z",
+  "updated": "2026-04-09T14:58:52Z",
   "overall_status": "tripwire",
   "executive_summary": {
-    "text": "Overall status is Tripwire / Watch. Across the dashboard: 6 healthy, 2 tripwire, 0 stress. Biggest YoY moves: Revolving Consumer Credit (Δ 1y: +23322B (+1.8%)); Initial Jobless Claims (Δ 1y: -22000K (-9.8%)); Net Charge-off Rate (Δ 1y: -0.47pp (-10.3%)).",
-    "updated": "2026-04-08T14:49:00Z",
+    "text": "Overall status is Tripwire / Watch. Across the dashboard: 6 healthy, 2 tripwire, 0 stress. Biggest YoY moves: Revolving Consumer Credit (Δ 1y: +23322B (+1.8%)); Initial Jobless Claims (Δ 1y: -1000K (-0.5%)); Net Charge-off Rate (Δ 1y: -0.47pp (-10.3%)).",
+    "updated": "2026-04-09T14:58:52Z",
     "overall": "tripwire"
   },
   "kpis": [
@@ -330,16 +330,15 @@
       "unit": "thou",
       "status": "healthy",
       "status_label": "Healthy",
-      "value": 202000.0,
-      "value_str": "202,000K",
-      "as_of": "Mar 2026",
-      "avg10": 363136.0153256705,
-      "avg_str": "363,136K",
-      "delta_abs": -22000.0,
-      "delta_pct": -0.09821428571428571,
-      "delta_str": "Δ 1y: -22000K (-9.8%)",
+      "value": 219000.0,
+      "value_str": "219,000K",
+      "as_of": "Apr 2026",
+      "avg10": 363034.4827586207,
+      "avg_str": "363,034K",
+      "delta_abs": -1000.0,
+      "delta_pct": -0.004545454545454545,
+      "delta_str": "Δ 1y: -1000K (-0.5%)",
       "spark": [
-        231000.0,
         221000.0,
         228000.0,
         228000.0,
@@ -362,7 +361,8 @@
         213000.0,
         205000.0,
         211000.0,
-        202000.0
+        203000.0,
+        219000.0
       ],
       "definition": "Weekly initial claims for unemployment insurance.",
       "why": "Claims are a fast-turn labor stress signal; spikes can precede higher unemployment."
@@ -37807,8 +37807,13 @@
         },
         {
           "date": "2026-03-28",
-          "value": 202000.0,
-          "value_str": "202,000K"
+          "value": 203000.0,
+          "value_str": "203,000K"
+        },
+        {
+          "date": "2026-04-04",
+          "value": 219000.0,
+          "value_str": "219,000K"
         }
       ],
       "bench_points": [
@@ -50130,10 +50135,14 @@
         },
         {
           "date": "2026-03-28",
-          "value": 222750.0
+          "value": 222758.33333333334
+        },
+        {
+          "date": "2026-04-04",
+          "value": 222841.66666666666
         }
       ],
-      "summary_text": "Latest: 202,000K (Healthy). Δ 1y: -22000K (-9.8%)."
+      "summary_text": "Latest: 219,000K (Healthy). Δ 1y: -1000K (-0.5%)."
     },
     {
       "key": "DSPIC96_bil_usd",
@@ -54149,23 +54158,28 @@
         },
         {
           "date": "2025-10-01",
-          "value": 18066.6,
-          "value_str": "$18,067B"
+          "value": 18063.1,
+          "value_str": "$18,063B"
         },
         {
           "date": "2025-11-01",
-          "value": 18088.0,
-          "value_str": "$18,088B"
+          "value": 18078.6,
+          "value_str": "$18,079B"
         },
         {
           "date": "2025-12-01",
-          "value": 18082.4,
-          "value_str": "$18,082B"
+          "value": 18070.6,
+          "value_str": "$18,071B"
         },
         {
           "date": "2026-01-01",
-          "value": 18203.2,
-          "value_str": "$18,203B"
+          "value": 18183.1,
+          "value_str": "$18,183B"
+        },
+        {
+          "date": "2026-02-01",
+          "value": 18100.8,
+          "value_str": "$18,101B"
         }
       ],
       "bench_points": [
@@ -57331,19 +57345,23 @@
         },
         {
           "date": "2025-10-01",
-          "value": 16200.994166666667
+          "value": 16200.965
         },
         {
           "date": "2025-11-01",
-          "value": 16235.115833333333
+          "value": 16235.008333333333
         },
         {
           "date": "2025-12-01",
-          "value": 16268.634166666667
+          "value": 16268.428333333333
         },
         {
           "date": "2026-01-01",
-          "value": 16302.651666666667
+          "value": 16302.278333333332
+        },
+        {
+          "date": "2026-02-01",
+          "value": 16335.324166666667
         }
       ],
       "summary_text": "Latest reading shown with a 10-year rolling mean benchmark."
@@ -61277,6 +61295,7 @@
     "2026-03-07",
     "2026-03-14",
     "2026-03-21",
-    "2026-03-28"
+    "2026-03-28",
+    "2026-04-04"
   ]
 }
