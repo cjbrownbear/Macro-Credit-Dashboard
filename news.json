@@ -1,62 +1,74 @@
 {
-  "updated": "2026-04-09T14:58:53Z",
+  "updated": "2026-04-12T14:03:38Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "The Strait of Hormuz is not open as Iran controls access after ceasefire, UAE oil CEO says",
-          "link": "https://www.cnbc.com/2026/04/09/iran-war-oil-strait-hormuz-tanker-ship-uae.html",
-          "published": "Thu, 09 Apr 2026 13:37:55 GMT"
+          "title": "Trump says U.S. will blockade Strait of Hormuz after Iran peace talks fail",
+          "link": "https://www.cnbc.com/2026/04/12/trump-iran-war-strait-of-hormuz.html",
+          "published": "Sun, 12 Apr 2026 13:46:18 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Inflation held sticky at 3% as U.S. headed into war with Iran, key Fed gauge shows",
-          "link": "https://www.cnbc.com/2026/04/09/core-inflation-was-3percent-in-february-as-expected-key-fed-gauge-shows.html",
-          "published": "Thu, 09 Apr 2026 14:38:23 GMT"
+          "title": "Berkshire electric utility's court win could save it billions",
+          "link": "https://www.cnbc.com/2026/04/11/berkshire-electric-utilitys-court-win-could-save-it-billions.html",
+          "published": "Sat, 11 Apr 2026 11:43:24 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump says U.S. ready for 'next conquest,' warns military to remain near Iran until 'real agreement' is honored",
-          "link": "https://www.cnbc.com/2026/04/09/trump-military-troops-iran-conflict-middle-east-hormuz.html",
-          "published": "Thu, 09 Apr 2026 14:56:01 GMT"
+          "title": "How Kodak is trying to turn around its business after teetering on bankruptcy",
+          "link": "https://www.cnbc.com/2026/04/11/kodak-film-business-ceo-jim-continenza.html",
+          "published": "Sat, 11 Apr 2026 12:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Disney plans layoffs of as many as 1,000 employees",
-          "link": "https://www.cnbc.com/2026/04/09/disney-layoffs-ceo-josh-damaro.html",
-          "published": "Thu, 09 Apr 2026 14:38:02 GMT"
+          "title": "Top Wall Street analysts prefer these dividend stocks for steady income",
+          "link": "https://www.cnbc.com/2026/04/12/top-street-analysts-prefer-these-dividend-stocks-for-steady-income-.html",
+          "published": "Sun, 12 Apr 2026 11:18:07 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "American Airlines makes bag fees even more expensive for basic economy tickets",
-          "link": "https://www.cnbc.com/2026/04/09/american-airlines-bag-fees-basic-economy.html",
-          "published": "Thu, 09 Apr 2026 14:35:15 GMT"
+          "title": "Vibe check from inside one of AI industry's main events: 'Claude mania'",
+          "link": "https://www.cnbc.com/2026/04/11/vibe-check-from-ai-industry-humanx-anthropic-is-talk-of-the-town.html",
+          "published": "Sat, 11 Apr 2026 12:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Amazon CEO Jassy defends $200 billion AI spend: \"We're not going to be conservative\"",
-          "link": "https://www.cnbc.com/2026/04/09/amazon-ceo-andy-jassy-ai-spending.html",
-          "published": "Thu, 09 Apr 2026 14:13:17 GMT"
+          "title": "Trump's 250-foot 'triumphal arch' would loom over Potomac, new renderings show",
+          "link": "https://www.cnbc.com/2026/04/10/trump-arch-renderings-arlington.html",
+          "published": "Sat, 11 Apr 2026 01:41:53 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Major alcohol distributor shuts down operations, lays off over 500 workers",
-          "link": "https://finance.yahoo.com/economy/policy/articles/major-alcohol-distributor-shuts-down-161700316.html",
-          "published": "2026-04-08T16:17:00Z"
+          "title": "7 Mistakes To Avoid When You File a Tax Extension",
+          "link": "https://finance.yahoo.com/economy/policy/articles/7-mistakes-avoid-file-tax-120026517.html",
+          "published": "2026-04-11T12:00:26Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Tech stocks today: Meta, CoreWeave agree to $21 billion deal",
-          "link": "https://finance.yahoo.com/sectors/technology/article/tech-stocks-today-meta-coreweave-agree-to-21-billion-deal-144220717.html",
-          "published": "2026-03-13T14:42:20Z"
+          "title": "Report delivers blunt reality check as US Medicare, Social Security shortfall surges to $130T — how to protect yourself",
+          "link": "https://finance.yahoo.com/economy/policy/articles/report-delivers-blunt-reality-check-120500536.html",
+          "published": "2026-04-11T12:05:00Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Consumer sentiment hits record low, inflation fears rise amid Iran war",
+          "link": "https://www.cnbc.com/2026/04/10/consumer-sentiment-inflation-fears-iran-war.html",
+          "published": "Fri, 10 Apr 2026 15:48:09 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Consumer prices rose 3.3% in March, as energy prices spiked due to Iran conflict",
+          "link": "https://www.cnbc.com/2026/04/10/cpi-inflation-report-march-2026.html",
+          "published": "Fri, 10 Apr 2026 13:37:13 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Inflation held sticky at 3% as U.S. headed into war with Iran, key Fed gauge shows",
@@ -80,18 +92,6 @@
           "title": "A fragile U.S.-Iran ceasefire sparks market relief — but no clear path to lasting peace",
           "link": "https://www.cnbc.com/2026/04/08/us-iran-war-ceasefire-middle-east-strait-of-hormuz-oil-markets.html",
           "published": "Wed, 08 Apr 2026 08:55:12 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "U.S. payrolls rose by 178,000 in March, more than expected; unemployment at 4.3%",
-          "link": "https://www.cnbc.com/2026/04/03/jobs-report-march-2026-.html",
-          "published": "Fri, 03 Apr 2026 13:35:34 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "The March jobs report will be released on Friday. Here's what to expect",
-          "link": "https://www.cnbc.com/2026/04/02/the-march-jobs-report-will-be-released-on-friday-heres-what-to-expect.html",
-          "published": "Thu, 02 Apr 2026 20:04:41 GMT"
         }
       ]
     }
