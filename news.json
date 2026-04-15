@@ -1,62 +1,86 @@
 {
-  "updated": "2026-04-14T14:56:24Z",
+  "updated": "2026-04-15T14:49:44Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Fed nominee Warsh filings detail vast wealth, far exceeding past chairs",
-          "link": "https://www.cnbc.com/2026/04/14/federal-reserve-warsh-wealth.html",
-          "published": "Tue, 14 Apr 2026 14:25:13 GMT"
+          "title": "Trump threatens to fire Powell if the Fed chair doesn't leave office on his own",
+          "link": "https://www.cnbc.com/2026/04/15/trump-threatens-to-fire-powell-if-the-fed-chair-doesnt-leave-office-on-his-own.html",
+          "published": "Wed, 15 Apr 2026 14:43:27 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Global recession is inevitable if Strait of Hormuz stays shut, says Citadel's Ken Griffin",
-          "link": "https://www.cnbc.com/2026/04/14/citadels-ken-griffin-global-recession-inevitable-if-strait-of-hormuz-stays-shut.html",
-          "published": "Tue, 14 Apr 2026 14:40:56 GMT"
+          "title": "Bank of America tops estimates as CEO Brian Moynihan says consumer banking is 'healthy'",
+          "link": "https://www.cnbc.com/2026/04/15/bank-of-america-bac-earnings-q1-2026.html",
+          "published": "Wed, 15 Apr 2026 14:14:44 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Oracle jumps for a second day, Bloom Energy soars 20% on AI data center power deal",
-          "link": "https://www.cnbc.com/2026/04/14/oracle-orcl-bloom-energy-be-stock-data-center-ai-power.html",
-          "published": "Tue, 14 Apr 2026 14:49:54 GMT"
+          "title": "Cleveland Fed President Hammack expects interest rates to stay on hold 'for a good while'",
+          "link": "https://www.cnbc.com/2026/04/15/cleveland-fed-president-hammack-expects-interest-rates-to-stay-on-hold-for-a-good-while.html",
+          "published": "Wed, 15 Apr 2026 13:31:35 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Treasury Secretary Bessent now says it's OK for the Fed to wait to lower rates amid oil surge",
-          "link": "https://www.cnbc.com/2026/04/14/treasury-secretary-bessent-now-says-its-ok-for-the-fed-to-wait-to-lower-rates-amid-oil-surge.html",
-          "published": "Tue, 14 Apr 2026 14:51:39 GMT"
+          "title": "Trump accounts sign up 5 million kids, with 1.2 million eligible for $1,000 seed money, Bessent says",
+          "link": "https://www.cnbc.com/2026/04/15/trump-accounts.html",
+          "published": "Wed, 15 Apr 2026 13:11:20 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "U.S.-Iran talks could restart before ceasefire expires: Reports",
-          "link": "https://www.cnbc.com/2026/04/14/trump-iran-war-strait-of-hormuz-negotiations.html",
-          "published": "Tue, 14 Apr 2026 14:49:32 GMT"
+          "title": "Earned Income Tax Credit would rise to $5,500 per child under new Democratic measure",
+          "link": "https://www.cnbc.com/2026/04/15/tax-day-earned-income-credit-child.html",
+          "published": "Wed, 15 Apr 2026 14:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Blackstone’s Joan Solotar says investors should separate ‘signal from the noise’ in private credit",
-          "link": "https://www.cnbc.com/2026/04/14/blackstone-exec-joan-solotar-private-credit-signal-noise.html",
-          "published": "Tue, 14 Apr 2026 14:52:19 GMT"
+          "title": "Morgan Stanley tops estimates as trading revenue exceeds expectations by nearly $1 billion",
+          "link": "https://www.cnbc.com/2026/04/15/morgan-stanley-ms-earnings-1q-2026.html",
+          "published": "Wed, 15 Apr 2026 13:24:39 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Oracle rallies as AI pitch taps into power-hungry economy",
-          "link": "https://finance.yahoo.com/sectors/technology/articles/oracle-rallies-ai-pitch-taps-133300028.html",
-          "published": "2026-04-14T13:33:00Z"
+          "title": "Major gold holder launches self-custody wallet",
+          "link": "https://finance.yahoo.com/markets/crypto/articles/major-gold-holder-launches-self-174018917.html",
+          "published": "2026-04-14T17:40:18Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "JPMorgan CEO Jamie Dimon downplays private credit concerns: 'Not particularly worried'",
-          "link": "https://finance.yahoo.com/markets/currencies/article/jpmorgan-ceo-jamie-dimon-downplays-private-credit-concerns-not-particularly-worried-143401075.html",
-          "published": "2026-04-14T14:34:01Z"
+          "title": "JPMorgan has stark message for investors on market weakness",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-stark-message-investors-market-174700070.html",
+          "published": "2026-04-14T17:47:00Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Cleveland Fed President Hammack expects interest rates to stay on hold 'for a good while'",
+          "link": "https://www.cnbc.com/2026/04/15/cleveland-fed-president-hammack-expects-interest-rates-to-stay-on-hold-for-a-good-while.html",
+          "published": "Wed, 15 Apr 2026 13:31:35 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Trump threatens to fire Powell if the Fed chair doesn't leave office on his own",
+          "link": "https://www.cnbc.com/2026/04/15/trump-threatens-to-fire-powell-if-the-fed-chair-doesnt-leave-office-on-his-own.html",
+          "published": "Wed, 15 Apr 2026 14:43:27 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "U.S. says Hormuz blockade 'fully implemented,' while signaling diplomatic off-ramp for Iran",
+          "link": "https://www.cnbc.com/2026/04/15/us-strait-of-hormuz-blockade-navy-iran-seaborne-trade-oil-trump.html",
+          "published": "Wed, 15 Apr 2026 14:40:37 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "CEOs are betting AI will augment work rather than displace all workers",
+          "link": "https://www.cnbc.com/2026/04/14/ceos-are-betting-ai-will-augment-work-rather-than-displace-all-workers.html",
+          "published": "Tue, 14 Apr 2026 16:04:59 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Wholesale prices rose 0.5% in March, much less than expected despite war impact",
@@ -68,30 +92,6 @@
           "title": "Hormuz blockade could deepen world’s worst energy crisis — and risk a dangerous misstep",
           "link": "https://www.cnbc.com/2026/04/13/trump-hormuz-blockade-oil-shock-china-iran-india-vessels-peace-talks.html",
           "published": "Mon, 13 Apr 2026 23:20:53 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Consumer sentiment hits record low, inflation fears rise amid Iran war",
-          "link": "https://www.cnbc.com/2026/04/10/consumer-sentiment-inflation-fears-iran-war.html",
-          "published": "Fri, 10 Apr 2026 15:48:09 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Consumer prices rose 3.3% in March, as energy prices spiked due to Iran conflict",
-          "link": "https://www.cnbc.com/2026/04/10/cpi-inflation-report-march-2026.html",
-          "published": "Fri, 10 Apr 2026 13:37:13 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Inflation held sticky at 3% as U.S. headed into war with Iran, key Fed gauge shows",
-          "link": "https://www.cnbc.com/2026/04/09/core-inflation-was-3percent-in-february-as-expected-key-fed-gauge-shows.html",
-          "published": "Thu, 09 Apr 2026 14:38:23 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Iran oil shock stirs memories of 1997 Asian Financial Crisis — but here’s why history may not repeat itself",
-          "link": "https://www.cnbc.com/2026/04/09/asia-iran-oil-shock-1997-crisis-comparison-reserves-stagflation-hormuz-trump.html",
-          "published": "Thu, 09 Apr 2026 09:26:43 GMT"
         }
       ]
     }
