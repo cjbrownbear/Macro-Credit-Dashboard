@@ -1,62 +1,74 @@
 {
-  "updated": "2026-04-16T15:05:22Z",
+  "updated": "2026-04-18T14:05:06Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "TSMC and ASML post-earnings stock moves could be a sign of what's to come from chip companies",
-          "link": "https://www.cnbc.com/2026/04/16/taiwan-semi-tsm-asml-stock-earnings-ai-chips.html",
-          "published": "Thu, 16 Apr 2026 14:15:11 GMT"
+          "title": "Iran says Strait of Hormuz is closed again as vessel attempting to cross comes under gunfire",
+          "link": "https://www.cnbc.com/2026/04/18/trump-says-us-has-good-news-on-iran-talks-to-continue.html",
+          "published": "Sat, 18 Apr 2026 12:23:31 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "U.S. Navy stopped 13 ships from passing Iranian port blockade, Pentagon says",
-          "link": "https://www.cnbc.com/2026/04/16/trump-iran-war-hormuz-strait-blockade.html",
-          "published": "Thu, 16 Apr 2026 13:42:53 GMT"
+          "title": "We spoke to over 30 central bankers, policymakers and politicians. Here are their top concerns",
+          "link": "https://www.cnbc.com/2026/04/18/iran-war-inflation-prices-energy-trump-economy-end.html",
+          "published": "Sat, 18 Apr 2026 10:24:36 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Anthropic rolls out Claude Opus 4.7, an AI model that is 'broadly less capable' than Mythos",
-          "link": "https://www.cnbc.com/2026/04/16/anthropic-claude-opus-4-7-model-mythos.html",
-          "published": "Thu, 16 Apr 2026 14:59:03 GMT"
+          "title": "Berkshire shares left behind as S&P 500 rallies to record high",
+          "link": "https://www.cnbc.com/2026/04/18/berkshire-shares-left-behind-as-sp-500-rallies-to-record-high.html",
+          "published": "Sat, 18 Apr 2026 12:56:03 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Charles Schwab to launch direct bitcoin, ethereum trading to compete with Robinhood",
-          "link": "https://www.cnbc.com/2026/04/16/charles-schwab-to-launch-direct-bitcoin-ethereum-trading-to-compete-with-robinhood.html",
-          "published": "Thu, 16 Apr 2026 15:02:29 GMT"
+          "title": "Iran war, $4 gas prices, took all the fun right out of the U.S. consumer economy",
+          "link": "https://www.cnbc.com/2026/04/18/iran-war-gas-prices-consumer-spending-economy.html",
+          "published": "Sat, 18 Apr 2026 13:31:50 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Airline CEOs urged by lawmaker to lower fares if fuel prices come down",
-          "link": "https://www.cnbc.com/2026/04/16/airline-ceos-prices.html",
-          "published": "Thu, 16 Apr 2026 13:44:30 GMT"
+          "title": "'It's just scale': Local mom-and-pop car dealerships are growing or dying amid industry consolidation, rise of mega-retailers",
+          "link": "https://www.cnbc.com/2026/04/18/car-dealerships-auto-retail.html",
+          "published": "Sat, 18 Apr 2026 12:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "PepsiCo earnings beat estimates as Doritos, Lay's price cuts win back shoppers",
-          "link": "https://www.cnbc.com/2026/04/16/pepsico-pep-q1-2026-earnings.html",
-          "published": "Thu, 16 Apr 2026 14:22:41 GMT"
+          "title": "Nvidia's once-tight bond with gamers is cracking over AI, 'and that breaks my heart'",
+          "link": "https://www.cnbc.com/2026/04/18/nvidia-ai-backlash-gamers-geforce-gpu.html",
+          "published": "Sat, 18 Apr 2026 12:00:01 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Stock market today: S&P 500, Dow, Nasdaq fall as tech sector pulls back, US-Iran truce in focus",
-          "link": "https://finance.yahoo.com/news/live/stock-market-today-sp-500-dow-nasdaq-fall-as-tech-sector-pulls-back-us-iran-truce-in-focus-230116270.html",
-          "published": "2026-04-15T23:01:16Z"
+          "title": "Executives Are Deferring $300,000 in Income Before December 31st: Here’s Why the Math Works",
+          "link": "https://finance.yahoo.com/markets/options/articles/executives-deferring-300-000-income-135156953.html",
+          "published": "2026-04-18T13:51:56Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Is Nike’s dividend safe? Yield & payout ratio explained",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/nike-dividend-safe-yield-payout-145100012.html",
-          "published": "2026-04-16T14:51:00Z"
+          "title": "Dow Jones Futures: Iran Says Hormuz 'Under Strict Control'; Tesla Earnings Due",
+          "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-oil-prices-strait-of-hormuz-tesla-earnings/?src=A00220&yptr=yahoo",
+          "published": "2026-04-18T13:37:07Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "We spoke to over 30 central bankers, policymakers and politicians. Here are their top concerns",
+          "link": "https://www.cnbc.com/2026/04/18/iran-war-inflation-prices-energy-trump-economy-end.html",
+          "published": "Sat, 18 Apr 2026 10:24:36 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Fed Governor Waller says Iran war and labor market risks are keeping central bank on hold",
+          "link": "https://www.cnbc.com/2026/04/17/fed-governor-waller-says-iran-war-and-labor-market-risks-are-keeping-central-bank-on-hold.html",
+          "published": "Fri, 17 Apr 2026 19:00:13 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "New York Fed President Williams worries war will slow growth, aggravate inflation",
@@ -80,18 +92,6 @@
           "title": "Here are all the ways the Iran war has affected the U.S. economy so far",
           "link": "https://www.cnbc.com/2026/04/15/here-are-all-the-ways-the-iran-war-has-affected-the-us-economy-so-far.html",
           "published": "Wed, 15 Apr 2026 17:13:37 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Cleveland Fed President Hammack expects interest rates to stay on hold 'for a good while'",
-          "link": "https://www.cnbc.com/2026/04/15/cleveland-fed-president-hammack-expects-interest-rates-to-stay-on-hold-for-a-good-while.html",
-          "published": "Wed, 15 Apr 2026 15:21:07 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Trump threatens to fire Powell if the Fed chair doesn't leave office on his own",
-          "link": "https://www.cnbc.com/2026/04/15/trump-threatens-to-fire-powell-if-the-fed-chair-doesnt-leave-office-on-his-own.html",
-          "published": "Wed, 15 Apr 2026 14:43:27 GMT"
         }
       ]
     }
