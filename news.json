@@ -1,62 +1,68 @@
 {
-  "updated": "2026-04-19T14:04:08Z",
+  "updated": "2026-04-20T14:57:25Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Trump says talks between U.S. and Iran to resume in Pakistan on Monday",
-          "link": "https://www.cnbc.com/2026/04/19/iran-says-talks-continue-while-it-retains-control-of-strait-of-hormuz-.html",
-          "published": "Sun, 19 Apr 2026 13:36:54 GMT"
+          "title": "Investors are misreading news about the Iran war, analysts say as markets whipsaw",
+          "link": "https://www.cnbc.com/2026/04/20/market-optimism-iran-war-equities-markets.html",
+          "published": "Mon, 20 Apr 2026 13:29:25 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Gas prices may not drop below $3 a gallon until next year: Energy Secretary Wright",
-          "link": "https://www.cnbc.com/2026/04/19/gas-prices-drop-until-next-year-wright.html",
-          "published": "Sun, 19 Apr 2026 14:00:35 GMT"
+          "title": "Sandwich chain Jersey Mike's confidentially files for IPO",
+          "link": "https://www.cnbc.com/2026/04/20/jersey-mikes-ipo.html",
+          "published": "Mon, 20 Apr 2026 14:33:56 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "SiIicon Valley's AI agent hiccups: Wasted tokens and 'chaotic' systems",
-          "link": "https://www.cnbc.com/2026/04/19/siiicon-valley-ai-agent-openclaw-problems.html",
-          "published": "Sun, 19 Apr 2026 12:00:01 GMT"
+          "title": "'Resumption of hostilities': Seized ship, vessel attacks push U.S.-Iran ceasefire toward brink",
+          "link": "https://www.cnbc.com/2026/04/20/us-iran-war-middle-east-conflict-peace-deal-strait-hormuz-shipping-ceasefire-tensions.html",
+          "published": "Mon, 20 Apr 2026 12:34:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "We spoke to over 30 central bankers, policymakers and politicians. Here are their top concerns",
-          "link": "https://www.cnbc.com/2026/04/18/iran-war-inflation-prices-energy-trump-economy-end.html",
-          "published": "Sat, 18 Apr 2026 10:24:36 GMT"
+          "title": "Kash Patel sues The Atlantic for $250 million over alcohol abuse claims",
+          "link": "https://www.cnbc.com/2026/04/20/kash-patel-atlantic-lawsuit-alcohol-fbi.html",
+          "published": "Mon, 20 Apr 2026 14:54:48 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Berkshire shares left behind as S&P 500 rallies to record high",
-          "link": "https://www.cnbc.com/2026/04/18/berkshire-shares-left-behind-as-sp-500-rallies-to-record-high.html",
-          "published": "Sat, 18 Apr 2026 12:56:03 GMT"
+          "title": "Kevin Warsh would be the first tech bro Fed chair. How Silicon Valley shaped him",
+          "link": "https://www.cnbc.com/2026/04/20/fed-silicon-valley-kevin-warsh.html",
+          "published": "Mon, 20 Apr 2026 13:40:49 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Top Wall Street analysts are bullish on these 3 stocks for the long haul",
-          "link": "https://www.cnbc.com/2026/04/19/top-analysts-are-bullish-on-these-3-stocks-for-the-long-haul.html",
-          "published": "Sun, 19 Apr 2026 12:26:04 GMT"
+          "title": "Eli Lilly agrees to acquire cancer drug maker Kelonia in deal worth up to $7 billion",
+          "link": "https://www.cnbc.com/2026/04/20/eli-lilly-to-acquire-cancer-drug-maker-kelonia.html",
+          "published": "Mon, 20 Apr 2026 14:41:17 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Got $15,000? Why Tesla Stock Still Has the Makings of a Generational Wealth Builder",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/got-15-000-why-tesla-121000084.html",
-          "published": "2026-04-18T12:10:00Z"
+          "title": "Why I withdrew everything from Aave this weekend",
+          "link": "https://finance.yahoo.com/markets/crypto/articles/why-withdrew-everything-aave-weekend-230059031.html",
+          "published": "2026-04-19T23:00:59Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Big Short investor Michael Burry says Trump's Iran war decisions are being driven by something other than foreign policy",
-          "link": "https://finance.yahoo.com/markets/commodities/articles/big-short-investor-michael-burry-121500216.html",
-          "published": "2026-04-18T12:15:00Z"
+          "title": "Why the tech stock rally may only be starting",
+          "link": "https://finance.yahoo.com/news/why-the-tech-stock-rally-may-only-be-starting-144535609.html",
+          "published": "2026-04-20T14:45:35Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "'Resumption of hostilities': Seized ship, vessel attacks push U.S.-Iran ceasefire toward brink",
+          "link": "https://www.cnbc.com/2026/04/20/us-iran-war-middle-east-conflict-peace-deal-strait-hormuz-shipping-ceasefire-tensions.html",
+          "published": "Mon, 20 Apr 2026 12:34:01 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "We spoke to over 30 central bankers, policymakers and politicians. Here are their top concerns",
@@ -86,12 +92,6 @@
           "title": "Cattle prices soar to record highs as grilling season heats up",
           "link": "https://www.cnbc.com/2026/04/15/beef-cattle-grilling-inflation.html",
           "published": "Wed, 15 Apr 2026 20:31:04 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Here are all the ways the Iran war has affected the U.S. economy so far",
-          "link": "https://www.cnbc.com/2026/04/15/here-are-all-the-ways-the-iran-war-has-affected-the-us-economy-so-far.html",
-          "published": "Wed, 15 Apr 2026 17:13:37 GMT"
         }
       ]
     }
