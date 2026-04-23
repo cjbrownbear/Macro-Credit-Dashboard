@@ -1,62 +1,74 @@
 {
-  "updated": "2026-04-22T14:53:14Z",
+  "updated": "2026-04-23T15:21:31Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Iran says it has seized two ships in Strait of Hormuz after U.S. extends ceasefire",
-          "link": "https://www.cnbc.com/2026/04/22/strait-of-hormuz-ships-attacked-iran-war.html",
-          "published": "Wed, 22 Apr 2026 14:33:37 GMT"
+          "title": "Trump orders Navy to 'shoot and kill any boat' laying mines in Hormuz Strait",
+          "link": "https://www.cnbc.com/2026/04/23/trump-hormuz-strait-iran-war.html",
+          "published": "Thu, 23 Apr 2026 15:01:40 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump administration in advanced talks for a rescue package for Spirit Airlines, source says",
-          "link": "https://www.cnbc.com/2026/04/22/spirit-airlines-rescue-trump-administration.html",
-          "published": "Wed, 22 Apr 2026 14:51:09 GMT"
+          "title": "Microsoft plans first voluntary employee buyout in company's 51-year history",
+          "link": "https://www.cnbc.com/2026/04/23/microsoft-plans-first-voluntary-retirement-program-for-us-employees.html",
+          "published": "Thu, 23 Apr 2026 15:15:02 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Boeing CEO says 'all systems are go' to increase 737 production as company narrows loss",
-          "link": "https://www.cnbc.com/2026/04/22/boeing-ba-q1-2026-earnings.html",
-          "published": "Wed, 22 Apr 2026 14:05:20 GMT"
+          "title": "Starbucks' loyalty program changes are drawing value-conscious customers",
+          "link": "https://www.cnbc.com/2026/04/23/starbucks-loyalty-changes-are-drawing-value-conscious-customers.html",
+          "published": "Thu, 23 Apr 2026 15:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Google unveils chips for AI training and inference in latest shot at Nvidia",
-          "link": "https://www.cnbc.com/2026/04/22/google-launches-training-and-inference-tpus-in-latest-shot-at-nvidia.html",
-          "published": "Wed, 22 Apr 2026 13:18:40 GMT"
+          "title": "Trump administration moves to reclassify cannabis in major shift that could expand research",
+          "link": "https://www.cnbc.com/2026/04/23/trump-administration-reclassifies-cannabis.html",
+          "published": "Thu, 23 Apr 2026 13:21:43 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "United Airlines slashes 2026 forecast as fuel costs surge, but demand remains strong",
-          "link": "https://www.cnbc.com/2026/04/21/united-airlines-ual-q1-2026-earnings.html",
-          "published": "Wed, 22 Apr 2026 12:33:44 GMT"
+          "title": "Trump's net approval rating on economy and overall falls to lowest of his two terms, CNBC survey shows",
+          "link": "https://www.cnbc.com/2026/04/23/trumps-approval-rating-on-economy-and-overall-falls-to-lowest-of-his-two-terms-cnbc-survey-shows.html",
+          "published": "Thu, 23 Apr 2026 15:06:38 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Retail traders can now get long OpenAI as Robinhood's venture fund takes a stake",
-          "link": "https://www.cnbc.com/2026/04/22/retail-traders-can-now-get-long-openai-as-robinhoods-venture-fund-takes-a-stake.html",
-          "published": "Wed, 22 Apr 2026 12:13:01 GMT"
+          "title": "Warner Bros. Discovery shareholders approve Paramount acquisition",
+          "link": "https://www.cnbc.com/2026/04/23/warner-bros-discovery-shareholder-vote-paramount-deal.html",
+          "published": "Thu, 23 Apr 2026 14:31:30 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Warren Buffett dumped 77% of Amazon to buy surging media stock",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/warren-buffett-dumped-77-amazon-003700673.html",
-          "published": "2026-04-22T00:37:00Z"
+          "title": "Semiconductor stocks like Nvidia and Micron are on a remarkable streak",
+          "link": "https://finance.yahoo.com/news/semiconductor-stocks-like-nvidia-and-micron-are-on-a-remarkable-streak-150827239.html",
+          "published": "2026-04-23T15:08:27Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Stock market today: Dow, S&P 500, Nasdaq rise after Trump extends US-Iran ceasefire",
-          "link": "https://finance.yahoo.com/markets/stocks/live/stock-market-today-wednesday-april-22-dow-sp-500-nasdaq-trump-us-iran-ceasefire-230429476.html",
-          "published": "2026-04-21T23:04:29Z"
+          "title": "Stock market today: Dow, S&P 500, Nasdaq edge up as oil rises amid Hormuz standoff",
+          "link": "https://finance.yahoo.com/markets/stocks/live/stock-market-today-dow-sp-500-nasdaq-edge-up-as-oil-rises-amid-hormuz-standoff-233045983.html",
+          "published": "2026-04-22T23:30:45Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "These charts show how Iran's economy is in freefall",
+          "link": "https://www.cnbc.com/2026/04/23/iran-economy-war-charts-rial-oil-strait-hormuz-blockade.html",
+          "published": "Thu, 23 Apr 2026 15:16:53 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Kevin Warsh gave his preferred way for measuring inflation. It could come back to bite him",
+          "link": "https://www.cnbc.com/2026/04/22/kevin-warsh-inflation-trend-pce-trump.html",
+          "published": "Wed, 22 Apr 2026 19:29:20 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Trump extends Iran ceasefire — but market focus has already drifted elsewhere",
@@ -80,18 +92,6 @@
           "title": "Chair nominee Kevin Warsh says Fed must ‘stay in its lane’ to maintain independence",
           "link": "https://www.cnbc.com/2026/04/20/kevin-warsh-fed-confirmation-senate.html",
           "published": "Tue, 21 Apr 2026 12:18:00 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "'Resumption of hostilities': Seized ship, vessel attacks push U.S.-Iran ceasefire toward brink",
-          "link": "https://www.cnbc.com/2026/04/20/us-iran-war-middle-east-conflict-peace-deal-strait-hormuz-shipping-ceasefire-tensions.html",
-          "published": "Mon, 20 Apr 2026 15:33:10 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "We spoke to over 30 central bankers, policymakers and politicians. Here are their top concerns",
-          "link": "https://www.cnbc.com/2026/04/18/iran-war-inflation-prices-energy-trump-economy-end.html",
-          "published": "Sat, 18 Apr 2026 10:24:36 GMT"
         }
       ]
     }
