@@ -1,62 +1,68 @@
 {
-  "updated": "2026-04-24T14:49:00Z",
+  "updated": "2026-04-25T14:07:33Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "DOJ drops criminal probe of Fed Chair Powell, removes hurdle for Warsh confirmation",
-          "link": "https://www.cnbc.com/2026/04/24/fed-powell-doj-warsh-trump.html",
-          "published": "Fri, 24 Apr 2026 14:48:40 GMT"
+          "title": "AI talent war: Software industry is a new target as top executives jump ship to OpenAI",
+          "link": "https://www.cnbc.com/2026/04/25/ai-talent-wars-enterprise-software-executives-openai.html",
+          "published": "Sat, 25 Apr 2026 12:43:39 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Iran's top diplomat expected in Pakistan on Friday night to discuss peace plans: MS NOW",
-          "link": "https://www.cnbc.com/2026/04/24/iran-war-pakistan-trump-hegseth.html",
-          "published": "Fri, 24 Apr 2026 14:37:38 GMT"
+          "title": "Iran says no meeting with U.S. negotiators planned in Pakistan, with Trump envoys due to head to Islamabad",
+          "link": "https://www.cnbc.com/2026/04/25/iran-says-no-meeting-with-us-negotiators-planned-in-pakistan.html",
+          "published": "Sat, 25 Apr 2026 08:44:32 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Musk v. Altman heads to court next week. Here's what's at stake",
-          "link": "https://www.cnbc.com/2026/04/24/musk-v-altman-trial-openai-lawsuit-xai.html",
-          "published": "Fri, 24 Apr 2026 14:24:28 GMT"
+          "title": "Berkshire attracts interest as it slips further behind the S&P 500",
+          "link": "https://www.cnbc.com/2026/04/25/berkshire-attracts-interest-as-it-slips-further-behind-the-sp-500.html",
+          "published": "Sat, 25 Apr 2026 12:35:30 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Wall Street's 'fear gauge' is doing something unusual. What it means",
-          "link": "https://www.cnbc.com/2026/04/24/wall-streets-fear-gauge-is-doing-something-unusual-what-it-means.html",
-          "published": "Fri, 24 Apr 2026 11:44:11 GMT"
+          "title": "For car, phone, even tractor owners, a populist wave is rising to end the 'captive' repair economy",
+          "link": "https://www.cnbc.com/2026/04/25/right-to-repair-consumer-prices-affordability-economy-elections.html",
+          "published": "Sat, 25 Apr 2026 13:31:28 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "AMD shares soar 12% on no company news. Here's what has investors so excited",
-          "link": "https://www.cnbc.com/2026/04/24/amd-shares-soar-on-no-company-news-heres-what-has-investors-so-excited.html",
-          "published": "Fri, 24 Apr 2026 14:31:11 GMT"
+          "title": "Pirro could reopen Fed probe at any time, Democratic senators warn",
+          "link": "https://www.cnbc.com/2026/04/24/fed-powell-pirro-elizabeth-warren-durbin.html",
+          "published": "Fri, 24 Apr 2026 22:02:04 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Oil prices fall on report Iran foreign minister to arrive in Pakistan for peace talks",
-          "link": "https://www.cnbc.com/2026/04/24/oil-price-wti-brent-after-israel-lebanon-ceasefire-extension.html",
-          "published": "Fri, 24 Apr 2026 14:40:40 GMT"
+          "title": "This little-known ETF is up over 600% amid U.S.-Iran war, a better trade than oil or energy stocks",
+          "link": "https://www.cnbc.com/2026/04/25/crude-oil-freight-tanker-strait-hormuz-iran-war-energy-stocks.html",
+          "published": "Sat, 25 Apr 2026 11:53:07 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "JPMorgan issues blunt warning as investors move to safety",
-          "link": "https://finance.yahoo.com/markets/crypto/articles/jpmorgan-issues-blunt-warning-investors-193000280.html",
-          "published": "2026-04-23T19:30:00Z"
+          "title": "Big Four accounting chooses AI over humans, cuts benefits & hiring",
+          "link": "https://finance.yahoo.com/sectors/technology/articles/big-four-accounting-chooses-ai-223954685.html",
+          "published": "2026-04-24T22:39:54Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Stock market today: Nasdaq and S&P 500 rise as Intel stock soars, Dow slips amid Hormuz tensions",
-          "link": "https://finance.yahoo.com/markets/stocks/live/stock-market-today-friday-april-24-224547261.html",
-          "published": "2026-04-23T22:45:47Z"
+          "title": "Nvidia stock clinches record close, pushing market cap over $5 trillion once again",
+          "link": "https://finance.yahoo.com/sectors/technology/article/nvidia-stock-clinches-record-close-pushing-market-cap-over-5-trillion-once-again-173529477.html",
+          "published": "2026-04-24T17:35:29Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Will he stay or will he go? With criminal probe over, Fed Chair Powell faces big decision",
+          "link": "https://www.cnbc.com/2026/04/24/will-he-stay-or-will-he-go-with-criminal-probe-over-fed-chair-powell-faces-big-decision.html",
+          "published": "Fri, 24 Apr 2026 19:19:00 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "These charts show how Iran's economy is in freefall",
@@ -86,12 +92,6 @@
           "title": "Tariff refunds begin on Monday. These retailers are due big paydays",
           "link": "https://www.cnbc.com/2026/04/20/tariff-refunds-begin-on-monday-these-retailers-are-due-big-paydays.html",
           "published": "Tue, 21 Apr 2026 12:31:58 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Chair nominee Kevin Warsh says Fed must ‘stay in its lane’ to maintain independence",
-          "link": "https://www.cnbc.com/2026/04/20/kevin-warsh-fed-confirmation-senate.html",
-          "published": "Tue, 21 Apr 2026 12:18:00 GMT"
         }
       ]
     }
