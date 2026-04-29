@@ -1,62 +1,68 @@
 {
-  "updated": "2026-04-28T15:37:20Z",
+  "updated": "2026-04-29T15:25:41Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "United Arab Emirates to leave OPEC May 1, energy chief says still committed to oil price stability",
-          "link": "https://www.cnbc.com/2026/04/28/uae-opec-oil-iran.html",
-          "published": "Tue, 28 Apr 2026 15:12:52 GMT"
+          "title": "Trump Fed pick Kevin Warsh clears key Senate hurdle, teeing up final vote",
+          "link": "https://www.cnbc.com/2026/04/29/trump-fed-nominee-kevin-warsh-senate-approval.html",
+          "published": "Wed, 29 Apr 2026 15:16:57 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "DOJ's handling of Epstein files to get congressional watchdog scrutiny",
-          "link": "https://www.cnbc.com/2026/04/28/jeffrey-epstein-doj-gao-congress.html",
-          "published": "Tue, 28 Apr 2026 15:05:43 GMT"
+          "title": "Bill Ackman's $5 billion Pershing Square IPO to start trading, testing Berkshire-style vision",
+          "link": "https://www.cnbc.com/2026/04/29/bill-ackmans-5-billion-pershing-square-ipo-to-start-trading-testing-berkshire-style-vision.html",
+          "published": "Wed, 29 Apr 2026 14:20:53 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "ABC faces renewed Trump backlash as Kimmel says comments 'not, by any stretch' call for violence",
-          "link": "https://www.cnbc.com/2026/04/28/trump-jimmy-kimmel-monologue-disney-abc.html",
-          "published": "Tue, 28 Apr 2026 15:19:31 GMT"
+          "title": "OpenAI’s subtle drift from Microsoft has become an aggressive move toward Amazon",
+          "link": "https://www.cnbc.com/2026/04/29/openai-drift-from-microsoft-to-amazon-turns-aggressive-after-subtlety.html",
+          "published": "Wed, 29 Apr 2026 14:37:48 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "OpenAI reportedly missed revenue targets. Shares of Oracle and these chip stocks are falling",
-          "link": "https://www.cnbc.com/2026/04/28/openai-reportedly-missed-revenue-targets-shares-of-oracle-and-these-chip-stocks-are-falling.html",
-          "published": "Tue, 28 Apr 2026 15:20:55 GMT"
+          "title": "Uber makes big bets on travel, hotels and AI voice bookings at annual product showcase",
+          "link": "https://www.cnbc.com/2026/04/29/uber-ai-travel-hotels-go-get.html",
+          "published": "Wed, 29 Apr 2026 14:47:51 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Spotify stock plummets after earnings beat expectations as guidance disappoints",
-          "link": "https://www.cnbc.com/2026/04/28/spotify-stock-spot-earnings-beat-guidance.html",
-          "published": "Tue, 28 Apr 2026 14:00:46 GMT"
+          "title": "Oil prices rebound to highest in weeks with Trump reportedly preparing to extend Iran blockade",
+          "link": "https://www.cnbc.com/2026/04/29/oil-prices-brent-wti-trump-iran.html",
+          "published": "Wed, 29 Apr 2026 15:25:10 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Inflation could get in the way of Warsh's desire to cut interest rates, CNBC survey finds",
-          "link": "https://www.cnbc.com/2026/04/28/inflation-could-get-in-the-way-of-warshs-desire-to-cut-interest-rates-cnbc-survey-finds.html",
-          "published": "Tue, 28 Apr 2026 13:51:30 GMT"
+          "title": "Former Attorney General Bondi to testify about Epstein on May 29 before House panel",
+          "link": "https://www.cnbc.com/2026/04/29/epstein-bondi-house-congress.html",
+          "published": "Wed, 29 Apr 2026 14:43:32 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Tech stocks today: Oracle, AMD, and other AI-driven names sink, with Big Tech earnings on deck",
-          "link": "https://finance.yahoo.com/sectors/technology/live/tech-stocks-today-nvidia-magnificent-seven-113535737.html",
-          "published": "2026-04-27T11:35:35Z"
+          "title": "141-year-old candy store chain closes all retail locations",
+          "link": "https://finance.yahoo.com/economy/articles/141-old-candy-store-chain-224800796.html",
+          "published": "2026-04-28T22:48:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "3 Reasons NVIDIA’s Rally Has Room to Run Even at All-Time Highs",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-nvidia-rally-room-151634001.html",
-          "published": "2026-04-28T15:16:34Z"
+          "title": "Bloom Energy Stock Soars. Fuel-Cell Demand For Data Centers Is Scorching.",
+          "link": "https://www.investors.com/news/bloom-energy-earnings-q1-be-stock/?src=A00220&yptr=yahoo",
+          "published": "2026-04-29T15:05:47Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Will rates go higher in Europe this week? Central banks confront stagflation threat",
+          "link": "https://www.cnbc.com/2026/04/29/europes-central-banks-in-wait-and-see-mode-on-interest-rates.html",
+          "published": "Wed, 29 Apr 2026 08:13:18 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Will he stay or will he go? With criminal probe over, Fed Chair Powell faces big decision",
@@ -86,12 +92,6 @@
           "title": "‘New cards on the battlefield’: U.S., Iran ratchet up rhetoric with peace talks in limbo",
           "link": "https://www.cnbc.com/2026/04/21/new-cards-on-the-battlefield-us-iran-ratchet-up-rhetoric-with-peace-talks-in-limbo.html",
           "published": "Tue, 21 Apr 2026 11:16:56 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Tariff refunds begin on Monday. These retailers are due big paydays",
-          "link": "https://www.cnbc.com/2026/04/20/tariff-refunds-begin-on-monday-these-retailers-are-due-big-paydays.html",
-          "published": "Tue, 21 Apr 2026 12:31:58 GMT"
         }
       ]
     }
