@@ -1,62 +1,86 @@
 {
-  "updated": "2026-05-03T14:14:15Z",
+  "updated": "2026-05-07T15:34:22Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "'Godspeed my friend': Inside the final hours of Spirit Airlines",
-          "link": "https://www.cnbc.com/2026/05/02/spirit-airlines-shutdown-inside-the-final-hours.html",
-          "published": "Sun, 03 May 2026 00:26:04 GMT"
+          "title": "McDonald's CEO says consumer spending could be 'getting a little bit worse'",
+          "link": "https://www.cnbc.com/2026/05/07/mcdonalds-mcd-q1-2026-earnings.html",
+          "published": "Thu, 07 May 2026 14:26:07 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "U.S. crude oil exports surge to record as tankers flock to Gulf Coast during Iran war",
-          "link": "https://www.cnbc.com/2026/05/03/us-crude-oil-exports-surge-to-record-as-tankers-flock-to-gulf-coast.html",
-          "published": "Sun, 03 May 2026 11:08:46 GMT"
+          "title": "OpenAI trial: Mother of Musk's children says he offered Altman a Tesla board seat",
+          "link": "https://www.cnbc.com/2026/05/07/open-ai-trial-shivon-zilis-musk-altman-tesla-board.html",
+          "published": "Thu, 07 May 2026 15:20:59 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "OPEC+ announces 188,000 barrels-per-day output increase in first meeting without UAE",
-          "link": "https://www.cnbc.com/2026/05/03/opec-announces-188000-barrels-per-day-output-increase-.html",
-          "published": "Sun, 03 May 2026 11:28:54 GMT"
+          "title": "Ryan Cohen's mysterious bank letter backing GameStop's eBay bid reveals a big issue with deal",
+          "link": "https://www.cnbc.com/2026/05/07/ryan-cohens-mysterious-bank-letter-backing-his-ebay-bid-reveals-a-big-issue.html",
+          "published": "Thu, 07 May 2026 15:27:17 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Greg Abel rules out Berkshire break-up, stresses continuity with Buffett's legacy at annual meeting",
-          "link": "https://www.cnbc.com/2026/05/03/berkshire-annual-meeting-greg-abel-rules-out-break-up-stressing-continuity-with-buffett.html",
-          "published": "Sun, 03 May 2026 11:04:43 GMT"
+          "title": "Boeing CEO Kelly Ortberg set to join Trump on China visit next week",
+          "link": "https://www.cnbc.com/2026/05/07/trump-china-boeing-kelly-ortberg.html",
+          "published": "Thu, 07 May 2026 15:25:55 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Healthcare cost surge makes parental paid leave benefits a target of workplace cuts",
-          "link": "https://www.cnbc.com/2026/05/03/healthcare-costs-parental-paid-leave-employee-benefits-cuts.html",
-          "published": "Sun, 03 May 2026 14:14:01 GMT"
+          "title": "Paul Tudor Jones says AI bull market has 'another year or two to run'",
+          "link": "https://www.cnbc.com/2026/05/07/paul-tudor-jones-says-ai-bull-market-has-another-year-or-two-to-run.html",
+          "published": "Thu, 07 May 2026 15:14:05 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Top Wall Street analysts like these 3 stocks for their long-term prospects",
-          "link": "https://www.cnbc.com/2026/05/03/top-street-analysts-like-these-3-stocks-for-their-long-term-prospects.html",
-          "published": "Sun, 03 May 2026 11:13:01 GMT"
+          "title": "Used car prices fall for first time this year as gas prices spike, EV interest rises",
+          "link": "https://www.cnbc.com/2026/05/07/used-car-prices-gas.html",
+          "published": "Thu, 07 May 2026 14:18:17 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Mark Zuckerberg sends startling message to Meta employees",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/mark-zuckerberg-sends-startling-message-133300156.html",
-          "published": "2026-05-02T13:33:00Z"
+          "title": "Coinbase CEO makes critical move before earnings",
+          "link": "https://finance.yahoo.com/markets/crypto/articles/coinbase-ceo-makes-critical-move-052101559.html",
+          "published": "2026-05-06T05:21:01Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Roblox CEO cites challenges from its age check for dimmed outlook as stock plummets",
-          "link": "https://finance.yahoo.com/markets/article/roblox-ceo-cites-challenges-from-its-age-check-for-dimmed-outlook-as-stock-plummets-182507944.html",
-          "published": "2026-05-01T18:25:07Z"
+          "title": "Nuclear Stock Vistra Pops On Earnings But Uranium Producer Soars",
+          "link": "https://www.investors.com/news/nuclear-stock-earnings-vistra-nuscale-energy-fuels-oklo-nano-nuclear/?src=A00220&yptr=yahoo",
+          "published": "2026-05-07T15:18:48Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "There's 'no chance' Warsh will be able to get the Fed to cut rates, Paul Tudor Jones says",
+          "link": "https://www.cnbc.com/2026/05/07/theres-no-chance-warsh-will-be-able-to-get-the-fed-to-cut-rates-paul-tudor-jones-says.html",
+          "published": "Thu, 07 May 2026 13:23:19 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Surging gas prices are hitting lower-income households harder, New York Fed study shows",
+          "link": "https://www.cnbc.com/2026/05/06/surging-gas-prices-are-hurting-lower-income-households-harder-study-shows.html",
+          "published": "Wed, 06 May 2026 19:27:54 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Private payrolls rose by 109,000 in April, topping expectations, ADP says",
+          "link": "https://www.cnbc.com/2026/05/06/private-payrolls-rose-by-109000-in-april-topping-expectations-adp-says.html",
+          "published": "Wed, 06 May 2026 13:49:25 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Aluminum prices are surging. Here's how companies are handling the costs",
+          "link": "https://www.cnbc.com/2026/05/05/aluminum-prices-hormuz-ford-molson-coors.html",
+          "published": "Tue, 05 May 2026 21:17:20 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "UK exports to U.S. plunge by 25% after Trump's 'liberation day' tariffs blitz",
@@ -68,30 +92,6 @@
           "title": "Fed dissenters explain 'no' votes, saying they disagreed with hinting next move would be a cut",
           "link": "https://www.cnbc.com/2026/05/01/fed-dissenters-explain-no-votes-saying-they-disagreed-with-hinting-next-move-would-be-a-cut.html",
           "published": "Fri, 01 May 2026 19:15:15 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Inside the Fed: Powell vows he won't be a 'shadow chair,' but a Warsh clash will be tough to avoid",
-          "link": "https://www.cnbc.com/2026/04/30/inside-the-fed-powell-and-warsh-set-to-clash.html",
-          "published": "Fri, 01 May 2026 11:12:15 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Core inflation rate hit 3.2% in March as first-quarter growth disappointed at 2%",
-          "link": "https://www.cnbc.com/2026/04/30/pce-inflation-rate-march-2026.html",
-          "published": "Thu, 30 Apr 2026 13:37:31 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Will rates go higher in Europe this week? Central banks confront stagflation threat",
-          "link": "https://www.cnbc.com/2026/04/29/europes-central-banks-in-wait-and-see-mode-on-interest-rates.html",
-          "published": "Thu, 30 Apr 2026 10:44:14 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Will he stay or will he go? With criminal probe over, Fed Chair Powell faces big decision",
-          "link": "https://www.cnbc.com/2026/04/24/will-he-stay-or-will-he-go-with-criminal-probe-over-fed-chair-powell-faces-big-decision.html",
-          "published": "Fri, 24 Apr 2026 19:19:00 GMT"
         }
       ]
     }
