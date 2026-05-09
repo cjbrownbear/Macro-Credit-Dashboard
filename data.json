@@ -1,9 +1,9 @@
 {
-  "updated": "2026-05-07T15:34:21Z",
+  "updated": "2026-05-09T14:19:48Z",
   "overall_status": "tripwire",
   "executive_summary": {
-    "text": "Overall status is Tripwire / Watch. Across the dashboard: 6 healthy, 2 tripwire, 0 stress. Biggest YoY moves: Initial Jobless Claims (Δ 1y: -39000K (-16.3%)); Revolving Consumer Credit (Δ 1y: +23322B (+1.8%)); Net Charge-off Rate (Δ 1y: -0.47pp (-10.3%)).",
-    "updated": "2026-05-07T15:34:21Z",
+    "text": "Overall status is Tripwire / Watch. Across the dashboard: 6 healthy, 2 tripwire, 0 stress. Biggest YoY moves: Revolving Consumer Credit (Δ 1y: +44185B (+3.4%)); Initial Jobless Claims (Δ 1y: -39000K (-16.3%)); Net Charge-off Rate (Δ 1y: -0.47pp (-10.3%)).",
+    "updated": "2026-05-09T14:19:47Z",
     "overall": "tripwire"
   },
   "kpis": [
@@ -195,16 +195,15 @@
       "unit": "usd_b",
       "status": "tripwire",
       "status_label": "Tripwire",
-      "value": 1327596.44,
-      "value_str": "$1,327,596B",
-      "as_of": "Feb 2026",
-      "avg10": 1108039.9846280992,
-      "avg_str": "$1,108,040B",
-      "delta_abs": 23321.969999999972,
-      "delta_pct": 0.017881182631750793,
-      "delta_str": "Δ 1y: +23322B (+1.8%)",
+      "value": 1336987.42,
+      "value_str": "$1,336,987B",
+      "as_of": "Mar 2026",
+      "avg10": 1111583.6613223138,
+      "avg_str": "$1,111,584B",
+      "delta_abs": 44184.86999999988,
+      "delta_pct": 0.03417758574192159,
+      "delta_str": "Δ 1y: +44185B (+3.4%)",
       "spark": [
-        1320920.6,
         1322883.53,
         1331284.5,
         1330878.94,
@@ -223,11 +222,12 @@
         1310351.97,
         1308162.07,
         1312713.48,
-        1317148.12,
-        1316163.23,
-        1324321.59,
-        1326887.25,
-        1327596.44
+        1317148.1,
+        1316163.19,
+        1324321.51,
+        1326575.31,
+        1326953.92,
+        1336987.42
       ],
       "definition": "Total revolving consumer credit outstanding (primarily credit cards).",
       "why": "Rapid growth can signal households leaning on credit."
@@ -287,14 +287,13 @@
       "status_label": "Healthy",
       "value": 4.3,
       "value_str": "4.30%",
-      "as_of": "Mar 2026",
-      "avg10": 4.5733333333333315,
+      "as_of": "Apr 2026",
+      "avg10": 4.567499999999997,
       "avg_str": "4.57%",
       "delta_abs": 0.09999999999999964,
       "delta_pct": 0.023809523809523725,
       "delta_str": "Δ 1y: +0.10pp (+2.4%)",
       "spark": [
-        3.9,
         3.9,
         3.9,
         4.1,
@@ -317,6 +316,7 @@
         4.4,
         4.3,
         4.4,
+        4.3,
         4.3
       ],
       "definition": "Headline unemployment rate (U-3).",
@@ -8467,28 +8467,33 @@
         },
         {
           "date": "2025-10-01",
-          "value": 1317148.12,
+          "value": 1317148.1,
           "value_str": "$1,317,148B"
         },
         {
           "date": "2025-11-01",
-          "value": 1316163.23,
+          "value": 1316163.19,
           "value_str": "$1,316,163B"
         },
         {
           "date": "2025-12-01",
-          "value": 1324321.59,
+          "value": 1324321.51,
           "value_str": "$1,324,322B"
         },
         {
           "date": "2026-01-01",
-          "value": 1326887.25,
-          "value_str": "$1,326,887B"
+          "value": 1326575.31,
+          "value_str": "$1,326,575B"
         },
         {
           "date": "2026-02-01",
-          "value": 1327596.44,
-          "value_str": "$1,327,596B"
+          "value": 1326953.92,
+          "value_str": "$1,326,954B"
+        },
+        {
+          "date": "2026-03-01",
+          "value": 1336987.42,
+          "value_str": "$1,336,987B"
         }
       ],
       "bench_points": [
@@ -11222,26 +11227,30 @@
         },
         {
           "date": "2025-10-01",
-          "value": 1095809.6925000001
+          "value": 1095809.6923333334
         },
         {
           "date": "2025-11-01",
-          "value": 1099129.2231666665
+          "value": 1099129.2226666666
         },
         {
           "date": "2025-12-01",
-          "value": 1102681.2143333333
+          "value": 1102681.2131666667
         },
         {
           "date": "2026-01-01",
-          "value": 1106210.3475
+          "value": 1106207.7468333333
         },
         {
           "date": "2026-02-01",
-          "value": 1109713.2516666665
+          "value": 1109705.2966666666
+        },
+        {
+          "date": "2026-03-01",
+          "value": 1113172.4599166666
         }
       ],
-      "summary_text": "Latest: $1,327,596B (Tripwire). Δ 1y: +23322B (+1.8%)."
+      "summary_text": "Latest: $1,336,987B (Tripwire). Δ 1y: +44185B (+3.4%)."
     },
     {
       "key": "JTSJOL_mil",
@@ -18643,6 +18652,11 @@
           "date": "2026-03-01",
           "value": 4.3,
           "value_str": "4.30%"
+        },
+        {
+          "date": "2026-04-01",
+          "value": 4.3,
+          "value_str": "4.30%"
         }
       ],
       "bench_points": [
@@ -22353,6 +22367,10 @@
         {
           "date": "2026-03-01",
           "value": 4.573333333333333
+        },
+        {
+          "date": "2026-04-01",
+          "value": 4.5675
         }
       ],
       "summary_text": "Latest: 4.30% (Healthy). Δ 1y: +0.10pp (+2.4%)."
@@ -61350,6 +61368,7 @@
     "2026-03-14",
     "2026-03-21",
     "2026-03-28",
+    "2026-04-01",
     "2026-04-04",
     "2026-04-11",
     "2026-04-18",
