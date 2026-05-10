@@ -1,62 +1,68 @@
 {
-  "updated": "2026-05-09T14:19:48Z",
+  "updated": "2026-05-10T14:22:10Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Nvidia embraces role of AI investor, pushing past $40 billion in equity bets this year",
-          "link": "https://www.cnbc.com/2026/05/09/nvidia-embraces-ai-investor-topping-40-billion-in-equity-bets-2026.html",
-          "published": "Sat, 09 May 2026 12:00:01 GMT"
+          "title": "Target is trying to win back busy families from Walmart, starting with the baby aisle",
+          "link": "https://www.cnbc.com/2026/05/10/target.html",
+          "published": "Sun, 10 May 2026 12:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Why one of the nation's largest auto lenders isn't worried about high vehicle prices or 'forever loans'",
-          "link": "https://www.cnbc.com/2026/05/09/capital-one-auto-forever-loans-used-cars.html",
-          "published": "Sat, 09 May 2026 12:00:01 GMT"
+          "title": "Alphabet's 160% rally in a year reflects value of owning 'most of the stack' in AI",
+          "link": "https://www.cnbc.com/2026/05/10/alphabet-160percent-rally-in-year-reflects-value-of-owning-most-of-ai-stack.html",
+          "published": "Sun, 10 May 2026 12:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Major crypto bill slated for May 14 Senate Banking Committee vote",
-          "link": "https://www.cnbc.com/2026/05/08/congress-crypto-bill-vote-senate-banking-committee.html",
-          "published": "Fri, 08 May 2026 23:35:48 GMT"
+          "title": "Meet the YouTube whisperers, a booming class of advisors behind MrBeast and other million-dollar channels",
+          "link": "https://www.cnbc.com/2026/05/10/youtube-advisors-mrbeast-top-creators-platform-viewership.html",
+          "published": "Sun, 10 May 2026 13:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "The Iran war will change global energy markets in these important ways, oil executives say",
-          "link": "https://www.cnbc.com/2026/05/09/iran-war-oil-gas-energy-security.html",
-          "published": "Sat, 09 May 2026 12:43:00 GMT"
+          "title": "With Netflix new ad-free standard plan at $20, streaming's tipping point into old TV is getting closer",
+          "link": "https://www.cnbc.com/2026/05/10/netflix-20-dollar-streaming-plan-price.html",
+          "published": "Sun, 10 May 2026 13:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Iran focus at Trump-Xi summit may delay progress on tariffs, rare earths",
-          "link": "https://www.cnbc.com/2026/05/08/iran-focus-at-trump-xi-summit-may-delay-progress-on-tariffs-rare-earths.html",
-          "published": "Fri, 08 May 2026 18:44:26 GMT"
+          "title": "SEC delay on prediction markets ETFs echoes a long-fought bitcoin fund battle",
+          "link": "https://www.cnbc.com/2026/05/10/sec-prediction-markets-etfs-trading-launch-delay.html",
+          "published": "Sun, 10 May 2026 12:22:02 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "U.S. sanctions companies and individuals in the Middle East and China for helping Iran",
-          "link": "https://www.cnbc.com/2026/05/09/us-sanctions-entities-in-the-middle-east-and-china-for-helping-iran.html",
-          "published": "Sat, 09 May 2026 10:10:24 GMT"
+          "title": "Saudi Aramco Q1 profit jumps 26% as key pipeline reaches capacity amid Iran war",
+          "link": "https://www.cnbc.com/2026/05/10/saudi-aramco-q1-profit-jumps-26percent-as-key-pipeline-reaches-capacity.html",
+          "published": "Sun, 10 May 2026 08:24:41 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Warren Buffett sends blunt message on mortgages, home financing",
-          "link": "https://finance.yahoo.com/markets/options/articles/warren-buffett-sends-blunt-message-140700722.html",
-          "published": "2026-05-08T14:07:00Z"
+          "title": "Clean Energy Stock Face-Off: Bloom Energy vs. Brookfield Renewable -- Which Is the Better Buy Right Now?",
+          "link": "https://finance.yahoo.com/sectors/energy/articles/clean-energy-stock-face-off-123500295.html",
+          "published": "2026-05-09T12:35:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "You're 50 with $30,000 in debt and nothing saved for retirement — here's how to hit $500K by 65",
-          "link": "https://finance.yahoo.com/markets/articles/youre-50-30-000-debt-133000425.html",
-          "published": "2026-05-09T13:30:00Z"
+          "title": "Solar ETFs Are Shockingly Cheap Now. Politics Will Decide If They’ll Burn You to a Crisp.",
+          "link": "https://finance.yahoo.com/sectors/energy/articles/solar-etfs-shockingly-cheap-now-130002378.html",
+          "published": "2026-05-09T13:00:02Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Retailers are on a hiring spree. But consumers are sending warning signs",
+          "link": "https://www.cnbc.com/2026/05/10/retailer-hiring-consumer-warning-jobs-report.html",
+          "published": "Sun, 10 May 2026 11:29:25 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "The Federal Reserve is quickly running out of reasons to cut interest rates",
@@ -86,12 +92,6 @@
           "title": "There's 'no chance' Warsh will be able to get the Fed to cut rates, Paul Tudor Jones says",
           "link": "https://www.cnbc.com/2026/05/07/theres-no-chance-warsh-will-be-able-to-get-the-fed-to-cut-rates-paul-tudor-jones-says.html",
           "published": "Thu, 07 May 2026 13:23:19 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Surging gas prices are hitting lower-income households harder, New York Fed study shows",
-          "link": "https://www.cnbc.com/2026/05/06/surging-gas-prices-are-hurting-lower-income-households-harder-study-shows.html",
-          "published": "Wed, 06 May 2026 19:27:54 GMT"
         }
       ]
     }
