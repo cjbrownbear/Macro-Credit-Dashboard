@@ -1,62 +1,86 @@
 {
-  "updated": "2026-05-13T15:48:56Z",
+  "updated": "2026-05-15T15:28:06Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Wholesale inflation jumps 6% in April on annual basis, biggest increase since 2022",
-          "link": "https://www.cnbc.com/2026/05/13/ppi-inflation-report-april-2026-.html",
-          "published": "Wed, 13 May 2026 13:21:15 GMT"
+          "title": "How China and U.S. eased the Middle East oil shock and kept prices from spiking even higher",
+          "link": "https://www.cnbc.com/2026/05/15/china-us-oil-iran-war-strait-hormuz-trump-xi.html",
+          "published": "Fri, 15 May 2026 14:58:00 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump arrives in Beijing with CEOs ahead of Xi meetings",
-          "link": "https://www.cnbc.com/2026/05/13/trump-china-xi-beijing-meeting-ceos.html",
-          "published": "Wed, 13 May 2026 14:06:33 GMT"
+          "title": "Trump told Xi ‘I don't talk about’ whether U.S. would defend Taiwan from China",
+          "link": "https://www.cnbc.com/2026/05/15/trump-china-xi-taiwan.html",
+          "published": "Fri, 15 May 2026 12:47:52 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Altman details Musk's OpenAI fallout, says nonprofit was 'left for dead'",
-          "link": "https://www.cnbc.com/2026/05/13/altman-musk-trial-testimony-takeaways.html",
-          "published": "Wed, 13 May 2026 14:35:50 GMT"
+          "title": "30-year Treasury yield tops 5.1%, highest in nearly a year",
+          "link": "https://www.cnbc.com/2026/05/15/treasury-yields-surge-as-inflation-data-points-to-tricky-rates-path.html",
+          "published": "Fri, 15 May 2026 14:55:45 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Jamie Dimon warns JPMorgan may rethink new London office if 'very smart' Starmer is ousted as UK PM",
-          "link": "https://www.cnbc.com/2026/05/13/jamie-dimon-says-jp-morgan-may-rethink-london-office-if-starmer-ousted.html",
-          "published": "Wed, 13 May 2026 15:43:40 GMT"
+          "title": "Inflation rate projected to hit 6% in the second quarter, top economic forecasters say",
+          "link": "https://www.cnbc.com/2026/05/15/inflation-rate-projected-to-hit-6percent-in-the-second-quarter-top-economic-forecasters-say.html",
+          "published": "Fri, 15 May 2026 14:20:27 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Anduril doubles valuation to over $60 billion as defense tech funding boom continues",
-          "link": "https://www.cnbc.com/2026/05/13/anduril-valuation-defense-tech-funding-boom.html",
-          "published": "Wed, 13 May 2026 15:25:31 GMT"
+          "title": "Bristol Myers Squibb turns to China to develop new drugs in newest cross-continent collaboration",
+          "link": "https://www.cnbc.com/2026/05/15/bristol-myers-squibb-turns-to-chinas-hengrui-to-replenish-pipeline.html",
+          "published": "Fri, 15 May 2026 15:04:15 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Amazon ditches Rufus chatbot, launches Alexa shopping agent in AI strategy pivot",
-          "link": "https://www.cnbc.com/2026/05/13/amazon-ditches-rufus-ai-chatbot-in-favor-of-alexa-shopping-agent.html",
-          "published": "Wed, 13 May 2026 13:13:23 GMT"
+          "title": "China will buy more U.S. oil because it is a natural trade partner, says Energy Secretary Wright",
+          "link": "https://www.cnbc.com/2026/05/15/china-us-oil-import-xi-trump-chris-wright.html",
+          "published": "Fri, 15 May 2026 14:06:02 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Takeda's Next Wave of Drugs Has Investors Watching Closely",
-          "link": "https://finance.yahoo.com/news/takedas-next-wave-drugs-investors-153849055.html",
-          "published": "2026-05-13T15:38:49Z"
+          "title": "Tesla, Toyota expose surprising auto industry truth",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/tesla-toyota-expose-surprising-auto-043700448.html",
+          "published": "2026-05-15T04:37:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Is Hertz Global Holdings, Inc. (HTZ) A Good Stock To Buy Now?",
-          "link": "https://finance.yahoo.com/news/hertz-global-holdings-inc-htz-153121491.html",
-          "published": "2026-05-13T15:31:21Z"
+          "title": "Cerebras stock slides after near-70% surge in biggest IPO of 2026",
+          "link": "https://finance.yahoo.com/markets/article/cerebras-stock-slides-after-near-70-surge-in-biggest-ipo-of-2026-130757084.html",
+          "published": "2026-05-14T13:07:57Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Inflation rate projected to hit 6% in the second quarter, top economic forecasters say",
+          "link": "https://www.cnbc.com/2026/05/15/inflation-rate-projected-to-hit-6percent-in-the-second-quarter-top-economic-forecasters-say.html",
+          "published": "Fri, 15 May 2026 14:20:27 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Bond market believes Fed behind the curve on inflation as Warsh takes over",
+          "link": "https://www.cnbc.com/2026/05/14/bond-market-fed-inflation-warsh-powell.html",
+          "published": "Thu, 14 May 2026 19:26:20 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Bessent sees 'substantial disinflation' ahead as Warsh takes over the Fed",
+          "link": "https://www.cnbc.com/2026/05/14/bessent-sees-substantial-disinflation-ahead-as-warsh-takes-over-the-fed.html",
+          "published": "Thu, 14 May 2026 16:22:18 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Americans still feel pessimistic about the economy. When will it get better?",
+          "link": "https://www.cnbc.com/2026/05/14/consumer-confidence-us-economy-inflation-iran-war-trade.html",
+          "published": "Thu, 14 May 2026 14:41:17 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Wholesale inflation jumps 6% in April on annual basis, biggest increase since 2022",
@@ -68,30 +92,6 @@
           "title": "Markets raise chances for a Fed rate hike following hot inflation report",
           "link": "https://www.cnbc.com/2026/05/12/markets-raise-chances-for-a-fed-rate-hike-following-hot-inflation-report.html",
           "published": "Tue, 12 May 2026 17:33:45 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "It's not just Iran and oil raising inflation. Prices also are reaccelerating in these other areas",
-          "link": "https://www.cnbc.com/2026/05/12/iran-oil-energy-inflation-shelter-food-trump.html",
-          "published": "Tue, 12 May 2026 21:04:59 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Consumer prices rose 3.8% annually in April, the highest since May 2023",
-          "link": "https://www.cnbc.com/2026/05/12/cpi-inflation-april-2026-.html",
-          "published": "Tue, 12 May 2026 21:07:17 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Iran says it will 'never bow' as Trump rejects peace counteroffer, prolonging Middle East conflict",
-          "link": "https://www.cnbc.com/2026/05/11/iran-war-trump-negotiation-hormuz-nuclear-talks.html",
-          "published": "Mon, 11 May 2026 13:25:34 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "From Singapore to Brussels, world leaders eye Trump-Xi summit from afar",
-          "link": "https://www.cnbc.com/2026/05/11/trump-xi-summit-beijing-global-leaders-iran-war-taiwan-strait-of-hormuz-.html",
-          "published": "Mon, 11 May 2026 14:00:13 GMT"
         }
       ]
     }
