@@ -1,62 +1,68 @@
 {
-  "updated": "2026-05-20T16:30:29Z",
+  "updated": "2026-05-21T16:22:31Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Jeff Bezos says bottom half of earners should pay zero in income taxes",
-          "link": "https://www.cnbc.com/2026/05/20/jeff-bezos-income-taxes.html",
-          "published": "Wed, 20 May 2026 15:59:05 GMT"
+          "title": "SpaceX is heavily reliant on Starlink for growth and profit as it marches toward Nasdaq listing",
+          "link": "https://www.cnbc.com/2026/05/21/spacex-starlink-growth-profit-nasdaq-ipo.html",
+          "published": "Thu, 21 May 2026 14:12:49 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "U.S. crude oil falls below $100 per barrel after Trump says Iran talks in final stages",
-          "link": "https://www.cnbc.com/2026/05/20/oil-price-today-iran-war-strait-hormuz-trump.html",
-          "published": "Wed, 20 May 2026 16:12:56 GMT"
+          "title": "Oil prices jump more than 3% after Iran supreme leader says uranium must remain in country",
+          "link": "https://www.cnbc.com/2026/05/21/oil-price-today-iran-war-strait-hormuz-trump.html",
+          "published": "Thu, 21 May 2026 15:14:02 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Wendy's taps former Potbelly CEO to lead struggling burger chain",
-          "link": "https://www.cnbc.com/2026/05/20/wendys-taps-former-potbelly-ceo-bob-wright-to-lead-burger-chain.html",
-          "published": "Wed, 20 May 2026 15:39:21 GMT"
+          "title": "Quantum stocks soar as U.S. reportedly plans $2 billion ‘award’ and taking equity stakes",
+          "link": "https://www.cnbc.com/2026/05/21/quantum-stocks--us-taking-equity-stakes.html",
+          "published": "Thu, 21 May 2026 14:59:39 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Jan. 6 police officers sue Trump to block $1.8B 'lawfare' fund",
-          "link": "https://www.cnbc.com/2026/05/20/trump-fund-lawsuit-capitol-riot-irs.html",
-          "published": "Wed, 20 May 2026 16:28:56 GMT"
+          "title": "AG Blanche meets with GOP senators on Trump's DOJ  fund; Tillis calls it 'stupid'",
+          "link": "https://www.cnbc.com/2026/05/21/trump-doj-lawfare-fund-congress-blanche.html",
+          "published": "Thu, 21 May 2026 16:04:26 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump's face doesn't belong on U.S. passport, senators tell Rubio",
-          "link": "https://www.cnbc.com/2026/05/20/trump-passports-congress-rubio.html",
-          "published": "Wed, 20 May 2026 16:00:01 GMT"
+          "title": "Spotify soars 15% after announcing AI music deal with UMG, guidance",
+          "link": "https://www.cnbc.com/2026/05/21/spotify-spot-stock-guidance-investor-day-ai.html",
+          "published": "Thu, 21 May 2026 16:21:11 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "UK announces 'historic' trade deal with Gulf states in G7 first",
-          "link": "https://www.cnbc.com/2026/05/20/uk-announces-historic-trade-deal-with-gulf-states.html",
-          "published": "Wed, 20 May 2026 16:00:01 GMT"
+          "title": "Trump ballroom, 'slush fund' are flashpoints as Senate takes up DHS funding bill",
+          "link": "https://www.cnbc.com/2026/05/21/ballroom-funding-trump-congress-immigration-funding.html",
+          "published": "Thu, 21 May 2026 15:53:46 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "If You Invest $200 per Month in the S&P 500 Right Now, Here's What You Might Have After 30 Years",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/invest-200-per-month-p-162000929.html",
-          "published": "2026-05-20T16:20:00Z"
+          "title": "Target sees unexpected shift in customer behavior",
+          "link": "https://finance.yahoo.com/economy/articles/target-sees-unexpected-shift-customer-150445821.html",
+          "published": "2026-05-20T15:04:45Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Bond yields, oil fall amid hopes for Iran deal; stocks gain with Nvidia results ahead",
-          "link": "https://finance.yahoo.com/news/asian-stocks-fall-4th-day-020854458.html",
-          "published": "2026-05-20T16:19:31Z"
+          "title": "Mortgage rates jump north of 6.5% as inflation fears escalate: Mortgage and refinance interest rates today, May 21, 2026",
+          "link": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-rates-jump-north-of-65-as-inflation-fears-escalate-mortgage-and-refinance-interest-rates-today-may-21-2026-100000122.html",
+          "published": "2026-05-21T10:00:00Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "UK-Gulf trade deal a 'monumental achievement,' Bahrain industry minister tells CNBC",
+          "link": "https://www.cnbc.com/2026/05/21/uk-gcc-trade-deal-bahrain-gulf-investment.html",
+          "published": "Thu, 21 May 2026 08:42:03 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Putin-Xi talks revive stalled Russian gas pipeline as Iran war rattles energy markets",
@@ -86,12 +92,6 @@
           "title": "Traders now see next Fed interest rate move as a hike following inflation surge",
           "link": "https://www.cnbc.com/2026/05/15/traders-now-see-next-fed-interest-rate-move-as-a-hike-following-inflation-surge.html",
           "published": "Fri, 15 May 2026 18:55:25 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Inflation rate projected to hit 6% in the second quarter, top economic forecasters say",
-          "link": "https://www.cnbc.com/2026/05/15/inflation-rate-projected-to-hit-6percent-in-the-second-quarter-top-economic-forecasters-say.html",
-          "published": "Mon, 18 May 2026 16:11:13 GMT"
         }
       ]
     }
