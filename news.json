@@ -1,62 +1,68 @@
 {
-  "updated": "2026-05-21T16:22:31Z",
+  "updated": "2026-05-22T15:53:03Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "SpaceX is heavily reliant on Starlink for growth and profit as it marches toward Nasdaq listing",
-          "link": "https://www.cnbc.com/2026/05/21/spacex-starlink-growth-profit-nasdaq-ipo.html",
-          "published": "Thu, 21 May 2026 14:12:49 GMT"
+          "title": "Watch: Trump swearing in Kevin Warsh as Fed chair as he seeks interest rate cuts",
+          "link": "https://www.cnbc.com/2026/05/22/trump-kevin-warsh-fed-chair-interest-rates.html",
+          "published": "Fri, 22 May 2026 15:47:33 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Oil prices jump more than 3% after Iran supreme leader says uranium must remain in country",
-          "link": "https://www.cnbc.com/2026/05/21/oil-price-today-iran-war-strait-hormuz-trump.html",
-          "published": "Thu, 21 May 2026 15:14:02 GMT"
+          "title": "Trump defends DOJ fund after Senate Republicans push back",
+          "link": "https://www.cnbc.com/2026/05/22/trump-doj-fund-republicans.html",
+          "published": "Fri, 22 May 2026 15:12:20 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Quantum stocks soar as U.S. reportedly plans $2 billion ‘award’ and taking equity stakes",
-          "link": "https://www.cnbc.com/2026/05/21/quantum-stocks--us-taking-equity-stakes.html",
-          "published": "Thu, 21 May 2026 14:59:39 GMT"
+          "title": "Trump said he'd 'remember' companies that didn't apply for tariff refunds. Many of them are anyway",
+          "link": "https://www.cnbc.com/2026/05/22/trump-tariff-refunds-walmart-home-depot-target-apply.html",
+          "published": "Fri, 22 May 2026 11:23:45 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "AG Blanche meets with GOP senators on Trump's DOJ  fund; Tillis calls it 'stupid'",
-          "link": "https://www.cnbc.com/2026/05/21/trump-doj-lawfare-fund-congress-blanche.html",
-          "published": "Thu, 21 May 2026 16:04:26 GMT"
+          "title": "Despite murky legal landscape, companies are undeterred in their prediction market investments",
+          "link": "https://www.cnbc.com/2026/05/22/companies-keep-investing-in-prediction-markets-despite-legal-battle.html",
+          "published": "Fri, 22 May 2026 15:14:52 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Spotify soars 15% after announcing AI music deal with UMG, guidance",
-          "link": "https://www.cnbc.com/2026/05/21/spotify-spot-stock-guidance-investor-day-ai.html",
-          "published": "Thu, 21 May 2026 16:21:11 GMT"
+          "title": "U.S., Iran signal peace progress — but remain at odds over enriched uranium, Strait of Hormuz tolls",
+          "link": "https://www.cnbc.com/2026/05/22/iran-war-strait-of-hormuz-tolls-trump.html",
+          "published": "Fri, 22 May 2026 13:33:25 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump ballroom, 'slush fund' are flashpoints as Senate takes up DHS funding bill",
-          "link": "https://www.cnbc.com/2026/05/21/ballroom-funding-trump-congress-immigration-funding.html",
-          "published": "Thu, 21 May 2026 15:53:46 GMT"
+          "title": "Which company will the U.S. government take a stake in next? Here’s what traders think",
+          "link": "https://www.cnbc.com/2026/05/22/which-company-will-the-us-government-take-a-stake-in-next.html",
+          "published": "Fri, 22 May 2026 15:29:39 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Target sees unexpected shift in customer behavior",
-          "link": "https://finance.yahoo.com/economy/articles/target-sees-unexpected-shift-customer-150445821.html",
-          "published": "2026-05-20T15:04:45Z"
+          "title": "Stock market today: Dow, S&P 500, Nasdaq advance as tech stocks gain, investors monitor US-Iran talks",
+          "link": "https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-advance-as-tech-stocks-gain-investors-monitor-us-iran-talks-223454059.html",
+          "published": "2026-05-21T22:34:54Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Mortgage rates jump north of 6.5% as inflation fears escalate: Mortgage and refinance interest rates today, May 21, 2026",
-          "link": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-rates-jump-north-of-65-as-inflation-fears-escalate-mortgage-and-refinance-interest-rates-today-may-21-2026-100000122.html",
-          "published": "2026-05-21T10:00:00Z"
+          "title": "Why Rigetti Computing Stock Keeps Going Up",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/why-rigetti-computing-stock-keeps-153714891.html",
+          "published": "2026-05-22T15:37:14Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Consumer sentiment hits fresh record low in May as Iran war fuels inflation worries",
+          "link": "https://www.cnbc.com/2026/05/22/consumer-sentiment-hits-fresh-record-low-in-may-as-iran-war-fuels-inflation-worries.html",
+          "published": "Fri, 22 May 2026 14:55:12 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "UK-Gulf trade deal a 'monumental achievement,' Bahrain industry minister tells CNBC",
@@ -86,12 +92,6 @@
           "title": "The Fed will have to raise interest rates in July to appease 'bond vigilantes,' Yardeni says",
           "link": "https://www.cnbc.com/2026/05/18/the-fed-will-have-to-raise-interest-rates-in-july-to-appease-bond-vigilantes-yardeni-says.html",
           "published": "Mon, 18 May 2026 16:08:35 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Traders now see next Fed interest rate move as a hike following inflation surge",
-          "link": "https://www.cnbc.com/2026/05/15/traders-now-see-next-fed-interest-rate-move-as-a-hike-following-inflation-surge.html",
-          "published": "Fri, 15 May 2026 18:55:25 GMT"
         }
       ]
     }
