@@ -1,15 +1,9 @@
 {
-  "updated": "2026-05-23T14:43:02Z",
+  "updated": "2026-05-24T14:42:33Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
-        {
-          "source": "CNBC Top News",
-          "title": "Spirit's collapse, high fuel prices test limits of summer vacation spending",
-          "link": "https://www.cnbc.com/2026/05/23/summer-travel-gas-airfare.html",
-          "published": "Sat, 23 May 2026 14:01:03 GMT"
-        },
         {
           "source": "CNBC Top News",
           "title": "Americans are feeling inflation's pinch into the holiday weekend. Here's where prices are rising the most",
@@ -18,39 +12,45 @@
         },
         {
           "source": "CNBC Top News",
-          "title": "SpaceX launches Starship test flight on second try",
-          "link": "https://www.cnbc.com/2026/05/22/spacex-prepares-another-attempt-at-starship-launch-after-prior-scrub.html",
-          "published": "Sat, 23 May 2026 01:28:52 GMT"
+          "title": "Trump says Iran deal reopening Strait of Hormuz 'largely negotiated,' will be announced soon",
+          "link": "https://www.cnbc.com/2026/05/23/us-iran-war-talks.html",
+          "published": "Sun, 24 May 2026 08:27:31 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Lingering mysteries from Berkshire's portfolio update",
-          "link": "https://www.cnbc.com/2026/05/23/lingering-mysteries-from-berkshires-portfolio-update.html",
-          "published": "Sat, 23 May 2026 12:59:47 GMT"
+          "title": "The Middle East war is testing the Gulf's ambitions to become an AI hub",
+          "link": "https://www.cnbc.com/2026/05/24/middle-east-war-testing-gulfs-ambitions-to-become-ai-hub.html",
+          "published": "Sun, 24 May 2026 13:21:38 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Three signs from APEC that the U.S. and China remain far apart on trade",
-          "link": "https://www.cnbc.com/2026/05/23/three-signs-from-apec-that-the-us-china-remain-far-apart-on-trade.html",
-          "published": "Sat, 23 May 2026 11:19:52 GMT"
+          "title": "Top Wall Street analysts like these dividend stocks for steady income",
+          "link": "https://www.cnbc.com/2026/05/24/top-wall-street-analysts-like-these-dividend-stocks-for-steady-income.html",
+          "published": "Sun, 24 May 2026 12:52:28 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "‘Blue dot fever’? What's really behind a tricky summer dynamic for live music",
-          "link": "https://www.cnbc.com/2026/05/23/concert-ticket-prices-live-music-demand.html",
-          "published": "Sat, 23 May 2026 12:00:01 GMT"
+          "title": "Spirit's collapse, high fuel prices test limits of summer vacation spending",
+          "link": "https://www.cnbc.com/2026/05/23/summer-travel-gas-airfare.html",
+          "published": "Sat, 23 May 2026 14:01:03 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "Boosting retirement savings has a less-appreciated benefit",
+          "link": "https://www.cnbc.com/2026/05/24/retirement-savings-contributions.html",
+          "published": "Sun, 24 May 2026 13:30:01 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Amazon allegedly made millions from this now illegal policy",
-          "link": "https://finance.yahoo.com/economy/policy/articles/amazon-allegedly-made-millions-now-170700373.html",
-          "published": "2026-05-22T17:07:00Z"
+          "title": "Another retail chain closing all stores after 33 years in business",
+          "link": "https://finance.yahoo.com/economy/articles/another-retail-chain-closing-stores-033300636.html",
+          "published": "2026-05-23T03:33:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Inheriting your late parent's 401(k) can trigger a 25% IRS penalty if you don't follow the withdrawal rules",
-          "link": "https://finance.yahoo.com/markets/options/articles/inheriting-parents-401-k-trigger-140000625.html",
-          "published": "2026-05-23T14:00:00Z"
+          "title": "Jamie Dimon has bad news for JPMorgan bankers",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/jamie-dimon-bad-news-jpmorgan-110300291.html",
+          "published": "2026-05-23T11:03:00Z"
         }
       ]
     },
