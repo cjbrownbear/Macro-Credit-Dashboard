@@ -1,62 +1,80 @@
 {
-  "updated": "2026-05-26T16:51:37Z",
+  "updated": "2026-05-28T17:01:08Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Micron hits $1 trillion market cap for the first time as stock surges 18%",
-          "link": "https://www.cnbc.com/2026/05/26/micron-stock-trillion-market-cap.html",
-          "published": "Tue, 26 May 2026 15:24:18 GMT"
+          "title": "Oil prices pull back on report U.S.-Iran agreement to extend ceasefire awaits Trump approval",
+          "link": "https://www.cnbc.com/2026/05/28/oil-prices-us-strikes-in-iran-revive-strait-of-hormuz-turmoil-fears.html",
+          "published": "Thu, 28 May 2026 16:25:31 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump to host Cabinet meeting at Camp David on Wednesday as Iran talks continue",
-          "link": "https://www.cnbc.com/2026/05/26/trump-camp-david-iran-cabinet.html",
-          "published": "Tue, 26 May 2026 15:57:44 GMT"
+          "title": "Core inflation hit an annual rate of 3.3% in April, as expected, Fed’s preferred gauge shows",
+          "link": "https://www.cnbc.com/2026/05/28/core-inflation-hit-an-annual-rate-of-3point3percent-in-april-as-expected-feds-preferred-gauge-shows-.html",
+          "published": "Thu, 28 May 2026 15:15:19 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "American Airlines picks SpaceX's Starlink for in-flight Wi-Fi on more than 500 planes",
-          "link": "https://www.cnbc.com/2026/05/26/american-airlines-spacex-starlink.html",
-          "published": "Tue, 26 May 2026 15:03:46 GMT"
+          "title": "New York passes Mamdani's pied-a-terre tax. Here's who pays and how much",
+          "link": "https://www.cnbc.com/2026/05/28/new-york-mamdani-pied-a-terre-tax-passes.html",
+          "published": "Thu, 28 May 2026 15:16:39 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Judges block Alabama redistricting maps that would dilute Black vote in midterms",
-          "link": "https://www.cnbc.com/2026/05/26/alabama-redistricting-congress-black-votes-midterm-elections.html",
-          "published": "Tue, 26 May 2026 16:00:55 GMT"
+          "title": "Airlines, hotels warn against Trump admin threat to international flights to 'sanctuary cities'",
+          "link": "https://www.cnbc.com/2026/05/28/sanctuary-cities-immigration-fight-dhs-international-flights.html",
+          "published": "Thu, 28 May 2026 15:39:12 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "U.S. conducts 'self-defense strikes' in Iran as Trump pushes for peace deal",
-          "link": "https://www.cnbc.com/2026/05/26/us-conducts-self-defense-strikes-in-iran-as-trump-seeks-peace-deal.html",
-          "published": "Tue, 26 May 2026 13:07:52 GMT"
+          "title": "CFTC bid to vacate order against Winklevoss' crypto exchange 'very unusual,' ex-agency chief says",
+          "link": "https://www.cnbc.com/2026/05/28/gemini-cftc-winklevoss-crypto.html",
+          "published": "Thu, 28 May 2026 16:52:25 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Pope Leo is concerned about AI replacing human work. Traders share his concern long term",
-          "link": "https://www.cnbc.com/2026/05/26/traders-share-pope-leos-worries-on-ais-job-market-impact.html",
-          "published": "Tue, 26 May 2026 16:31:37 GMT"
+          "title": "Ro Khanna is taking his economic message on the road. Will it lead to the White House?",
+          "link": "https://www.cnbc.com/2026/05/28/ro-khanna-2028-election-china-campaign-rust-belt-democrats-white-house.html",
+          "published": "Thu, 28 May 2026 10:30:01 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "BJ’s Wholesale plans major store changes as customers pull back",
-          "link": "https://finance.yahoo.com/economy/articles/bj-wholesale-plans-major-store-140700001.html",
-          "published": "2026-05-25T14:07:00Z"
+          "title": "SoFi vs. TD Bank: Which bank is a better fit for you?",
+          "link": "https://finance.yahoo.com/personal-finance/banking/comparison/sofi-vs-td-bank-173415811.html",
+          "published": "2025-02-28T17:34:15Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "NetApp Stock Rallies Ahead Of Earnings As Data Storage Rival Everpure Chases Breakout",
-          "link": "https://www.investors.com/news/technology/netapp-stock-everpure-stock-ai-earnings-preview/?src=A00220&yptr=yahoo",
-          "published": "2026-05-26T16:26:44Z"
+          "title": "Stock market today: S&P 500 and Nasdaq rise, oil pares gains on report of US-Iran breakthrough",
+          "link": "https://finance.yahoo.com/economy/live/stock-market-today-sp-500-and-nasdaq-rise-oil-pares-gains-on-report-of-us-iran-breakthrough-231358550.html",
+          "published": "2026-05-27T23:13:58Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Core inflation hit an annual rate of 3.3% in April, as expected, Fed’s preferred gauge shows",
+          "link": "https://www.cnbc.com/2026/05/28/core-inflation-hit-an-annual-rate-of-3point3percent-in-april-as-expected-feds-preferred-gauge-shows-.html",
+          "published": "Thu, 28 May 2026 15:15:19 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Energy inflation has been more persistent than expected, Fed's Goolsbee tells CNBC",
+          "link": "https://www.cnbc.com/2026/05/28/goolsbee-iran-energy-inflation-asia-stagflation-shock-ai-artificial-intelligence-jobs.html",
+          "published": "Thu, 28 May 2026 06:08:44 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Fed’s Kashkari tells CNBC that inflation fight takes priority as labor market is 'in decent shape'",
+          "link": "https://www.cnbc.com/2026/05/28/fed-reserve-neel-kashkari-inflation-job-market.html",
+          "published": "Thu, 28 May 2026 06:06:02 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "ECB 'will do what is necessary' to tame inflation, Bank of France governor tells CNBC",
@@ -74,24 +92,6 @@
           "title": "Consumer sentiment hits fresh record low in May as Iran war fuels inflation worries",
           "link": "https://www.cnbc.com/2026/05/22/consumer-sentiment-hits-fresh-record-low-in-may-as-iran-war-fuels-inflation-worries.html",
           "published": "Fri, 22 May 2026 16:13:30 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "UK-Gulf trade deal a 'monumental achievement,' Bahrain industry minister tells CNBC",
-          "link": "https://www.cnbc.com/2026/05/21/uk-gcc-trade-deal-bahrain-gulf-investment.html",
-          "published": "Thu, 21 May 2026 08:42:03 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Putin-Xi talks revive stalled Russian gas pipeline as Iran war rattles energy markets",
-          "link": "https://www.cnbc.com/2026/05/20/putin-xi-gas-pipeline-power-of-siberia-iran-war-.html",
-          "published": "Wed, 20 May 2026 08:15:15 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "The AI economy is rewriting the American Dream — and blue-collar workers are poised to win",
-          "link": "https://www.cnbc.com/2026/05/19/ai-hiring-slowdown-skilled-trade-workers.html",
-          "published": "Tue, 19 May 2026 20:22:54 GMT"
         }
       ]
     }
