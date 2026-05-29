@@ -1,62 +1,68 @@
 {
-  "updated": "2026-05-28T17:01:08Z",
+  "updated": "2026-05-29T16:52:29Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Oil prices pull back on report U.S.-Iran agreement to extend ceasefire awaits Trump approval",
-          "link": "https://www.cnbc.com/2026/05/28/oil-prices-us-strikes-in-iran-revive-strait-of-hormuz-turmoil-fears.html",
-          "published": "Thu, 28 May 2026 16:25:31 GMT"
+          "title": "Trump lays out Iran deal demands, says he's about to make 'final determination'",
+          "link": "https://www.cnbc.com/2026/05/29/trump-iran-deal-hormuz-nuclear-war.html",
+          "published": "Fri, 29 May 2026 16:31:17 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Core inflation hit an annual rate of 3.3% in April, as expected, Fed’s preferred gauge shows",
-          "link": "https://www.cnbc.com/2026/05/28/core-inflation-hit-an-annual-rate-of-3point3percent-in-april-as-expected-feds-preferred-gauge-shows-.html",
-          "published": "Thu, 28 May 2026 15:15:19 GMT"
+          "title": "Dell stock skyrockets 32%, heads for best day ever as AI server revenue soars",
+          "link": "https://www.cnbc.com/2026/05/29/dell-stock-earnings-ai-servers.html",
+          "published": "Fri, 29 May 2026 15:50:06 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "New York passes Mamdani's pied-a-terre tax. Here's who pays and how much",
-          "link": "https://www.cnbc.com/2026/05/28/new-york-mamdani-pied-a-terre-tax-passes.html",
-          "published": "Thu, 28 May 2026 15:16:39 GMT"
+          "title": "SpaceX skeptics have added reason for concern after Musk comments diverge from IPO filing",
+          "link": "https://www.cnbc.com/2026/05/29/spacex-skeptics-concerned-as-musk-comments-diverge-from-ipo-filing.html",
+          "published": "Fri, 29 May 2026 15:49:09 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Airlines, hotels warn against Trump admin threat to international flights to 'sanctuary cities'",
-          "link": "https://www.cnbc.com/2026/05/28/sanctuary-cities-immigration-fight-dhs-international-flights.html",
-          "published": "Thu, 28 May 2026 15:39:12 GMT"
+          "title": "Trump DOJ 'lawfare' fund temporarily blocked by judge as suit proceeds",
+          "link": "https://www.cnbc.com/2026/05/29/trump-doj-fund-lawfare-blocked-judge.html",
+          "published": "Fri, 29 May 2026 16:00:07 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "CFTC bid to vacate order against Winklevoss' crypto exchange 'very unusual,' ex-agency chief says",
-          "link": "https://www.cnbc.com/2026/05/28/gemini-cftc-winklevoss-crypto.html",
-          "published": "Thu, 28 May 2026 16:52:25 GMT"
+          "title": "Disney's ABC files early broadcast licenses renewal. FCC Chair vows to 'follow the facts'",
+          "link": "https://www.cnbc.com/2026/05/28/disney-fcc-broadcast-licenses-renewal.html",
+          "published": "Fri, 29 May 2026 15:46:28 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Ro Khanna is taking his economic message on the road. Will it lead to the White House?",
-          "link": "https://www.cnbc.com/2026/05/28/ro-khanna-2028-election-china-campaign-rust-belt-democrats-white-house.html",
-          "published": "Thu, 28 May 2026 10:30:01 GMT"
+          "title": "Bondi defends handling of Epstein files to House panel",
+          "link": "https://www.cnbc.com/2026/05/29/epstein-pam-bondi-doj-blanche-oversight.html",
+          "published": "Fri, 29 May 2026 16:23:07 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "SoFi vs. TD Bank: Which bank is a better fit for you?",
-          "link": "https://finance.yahoo.com/personal-finance/banking/comparison/sofi-vs-td-bank-173415811.html",
-          "published": "2025-02-28T17:34:15Z"
+          "title": "47-year-old high-end steak and seafood chain closes 80 locations",
+          "link": "https://finance.yahoo.com/economy/articles/47-old-high-end-steak-170700893.html",
+          "published": "2026-05-28T17:07:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Stock market today: S&P 500 and Nasdaq rise, oil pares gains on report of US-Iran breakthrough",
-          "link": "https://finance.yahoo.com/economy/live/stock-market-today-sp-500-and-nasdaq-rise-oil-pares-gains-on-report-of-us-iran-breakthrough-231358550.html",
-          "published": "2026-05-27T23:13:58Z"
+          "title": "Best credit cards to save money on sports, concerts, and more in June 2026",
+          "link": "https://finance.yahoo.com/personal-finance/credit-cards/article/best-credit-cards-entertainment-credits-161159655.html",
+          "published": "2025-10-09T16:11:59Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "How the ‘double scar’ of past inflation woes and geopolitical shocks amid the Iran war is hitting consumers",
+          "link": "https://www.cnbc.com/2026/05/29/iran-war-inflation-stagflation-eu-ecb-consumer-prices.html",
+          "published": "Fri, 29 May 2026 12:24:17 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Core inflation hit an annual rate of 3.3% in April, as expected, Fed’s preferred gauge shows",
@@ -86,12 +92,6 @@
           "title": "Americans are feeling inflation's pinch into the holiday weekend. Here's where prices are rising the most",
           "link": "https://www.cnbc.com/2026/05/23/memorial-day-weekend-prices-inflation-war.html",
           "published": "Sat, 23 May 2026 12:32:36 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Consumer sentiment hits fresh record low in May as Iran war fuels inflation worries",
-          "link": "https://www.cnbc.com/2026/05/22/consumer-sentiment-hits-fresh-record-low-in-may-as-iran-war-fuels-inflation-worries.html",
-          "published": "Fri, 22 May 2026 16:13:30 GMT"
         }
       ]
     }
