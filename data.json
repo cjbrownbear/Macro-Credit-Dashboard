@@ -1,9 +1,9 @@
 {
-  "updated": "2026-06-03T18:03:55Z",
+  "updated": "2026-06-04T16:28:04Z",
   "overall_status": "tripwire",
   "executive_summary": {
-    "text": "Overall status is Tripwire / Watch. Across the dashboard: 7 healthy, 1 tripwire, 0 stress. Biggest YoY moves: Revolving Consumer Credit (Δ 1y: +44185B (+3.4%)); Initial Jobless Claims (Δ 1y: -10000K (-4.4%)); Net Charge-off Rate (Δ 1y: -0.62pp (-13.9%)).",
-    "updated": "2026-06-03T18:03:54Z",
+    "text": "Overall status is Tripwire / Watch. Across the dashboard: 7 healthy, 1 tripwire, 0 stress. Biggest YoY moves: Revolving Consumer Credit (Δ 1y: +44185B (+3.4%)); Initial Jobless Claims (Δ 1y: -11000K (-4.7%)); Net Charge-off Rate (Δ 1y: -0.62pp (-13.9%)).",
+    "updated": "2026-06-04T16:28:03Z",
     "overall": "tripwire"
   },
   "kpis": [
@@ -330,16 +330,15 @@
       "unit": "thou",
       "status": "healthy",
       "status_label": "Healthy",
-      "value": 215000.0,
-      "value_str": "215,000K",
+      "value": 225000.0,
+      "value_str": "225,000K",
       "as_of": "May 2026",
-      "avg10": 362183.908045977,
-      "avg_str": "362,184K",
-      "delta_abs": -10000.0,
-      "delta_pct": -0.044444444444444446,
-      "delta_str": "Δ 1y: -10000K (-4.4%)",
+      "avg10": 362105.36398467433,
+      "avg_str": "362,105K",
+      "delta_abs": -11000.0,
+      "delta_pct": -0.046610169491525424,
+      "delta_str": "Δ 1y: -11000K (-4.7%)",
       "spark": [
-        224000.0,
         215000.0,
         203000.0,
         207000.0,
@@ -362,7 +361,8 @@
         199000.0,
         212000.0,
         210000.0,
-        215000.0
+        212000.0,
+        225000.0
       ],
       "definition": "Weekly initial claims for unemployment insurance.",
       "why": "Claims are a fast-turn labor stress signal; spikes can precede higher unemployment."
@@ -37910,8 +37910,13 @@
         },
         {
           "date": "2026-05-23",
-          "value": 215000.0,
-          "value_str": "215,000K"
+          "value": 212000.0,
+          "value_str": "212,000K"
+        },
+        {
+          "date": "2026-05-30",
+          "value": 225000.0,
+          "value_str": "225,000K"
         }
       ],
       "bench_points": [
@@ -50265,10 +50270,14 @@
         },
         {
           "date": "2026-05-23",
-          "value": 222650.0
+          "value": 222625.0
+        },
+        {
+          "date": "2026-05-30",
+          "value": 222725.0
         }
       ],
-      "summary_text": "Latest: 215,000K (Healthy). Δ 1y: -10000K (-4.4%)."
+      "summary_text": "Latest: 225,000K (Healthy). Δ 1y: -11000K (-4.7%)."
     },
     {
       "key": "DSPIC96_bil_usd",
@@ -61448,6 +61457,7 @@
     "2026-05-02",
     "2026-05-09",
     "2026-05-16",
-    "2026-05-23"
+    "2026-05-23",
+    "2026-05-30"
   ]
 }

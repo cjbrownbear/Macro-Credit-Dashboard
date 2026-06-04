@@ -1,44 +1,44 @@
 {
-  "updated": "2026-06-03T18:03:55Z",
+  "updated": "2026-06-04T16:28:04Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "SpaceX targets fixed $135 IPO roadshow price at $1.75 trillion valuation, source says",
-          "link": "https://www.cnbc.com/2026/06/03/spacex-ipo-stock-price-roadshow-musk.html",
-          "published": "Wed, 03 Jun 2026 16:15:08 GMT"
+          "title": "Blackstone restricts flagship fund withdrawals as private asset fears reemerge",
+          "link": "https://www.cnbc.com/2026/06/04/blackstone-caps-withdrawals-private-credit.html",
+          "published": "Thu, 04 Jun 2026 15:07:22 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Sellers are pulling homes off the market at the fastest pace since 2020",
-          "link": "https://www.cnbc.com/2026/06/03/sellers-delisting-homes-redfin.html",
-          "published": "Wed, 03 Jun 2026 16:31:57 GMT"
+          "title": "Long-term unemployment is surging in the U.S. There are hidden costs for workers and the economy",
+          "link": "https://www.cnbc.com/2026/06/04/long-term-unemployment-economy-jobs.html",
+          "published": "Thu, 04 Jun 2026 16:13:18 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "GOP Sen. Tillis slams Trump intelligence pick Pulte: 'Don't think he has a prayer'",
-          "link": "https://www.cnbc.com/2026/06/03/tillis-trump-pulte-intelligence-dni-senate.html",
-          "published": "Wed, 03 Jun 2026 17:06:19 GMT"
+          "title": "As the largest World Cup ever kicks off, health officials are focused on more than Ebola",
+          "link": "https://www.cnbc.com/2026/06/04/world-cup-2026-health-officials-focused-on-ebola-measles.html",
+          "published": "Thu, 04 Jun 2026 15:41:50 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "A classic strategy that could yield big dividends",
-          "link": "https://www.cnbc.com/2026/06/03/a-classic-strategy-that-could-yield-big-dividends.html",
-          "published": "Wed, 03 Jun 2026 17:41:30 GMT"
+          "title": "Investors can 'buy' SpaceX early with Coinbase perpetual futures on pre-IPOs",
+          "link": "https://www.cnbc.com/2026/06/04/investors-can-buy-spacex-early-with-coinbase-perpetual-futures-on-pre-ipos.html",
+          "published": "Thu, 04 Jun 2026 13:30:14 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Bessent says he is performing IRS commissioner duties amid Trump tax settlement scrutiny",
-          "link": "https://www.cnbc.com/2026/06/03/bessent-irs-commissioner-trump-tax-settlement-doj-fund.html",
-          "published": "Wed, 03 Jun 2026 16:16:59 GMT"
+          "title": "Ex-Trump advisor John Bolton agrees to plead guilty to retaining classified information: MS NOW",
+          "link": "https://www.cnbc.com/2026/06/04/bolton-guilty-plea-trump-national-security-advisor.html",
+          "published": "Thu, 04 Jun 2026 16:14:08 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Private payrolls grew by 122,000 in May, stronger than expected, ADP reports",
-          "link": "https://www.cnbc.com/2026/06/03/adp-jobs-report-may-2026-payrolls-increase-by-122000.html",
-          "published": "Wed, 03 Jun 2026 14:28:44 GMT"
+          "title": "Vibe coding phenomenon lifts AI startup Supabase to $10.5 billion valuation",
+          "link": "https://www.cnbc.com/2026/06/04/database-startup-supabase-raises-500-million-10point5-billion-valuation.html",
+          "published": "Thu, 04 Jun 2026 16:09:03 GMT"
         },
         {
           "source": "Yahoo Finance",
@@ -48,15 +48,21 @@
         },
         {
           "source": "Yahoo Finance",
-          "title": "SpaceX employees are banding together to get primo pricing for tax-saving advice as they prepare to make millions",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/spacex-employees-banding-together-primo-174500501.html",
-          "published": "2026-06-03T17:45:00Z"
+          "title": "Stock market today: Dow jumps, Nasdaq sinks after Broadcom earnings flop",
+          "link": "https://finance.yahoo.com/markets/live/stock-market-today-dow-jumps-nasdaq-sinks-after-broadcom-earnings-flop-230054846.html",
+          "published": "2026-06-03T23:00:54Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Long-term unemployment is surging in the U.S. There are hidden costs for workers and the economy",
+          "link": "https://www.cnbc.com/2026/06/04/long-term-unemployment-economy-jobs.html",
+          "published": "Thu, 04 Jun 2026 16:13:18 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Private payrolls grew by 122,000 in May, stronger than expected, ADP reports",
@@ -67,13 +73,13 @@
           "source": "CNBC Economy",
           "title": "U.S. proposes fresh tariffs on 60 economies over forced labor trade practices",
           "link": "https://www.cnbc.com/2026/06/03/us-tariffs-60-economies-dection-301-forced-labor-trade-practices-.html",
-          "published": "Wed, 03 Jun 2026 10:05:32 GMT"
+          "published": "Thu, 04 Jun 2026 08:29:56 GMT"
         },
         {
           "source": "CNBC Economy",
           "title": "U.S., Iran intensify attacks as ceasefire frays, peace talks stall",
           "link": "https://www.cnbc.com/2026/06/03/us-iran-war-escalates-peace-talks-stalemate-.html",
-          "published": "Wed, 03 Jun 2026 14:07:23 GMT"
+          "published": "Wed, 03 Jun 2026 21:05:19 GMT"
         },
         {
           "source": "CNBC Economy",
@@ -86,12 +92,6 @@
           "title": "Inflation hits 3.2% in the euro zone as Iran war pushes energy costs higher",
           "link": "https://www.cnbc.com/2026/06/02/inflation-euro-zone-iran-energy-costs.html",
           "published": "Tue, 02 Jun 2026 09:47:08 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Iran war cost: Average U.S. household paying $450 more on gas and energy",
-          "link": "https://www.cnbc.com/2026/05/29/energy-costs-inflation-iran-war-trump.html",
-          "published": "Fri, 29 May 2026 19:58:45 GMT"
         }
       ]
     }
