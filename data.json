@@ -1,9 +1,9 @@
 {
-  "updated": "2026-06-04T16:28:04Z",
+  "updated": "2026-06-05T16:07:59Z",
   "overall_status": "tripwire",
   "executive_summary": {
     "text": "Overall status is Tripwire / Watch. Across the dashboard: 7 healthy, 1 tripwire, 0 stress. Biggest YoY moves: Revolving Consumer Credit (Δ 1y: +44185B (+3.4%)); Initial Jobless Claims (Δ 1y: -11000K (-4.7%)); Net Charge-off Rate (Δ 1y: -0.62pp (-13.9%)).",
-    "updated": "2026-06-04T16:28:03Z",
+    "updated": "2026-06-05T16:07:59Z",
     "overall": "tripwire"
   },
   "kpis": [
@@ -287,14 +287,13 @@
       "status_label": "Healthy",
       "value": 4.3,
       "value_str": "4.30%",
-      "as_of": "Apr 2026",
-      "avg10": 4.567499999999997,
-      "avg_str": "4.57%",
-      "delta_abs": 0.09999999999999964,
-      "delta_pct": 0.023809523809523725,
-      "delta_str": "Δ 1y: +0.10pp (+2.4%)",
+      "as_of": "May 2026",
+      "avg10": 4.560833333333331,
+      "avg_str": "4.56%",
+      "delta_abs": 0.0,
+      "delta_pct": 0.0,
+      "delta_str": "Δ 1y: +0.00pp (+0.0%)",
       "spark": [
-        3.9,
         3.9,
         4.1,
         4.2,
@@ -316,6 +315,7 @@
         4.4,
         4.3,
         4.4,
+        4.3,
         4.3,
         4.3
       ],
@@ -18693,6 +18693,11 @@
           "date": "2026-04-01",
           "value": 4.3,
           "value_str": "4.30%"
+        },
+        {
+          "date": "2026-05-01",
+          "value": 4.3,
+          "value_str": "4.30%"
         }
       ],
       "bench_points": [
@@ -22407,9 +22412,13 @@
         {
           "date": "2026-04-01",
           "value": 4.5675
+        },
+        {
+          "date": "2026-05-01",
+          "value": 4.560833333333333
         }
       ],
-      "summary_text": "Latest: 4.30% (Healthy). Δ 1y: +0.10pp (+2.4%)."
+      "summary_text": "Latest: 4.30% (Healthy). Δ 1y: +0.00pp (+0.0%)."
     },
     {
       "key": "ICSA_thou",
@@ -61454,6 +61463,7 @@
     "2026-04-11",
     "2026-04-18",
     "2026-04-25",
+    "2026-05-01",
     "2026-05-02",
     "2026-05-09",
     "2026-05-16",

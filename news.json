@@ -1,56 +1,56 @@
 {
-  "updated": "2026-06-04T16:28:04Z",
+  "updated": "2026-06-05T16:08:00Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Blackstone restricts flagship fund withdrawals as private asset fears reemerge",
-          "link": "https://www.cnbc.com/2026/06/04/blackstone-caps-withdrawals-private-credit.html",
-          "published": "Thu, 04 Jun 2026 15:07:22 GMT"
+          "title": "U.S. payrolls rose by 172,000 in May, much more than expected; unemployment at 4.3%",
+          "link": "https://www.cnbc.com/2026/06/05/jobs-report-may-2026.html",
+          "published": "Fri, 05 Jun 2026 13:55:07 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Long-term unemployment is surging in the U.S. There are hidden costs for workers and the economy",
-          "link": "https://www.cnbc.com/2026/06/04/long-term-unemployment-economy-jobs.html",
-          "published": "Thu, 04 Jun 2026 16:13:18 GMT"
+          "title": "Alphabet is seeking fresh capital as stock's 4-week losing streak tests investor appetite",
+          "link": "https://www.cnbc.com/2026/06/05/alphabet-ai-data-center-financing.html",
+          "published": "Fri, 05 Jun 2026 12:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "As the largest World Cup ever kicks off, health officials are focused on more than Ebola",
-          "link": "https://www.cnbc.com/2026/06/04/world-cup-2026-health-officials-focused-on-ebola-measles.html",
-          "published": "Thu, 04 Jun 2026 15:41:50 GMT"
+          "title": "Boeing to start 737 Max production on new assembly line July 6, CEO says",
+          "link": "https://www.cnbc.com/2026/06/05/boeing-ceo-737-max-production-assembly-line.html",
+          "published": "Fri, 05 Jun 2026 15:38:32 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Investors can 'buy' SpaceX early with Coinbase perpetual futures on pre-IPOs",
-          "link": "https://www.cnbc.com/2026/06/04/investors-can-buy-spacex-early-with-coinbase-perpetual-futures-on-pre-ipos.html",
-          "published": "Thu, 04 Jun 2026 13:30:14 GMT"
+          "title": "Lululemon cuts annual outlook, citing 'negative' media commentary and disappointing product launches",
+          "link": "https://www.cnbc.com/2026/06/04/lululemon-lulu-earnings-q1-2026.html",
+          "published": "Thu, 04 Jun 2026 23:09:14 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Ex-Trump advisor John Bolton agrees to plead guilty to retaining classified information: MS NOW",
-          "link": "https://www.cnbc.com/2026/06/04/bolton-guilty-plea-trump-national-security-advisor.html",
-          "published": "Thu, 04 Jun 2026 16:14:08 GMT"
+          "title": "The gold chart looks precarious. Here's how to profit",
+          "link": "https://www.cnbc.com/2026/06/05/the-gold-chart-looks-precarious-heres-how-to-profit.html",
+          "published": "Fri, 05 Jun 2026 16:03:23 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Vibe coding phenomenon lifts AI startup Supabase to $10.5 billion valuation",
-          "link": "https://www.cnbc.com/2026/06/04/database-startup-supabase-raises-500-million-10point5-billion-valuation.html",
-          "published": "Thu, 04 Jun 2026 16:09:03 GMT"
+          "title": "No tech, no problem. Dow makes record and traders think these stocks can lead now",
+          "link": "https://www.cnbc.com/2026/06/05/no-tech-no-problem-dow-makes-record-and-traders-think-these-stocks-can-lead-now.html",
+          "published": "Fri, 05 Jun 2026 11:45:23 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "69-year-old furniture store chain files for Chapter 11 bankruptcy",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/69-old-furniture-store-chain-170700563.html",
-          "published": "2026-06-03T17:07:00Z"
+          "title": "LQD vs. SCHQ: Why the \"Safer\" Bond Fund Has Not Always Been the Better Choice",
+          "link": "https://finance.yahoo.com/markets/options/articles/lqd-vs-schq-why-safer-155410386.html",
+          "published": "2026-06-05T15:54:10Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Stock market today: Dow jumps, Nasdaq sinks after Broadcom earnings flop",
-          "link": "https://finance.yahoo.com/markets/live/stock-market-today-dow-jumps-nasdaq-sinks-after-broadcom-earnings-flop-230054846.html",
-          "published": "2026-06-03T23:00:54Z"
+          "title": "LinkedIn co-founder Reid Hoffman to step down from Microsoft's board",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/linkedin-co-founder-reid-hoffman-154541318.html",
+          "published": "2026-06-05T15:45:41Z"
         }
       ]
     },
@@ -59,9 +59,15 @@
       "items": [
         {
           "source": "CNBC Economy",
+          "title": "The May jobs report will be released Friday. Here's what to expect",
+          "link": "https://www.cnbc.com/2026/06/04/the-may-jobs-report-will-be-released-friday-heres-what-to-expect.html",
+          "published": "Thu, 04 Jun 2026 22:12:06 GMT"
+        },
+        {
+          "source": "CNBC Economy",
           "title": "Long-term unemployment is surging in the U.S. There are hidden costs for workers and the economy",
           "link": "https://www.cnbc.com/2026/06/04/long-term-unemployment-economy-jobs.html",
-          "published": "Thu, 04 Jun 2026 16:13:18 GMT"
+          "published": "Thu, 04 Jun 2026 18:55:32 GMT"
         },
         {
           "source": "CNBC Economy",
@@ -86,12 +92,6 @@
           "title": "Job openings in April surged to 7.6 million, the highest in nearly two years",
           "link": "https://www.cnbc.com/2026/06/02/job-openings-april-2026.html",
           "published": "Tue, 02 Jun 2026 15:38:02 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Inflation hits 3.2% in the euro zone as Iran war pushes energy costs higher",
-          "link": "https://www.cnbc.com/2026/06/02/inflation-euro-zone-iran-energy-costs.html",
-          "published": "Tue, 02 Jun 2026 09:47:08 GMT"
         }
       ]
     }
