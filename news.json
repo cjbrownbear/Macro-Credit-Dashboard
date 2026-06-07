@@ -1,20 +1,38 @@
 {
-  "updated": "2026-06-06T14:52:14Z",
+  "updated": "2026-06-07T14:59:26Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Bitcoin is cratering, but a new Wall Street crypto hype is on the rise",
-          "link": "https://www.cnbc.com/2026/06/06/bitcoin-price-crash-crypto-hype-hyperliquid-etfs.html",
-          "published": "Sat, 06 Jun 2026 13:28:42 GMT"
+          "title": "100 days of the Iran war: How global markets and the economy have been affected, in charts",
+          "link": "https://www.cnbc.com/2026/06/07/iran-war-100-days-trump-stocks-sp500-bonds-oil.html",
+          "published": "Sun, 07 Jun 2026 05:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Inside the Obama-era Iran nuclear deal that Trump withdrew from",
-          "link": "https://www.cnbc.com/2026/06/06/trump-iran-jcpoa-nuclear-deal-obama.html",
-          "published": "Sat, 06 Jun 2026 12:00:01 GMT"
+          "title": "Inflation inside the electronics you buy may soon become a bit more sticky",
+          "link": "https://www.cnbc.com/2026/06/07/inflation-iran-war-consumer-economy-electronics.html",
+          "published": "Sun, 07 Jun 2026 13:59:37 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "Harry's and Coterie owner Mammoth Brands has ambitions to be the next CPG giant",
+          "link": "https://www.cnbc.com/2026/06/07/harrys-coterie-owner-mammoth-brands-growth-ipo-rumors.html",
+          "published": "Sun, 07 Jun 2026 12:00:01 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "Global week ahead: Soccer isn't the only thing that's kicking off",
+          "link": "https://www.cnbc.com/2026/06/07/investors-watch-world-cup-ai-stocks-spacex-ipo.html",
+          "published": "Sun, 07 Jun 2026 05:00:01 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "Top Wall Street analysts recommend these 3 dividend stocks for solid returns",
+          "link": "https://www.cnbc.com/2026/06/07/top-analysts-recommend-these-3-dividend-stocks-for-solid-returns.html",
+          "published": "Sun, 07 Jun 2026 12:21:24 GMT"
         },
         {
           "source": "CNBC Top News",
@@ -23,34 +41,16 @@
           "published": "Sat, 06 Jun 2026 13:35:07 GMT"
         },
         {
-          "source": "CNBC Top News",
-          "title": "Wall Street's 'fear gauge' punches back as the 'crash up' in chip stocks finally reverses",
-          "link": "https://www.cnbc.com/2026/06/06/wall-streets-fear-gauge-punches-back-as-the-crash-up-in-chip-stocks-finally-reverses.html",
-          "published": "Sat, 06 Jun 2026 12:58:29 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "Abel goes his own way with new Berkshire investments, including billions for AI",
-          "link": "https://www.cnbc.com/2026/06/06/abel-goes-his-own-way-with-new-berkshire-investments-including-billions-for-ai.html",
-          "published": "Sat, 06 Jun 2026 12:31:02 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "How ‘Backrooms’ producer Peter Chernin thinks Hollywood needs to change",
-          "link": "https://www.cnbc.com/2026/06/06/backrooms-peter-chernin-hollywood.html",
-          "published": "Sat, 06 Jun 2026 13:00:01 GMT"
+          "source": "Yahoo Finance",
+          "title": "New Fed Chair Kevin Warsh Faces Trump Demand That Could Impact Social Security",
+          "link": "https://finance.yahoo.com/economy/policy/articles/fed-chair-kevin-warsh-faces-132055843.html",
+          "published": "2026-06-06T13:20:55Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "The Most Important AI Company You've Never Heard Of",
-          "link": "https://finance.yahoo.com/sectors/technology/articles/most-important-ai-company-youve-142500503.html",
-          "published": "2026-06-06T14:25:00Z"
-        },
-        {
-          "source": "Yahoo Finance",
-          "title": "'The fastest way to get rich quick is don't': Dave Ramsey's truth bomb for investors. His 3 wealth-building rules",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/fastest-way-rich-quick-dont-142500389.html",
-          "published": "2026-06-06T14:25:00Z"
+          "title": "SpaceX, targeting a $1.77 trillion valuation, just got a 100% property tax exemption for a planned factory in Texas",
+          "link": "https://finance.yahoo.com/economy/policy/articles/spacex-targeting-1-77-trillion-131000248.html",
+          "published": "2026-06-06T13:10:00Z"
         }
       ]
     },
