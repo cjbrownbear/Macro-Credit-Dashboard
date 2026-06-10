@@ -1,62 +1,80 @@
 {
-  "updated": "2026-06-09T16:12:15Z",
+  "updated": "2026-06-10T16:44:45Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Oil prices fall nearly 4% after U.S. Energy Secretary says Hormuz ship traffic is increasing",
-          "link": "https://www.cnbc.com/2026/06/09/oil-prices-iran-war-strait-hormuz-trump-israel-lebanon.html",
-          "published": "Tue, 09 Jun 2026 15:56:51 GMT"
+          "title": "Trump pledges more Iran attacks, saying U.S. will be 'attacking them very hard'",
+          "link": "https://www.cnbc.com/2026/06/10/trump-iran-war-attacks-deal.html",
+          "published": "Wed, 10 Jun 2026 16:19:33 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Social Security retirement trust fund may be depleted in 2032, new trustees report finds",
-          "link": "https://www.cnbc.com/2026/06/09/social-security-trustees-report-depletion-dates.html",
-          "published": "Tue, 09 Jun 2026 16:02:30 GMT"
+          "title": "Trump says 'I love the inflation' after consumer price index hits 3-year high",
+          "link": "https://www.cnbc.com/2026/06/10/trump-inflation-cpi-iran-oil.html",
+          "published": "Wed, 10 Jun 2026 16:43:33 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump family got about $500M from crypto venture — but investors saw steep losses",
-          "link": "https://www.cnbc.com/2026/06/09/trump-world-liberty-financial-crypto-alt5-sigma.html",
-          "published": "Tue, 09 Jun 2026 14:51:59 GMT"
+          "title": "Here's the inflation breakdown for May 2026 — in one chart",
+          "link": "https://www.cnbc.com/2026/06/10/heres-the-inflation-breakdown-for-may-2026-in-one-chart.html",
+          "published": "Wed, 10 Jun 2026 15:29:35 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "JPMorgan Chase plans to deploy more powerful AI agents this year",
-          "link": "https://www.cnbc.com/2026/06/09/jpmorgan-chase-ai-agents.html",
-          "published": "Tue, 09 Jun 2026 14:00:01 GMT"
+          "title": "Sen. Warren calls on SEC to delay SpaceX IPO, flagging concerns about valuation and governance",
+          "link": "https://www.cnbc.com/2026/06/10/spacex-elizabeth-warren-elon-musk-sec-ipo.html",
+          "published": "Wed, 10 Jun 2026 16:13:48 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Jeffrey Epstein's former assistant Lesley Groff interviewed by House panel",
-          "link": "https://www.cnbc.com/2026/06/09/epstein-lesley-groff-house-oversight-committee.html",
-          "published": "Tue, 09 Jun 2026 15:55:38 GMT"
+          "title": "Trump signs $70 billion immigration funding bill after months of delay",
+          "link": "https://www.cnbc.com/2026/06/10/trump-ice-70-billion-immigration-funding.html",
+          "published": "Wed, 10 Jun 2026 16:24:49 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Home sales surged in May to the highest level since December",
-          "link": "https://www.cnbc.com/2026/06/09/home-sales-surged-in-may-to-the-highest-level-since-december.html",
-          "published": "Tue, 09 Jun 2026 15:46:21 GMT"
+          "title": "Company that bet big on Trump-backed crypto says its fortunes have improved",
+          "link": "https://www.cnbc.com/2026/06/10/trump-crypto-alt-5-sigma-ai-financial.html",
+          "published": "Wed, 10 Jun 2026 16:35:50 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "56-year-old beloved fast-food chain closes over 700 locations",
-          "link": "https://finance.yahoo.com/economy/articles/56-old-beloved-fast-food-005500959.html",
-          "published": "2026-06-09T00:55:00Z"
+          "title": "National mall footwear giant closes 82 stores as shoppers trade up",
+          "link": "https://finance.yahoo.com/economy/policy/articles/national-mall-footwear-giant-closes-160709525.html",
+          "published": "2026-06-09T16:07:09Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Stock market today: Dow, S&P 500, Nasdaq sink as market rotation out of tech resumes",
-          "link": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-june-9-dow-sp-500-nasdaq-rise-ai-225640870.html",
-          "published": "2026-06-08T22:56:40Z"
+          "title": "Stock market today: Dow, S&P 500, Nasdaq slide as CPI report lands, US-Iran truce teeters",
+          "link": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-june-10-dow-sp-500-nasdaq-may-cpi-report-215056384.html",
+          "published": "2026-06-09T21:50:56Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Consumer prices rose 4.2% annually in May, highest in three years",
+          "link": "https://www.cnbc.com/2026/06/10/cpi-inflation-report-may-2026.html",
+          "published": "Wed, 10 Jun 2026 14:30:31 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Energy prices take center stage as the ECB prepares to decide on rates",
+          "link": "https://www.cnbc.com/2026/06/10/ecb-rate-hike-energy-prices-inflation.html",
+          "published": "Wed, 10 Jun 2026 08:25:22 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "The May inflation numbers are due out Wednesday morning. Here's what to expect",
+          "link": "https://www.cnbc.com/2026/06/09/the-may-inflation-numbers-are-due-out-wednesday-morning-heres-what-to-expect.html",
+          "published": "Tue, 09 Jun 2026 19:49:59 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Household worries over finances hit highest level since July 2022, New York Fed survey shows",
@@ -74,24 +92,6 @@
           "title": "Long-term unemployment is surging in the U.S. There are hidden costs for workers and the economy",
           "link": "https://www.cnbc.com/2026/06/04/long-term-unemployment-economy-jobs.html",
           "published": "Thu, 04 Jun 2026 18:55:32 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Private payrolls grew by 122,000 in May, stronger than expected, ADP reports",
-          "link": "https://www.cnbc.com/2026/06/03/adp-jobs-report-may-2026-payrolls-increase-by-122000.html",
-          "published": "Wed, 03 Jun 2026 14:28:44 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "U.S. proposes fresh tariffs on 60 economies over forced labor trade practices",
-          "link": "https://www.cnbc.com/2026/06/03/us-tariffs-60-economies-dection-301-forced-labor-trade-practices-.html",
-          "published": "Thu, 04 Jun 2026 08:29:56 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "U.S., Iran intensify attacks as ceasefire frays, peace talks stall",
-          "link": "https://www.cnbc.com/2026/06/03/us-iran-war-escalates-peace-talks-stalemate-.html",
-          "published": "Wed, 03 Jun 2026 21:05:19 GMT"
         }
       ]
     }
