@@ -1,62 +1,74 @@
 {
-  "updated": "2026-06-10T16:44:45Z",
+  "updated": "2026-06-11T17:01:15Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Trump pledges more Iran attacks, saying U.S. will be 'attacking them very hard'",
-          "link": "https://www.cnbc.com/2026/06/10/trump-iran-war-attacks-deal.html",
-          "published": "Wed, 10 Jun 2026 16:19:33 GMT"
+          "title": "Trump threatens to seize Kharg Island and other Iran oil infrastructure",
+          "link": "https://www.cnbc.com/2026/06/11/trump-says-us-will-seize-kharg-island-and-other-oil-infrastructure-points.html",
+          "published": "Thu, 11 Jun 2026 16:06:32 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump says 'I love the inflation' after consumer price index hits 3-year high",
-          "link": "https://www.cnbc.com/2026/06/10/trump-inflation-cpi-iran-oil.html",
-          "published": "Wed, 10 Jun 2026 16:43:33 GMT"
+          "title": "Iran threatens Elon Musk's companies in Middle East: Iranian state media",
+          "link": "https://www.cnbc.com/2026/06/11/iran-threatens-elon-musks-companies-in-middle-east-iranian-state-media.html",
+          "published": "Thu, 11 Jun 2026 15:18:33 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Here's the inflation breakdown for May 2026 — in one chart",
-          "link": "https://www.cnbc.com/2026/06/10/heres-the-inflation-breakdown-for-may-2026-in-one-chart.html",
-          "published": "Wed, 10 Jun 2026 15:29:35 GMT"
+          "title": "Gold slumps to 6-month low even as inflation fears rise. Here's why bullion is out of favor",
+          "link": "https://www.cnbc.com/2026/06/11/gold-slumps-to-6-month-low-even-as-inflation-fears-rise-heres-why-bullion-is-out-of-favor.html",
+          "published": "Thu, 11 Jun 2026 15:51:17 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Sen. Warren calls on SEC to delay SpaceX IPO, flagging concerns about valuation and governance",
-          "link": "https://www.cnbc.com/2026/06/10/spacex-elizabeth-warren-elon-musk-sec-ipo.html",
-          "published": "Wed, 10 Jun 2026 16:13:48 GMT"
+          "title": "OpenAI to acquire Ona to support its AI coding assistant, Codex",
+          "link": "https://www.cnbc.com/2026/06/11/open-ai-ona-acquisition-codex.html",
+          "published": "Thu, 11 Jun 2026 16:26:10 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump signs $70 billion immigration funding bill after months of delay",
-          "link": "https://www.cnbc.com/2026/06/10/trump-ice-70-billion-immigration-funding.html",
-          "published": "Wed, 10 Jun 2026 16:24:49 GMT"
+          "title": "Waymo launches premier subscription tier for $29.99 a month, starting in select cities",
+          "link": "https://www.cnbc.com/2026/06/11/waymo-launches-premier-subscription-tier-for-29point99-a-month.html",
+          "published": "Thu, 11 Jun 2026 16:57:05 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Company that bet big on Trump-backed crypto says its fortunes have improved",
-          "link": "https://www.cnbc.com/2026/06/10/trump-crypto-alt-5-sigma-ai-financial.html",
-          "published": "Wed, 10 Jun 2026 16:35:50 GMT"
+          "title": "Trump administration appeals ruling blocking $100,000 H-1B fee",
+          "link": "https://www.cnbc.com/2026/06/11/trump-h1b-visa-fee-appeal.html",
+          "published": "Thu, 11 Jun 2026 16:42:31 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "National mall footwear giant closes 82 stores as shoppers trade up",
-          "link": "https://finance.yahoo.com/economy/policy/articles/national-mall-footwear-giant-closes-160709525.html",
-          "published": "2026-06-09T16:07:09Z"
+          "title": "Cathie Wood sells her favorite stock despite surge",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-sells-her-favorite-163934760.html",
+          "published": "2026-06-11T16:39:34Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Stock market today: Dow, S&P 500, Nasdaq slide as CPI report lands, US-Iran truce teeters",
-          "link": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-june-10-dow-sp-500-nasdaq-may-cpi-report-215056384.html",
-          "published": "2026-06-09T21:50:56Z"
+          "title": "Oppenheimer slaps Outperform rating on SpaceX, $190 price target ahead of market debut",
+          "link": "https://finance.yahoo.com/markets/stocks/article/oppenheimer-slaps-outperform-rating-on-spacex-190-price-target-ahead-of-market-debut-163237327.html",
+          "published": "2026-06-11T16:32:37Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Wholesale prices rose 1.1% in May, more than expected, on surge in energy",
+          "link": "https://www.cnbc.com/2026/06/11/producer-price-index-may-2026-.html",
+          "published": "Thu, 11 Jun 2026 16:25:00 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "ECB hikes interest rates for first time since 2023 as Iran war ramps up energy costs",
+          "link": "https://www.cnbc.com/2026/06/11/ecb-hikes-interest-rates.html",
+          "published": "Thu, 11 Jun 2026 13:57:33 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Consumer prices rose 4.2% annually in May, highest in three years",
@@ -67,7 +79,7 @@
           "source": "CNBC Economy",
           "title": "Energy prices take center stage as the ECB prepares to decide on rates",
           "link": "https://www.cnbc.com/2026/06/10/ecb-rate-hike-energy-prices-inflation.html",
-          "published": "Wed, 10 Jun 2026 08:25:22 GMT"
+          "published": "Thu, 11 Jun 2026 07:20:29 GMT"
         },
         {
           "source": "CNBC Economy",
@@ -80,18 +92,6 @@
           "title": "Household worries over finances hit highest level since July 2022, New York Fed survey shows",
           "link": "https://www.cnbc.com/2026/06/08/household-financial-worries-at-highest-level-since-2022-new-york-fed-says.html",
           "published": "Mon, 08 Jun 2026 16:13:12 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "The May jobs report will be released Friday. Here's what to expect",
-          "link": "https://www.cnbc.com/2026/06/04/the-may-jobs-report-will-be-released-friday-heres-what-to-expect.html",
-          "published": "Thu, 04 Jun 2026 22:12:06 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Long-term unemployment is surging in the U.S. There are hidden costs for workers and the economy",
-          "link": "https://www.cnbc.com/2026/06/04/long-term-unemployment-economy-jobs.html",
-          "published": "Thu, 04 Jun 2026 18:55:32 GMT"
         }
       ]
     }
