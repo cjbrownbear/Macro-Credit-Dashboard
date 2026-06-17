@@ -1,62 +1,74 @@
 {
-  "updated": "2026-06-16T18:08:18Z",
+  "updated": "2026-06-17T16:42:55Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "SpaceX rises 12% to leapfrog Amazon, briefly top Microsoft in market cap",
-          "link": "https://www.cnbc.com/2026/06/16/spacex-stock-rally-market-cap.html",
-          "published": "Tue, 16 Jun 2026 17:22:14 GMT"
+          "title": "Watch: Trump speaks at G7 summit after threatening Iran",
+          "link": "https://www.cnbc.com/2026/06/17/trump-us-iran-deal-g7.html",
+          "published": "Wed, 17 Jun 2026 16:17:46 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Rivian laying off hundreds of workers amid R2 launch",
-          "link": "https://www.cnbc.com/2026/06/16/rivian-layoffs.html",
-          "published": "Tue, 16 Jun 2026 17:58:32 GMT"
+          "title": "JetBlue to reduce Newark, LaGuardia footprint as it forges ahead in Fort Lauderdale",
+          "link": "https://www.cnbc.com/2026/06/17/jetblue-to-reduce-newark-laguardia-footprint-as-it-expands-in-florida.html",
+          "published": "Wed, 17 Jun 2026 16:18:13 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Snap unveils $2,195 AR glasses as CEO Evan Spiegel bets on post-smartphone future",
-          "link": "https://www.cnbc.com/2026/06/16/snap-unveils-2195-specs-ar-glasses-spiegel-bets-on-post-smartphone.html",
-          "published": "Tue, 16 Jun 2026 17:52:13 GMT"
+          "title": "SpaceX stock sinks 5%, losing momentum after a multiday rally",
+          "link": "https://www.cnbc.com/2026/06/17/spacex-stock-elon-musk-market-cap.html",
+          "published": "Wed, 17 Jun 2026 14:55:46 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "General Motors announces new defense partnership with Lockheed Martin",
-          "link": "https://www.cnbc.com/2026/06/16/general-motors-lockheed-martin.html",
-          "published": "Tue, 16 Jun 2026 17:20:18 GMT"
+          "title": "Trump sabotages Senate bid to fast-track Clayton as DNI",
+          "link": "https://www.cnbc.com/2026/06/17/jay-clayton-dni-hearing-congress-trump-cancel.html",
+          "published": "Wed, 17 Jun 2026 15:50:38 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump signals he could send details of Iran deal to Congress",
-          "link": "https://www.cnbc.com/2026/06/16/trump-iran-deal-congress.html",
-          "published": "Tue, 16 Jun 2026 17:31:18 GMT"
+          "title": "Allbirds continues AI pivot with name change and CEO hire, sending stock soaring",
+          "link": "https://www.cnbc.com/2026/06/17/allbirds-bird-ai-smartbird-ceo.html",
+          "published": "Wed, 17 Jun 2026 15:44:24 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "The new oil? Inside the effort to turn AI computing power into a tradeable commodity",
-          "link": "https://www.cnbc.com/2026/06/16/the-new-oil-inside-the-effort-to-turn-ai-computing-power-into-a-tradeable-commodity.html",
-          "published": "Tue, 16 Jun 2026 17:20:35 GMT"
+          "title": "Amazon AI exec predicts first 'commercially useful' quantum computers in 5-7 years",
+          "link": "https://www.cnbc.com/2026/06/17/amazon-quantum-computing-timeline.html",
+          "published": "Wed, 17 Jun 2026 15:40:55 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Cathie Wood buys $529.7 million of popular new stock",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-buys-529-7-133300502.html",
-          "published": "2026-06-15T13:33:00Z"
+          "title": "Mark Cuban has a blunt response to Coinbase CEO",
+          "link": "https://finance.yahoo.com/markets/crypto/articles/mark-cuban-blunt-response-coinbase-215801475.html",
+          "published": "2026-06-16T21:58:01Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "SpaceX set to extend rally after record Wall Street debut",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/spacex-set-extend-rally-record-085146570.html",
-          "published": "2026-06-15T08:51:46Z"
+          "title": "PG&E (PCG) Surpasses 1 Million Grid-Connected Solar Customers",
+          "link": "https://finance.yahoo.com/energy/articles/pg-e-pcg-surpasses-1-162354791.html",
+          "published": "2026-06-17T16:23:54Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "UK inflation holds steady at 2.8% in May",
+          "link": "https://www.cnbc.com/2026/06/17/inflation-uk-cpi-interest-rates-bank-of-england.html",
+          "published": "Wed, 17 Jun 2026 06:41:39 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Three Iranian tankers exit U.S. blockade for first time in months as shipowners eye Hormuz in 'wary disbelief'",
+          "link": "https://www.cnbc.com/2026/06/17/iranian-tankers-oil-shipment-us-iran-deal-strait-of-hormuz-.html",
+          "published": "Wed, 17 Jun 2026 07:23:05 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "UK economy shrank 0.1% in April as Iran conflict weighed on growth",
@@ -80,18 +92,6 @@
           "title": "ECB hikes interest rates for first time since 2023 as Iran war ramps up energy costs",
           "link": "https://www.cnbc.com/2026/06/11/ecb-hikes-interest-rates.html",
           "published": "Thu, 11 Jun 2026 13:57:33 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Consumer prices rose 4.2% annually in May, highest in three years",
-          "link": "https://www.cnbc.com/2026/06/10/cpi-inflation-report-may-2026.html",
-          "published": "Wed, 10 Jun 2026 14:30:31 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Energy prices take center stage as the ECB prepares to decide on rates",
-          "link": "https://www.cnbc.com/2026/06/10/ecb-rate-hike-energy-prices-inflation.html",
-          "published": "Thu, 11 Jun 2026 07:20:29 GMT"
         }
       ]
     }
