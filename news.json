@@ -1,62 +1,74 @@
 {
-  "updated": "2026-06-17T16:42:55Z",
+  "updated": "2026-06-18T16:42:15Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Watch: Trump speaks at G7 summit after threatening Iran",
-          "link": "https://www.cnbc.com/2026/06/17/trump-us-iran-deal-g7.html",
-          "published": "Wed, 17 Jun 2026 16:17:46 GMT"
+          "title": "Oil prices fall after Vance says more than 12 million barrels exit Strait of Hormuz",
+          "link": "https://www.cnbc.com/2026/06/18/oil-prices-today-wti-brent.html",
+          "published": "Thu, 18 Jun 2026 15:59:43 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "JetBlue to reduce Newark, LaGuardia footprint as it forges ahead in Fort Lauderdale",
-          "link": "https://www.cnbc.com/2026/06/17/jetblue-to-reduce-newark-laguardia-footprint-as-it-expands-in-florida.html",
-          "published": "Wed, 17 Jun 2026 16:18:13 GMT"
+          "title": "Vance says U.S. isn’t giving Iran ‘a cent’ as he defends Trump peace deal",
+          "link": "https://www.cnbc.com/2026/06/18/vance-iran-war-memo-oil-gas.html",
+          "published": "Thu, 18 Jun 2026 16:21:47 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "SpaceX stock sinks 5%, losing momentum after a multiday rally",
-          "link": "https://www.cnbc.com/2026/06/17/spacex-stock-elon-musk-market-cap.html",
-          "published": "Wed, 17 Jun 2026 14:55:46 GMT"
+          "title": "Trump bid to fire Fed's Lisa Cook cost her more than $1M in legal, security costs: Filing",
+          "link": "https://www.cnbc.com/2026/06/18/trump-federal-reserve-lisa-cook-security-filing.html",
+          "published": "Thu, 18 Jun 2026 15:37:36 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump sabotages Senate bid to fast-track Clayton as DNI",
-          "link": "https://www.cnbc.com/2026/06/17/jay-clayton-dni-hearing-congress-trump-cancel.html",
-          "published": "Wed, 17 Jun 2026 15:50:38 GMT"
+          "title": "OPEC chief dismisses IEA supply glut forecast as 'critical' Strait of Hormuz reopens",
+          "link": "https://www.cnbc.com/2026/06/18/opec-iea-supply-glut-forecast-critical-strait-hormuz-reopens-oil.html",
+          "published": "Thu, 18 Jun 2026 15:19:47 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Allbirds continues AI pivot with name change and CEO hire, sending stock soaring",
-          "link": "https://www.cnbc.com/2026/06/17/allbirds-bird-ai-smartbird-ceo.html",
-          "published": "Wed, 17 Jun 2026 15:44:24 GMT"
+          "title": "SpaceX stock sinks 8%, continuing to cool after three-day rally",
+          "link": "https://www.cnbc.com/2026/06/18/spacex-stock-elon-musk-rally-cools.html",
+          "published": "Thu, 18 Jun 2026 15:33:49 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Amazon AI exec predicts first 'commercially useful' quantum computers in 5-7 years",
-          "link": "https://www.cnbc.com/2026/06/17/amazon-quantum-computing-timeline.html",
-          "published": "Wed, 17 Jun 2026 15:40:55 GMT"
+          "title": "Bonkers SpaceX stats that show how staggering the money movement has been",
+          "link": "https://www.cnbc.com/2026/06/18/5-wild-spacex-stats-from-the-companys-first-week-on-the-nasdaq.html",
+          "published": "Thu, 18 Jun 2026 15:03:14 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Mark Cuban has a blunt response to Coinbase CEO",
-          "link": "https://finance.yahoo.com/markets/crypto/articles/mark-cuban-blunt-response-coinbase-215801475.html",
-          "published": "2026-06-16T21:58:01Z"
+          "title": "Grocery chain pays massive fine, accused of inflated price reporting",
+          "link": "https://finance.yahoo.com/healthcare/articles/grocery-chain-pays-massive-fine-231700048.html",
+          "published": "2026-06-17T23:17:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "PG&E (PCG) Surpasses 1 Million Grid-Connected Solar Customers",
-          "link": "https://finance.yahoo.com/energy/articles/pg-e-pcg-surpasses-1-162354791.html",
-          "published": "2026-06-17T16:23:54Z"
+          "title": "SpaceX stock drops after breaking 3-day winning streak",
+          "link": "https://finance.yahoo.com/markets/stocks/article/spacex-stock-drops-after-breaking-3-day-winning-streak-124809291.html",
+          "published": "2026-06-18T12:48:09Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Bank of England holds interest rates at 3.75% amid Iran war peace prospects",
+          "link": "https://www.cnbc.com/2026/06/18/inflation-interest-rates-uk-bank-of-england-iran-deal.html",
+          "published": "Thu, 18 Jun 2026 11:49:16 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Here are the five big takeaways from Kevin Warsh's first meeting as Fed chairman",
+          "link": "https://www.cnbc.com/2026/06/17/here-are-the-five-big-takeaways-from-kevin-warshs-first-meeting-as-fed-chairman.html",
+          "published": "Wed, 17 Jun 2026 23:51:33 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "UK inflation holds steady at 2.8% in May",
@@ -80,18 +92,6 @@
           "title": "A Chinese start-up's unfolding dilemma exposes cracks in Beijing's tech funding machine",
           "link": "https://www.cnbc.com/2026/06/12/a-chinese-start-ups-dilemma-exposes-cracks-in-beijings-tech-funding.html",
           "published": "Fri, 12 Jun 2026 01:21:00 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Wholesale prices rose 1.1% in May, more than expected, on surge in energy",
-          "link": "https://www.cnbc.com/2026/06/11/producer-price-index-may-2026-.html",
-          "published": "Thu, 11 Jun 2026 16:25:00 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "ECB hikes interest rates for first time since 2023 as Iran war ramps up energy costs",
-          "link": "https://www.cnbc.com/2026/06/11/ecb-hikes-interest-rates.html",
-          "published": "Thu, 11 Jun 2026 13:57:33 GMT"
         }
       ]
     }
