@@ -1,62 +1,74 @@
 {
-  "updated": "2026-06-22T17:47:41Z",
+  "updated": "2026-06-23T16:05:54Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Alphabet paces for worst day in a year on AI concerns after high-profile exits",
-          "link": "https://www.cnbc.com/2026/06/22/alphabet-goog-stock-ai-departures.html",
-          "published": "Mon, 22 Jun 2026 17:17:04 GMT"
+          "title": "Factory job cuts in June neared financial crisis and Covid levels, S&P says",
+          "link": "https://www.cnbc.com/2026/06/23/factory-job-cuts-reported-around-financial-crisis-and-covid-levels-for-june-sp-says.html",
+          "published": "Tue, 23 Jun 2026 14:49:04 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "SpaceX signs computing power deal with open-source AI startup Reflection worth up to $6.3 billion",
-          "link": "https://www.cnbc.com/2026/06/22/spacex-ai-colossus-data-center-reflection.html",
-          "published": "Mon, 22 Jun 2026 15:00:01 GMT"
+          "title": "Meta announces new smart glasses starting at $299, as Zuckerberg keeps pushing wearables",
+          "link": "https://www.cnbc.com/2026/06/23/meta-glasses-are-new-smart-glasses-starting-at-299.html",
+          "published": "Tue, 23 Jun 2026 15:56:53 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Alan Greenspan, former chairman of the Fed, dies at age 100",
-          "link": "https://www.cnbc.com/2026/06/22/alan-greenspan-former-chairman-of-the-fed-dies-at-age-100.html",
-          "published": "Mon, 22 Jun 2026 14:39:38 GMT"
+          "title": "SpaceX stock climbs 4% after falling below $150 debut price",
+          "link": "https://www.cnbc.com/2026/06/23/spacex-stock-tech-sell-off.html",
+          "published": "Tue, 23 Jun 2026 15:58:39 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "SpaceX stock falls 9%, pacing for third-straight day of losses after red-hot IPO start",
-          "link": "https://www.cnbc.com/2026/06/22/spacex-stock-ipo-rally-selloff.html",
-          "published": "Mon, 22 Jun 2026 15:57:18 GMT"
+          "title": "U.S. issues sweeping Iran oil sanctions waivers, unlocking billions in revenue for Tehran",
+          "link": "https://www.cnbc.com/2026/06/23/us-iran-oil-sanction-relief-strait-of-hormuz-peace-deal-.html",
+          "published": "Tue, 23 Jun 2026 14:56:38 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Treasury Department authorizes Iranian oil sales through August",
-          "link": "https://www.cnbc.com/2026/06/22/treasury-iran-oil-sales.html",
-          "published": "Mon, 22 Jun 2026 16:07:14 GMT"
+          "title": "Sen. Cassidy plans to push 'big idea' for Social Security reform in last days in office",
+          "link": "https://www.cnbc.com/2026/06/23/social-security-reform-cassidy.html",
+          "published": "Tue, 23 Jun 2026 14:47:27 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Senate poised to advance housing bill to limit private equity purchases of single-family homes",
-          "link": "https://www.cnbc.com/2026/06/22/affordable-housing-bill-private-equity-single-family-homes.html",
-          "published": "Mon, 22 Jun 2026 16:19:02 GMT"
+          "title": "'I like their money': Trump threatens lawsuits against ABC for reporting on Reflecting Pool",
+          "link": "https://www.cnbc.com/2026/06/23/trump-threatens-lawsuits-against-abc-network-for-reporting-on-reflecting-pool.html",
+          "published": "Tue, 23 Jun 2026 13:23:18 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "After closing 1,000 restaurants, seafood chain sees clear sailing",
-          "link": "https://finance.yahoo.com/small-business/articles/closing-1-000-restaurants-seafood-011700497.html",
-          "published": "2026-06-22T01:17:00Z"
+          "title": "Intel CEO gives investors a reality check",
+          "link": "https://finance.yahoo.com/technology/ai/articles/intel-ceo-gives-investors-reality-184700678.html",
+          "published": "2026-06-22T18:47:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Vimeo owner Bending Spoons seeks $1.62 billion US IPO, sources say",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/vimeo-owner-bending-spoons-seeks-172943084.html",
-          "published": "2026-06-22T17:29:43Z"
+          "title": "BMO Lowers Expectations After Dave & Buster’s Entertainment, Inc. (PLAY)’s EBITDA Miss",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/bmo-lowers-expectations-dave-buster-153657437.html",
+          "published": "2026-06-23T15:36:57Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Factory job cuts in June neared financial crisis and Covid levels, S&P says",
+          "link": "https://www.cnbc.com/2026/06/23/factory-job-cuts-reported-around-financial-crisis-and-covid-levels-for-june-sp-says.html",
+          "published": "Tue, 23 Jun 2026 14:49:04 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "U.S. issues sweeping Iran oil sanctions waivers, unlocking billions in revenue for Tehran",
+          "link": "https://www.cnbc.com/2026/06/23/us-iran-oil-sanction-relief-strait-of-hormuz-peace-deal-.html",
+          "published": "Tue, 23 Jun 2026 14:56:38 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Struggling to find a job? Try looking in Nevada",
@@ -80,18 +92,6 @@
           "title": "Bank of England holds interest rates at 3.75% amid Iran war peace prospects",
           "link": "https://www.cnbc.com/2026/06/18/inflation-interest-rates-uk-bank-of-england-iran-deal.html",
           "published": "Thu, 18 Jun 2026 11:49:16 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Here are the five big takeaways from Kevin Warsh's first meeting as Fed chairman",
-          "link": "https://www.cnbc.com/2026/06/17/here-are-the-five-big-takeaways-from-kevin-warshs-first-meeting-as-fed-chairman.html",
-          "published": "Thu, 18 Jun 2026 19:17:55 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "UK inflation holds steady at 2.8% in May",
-          "link": "https://www.cnbc.com/2026/06/17/inflation-uk-cpi-interest-rates-bank-of-england.html",
-          "published": "Wed, 17 Jun 2026 06:41:39 GMT"
         }
       ]
     }
