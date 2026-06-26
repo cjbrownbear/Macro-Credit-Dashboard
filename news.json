@@ -1,62 +1,74 @@
 {
-  "updated": "2026-06-25T15:44:20Z",
+  "updated": "2026-06-26T15:30:28Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Core inflation rate hit 3.4% in May, highest since October 2023, Fed’s preferred gauge shows",
-          "link": "https://www.cnbc.com/2026/06/25/pce-inflation-report-may-2026-.html",
-          "published": "Thu, 25 Jun 2026 13:30:56 GMT"
+          "title": "Trump eases pressure on Fed Chairman Kevin Warsh as inflation tops 4%",
+          "link": "https://www.cnbc.com/2026/06/26/trump-warsh-fed-rate-cuts-inflation.html",
+          "published": "Fri, 26 Jun 2026 14:54:15 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Bayer wins Supreme Court case making it harder to sue over glyphosate in Monsanto's Roundup",
-          "link": "https://www.cnbc.com/2026/06/25/glyphosate-roundup-bayer-supreme-court-case-monsanto.html",
-          "published": "Thu, 25 Jun 2026 15:13:02 GMT"
+          "title": "Ex-Apollo CEO Leon Black says Jeffrey Epstein duped him out of more than $60 million",
+          "link": "https://www.cnbc.com/2026/06/26/leon-black-jeffrey-epstein-house-oversight-committee.html",
+          "published": "Fri, 26 Jun 2026 15:24:34 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Apple stock drops 5% on MacBook and iPad price hikes due to memory crunch",
-          "link": "https://www.cnbc.com/2026/06/25/apple-macbook-ipad-price-hike-memory.html",
-          "published": "Thu, 25 Jun 2026 14:46:15 GMT"
+          "title": "Ex-Trump advisor John Bolton pleads guilty to retaining national defense information",
+          "link": "https://www.cnbc.com/2026/06/26/john-bolton-guilty-defense-trump.html",
+          "published": "Fri, 26 Jun 2026 15:14:50 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "GM reveals 2027 GMC Sierra pickup with new V-8 engines, redesigned styling",
-          "link": "https://www.cnbc.com/2026/06/25/gm-gmc-sierra-pickup.html",
-          "published": "Thu, 25 Jun 2026 15:00:01 GMT"
+          "title": "Jeremy Grantham says this is 'the most expensive market in 'American history'",
+          "link": "https://www.cnbc.com/2026/06/26/jeremy-grantham-says-this-is-the-most-expensive-market-in-american-history.html",
+          "published": "Fri, 26 Jun 2026 14:36:05 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Micron is up 10% after blockbuster earnings, but has pulled back from highs",
-          "link": "https://www.cnbc.com/2026/06/25/micron-stock-3q-earnings-memory.html",
-          "published": "Thu, 25 Jun 2026 14:17:59 GMT"
+          "title": "OpenAI and Anthropic face new AI reality as companies shift from tokenmaxxing to efficiency",
+          "link": "https://www.cnbc.com/2026/06/26/openai-anthropic-new-ai-spending-reality-as-users-shift-to-efficiency.html",
+          "published": "Fri, 26 Jun 2026 12:10:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "JPMorgan names Doug Petno and Troy Rohrbaugh co-presidents as longtime exec Marianne Lake exits",
-          "link": "https://www.cnbc.com/2026/06/25/jpmorgan-chase-co-presidents-lake-exits.html",
-          "published": "Thu, 25 Jun 2026 15:19:29 GMT"
+          "title": "One factor that may be partly behind the S&P 500's curious action this week",
+          "link": "https://www.cnbc.com/2026/06/26/one-factor-that-may-be-partly-behind-the-sp-500s-curious-action-this-week.html",
+          "published": "Fri, 26 Jun 2026 12:02:21 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Stock market today: Dow and S&P 500 rise, Nasdaq slips as PCE comes in hot, Big Tech falters",
-          "link": "https://finance.yahoo.com/markets/live/stock-market-today-dow-and-sp-500-rise-nasdaq-slips-as-pce-comes-in-hot-big-tech-falters-232650645.html",
-          "published": "2026-06-24T23:26:50Z"
+          "title": "Mortgage and refinance interest rates today, Friday, June 26, 2026: Rates relatively flat heading into the weekend",
+          "link": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-and-refinance-interest-rates-today-friday-june-26-2026-rates-relatively-flat-heading-into-the-weekend-100000320.html",
+          "published": "2026-06-26T10:00:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Polestar says Trump administration forcing it to end US sales",
-          "link": "https://finance.yahoo.com/news/us-denies-polestar-authorization-sell-130146185.html",
-          "published": "2026-06-25T15:25:42Z"
+          "title": "Dollar falls for second straight day but poised for weekly gain",
+          "link": "https://finance.yahoo.com/news/yen-wobbles-near-40-low-010511440.html",
+          "published": "2026-06-26T15:08:37Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Shipping rebounds in Strait of Hormuz one week after U.S.-Iran deal – but fragile confidence threatens recovery",
+          "link": "https://www.cnbc.com/2026/06/26/strait-of-hormuz-shipping-oil-us-iran.html",
+          "published": "Fri, 26 Jun 2026 09:36:24 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "UN agency pauses Hormuz ship evacuation plan after first vessel attack under peace deal",
+          "link": "https://www.cnbc.com/2026/06/26/strait-of-hormuz-vessel-attack-evacuation-pauses-iran-united-states-peace-deal-negotiation-.html",
+          "published": "Fri, 26 Jun 2026 02:07:59 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Core inflation rate hit 3.4% in May, highest since October 2023, Fed’s preferred gauge shows",
@@ -80,18 +92,6 @@
           "title": "Factory job cuts in June neared financial crisis and Covid levels, S&P says",
           "link": "https://www.cnbc.com/2026/06/23/factory-job-cuts-reported-around-financial-crisis-and-covid-levels-for-june-sp-says.html",
           "published": "Tue, 23 Jun 2026 16:40:57 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "U.S. issues sweeping Iran oil sanctions waivers, unlocking billions in revenue for Tehran",
-          "link": "https://www.cnbc.com/2026/06/23/us-iran-oil-sanction-relief-strait-of-hormuz-peace-deal-.html",
-          "published": "Tue, 23 Jun 2026 14:56:38 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Struggling to find a job? Try looking in Nevada",
-          "link": "https://www.cnbc.com/2026/06/19/nevada-workforce-job-market.html",
-          "published": "Fri, 19 Jun 2026 17:56:52 GMT"
         }
       ]
     }
