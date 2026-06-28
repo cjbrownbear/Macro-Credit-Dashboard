@@ -1,9 +1,33 @@
 {
-  "updated": "2026-06-27T14:54:28Z",
+  "updated": "2026-06-28T14:56:20Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
+        {
+          "source": "CNBC Top News",
+          "title": "A 'perfect storm' points to a much smaller U.S. auto market by 2040",
+          "link": "https://www.cnbc.com/2026/06/28/us-auto-market.html",
+          "published": "Sun, 28 Jun 2026 11:00:01 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "Trump again threatens Iran with annihilation as Kuwait and Bahrain report attacks",
+          "link": "https://www.cnbc.com/2026/06/28/trump-threatens-iran-with-annihilation-kuwait-bahrain-report-attacks.html",
+          "published": "Sun, 28 Jun 2026 13:08:38 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "Seniors in Medicare are about to get landmark obesity drug coverage — but many may not know it yet",
+          "link": "https://www.cnbc.com/2026/06/28/medicare-will-soon-cover-obesity-drugs-but-many-seniors-may-not-know.html",
+          "published": "Sun, 28 Jun 2026 12:00:01 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "If you think China needs to dethrone U.S. dollar, you don't understand how it is waging global currency war",
+          "link": "https://www.cnbc.com/2026/06/28/china-doesnt-need-to-de-throne-dollar-to-win-global-currency-war.html",
+          "published": "Sun, 28 Jun 2026 13:25:43 GMT"
+        },
         {
           "source": "CNBC Top News",
           "title": "The memory shortage shaking Apple and Microsoft is 'existential crisis' for smaller players",
@@ -12,45 +36,21 @@
         },
         {
           "source": "CNBC Top News",
-          "title": "U.S. strikes Iran after Trump accuses Tehran of ceasefire violation in Strait of Hormuz",
-          "link": "https://www.cnbc.com/2026/06/26/us-strikes-iran-strait-of-hormuz-ceasefire.html",
-          "published": "Sat, 27 Jun 2026 12:43:35 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "SpaceX to join the Nasdaq-100 in a fast-tracked process that will drive huge ETF buying demand",
-          "link": "https://www.cnbc.com/2026/06/26/spacex-added-to-nasdaq-100-on-hold-on-hold-on-hold.html",
-          "published": "Sat, 27 Jun 2026 12:32:54 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "Berkshire CEO Greg Abel sworn in as U.S. citizen at baseball game",
-          "link": "https://www.cnbc.com/2026/06/27/berkshire-ceo-greg-abel-sworn-in-as-us-citizen-at-baseball-game.html",
-          "published": "Sat, 27 Jun 2026 12:11:16 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "SpaceX stock has cooled. Hiring for jobs in the space economy hasn't",
-          "link": "https://www.cnbc.com/2026/06/27/spacex-jobs-stem-careers-labor-economy.html",
-          "published": "Sat, 27 Jun 2026 13:17:30 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "How GE Vernova builds the massive gas turbines powering the AI data center boom",
-          "link": "https://www.cnbc.com/2026/06/27/ge-vernova-gas-turbines-ai-data-centers.html",
-          "published": "Sat, 27 Jun 2026 12:00:01 GMT"
+          "title": "From protein coffee to CBD soda: How brands are cashing in on the functional beverage boom",
+          "link": "https://www.cnbc.com/2026/06/28/protein-coffee-cbd-soda-starbucks-functional-beverage-boom.html",
+          "published": "Sun, 28 Jun 2026 05:00:01 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Bank of America resets Micron stock price target after earnings",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/bank-america-resets-micron-stock-143700974.html",
-          "published": "2026-06-27T14:37:00Z"
+          "title": "3 Overlooked Tech ETFs That Are Quietly Killing It This Year",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/3-overlooked-tech-etfs-quietly-131000965.html",
+          "published": "2026-06-27T13:10:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Stock Market Week Ahead: Rotating, For Now, Away From The AI Boom",
-          "link": "https://www.investors.com/research/investing-action-plan/stock-market-week-ahead-rotating-for-now-away-from-the-ai-boom/?src=A00220&yptr=yahoo",
-          "published": "2026-06-27T13:38:13Z"
+          "title": "Court appoints receiver for Golub, BlueFive’s Mag Mile office",
+          "link": "https://finance.yahoo.com/real-estate/articles/court-appoints-receiver-golub-bluefive-130000780.html",
+          "published": "2026-06-27T13:00:00Z"
         }
       ]
     },
