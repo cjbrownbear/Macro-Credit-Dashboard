@@ -1,9 +1,9 @@
 {
-  "updated": "2026-06-29T16:41:04Z",
+  "updated": "2026-06-30T15:40:19Z",
   "overall_status": "tripwire",
   "executive_summary": {
     "text": "Overall status is Tripwire / Watch. Across the dashboard: 7 healthy, 1 tripwire, 0 stress. Biggest YoY moves: Revolving Consumer Credit (Δ 1y: +49559B (+3.8%)); Initial Jobless Claims (Δ 1y: -28000K (-11.5%)); Net Charge-off Rate (Δ 1y: -0.62pp (-13.9%)).",
-    "updated": "2026-06-29T16:41:04Z",
+    "updated": "2026-06-30T15:40:19Z",
     "overall": "tripwire"
   },
   "kpis": [
@@ -240,16 +240,15 @@
       "unit": "mil",
       "status": "healthy",
       "status_label": "Healthy",
-      "value": 7.618,
-      "value_str": "7.62M",
-      "as_of": "Apr 2026",
-      "avg10": 7.801305785123968,
-      "avg_str": "7.80M",
-      "delta_abs": 0.5200000000000005,
-      "delta_pct": 0.07326007326007333,
-      "delta_str": "Δ 1y: +0.52M (+7.3%)",
+      "value": 7.594,
+      "value_str": "7.59M",
+      "as_of": "May 2026",
+      "avg10": 7.815834710743803,
+      "avg_str": "7.82M",
+      "delta_abs": 0.2840000000000007,
+      "delta_pct": 0.038850889192886554,
+      "delta_str": "Δ 1y: +0.28M (+3.9%)",
       "spark": [
-        7.782,
         7.416,
         7.426,
         7.52,
@@ -272,7 +271,8 @@
         7.24,
         6.922,
         6.887,
-        7.618
+        7.585,
+        7.594
       ],
       "definition": "Job openings (JOLTS). Proxy for labor demand.",
       "why": "Falling openings often precede labor market cooling."
@@ -12826,8 +12826,13 @@
         },
         {
           "date": "2026-04-01",
-          "value": 7.618,
-          "value_str": "7.62M"
+          "value": 7.585,
+          "value_str": "7.58M"
+        },
+        {
+          "date": "2026-05-01",
+          "value": 7.594,
+          "value_str": "7.59M"
         }
       ],
       "bench_points": [
@@ -14005,10 +14010,14 @@
         },
         {
           "date": "2026-04-01",
-          "value": 7.817958333333333
+          "value": 7.817683333333334
+        },
+        {
+          "date": "2026-05-01",
+          "value": 7.832825
         }
       ],
-      "summary_text": "Latest: 7.62M (Healthy). Δ 1y: +0.52M (+7.3%)."
+      "summary_text": "Latest: 7.59M (Healthy). Δ 1y: +0.28M (+3.9%)."
     },
     {
       "key": "UNRATE_pct",

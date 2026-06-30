@@ -1,62 +1,68 @@
 {
-  "updated": "2026-06-29T16:41:05Z",
+  "updated": "2026-06-30T15:40:20Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Supreme Court rules Trump cannot fire Fed Governor Lisa Cook for now",
-          "link": "https://www.cnbc.com/2026/06/29/supreme-court-lisa-cook-trump-federal-reserve.html",
-          "published": "Mon, 29 Jun 2026 16:18:49 GMT"
+          "title": "Small-cap stocks enjoy their best first half in 35 years. Here's what's driving it",
+          "link": "https://www.cnbc.com/2026/06/30/small-cap-stocks-enjoy-best-first-half-since-1991-as-ai-trade-expands.html",
+          "published": "Tue, 30 Jun 2026 13:04:02 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Comcast jumps 9% after announcing it will spin off NBCUniversal and Sky from cable business",
-          "link": "https://www.cnbc.com/2026/06/29/comcast-announces-it-will-spin-off-media-and-tech-wings-into-separate-public-companies.html",
-          "published": "Mon, 29 Jun 2026 14:49:01 GMT"
+          "title": "Supreme Court upholds birthright citizenship, blocks Trump order",
+          "link": "https://www.cnbc.com/2026/06/30/supreme-court-birthright-citizenship-ruling.html",
+          "published": "Tue, 30 Jun 2026 15:17:03 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Alphabet stock pops 4% on Dow debut, but the tech giant faces major AI questions",
-          "link": "https://www.cnbc.com/2026/06/29/alphabet-googl-stock-dow-average.html",
-          "published": "Mon, 29 Jun 2026 16:02:30 GMT"
+          "title": "AWS puts $1 billion into new AI unit to embed engineers with customers, joining growing wave",
+          "link": "https://www.cnbc.com/2026/06/30/aws-amazon-ai-forward-deployed-engineers.html",
+          "published": "Tue, 30 Jun 2026 15:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "This insurance stock is on an impressive run. How to ride the momentum with less risk",
-          "link": "https://www.cnbc.com/2026/06/29/this-insurance-stock-is-on-an-impressive-run-how-to-ride-the-momentum-with-less-risk.html",
-          "published": "Mon, 29 Jun 2026 15:36:17 GMT"
+          "title": "Cleveland Fed President Hammack sees AI fueling inflation, says rate hikes may be necessary",
+          "link": "https://www.cnbc.com/2026/06/30/cleveland-fed-president-hammack-sees-ai-fueling-inflation-says-rate-hikes-may-be-necessary.html",
+          "published": "Tue, 30 Jun 2026 15:35:50 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump bought as much as $5 million in Axon stock before ICE sought $220 million Taser deal",
-          "link": "https://www.cnbc.com/2026/06/29/trump-axon-stock-ice-taser-immigration-enforcement.html",
-          "published": "Mon, 29 Jun 2026 14:03:16 GMT"
+          "title": "Oil prices set for steep monthly drop as Trump, Iran issue mixed messages on talks in Qatar",
+          "link": "https://www.cnbc.com/2026/06/30/oil-prices-brent-wti-crude-trump-iran.html",
+          "published": "Tue, 30 Jun 2026 15:32:19 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Kalshi traders expect this week's jobs report will disappoint Wall Street outlook",
-          "link": "https://www.cnbc.com/2026/06/29/kalshi-traders-expect-this-weeks-jobs-report-will-disappoint-wall-street-outlook.html",
-          "published": "Mon, 29 Jun 2026 15:37:38 GMT"
+          "title": "Supreme Court strikes down limits on political parties' campaign spending, in win for GOP",
+          "link": "https://www.cnbc.com/2026/06/30/supreme-court-campaign-finance-republican.html",
+          "published": "Tue, 30 Jun 2026 15:31:06 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "BlackRock IBIT investors are now nursing a 40% loss",
-          "link": "https://finance.yahoo.com/markets/crypto/articles/blackrock-ibit-investors-now-nursing-093325287.html",
-          "published": "2026-06-28T09:33:25Z"
+          "title": "RFBL secures packaging materials supply order from 3B Films",
+          "link": "https://finance.yahoo.com/small-business/articles/rfbl-secures-packaging-materials-supply-153553016.html",
+          "published": "2026-06-30T15:35:53Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "The Boston Beer Company (SAM) Gained from Improved Industry Data",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/boston-beer-company-sam-gained-161733514.html",
-          "published": "2026-06-29T16:17:33Z"
+          "title": "Consortium including Visa, Mastercard jointly launch new global stablecoin",
+          "link": "https://finance.yahoo.com/markets/crypto/articles/consortium-including-visa-mastercard-jointly-152345284.html",
+          "published": "2026-06-30T15:23:45Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Do you really, really love your job? Then you're not alone, according to surprising results from this survey",
+          "link": "https://www.cnbc.com/2026/06/30/surprising-survey-of-american-job-satisfaction-.html",
+          "published": "Tue, 30 Jun 2026 11:08:24 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "China widens Japan export curbs, targeting drone makers, nuclear firms and defense institutes",
@@ -86,12 +92,6 @@
           "title": "Trump pledges rapid U.S. response for Venezuela after historic earthquakes kill hundreds",
           "link": "https://www.cnbc.com/2026/06/25/venezuela-earthquakes-casualties-trump-pledges-support-aids-oil-.html",
           "published": "Thu, 25 Jun 2026 14:41:19 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Iran warns ships it's 'unacceptable and dangerous' to transit the Strait of Hormuz without their approval",
-          "link": "https://www.cnbc.com/2026/06/25/iran-navy-shipping-recovery-strait-of-hormuz-unauthorized-routes-us-fragile-mou-.html",
-          "published": "Thu, 25 Jun 2026 14:03:16 GMT"
         }
       ]
     }
