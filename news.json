@@ -1,62 +1,74 @@
 {
-  "updated": "2026-06-30T15:40:20Z",
+  "updated": "2026-07-01T15:48:30Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Small-cap stocks enjoy their best first half in 35 years. Here's what's driving it",
-          "link": "https://www.cnbc.com/2026/06/30/small-cap-stocks-enjoy-best-first-half-since-1991-as-ai-trade-expands.html",
-          "published": "Tue, 30 Jun 2026 13:04:02 GMT"
+          "title": "Palantir's Karp bashes OpenAI, Anthropic token model: 'Something has gone completely wrong'",
+          "link": "https://www.cnbc.com/2026/07/01/palantir-karp-open-ai-anthropic-tokens.html",
+          "published": "Wed, 01 Jul 2026 15:30:23 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Supreme Court upholds birthright citizenship, blocks Trump order",
-          "link": "https://www.cnbc.com/2026/06/30/supreme-court-birthright-citizenship-ruling.html",
-          "published": "Tue, 30 Jun 2026 15:17:03 GMT"
+          "title": "Trump Accounts for kids launch July 4: What parents need to know",
+          "link": "https://www.cnbc.com/2026/07/01/trump-accounts-launch-july-4.html",
+          "published": "Wed, 01 Jul 2026 12:15:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "AWS puts $1 billion into new AI unit to embed engineers with customers, joining growing wave",
-          "link": "https://www.cnbc.com/2026/06/30/aws-amazon-ai-forward-deployed-engineers.html",
-          "published": "Tue, 30 Jun 2026 15:00:01 GMT"
+          "title": "Trump administration's limits on student loan forgiveness program are blocked. What to know",
+          "link": "https://www.cnbc.com/2026/07/01/trumps-limits-on-student-loan-forgiveness-program-blocked.html",
+          "published": "Wed, 01 Jul 2026 15:45:37 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Cleveland Fed President Hammack sees AI fueling inflation, says rate hikes may be necessary",
-          "link": "https://www.cnbc.com/2026/06/30/cleveland-fed-president-hammack-sees-ai-fueling-inflation-says-rate-hikes-may-be-necessary.html",
-          "published": "Tue, 30 Jun 2026 15:35:50 GMT"
+          "title": "Meta pops 10% as company makes cloud push to sell excess AI compute power capacity",
+          "link": "https://www.cnbc.com/2026/07/01/meta-stock-cloud-ai-compute.html",
+          "published": "Wed, 01 Jul 2026 15:29:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Oil prices set for steep monthly drop as Trump, Iran issue mixed messages on talks in Qatar",
-          "link": "https://www.cnbc.com/2026/06/30/oil-prices-brent-wti-crude-trump-iran.html",
-          "published": "Tue, 30 Jun 2026 15:32:19 GMT"
+          "title": "GM reports 4.2% decline in Q2 U.S. sales as EV demand falls",
+          "link": "https://www.cnbc.com/2026/07/01/q2-auto-sales-gm-stellantis-toyota-hyundai.html",
+          "published": "Wed, 01 Jul 2026 15:34:45 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Supreme Court strikes down limits on political parties' campaign spending, in win for GOP",
-          "link": "https://www.cnbc.com/2026/06/30/supreme-court-campaign-finance-republican.html",
-          "published": "Tue, 30 Jun 2026 15:31:06 GMT"
+          "title": "Trump says outside funds 'run my money' after disclosure shows billions in 2025 revenue",
+          "link": "https://www.cnbc.com/2026/07/01/trump-money-financial-disclosure-crypto-billions.html",
+          "published": "Wed, 01 Jul 2026 15:27:05 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "RFBL secures packaging materials supply order from 3B Films",
-          "link": "https://finance.yahoo.com/small-business/articles/rfbl-secures-packaging-materials-supply-153553016.html",
-          "published": "2026-06-30T15:35:53Z"
+          "title": "Consumer Outlook Brightens, Slightly",
+          "link": "https://finance.yahoo.com/economy/articles/consumer-outlook-brightens-slightly-153004597.html",
+          "published": "2026-07-01T15:30:04Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Consortium including Visa, Mastercard jointly launch new global stablecoin",
-          "link": "https://finance.yahoo.com/markets/crypto/articles/consortium-including-visa-mastercard-jointly-152345284.html",
-          "published": "2026-06-30T15:23:45Z"
+          "title": "How much interest does $10,000 earn in one year?",
+          "link": "https://finance.yahoo.com/personal-finance/banking/article/how-much-interest-does-10000-earn-in-a-year-210028562.html",
+          "published": "2026-04-22T21:00:28Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Private payrolls rose by 98,000 in June, less than expected, ADP reports",
+          "link": "https://www.cnbc.com/2026/07/01/private-payrolls-rose-by-98000-in-june-less-than-expected-adp-reports.html",
+          "published": "Wed, 01 Jul 2026 13:41:09 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "North Sea oil and renewables: The UK’s next PM faces a defining energy policy decision",
+          "link": "https://www.cnbc.com/2026/07/01/burnham-north-sea-oil-energy-security.html",
+          "published": "Wed, 01 Jul 2026 06:28:00 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Do you really, really love your job? Then you're not alone, according to surprising results from this survey",
@@ -80,18 +92,6 @@
           "title": "UN agency pauses Hormuz ship evacuation plan after first vessel attack under peace deal",
           "link": "https://www.cnbc.com/2026/06/26/strait-of-hormuz-vessel-attack-evacuation-pauses-iran-united-states-peace-deal-negotiation-.html",
           "published": "Fri, 26 Jun 2026 02:07:59 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Core inflation rate hit 3.4% in May, highest since October 2023, Fed’s preferred gauge shows",
-          "link": "https://www.cnbc.com/2026/06/25/pce-inflation-report-may-2026-.html",
-          "published": "Thu, 25 Jun 2026 13:30:56 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Trump pledges rapid U.S. response for Venezuela after historic earthquakes kill hundreds",
-          "link": "https://www.cnbc.com/2026/06/25/venezuela-earthquakes-casualties-trump-pledges-support-aids-oil-.html",
-          "published": "Thu, 25 Jun 2026 14:41:19 GMT"
         }
       ]
     }
