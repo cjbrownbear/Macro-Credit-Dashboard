@@ -1,62 +1,80 @@
 {
-  "updated": "2026-07-01T15:48:30Z",
+  "updated": "2026-07-02T15:28:47Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Palantir's Karp bashes OpenAI, Anthropic token model: 'Something has gone completely wrong'",
-          "link": "https://www.cnbc.com/2026/07/01/palantir-karp-open-ai-anthropic-tokens.html",
-          "published": "Wed, 01 Jul 2026 15:30:23 GMT"
+          "title": "U.S. job creation cools in June with payrolls growth of just 57,000; unemployment rate at 4.2%",
+          "link": "https://www.cnbc.com/2026/07/02/jobs-report-june-2026-.html",
+          "published": "Thu, 02 Jul 2026 13:26:28 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump Accounts for kids launch July 4: What parents need to know",
-          "link": "https://www.cnbc.com/2026/07/01/trump-accounts-launch-july-4.html",
-          "published": "Wed, 01 Jul 2026 12:15:01 GMT"
+          "title": "Microsoft commits $2.5 billion and 6,000 employees to new AI implementation unit",
+          "link": "https://www.cnbc.com/2026/07/02/microsoft-commits-2point5-billion-6000-employees-ai-implementation-unit.html",
+          "published": "Thu, 02 Jul 2026 13:00:02 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump administration's limits on student loan forgiveness program are blocked. What to know",
-          "link": "https://www.cnbc.com/2026/07/01/trumps-limits-on-student-loan-forgiveness-program-blocked.html",
-          "published": "Wed, 01 Jul 2026 15:45:37 GMT"
+          "title": "Tesla stock sinks 7% despite strong deliveries report",
+          "link": "https://www.cnbc.com/2026/07/02/tesla-tsla-q2-2026-vehicle-delivery-production.html",
+          "published": "Thu, 02 Jul 2026 15:21:52 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Meta pops 10% as company makes cloud push to sell excess AI compute power capacity",
-          "link": "https://www.cnbc.com/2026/07/01/meta-stock-cloud-ai-compute.html",
-          "published": "Wed, 01 Jul 2026 15:29:01 GMT"
+          "title": "Treasury says Trump Account investment options will include State Street, BlackRock and Vanguard ETFs",
+          "link": "https://www.cnbc.com/2026/07/02/trump-account-investment-picks-are-state-street-blackrock-vanguard-etfs.html",
+          "published": "Thu, 02 Jul 2026 15:08:43 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "GM reports 4.2% decline in Q2 U.S. sales as EV demand falls",
-          "link": "https://www.cnbc.com/2026/07/01/q2-auto-sales-gm-stellantis-toyota-hyundai.html",
-          "published": "Wed, 01 Jul 2026 15:34:45 GMT"
+          "title": "Autonomous drone startup Quantum Systems raises $1.2 billion as investors pile into defense",
+          "link": "https://www.cnbc.com/2026/07/02/autonomous-defense-startup-quantum-systems.html",
+          "published": "Thu, 02 Jul 2026 15:13:11 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump says outside funds 'run my money' after disclosure shows billions in 2025 revenue",
-          "link": "https://www.cnbc.com/2026/07/01/trump-money-financial-disclosure-crypto-billions.html",
-          "published": "Wed, 01 Jul 2026 15:27:05 GMT"
+          "title": "Led by Buc-ee’s and new rival Dolly Parton, America’s gas station chains are in a mega-sizing era",
+          "link": "https://www.cnbc.com/2026/07/02/led-by-buc-ees-dolly-parton-americas-gas-stations-go-mega-size-.html",
+          "published": "Thu, 02 Jul 2026 14:30:01 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Consumer Outlook Brightens, Slightly",
-          "link": "https://finance.yahoo.com/economy/articles/consumer-outlook-brightens-slightly-153004597.html",
-          "published": "2026-07-01T15:30:04Z"
+          "title": "Retail giant exits U.S. fashion after multi-million-dollar scandal",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/retail-giant-exits-u-fashion-031700615.html",
+          "published": "2026-07-02T03:46:51Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "How much interest does $10,000 earn in one year?",
-          "link": "https://finance.yahoo.com/personal-finance/banking/article/how-much-interest-does-10000-earn-in-a-year-210028562.html",
-          "published": "2026-04-22T21:00:28Z"
+          "title": "Stock market today: Dow, S&P 500, Nasdaq rise after June jobs report falls short",
+          "link": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-july-2-223136955.html",
+          "published": "2026-07-01T22:31:36Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "U.S. job creation cools in June with payrolls growth of just 57,000; unemployment rate at 4.2%",
+          "link": "https://www.cnbc.com/2026/07/02/jobs-report-june-2026-.html",
+          "published": "Thu, 02 Jul 2026 13:26:28 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Europe wants to rebalance trade with Beijing, but can't quit Chinese air conditioners",
+          "link": "https://www.cnbc.com/2026/07/02/european-union-china-meeting-summer-heatwave-trade-imbalance-tariffs-.html",
+          "published": "Thu, 02 Jul 2026 12:52:09 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "World Cup could boost the June jobs report by 40,000, Goldman estimates",
+          "link": "https://www.cnbc.com/2026/07/01/world-cup-could-boost-the-june-jobs-report-by-40000-goldman-estimates.html",
+          "published": "Thu, 02 Jul 2026 10:18:05 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Private payrolls rose by 98,000 in June, less than expected, ADP reports",
@@ -74,24 +92,6 @@
           "title": "Do you really, really love your job? Then you're not alone, according to surprising results from this survey",
           "link": "https://www.cnbc.com/2026/06/30/surprising-survey-of-american-job-satisfaction-.html",
           "published": "Tue, 30 Jun 2026 11:08:24 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "China widens Japan export curbs, targeting drone makers, nuclear firms and defense institutes",
-          "link": "https://www.cnbc.com/2026/06/29/china-japan-export-controls-watch-list-defense-entities.html",
-          "published": "Mon, 29 Jun 2026 04:46:25 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Shipping rebounds in Strait of Hormuz one week after U.S.-Iran deal – but fragile confidence threatens recovery",
-          "link": "https://www.cnbc.com/2026/06/26/strait-of-hormuz-shipping-oil-us-iran.html",
-          "published": "Fri, 26 Jun 2026 09:36:24 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "UN agency pauses Hormuz ship evacuation plan after first vessel attack under peace deal",
-          "link": "https://www.cnbc.com/2026/06/26/strait-of-hormuz-vessel-attack-evacuation-pauses-iran-united-states-peace-deal-negotiation-.html",
-          "published": "Fri, 26 Jun 2026 02:07:59 GMT"
         }
       ]
     }
