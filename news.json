@@ -1,44 +1,44 @@
 {
-  "updated": "2026-07-02T15:28:47Z",
+  "updated": "2026-07-03T15:23:34Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "U.S. job creation cools in June with payrolls growth of just 57,000; unemployment rate at 4.2%",
-          "link": "https://www.cnbc.com/2026/07/02/jobs-report-june-2026-.html",
-          "published": "Thu, 02 Jul 2026 13:26:28 GMT"
+          "title": "5 takeaways from President Donald Trump's interview with CNBC",
+          "link": "https://www.cnbc.com/2026/07/02/5-takeaways-from-president-donald-trumps-interview-with-cnbc.html",
+          "published": "Thu, 02 Jul 2026 23:20:58 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Microsoft commits $2.5 billion and 6,000 employees to new AI implementation unit",
-          "link": "https://www.cnbc.com/2026/07/02/microsoft-commits-2point5-billion-6000-employees-ai-implementation-unit.html",
-          "published": "Thu, 02 Jul 2026 13:00:02 GMT"
+          "title": "Ford achieves quality milestone, as CEO targets flawless new vehicle launches",
+          "link": "https://www.cnbc.com/2026/07/03/ford-achieves-quality-milestone-targets-flawless-new-vehicle-launches.html",
+          "published": "Fri, 03 Jul 2026 12:08:21 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Tesla stock sinks 7% despite strong deliveries report",
-          "link": "https://www.cnbc.com/2026/07/02/tesla-tsla-q2-2026-vehicle-delivery-production.html",
-          "published": "Thu, 02 Jul 2026 15:21:52 GMT"
+          "title": "Extreme heat wave threatens U.S. power grids and July 4 travel",
+          "link": "https://www.cnbc.com/2026/07/03/extreme-heat-us-power-grids-july-4-travel.html",
+          "published": "Fri, 03 Jul 2026 08:06:40 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Treasury says Trump Account investment options will include State Street, BlackRock and Vanguard ETFs",
-          "link": "https://www.cnbc.com/2026/07/02/trump-account-investment-picks-are-state-street-blackrock-vanguard-etfs.html",
-          "published": "Thu, 02 Jul 2026 15:08:43 GMT"
+          "title": "Trump’s Freedom 250 draws corporate sponsors with business before his administration",
+          "link": "https://www.cnbc.com/2026/07/03/trump-freedom-250-america250-corporate-sponsors-access.html",
+          "published": "Fri, 03 Jul 2026 12:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Autonomous drone startup Quantum Systems raises $1.2 billion as investors pile into defense",
-          "link": "https://www.cnbc.com/2026/07/02/autonomous-defense-startup-quantum-systems.html",
-          "published": "Thu, 02 Jul 2026 15:13:11 GMT"
+          "title": "As ACA enrollment falls by millions, Trump administration and policy gurus disagree on why",
+          "link": "https://www.cnbc.com/2026/07/03/aca-enrollment-enhanced-subsidies-lapse-fraud.html",
+          "published": "Fri, 03 Jul 2026 12:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Led by Buc-ee’s and new rival Dolly Parton, America’s gas station chains are in a mega-sizing era",
-          "link": "https://www.cnbc.com/2026/07/02/led-by-buc-ees-dolly-parton-americas-gas-stations-go-mega-size-.html",
-          "published": "Thu, 02 Jul 2026 14:30:01 GMT"
+          "title": "Don't throw away your shot to speak to an AI Alexander Hamilton at Boston's new finance museum",
+          "link": "https://www.cnbc.com/2026/07/03/the-museum-of-american-finance-opens-its-doors-in-boston.html",
+          "published": "Fri, 03 Jul 2026 13:16:09 GMT"
         },
         {
           "source": "Yahoo Finance",
@@ -48,9 +48,9 @@
         },
         {
           "source": "Yahoo Finance",
-          "title": "Stock market today: Dow, S&P 500, Nasdaq rise after June jobs report falls short",
-          "link": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-july-2-223136955.html",
-          "published": "2026-07-01T22:31:36Z"
+          "title": "Dow Jones Futures Fall Techs Rise After Tesla, Sandisk, AI Stocks Dive; Apple, Robinhood Flash Buy Signals",
+          "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-ai-tumbles-apple-robinhood-buy-signals-tesla-sandisk-dive/?src=A00220&yptr=yahoo",
+          "published": "2026-07-03T14:54:29Z"
         }
       ]
     },
@@ -59,9 +59,21 @@
       "items": [
         {
           "source": "CNBC Economy",
+          "title": "Christine Lagarde leaves door open to early ECB exit, as she mulls French politics",
+          "link": "https://www.cnbc.com/2026/07/03/christine-lagarde-ecb-france-election.html",
+          "published": "Fri, 03 Jul 2026 10:34:32 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Job seekers giving up: Labor force participation rate falls to lowest in 50 years, outside of Covid era",
+          "link": "https://www.cnbc.com/2026/07/02/job-seekers-giving-up-labor-force-participation-rate-falls-to-lowest-in-50-years-outside-of-covid-era.html",
+          "published": "Thu, 02 Jul 2026 18:09:31 GMT"
+        },
+        {
+          "source": "CNBC Economy",
           "title": "U.S. job creation cools in June with payrolls growth of just 57,000; unemployment rate at 4.2%",
           "link": "https://www.cnbc.com/2026/07/02/jobs-report-june-2026-.html",
-          "published": "Thu, 02 Jul 2026 13:26:28 GMT"
+          "published": "Thu, 02 Jul 2026 16:50:27 GMT"
         },
         {
           "source": "CNBC Economy",
@@ -80,18 +92,6 @@
           "title": "Private payrolls rose by 98,000 in June, less than expected, ADP reports",
           "link": "https://www.cnbc.com/2026/07/01/private-payrolls-rose-by-98000-in-june-less-than-expected-adp-reports.html",
           "published": "Wed, 01 Jul 2026 13:41:09 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "North Sea oil and renewables: The UK’s next PM faces a defining energy policy decision",
-          "link": "https://www.cnbc.com/2026/07/01/burnham-north-sea-oil-energy-security.html",
-          "published": "Wed, 01 Jul 2026 06:28:00 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Do you really, really love your job? Then you're not alone, according to surprising results from this survey",
-          "link": "https://www.cnbc.com/2026/06/30/surprising-survey-of-american-job-satisfaction-.html",
-          "published": "Tue, 30 Jun 2026 11:08:24 GMT"
         }
       ]
     }
