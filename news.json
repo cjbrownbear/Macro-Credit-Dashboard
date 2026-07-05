@@ -1,14 +1,32 @@
 {
-  "updated": "2026-07-04T14:44:21Z",
+  "updated": "2026-07-05T14:51:52Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "First known congressional SpaceX stock buys surface after record IPO",
-          "link": "https://www.cnbc.com/2026/07/03/spacex-stock-congress-meuser-cisneros-ipo-disclosure.html",
-          "published": "Fri, 03 Jul 2026 18:16:43 GMT"
+          "title": "From Macron to Modi, governments are rolling out the red carpet for AI giants",
+          "link": "https://www.cnbc.com/2026/07/04/macron-modi-ai-infrastructure-tech-ceos.html",
+          "published": "Sat, 04 Jul 2026 09:33:19 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "Cargo vessel in Red Sea reports coming under attack, UK maritime body says",
+          "link": "https://www.cnbc.com/2026/07/05/cargo-vessel-in-red-sea-reports-attack-uk-maritime-body-says.html",
+          "published": "Sun, 05 Jul 2026 12:57:45 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "Trump Accounts for kids launched July 4: What parents need to know",
+          "link": "https://www.cnbc.com/2026/07/01/trump-accounts-launch-july-4.html",
+          "published": "Sun, 05 Jul 2026 13:14:22 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "Top Wall Street analysts prefer these dividend stocks for boosting portfolio returns",
+          "link": "https://www.cnbc.com/2026/07/05/analysts-prefer-these-dividend-stocks-for-boosting-portfolio-returns.html",
+          "published": "Sun, 05 Jul 2026 12:30:01 GMT"
         },
         {
           "source": "CNBC Top News",
@@ -18,39 +36,21 @@
         },
         {
           "source": "CNBC Top News",
-          "title": "Iran begins six-day funeral for Ayatollah Khamenei nearly four months after his death",
-          "link": "https://www.cnbc.com/2026/07/04/-khamenei-funeral-procession-route.html",
-          "published": "Sat, 04 Jul 2026 05:20:52 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "UK and France agree with Oman to ensure safety of its territorial waters",
-          "link": "https://www.cnbc.com/2026/07/04/uk-france-agree-with-oman-to-ensure-safety-of-its-territorial-waters.html",
-          "published": "Sat, 04 Jul 2026 09:58:07 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "Feds seek lower prison term for $100M New Jersey deli fraudster — but some reasons why are hidden",
-          "link": "https://www.cnbc.com/2026/07/03/new-jersey-deli-stockfraud-sentence-patten.html",
-          "published": "Sat, 04 Jul 2026 01:04:34 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "5 takeaways from President Donald Trump's interview with CNBC",
-          "link": "https://www.cnbc.com/2026/07/02/5-takeaways-from-president-donald-trumps-interview-with-cnbc.html",
-          "published": "Thu, 02 Jul 2026 23:20:58 GMT"
+          "title": "World Cup fans spent anywhere from $2,500 to $150,000 to see matches—they say it was worth it",
+          "link": "https://www.cnbc.com/2026/07/05/world-cup-fans-spent-anywhere-from-2500-to-150000-to-see-matches.html",
+          "published": "Sun, 05 Jul 2026 14:42:38 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Vanguard VT vs State Street SPDW Global ETF Showdown. Which World-Spanning Fund Is the Better Buy?",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/vanguard-vt-vs-state-street-143542504.html",
-          "published": "2026-07-04T14:35:42Z"
+          "title": "Why Vanguard’s $143 Billion Tech ETF Outpaced QQQ While Charging Half the Fee",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/why-vanguard-143-billion-tech-130707351.html",
+          "published": "2026-07-04T13:07:07Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Jim Cramer on AST SpaceMobile: “I Think It Can Make Money in Two Years”",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-ast-spacemobile-think-143029882.html",
-          "published": "2026-07-04T14:30:29Z"
+          "title": "Why the Current Selloff in Big Tech Stocks Is a Springboard for a New Rally",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/why-current-selloff-big-tech-130002898.html",
+          "published": "2026-07-04T13:00:02Z"
         }
       ]
     },
