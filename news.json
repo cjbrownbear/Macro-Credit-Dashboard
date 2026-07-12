@@ -1,26 +1,32 @@
 {
-  "updated": "2026-07-11T14:32:06Z",
+  "updated": "2026-07-12T14:36:58Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Trump threatens to 'decimate' Iran if it tries to kill him, as Treasury sanctions alleged Iranian financier",
-          "link": "https://www.cnbc.com/2026/07/11/trump-threat.html",
-          "published": "Sat, 11 Jul 2026 12:51:50 GMT"
+          "title": "Sen. Lindsey Graham, influential lawmaker and Trump ally,  dies at 71 after a brief illness",
+          "link": "https://www.cnbc.com/2026/07/12/senator-lindsey-graham-has-died-after-a-brief-illness-his-office-says.html",
+          "published": "Sun, 12 Jul 2026 14:09:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Burnout, frustration and heartbreak: Amazon layoffs take their toll in saturated job market",
-          "link": "https://www.cnbc.com/2026/07/11/burnout-frustration-and-heartbreak-amazon-layoffs-take-their-toll.html",
-          "published": "Sat, 11 Jul 2026 12:00:01 GMT"
+          "title": "U.S. launches airstrikes against Iran after Tehran attacks container ship in Hormuz, Pentagon says",
+          "link": "https://www.cnbc.com/2026/07/11/us-airstrikes-iran-strait-hormuz.html",
+          "published": "Sun, 12 Jul 2026 13:11:21 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Apple sues OpenAI alleging trade secret theft, says scheme was 'at every level'",
-          "link": "https://www.cnbc.com/2026/07/10/apple-openai-lawsuit-trade-secrets.html",
-          "published": "Sat, 11 Jul 2026 04:09:20 GMT"
+          "title": "Majority of U.S. workers support an AI wealth fund as tech layoffs surge, survey finds",
+          "link": "https://www.cnbc.com/2026/07/12/majority-of-us-workers-support-ai-fund-amid-tech-layoffs-survey.html",
+          "published": "Sun, 12 Jul 2026 12:27:55 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "‘Almost unlimited’: Execs says AI demand remains strong even as enterprises move to ‘valuemaxxing’",
+          "link": "https://www.cnbc.com/2026/07/12/ai-demand-chips-data-centers-stock-volatility.html",
+          "published": "Sun, 12 Jul 2026 05:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
@@ -35,22 +41,16 @@
           "published": "Sat, 11 Jul 2026 13:41:13 GMT"
         },
         {
-          "source": "CNBC Top News",
-          "title": "Berkshire Hathaway gains ground, but still trails the S&P 500 as '26 enters second half",
-          "link": "https://www.cnbc.com/2026/07/11/berkshire-hathaway-gains-ground-but-still-trails-the-sp-500-as-26-enters-second-half.html",
-          "published": "Sat, 11 Jul 2026 13:07:41 GMT"
+          "source": "Yahoo Finance",
+          "title": "Big fast-food burger chain franchisee files Chapter 11 bankruptcy",
+          "link": "https://finance.yahoo.com/small-business/articles/big-fast-food-burger-chain-164700124.html",
+          "published": "2026-07-11T16:47:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Elon Musk SEC settlement raises 'red flags,' judge says",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/elon-musk-sec-settlement-raises-164700167.html",
-          "published": "2026-07-10T16:47:00Z"
-        },
-        {
-          "source": "Yahoo Finance",
-          "title": "Gas Vs. Electric: Global EV Sales Are Actually Rising In 2026; Here's Where",
-          "link": "https://www.investors.com/news/gas-vs-electric-global-ev-sales-are-actually-rising-in-2026-heres-where/?src=A00220&yptr=yahoo",
-          "published": "2026-07-11T13:41:30Z"
+          "title": "Jim Cramer Remains Upbeat About Meta Platforms (META)",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-remains-upbeat-meta-125401761.html",
+          "published": "2026-07-11T12:54:01Z"
         }
       ]
     },
