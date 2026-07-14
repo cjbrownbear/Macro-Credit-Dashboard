@@ -1,62 +1,68 @@
 {
-  "updated": "2026-07-13T15:50:18Z",
+  "updated": "2026-07-14T15:02:00Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Trump proposes 20% toll on cargo through Strait of Hormuz; restarts Iran blockade",
-          "link": "https://www.cnbc.com/2026/07/13/trump-iran-hormuz-strait-charge-reimburse.html",
-          "published": "Mon, 13 Jul 2026 15:14:26 GMT"
+          "title": "Warsh promises inflation will be a 'thing of the past,' cites 'mistake' of prior policy",
+          "link": "https://www.cnbc.com/2026/07/14/warsh-promises-inflation-will-be-a-thing-of-the-past-cites-benefits-of-ai-investment-boom.html",
+          "published": "Tue, 14 Jul 2026 14:55:44 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump recommends Lindsey Graham's sister serve as interim senator for South Carolina",
-          "link": "https://www.cnbc.com/2026/07/13/trump-lindsey-graham-darline-south-carolina-senator.html",
-          "published": "Mon, 13 Jul 2026 15:33:35 GMT"
+          "title": "IBM stock craters 23% after issuing second-quarter earnings warning",
+          "link": "https://www.cnbc.com/2026/07/14/ibm-warns-second-quarter-earnings-fell-short-of-expectations.html",
+          "published": "Tue, 14 Jul 2026 13:57:39 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "SpaceX stock sinks for a second-straight day, nearing $135 IPO price",
-          "link": "https://www.cnbc.com/2026/07/13/spacex-spcx-stock-ipo-price.html",
-          "published": "Mon, 13 Jul 2026 14:49:09 GMT"
+          "title": "Supreme Court Justice Barrett says 'the threat level is really high' in budget testimony",
+          "link": "https://www.cnbc.com/2026/07/14/supreme-court-budget-congress-kagan-barrett.html",
+          "published": "Tue, 14 Jul 2026 15:01:21 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump calls for Congress to pass Clarity Act crypto bill to honor Lindsey Graham",
-          "link": "https://www.cnbc.com/2026/07/13/trump-congress-clarity-act-crypto-bill-lindsey-graham.html",
-          "published": "Mon, 13 Jul 2026 15:23:48 GMT"
+          "title": "Chamath Palihapitiya says soaring AI token spend will hit companies' earnings",
+          "link": "https://www.cnbc.com/2026/07/14/chamath-palihapitiya-ai-tokenmaxxing.html",
+          "published": "Tue, 14 Jul 2026 14:47:31 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Paramount-WBD merger expected to face lawsuit from multiple states, sources say",
-          "link": "https://www.cnbc.com/2026/07/13/paramount-wbd-merger-lawsuit.html",
-          "published": "Mon, 13 Jul 2026 15:13:02 GMT"
+          "title": "E. Jean Carroll receives $5.6M from Trump in sex abuse, defamation case: Court filing",
+          "link": "https://www.cnbc.com/2026/07/14/trump-e-jean-carroll-sex-abuse-case.html",
+          "published": "Tue, 14 Jul 2026 14:54:49 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Big banks poised to report booming revenue propelled by SpaceX IPO, Iran war volatility",
-          "link": "https://www.cnbc.com/2026/07/13/bank-earnings-jpmorgan-chase-goldman-sachs-bank-of-america.html",
-          "published": "Mon, 13 Jul 2026 13:19:24 GMT"
+          "title": "Sen. Tim Scott wants to hear from Warsh on data centers and artificial intelligence",
+          "link": "https://www.cnbc.com/2026/07/14/tim-scott-kevin-warsh-data-centers-artificial-intelligence.html",
+          "published": "Tue, 14 Jul 2026 13:36:04 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "This is how rich SpaceX workers are after the IPO",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/rich-spacex-workers-ipo-143700468.html",
-          "published": "2026-07-12T14:37:00Z"
+          "title": "Target's problems aren't what you think they are",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/targets-problems-arent-think-201058966.html",
+          "published": "2026-07-13T20:10:58Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Stock market today: Dow rises, S&P 500 and Nasdaq slip as US and Iran exchange fire, oil jumps",
-          "link": "https://finance.yahoo.com/markets/live/stock-market-today-monday-july-13-dow-sp-nasdaq-113249278.html",
-          "published": "2026-07-13T11:32:49Z"
+          "title": "Tech stocks live updates: Tech stocks fall as AI trade faces scrutiny, SK Hynix falls",
+          "link": "https://finance.yahoo.com/technology/live/tech-stocks-live-updates-ai-trade-sk-hynix-124717493.html",
+          "published": "2026-07-13T12:47:17Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Consumer prices rose 3.5% annually in June, less than expected as energy prices eased",
+          "link": "https://www.cnbc.com/2026/07/14/consumer-price-index-inflation-report-june-2026.html",
+          "published": "Tue, 14 Jul 2026 14:02:01 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "India's inflation accelerates to 4.38% in June, exceeding forecasts",
@@ -86,12 +92,6 @@
           "title": "Job seekers giving up: Labor force participation rate falls to lowest in 50 years, outside of Covid era",
           "link": "https://www.cnbc.com/2026/07/02/job-seekers-giving-up-labor-force-participation-rate-falls-to-lowest-in-50-years-outside-of-covid-era.html",
           "published": "Thu, 09 Jul 2026 14:23:29 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "U.S. job creation cools in June with payrolls growth of just 57,000; unemployment rate at 4.2%",
-          "link": "https://www.cnbc.com/2026/07/02/jobs-report-june-2026-.html",
-          "published": "Thu, 02 Jul 2026 16:50:27 GMT"
         }
       ]
     }
