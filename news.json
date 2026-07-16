@@ -1,62 +1,68 @@
 {
-  "updated": "2026-07-15T15:01:08Z",
+  "updated": "2026-07-16T15:11:56Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Warren Buffett on the market today: 'It's tough to find values when everybody is preferring gambling'",
-          "link": "https://www.cnbc.com/2026/07/15/warren-buffett-on-the-market-today-its-tough-to-find-values-when-everybody-is-preferring-gambling.html",
-          "published": "Wed, 15 Jul 2026 13:48:15 GMT"
+          "title": "U.S. grocery slowdown deepens as shoppers buy fewer items, raising pressure on food companies",
+          "link": "https://www.cnbc.com/2026/07/16/us-grocery-spending-slows-in-hit-to-food-companies.html",
+          "published": "Thu, 16 Jul 2026 11:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Wholesale prices unexpectedly declined 0.3% in June on big drop in gasoline",
-          "link": "https://www.cnbc.com/2026/07/15/wholesale-inflation-june-2026-.html",
-          "published": "Wed, 15 Jul 2026 14:22:48 GMT"
+          "title": "Short sellers load up against SpaceX as stock retreats back to IPO price",
+          "link": "https://www.cnbc.com/2026/07/16/short-sellers-load-up-against-spacex-as-stock-retreats-back-to-ipo-price.html",
+          "published": "Thu, 16 Jul 2026 14:41:30 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "New York Fed President Williams says inflation has peaked, rates 'well positioned'",
-          "link": "https://www.cnbc.com/2026/07/15/new-york-fed-president-williams-says-inflation-has-peaked-rates-well-positioned.html",
-          "published": "Wed, 15 Jul 2026 14:23:31 GMT"
+          "title": "Sen. Warren says Trump's CFPB overhaul has cost Americans $26.5 billion",
+          "link": "https://www.cnbc.com/2026/07/16/trumps-cfpb-overhaul-cost-americans-26point5-billion-sen-warren-says.html",
+          "published": "Thu, 16 Jul 2026 14:14:20 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "DTCC, Wall Street’s post-trade powerhouse, tests tokenized markets with industry heavy hitters",
-          "link": "https://www.cnbc.com/2026/07/15/dtcc-wall-streets-post-trade-powerhouse-tests-tokenized-markets-with-industry-heavy-hitters.html",
-          "published": "Wed, 15 Jul 2026 14:49:03 GMT"
+          "title": "Truth Social launches service to give Wall Street traders an edge with real-time service",
+          "link": "https://www.cnbc.com/2026/07/16/trump-truth-social-wall-street-traders-api.html",
+          "published": "Thu, 16 Jul 2026 14:43:40 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "‘Arsenal of democracy’: Jamie Dimon announces $24 million effort to boost American shipbuilding",
-          "link": "https://www.cnbc.com/2026/07/15/jamie-dimon-jpmorgan-chase-defense.html",
-          "published": "Wed, 15 Jul 2026 13:45:27 GMT"
+          "title": "Iran warns U.S. of Hormuz ‘red line,’ says it will retaliate if Trump carries out threats",
+          "link": "https://www.cnbc.com/2026/07/16/iran-warns-of-hormuz-red-line-retaliation-to-trumps-strike-threats.html",
+          "published": "Thu, 16 Jul 2026 14:20:19 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Watch Fed Chairman Kevin Warsh testify live before Senate banking committee",
-          "link": "https://www.cnbc.com/2026/07/15/watch-fed-chairman-kevin-warsh-testify-live-before-senate-banking-committee.html",
-          "published": "Wed, 15 Jul 2026 14:29:52 GMT"
+          "title": "Nvidia unveils new AI model and expands Japan’s physical AI ecosystem",
+          "link": "https://www.cnbc.com/2026/07/16/nvidia-reveals-new-ai-model-and-expands-japans-physical-ai-ecosystem.html",
+          "published": "Thu, 16 Jul 2026 12:55:07 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "BMW's U.S. business is delivering when it matters most",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/bmws-u-business-delivering-matters-033300819.html",
-          "published": "2026-07-14T03:33:00Z"
+          "title": "Microsoft CEO adds fuel to Palantir CEO’s AI warning",
+          "link": "https://finance.yahoo.com/technology/ai/articles/microsoft-ceo-adds-fuel-palantir-030700396.html",
+          "published": "2026-07-15T03:07:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Bitcoin jumps to $65,000: 'Backdrop for crypto is improving'",
-          "link": "https://finance.yahoo.com/markets/article/bitcoin-jumps-to-65000-backdrop-for-crypto-is-improving-144838821.html",
-          "published": "2026-07-15T14:48:38Z"
+          "title": "Why McDonald's stock is at nearly 2-year lows",
+          "link": "https://finance.yahoo.com/markets/stocks/article/why-mcdonalds-stock-is-at-nearly-2-year-lows-145439928.html",
+          "published": "2026-07-16T14:54:39Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "World Cup gave bars and restaurants a needed boost as consumers flash warning signs, Fed says",
+          "link": "https://www.cnbc.com/2026/07/15/world-cup-economy-spending-alcohol-hotels-fed.html",
+          "published": "Wed, 15 Jul 2026 21:53:10 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Wholesale prices unexpectedly declined 0.3% in June on big drop in gasoline",
@@ -86,12 +92,6 @@
           "title": "India's inflation accelerates to 4.38% in June, exceeding forecasts",
           "link": "https://www.cnbc.com/2026/07/13/india-june-inflation-oil-food-iran-war.html",
           "published": "Mon, 13 Jul 2026 10:56:52 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "'Funflation' hits home: Why staying in isn't the cost-saver it used to be",
-          "link": "https://www.cnbc.com/2026/07/11/funflation-streaming-video-games-xbox-apple-disney-netflix.html",
-          "published": "Mon, 13 Jul 2026 15:20:06 GMT"
         }
       ]
     }
