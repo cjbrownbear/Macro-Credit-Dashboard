@@ -1,62 +1,68 @@
 {
-  "updated": "2026-07-21T15:16:39Z",
+  "updated": "2026-07-22T15:15:26Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "SpaceX sets earnings date, triggering first lock-up expiration for millions of shares",
-          "link": "https://www.cnbc.com/2026/07/21/spacex-spcx-earnings-lock-up-expiration.html",
-          "published": "Tue, 21 Jul 2026 14:15:54 GMT"
+          "title": "Houthis deploy missiles and drones to attack ships in southern Red Sea, naval group says",
+          "link": "https://www.cnbc.com/2026/07/22/houthis-red-sea-bab-el-mandeb-saudi-oil-iran.html",
+          "published": "Wed, 22 Jul 2026 14:58:36 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Greer hints new Trump tariffs coming on dozens of countries: 'Expect action soon'",
-          "link": "https://www.cnbc.com/2026/07/21/trump-trade-tariffs-greer-section-301.html",
-          "published": "Tue, 21 Jul 2026 13:38:59 GMT"
+          "title": "Mortgage rates are rising again, but homebuyers are seeing some advantages",
+          "link": "https://www.cnbc.com/2026/07/22/mortgage-rates-are-rising-again.html",
+          "published": "Wed, 22 Jul 2026 11:31:31 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "U.S. strikes Iran and Houthis threaten Saudi Arabia shipping as mediators push 10-day ceasefire",
-          "link": "https://www.cnbc.com/2026/07/21/us-iran-war-trump-hormuz-houthis.html",
-          "published": "Tue, 21 Jul 2026 13:00:19 GMT"
+          "title": "Sen. Wyden introduces bill to curb Trump's tariff powers",
+          "link": "https://www.cnbc.com/2026/07/22/trump-tariffs-wyden-bill-congress.html",
+          "published": "Wed, 22 Jul 2026 13:00:15 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Nvidia details its next-generation Vera CPU for AI, setting up challenge to AMD and Intel",
-          "link": "https://www.cnbc.com/2026/07/21/nvidia-vera-cpu-ai-amd-intel.html",
-          "published": "Tue, 21 Jul 2026 15:00:02 GMT"
+          "title": "Reddit stock sinks on report it may not renew Google AI content deal",
+          "link": "https://www.cnbc.com/2026/07/22/reddit-stock-google-ai-content-deal.html",
+          "published": "Wed, 22 Jul 2026 15:00:49 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Google expands Gemini lineup with cheaper models and new Mythos rival",
-          "link": "https://www.cnbc.com/2026/07/21/google-gemini-flash-ai-mythos-rival.html",
-          "published": "Tue, 21 Jul 2026 15:00:02 GMT"
+          "title": "Samsung ups prices as it launches new foldable smartphones ahead of expected Apple debut",
+          "link": "https://www.cnbc.com/2026/07/22/samsung-galaxy-z-fold8-ultra-z-fold8-z-flip8-launch.html",
+          "published": "Wed, 22 Jul 2026 13:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Bessent says U.S. could sanction China over AI model 'theft'",
-          "link": "https://www.cnbc.com/2026/07/21/bessent-china-ai-sanctions.html",
-          "published": "Tue, 21 Jul 2026 14:14:52 GMT"
+          "title": "AMD to invest up to $5 billion in Anthropic as part of computing power deal",
+          "link": "https://www.cnbc.com/2026/07/22/amd-anthropic-ai-chip-investment.html",
+          "published": "Wed, 22 Jul 2026 13:58:10 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Better Late Than Never? Micron Finally Joins Wall Street’s ‘Best Investment Ideas” List",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/better-never-micron-finally-joins-150313526.html",
-          "published": "2026-07-21T15:03:13Z"
+          "title": "Popular crypto firm files for Chapter 11 after token collapse",
+          "link": "https://finance.yahoo.com/markets/crypto/articles/popular-crypto-firm-files-chapter-213833642.html",
+          "published": "2026-07-21T21:38:33Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Will the housing market crash in 2026? What the numbers say",
-          "link": "https://finance.yahoo.com/personal-finance/mortgages/article/will-the-housing-market-crash-in-2026-what-the-numbers-say-170038540.html",
-          "published": "2024-07-05T17:00:38Z"
+          "title": "Bank of America CEO warns inflation will back Fed into a corner",
+          "link": "https://finance.yahoo.com/economy/articles/bank-america-ceo-sobering-verdict-033300805.html",
+          "published": "2026-07-21T03:33:00Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Trump plans generic drug tariffs from 2028 with two-year delay testing U.S. onshoring push",
+          "link": "https://www.cnbc.com/2026/07/22/trump-generic-drugs-tariffs-medicine-trade-.html",
+          "published": "Wed, 22 Jul 2026 06:28:08 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Import prices post surprise gain as costs of goods from China hit highest since 2008",
@@ -86,12 +92,6 @@
           "title": "China posts slowest quarterly growth since 2022 as investment slumps, fanning stimulus calls",
           "link": "https://www.cnbc.com/2026/07/15/china-gdp-retail-sales-investment-june-.html",
           "published": "Wed, 15 Jul 2026 05:14:11 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Consumer prices rose 3.5% annually in June, less than expected as energy prices eased",
-          "link": "https://www.cnbc.com/2026/07/14/consumer-price-index-inflation-report-june-2026.html",
-          "published": "Tue, 14 Jul 2026 21:05:13 GMT"
         }
       ]
     }
