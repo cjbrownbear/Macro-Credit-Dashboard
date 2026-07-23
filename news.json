@@ -1,62 +1,68 @@
 {
-  "updated": "2026-07-22T15:15:26Z",
+  "updated": "2026-07-23T15:22:29Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Houthis deploy missiles and drones to attack ships in southern Red Sea, naval group says",
-          "link": "https://www.cnbc.com/2026/07/22/houthis-red-sea-bab-el-mandeb-saudi-oil-iran.html",
-          "published": "Wed, 22 Jul 2026 14:58:36 GMT"
+          "title": "Trump says Saudi nuclear deal contingent on relations with Israel, does not include enrichment",
+          "link": "https://www.cnbc.com/2026/07/23/trump-saudi-arabia-nuclear-power.html",
+          "published": "Thu, 23 Jul 2026 14:50:50 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Mortgage rates are rising again, but homebuyers are seeing some advantages",
-          "link": "https://www.cnbc.com/2026/07/22/mortgage-rates-are-rising-again.html",
-          "published": "Wed, 22 Jul 2026 11:31:31 GMT"
+          "title": "House lawmakers grill former JPMorgan executive Jes Staley over Epstein ties",
+          "link": "https://www.cnbc.com/2026/07/23/comer-jes-staley-jpmorgan-jeffrey-epstein-red-flags.html",
+          "published": "Thu, 23 Jul 2026 14:57:08 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Sen. Wyden introduces bill to curb Trump's tariff powers",
-          "link": "https://www.cnbc.com/2026/07/22/trump-tariffs-wyden-bill-congress.html",
-          "published": "Wed, 22 Jul 2026 13:00:15 GMT"
+          "title": "Alphabet and Tesla test Wall Street's patience as AI spending overshadows growth",
+          "link": "https://www.cnbc.com/2026/07/22/alphabet-tesla-test-investor-patience-ai-spending-overshadows-growth.html",
+          "published": "Thu, 23 Jul 2026 01:48:22 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Reddit stock sinks on report it may not renew Google AI content deal",
-          "link": "https://www.cnbc.com/2026/07/22/reddit-stock-google-ai-content-deal.html",
-          "published": "Wed, 22 Jul 2026 15:00:49 GMT"
+          "title": "Google Cloud CEO Kurian says customers are spending 50% more as segment blows away expectations",
+          "link": "https://www.cnbc.com/2026/07/23/google-cloud-kurian-revenue-earnings.html",
+          "published": "Thu, 23 Jul 2026 15:21:36 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Samsung ups prices as it launches new foldable smartphones ahead of expected Apple debut",
-          "link": "https://www.cnbc.com/2026/07/22/samsung-galaxy-z-fold8-ultra-z-fold8-z-flip8-launch.html",
-          "published": "Wed, 22 Jul 2026 13:00:01 GMT"
+          "title": "Albertsons stock plunges as it says weaker grocery spending will cut into sales and earnings",
+          "link": "https://www.cnbc.com/2026/07/23/albertsons-stock-plunges-on-lowered-outlook-softened-grocery-trends.html",
+          "published": "Thu, 23 Jul 2026 15:13:45 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "AMD to invest up to $5 billion in Anthropic as part of computing power deal",
-          "link": "https://www.cnbc.com/2026/07/22/amd-anthropic-ai-chip-investment.html",
-          "published": "Wed, 22 Jul 2026 13:58:10 GMT"
+          "title": "American Airlines stock tumbles 8% as fuel spike further postpones turnaround",
+          "link": "https://www.cnbc.com/2026/07/23/american-airlines-aal-2q-2026-earnings.html",
+          "published": "Thu, 23 Jul 2026 13:45:27 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Popular crypto firm files for Chapter 11 after token collapse",
-          "link": "https://finance.yahoo.com/markets/crypto/articles/popular-crypto-firm-files-chapter-213833642.html",
-          "published": "2026-07-21T21:38:33Z"
+          "title": "Stock market today: Dow, S&P 500, Nasdaq sell off as rising oil prices, bond yields, and AI capex weigh",
+          "link": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-july-23-dow-sp-500-nasdaq-oil-bonds-earnings-084444369.html",
+          "published": "2026-07-23T08:44:44Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Bank of America CEO warns inflation will back Fed into a corner",
-          "link": "https://finance.yahoo.com/economy/articles/bank-america-ceo-sobering-verdict-033300805.html",
-          "published": "2026-07-21T03:33:00Z"
+          "title": "Big Four’s offshore audit model draws scrutiny from UK regulator",
+          "link": "https://finance.yahoo.com/small-business/articles/big-four-offshore-audit-model-151028584.html",
+          "published": "2026-07-23T15:10:28Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Kevin Warsh has homed in on three key phrases. How Fed watchers interpret them",
+          "link": "https://www.cnbc.com/2026/07/22/kevin-warsh-has-homed-in-on-three-key-phrases-how-fed-watchers-interpret-them.html",
+          "published": "Wed, 22 Jul 2026 16:57:55 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Trump plans generic drug tariffs from 2028 with two-year delay testing U.S. onshoring push",
@@ -86,12 +92,6 @@
           "title": "Renewed Hormuz hostilities drive ECB rates rethink amid ‘extremely volatile’ outlook",
           "link": "https://www.cnbc.com/2026/07/15/ecb-interest-rates-outlook-iran-war-hormuz.html",
           "published": "Wed, 15 Jul 2026 11:33:19 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "China posts slowest quarterly growth since 2022 as investment slumps, fanning stimulus calls",
-          "link": "https://www.cnbc.com/2026/07/15/china-gdp-retail-sales-investment-june-.html",
-          "published": "Wed, 15 Jul 2026 05:14:11 GMT"
         }
       ]
     }
