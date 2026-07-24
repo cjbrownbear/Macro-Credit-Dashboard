@@ -1,62 +1,68 @@
 {
-  "updated": "2026-07-23T15:22:29Z",
+  "updated": "2026-07-24T15:04:54Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Trump says Saudi nuclear deal contingent on relations with Israel, does not include enrichment",
-          "link": "https://www.cnbc.com/2026/07/23/trump-saudi-arabia-nuclear-power.html",
-          "published": "Thu, 23 Jul 2026 14:50:50 GMT"
+          "title": "Trump considering a ‘massive attack’ on Iran as Tehran labels UK ‘accomplice’ to America",
+          "link": "https://www.cnbc.com/2026/07/24/us-iran-war-trump-hormuz-houthis.html",
+          "published": "Fri, 24 Jul 2026 11:57:15 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "House lawmakers grill former JPMorgan executive Jes Staley over Epstein ties",
-          "link": "https://www.cnbc.com/2026/07/23/comer-jes-staley-jpmorgan-jeffrey-epstein-red-flags.html",
-          "published": "Thu, 23 Jul 2026 14:57:08 GMT"
+          "title": "Nvidia, Microsoft, Meta warn against 'premature restrictions' of open-weight models",
+          "link": "https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html",
+          "published": "Fri, 24 Jul 2026 14:15:47 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Alphabet and Tesla test Wall Street's patience as AI spending overshadows growth",
-          "link": "https://www.cnbc.com/2026/07/22/alphabet-tesla-test-investor-patience-ai-spending-overshadows-growth.html",
-          "published": "Thu, 23 Jul 2026 01:48:22 GMT"
+          "title": "Intel rides AI boom to fastest revenue growth in almost 15 years, but shares sink",
+          "link": "https://www.cnbc.com/2026/07/23/intel-intc-earnings-report-q2-2026.html",
+          "published": "Fri, 24 Jul 2026 14:05:35 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Google Cloud CEO Kurian says customers are spending 50% more as segment blows away expectations",
-          "link": "https://www.cnbc.com/2026/07/23/google-cloud-kurian-revenue-earnings.html",
-          "published": "Thu, 23 Jul 2026 15:21:36 GMT"
+          "title": "Pentagon lowers official Iran war death toll, omitting four killed this month",
+          "link": "https://www.cnbc.com/2026/07/24/pentagon-removed-four-official-iran-war-death-toll.html",
+          "published": "Fri, 24 Jul 2026 12:26:37 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Albertsons stock plunges as it says weaker grocery spending will cut into sales and earnings",
-          "link": "https://www.cnbc.com/2026/07/23/albertsons-stock-plunges-on-lowered-outlook-softened-grocery-trends.html",
-          "published": "Thu, 23 Jul 2026 15:13:45 GMT"
+          "title": "Treasury yields retreat, 10-year stays near January 2025 highs",
+          "link": "https://www.cnbc.com/2026/07/24/treasury-yields-bonds-us-debt.html",
+          "published": "Fri, 24 Jul 2026 15:01:24 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "American Airlines stock tumbles 8% as fuel spike further postpones turnaround",
-          "link": "https://www.cnbc.com/2026/07/23/american-airlines-aal-2q-2026-earnings.html",
-          "published": "Thu, 23 Jul 2026 13:45:27 GMT"
+          "title": "Trump's new global tariff draws rebukes from trade partners over forced labor justification",
+          "link": "https://www.cnbc.com/2026/07/24/trump-global-tariffs-trade-imbalance-forced-labor.html",
+          "published": "Fri, 24 Jul 2026 12:09:09 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Stock market today: Dow, S&P 500, Nasdaq sell off as rising oil prices, bond yields, and AI capex weigh",
-          "link": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-july-23-dow-sp-500-nasdaq-oil-bonds-earnings-084444369.html",
-          "published": "2026-07-23T08:44:44Z"
+          "title": "AMD CEO Lisa Su on AI demand and hyperscaler spending: 'We're seeing the returns'",
+          "link": "https://finance.yahoo.com/technology/article/amd-ceo-lisa-su-on-ai-demand-and-hyperscaler-spending-were-seeing-the-returns-143905473.html",
+          "published": "2026-07-24T14:39:05Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Big Four’s offshore audit model draws scrutiny from UK regulator",
-          "link": "https://finance.yahoo.com/small-business/articles/big-four-offshore-audit-model-151028584.html",
-          "published": "2026-07-23T15:10:28Z"
+          "title": "This \"Boring\" Dividend King Is Quietly Turning Into a Growth Machine -- and Many Investors Are Missing It",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/boring-dividend-king-quietly-turning-143500073.html",
+          "published": "2026-07-24T14:35:00Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Trump's new global tariff draws rebukes from trade partners over forced labor justification",
+          "link": "https://www.cnbc.com/2026/07/24/trump-global-tariffs-trade-imbalance-forced-labor.html",
+          "published": "Fri, 24 Jul 2026 12:09:09 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Kevin Warsh has homed in on three key phrases. How Fed watchers interpret them",
@@ -86,12 +92,6 @@
           "title": "Wholesale prices unexpectedly declined 0.3% in June on big drop in gasoline",
           "link": "https://www.cnbc.com/2026/07/15/wholesale-inflation-june-2026-.html",
           "published": "Wed, 15 Jul 2026 14:22:48 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Renewed Hormuz hostilities drive ECB rates rethink amid ‘extremely volatile’ outlook",
-          "link": "https://www.cnbc.com/2026/07/15/ecb-interest-rates-outlook-iran-war-hormuz.html",
-          "published": "Wed, 15 Jul 2026 11:33:19 GMT"
         }
       ]
     }
