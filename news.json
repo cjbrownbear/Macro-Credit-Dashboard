@@ -1,62 +1,68 @@
 {
-  "updated": "2026-07-26T14:43:35Z",
+  "updated": "2026-07-27T15:49:24Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Ukraine strikes Iranian vessels in Caspian Sea, Tehran accuses Kyiv of 'hostile and criminal act'",
-          "link": "https://www.cnbc.com/2026/07/26/ukraine-strikes-iranian-vessels-tehran-accuses-kyiv-of-hostile-act.html",
-          "published": "Sun, 26 Jul 2026 14:12:17 GMT"
+          "title": "Sam Altman to meet with Trump administration, senators this week. Here's what he plans to say",
+          "link": "https://www.cnbc.com/2026/07/27/altman-trump-china-open-weight-ai.html",
+          "published": "Mon, 27 Jul 2026 15:24:16 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Inside the S&P 500 AI boom, industrials are getting as rich as tech stocks",
-          "link": "https://www.cnbc.com/2026/07/26/best-ai-stocks-market-sp500.html",
-          "published": "Sun, 26 Jul 2026 14:12:20 GMT"
+          "title": "CME launches single stock futures enabling investors to trade SpaceX, Micron 23 hours a day",
+          "link": "https://www.cnbc.com/2026/07/27/cme-launches-single-stock-futures-enabling-investors-to-trade-spacex-micron-23-hours-a-day.html",
+          "published": "Mon, 27 Jul 2026 15:32:24 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "How AI wealth could be distributed to all Americans",
-          "link": "https://www.cnbc.com/2026/07/26/how-can-ai-wealth-be-shared-with-all-americans.html",
-          "published": "Sun, 26 Jul 2026 14:06:53 GMT"
+          "title": "NBCUniversal and YouTube ink deal to embed Peacock in the video platform for premium subscribers",
+          "link": "https://www.cnbc.com/2026/07/27/nbcuniversal-youtube-peacock-premium-subscribers.html",
+          "published": "Mon, 27 Jul 2026 15:02:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "100 days until midterm election: DCCC Chair DelBene says Democrats have the momentum",
-          "link": "https://www.cnbc.com/2026/07/26/election-midterms-dccc-chair-delbene-democrats.html",
-          "published": "Sun, 26 Jul 2026 12:00:01 GMT"
+          "title": "Comey asks judge to dismiss Trump 'seashells' case citing lack of 'true threat'",
+          "link": "https://www.cnbc.com/2026/07/27/james-comey-trump-seashells-threat.html",
+          "published": "Mon, 27 Jul 2026 15:48:54 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Top Wall Street analysts back these 3 stocks for their long-term growth potential",
-          "link": "https://www.cnbc.com/2026/07/26/top-analysts-back-these-3-stocks-for-their-long-term-growth-potential.html",
-          "published": "Sun, 26 Jul 2026 11:33:11 GMT"
+          "title": "Nvidia, SpaceX, Microsoft launch AI safety initiative as OpenAI cyberattack fallout continues",
+          "link": "https://www.cnbc.com/2026/07/27/nvidia-ai-initiative-openai-cyber-attack.html",
+          "published": "Mon, 27 Jul 2026 11:32:45 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Cocoa prices are easing. So why is chocolate still so expensive?",
-          "link": "https://www.cnbc.com/2026/07/26/cocoa-prices-chocolate-lindt-barry-callebaut-nestle.html",
-          "published": "Sun, 26 Jul 2026 05:00:01 GMT"
+          "title": "Why Trump's new tariff blitz is very different this time around",
+          "link": "https://www.cnbc.com/2026/07/27/donald-trump-tariffs-trade-war-iran.html",
+          "published": "Mon, 27 Jul 2026 12:53:33 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "1 Smart Way to Play the Fading Data Center Trade",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/1-smart-way-play-fading-130002800.html",
-          "published": "2026-07-25T13:00:02Z"
+          "title": "After 80 stores close, 63-year-old chain gives Chapter 11 warning",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/80-stores-close-63-old-150700367.html",
+          "published": "2026-07-26T15:07:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Dear Seagate Technology Stock Fans, Mark Your Calendars for July 28",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/dear-seagate-technology-stock-fans-130002116.html",
-          "published": "2026-07-25T13:00:02Z"
+          "title": "Tech stocks today: Big Tech earnings this week mark a pivotal moment for the AI trade",
+          "link": "https://finance.yahoo.com/technology/live/tech-stocks-today-big-tech-earnings-134611080.html",
+          "published": "2026-07-27T13:46:11Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Singapore tightens monetary policy in surprise move as rising oil prices rekindle inflation risk",
+          "link": "https://www.cnbc.com/2026/07/27/singapore-mas-july-monetary-policy-middle-east-oil-prices-inflation-.html",
+          "published": "Mon, 27 Jul 2026 14:22:15 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Trump's new global tariff draws rebukes from trade partners over forced labor justification",
@@ -86,12 +92,6 @@
           "title": "World Cup gave bars and restaurants a needed boost as consumers flash warning signs, Fed says",
           "link": "https://www.cnbc.com/2026/07/15/world-cup-economy-spending-alcohol-hotels-fed.html",
           "published": "Wed, 15 Jul 2026 21:53:10 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Wholesale prices unexpectedly declined 0.3% in June on big drop in gasoline",
-          "link": "https://www.cnbc.com/2026/07/15/wholesale-inflation-june-2026-.html",
-          "published": "Wed, 15 Jul 2026 14:22:48 GMT"
         }
       ]
     }
