@@ -1,62 +1,74 @@
 {
-  "updated": "2026-07-29T15:33:23Z",
+  "updated": "2026-07-30T15:21:24Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Oil prices jump more than 7% after Trump says U.S. will hit Iran hard",
-          "link": "https://www.cnbc.com/2026/07/29/oil-prices-today-brent-wti-iran-us-hormuz.html",
-          "published": "Wed, 29 Jul 2026 15:27:23 GMT"
+          "title": "U.S. economy slowed to 1.5% growth rate in Q2; June core inflation at 3.3%",
+          "link": "https://www.cnbc.com/2026/07/30/us-economy-slowed-to-1point5percent-growth-rate-in-q2-june-core-inflation-at-3point3percent.html",
+          "published": "Thu, 30 Jul 2026 15:04:43 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump says U.S. will give Iran a 'beating' after surprise attack",
-          "link": "https://www.cnbc.com/2026/07/29/us-iran-war-hormuz-centcom.html",
-          "published": "Wed, 29 Jul 2026 14:18:42 GMT"
+          "title": "AI investor Leopold Aschenbrenner forced to unwind all public stock positions after steep losses, sources say",
+          "link": "https://www.cnbc.com/2026/07/30/leopold-aschenbrenners-hedge-fund-is-facing-steep-ai-losses.html",
+          "published": "Thu, 30 Jul 2026 14:55:31 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Nike was once China's sneaker king. Here's why its sales have fallen 30%",
-          "link": "https://www.cnbc.com/2026/07/29/nike-china-sales-decline.html",
-          "published": "Wed, 29 Jul 2026 14:49:45 GMT"
+          "title": "New details in the OpenAI Hugging Face hack show how far agents will go: 'It's now remarkably easy'",
+          "link": "https://www.cnbc.com/2026/07/30/open-ai-hugging-face-hack-latest.html",
+          "published": "Thu, 30 Jul 2026 14:09:36 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "JPMorgan, Schwab and UBS manage millions in Trump's $858 million investment portfolio",
-          "link": "https://www.cnbc.com/2026/07/29/trump-banking-investments-jpmorgan-schwab-ubs-financial-disclosure.html",
-          "published": "Wed, 29 Jul 2026 14:03:23 GMT"
+          "title": "Meta tanks 9%, continuing record losing streak, while Microsoft jumps 15% as AI trade splits",
+          "link": "https://www.cnbc.com/2026/07/30/microsoft-msft-meta-stock-today-earnings.html",
+          "published": "Thu, 30 Jul 2026 14:45:24 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Secret Service 'illegally' surveilled Comey in Trump ‘8647’ threat case: Court filing",
-          "link": "https://www.cnbc.com/2026/07/29/james-comey-trump-8647-seashells-threat-secret-service.html",
-          "published": "Wed, 29 Jul 2026 15:24:05 GMT"
+          "title": "Apple and Amazon report after the bell. Here's what the options market is saying",
+          "link": "https://www.cnbc.com/2026/07/30/apple-and-amazon-report-after-the-bell-heres-what-the-options-market-is-saying.html",
+          "published": "Thu, 30 Jul 2026 15:11:30 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Humana tops quarterly estimates, maintains profit outlook as medical costs stay in line",
-          "link": "https://www.cnbc.com/2026/07/29/humana-hum-earnings-q2-2026.html",
-          "published": "Wed, 29 Jul 2026 14:57:11 GMT"
+          "title": "Jeep maker Stellantis swings to profit on rising demand in North America",
+          "link": "https://www.cnbc.com/2026/07/30/stellantis-q2-earnings-autos-jeep.html",
+          "published": "Thu, 30 Jul 2026 15:02:17 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Secretary Bessent cracks down on non-profit tax loopholes",
-          "link": "https://finance.yahoo.com/economy/policy/articles/secretary-bessent-cracks-down-non-160600716.html",
-          "published": "2026-07-28T16:06:00Z"
+          "title": "Jim Cramer says this post-earnings sell-off is a golden buying opportunity",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-says-post-earnings-221700892.html",
+          "published": "2026-07-29T22:17:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "SpaceX stock back under pressure as Q2 earnings approach",
-          "link": "https://finance.yahoo.com/markets/stocks/article/spacex-stock-back-under-pressure-as-q2-earnings-approach-152137218.html",
-          "published": "2026-07-29T15:21:37Z"
+          "title": "Hedge Funds Favor Union Pacific Corporation (UNP) Over Canadian Pacific (CP): UNP Beat Earnings and Just Got a Major Win",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/hedge-funds-favor-union-pacific-145855454.html",
+          "published": "2026-07-30T14:58:55Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "U.S. economy slowed to 1.5% growth rate in Q2; June core inflation at 3.3%",
+          "link": "https://www.cnbc.com/2026/07/30/us-economy-slowed-to-1point5percent-growth-rate-in-q2-june-core-inflation-at-3point3percent.html",
+          "published": "Thu, 30 Jul 2026 15:04:43 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "What a divided Fed means for investors",
+          "link": "https://www.cnbc.com/2026/07/29/fed-meeting-interest-rates-warsh-stocks-bonds.html",
+          "published": "Wed, 29 Jul 2026 23:36:34 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Singapore tightens monetary policy in surprise move as rising oil prices rekindle inflation risk",
@@ -80,18 +92,6 @@
           "title": "Trump plans generic drug tariffs from 2028 with two-year delay testing U.S. onshoring push",
           "link": "https://www.cnbc.com/2026/07/22/trump-generic-drugs-tariffs-medicine-trade-.html",
           "published": "Wed, 22 Jul 2026 06:28:08 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Import prices post surprise gain as costs of goods from China hit highest since 2008",
-          "link": "https://www.cnbc.com/2026/07/17/import-prices-post-surprise-gain-as-costs-of-goods-from-china-hit-highest-since-2008.html",
-          "published": "Fri, 17 Jul 2026 14:13:49 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "World Cup gave bars and restaurants a needed boost as consumers flash warning signs, Fed says",
-          "link": "https://www.cnbc.com/2026/07/15/world-cup-economy-spending-alcohol-hotels-fed.html",
-          "published": "Wed, 15 Jul 2026 21:53:10 GMT"
         }
       ]
     }
