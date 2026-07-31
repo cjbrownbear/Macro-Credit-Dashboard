@@ -1,62 +1,68 @@
 {
-  "updated": "2026-07-30T15:21:24Z",
+  "updated": "2026-07-31T15:27:43Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "U.S. economy slowed to 1.5% growth rate in Q2; June core inflation at 3.3%",
-          "link": "https://www.cnbc.com/2026/07/30/us-economy-slowed-to-1point5percent-growth-rate-in-q2-june-core-inflation-at-3point3percent.html",
-          "published": "Thu, 30 Jul 2026 15:04:43 GMT"
+          "title": "Dwindling cash and soaring memory costs: Tech's AI buildout has ballooning price tag",
+          "link": "https://www.cnbc.com/2026/07/31/tech-earnings-cash-memory-ai.html",
+          "published": "Fri, 31 Jul 2026 13:26:59 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "AI investor Leopold Aschenbrenner forced to unwind all public stock positions after steep losses, sources say",
-          "link": "https://www.cnbc.com/2026/07/30/leopold-aschenbrenners-hedge-fund-is-facing-steep-ai-losses.html",
-          "published": "Thu, 30 Jul 2026 14:55:31 GMT"
+          "title": "How Leopold Aschenbrenner built a $45 billion AI hedge fund — and lost most of it in days",
+          "link": "https://www.cnbc.com/2026/07/31/leopold-aschenbrenner-situational-awareness-fund-fire-sale.html",
+          "published": "Fri, 31 Jul 2026 14:44:44 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "New details in the OpenAI Hugging Face hack show how far agents will go: 'It's now remarkably easy'",
-          "link": "https://www.cnbc.com/2026/07/30/open-ai-hugging-face-hack-latest.html",
-          "published": "Thu, 30 Jul 2026 14:09:36 GMT"
+          "title": "Fed officials who voted to hike rates say action is needed now against inflation",
+          "link": "https://www.cnbc.com/2026/07/31/fed-officials-who-voted-to-hike-rates-say-action-is-needed-now-against-inflation.html",
+          "published": "Fri, 31 Jul 2026 14:35:52 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Meta tanks 9%, continuing record losing streak, while Microsoft jumps 15% as AI trade splits",
-          "link": "https://www.cnbc.com/2026/07/30/microsoft-msft-meta-stock-today-earnings.html",
-          "published": "Thu, 30 Jul 2026 14:45:24 GMT"
+          "title": "Democrats demand information on Trump and Lutnick families' ties to critical mineral deals",
+          "link": "https://www.cnbc.com/2026/07/31/senate-democrats-trump-lutnick-critical-mineral-deals.html",
+          "published": "Fri, 31 Jul 2026 14:21:23 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Apple and Amazon report after the bell. Here's what the options market is saying",
-          "link": "https://www.cnbc.com/2026/07/30/apple-and-amazon-report-after-the-bell-heres-what-the-options-market-is-saying.html",
-          "published": "Thu, 30 Jul 2026 15:11:30 GMT"
+          "title": "Exxon and Chevron profits surge on rising oil prices due to Iran war",
+          "link": "https://www.cnbc.com/2026/07/31/exxon-xom-chevron-cvx-q2-earnings.html",
+          "published": "Fri, 31 Jul 2026 12:49:14 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Jeep maker Stellantis swings to profit on rising demand in North America",
-          "link": "https://www.cnbc.com/2026/07/30/stellantis-q2-earnings-autos-jeep.html",
-          "published": "Thu, 30 Jul 2026 15:02:17 GMT"
+          "title": "GM to launch its own in-vehicle AI system later this year",
+          "link": "https://www.cnbc.com/2026/07/31/gm-in-vehicle-ai-system.html",
+          "published": "Fri, 31 Jul 2026 13:39:28 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Jim Cramer says this post-earnings sell-off is a golden buying opportunity",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-says-post-earnings-221700892.html",
-          "published": "2026-07-29T22:17:00Z"
+          "title": "Fed interest-rate decision rocks Wall Street's inflation fears",
+          "link": "https://finance.yahoo.com/economy/policy/articles/fed-interest-rate-decision-rocks-163300252.html",
+          "published": "2026-07-30T16:33:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Hedge Funds Favor Union Pacific Corporation (UNP) Over Canadian Pacific (CP): UNP Beat Earnings and Just Got a Major Win",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/hedge-funds-favor-union-pacific-145855454.html",
-          "published": "2026-07-30T14:58:55Z"
+          "title": "Stock market today: Dow, S&P 500, Nasdaq seesaw as 10-year yield surges, Big Tech's AI spending ramps up",
+          "link": "https://finance.yahoo.com/markets/live/stock-market-today-friday-july-31-dow-sp-500-nasdaq-081227738.html",
+          "published": "2026-07-31T08:12:27Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "China's factory activity unexpectedly contracts in July on demand slump, typhoons",
+          "link": "https://www.cnbc.com/2026/07/31/china-pmi-factory-activity-economic-growth-exports-.html",
+          "published": "Fri, 31 Jul 2026 03:49:55 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "U.S. economy slowed to 1.5% growth rate in Q2; June core inflation at 3.3%",
@@ -86,12 +92,6 @@
           "title": "Kevin Warsh has homed in on three key phrases. How Fed watchers interpret them",
           "link": "https://www.cnbc.com/2026/07/22/kevin-warsh-has-homed-in-on-three-key-phrases-how-fed-watchers-interpret-them.html",
           "published": "Wed, 22 Jul 2026 16:57:55 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Trump plans generic drug tariffs from 2028 with two-year delay testing U.S. onshoring push",
-          "link": "https://www.cnbc.com/2026/07/22/trump-generic-drugs-tariffs-medicine-trade-.html",
-          "published": "Wed, 22 Jul 2026 06:28:08 GMT"
         }
       ]
     }
