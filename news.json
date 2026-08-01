@@ -1,62 +1,68 @@
 {
-  "updated": "2026-07-31T15:27:43Z",
+  "updated": "2026-08-01T14:39:50Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Dwindling cash and soaring memory costs: Tech's AI buildout has ballooning price tag",
-          "link": "https://www.cnbc.com/2026/07/31/tech-earnings-cash-memory-ai.html",
-          "published": "Fri, 31 Jul 2026 13:26:59 GMT"
+          "title": "OpenAI's Hugging Face hack confirmed months of AI cyber warnings: 'Pandora's box is open'",
+          "link": "https://www.cnbc.com/2026/08/01/open-ai-hugging-face-hack-cyber-warnings.html",
+          "published": "Sat, 01 Aug 2026 12:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "How Leopold Aschenbrenner built a $45 billion AI hedge fund — and lost most of it in days",
-          "link": "https://www.cnbc.com/2026/07/31/leopold-aschenbrenner-situational-awareness-fund-fire-sale.html",
-          "published": "Fri, 31 Jul 2026 14:44:44 GMT"
+          "title": "Tankers near Oman come under fire as Iran threatens to choke off shipping routes",
+          "link": "https://www.cnbc.com/2026/08/01/tankers-near-oman-come-under-fire.html",
+          "published": "Sat, 01 Aug 2026 10:56:11 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Fed officials who voted to hike rates say action is needed now against inflation",
-          "link": "https://www.cnbc.com/2026/07/31/fed-officials-who-voted-to-hike-rates-say-action-is-needed-now-against-inflation.html",
-          "published": "Fri, 31 Jul 2026 14:35:52 GMT"
+          "title": "To keep growing, incoming Best Buy CEO says he first wants to go smaller",
+          "link": "https://www.cnbc.com/2026/08/01/best-buy-ceo-jason-bonfig-smaller-stores.html",
+          "published": "Sat, 01 Aug 2026 12:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Democrats demand information on Trump and Lutnick families' ties to critical mineral deals",
-          "link": "https://www.cnbc.com/2026/07/31/senate-democrats-trump-lutnick-critical-mineral-deals.html",
-          "published": "Fri, 31 Jul 2026 14:21:23 GMT"
+          "title": "As Americans go direct with GLP-1 prescriptions, Walmart, Costco, Amazon will be big weight-loss winners",
+          "link": "https://www.cnbc.com/2026/08/01/glp-1-prescriptions-weight-loss-walmart-costco-amazon.html",
+          "published": "Sat, 01 Aug 2026 12:30:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Exxon and Chevron profits surge on rising oil prices due to Iran war",
-          "link": "https://www.cnbc.com/2026/07/31/exxon-xom-chevron-cvx-q2-earnings.html",
-          "published": "Fri, 31 Jul 2026 12:49:14 GMT"
+          "title": "Looking at just the odds isn’t enough. How traders gain an edge on prediction markets",
+          "link": "https://www.cnbc.com/2026/08/01/traders-go-full-time-on-prediction-markets-using-ai-bots-and-antennas.html",
+          "published": "Sat, 01 Aug 2026 13:44:04 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "GM to launch its own in-vehicle AI system later this year",
-          "link": "https://www.cnbc.com/2026/07/31/gm-in-vehicle-ai-system.html",
-          "published": "Fri, 31 Jul 2026 13:39:28 GMT"
+          "title": "Within Uber-Waymo split, a key labor battle over AVs is being waged in the nation's capital",
+          "link": "https://www.cnbc.com/2026/08/01/uber-waymo-autonomous-vehicle-regulation.html",
+          "published": "Sat, 01 Aug 2026 14:10:03 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Fed interest-rate decision rocks Wall Street's inflation fears",
-          "link": "https://finance.yahoo.com/economy/policy/articles/fed-interest-rate-decision-rocks-163300252.html",
-          "published": "2026-07-30T16:33:00Z"
+          "title": "Want to trade SpaceX for Apple? 1inch says skip the dollars",
+          "link": "https://finance.yahoo.com/markets/crypto/articles/want-trade-spacex-apple-1inch-194500911.html",
+          "published": "2026-07-31T19:45:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Stock market today: Dow, S&P 500, Nasdaq seesaw as 10-year yield surges, Big Tech's AI spending ramps up",
-          "link": "https://finance.yahoo.com/markets/live/stock-market-today-friday-july-31-dow-sp-500-nasdaq-081227738.html",
-          "published": "2026-07-31T08:12:27Z"
+          "title": "The 2 IRS rules that allow you to continue making IRA contributions when you move abroad",
+          "link": "https://finance.yahoo.com/markets/currencies/articles/2-irs-rules-allow-continue-133000736.html",
+          "published": "2026-08-01T13:30:00Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "As Warsh’s Fed faces pressure to act on inflation, these indicators show it’s at its lowest in years",
+          "link": "https://www.cnbc.com/2026/07/31/these-fed-alternative-indicators-show-inflation-is-at-lowest-in-years.html",
+          "published": "Fri, 31 Jul 2026 16:51:30 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "China's factory activity unexpectedly contracts in July on demand slump, typhoons",
@@ -86,12 +92,6 @@
           "title": "Trump's new global tariff draws rebukes from trade partners over forced labor justification",
           "link": "https://www.cnbc.com/2026/07/24/trump-global-tariffs-trade-imbalance-forced-labor.html",
           "published": "Fri, 24 Jul 2026 12:09:09 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Kevin Warsh has homed in on three key phrases. How Fed watchers interpret them",
-          "link": "https://www.cnbc.com/2026/07/22/kevin-warsh-has-homed-in-on-three-key-phrases-how-fed-watchers-interpret-them.html",
-          "published": "Wed, 22 Jul 2026 16:57:55 GMT"
         }
       ]
     }
