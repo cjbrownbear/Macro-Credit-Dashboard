@@ -1,62 +1,68 @@
 {
-  "updated": "2026-08-03T15:50:29Z",
+  "updated": "2026-08-04T15:33:09Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "SpaceX's post-IPO plunge sets tense backdrop for first earnings report",
-          "link": "https://www.cnbc.com/2026/08/03/spacexs-post-ipo-plunge-sets-tense-backdrop-for-first-earnings-report.html",
-          "published": "Mon, 03 Aug 2026 13:45:02 GMT"
+          "title": "Bessent says there may be deal Tuesday or Wednesday to open Strait of Hormuz with 'freedom of movement'",
+          "link": "https://www.cnbc.com/2026/08/04/bessent-says-there-may-be-deal-tuesday-or-wednesday-to-open-strait-of-hormuz-with-freedom-of-movement.html",
+          "published": "Tue, 04 Aug 2026 14:00:55 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "California's diesel prices have jumped since the Iran war started, with ripple effects across the country",
-          "link": "https://www.cnbc.com/2026/08/03/californias-diesel-prices-have-jumped-since-the-iran-war-started-with-ripple-effects-across-the-country.html",
-          "published": "Mon, 03 Aug 2026 15:27:52 GMT"
+          "title": "Procter & Gamble will acquire supplements brand Thorne, CEO tells CNBC",
+          "link": "https://www.cnbc.com/2026/08/04/procter-gamble-will-acquire-supplements-brand-thorne.html",
+          "published": "Tue, 04 Aug 2026 15:29:56 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Amazon tops $3 trillion market cap as stock continues post-earnings surge",
-          "link": "https://www.cnbc.com/2026/08/03/amazon-amzn-stock-market-cap-earnings.html",
-          "published": "Mon, 03 Aug 2026 15:35:00 GMT"
+          "title": "Jeff Bezos just filed to sell $4 billion in Amazon. The shares are falling",
+          "link": "https://www.cnbc.com/2026/08/04/jeff-bezos-just-filed-to-sell-4-billion-in-amazon-the-shares-are-falling.html",
+          "published": "Tue, 04 Aug 2026 15:09:11 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "What the market is saying about the U.S. intervention to prop up the yen",
-          "link": "https://www.cnbc.com/2026/08/03/yen-us-intervention-japan-market-currency.html",
-          "published": "Mon, 03 Aug 2026 13:43:55 GMT"
+          "title": "New Jersey sues Amazon on antitrust grounds, alleging it unlawfully wielded its power over delivery contractors",
+          "link": "https://www.cnbc.com/2026/08/04/nj-amazon-antitrust-lawsuit-delivery-contractors.html",
+          "published": "Tue, 04 Aug 2026 15:16:35 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "'Spider-Man: Brand New Day' beats out 'Avengers: Endgame' for highest domestic opening ever",
-          "link": "https://www.cnbc.com/2026/08/03/spider-man-brand-new-day-debut-360m-highest-domestic-opening-ever.html",
-          "published": "Mon, 03 Aug 2026 15:46:27 GMT"
+          "title": "Blanche approved by Judiciary Committee, sending Trump's AG nominee to full Senate vote",
+          "link": "https://www.cnbc.com/2026/08/04/todd-blanche-weaponization-fund-senate-confirmation.html",
+          "published": "Tue, 04 Aug 2026 15:17:56 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Senate appears ready to advance Todd Blanche for attorney general after Cornyn strikes deal",
-          "link": "https://www.cnbc.com/2026/08/03/todd-blanche-doj-ag-senate-cornyn.html",
-          "published": "Mon, 03 Aug 2026 15:46:15 GMT"
+          "title": "Palantir jumps 27% on 'otherworldly' commercial revenue — here's what's driving the demand",
+          "link": "https://www.cnbc.com/2026/08/04/palantir-2q-earnings-ai-sovereign-tools.html",
+          "published": "Tue, 04 Aug 2026 14:47:13 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Warren Buffett keeps pointing at the same ETF for a reason",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/warren-buffett-keeps-pointing-same-160300409.html",
-          "published": "2026-08-02T16:03:00Z"
+          "title": "Tech stocks today: SpaceX, AMD to report earnings after the bell",
+          "link": "https://finance.yahoo.com/technology/live/tech-stocks-today-spacex-amd-to-report-earnings-after-the-bell-140419479.html",
+          "published": "2026-08-03T14:04:19Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Stock market today: Nasdaq leads Dow, S&P 500 higher as Big Tech gains, oil prices ease",
-          "link": "https://finance.yahoo.com/markets/live/stock-market-today-monday-august-3-dow-sp-500-nasdaq-big-tech-oil-092516872.html",
-          "published": "2026-08-03T09:25:16Z"
+          "title": "I Ranked Big Tech's AI Spending Four Ways. The Order Never Changed.",
+          "link": "https://finance.yahoo.com/technology/ai/articles/ranked-big-techs-ai-spending-151700234.html",
+          "published": "2026-08-04T15:17:00Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Manufacturing survey shows inflation worries 'worse than pandemic era,' adding to Fed pressure",
+          "link": "https://www.cnbc.com/2026/08/03/manufacturing-survey-shows-inflation-worries-adding-to-pressure-on-fed.html",
+          "published": "Tue, 04 Aug 2026 14:42:39 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "As Warsh’s Fed faces pressure to act on inflation, these indicators show it’s at its lowest in years",
@@ -86,12 +92,6 @@
           "title": "Singapore tightens monetary policy in surprise move as rising oil prices rekindle inflation risk",
           "link": "https://www.cnbc.com/2026/07/27/singapore-mas-july-monetary-policy-middle-east-oil-prices-inflation-.html",
           "published": "Mon, 27 Jul 2026 14:22:15 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Trump's new global tariff draws rebukes from trade partners over forced labor justification",
-          "link": "https://www.cnbc.com/2026/07/24/trump-global-tariffs-trade-imbalance-forced-labor.html",
-          "published": "Fri, 24 Jul 2026 12:09:09 GMT"
         }
       ]
     }
