@@ -1,62 +1,74 @@
 {
-  "updated": "2026-08-04T15:33:09Z",
+  "updated": "2026-08-05T15:25:26Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Bessent says there may be deal Tuesday or Wednesday to open Strait of Hormuz with 'freedom of movement'",
-          "link": "https://www.cnbc.com/2026/08/04/bessent-says-there-may-be-deal-tuesday-or-wednesday-to-open-strait-of-hormuz-with-freedom-of-movement.html",
-          "published": "Tue, 04 Aug 2026 14:00:55 GMT"
+          "title": "Situational Awareness hedge fund meltdown was a warning shot for leveraged markets, BofA CEO says",
+          "link": "https://www.cnbc.com/2026/08/05/bofa-brian-moynihan-situational-awareness-meltdown-was-a-warning-shot.html",
+          "published": "Wed, 05 Aug 2026 15:24:59 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Procter & Gamble will acquire supplements brand Thorne, CEO tells CNBC",
-          "link": "https://www.cnbc.com/2026/08/04/procter-gamble-will-acquire-supplements-brand-thorne.html",
-          "published": "Tue, 04 Aug 2026 15:29:56 GMT"
+          "title": "Trump admin refunds $100 billion in 'liberation day' tariffs",
+          "link": "https://www.cnbc.com/2026/08/05/trump-tariffs-refunds-ieepa-lawsuit.html",
+          "published": "Wed, 05 Aug 2026 14:46:54 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Jeff Bezos just filed to sell $4 billion in Amazon. The shares are falling",
-          "link": "https://www.cnbc.com/2026/08/04/jeff-bezos-just-filed-to-sell-4-billion-in-amazon-the-shares-are-falling.html",
-          "published": "Tue, 04 Aug 2026 15:09:11 GMT"
+          "title": "Abdul El-Sayed wins Michigan Democratic Senate primary as voters pivot to the left",
+          "link": "https://www.cnbc.com/2026/08/04/abdul-el-sayed-haley-stevens-michigan-primary.html",
+          "published": "Wed, 05 Aug 2026 15:02:36 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "New Jersey sues Amazon on antitrust grounds, alleging it unlawfully wielded its power over delivery contractors",
-          "link": "https://www.cnbc.com/2026/08/04/nj-amazon-antitrust-lawsuit-delivery-contractors.html",
-          "published": "Tue, 04 Aug 2026 15:16:35 GMT"
+          "title": "Bank of America spends $250 million a year on GLP-1 drugs for its employees, CEO says",
+          "link": "https://www.cnbc.com/2026/08/05/bank-of-america-ceo-glp-1-drugs-cost.html",
+          "published": "Wed, 05 Aug 2026 14:59:45 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Blanche approved by Judiciary Committee, sending Trump's AG nominee to full Senate vote",
-          "link": "https://www.cnbc.com/2026/08/04/todd-blanche-weaponization-fund-senate-confirmation.html",
-          "published": "Tue, 04 Aug 2026 15:17:56 GMT"
+          "title": "Fed's Kashkari says 'now is the time to start slowly moving' rates up",
+          "link": "https://www.cnbc.com/2026/08/05/feds-kashkari-says-now-is-the-time-to-start-slowly-moving-rates-up.html",
+          "published": "Wed, 05 Aug 2026 13:06:35 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Palantir jumps 27% on 'otherworldly' commercial revenue — here's what's driving the demand",
-          "link": "https://www.cnbc.com/2026/08/04/palantir-2q-earnings-ai-sovereign-tools.html",
-          "published": "Tue, 04 Aug 2026 14:47:13 GMT"
+          "title": "Amazon's Zoox to launch paid robotaxi service in Las Vegas on Aug. 10",
+          "link": "https://www.cnbc.com/2026/08/05/amazon-zoox-paid-robotaxi-rides-las-vegas.html",
+          "published": "Wed, 05 Aug 2026 15:00:18 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Tech stocks today: SpaceX, AMD to report earnings after the bell",
-          "link": "https://finance.yahoo.com/technology/live/tech-stocks-today-spacex-amd-to-report-earnings-after-the-bell-140419479.html",
-          "published": "2026-08-03T14:04:19Z"
+          "title": "If you invested $1,000 in gold, Bitcoin and $TRUMP on Inauguration Day, here is what each is worth today",
+          "link": "https://finance.yahoo.com/markets/crypto/articles/invested-1-000-gold-bitcoin-150000514.html",
+          "published": "2026-08-04T15:00:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "I Ranked Big Tech's AI Spending Four Ways. The Order Never Changed.",
-          "link": "https://finance.yahoo.com/technology/ai/articles/ranked-big-techs-ai-spending-151700234.html",
-          "published": "2026-08-04T15:17:00Z"
+          "title": "Uber stock drops as bookings guidance disappoints; CEO bets on robotaxi push to grow overall business",
+          "link": "https://finance.yahoo.com/markets/stocks/article/uber-stock-drops-as-bookings-guidance-disappoints-ceo-bets-on-robotaxi-push-to-grow-overall-business-150729446.html",
+          "published": "2026-08-05T15:07:29Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Private companies added just 44,000 workers in July, below expectations, ADP reports",
+          "link": "https://www.cnbc.com/2026/08/05/private-companies-added-just-44000-workers-in-july-below-expectations-adp-reports.html",
+          "published": "Wed, 05 Aug 2026 15:08:46 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Europe is blowing up riverbeds as an extreme drought wreaks havoc on its economy",
+          "link": "https://www.cnbc.com/2026/08/05/drought-rhine-danube-water-levels-economy.html",
+          "published": "Wed, 05 Aug 2026 07:15:17 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Manufacturing survey shows inflation worries 'worse than pandemic era,' adding to Fed pressure",
@@ -80,18 +92,6 @@
           "title": "U.S. economy slowed to 1.5% growth rate in Q2; June core inflation at 3.3%",
           "link": "https://www.cnbc.com/2026/07/30/us-economy-slowed-to-1point5percent-growth-rate-in-q2-june-core-inflation-at-3point3percent.html",
           "published": "Thu, 30 Jul 2026 15:04:43 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "What a divided Fed means for investors",
-          "link": "https://www.cnbc.com/2026/07/29/fed-meeting-interest-rates-warsh-stocks-bonds.html",
-          "published": "Wed, 29 Jul 2026 23:36:34 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Singapore tightens monetary policy in surprise move as rising oil prices rekindle inflation risk",
-          "link": "https://www.cnbc.com/2026/07/27/singapore-mas-july-monetary-policy-middle-east-oil-prices-inflation-.html",
-          "published": "Mon, 27 Jul 2026 14:22:15 GMT"
         }
       ]
     }
