@@ -1,9 +1,9 @@
 {
-  "updated": "2026-08-06T15:25:37Z",
+  "updated": "2026-08-07T14:17:39Z",
   "overall_status": "tripwire",
   "executive_summary": {
     "text": "Overall status is Tripwire / Watch. Across the dashboard: 7 healthy, 1 tripwire, 0 stress. Biggest YoY moves: Revolving Consumer Credit (Δ 1y: +44485B (+3.4%)); Initial Jobless Claims (Δ 1y: -20000K (-9.1%)); Net Charge-off Rate (Δ 1y: -0.62pp (-13.9%)).",
-    "updated": "2026-08-06T15:25:37Z",
+    "updated": "2026-08-07T14:17:39Z",
     "overall": "tripwire"
   },
   "kpis": [
@@ -285,16 +285,15 @@
       "unit": "pct",
       "status": "healthy",
       "status_label": "Healthy",
-      "value": 4.2,
-      "value_str": "4.20%",
-      "as_of": "Jun 2026",
-      "avg10": 4.555833333333331,
-      "avg_str": "4.56%",
-      "delta_abs": 0.10000000000000053,
-      "delta_pct": 0.024390243902439157,
-      "delta_str": "Δ 1y: +0.10pp (+2.4%)",
+      "value": 4.1,
+      "value_str": "4.10%",
+      "as_of": "Jul 2026",
+      "avg10": 4.5491666666666655,
+      "avg_str": "4.55%",
+      "delta_abs": -0.20000000000000018,
+      "delta_pct": -0.046511627906976785,
+      "delta_str": "Δ 1y: -0.20pp (-4.7%)",
       "spark": [
-        4.1,
         4.2,
         4.2,
         4.1,
@@ -317,7 +316,8 @@
         4.3,
         4.3,
         4.3,
-        4.2
+        4.2,
+        4.1
       ],
       "definition": "Headline unemployment rate (U-3).",
       "why": "Rising unemployment tends to worsen credit performance."
@@ -18748,6 +18748,11 @@
           "date": "2026-06-01",
           "value": 4.2,
           "value_str": "4.20%"
+        },
+        {
+          "date": "2026-07-01",
+          "value": 4.1,
+          "value_str": "4.10%"
         }
       ],
       "bench_points": [
@@ -22470,9 +22475,13 @@
         {
           "date": "2026-06-01",
           "value": 4.555833333333334
+        },
+        {
+          "date": "2026-07-01",
+          "value": 4.549166666666666
         }
       ],
-      "summary_text": "Latest: 4.20% (Healthy). Δ 1y: +0.10pp (+2.4%)."
+      "summary_text": "Latest: 4.10% (Healthy). Δ 1y: -0.20pp (-4.7%)."
     },
     {
       "key": "ICSA_thou",
@@ -61627,6 +61636,7 @@
     "2026-06-13",
     "2026-06-20",
     "2026-06-27",
+    "2026-07-01",
     "2026-07-04",
     "2026-07-11",
     "2026-07-18",
