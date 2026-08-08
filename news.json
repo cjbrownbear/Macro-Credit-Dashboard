@@ -1,56 +1,56 @@
 {
-  "updated": "2026-08-07T14:17:40Z",
+  "updated": "2026-08-08T13:54:22Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "U.S. economy unexpectedly lost 23,000 jobs in July",
-          "link": "https://www.cnbc.com/2026/08/07/jobs-report-july-2026.html",
-          "published": "Fri, 07 Aug 2026 13:40:19 GMT"
+          "title": "Berkshire earnings rose last quarter and CEO Greg Abel is starting to deploy Buffett's massive cash hoard",
+          "link": "https://www.cnbc.com/2026/08/08/berkshire-hathaway-earnings-q2-2026.html",
+          "published": "Sat, 08 Aug 2026 13:28:00 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Shares of this digital medical platform were up more than 100% at one point. Here's what's driving it",
-          "link": "https://www.cnbc.com/2026/08/07/doximity-shares-double-heres-whats-driving-it-.html",
-          "published": "Fri, 07 Aug 2026 13:49:51 GMT"
+          "title": "Hugging Face hack marks start of dangerous AI cyber era and many firms 'don't even know it'",
+          "link": "https://www.cnbc.com/2026/08/08/hugging-face-ai-hack-cybersecurity-black-hat.html",
+          "published": "Sat, 08 Aug 2026 12:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Iran's chief negotiator accuses Trump of 'theater diplomacy' with Hormuz traffic near standstill",
-          "link": "https://www.cnbc.com/2026/08/07/us-iran-war-trump-hormuz-diplomacy-oil-.html",
-          "published": "Fri, 07 Aug 2026 14:06:10 GMT"
+          "title": "UAE says one of its ships was targeted by missile as U.S.-Iran tensions over Strait of Hormuz remain high",
+          "link": "https://www.cnbc.com/2026/08/08/uae-ship-targeted-missile-us-iran-tensions-stay-high.html",
+          "published": "Sat, 08 Aug 2026 13:06:30 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Companies scoff at airlines' cheapest business class tickets. 'The real value is flexibility'",
-          "link": "https://www.cnbc.com/2026/08/07/business-business-premium-fares.html",
-          "published": "Fri, 07 Aug 2026 12:15:42 GMT"
+          "title": "Cyclospora fears lead consumers to lose their appetite for salads",
+          "link": "https://www.cnbc.com/2026/08/08/cyclospora-salads-lettuce-restaurants.html",
+          "published": "Sat, 08 Aug 2026 12:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "GAO finds Elon Musk's DOGE inflated claims of $110 billion in savings for federal government",
-          "link": "https://www.cnbc.com/2026/08/06/doge-elon-musk-gao-government-cost-cuts.html",
-          "published": "Thu, 06 Aug 2026 22:19:52 GMT"
+          "title": "Inside the startup drone maker powering Ukraine's deep-strike campaign",
+          "link": "https://www.cnbc.com/2026/08/08/ukraine-russia-war-fire-point-drones.html",
+          "published": "Sat, 08 Aug 2026 05:21:12 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "SK Hynix to invest $38 billion building new memory chip plants as demand soars",
-          "link": "https://www.cnbc.com/2026/08/07/sk-hynix-memory-chips-ai-prices.html",
-          "published": "Fri, 07 Aug 2026 09:02:59 GMT"
+          "title": "Elevator giant Otis wants to be a defensive play in an volatile market. It has to prove itself first",
+          "link": "https://www.cnbc.com/2026/08/08/elevator-giant-otis-stock-wall-street.html",
+          "published": "Sat, 08 Aug 2026 12:00:01 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Clive Owen bolsters consulting services with new hire",
-          "link": "https://finance.yahoo.com/small-business/articles/clive-owen-bolsters-consulting-services-140545531.html",
-          "published": "2026-08-07T14:05:45Z"
+          "title": "Palantir CEO drops 11-word bombshell for stock market investors",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/palantir-ceo-drops-11-word-160300224.html",
+          "published": "2026-08-07T16:03:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Tech stocks today: SpaceX lockup ends, Google faces AI leadership shakeup",
-          "link": "https://finance.yahoo.com/technology/live/tech-stocks-today-spacex-lockup-ends-google-faces-ai-leadership-shakeup-140419479.html",
-          "published": "2026-08-03T14:04:19Z"
+          "title": "Berkshire Hathaway's new CEO Greg Abel spends a chunk of the company's massive cashpile",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/berkshire-hathaways-ceo-greg-abel-132932802.html",
+          "published": "2026-08-08T13:29:32Z"
         }
       ]
     },
@@ -59,9 +59,15 @@
       "items": [
         {
           "source": "CNBC Economy",
+          "title": "Here are three key takeaways from the disappointing July jobs report",
+          "link": "https://www.cnbc.com/2026/08/07/here-are-three-key-takeaways-from-the-disappointing-july-jobs-report.html",
+          "published": "Fri, 07 Aug 2026 18:09:18 GMT"
+        },
+        {
+          "source": "CNBC Economy",
           "title": "U.S. economy unexpectedly lost 23,000 jobs in July",
           "link": "https://www.cnbc.com/2026/08/07/jobs-report-july-2026.html",
-          "published": "Fri, 07 Aug 2026 13:40:19 GMT"
+          "published": "Fri, 07 Aug 2026 19:14:22 GMT"
         },
         {
           "source": "CNBC Economy",
@@ -86,12 +92,6 @@
           "title": "Manufacturing survey shows inflation worries 'worse than pandemic era,' adding to Fed pressure",
           "link": "https://www.cnbc.com/2026/08/03/manufacturing-survey-shows-inflation-worries-adding-to-pressure-on-fed.html",
           "published": "Tue, 04 Aug 2026 14:42:39 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "As Warsh’s Fed faces pressure to act on inflation, these indicators show it’s at its lowest in years",
-          "link": "https://www.cnbc.com/2026/07/31/these-fed-alternative-indicators-show-inflation-is-at-lowest-in-years.html",
-          "published": "Fri, 31 Jul 2026 16:51:30 GMT"
         }
       ]
     }
