@@ -1,62 +1,80 @@
 {
-  "updated": "2026-08-11T14:31:27Z",
+  "updated": "2026-08-12T14:31:43Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Wall Street just endorsed Jensen Huang's 'big concept' for AI. What now?",
-          "link": "https://www.cnbc.com/2026/08/11/wall-street-endorsed-jensen-huangs-big-concept-for-ai-what-now.html",
-          "published": "Tue, 11 Aug 2026 14:11:05 GMT"
+          "title": "Consumer prices rose 0.1% in July, as expected, putting the annual rate at 3.4%",
+          "link": "https://www.cnbc.com/2026/08/12/cpi-inflation-report-july-2026.html",
+          "published": "Wed, 12 Aug 2026 14:27:35 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Pakistan signals progress on U.S.-Iran deal as Washington and Tehran trade reparation demands",
-          "link": "https://www.cnbc.com/2026/08/11/us-iran-war-trump-hormuz-control-reparation-talks-.html",
-          "published": "Tue, 11 Aug 2026 13:48:36 GMT"
+          "title": "Mortgage rates finally stop rising, causing demand to trickle back",
+          "link": "https://www.cnbc.com/2026/08/12/mortgage-rates-finally-stop-rising-causing-demand-to-trickle-back-.html",
+          "published": "Wed, 12 Aug 2026 14:28:39 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Intel upsizes stock offering to $20 billion at $95 per share as AI demand accelerates",
-          "link": "https://www.cnbc.com/2026/08/10/intel-intc-stock-offering-ai.html",
-          "published": "Tue, 11 Aug 2026 07:17:00 GMT"
+          "title": "Google’s new Pixel 11 puts Gemini at center of AI phone battle with Apple",
+          "link": "https://www.cnbc.com/2026/08/12/google-pixel-11-gemini-ai-phone-apple.html",
+          "published": "Wed, 12 Aug 2026 14:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Polymarket makes moves to get house in order before expected boom times for prediction markets this fall",
-          "link": "https://www.cnbc.com/2026/08/11/polymarket-revamps-marketing-expands-us-hiring-ahead-of-fall-events.html",
-          "published": "Tue, 11 Aug 2026 14:15:33 GMT"
+          "title": "Trust, but hedge: Quietly violent summer lingers as bulls buy crash protection",
+          "link": "https://www.cnbc.com/2026/08/12/trust-but-hedge-quietly-violent-summer-lingers-as-bulls-buy-crash-protection.html",
+          "published": "Wed, 12 Aug 2026 13:59:17 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Baby products company Frida is expanding into kids’ personal care",
-          "link": "https://www.cnbc.com/2026/08/11/frida-kids-personal-care.html",
-          "published": "Tue, 11 Aug 2026 12:00:02 GMT"
+          "title": "Houthi attack kills six in first fatalities in Red Sea in over a year; U.S. strikes container ship",
+          "link": "https://www.cnbc.com/2026/08/12/us-iran-war-trump-hormuz-houthi-attack-blockade-.html",
+          "published": "Wed, 12 Aug 2026 12:28:39 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Zelenskyy warns Putin is preparing for escalation by bringing in North Korean military equipment",
-          "link": "https://www.cnbc.com/2026/08/11/ukraine-war-zelenskyy-russia-putin-north-korea.html",
-          "published": "Tue, 11 Aug 2026 12:55:25 GMT"
+          "title": "CoreWeave surges 18% after a 'cleaner quarter.' Here's what's happening",
+          "link": "https://www.cnbc.com/2026/08/12/coreweave-q2-earnings-ai-demand.html",
+          "published": "Wed, 12 Aug 2026 14:16:48 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Wesley Batista, son of JBS founder, returns as group CEO",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/wesley-batista-son-jbs-founder-105924302.html",
-          "published": "2026-08-11T14:23:40Z"
+          "title": "Ray Dalio: The AI investment game is happening — here's how to play",
+          "link": "https://finance.yahoo.com/markets/articles/ray-dalio-the-ai-investment-game-is-happening--heres-how-to-play-134808570.html",
+          "published": "2026-08-12T13:48:08Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Tech stocks today: CoreWeave and Supermicro to report results, Intel to upsizes stock sale",
-          "link": "https://finance.yahoo.com/technology/live/tech-stocks-today-coreweave-and-supermicro-to-report-results-intel-to-upsizes-stock-sale-135605566.html",
-          "published": "2026-08-10T13:56:05Z"
+          "title": "AI infrastructure stocks surge after strong earnings from CoreWeave, Supermicro",
+          "link": "https://finance.yahoo.com/markets/article/ai-infrastructure-stocks-surge-after-strong-earnings-from-coreweave-supermicro-142304399.html",
+          "published": "2026-08-12T14:23:04Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Consumer prices rose 0.1% in July, as expected, putting the annual rate at 3.4%",
+          "link": "https://www.cnbc.com/2026/08/12/cpi-inflation-report-july-2026.html",
+          "published": "Wed, 12 Aug 2026 14:27:35 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "AI’s costly build-out complicates the Fed’s inflation fight",
+          "link": "https://www.cnbc.com/2026/08/12/ais-costly-buildout-complicates-the-feds-inflation-fight.html",
+          "published": "Wed, 12 Aug 2026 14:21:10 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "An inflation report Wednesday should be a big deal for the Fed. Here's what to expect",
+          "link": "https://www.cnbc.com/2026/08/11/an-inflation-report-wednesday-should-be-a-big-deal-for-the-fed-heres-what-to-expect.html",
+          "published": "Wed, 12 Aug 2026 14:04:06 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Here are three key takeaways from the disappointing July jobs report",
@@ -74,24 +92,6 @@
           "title": "The July jobs numbers are due out Friday. Here's what to expect",
           "link": "https://www.cnbc.com/2026/08/06/the-july-jobs-numbers-are-due-out-friday-heres-what-to-expect.html",
           "published": "Fri, 07 Aug 2026 11:23:07 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Private companies added just 44,000 workers in July, below expectations, ADP reports",
-          "link": "https://www.cnbc.com/2026/08/05/private-companies-added-just-44000-workers-in-july-below-expectations-adp-reports.html",
-          "published": "Wed, 05 Aug 2026 15:08:46 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Europe is blowing up riverbeds as an extreme drought wreaks havoc on its economy",
-          "link": "https://www.cnbc.com/2026/08/05/drought-rhine-danube-water-levels-economy.html",
-          "published": "Wed, 05 Aug 2026 07:15:17 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Manufacturing survey shows inflation worries 'worse than pandemic era,' adding to Fed pressure",
-          "link": "https://www.cnbc.com/2026/08/03/manufacturing-survey-shows-inflation-worries-adding-to-pressure-on-fed.html",
-          "published": "Tue, 04 Aug 2026 14:42:39 GMT"
         }
       ]
     }
