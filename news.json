@@ -1,62 +1,68 @@
 {
-  "updated": "2026-08-17T13:51:14Z",
+  "updated": "2026-08-18T13:54:46Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "OpenAI's Brockman brushes off concerns about leadership changes in CNBC exclusive",
-          "link": "https://www.cnbc.com/2026/08/17/openai-brockman-leadership-changes.html",
-          "published": "Mon, 17 Aug 2026 13:33:04 GMT"
+          "title": "30-year Treasury yield tops 5.33%, new 19-year high on inflation, spending concerns",
+          "link": "https://www.cnbc.com/2026/08/18/treasury-yields-.html",
+          "published": "Tue, 18 Aug 2026 13:13:10 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Meta faces ‘astronomical’ consequences as legal fight reaches critical moment in California",
-          "link": "https://www.cnbc.com/2026/08/17/meta-attorneys-general-california-federal-trial-astronomical-consequences.html",
-          "published": "Mon, 17 Aug 2026 13:23:20 GMT"
+          "title": "Disney-owned ABC files First Amendment lawsuit against FCC",
+          "link": "https://www.cnbc.com/2026/08/18/disney-abc-first-amendment-lawsuit-fcc.html",
+          "published": "Tue, 18 Aug 2026 13:46:28 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Oil prices rise as Iran rules out interim deal extension, threatens to escalate conflict",
-          "link": "https://www.cnbc.com/2026/08/17/oil-prices-iran-war-strait-hormuz.html",
-          "published": "Mon, 17 Aug 2026 13:17:15 GMT"
+          "title": "Home Depot reaffirms guidance amid 'frozen housing market conditions'",
+          "link": "https://www.cnbc.com/2026/08/18/home-depot-hd-q2-2026-earnings.html",
+          "published": "Tue, 18 Aug 2026 13:43:28 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump threatens to 'bomb' Oman if it 'gets in the way' as U.S.-Iran ceasefire expires",
-          "link": "https://www.cnbc.com/2026/08/17/us-iran-war-trump-hormuz.html",
-          "published": "Mon, 17 Aug 2026 12:34:07 GMT"
+          "title": "American Airlines to add seatback screens, bigger first class in race to catch up to Delta and United",
+          "link": "https://www.cnbc.com/2026/08/18/american-airlines-seatback-screens.html",
+          "published": "Tue, 18 Aug 2026 13:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "'Don't get too comfortable': Wall Street’s ‘fear gauge’ hits 2026 low — here's why it's unlikely to last",
-          "link": "https://www.cnbc.com/2026/08/17/stock-market-volatility-vix-wall-street.html",
-          "published": "Mon, 17 Aug 2026 12:41:58 GMT"
+          "title": "Contrarian vs. the crowd: One trader made a massive bet against chip stocks",
+          "link": "https://www.cnbc.com/2026/08/18/contrarian-vs-the-crowd-one-trader-made-a-massive-bet-against-chip-stocks.html",
+          "published": "Tue, 18 Aug 2026 13:13:13 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "What will TV look like in three years? Media insiders share their predictions",
-          "link": "https://www.cnbc.com/2026/08/17/tv-media-insiders-predictions.html",
-          "published": "Mon, 17 Aug 2026 11:00:01 GMT"
+          "title": "Primary election season rolls into Alaska, Florida and Wyoming",
+          "link": "https://www.cnbc.com/2026/08/18/primary-elections-alaska-florida-wyoming-midterms.html",
+          "published": "Tue, 18 Aug 2026 13:34:30 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Billionaire Bill Ackman doubles down on these stocks in Q2",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/billionaire-bill-ackman-doubles-down-020300181.html",
-          "published": "2026-08-16T02:03:00Z"
+          "title": "Bankrupt Italian chain shuts 50 restaurants, exits state entirely",
+          "link": "https://finance.yahoo.com/small-business/articles/bankrupt-italian-chain-shuts-50-230000785.html",
+          "published": "2026-08-17T23:00:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Stock market today: Dow, S&P 500, Nasdaq trade mixed ahead of retail earnings",
-          "link": "https://finance.yahoo.com/markets/live/stock-market-today-monday-august-17-dow-sp-500-nasdaq-094421171.html",
-          "published": "2026-08-17T09:44:21Z"
+          "title": "Stock market today: Nasdaq leads Dow and S&P 500 lower as rising Treasury yields weigh on tech stocks",
+          "link": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-august-18-dow-sp-500-nasdaq-080822735.html",
+          "published": "2026-08-18T08:08:22Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Russia says its economy is strong. It just fired a top economist who warned otherwise",
+          "link": "https://www.cnbc.com/2026/08/18/ukraine-war-russia-economy-klepach.html",
+          "published": "Tue, 18 Aug 2026 11:51:15 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Wholesale prices were flat in July, below expectations for 0.2% increase",
@@ -86,12 +92,6 @@
           "title": "Here are five key takeaways from the July CPI inflation report",
           "link": "https://www.cnbc.com/2026/08/12/here-are-five-key-takeaways-from-the-july-cpi-inflation-report.html",
           "published": "Wed, 12 Aug 2026 17:14:09 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Consumer prices rose 0.1% in July, as expected, putting the annual rate at 3.4%",
-          "link": "https://www.cnbc.com/2026/08/12/cpi-inflation-report-july-2026.html",
-          "published": "Fri, 14 Aug 2026 14:53:13 GMT"
         }
       ]
     }
