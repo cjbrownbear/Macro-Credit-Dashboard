@@ -1,14 +1,26 @@
 {
-  "updated": "2026-08-22T13:42:50Z",
+  "updated": "2026-08-23T13:43:47Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Meta is the latest tech giant to land in her courtroom. Meet Judge Yvonne Gonzalez Rogers",
-          "link": "https://www.cnbc.com/2026/08/22/meet-yvonne-gonzalez-rogers-judge-taking-on-meta.html",
-          "published": "Sat, 22 Aug 2026 12:12:03 GMT"
+          "title": "After 10 years at United, CEO Scott Kirby is thinking big about the future of his airline from JFK to AI",
+          "link": "https://www.cnbc.com/2026/08/23/united-airlines-ceo-scott-kirby.html",
+          "published": "Sun, 23 Aug 2026 12:00:01 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "Wells Fargo and Citigroup have room to buy a big bank. These 5 regionals fit the bill",
+          "link": "https://www.cnbc.com/2026/08/23/wells-fargo-citigroup-deals-regional-banks.html",
+          "published": "Sun, 23 Aug 2026 12:00:01 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "Trump reshuffled his portfolio in June, selling names like Meta and buying Berkshire Hathaway",
+          "link": "https://www.cnbc.com/2026/08/22/trump-reshuffled-his-portfolio-in-june-selling-names-like-meta-and-buying-berkshire-hathaway.html",
+          "published": "Sat, 22 Aug 2026 18:57:46 GMT"
         },
         {
           "source": "CNBC Top News",
@@ -18,39 +30,27 @@
         },
         {
           "source": "CNBC Top News",
-          "title": "Ahead of tough new U.S. sanctions, Iran criticizes 'extraterritorial sovereignty'",
-          "link": "https://www.cnbc.com/2026/08/22/iran-criticizes-us-sanctions-extraterritorial-sovereignty.html",
-          "published": "Sat, 22 Aug 2026 10:34:23 GMT"
+          "title": "As U.S.-Canada trade talks collapse, Carney says retaliatory tariffs will start Sept. 8",
+          "link": "https://www.cnbc.com/2026/08/22/us-canada-trade-talks-collapse-ushering-in-wave-of-new-tariffs.html",
+          "published": "Sun, 23 Aug 2026 06:39:00 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Warren Buffett Watch: It's Buffett, not Abel, who appears to be calling the shots on stocks",
-          "link": "https://www.cnbc.com/2026/08/22/warren-buffett-not-greg-abel-appears-to-still-be-calling-the-shots-on-stocks.html",
-          "published": "Sat, 22 Aug 2026 12:06:37 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "Why some of America's biggest brands are losing ground in China",
-          "link": "https://www.cnbc.com/2026/08/21/us-brands-china-competition.html",
-          "published": "Fri, 21 Aug 2026 18:31:41 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "Six investors reveal the biggest market risks — and one strategy they agree on",
-          "link": "https://www.cnbc.com/2026/08/22/investors-market-risks-diversification-stocks-kospi.html",
-          "published": "Sat, 22 Aug 2026 05:00:01 GMT"
+          "title": "Top Wall Street analysts believe in the growth potential of these 3 stocks",
+          "link": "https://www.cnbc.com/2026/08/23/top-analysts-believe-in-the-growth-potential-of-these-3-stocks.html",
+          "published": "Sun, 23 Aug 2026 11:29:05 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Hyundai considers Georgia Metaplant expansion to 800,000 units",
-          "link": "https://finance.yahoo.com/economy/policy/articles/hyundai-considers-georgia-metaplant-expansion-112106415.html",
-          "published": "2026-08-21T11:21:06Z"
+          "title": "Iconic fast-food fried chicken chain closes over 300 restaurants",
+          "link": "https://finance.yahoo.com/small-business/articles/iconic-fast-food-fried-chicken-184700958.html",
+          "published": "2026-08-22T18:47:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "India Leaves the Door Ajar for China’s Investors",
-          "link": "https://finance.yahoo.com/economy/policy/articles/india-leaves-door-ajar-china-123300050.html",
-          "published": "2026-08-22T12:33:00Z"
+          "title": "Millions of US seniors could lose full Social Security COLAs. New proposal may preserve program, but here’s who loses",
+          "link": "https://finance.yahoo.com/economy/policy/articles/millions-us-seniors-could-lose-120000693.html",
+          "published": "2026-08-22T12:00:00Z"
         }
       ]
     },
