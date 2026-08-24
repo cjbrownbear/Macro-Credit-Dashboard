@@ -1,62 +1,80 @@
 {
-  "updated": "2026-08-23T13:43:47Z",
+  "updated": "2026-08-24T13:59:47Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "After 10 years at United, CEO Scott Kirby is thinking big about the future of his airline from JFK to AI",
-          "link": "https://www.cnbc.com/2026/08/23/united-airlines-ceo-scott-kirby.html",
-          "published": "Sun, 23 Aug 2026 12:00:01 GMT"
+          "title": "Trump says U.S. will hike Canada auto tariffs to 50% as trade war escalates",
+          "link": "https://www.cnbc.com/2026/08/24/trump-canada-auto-tariffs-trade-war.html",
+          "published": "Mon, 24 Aug 2026 13:59:26 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Wells Fargo and Citigroup have room to buy a big bank. These 5 regionals fit the bill",
-          "link": "https://www.cnbc.com/2026/08/23/wells-fargo-citigroup-deals-regional-banks.html",
-          "published": "Sun, 23 Aug 2026 12:00:01 GMT"
+          "title": "Bessent could tap near $1 trillion Treasury General Account to fund bond buybacks, sources said",
+          "link": "https://www.cnbc.com/2026/08/24/bessent-1-trillion-treasury-general-account-bond-buybacks.html",
+          "published": "Mon, 24 Aug 2026 13:17:35 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump reshuffled his portfolio in June, selling names like Meta and buying Berkshire Hathaway",
-          "link": "https://www.cnbc.com/2026/08/22/trump-reshuffled-his-portfolio-in-june-selling-names-like-meta-and-buying-berkshire-hathaway.html",
-          "published": "Sat, 22 Aug 2026 18:57:46 GMT"
+          "title": "California AG Rob Bonta cancels Paramount settlement meeting, citing 'lack of good faith'",
+          "link": "https://www.cnbc.com/2026/08/24/california-ag-bonta-paramount-settlement-meeting.html",
+          "published": "Mon, 24 Aug 2026 13:33:29 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Inside Coca-Cola’s secretive innovation labs: How the beverage giant wants to automate dirty soda and refreshers",
-          "link": "https://www.cnbc.com/2026/08/22/coca-cola-innovation-labs-dirty-sodas-refreshers.html",
-          "published": "Sat, 22 Aug 2026 12:00:01 GMT"
+          "title": "Santoli: Why all the fuss about bond yields is happening now",
+          "link": "https://www.cnbc.com/2026/08/24/why-all-the-fuss-about-bond-yields-is-happening-now.html",
+          "published": "Mon, 24 Aug 2026 12:31:13 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "As U.S.-Canada trade talks collapse, Carney says retaliatory tariffs will start Sept. 8",
-          "link": "https://www.cnbc.com/2026/08/22/us-canada-trade-talks-collapse-ushering-in-wave-of-new-tariffs.html",
-          "published": "Sun, 23 Aug 2026 06:39:00 GMT"
+          "title": "Trump Media CEO defends selling faster access to president's Truth Social posts, says more have signed up",
+          "link": "https://www.cnbc.com/2026/08/24/trump-media-ceo-truth-api.html",
+          "published": "Mon, 24 Aug 2026 12:35:50 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Top Wall Street analysts believe in the growth potential of these 3 stocks",
-          "link": "https://www.cnbc.com/2026/08/23/top-analysts-believe-in-the-growth-potential-of-these-3-stocks.html",
-          "published": "Sun, 23 Aug 2026 11:29:05 GMT"
+          "title": "Yields decline on CNBC report Treasury could use General Account to fund buybacks",
+          "link": "https://www.cnbc.com/2026/08/24/treasury-yields-warsh-jackson-hole.html",
+          "published": "Mon, 24 Aug 2026 12:08:42 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Iconic fast-food fried chicken chain closes over 300 restaurants",
-          "link": "https://finance.yahoo.com/small-business/articles/iconic-fast-food-fried-chicken-184700958.html",
-          "published": "2026-08-22T18:47:00Z"
+          "title": "Gold, silver rally off ugly crash, but investors remain on edge",
+          "link": "https://finance.yahoo.com/markets/commodities/articles/gold-silver-rally-off-ugly-013700131.html",
+          "published": "2026-08-24T01:37:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Millions of US seniors could lose full Social Security COLAs. New proposal may preserve program, but here’s who loses",
-          "link": "https://finance.yahoo.com/economy/policy/articles/millions-us-seniors-could-lose-120000693.html",
-          "published": "2026-08-22T12:00:00Z"
+          "title": "Gemini Expands Prediction Market Offering",
+          "link": "https://finance.yahoo.com/markets/crypto/articles/gemini-expands-prediction-market-offering-133800875.html",
+          "published": "2026-08-24T13:38:00Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Bessent could tap near $1 trillion Treasury General Account to fund bond buybacks, sources said",
+          "link": "https://www.cnbc.com/2026/08/24/bessent-1-trillion-treasury-general-account-bond-buybacks.html",
+          "published": "Mon, 24 Aug 2026 13:17:35 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "'They asked too much': Canadian dollar slides as Ottawa and Washington head for all-out trade war",
+          "link": "https://www.cnbc.com/2026/08/24/canada-us-trade-war-deal.html",
+          "published": "Mon, 24 Aug 2026 13:35:08 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Singapore inflation hits highest in nearly two years, but undershoots expectations",
+          "link": "https://www.cnbc.com/2026/08/24/singapore-inflation-budget-iran-war.html",
+          "published": "Mon, 24 Aug 2026 05:24:43 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Bessent's bond gambit aimed at calming markets is instead stirring inflation worries",
@@ -74,24 +92,6 @@
           "title": "Bessent says there's a 'very good chance' U.S. budget deficit under Trump has peaked",
           "link": "https://www.cnbc.com/2026/08/20/bessent-budget-deficit-trump.html",
           "published": "Fri, 21 Aug 2026 13:11:41 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Bessent says Treasury buyback operation could be more than $4 billion",
-          "link": "https://www.cnbc.com/2026/08/20/bessent-says-treasury-buyback-operation-could-be-more-than-4-billion.html",
-          "published": "Thu, 20 Aug 2026 15:35:33 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "U.S. government debt passes $40 trillion, more than doubling in a decade",
-          "link": "https://www.cnbc.com/2026/08/19/us-government-debt-passes-40-trillion-mark-for-the-first-time.html",
-          "published": "Wed, 19 Aug 2026 22:34:33 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Trump bemoans Fed interest rate policy, says U.S. should be paying much less",
-          "link": "https://www.cnbc.com/2026/08/19/trump-bemoans-fed-interest-rate-policy-says-us-should-be-paying-much-less.html",
-          "published": "Wed, 19 Aug 2026 21:29:38 GMT"
         }
       ]
     }
