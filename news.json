@@ -1,62 +1,68 @@
 {
-  "updated": "2026-08-24T13:59:47Z",
+  "updated": "2026-08-25T14:02:00Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Trump says U.S. will hike Canada auto tariffs to 50% as trade war escalates",
-          "link": "https://www.cnbc.com/2026/08/24/trump-canada-auto-tariffs-trade-war.html",
-          "published": "Mon, 24 Aug 2026 13:59:26 GMT"
+          "title": "The 'debasement trade' returns after Bessent bond maneuver. Crypto and gold are back in style",
+          "link": "https://www.cnbc.com/2026/08/25/debasement-trade-debt-gold-bitcoin-dollar.html",
+          "published": "Tue, 25 Aug 2026 13:44:09 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Bessent could tap near $1 trillion Treasury General Account to fund bond buybacks, sources said",
-          "link": "https://www.cnbc.com/2026/08/24/bessent-1-trillion-treasury-general-account-bond-buybacks.html",
-          "published": "Mon, 24 Aug 2026 13:17:35 GMT"
+          "title": "Canada poised to retaliate against Trump tariffs: 'We're not waiting by the phone'",
+          "link": "https://www.cnbc.com/2026/08/25/canada-trump-tariffs-trade-carney-leblanc.html",
+          "published": "Tue, 25 Aug 2026 13:07:35 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "California AG Rob Bonta cancels Paramount settlement meeting, citing 'lack of good faith'",
-          "link": "https://www.cnbc.com/2026/08/24/california-ag-bonta-paramount-settlement-meeting.html",
-          "published": "Mon, 24 Aug 2026 13:33:29 GMT"
+          "title": "China needs U.S. dollars but is building a hedge against Washington’s sanctions",
+          "link": "https://www.cnbc.com/2026/08/25/china-iran-us-sanctions-banks-cips.html",
+          "published": "Tue, 25 Aug 2026 12:42:15 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Santoli: Why all the fuss about bond yields is happening now",
-          "link": "https://www.cnbc.com/2026/08/24/why-all-the-fuss-about-bond-yields-is-happening-now.html",
-          "published": "Mon, 24 Aug 2026 12:31:13 GMT"
+          "title": "Apple announces new Mac Mini and Mac Studio models with AI upgrades",
+          "link": "https://www.cnbc.com/2026/08/25/apple-announces-new-mac-mini-and-mac-studio-models-with-ai-upgrades.html",
+          "published": "Tue, 25 Aug 2026 13:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump Media CEO defends selling faster access to president's Truth Social posts, says more have signed up",
-          "link": "https://www.cnbc.com/2026/08/24/trump-media-ceo-truth-api.html",
-          "published": "Mon, 24 Aug 2026 12:35:50 GMT"
+          "title": "Oil drops 3% as U.S. shifts to economic pressure on Iran, easing fears of renewed war",
+          "link": "https://www.cnbc.com/2026/08/25/oil-prices-iran-trump-hormuz.html",
+          "published": "Tue, 25 Aug 2026 13:29:31 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Yields decline on CNBC report Treasury could use General Account to fund buybacks",
-          "link": "https://www.cnbc.com/2026/08/24/treasury-yields-warsh-jackson-hole.html",
-          "published": "Mon, 24 Aug 2026 12:08:42 GMT"
+          "title": "Nvidia’s dependence on hyperscalers faces big test in earnings report",
+          "link": "https://www.cnbc.com/2026/08/25/nvidias-dependence-on-hyperscalers-faces-big-test-in-earnings-report.html",
+          "published": "Tue, 25 Aug 2026 12:00:01 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Gold, silver rally off ugly crash, but investors remain on edge",
-          "link": "https://finance.yahoo.com/markets/commodities/articles/gold-silver-rally-off-ugly-013700131.html",
-          "published": "2026-08-24T01:37:00Z"
+          "title": "Stanley Druckenmiller and Cathie Wood agree on 2 tech giant stocks",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/stanley-druckenmiller-cathie-wood-agree-191300323.html",
+          "published": "2026-08-24T19:13:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Gemini Expands Prediction Market Offering",
-          "link": "https://finance.yahoo.com/markets/crypto/articles/gemini-expands-prediction-market-offering-133800875.html",
-          "published": "2026-08-24T13:38:00Z"
+          "title": "Investors rotate into tech stocks as inflation concerns ease: AlphaCheck",
+          "link": "https://finance.yahoo.com/markets/article/investors-rotate-into-tech-stocks-as-inflation-concerns-ease-alphacheck-135258775.html",
+          "published": "2026-08-25T13:52:58Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "China needs U.S. dollars but is building a hedge against Washington’s sanctions",
+          "link": "https://www.cnbc.com/2026/08/25/china-iran-us-sanctions-banks-cips.html",
+          "published": "Tue, 25 Aug 2026 12:42:15 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Bessent could tap near $1 trillion Treasury General Account to fund bond buybacks, sources said",
@@ -86,12 +92,6 @@
           "title": "Bessent's efforts in the Treasury market so far haven't worked. Here's what else he can try",
           "link": "https://www.cnbc.com/2026/08/20/bessents-efforts-in-the-treasury-market-so-far-havent-worked-heres-what-else-he-can-try.html",
           "published": "Fri, 21 Aug 2026 12:43:04 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Bessent says there's a 'very good chance' U.S. budget deficit under Trump has peaked",
-          "link": "https://www.cnbc.com/2026/08/20/bessent-budget-deficit-trump.html",
-          "published": "Fri, 21 Aug 2026 13:11:41 GMT"
         }
       ]
     }
