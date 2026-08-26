@@ -1,56 +1,56 @@
 {
-  "updated": "2026-08-25T14:02:00Z",
+  "updated": "2026-08-26T14:02:09Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "The 'debasement trade' returns after Bessent bond maneuver. Crypto and gold are back in style",
-          "link": "https://www.cnbc.com/2026/08/25/debasement-trade-debt-gold-bitcoin-dollar.html",
-          "published": "Tue, 25 Aug 2026 13:44:09 GMT"
+          "title": "Meta settles social media addiction case with California, other states for $16.7 billion",
+          "link": "https://www.cnbc.com/2026/08/26/meta-social-media-trial-settlement.html",
+          "published": "Wed, 26 Aug 2026 13:53:20 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Canada poised to retaliate against Trump tariffs: 'We're not waiting by the phone'",
-          "link": "https://www.cnbc.com/2026/08/25/canada-trump-tariffs-trade-carney-leblanc.html",
-          "published": "Tue, 25 Aug 2026 13:07:35 GMT"
+          "title": "Fed’s preferred inflation gauge shows core prices rose 3.3% annually in July",
+          "link": "https://www.cnbc.com/2026/08/26/feds-preferred-inflation-gauge-shows-core-prices-rose-3point3percent-annually-in-july.html",
+          "published": "Wed, 26 Aug 2026 13:35:50 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "China needs U.S. dollars but is building a hedge against Washington’s sanctions",
-          "link": "https://www.cnbc.com/2026/08/25/china-iran-us-sanctions-banks-cips.html",
-          "published": "Tue, 25 Aug 2026 12:42:15 GMT"
+          "title": "Bill Gates warns ‘there is no plan’ for the ‘upheaval’ AI will cause",
+          "link": "https://www.cnbc.com/2026/08/26/bill-gates-ai-jobs-economic-upheaval.html",
+          "published": "Wed, 26 Aug 2026 13:46:16 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Apple announces new Mac Mini and Mac Studio models with AI upgrades",
-          "link": "https://www.cnbc.com/2026/08/25/apple-announces-new-mac-mini-and-mac-studio-models-with-ai-upgrades.html",
-          "published": "Tue, 25 Aug 2026 13:00:01 GMT"
+          "title": "Dollar and bond markets 'on edge' ahead of Jackson Hole as Bessent's market intervention piles pressure on Warsh",
+          "link": "https://www.cnbc.com/2026/08/26/jackson-hole-warsh-bessent-bonds-treasury-dollar.html",
+          "published": "Wed, 26 Aug 2026 13:35:18 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Oil drops 3% as U.S. shifts to economic pressure on Iran, easing fears of renewed war",
-          "link": "https://www.cnbc.com/2026/08/25/oil-prices-iran-trump-hormuz.html",
-          "published": "Tue, 25 Aug 2026 13:29:31 GMT"
+          "title": "Mark Walter's TWG Global blasts 'attacks,' insists 'no fraud' amid federal probe",
+          "link": "https://www.cnbc.com/2026/08/26/mark-walter-twg-guggenheim-lakers.html",
+          "published": "Wed, 26 Aug 2026 13:54:11 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Nvidia’s dependence on hyperscalers faces big test in earnings report",
-          "link": "https://www.cnbc.com/2026/08/25/nvidias-dependence-on-hyperscalers-faces-big-test-in-earnings-report.html",
-          "published": "Tue, 25 Aug 2026 12:00:01 GMT"
+          "title": "OpenAI’s Jalapeño AI chip brings new 'threat' to Nvidia margins as custom silicon gains ground",
+          "link": "https://www.cnbc.com/2026/08/26/openai-jalapeno-ai-chip-nvidia.html",
+          "published": "Wed, 26 Aug 2026 13:27:35 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Stanley Druckenmiller and Cathie Wood agree on 2 tech giant stocks",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/stanley-druckenmiller-cathie-wood-agree-191300323.html",
-          "published": "2026-08-24T19:13:00Z"
+          "title": "Louis Navellier has blunt message on Nvidia’s reign before earnings",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/louis-navellier-blunt-message-nvidia-214700439.html",
+          "published": "2026-08-25T21:47:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Investors rotate into tech stocks as inflation concerns ease: AlphaCheck",
-          "link": "https://finance.yahoo.com/markets/article/investors-rotate-into-tech-stocks-as-inflation-concerns-ease-alphacheck-135258775.html",
-          "published": "2026-08-25T13:52:58Z"
+          "title": "U.S. State Banking Associations To Launch Blockchain Network",
+          "link": "https://finance.yahoo.com/markets/crypto/articles/u-state-banking-associations-launch-134500669.html",
+          "published": "2026-08-26T13:45:00Z"
         }
       ]
     },
@@ -59,9 +59,21 @@
       "items": [
         {
           "source": "CNBC Economy",
+          "title": "Fed’s preferred inflation gauge shows core prices rose 3.3% annually in July",
+          "link": "https://www.cnbc.com/2026/08/26/feds-preferred-inflation-gauge-shows-core-prices-rose-3point3percent-annually-in-july.html",
+          "published": "Wed, 26 Aug 2026 13:35:50 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Stanley Druckenmiller leads doubters who think Bessent's bond ploys will fail",
+          "link": "https://www.cnbc.com/2026/08/25/stanley-druckenmiller-leads-doubters-who-think-bessents-bond-ploys-will-fail.html",
+          "published": "Tue, 25 Aug 2026 17:15:50 GMT"
+        },
+        {
+          "source": "CNBC Economy",
           "title": "China needs U.S. dollars but is building a hedge against Washington’s sanctions",
           "link": "https://www.cnbc.com/2026/08/25/china-iran-us-sanctions-banks-cips.html",
-          "published": "Tue, 25 Aug 2026 12:42:15 GMT"
+          "published": "Tue, 25 Aug 2026 16:00:40 GMT"
         },
         {
           "source": "CNBC Economy",
@@ -80,18 +92,6 @@
           "title": "Singapore inflation hits highest in nearly two years, but undershoots expectations",
           "link": "https://www.cnbc.com/2026/08/24/singapore-inflation-budget-iran-war.html",
           "published": "Mon, 24 Aug 2026 05:24:43 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Bessent's bond gambit aimed at calming markets is instead stirring inflation worries",
-          "link": "https://www.cnbc.com/2026/08/21/bessents-bond-gambit-aimed-at-calming-markets-is-instead-stirring-inflation-worries-.html",
-          "published": "Fri, 21 Aug 2026 17:51:10 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Bessent's efforts in the Treasury market so far haven't worked. Here's what else he can try",
-          "link": "https://www.cnbc.com/2026/08/20/bessents-efforts-in-the-treasury-market-so-far-havent-worked-heres-what-else-he-can-try.html",
-          "published": "Fri, 21 Aug 2026 12:43:04 GMT"
         }
       ]
     }
