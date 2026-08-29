@@ -1,62 +1,68 @@
 {
-  "updated": "2026-08-28T23:01:23Z",
+  "updated": "2026-08-29T17:06:06Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Bessent attacks Warren over yen intervention query, offers ‘Foreign Exchange for Dummies’ lesson",
-          "link": "https://www.cnbc.com/2026/08/28/bessent-warren-yen-intervention-treasury-japan.html",
-          "published": "Fri, 28 Aug 2026 20:31:58 GMT"
+          "title": "Tech backlash reaches fever pitch as AI angst collides with social media fears",
+          "link": "https://www.cnbc.com/2026/08/29/tech-backlash-ai-data-centers-elections.html",
+          "published": "Sat, 29 Aug 2026 12:16:03 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Corn and wheat prices jump to highest prices in more than three years",
-          "link": "https://www.cnbc.com/2026/08/28/corn-and-wheat-prices-jump-to-highest-prices-in-more-than-three-years.html",
-          "published": "Fri, 28 Aug 2026 20:00:56 GMT"
+          "title": "Trump announces deal with Venezuela to secure more than 65 billion barrels of oil reserves",
+          "link": "https://www.cnbc.com/2026/08/28/trump-announces-deal-with-venezuela-to-secure-more-than-65-billion-barrels-of-oil-reserves.html",
+          "published": "Fri, 28 Aug 2026 23:42:26 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Stock traders warm up to Warsh as volatility index touches year-to-date low",
-          "link": "https://www.cnbc.com/2026/08/28/stock-traders-warm-up-to-warsh-as-volatility-index-touches-year-to-date-low.html",
-          "published": "Fri, 28 Aug 2026 19:35:09 GMT"
+          "title": "K, C or E? Why economists can’t agree on the shape of today’s economy",
+          "link": "https://www.cnbc.com/2026/08/29/k-shaped-economy-c-shaped-e-shape.html",
+          "published": "Sat, 29 Aug 2026 12:22:50 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Apple hikes subscription prices for Apple TV and Apple One in the U.S.",
-          "link": "https://www.cnbc.com/2026/08/28/apple-tv-one-price-hike-us.html",
-          "published": "Fri, 28 Aug 2026 19:09:34 GMT"
+          "title": "Iran trade falls as Supreme Leader Khamenei urges less reliance on the U.S. dollar",
+          "link": "https://www.cnbc.com/2026/08/29/iran-trade-sanctions-dollar-oil-exports.html",
+          "published": "Sat, 29 Aug 2026 12:08:08 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Mark Walter's insurer Delaware Life sees two banks pause sale of its products amid probes",
-          "link": "https://www.cnbc.com/2026/08/28/mark-walter-delaware-life-truist-fifth-third-banks.html",
-          "published": "Fri, 28 Aug 2026 20:42:07 GMT"
+          "title": "Buffett remains active at 96, but Berkshire's shares aren't doing much",
+          "link": "https://www.cnbc.com/2026/08/29/buffett-remains-active-at-96-but-berkshires-shares-arent-doing-much.html",
+          "published": "Sat, 29 Aug 2026 11:53:36 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump loses bid to transfer New York hush money case to federal court",
-          "link": "https://www.cnbc.com/2026/08/28/trump-hush-money-federal-court.html",
-          "published": "Fri, 28 Aug 2026 20:56:24 GMT"
+          "title": "Goodyear burning rubber and cash as turnaround plan continues",
+          "link": "https://www.cnbc.com/2026/08/29/goodyear-turnaround-cash-debt.html",
+          "published": "Sat, 29 Aug 2026 13:56:58 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Bank of America doubles down on Nvidia stock",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/bank-america-doubles-down-nvidia-153054071.html",
-          "published": "2026-08-27T15:30:54Z"
+          "title": "183-year-old giant tool company closes factory, lays off dozens",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/183-old-giant-tool-company-160300042.html",
+          "published": "2026-08-28T16:03:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Charles Schwab Adds Solana, Avalanche, Chainlink to Crypto Platform",
-          "link": "https://finance.yahoo.com/markets/crypto/articles/charles-schwab-adds-solana-avalanche-154400480.html",
-          "published": "2026-08-27T15:44:00Z"
+          "title": "72% of homebuyers have paused their search waiting for lower mortgage rates — and 41% already regret it",
+          "link": "https://finance.yahoo.com/real-estate/articles/72-homebuyers-paused-search-waiting-150000785.html",
+          "published": "2026-08-29T15:00:00Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "K, C or E? Why economists can’t agree on the shape of today’s economy",
+          "link": "https://www.cnbc.com/2026/08/29/k-shaped-economy-c-shaped-e-shape.html",
+          "published": "Sat, 29 Aug 2026 12:22:50 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Fed Chairman Warsh expresses concern about inflation, advocates for 'quieter' central bank",
@@ -86,12 +92,6 @@
           "title": "China needs U.S. dollars but is building a hedge against Washington’s sanctions",
           "link": "https://www.cnbc.com/2026/08/25/china-iran-us-sanctions-banks-cips.html",
           "published": "Tue, 25 Aug 2026 16:00:40 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Bessent could tap near $1 trillion Treasury General Account to fund bond buybacks, sources said",
-          "link": "https://www.cnbc.com/2026/08/24/bessent-1-trillion-treasury-general-account-bond-buybacks.html",
-          "published": "Mon, 24 Aug 2026 13:17:35 GMT"
         }
       ]
     }
