@@ -1,62 +1,86 @@
 {
-  "updated": "2026-08-30T17:26:34Z",
+  "updated": "2026-08-31T19:29:39Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "The 'choose your own adventure' earnings: Why retailers are handling tariff refunds so differently",
-          "link": "https://www.cnbc.com/2026/08/30/trump-tariff-refunds-walmart-home-depot-target.html",
-          "published": "Sun, 30 Aug 2026 12:00:02 GMT"
+          "title": "Trump announced a massive oil deal with Venezuela. Why it won't lower gas prices anytime soon",
+          "link": "https://www.cnbc.com/2026/08/31/trump-venezuela-oil-gas-price.html",
+          "published": "Mon, 31 Aug 2026 19:05:21 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "He beat Big Tobacco. Will the same playbook work against Meta and social media?",
-          "link": "https://www.cnbc.com/2026/08/30/mike-moore-ag-social-media-settlement-big-tobacco.html",
-          "published": "Sun, 30 Aug 2026 15:48:10 GMT"
+          "title": "FTC sues Amazon, accusing the e-commerce giant of misleading advertisers",
+          "link": "https://www.cnbc.com/2026/08/31/amazon-ftc-lawsuit-advertisers.html",
+          "published": "Mon, 31 Aug 2026 19:29:12 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Icelanders reject reopening talks to join the EU despite Trump's Greenland threats",
-          "link": "https://www.cnbc.com/2026/08/30/iceland-eu-accession-referendum-result.html",
-          "published": "Sun, 30 Aug 2026 12:32:44 GMT"
+          "title": "Bessent pushes back on Druckenmiller critique of bond intervention",
+          "link": "https://www.cnbc.com/2026/08/31/bessent-druckenmiller-bond-treasury-g20.html",
+          "published": "Mon, 31 Aug 2026 18:41:12 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump criticizes NBC over election comment as Treasury denies some NYT, WSJ and Bloomberg reporters G20 credentials",
-          "link": "https://www.cnbc.com/2026/08/30/trump-nbc-election-comment-treasury-g20-reporter-access.html",
-          "published": "Sun, 30 Aug 2026 16:55:14 GMT"
+          "title": "Trump strikes new drug pricing deals with nine midsized drugmakers",
+          "link": "https://www.cnbc.com/2026/08/31/trump-drug-pricing-deals.html",
+          "published": "Mon, 31 Aug 2026 19:28:08 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "What new tariff walls in U.S.-Canada trade war mean for the economy's critical metals",
-          "link": "https://www.cnbc.com/2026/08/30/us-canada-trade-war-tariffs-steel-aluminum-metals-economy.html",
-          "published": "Sun, 30 Aug 2026 13:00:01 GMT"
+          "title": "Mortgage rates surge to the highest since June 2025 as new Middle East attacks push oil prices up",
+          "link": "https://www.cnbc.com/2026/08/31/mortgage-rates-surge-middle-east-attacks-oil.html",
+          "published": "Mon, 31 Aug 2026 18:53:36 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Top Wall Street analysts suggest these 3 dividend stocks for consistent income",
-          "link": "https://www.cnbc.com/2026/08/30/top-analysts-suggest-these-dividend-stocks-for-consistent-income.html",
-          "published": "Sun, 30 Aug 2026 10:42:13 GMT"
+          "title": "Risk-reward outlook for stocks is getting worse as historically tough month kicks off, says Citadel Securities",
+          "link": "https://www.cnbc.com/2026/08/31/risk-reward-outlook-for-stocks-is-getting-worse-says-citadel.html",
+          "published": "Mon, 31 Aug 2026 19:25:54 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Major fruit grower lays off nearly 1,000 workers",
-          "link": "https://finance.yahoo.com/small-business/articles/major-fruit-grower-lays-off-010300694.html",
-          "published": "2026-08-30T01:03:00Z"
+          "title": "Goldman Sachs sends blunt message on oil price, economy",
+          "link": "https://finance.yahoo.com/energy/articles/goldman-sachs-sends-blunt-message-003700417.html",
+          "published": "2026-08-31T00:37:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Man posed as a 49ers player and convinced 26 women to hand over $1.3 million in romance scam scheme",
-          "link": "https://finance.yahoo.com/markets/crypto/articles/man-posed-49ers-player-convinced-142000089.html",
-          "published": "2026-08-30T14:20:00Z"
+          "title": "David Einhorn Says SpaceX Could Mark a Speculative Top. Morgan Stanley Sees 113% Upside",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/david-einhorn-says-spacex-could-100706151.html",
+          "published": "2026-08-30T10:07:06Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "India’s economy expands 7.8% in fiscal first quarter, beating estimates",
+          "link": "https://www.cnbc.com/2026/08/31/india-economy-gdp-energy-el-nino.html",
+          "published": "Mon, 31 Aug 2026 11:23:42 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Bank of England chief warns new AI models threaten global financial stability",
+          "link": "https://www.cnbc.com/2026/08/31/bailey-frontier-ai-financial-stability-risk.html",
+          "published": "Mon, 31 Aug 2026 13:35:11 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "China's factory activity shrinks for second straight month, contracting less than expected",
+          "link": "https://www.cnbc.com/2026/08/31/china-pmi-august-economy-slowdown.html",
+          "published": "Mon, 31 Aug 2026 03:15:01 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Singapore tackles finances and culture to avert a demographic crisis",
+          "link": "https://www.cnbc.com/2026/08/31/singapore-ndr-childcare-incentives-demographic-crisis-.html",
+          "published": "Sun, 30 Aug 2026 23:31:15 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "K, C or E? Why economists can’t agree on the shape of today’s economy",
@@ -68,30 +92,6 @@
           "title": "Fed Chairman Warsh expresses concern about inflation, advocates for 'quieter' central bank",
           "link": "https://www.cnbc.com/2026/08/28/kevin-warsh-jackson-hole-federal-reserve-inflation.html",
           "published": "Fri, 28 Aug 2026 16:11:51 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Fed's Hammack says 'now is the time to act' on raising interest rates",
-          "link": "https://www.cnbc.com/2026/08/27/feds-hammack-says-now-is-the-time-to-act-on-raising-interest-rates.html",
-          "published": "Thu, 27 Aug 2026 17:31:09 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Fed’s preferred inflation gauge shows core prices rose 3.3% annually in July",
-          "link": "https://www.cnbc.com/2026/08/26/feds-preferred-inflation-gauge-shows-core-prices-rose-3point3percent-annually-in-july.html",
-          "published": "Wed, 26 Aug 2026 13:35:50 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Stanley Druckenmiller leads doubters who think Bessent's bond ploys will fail",
-          "link": "https://www.cnbc.com/2026/08/25/stanley-druckenmiller-leads-doubters-who-think-bessents-bond-ploys-will-fail.html",
-          "published": "Tue, 25 Aug 2026 17:15:50 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "China needs U.S. dollars but is building a hedge against Washington’s sanctions",
-          "link": "https://www.cnbc.com/2026/08/25/china-iran-us-sanctions-banks-cips.html",
-          "published": "Tue, 25 Aug 2026 16:00:40 GMT"
         }
       ]
     }
