@@ -1,62 +1,68 @@
 {
-  "updated": "2026-08-31T19:29:39Z",
+  "updated": "2026-09-01T17:18:41Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Trump announced a massive oil deal with Venezuela. Why it won't lower gas prices anytime soon",
-          "link": "https://www.cnbc.com/2026/08/31/trump-venezuela-oil-gas-price.html",
-          "published": "Mon, 31 Aug 2026 19:05:21 GMT"
+          "title": "U.S. strikes Iran after new Hormuz Strait shipping attacks: Centcom",
+          "link": "https://www.cnbc.com/2026/09/01/us-strikes-iran-after-new-hormuz-strait-shipping-attacks-centcom.html",
+          "published": "Tue, 01 Sep 2026 17:09:37 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "FTC sues Amazon, accusing the e-commerce giant of misleading advertisers",
-          "link": "https://www.cnbc.com/2026/08/31/amazon-ftc-lawsuit-advertisers.html",
-          "published": "Mon, 31 Aug 2026 19:29:12 GMT"
+          "title": "10-year yield hits highest since January 2025 as higher oil prices stoke inflation worries",
+          "link": "https://www.cnbc.com/2026/09/01/bonds-treasury-yields-middle-east-tensions.html",
+          "published": "Tue, 01 Sep 2026 17:01:45 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Bessent pushes back on Druckenmiller critique of bond intervention",
-          "link": "https://www.cnbc.com/2026/08/31/bessent-druckenmiller-bond-treasury-g20.html",
-          "published": "Mon, 31 Aug 2026 18:41:12 GMT"
+          "title": "Canada's Carney slaps Trump admin for 'doing memes ... throwing shade'",
+          "link": "https://www.cnbc.com/2026/09/01/canada-carney-trump-trade-ontario.html",
+          "published": "Tue, 01 Sep 2026 17:17:48 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump strikes new drug pricing deals with nine midsized drugmakers",
-          "link": "https://www.cnbc.com/2026/08/31/trump-drug-pricing-deals.html",
-          "published": "Mon, 31 Aug 2026 19:28:08 GMT"
+          "title": "AI token prices are hitting new record lows",
+          "link": "https://www.cnbc.com/2026/09/01/ai-token-prices-lows.html",
+          "published": "Tue, 01 Sep 2026 17:02:53 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Mortgage rates surge to the highest since June 2025 as new Middle East attacks push oil prices up",
-          "link": "https://www.cnbc.com/2026/08/31/mortgage-rates-surge-middle-east-attacks-oil.html",
-          "published": "Mon, 31 Aug 2026 18:53:36 GMT"
+          "title": "Apple enters John Ternus era as AI challenges and memory crunch intensify",
+          "link": "https://www.cnbc.com/2026/09/01/apple-enters-ternus-era-as-ai-challenges-and-memory-crunch-intensify.html",
+          "published": "Tue, 01 Sep 2026 16:27:54 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Risk-reward outlook for stocks is getting worse as historically tough month kicks off, says Citadel Securities",
-          "link": "https://www.cnbc.com/2026/08/31/risk-reward-outlook-for-stocks-is-getting-worse-says-citadel.html",
-          "published": "Mon, 31 Aug 2026 19:25:54 GMT"
+          "title": "Global bond yields soar to multi-decade highs as Middle East turmoil reignites inflation fears",
+          "link": "https://www.cnbc.com/2026/09/01/bond-yields-iran-inflation-treasurys-japan-uk.html",
+          "published": "Tue, 01 Sep 2026 12:39:23 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Goldman Sachs sends blunt message on oil price, economy",
-          "link": "https://finance.yahoo.com/energy/articles/goldman-sachs-sends-blunt-message-003700417.html",
-          "published": "2026-08-31T00:37:00Z"
+          "title": "Firearms retailer files Chapter 11 bankruptcy as gun sales drop",
+          "link": "https://finance.yahoo.com/small-business/articles/firearms-retailer-files-chapter-11-153300921.html",
+          "published": "2026-08-31T15:33:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "David Einhorn Says SpaceX Could Mark a Speculative Top. Morgan Stanley Sees 113% Upside",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/david-einhorn-says-spacex-could-100706151.html",
-          "published": "2026-08-30T10:07:06Z"
+          "title": "FDA Approval Marks A Turning Point For BeOne Medicines (ONC)",
+          "link": "https://finance.yahoo.com/healthcare/articles/fda-approval-marks-turning-point-170155871.html",
+          "published": "2026-09-01T17:01:55Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Euro zone inflation is back above 3%. Higher interest rates are likely to follow",
+          "link": "https://www.cnbc.com/2026/09/01/euro-zone-inflation-rate-hike.html",
+          "published": "Tue, 01 Sep 2026 10:50:27 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "India’s economy expands 7.8% in fiscal first quarter, beating estimates",
@@ -86,12 +92,6 @@
           "title": "K, C or E? Why economists can’t agree on the shape of today’s economy",
           "link": "https://www.cnbc.com/2026/08/29/k-shaped-economy-c-shaped-e-shape.html",
           "published": "Sat, 29 Aug 2026 20:22:12 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Fed Chairman Warsh expresses concern about inflation, advocates for 'quieter' central bank",
-          "link": "https://www.cnbc.com/2026/08/28/kevin-warsh-jackson-hole-federal-reserve-inflation.html",
-          "published": "Fri, 28 Aug 2026 16:11:51 GMT"
         }
       ]
     }
