@@ -1,62 +1,68 @@
 {
-  "updated": "2026-09-01T17:18:41Z",
+  "updated": "2026-09-02T17:09:18Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "U.S. strikes Iran after new Hormuz Strait shipping attacks: Centcom",
-          "link": "https://www.cnbc.com/2026/09/01/us-strikes-iran-after-new-hormuz-strait-shipping-attacks-centcom.html",
-          "published": "Tue, 01 Sep 2026 17:09:37 GMT"
+          "title": "New York Fed's Williams says yield surge due to strong economic prospects",
+          "link": "https://www.cnbc.com/2026/09/02/new-york-feds-williams-says-yield-surge-due-to-strong-economic-prospects.html",
+          "published": "Wed, 02 Sep 2026 15:56:13 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "10-year yield hits highest since January 2025 as higher oil prices stoke inflation worries",
-          "link": "https://www.cnbc.com/2026/09/01/bonds-treasury-yields-middle-east-tensions.html",
-          "published": "Tue, 01 Sep 2026 17:01:45 GMT"
+          "title": "Energy Secretary Chris Wright tells CNBC more than 17 million barrels of oil transited Hormuz on Monday",
+          "link": "https://www.cnbc.com/2026/09/02/energy-secretary-chris-wright-tells-cnbc-that-more-than-17-million-barrels-of-oil-transited-hormuz-on-monday.html",
+          "published": "Wed, 02 Sep 2026 15:57:08 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Canada's Carney slaps Trump admin for 'doing memes ... throwing shade'",
-          "link": "https://www.cnbc.com/2026/09/01/canada-carney-trump-trade-ontario.html",
-          "published": "Tue, 01 Sep 2026 17:17:48 GMT"
+          "title": "Trump floats renaming Strait of Hormuz the 'Trump Strait'",
+          "link": "https://www.cnbc.com/2026/09/02/trump-hormuz-strait-ontario-iran.html",
+          "published": "Wed, 02 Sep 2026 16:04:10 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "AI token prices are hitting new record lows",
-          "link": "https://www.cnbc.com/2026/09/01/ai-token-prices-lows.html",
-          "published": "Tue, 01 Sep 2026 17:02:53 GMT"
+          "title": "Southwest to debut airport lounges in four cities, with more to come",
+          "link": "https://www.cnbc.com/2026/09/02/southwest-airport-lounges.html",
+          "published": "Wed, 02 Sep 2026 15:32:36 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Apple enters John Ternus era as AI challenges and memory crunch intensify",
-          "link": "https://www.cnbc.com/2026/09/01/apple-enters-ternus-era-as-ai-challenges-and-memory-crunch-intensify.html",
-          "published": "Tue, 01 Sep 2026 16:27:54 GMT"
+          "title": "Trump to meet with travel industry CEOs as White House touts World Cup tourism boost",
+          "link": "https://www.cnbc.com/2026/09/02/trump-travel-industry-world-cup-tourism-airlines-hotels.html",
+          "published": "Wed, 02 Sep 2026 15:16:25 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Global bond yields soar to multi-decade highs as Middle East turmoil reignites inflation fears",
-          "link": "https://www.cnbc.com/2026/09/01/bond-yields-iran-inflation-treasurys-japan-uk.html",
-          "published": "Tue, 01 Sep 2026 12:39:23 GMT"
+          "title": "Uber to cut 10% of workforce in bid to move 'simpler and faster'",
+          "link": "https://www.cnbc.com/2026/09/02/uber-to-cut-10percent-of-workforce-in-bid-to-move-simpler-and-faster.html",
+          "published": "Wed, 02 Sep 2026 16:52:04 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Firearms retailer files Chapter 11 bankruptcy as gun sales drop",
-          "link": "https://finance.yahoo.com/small-business/articles/firearms-retailer-files-chapter-11-153300921.html",
-          "published": "2026-08-31T15:33:00Z"
+          "title": "Denny’s rival dining chain files for Chapter 11 bankruptcy",
+          "link": "https://finance.yahoo.com/small-business/articles/denny-rival-dining-chain-files-153300154.html",
+          "published": "2026-09-01T15:33:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "FDA Approval Marks A Turning Point For BeOne Medicines (ONC)",
-          "link": "https://finance.yahoo.com/healthcare/articles/fda-approval-marks-turning-point-170155871.html",
-          "published": "2026-09-01T17:01:55Z"
+          "title": "Stock Market Today: Dow, Small Caps Lead Rise; Digital Ad Firm Rallies Off Key Level (Live Coverage)",
+          "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-jobs-data-ai-stock-credo-earnings/?src=A00220&yptr=yahoo",
+          "published": "2026-09-02T16:45:11Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Private payrolls rose by 38,000 in August, less than expected, ADP reports",
+          "link": "https://www.cnbc.com/2026/09/02/private-payrolls-rose-by-38000-in-august-fewer-than-expected-adp-reports.html",
+          "published": "Wed, 02 Sep 2026 14:30:10 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Euro zone inflation is back above 3%. Higher interest rates are likely to follow",
@@ -86,12 +92,6 @@
           "title": "Singapore tackles finances and culture to avert a demographic crisis",
           "link": "https://www.cnbc.com/2026/08/31/singapore-ndr-childcare-incentives-demographic-crisis-.html",
           "published": "Sun, 30 Aug 2026 23:31:15 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "K, C or E? Why economists can’t agree on the shape of today’s economy",
-          "link": "https://www.cnbc.com/2026/08/29/k-shaped-economy-c-shaped-e-shape.html",
-          "published": "Sat, 29 Aug 2026 20:22:12 GMT"
         }
       ]
     }
