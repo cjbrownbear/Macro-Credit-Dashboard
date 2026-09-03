@@ -1,62 +1,80 @@
 {
-  "updated": "2026-09-02T17:09:18Z",
+  "updated": "2026-09-03T17:02:23Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "New York Fed's Williams says yield surge due to strong economic prospects",
-          "link": "https://www.cnbc.com/2026/09/02/new-york-feds-williams-says-yield-surge-due-to-strong-economic-prospects.html",
-          "published": "Wed, 02 Sep 2026 15:56:13 GMT"
+          "title": "Carney claps back at Lutnick, says Canada will resume trade talks 'when the Americans are ready'",
+          "link": "https://www.cnbc.com/2026/09/03/carney-lutnick-trump-trade-canada.html",
+          "published": "Thu, 03 Sep 2026 16:06:13 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Energy Secretary Chris Wright tells CNBC more than 17 million barrels of oil transited Hormuz on Monday",
-          "link": "https://www.cnbc.com/2026/09/02/energy-secretary-chris-wright-tells-cnbc-that-more-than-17-million-barrels-of-oil-transited-hormuz-on-monday.html",
-          "published": "Wed, 02 Sep 2026 15:57:08 GMT"
+          "title": "Automakers urge Congress to permanently ban Chinese connected vehicles in U.S.",
+          "link": "https://www.cnbc.com/2026/09/03/chinese-vehicles-congress.html",
+          "published": "Thu, 03 Sep 2026 16:51:13 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump floats renaming Strait of Hormuz the 'Trump Strait'",
-          "link": "https://www.cnbc.com/2026/09/02/trump-hormuz-strait-ontario-iran.html",
-          "published": "Wed, 02 Sep 2026 16:04:10 GMT"
+          "title": "The world appears to be entering a higher-rate era. Here’s who will pay the price",
+          "link": "https://www.cnbc.com/2026/09/03/global-bond-yields-rising-treasuries-jgb-bunds.html",
+          "published": "Thu, 03 Sep 2026 04:20:20 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Southwest to debut airport lounges in four cities, with more to come",
-          "link": "https://www.cnbc.com/2026/09/02/southwest-airport-lounges.html",
-          "published": "Wed, 02 Sep 2026 15:32:36 GMT"
+          "title": "Hugging Face approached Nvidia’s Huang weeks ahead of $12.9B acquisition, CEO tells CNBC",
+          "link": "https://www.cnbc.com/2026/09/03/nvidia-agrees-to-buy-hugging-face-for-almost-13-billion-ai-expansion.html",
+          "published": "Thu, 03 Sep 2026 16:43:22 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump to meet with travel industry CEOs as White House touts World Cup tourism boost",
-          "link": "https://www.cnbc.com/2026/09/02/trump-travel-industry-world-cup-tourism-airlines-hotels.html",
-          "published": "Wed, 02 Sep 2026 15:16:25 GMT"
+          "title": "Elon Musk starts spending his midterm election millions, revealing his key Senate targets",
+          "link": "https://www.cnbc.com/2026/09/03/elon-musk-america-pac-election-senate-races.html",
+          "published": "Thu, 03 Sep 2026 17:00:34 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Uber to cut 10% of workforce in bid to move 'simpler and faster'",
-          "link": "https://www.cnbc.com/2026/09/02/uber-to-cut-10percent-of-workforce-in-bid-to-move-simpler-and-faster.html",
-          "published": "Wed, 02 Sep 2026 16:52:04 GMT"
+          "title": "Leon Black sues House Oversight over Epstein probe subpoenas, won't appear Thursday",
+          "link": "https://www.cnbc.com/2026/09/03/leon-black-sues-house-oversight-epstein-probe-subpoenas.html",
+          "published": "Thu, 03 Sep 2026 15:12:24 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Denny’s rival dining chain files for Chapter 11 bankruptcy",
-          "link": "https://finance.yahoo.com/small-business/articles/denny-rival-dining-chain-files-153300154.html",
-          "published": "2026-09-01T15:33:00Z"
+          "title": "HPE CEO on AI boom: 'Customers are buying everything'",
+          "link": "https://finance.yahoo.com/markets/stocks/article/hpe-ceo-on-ai-boom-customers-are-buying-everything-164808652.html",
+          "published": "2026-09-03T16:48:08Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Stock Market Today: Dow, Small Caps Lead Rise; Digital Ad Firm Rallies Off Key Level (Live Coverage)",
-          "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-jobs-data-ai-stock-credo-earnings/?src=A00220&yptr=yahoo",
-          "published": "2026-09-02T16:45:11Z"
+          "title": "Bank of America's new warning should concern stock investors",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/bank-americas-warning-concern-stock-164700303.html",
+          "published": "2026-09-03T16:47:00Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Fed Governor Waller indicates he will support holding rates steady at September meeting",
+          "link": "https://www.cnbc.com/2026/09/03/fed-governor-waller-indicates-he-will-support-holding-rates-steady-at-september-meeting.html",
+          "published": "Thu, 03 Sep 2026 14:06:52 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "'Danger zone of extreme weather': UN warns of supersized El Niño set to hit global economy and markets",
+          "link": "https://www.cnbc.com/2026/09/03/supersized-el-nino-un-economy.html",
+          "published": "Thu, 03 Sep 2026 12:25:53 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "South Korea's semiconductor exports just tripled year-over-year. Is it too much of a good thing?",
+          "link": "https://www.cnbc.com/2026/09/03/south-korea-semiconductor-exports-surging-concerns.html",
+          "published": "Thu, 03 Sep 2026 01:11:41 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Private payrolls rose by 38,000 in August, less than expected, ADP reports",
@@ -74,24 +92,6 @@
           "title": "India’s economy expands 7.8% in fiscal first quarter, beating estimates",
           "link": "https://www.cnbc.com/2026/08/31/india-economy-gdp-energy-el-nino.html",
           "published": "Mon, 31 Aug 2026 11:23:42 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Bank of England chief warns new AI models threaten global financial stability",
-          "link": "https://www.cnbc.com/2026/08/31/bailey-frontier-ai-financial-stability-risk.html",
-          "published": "Mon, 31 Aug 2026 13:35:11 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "China's factory activity shrinks for second straight month, contracting less than expected",
-          "link": "https://www.cnbc.com/2026/08/31/china-pmi-august-economy-slowdown.html",
-          "published": "Mon, 31 Aug 2026 03:15:01 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Singapore tackles finances and culture to avert a demographic crisis",
-          "link": "https://www.cnbc.com/2026/08/31/singapore-ndr-childcare-incentives-demographic-crisis-.html",
-          "published": "Sun, 30 Aug 2026 23:31:15 GMT"
         }
       ]
     }
