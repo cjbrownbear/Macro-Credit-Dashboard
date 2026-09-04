@@ -1,9 +1,9 @@
 {
-  "updated": "2026-09-03T17:02:22Z",
+  "updated": "2026-09-04T16:51:22Z",
   "overall_status": "tripwire",
   "executive_summary": {
     "text": "Overall status is Tripwire / Watch. Across the dashboard: 7 healthy, 1 tripwire, 0 stress. Biggest YoY moves: Revolving Consumer Credit (Δ 1y: +49327B (+3.8%)); Initial Jobless Claims (Δ 1y: -23000K (-10.0%)); Net Charge-off Rate (Δ 1y: -0.37pp (-8.8%)).",
-    "updated": "2026-09-03T17:02:22Z",
+    "updated": "2026-09-04T16:51:22Z",
     "overall": "tripwire"
   },
   "kpis": [
@@ -287,14 +287,13 @@
       "status_label": "Healthy",
       "value": 4.1,
       "value_str": "4.10%",
-      "as_of": "Jul 2026",
-      "avg10": 4.5491666666666655,
-      "avg_str": "4.55%",
+      "as_of": "Aug 2026",
+      "avg10": 4.543333333333332,
+      "avg_str": "4.54%",
       "delta_abs": -0.20000000000000018,
       "delta_pct": -0.046511627906976785,
       "delta_str": "Δ 1y: -0.20pp (-4.7%)",
       "spark": [
-        4.2,
         4.2,
         4.1,
         4.1,
@@ -317,6 +316,7 @@
         4.3,
         4.3,
         4.2,
+        4.1,
         4.1
       ],
       "definition": "Headline unemployment rate (U-3).",
@@ -18798,6 +18798,11 @@
           "date": "2026-07-01",
           "value": 4.1,
           "value_str": "4.10%"
+        },
+        {
+          "date": "2026-08-01",
+          "value": 4.1,
+          "value_str": "4.10%"
         }
       ],
       "bench_points": [
@@ -22524,6 +22529,10 @@
         {
           "date": "2026-07-01",
           "value": 4.549166666666666
+        },
+        {
+          "date": "2026-08-01",
+          "value": 4.543333333333333
         }
       ],
       "summary_text": "Latest: 4.10% (Healthy). Δ 1y: -0.20pp (-4.7%)."
