@@ -1,9 +1,9 @@
 {
-  "updated": "2026-09-04T16:51:22Z",
+  "updated": "2026-09-05T16:02:15Z",
   "overall_status": "tripwire",
   "executive_summary": {
     "text": "Overall status is Tripwire / Watch. Across the dashboard: 7 healthy, 1 tripwire, 0 stress. Biggest YoY moves: Revolving Consumer Credit (Δ 1y: +49327B (+3.8%)); Initial Jobless Claims (Δ 1y: -23000K (-10.0%)); Net Charge-off Rate (Δ 1y: -0.37pp (-8.8%)).",
-    "updated": "2026-09-04T16:51:22Z",
+    "updated": "2026-09-05T16:02:14Z",
     "overall": "tripwire"
   },
   "kpis": [
