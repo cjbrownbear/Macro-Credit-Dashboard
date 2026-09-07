@@ -1,62 +1,68 @@
 {
-  "updated": "2026-09-06T16:14:16Z",
+  "updated": "2026-09-07T18:14:18Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "U.S. Energy Secretary Wright says Iran nuclear deal may never happen",
-          "link": "https://www.cnbc.com/2026/09/06/iran-us-response-oil-tanker-strikes.html",
-          "published": "Sun, 06 Sep 2026 16:11:09 GMT"
+          "title": "Oil prices rise to 6-week high after Iran and U.S. trade blows, Saudi Aramco facilities reportedly hit",
+          "link": "https://www.cnbc.com/2026/09/07/oil-prices-rise-to-6-week-high-after-iran-and-us-trade-blows-saudi-aramco-facilities-reportedly-hit.html",
+          "published": "Mon, 07 Sep 2026 16:44:36 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "‘Model fatigue’ sets in as AI labs race to roll out new versions at frenetic pace",
-          "link": "https://www.cnbc.com/2026/09/06/meta-google-openai-anthropic-ai-model-fatigue.html",
-          "published": "Sun, 06 Sep 2026 12:13:49 GMT"
+          "title": "Trump says he's made 'Hundreds of Billions of Dollars on Stocks' for the U.S., in stream of AI posts",
+          "link": "https://www.cnbc.com/2026/09/07/trump-truth-social-ai-images-posting-spree.html",
+          "published": "Mon, 07 Sep 2026 12:09:41 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "SEC sues ISS as Trump administration ramps up scrutiny of proxy advisers",
-          "link": "https://www.cnbc.com/2026/09/06/sec-iss-proxy-adviser-subpoena.html",
-          "published": "Sun, 06 Sep 2026 15:35:16 GMT"
+          "title": "SpaceX rival launches rocket in historic first, says industry is 'desperate' for more",
+          "link": "https://www.cnbc.com/2026/09/07/isar-aerospace-spacex-rival-rocket-launch.html",
+          "published": "Mon, 07 Sep 2026 12:26:40 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump turns up the heat on Warsh as Fed rate hike looms",
-          "link": "https://www.cnbc.com/2026/09/05/trump-warsh-fed-september-rate-hike.html",
-          "published": "Sat, 05 Sep 2026 19:12:53 GMT"
+          "title": "Greenland welcomes major funding boost from EU amid Trump’s annexation threats",
+          "link": "https://www.cnbc.com/2026/09/07/greenland-eu-trump-critical-minerals-arctic.html",
+          "published": "Mon, 07 Sep 2026 13:09:36 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Sugar is outperforming the stock market this year. Here's what's driving it, and where it can go from here",
-          "link": "https://www.cnbc.com/2026/09/06/sugar-is-outperforming-the-stock-market-this-year-whats-driving-it.html",
-          "published": "Sun, 06 Sep 2026 13:19:01 GMT"
+          "title": "Far-right AfD landslide in German state piles pressure on federal government",
+          "link": "https://www.cnbc.com/2026/09/07/afd-germany-economy-merz.html",
+          "published": "Mon, 07 Sep 2026 17:04:21 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Meet the CISO: A new front line star in the AI cybersecurity war",
-          "link": "https://www.cnbc.com/2026/09/05/ai-cybersecurity-ciso-executive.html",
-          "published": "Sat, 05 Sep 2026 12:00:01 GMT"
+          "title": "Jaguar Land Rover to cut 4,000 jobs over two years in major cost-saving drive",
+          "link": "https://www.cnbc.com/2026/09/07/jaguar-land-rover-jlr-job-cuts-autos.html",
+          "published": "Mon, 07 Sep 2026 11:50:43 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Uh Oh! BigBear.ai's Stock Dropped Below $3. Does That Mean a Reverse Split Is Imminent?",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/uh-oh-bigbear-ais-stock-160100218.html",
-          "published": "2026-09-06T16:01:00Z"
+          "title": "Loss of Costco deal helps push beverage brand into Chapter 11",
+          "link": "https://finance.yahoo.com/healthcare/articles/loss-costco-deal-helps-push-150700837.html",
+          "published": "2026-09-07T15:07:00Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Stock Market Week Ahead: Week Of The Big Bond Scheme",
-          "link": "https://www.investors.com/research/investing-action-plan/stock-market-week-ahead-week-of-the-big-bond-scheme/?src=A00220&yptr=yahoo",
-          "published": "2026-09-06T15:39:40Z"
+          "title": "Jim Cramer Explains Why “Buyers Flocked in” for Dell (DELL)",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-explains-why-buyers-174139489.html",
+          "published": "2026-09-07T17:41:39Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Japan's foreign reserves drop by a record $80 billion in August following yen intervention",
+          "link": "https://www.cnbc.com/2026/09/07/japan-foreign-reserves-yen-intervention.html",
+          "published": "Mon, 07 Sep 2026 07:38:42 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Trump turns up the heat on Warsh as Fed rate hike looms",
@@ -86,12 +92,6 @@
           "title": "The big business of personal protection: How private security became a $50 billion industry",
           "link": "https://www.cnbc.com/2026/09/04/private-security-spending-crime-allied-universal.html",
           "published": "Fri, 04 Sep 2026 14:15:04 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "The big August jobs report is due out Friday. Here's what to expect for what has been a jobless summer",
-          "link": "https://www.cnbc.com/2026/09/03/august-2026-jobs-report-payrolls.html",
-          "published": "Thu, 03 Sep 2026 19:38:09 GMT"
         }
       ]
     }
