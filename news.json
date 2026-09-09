@@ -1,62 +1,68 @@
 {
-  "updated": "2026-09-08T17:14:07Z",
+  "updated": "2026-09-09T17:08:44Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Bombardier points out U.S. footprint after Trump says aerospace giant must build in America",
-          "link": "https://www.cnbc.com/2026/09/07/trump-bombardier-cant-sell-in-us-unless-canada-aerospace-giant-builds-there.html",
-          "published": "Tue, 08 Sep 2026 17:08:01 GMT"
+          "title": "Treasury Department to buy back up to $6 billion in longer-term debt, triple the normal level",
+          "link": "https://www.cnbc.com/2026/09/09/treasury-department-to-buy-back-6-billion-in-longer-term-debt-triple-the-normal-level.html",
+          "published": "Wed, 09 Sep 2026 15:57:05 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Qualcomm issues Amazon warrants to acquire $4 billion worth of chipmaker's stock as part of AI infrastructure deal",
-          "link": "https://www.cnbc.com/2026/09/08/qualcomm-amazon-data-center-infrastructure-deal.html",
-          "published": "Tue, 08 Sep 2026 15:56:46 GMT"
+          "title": "Robinhood CEO says companies can't control how their stock is tokenized as AMC clash escalates",
+          "link": "https://www.cnbc.com/2026/09/09/robinhood-ceo-says-companies-cant-control-how-their-stock-is-tokenized-as-amc-clash-escalates.html",
+          "published": "Wed, 09 Sep 2026 14:38:32 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "U.S. sanctions Iranian airlines in aim to tighten economic squeeze as war spreads, oil rises",
-          "link": "https://www.cnbc.com/2026/09/08/us-sanctions-iran-airlines-oil-economy-war.html",
-          "published": "Tue, 08 Sep 2026 16:57:13 GMT"
+          "title": "CoreWeave CEO chalks up public AI pushback to the speed of change: 'And that is frightening'",
+          "link": "https://www.cnbc.com/2026/09/09/goldman-sachs-communcacopia-technology-conference-ai.html",
+          "published": "Wed, 09 Sep 2026 16:46:38 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "New Hampshire goes to the polls in primary for key open Senate seat",
-          "link": "https://www.cnbc.com/2026/09/08/new-hampshire-primary-senate-scott-brown-john-sununu-chris-pappas-karishma-manzur.html",
-          "published": "Tue, 08 Sep 2026 17:07:40 GMT"
+          "title": "Experts weigh in as researcher says AI has more than 10% chance of 'killing all humans'",
+          "link": "https://www.cnbc.com/2026/09/09/anthropic-researcher-quits-ai-safety.html",
+          "published": "Wed, 09 Sep 2026 16:50:10 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "This data center stock is up over 1000% in the last five years. Trader Mike Khouw sees more gains",
-          "link": "https://www.cnbc.com/2026/09/08/this-data-center-stock-is-up-over-1000percent-in-the-last-five-years-trader-mike-khouw-sees-more-gains.html",
-          "published": "Tue, 08 Sep 2026 17:06:39 GMT"
+          "title": "Brent crude oil tops $101 for first time since July as fighting escalates in Persian Gulf",
+          "link": "https://www.cnbc.com/2026/09/09/oil-prices-today-wti-brent-us-iran-hormuz-attacks.html",
+          "published": "Wed, 09 Sep 2026 16:40:53 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Chinese giants Xiaomi, Huawei race to get ahead of Apple’s rumored foldable iPhone",
-          "link": "https://www.cnbc.com/2026/09/08/xiaomi-huawei-apple-foldable-iphone.html",
-          "published": "Tue, 08 Sep 2026 16:11:25 GMT"
+          "title": "Trump's oil investments have gained millions during Iran war as his accounts keep trading",
+          "link": "https://www.cnbc.com/2026/09/09/trump-oil-gas-holdings-iran-war.html",
+          "published": "Wed, 09 Sep 2026 10:30:01 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Loss of Costco deal helps push beverage brand into Chapter 11",
-          "link": "https://finance.yahoo.com/healthcare/articles/loss-costco-deal-helps-push-150700837.html",
-          "published": "2026-09-07T15:07:00Z"
+          "title": "Mortgage rate predictions through the next five years: Will we reach 7%?",
+          "link": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-rate-predictions-through-the-next-five-years-will-we-reach-7-195826935.html",
+          "published": "2025-08-18T19:58:26Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Bond yield worries persist as oil edges higher : AlphaCheck",
-          "link": "https://finance.yahoo.com/markets/article/bond-yield-worries-persist-as-oil-edges-higher--alphacheck-135158227.html",
-          "published": "2026-09-08T13:51:58Z"
+          "title": "J.Jill, Inc. Q2 2026 Earnings Call Summary",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/j-jill-inc-q2-2026-164728426.html",
+          "published": "2026-09-09T16:47:28Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "U.S. reveals import ban on slew of Canadian goods as trade war escalates",
+          "link": "https://www.cnbc.com/2026/09/09/us-canada-trade-war-import-ban.html",
+          "published": "Wed, 09 Sep 2026 16:17:46 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Canada's retaliatory tariffs worth CA$27.6 billion take effect as trade rift with U.S. deepens",
@@ -86,12 +92,6 @@
           "title": "From ‘mystery vacations’ to hostels, budget travelers get thrifty as prices rise",
           "link": "https://www.cnbc.com/2026/09/05/budget-travel-vacation-costs.html",
           "published": "Sat, 05 Sep 2026 23:55:52 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Women accounted for almost all of job gains in August. Here's why",
-          "link": "https://www.cnbc.com/2026/09/04/jobs-report-women-payrolls.html",
-          "published": "Fri, 04 Sep 2026 18:27:39 GMT"
         }
       ]
     }
