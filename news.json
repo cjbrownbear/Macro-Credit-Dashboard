@@ -1,62 +1,74 @@
 {
-  "updated": "2026-09-09T17:08:44Z",
+  "updated": "2026-09-10T16:58:47Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Treasury Department to buy back up to $6 billion in longer-term debt, triple the normal level",
-          "link": "https://www.cnbc.com/2026/09/09/treasury-department-to-buy-back-6-billion-in-longer-term-debt-triple-the-normal-level.html",
-          "published": "Wed, 09 Sep 2026 15:57:05 GMT"
+          "title": "Trump's $1 trillion-plus 'dividend' plan meets immediate bipartisan pushback",
+          "link": "https://www.cnbc.com/2026/09/10/trump-dividend-midterms-gop.html",
+          "published": "Thu, 10 Sep 2026 15:53:41 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Robinhood CEO says companies can't control how their stock is tokenized as AMC clash escalates",
-          "link": "https://www.cnbc.com/2026/09/09/robinhood-ceo-says-companies-cant-control-how-their-stock-is-tokenized-as-amc-clash-escalates.html",
-          "published": "Wed, 09 Sep 2026 14:38:32 GMT"
+          "title": "The likelihood of a Fed interest rate hike next week just got a lot higher",
+          "link": "https://www.cnbc.com/2026/09/10/the-likelihood-of-a-fed-interest-rate-hike-next-week-just-got-a-lot-higher.html",
+          "published": "Thu, 10 Sep 2026 16:55:17 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "CoreWeave CEO chalks up public AI pushback to the speed of change: 'And that is frightening'",
-          "link": "https://www.cnbc.com/2026/09/09/goldman-sachs-communcacopia-technology-conference-ai.html",
-          "published": "Wed, 09 Sep 2026 16:46:38 GMT"
+          "title": "Kimmel says interview with Senate candidate Talarico won't air on ABC amid FCC threats",
+          "link": "https://www.cnbc.com/2026/09/10/abc-kimmel-talarico-fcc.html",
+          "published": "Thu, 10 Sep 2026 15:45:09 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Experts weigh in as researcher says AI has more than 10% chance of 'killing all humans'",
-          "link": "https://www.cnbc.com/2026/09/09/anthropic-researcher-quits-ai-safety.html",
-          "published": "Wed, 09 Sep 2026 16:50:10 GMT"
+          "title": "30-year fixed mortgage rate tops 7% for the first time in over a year",
+          "link": "https://www.cnbc.com/2026/09/10/30-year-fixed-mortgage-rate-crosses.html",
+          "published": "Thu, 10 Sep 2026 16:29:28 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Brent crude oil tops $101 for first time since July as fighting escalates in Persian Gulf",
-          "link": "https://www.cnbc.com/2026/09/09/oil-prices-today-wti-brent-us-iran-hormuz-attacks.html",
-          "published": "Wed, 09 Sep 2026 16:40:53 GMT"
+          "title": "Apple makes biggest change to iPhone release cadence in 7 years in Ternus' first showcase as CEO",
+          "link": "https://www.cnbc.com/2026/09/10/apple-makes-biggest-change-to-iphone-release-cadence-in-7-years.html",
+          "published": "Thu, 10 Sep 2026 14:45:52 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump's oil investments have gained millions during Iran war as his accounts keep trading",
-          "link": "https://www.cnbc.com/2026/09/09/trump-oil-gas-holdings-iran-war.html",
-          "published": "Wed, 09 Sep 2026 10:30:01 GMT"
+          "title": "Wholesale prices rose 0.4% in August, as expected",
+          "link": "https://www.cnbc.com/2026/09/10/ppi-inflation-report-august-2026.html",
+          "published": "Thu, 10 Sep 2026 13:23:45 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Mortgage rate predictions through the next five years: Will we reach 7%?",
-          "link": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-rate-predictions-through-the-next-five-years-will-we-reach-7-195826935.html",
-          "published": "2025-08-18T19:58:26Z"
+          "title": "Skyworks Solutions Surges 10%, Qorvo Climbs 6% While Chip Stocks Fall: Is the Merger Finally Clearing?",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/skyworks-solutions-surges-10-qorvo-164726893.html",
+          "published": "2026-09-10T16:47:26Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "J.Jill, Inc. Q2 2026 Earnings Call Summary",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/j-jill-inc-q2-2026-164728426.html",
-          "published": "2026-09-09T16:47:28Z"
+          "title": "Stock market today: Dow, S&P 500, Nasdaq extend losses as bond yields jump, oil holds above $100",
+          "link": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-september-10-dow-sp-500-nasdaq-083717303.html",
+          "published": "2026-09-10T08:37:17Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "The likelihood of a Fed interest rate hike next week just got a lot higher",
+          "link": "https://www.cnbc.com/2026/09/10/the-likelihood-of-a-fed-interest-rate-hike-next-week-just-got-a-lot-higher.html",
+          "published": "Thu, 10 Sep 2026 16:55:17 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Wholesale prices rose 0.4% in August, as expected",
+          "link": "https://www.cnbc.com/2026/09/10/ppi-inflation-report-august-2026.html",
+          "published": "Thu, 10 Sep 2026 13:23:45 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "U.S. reveals import ban on slew of Canadian goods as trade war escalates",
@@ -80,18 +92,6 @@
           "title": "Japan's foreign reserves drop by a record $80 billion in August following yen intervention",
           "link": "https://www.cnbc.com/2026/09/07/japan-foreign-reserves-yen-intervention.html",
           "published": "Tue, 08 Sep 2026 14:15:38 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Trump turns up the heat on Warsh as Fed rate hike looms",
-          "link": "https://www.cnbc.com/2026/09/05/trump-warsh-fed-september-rate-hike.html",
-          "published": "Sat, 05 Sep 2026 19:12:53 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "From ‘mystery vacations’ to hostels, budget travelers get thrifty as prices rise",
-          "link": "https://www.cnbc.com/2026/09/05/budget-travel-vacation-costs.html",
-          "published": "Sat, 05 Sep 2026 23:55:52 GMT"
         }
       ]
     }
