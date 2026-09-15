@@ -1,62 +1,68 @@
 {
-  "updated": "2026-09-14T18:35:56Z",
+  "updated": "2026-09-15T17:39:32Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Trump says no need for more AI regulation, slams Anthropic CEO Dario Amodei",
-          "link": "https://www.cnbc.com/2026/09/14/trump-ai-data-centers-anthropic-dario-amodei.html",
-          "published": "Mon, 14 Sep 2026 18:21:18 GMT"
+          "title": "10-year Treasury yield hits highest level since 2007 as traders bet a Fed rate hike is coming",
+          "link": "https://www.cnbc.com/2026/09/15/10-year-treasury-yield-rises-to-highest-since-2007.html",
+          "published": "Tue, 15 Sep 2026 17:33:27 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Warsh's credibility is on the line this week as Trump policies put pressure on Fed to hike",
-          "link": "https://www.cnbc.com/2026/09/14/warshs-credibility-is-on-the-line-this-week-as-trump-policies-put-pressure-on-fed-to-hike.html",
-          "published": "Mon, 14 Sep 2026 17:26:21 GMT"
+          "title": "Musk urges top AI labs, Chinese companies to test each other's models amid calls for slowdown",
+          "link": "https://www.cnbc.com/2026/09/15/elon-musk-ai-safety-testing.html",
+          "published": "Tue, 15 Sep 2026 16:14:29 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "10-year Treasury yield hits 5% before reversing as traders await Fed meeting",
-          "link": "https://www.cnbc.com/2026/09/14/10-year-us-treasury-is-closing-in-on-5percent.html",
-          "published": "Mon, 14 Sep 2026 18:30:53 GMT"
+          "title": "Saudi pipeline closure is a brief interruption that will last days, U.S. Energy Secretary tells CNBC",
+          "link": "https://www.cnbc.com/2026/09/15/saud-arabia-east-west-pipeline-iran-war-chris-wright.html",
+          "published": "Tue, 15 Sep 2026 17:34:15 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Which matters more to stocks: the bond market or AI risks? The volatility gauge might offer an answer",
-          "link": "https://www.cnbc.com/2026/09/14/which-matters-more-to-stocks-the-bond-market-or-ai-risks-the-volatility-gauge-might-offer-an-answer.html",
-          "published": "Mon, 14 Sep 2026 18:01:37 GMT"
+          "title": "Scott Bessent defends Treasury intervention, Trump economy in contentious House hearing",
+          "link": "https://www.cnbc.com/2026/09/15/scott-bessent-house-hearing-economy-midterms.html",
+          "published": "Tue, 15 Sep 2026 17:11:56 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Microsoft sets limits for future AI models as industry throttles frontier development",
-          "link": "https://www.cnbc.com/2026/09/14/microsoft-ai-model-limits-anthropic-openai.html",
-          "published": "Mon, 14 Sep 2026 16:31:00 GMT"
+          "title": "Beaten-up bond market may be nearing 'escape velocity.' Here's what that means",
+          "link": "https://www.cnbc.com/2026/09/15/bonds-yield-10year-treasury-rates.html",
+          "published": "Tue, 15 Sep 2026 16:53:56 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "The stock market could do something strange this week after the Fed decision",
-          "link": "https://www.cnbc.com/2026/09/14/the-stock-market-could-do-something-strange-this-week-after-the-fed-decision.html",
-          "published": "Mon, 14 Sep 2026 17:48:40 GMT"
+          "title": "U.S. crude oil tops $106 as market awaits updates on Saudi pipeline outage",
+          "link": "https://www.cnbc.com/2026/09/15/oil-extends-gains-following-houthi-strikes-on-saudi-arabia.html",
+          "published": "Tue, 15 Sep 2026 17:01:40 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Stock Market Today (Sept. 14, 2026): Nasdaq, S&P 500 falls on rising oil, AI tensions",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-sept-14-133832281.html",
-          "published": "2026-09-14T13:38:32Z"
+          "title": "Costco rations Kirkland motor oil, raises price to $57.99",
+          "link": "https://finance.yahoo.com/energy/articles/costco-rations-kirkland-motor-oil-133308837.html",
+          "published": "2026-09-14T13:33:08Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Gentherm (THRM) Shareholders Approve Modine Merger, Clear for October Close",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/gentherm-thrm-shareholders-approve-modine-093511169.html",
-          "published": "2026-09-13T09:35:11Z"
+          "title": "Jim Cramer Validates Caller’s $1,400 Micron (MU) Thesis, Doubles Down on Charitable Trust Position",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-validates-caller-1-172138438.html",
+          "published": "2026-09-15T17:21:38Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Counting the votes: Warsh faces a tough battle as the Fed girds for expected interest rate hike",
+          "link": "https://www.cnbc.com/2026/09/14/counting-the-votes-warsh-faces-tough-battle-as-fed-girds-for-expected-rate-hike.html",
+          "published": "Mon, 14 Sep 2026 19:47:42 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Inflation is outpacing wage growth again, squeezing Americans’ paychecks",
@@ -86,12 +92,6 @@
           "title": "Friday's CPI inflation report is even more important than usual. Here's what to expect",
           "link": "https://www.cnbc.com/2026/09/10/fridays-cpi-inflation-report-is-even-more-important-than-usual-heres-what-to-expect.html",
           "published": "Thu, 10 Sep 2026 19:18:05 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "The likelihood of a Fed interest rate hike next week just got a lot higher",
-          "link": "https://www.cnbc.com/2026/09/10/the-likelihood-of-a-fed-interest-rate-hike-next-week-just-got-a-lot-higher.html",
-          "published": "Thu, 10 Sep 2026 16:55:17 GMT"
         }
       ]
     }
