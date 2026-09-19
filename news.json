@@ -1,62 +1,68 @@
 {
-  "updated": "2026-09-18T17:03:39Z",
+  "updated": "2026-09-19T16:27:33Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "OpenAI's latest AI revelation is a 'serious situation,' Microsoft's Suleyman tells CNBC",
-          "link": "https://www.cnbc.com/2026/09/18/microsoft-ai-ceo-openais-latest-ai-revelation-a-serious-situation.html",
-          "published": "Fri, 18 Sep 2026 14:36:55 GMT"
+          "title": "The AI kill switch, explained: 'It's not too little, but it's probably too late'",
+          "link": "https://www.cnbc.com/2026/09/19/ai-kill-switch-explained.html",
+          "published": "Sat, 19 Sep 2026 12:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "JPMorgan CEO Jamie Dimon attending Trump's state dinner for China's Xi: Source",
-          "link": "https://www.cnbc.com/2026/09/18/trump-xi-state-dinner-jpmorgan-jamie-dimon.html",
-          "published": "Fri, 18 Sep 2026 16:21:20 GMT"
+          "title": "MS NOW, CNN and Politico journalists blocked from White House after Trump ban",
+          "link": "https://www.cnbc.com/2026/09/19/trump-media-ban-ms-now.html",
+          "published": "Sat, 19 Sep 2026 15:14:46 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Three words from Kevin Warsh have Wall Street wondering how far the Fed will go with rate hikes",
-          "link": "https://www.cnbc.com/2026/09/18/three-words-from-kevin-warsh-have-wall-street-wondering-how-far-the-fed-will-go-with-rate-hikes.html",
-          "published": "Fri, 18 Sep 2026 16:33:43 GMT"
+          "title": "Consumer sentiment is in the dumps despite a solid economy. Goldman Sachs blames 'lower happiness'",
+          "link": "https://www.cnbc.com/2026/09/19/goldman-sachs-happiness-struggling-consumer-sentiment.html",
+          "published": "Sat, 19 Sep 2026 12:50:49 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Nike parts ways with Kylian Mbappé, soccer superstar signs with On",
-          "link": "https://www.cnbc.com/2026/09/18/kylian-mbappe-signs-with-on-after-nike-parts-ways.html",
-          "published": "Fri, 18 Sep 2026 16:42:14 GMT"
+          "title": "Flames reported near Saudi capital airport as Pakistan presses Iran over energy supplies",
+          "link": "https://www.cnbc.com/2026/09/19/riyadh-airport-smoke-saudi-arabia.html",
+          "published": "Sat, 19 Sep 2026 13:48:04 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Auto industry urges Trump to bar Chinese automakers in U.S. ahead of Xi visit",
-          "link": "https://www.cnbc.com/2026/09/18/xi-visit-automakers-urge-trump-to-bar-chinese-automakers-in-us.html",
-          "published": "Fri, 18 Sep 2026 16:26:27 GMT"
+          "title": "Buffett takes next step in plan to keep Berkshire from straying",
+          "link": "https://www.cnbc.com/2026/09/19/warren-buffett-takes-next-step-in-plan-to-keep-berkshire-from-straying.html",
+          "published": "Sat, 19 Sep 2026 12:43:56 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump's $403 million war chest is finally being spent on the midterms. Now comes the hard part",
-          "link": "https://www.cnbc.com/2026/09/18/trump-election-ad-spend-maga-inc.html",
-          "published": "Fri, 18 Sep 2026 16:49:03 GMT"
+          "title": "Student loan borrowers exiting SAVE may face sharply higher payments if they don't take action soon",
+          "link": "https://www.cnbc.com/2026/09/19/save-student-loan-deadline-avoid-higher-payments.html",
+          "published": "Sat, 19 Sep 2026 13:30:01 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Accenture vs. Micron Technology: Which Technology Stock Is a Better Buy in 2026?",
-          "link": "https://finance.yahoo.com/markets/stocks/articles/accenture-vs-micron-technology-technology-164700535.html",
-          "published": "2026-09-18T16:47:00Z"
+          "title": "They Retired at 62 With $650,000 Between Two IRAs and Lived on His Pension for 11 Years. At 73 Their First RMDs Came to $42,000, on Top of the Pension",
+          "link": "https://finance.yahoo.com/markets/articles/retired-62-650-000-between-160903592.html",
+          "published": "2026-09-19T16:09:03Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Mortgage and refinance interest rates today, Friday, September 18, 2026: Rates climb above 7%",
-          "link": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-and-refinance-interest-rates-today-friday-september-18-2026-rates-climb-above-7-100000327.html",
-          "published": "2026-09-18T10:00:00Z"
+          "title": "Marvell (MRVL) and GlobalFoundries (GFS) Rise on Expanded Deal: What Investors Should Know",
+          "link": "https://finance.yahoo.com/technology/articles/marvell-mrvl-globalfoundries-gfs-rise-155724895.html",
+          "published": "2026-09-19T15:57:24Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Consumer sentiment is in the dumps despite a solid economy. Goldman Sachs blames 'lower happiness'",
+          "link": "https://www.cnbc.com/2026/09/19/goldman-sachs-happiness-struggling-consumer-sentiment.html",
+          "published": "Sat, 19 Sep 2026 12:50:49 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Why Japan’s markets flipped the usual script after central bank rate hike",
@@ -86,12 +92,6 @@
           "title": "UK inflation jumps to 3.1% as energy costs soar",
           "link": "https://www.cnbc.com/2026/09/16/uk-august-inflation-energy-gasoline.html",
           "published": "Thu, 17 Sep 2026 07:36:04 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Indonesia's new finance minister faces an uphill battle on fiscal credibility",
-          "link": "https://www.cnbc.com/2026/09/16/indonesia-finance-minister-msci-prabowo-.html",
-          "published": "Wed, 16 Sep 2026 01:53:52 GMT"
         }
       ]
     }
