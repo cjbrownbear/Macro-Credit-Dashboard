@@ -1,62 +1,68 @@
 {
-  "updated": "2026-09-19T16:27:33Z",
+  "updated": "2026-09-20T16:46:57Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "The AI kill switch, explained: 'It's not too little, but it's probably too late'",
-          "link": "https://www.cnbc.com/2026/09/19/ai-kill-switch-explained.html",
-          "published": "Sat, 19 Sep 2026 12:00:01 GMT"
+          "title": "Nvidia CEO Jensen Huang emerges as Trump's top ally in AI safety debate",
+          "link": "https://www.cnbc.com/2026/09/20/nvidia-ceo-jensen-huang-emerges-as-trumps-top-ally-in-ai-debate.html",
+          "published": "Sun, 20 Sep 2026 11:25:08 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "MS NOW, CNN and Politico journalists blocked from White House after Trump ban",
-          "link": "https://www.cnbc.com/2026/09/19/trump-media-ban-ms-now.html",
-          "published": "Sat, 19 Sep 2026 15:14:46 GMT"
+          "title": "‘It's awful’: How tariffs, soaring fuel costs and higher interest rates are squeezing American companies",
+          "link": "https://www.cnbc.com/2026/09/20/tariffs-fuel-prices-and-interest-rates-squeeze-us-companies.html",
+          "published": "Sun, 20 Sep 2026 12:47:23 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Consumer sentiment is in the dumps despite a solid economy. Goldman Sachs blames 'lower happiness'",
-          "link": "https://www.cnbc.com/2026/09/19/goldman-sachs-happiness-struggling-consumer-sentiment.html",
-          "published": "Sat, 19 Sep 2026 12:50:49 GMT"
+          "title": "Williams-Sonoma's stock has soared in a sluggish housing market. Here's how it won over Wall Street",
+          "link": "https://www.cnbc.com/2026/09/20/williams-sonoma-stock-rises-housing-market.html",
+          "published": "Sun, 20 Sep 2026 12:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Flames reported near Saudi capital airport as Pakistan presses Iran over energy supplies",
-          "link": "https://www.cnbc.com/2026/09/19/riyadh-airport-smoke-saudi-arabia.html",
-          "published": "Sat, 19 Sep 2026 13:48:04 GMT"
+          "title": "U.S. urges Americans to reconsider Middle East travel as Iran tensions rise",
+          "link": "https://www.cnbc.com/2026/09/20/us-middle-east-travel-warning-iran-war-hormuz.html",
+          "published": "Sun, 20 Sep 2026 14:23:53 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Buffett takes next step in plan to keep Berkshire from straying",
-          "link": "https://www.cnbc.com/2026/09/19/warren-buffett-takes-next-step-in-plan-to-keep-berkshire-from-straying.html",
-          "published": "Sat, 19 Sep 2026 12:43:56 GMT"
+          "title": "Caruso-Cabrera: The investing tailwinds for Latin America are the best in decades",
+          "link": "https://www.cnbc.com/2026/09/20/caruso-cabrera-the-investing-tailwinds-for-latin-america-are-the-best-in-decades.html",
+          "published": "Sun, 20 Sep 2026 11:59:45 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Student loan borrowers exiting SAVE may face sharply higher payments if they don't take action soon",
-          "link": "https://www.cnbc.com/2026/09/19/save-student-loan-deadline-avoid-higher-payments.html",
-          "published": "Sat, 19 Sep 2026 13:30:01 GMT"
+          "title": "Budget airline king Bill Franke warms to first-class seats and premium upgrades",
+          "link": "https://www.cnbc.com/2026/09/20/bill-franke-frontier-spirit-budget-airlines.html",
+          "published": "Sun, 20 Sep 2026 12:00:01 GMT"
         },
         {
           "source": "Yahoo Finance",
-          "title": "They Retired at 62 With $650,000 Between Two IRAs and Lived on His Pension for 11 Years. At 73 Their First RMDs Came to $42,000, on Top of the Pension",
-          "link": "https://finance.yahoo.com/markets/articles/retired-62-650-000-between-160903592.html",
-          "published": "2026-09-19T16:09:03Z"
+          "title": "80-year-old discount fashion chain closing 120 stores",
+          "link": "https://finance.yahoo.com/small-business/articles/tj-maxx-rival-closing-120-181700076.html",
+          "published": "2026-09-19T23:02:22Z"
         },
         {
           "source": "Yahoo Finance",
-          "title": "Marvell (MRVL) and GlobalFoundries (GFS) Rise on Expanded Deal: What Investors Should Know",
-          "link": "https://finance.yahoo.com/technology/articles/marvell-mrvl-globalfoundries-gfs-rise-155724895.html",
-          "published": "2026-09-19T15:57:24Z"
+          "title": "California Resources (CRC) Sells Uinta Assets for $90 Million",
+          "link": "https://finance.yahoo.com/energy/articles/california-resources-crc-sells-uinta-162106302.html",
+          "published": "2026-09-20T16:21:06Z"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "France’s wine production nears a 70-year low, leaving winemakers with tough choices",
+          "link": "https://www.cnbc.com/2026/09/20/france-wine-production-70-year-low-heatwaves-drought.html",
+          "published": "Sun, 20 Sep 2026 05:00:01 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Consumer sentiment is in the dumps despite a solid economy. Goldman Sachs blames 'lower happiness'",
@@ -86,12 +92,6 @@
           "title": "Consumers hit by one-two punch of oil and rates from Iran war. The estimated bill is $1,700 per household",
           "link": "https://www.cnbc.com/2026/09/16/oil-prices-treasury-yields-consumers-iran.html",
           "published": "Wed, 16 Sep 2026 17:32:22 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "UK inflation jumps to 3.1% as energy costs soar",
-          "link": "https://www.cnbc.com/2026/09/16/uk-august-inflation-energy-gasoline.html",
-          "published": "Thu, 17 Sep 2026 07:36:04 GMT"
         }
       ]
     }
