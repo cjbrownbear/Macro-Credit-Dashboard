@@ -1,44 +1,44 @@
 {
-  "updated": "2026-09-24T17:51:07Z",
+  "updated": "2026-09-25T17:56:25Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Big business warns Trump against diesel export ban in joint letter",
-          "link": "https://www.cnbc.com/2026/09/24/chamber-commerce-business-roundtable-trump-diesel-export-ban-iran-war.html",
-          "published": "Thu, 24 Sep 2026 14:23:33 GMT"
+          "title": "History shows financial calamities occur when rates rise rapidly like this: 'Something always breaks'",
+          "link": "https://www.cnbc.com/2026/09/24/history-shows-financial-calamities-occur-when-rates-rise-rapidly-like-this-something-always-breaks.html",
+          "published": "Thu, 24 Sep 2026 20:57:11 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "30-year Treasury yield hits highest level since 2004 as bond market rout continues",
-          "link": "https://www.cnbc.com/2026/09/24/us-treasury-yields-bonds-fed-inflation.html",
-          "published": "Thu, 24 Sep 2026 15:41:37 GMT"
+          "title": "Warsh's regime change at the Fed pushes ahead – and meets resistance",
+          "link": "https://www.cnbc.com/2026/09/25/kevin-warsh-fed-interest-rates-balance-sheet.html",
+          "published": "Fri, 25 Sep 2026 10:30:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Oracle sends 'force majeure' notice about data center project — stock sinks 4%",
-          "link": "https://www.cnbc.com/2026/09/24/oracle-data-center-force-majeure.html",
-          "published": "Thu, 24 Sep 2026 16:48:38 GMT"
+          "title": "Trump says Scott Bessent won't be AI czar",
+          "link": "https://www.cnbc.com/2026/09/25/trump-bessent-ai-czar.html",
+          "published": "Fri, 25 Sep 2026 17:28:32 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "New York sues Polymarket U.S., two months after filing lawsuit against Kalshi",
-          "link": "https://www.cnbc.com/2026/09/24/new-york-sues-polymarket-us-two-months-after-filing-suit-against-kalshi-.html",
-          "published": "Thu, 24 Sep 2026 17:44:32 GMT"
+          "title": "U.S. appeals court upholds Pentagon designation of Anthropic as supply chain risk",
+          "link": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
+          "published": "Fri, 25 Sep 2026 17:19:19 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Philadelphia Fed's Anna Paulson says 'modest' rate moves likely ahead to tame inflation",
-          "link": "https://www.cnbc.com/2026/09/24/philadelphia-feds-anna-paulson-says-modest-rate-moves-likely-ahead-to-tame-inflation.html",
-          "published": "Thu, 24 Sep 2026 17:12:04 GMT"
+          "title": "Details on U.S.-China trade negotiations coming Monday, USTR Greer says",
+          "link": "https://www.cnbc.com/2026/09/25/trump-xi-china-trade-greer.html",
+          "published": "Fri, 25 Sep 2026 16:20:40 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "White House allows blocked reporters in after judge lifts Trump ban",
-          "link": "https://www.cnbc.com/2026/09/24/judge-lifts-trumps-white-house-ban-on-cnn-ms-now-and-politico.html",
-          "published": "Thu, 24 Sep 2026 16:33:20 GMT"
+          "title": "Atlanta is getting pandas: China's Xi revives a longtime diplomatic strategy at summit with U.S.",
+          "link": "https://www.cnbc.com/2026/09/25/china-us-xi-trump-visit-panda-student-visa-.html",
+          "published": "Fri, 25 Sep 2026 01:12:19 GMT"
         },
         {
           "source": "Yahoo Finance",
@@ -57,6 +57,18 @@
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "China saw 'surprise' jump in U.S. orders ahead of Trump-Xi summit, private survey shows",
+          "link": "https://www.cnbc.com/2026/09/25/china-exports-surplus-trade-tariffs-.html",
+          "published": "Fri, 25 Sep 2026 10:25:01 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Surging Treasury yields pose a brand new problem for Kevin Warsh and the Fed",
+          "link": "https://www.cnbc.com/2026/09/24/surging-treasury-yields-are-posing-a-brand-new-problem-for-kevin-warsh-and-the-fed.html",
+          "published": "Fri, 25 Sep 2026 11:08:05 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Global debt tops $365 trillion as economists sound alarm over 'vicious cycle'",
@@ -80,18 +92,6 @@
           "title": "World heads into food crises 'blind' as U.S. aid cuts squeeze UN food agency, experts warn",
           "link": "https://www.cnbc.com/2026/09/24/hormuz-blacksea-ukraine-iran-food-security-united-nations-.html",
           "published": "Thu, 24 Sep 2026 04:02:26 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Here's what happens to the economy when Treasury yields soar like they are now",
-          "link": "https://www.cnbc.com/2026/09/23/what-happens-to-the-economy-when-treasury-yields-soar.html",
-          "published": "Thu, 24 Sep 2026 14:37:14 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "France’s wine production nears a 70-year low, leaving winemakers with tough choices",
-          "link": "https://www.cnbc.com/2026/09/20/france-wine-production-70-year-low-heatwaves-drought.html",
-          "published": "Sun, 20 Sep 2026 05:00:01 GMT"
         }
       ]
     }
