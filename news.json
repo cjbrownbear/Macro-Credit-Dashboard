@@ -1,44 +1,44 @@
 {
-  "updated": "2026-09-27T17:43:32Z",
+  "updated": "2026-09-28T20:06:49Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Debt-hungry AI companies face increased risk as bond yields spike",
-          "link": "https://www.cnbc.com/2026/09/27/debt-hungry-data-center-companies-increased-risk-bond-yields-spike.html",
-          "published": "Sun, 27 Sep 2026 15:35:34 GMT"
+          "title": "Trump announces plan for $15 billion steel plant, would be largest in U.S. history",
+          "link": "https://www.cnbc.com/2026/09/28/trump-steel-plant-iowa.html",
+          "published": "Mon, 28 Sep 2026 19:37:50 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "At NFL games this season, drone defense tech aims to bring down disruptions",
-          "link": "https://www.cnbc.com/2026/09/27/nfl-drone-defense-tech-game-disruptions.html",
-          "published": "Sun, 27 Sep 2026 15:22:03 GMT"
+          "title": "Zuckerberg, Amodei among tech executives set to meet Trump Tuesday",
+          "link": "https://www.cnbc.com/2026/09/28/trump-ai-tech-lunch.html",
+          "published": "Mon, 28 Sep 2026 20:00:45 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Wall Street money takes back over from small investors as driving force of the stock market",
-          "link": "https://www.cnbc.com/2026/09/27/institutional-investors-stocks-treaurys-retail-traders.html",
-          "published": "Sun, 27 Sep 2026 11:32:35 GMT"
+          "title": "Boeing 737 Max 10 certification delayed by software issue, FAA says",
+          "link": "https://www.cnbc.com/2026/09/28/faa-boeing-737-max-10-certification-delay-software-issue.html",
+          "published": "Mon, 28 Sep 2026 19:46:42 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Meta's Muse agent is attacking one of the economy's most profitable weak spots",
-          "link": "https://www.cnbc.com/2026/09/27/meta-muse-ai-personal-agent.html",
-          "published": "Sun, 27 Sep 2026 14:33:22 GMT"
+          "title": "LeBron James is already boosting ticket and merchandise demand for Philadelphia 76ers",
+          "link": "https://www.cnbc.com/2026/09/28/lebron-james-boosts-ticket-jersey-demand-for-nba-philadelphia-76ers.html",
+          "published": "Mon, 28 Sep 2026 19:27:48 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Iran's foreign minister says Tehran ready for 'doomsday' war with U.S., but leaves diplomacy on the table",
-          "link": "https://www.cnbc.com/2026/09/27/iran-foreign-minister-keeps-indirect-talks-with-us-open-state-media.html",
-          "published": "Sun, 27 Sep 2026 16:15:45 GMT"
+          "title": "OpenAI sparked Hugging Face bids with early investment offer ahead of Nvidia's $13 billion deal",
+          "link": "https://www.cnbc.com/2026/09/28/openai-spark-hugging-face-bid-war-early-investment-bid-ahead-of-nvidia.html",
+          "published": "Mon, 28 Sep 2026 18:47:21 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Apple faces $5.7 billion patent infringement verdict over iPhone and Apple Watch haptics",
-          "link": "https://www.cnbc.com/2026/09/26/apple-taction-technology-patent-infringement-verdict.html",
-          "published": "Sat, 26 Sep 2026 16:57:57 GMT"
+          "title": "Nvidia share buyback plan gets $150 billion boost",
+          "link": "https://www.cnbc.com/2026/09/28/nvidia-share-buyback-plan-gets-150-billion-boost.html",
+          "published": "Mon, 28 Sep 2026 14:46:36 GMT"
         },
         {
           "source": "Yahoo Finance",
@@ -57,6 +57,12 @@
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "China posts weakest industrial profit growth this year, expanding 4.2% in August",
+          "link": "https://www.cnbc.com/2026/09/28/china-posts-weakest-industrial-profit-growth-this-year-expanding-4point2percent-in-august-.html",
+          "published": "Mon, 28 Sep 2026 04:04:16 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "China saw 'surprise' jump in U.S. orders ahead of Trump-Xi summit, private survey shows",
@@ -86,12 +92,6 @@
           "title": "France's fresh budget battle threatens to topple another government",
           "link": "https://www.cnbc.com/2026/09/24/france-budget-debt-deficit-government.html",
           "published": "Thu, 24 Sep 2026 06:21:00 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "World heads into food crises 'blind' as U.S. aid cuts squeeze UN food agency, experts warn",
-          "link": "https://www.cnbc.com/2026/09/24/hormuz-blacksea-ukraine-iran-food-security-united-nations-.html",
-          "published": "Thu, 24 Sep 2026 04:02:26 GMT"
         }
       ]
     }
