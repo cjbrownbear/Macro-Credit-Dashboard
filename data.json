@@ -1,9 +1,9 @@
 {
-  "updated": "2026-09-30T18:26:05Z",
+  "updated": "2026-10-01T18:51:26Z",
   "overall_status": "tripwire",
   "executive_summary": {
-    "text": "Overall status is Tripwire / Watch. Across the dashboard: 7 healthy, 1 tripwire, 0 stress. Biggest YoY moves: Revolving Consumer Credit (Δ 1y: +46940B (+3.6%)); Initial Jobless Claims (Δ 1y: -36000K (-15.5%)); Net Charge-off Rate (Δ 1y: -0.37pp (-8.8%)).",
-    "updated": "2026-09-30T18:26:05Z",
+    "text": "Overall status is Tripwire / Watch. Across the dashboard: 7 healthy, 1 tripwire, 0 stress. Biggest YoY moves: Revolving Consumer Credit (Δ 1y: +46940B (+3.6%)); Initial Jobless Claims (Δ 1y: -22000K (-10.0%)); Net Charge-off Rate (Δ 1y: -0.37pp (-8.8%)).",
+    "updated": "2026-10-01T18:51:26Z",
     "overall": "tripwire"
   },
   "kpis": [
@@ -333,13 +333,12 @@
       "value": 197000.0,
       "value_str": "197,000K",
       "as_of": "Sep 2026",
-      "avg10": 360503.83141762455,
-      "avg_str": "360,504K",
-      "delta_abs": -36000.0,
-      "delta_pct": -0.15450643776824036,
-      "delta_str": "Δ 1y: -36000K (-15.5%)",
+      "avg10": 360409.96168582374,
+      "avg_str": "360,410K",
+      "delta_abs": -22000.0,
+      "delta_pct": -0.1004566210045662,
+      "delta_str": "Δ 1y: -22000K (-10.0%)",
       "spark": [
-        208000.0,
         215000.0,
         190000.0,
         199000.0,
@@ -361,6 +360,7 @@
         204000.0,
         207000.0,
         207000.0,
+        198000.0,
         198000.0,
         197000.0
       ],
@@ -38148,6 +38148,11 @@
         },
         {
           "date": "2026-09-19",
+          "value": 198000.0,
+          "value_str": "198,000K"
+        },
+        {
+          "date": "2026-09-26",
           "value": 197000.0,
           "value_str": "197,000K"
         }
@@ -50571,10 +50576,14 @@
         },
         {
           "date": "2026-09-19",
-          "value": 221800.0
+          "value": 221808.33333333334
+        },
+        {
+          "date": "2026-09-26",
+          "value": 221450.0
         }
       ],
-      "summary_text": "Latest: 197,000K (Healthy). Δ 1y: -36000K (-15.5%)."
+      "summary_text": "Latest: 197,000K (Healthy). Δ 1y: -22000K (-10.0%)."
     },
     {
       "key": "DSPIC96_bil_usd",
@@ -61810,6 +61819,7 @@
     "2026-08-29",
     "2026-09-05",
     "2026-09-12",
-    "2026-09-19"
+    "2026-09-19",
+    "2026-09-26"
   ]
 }
