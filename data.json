@@ -1,9 +1,9 @@
 {
-  "updated": "2026-10-01T18:51:26Z",
+  "updated": "2026-10-02T18:23:03Z",
   "overall_status": "tripwire",
   "executive_summary": {
     "text": "Overall status is Tripwire / Watch. Across the dashboard: 7 healthy, 1 tripwire, 0 stress. Biggest YoY moves: Revolving Consumer Credit (Δ 1y: +46940B (+3.6%)); Initial Jobless Claims (Δ 1y: -22000K (-10.0%)); Net Charge-off Rate (Δ 1y: -0.37pp (-8.8%)).",
-    "updated": "2026-10-01T18:51:26Z",
+    "updated": "2026-10-02T18:23:02Z",
     "overall": "tripwire"
   },
   "kpis": [
@@ -285,16 +285,15 @@
       "unit": "pct",
       "status": "healthy",
       "status_label": "Healthy",
-      "value": 4.1,
-      "value_str": "4.10%",
-      "as_of": "Aug 2026",
-      "avg10": 4.543333333333332,
+      "value": 4.2,
+      "value_str": "4.20%",
+      "as_of": "Sep 2026",
+      "avg10": 4.537499999999999,
       "avg_str": "4.54%",
       "delta_abs": -0.20000000000000018,
-      "delta_pct": -0.046511627906976785,
-      "delta_str": "Δ 1y: -0.20pp (-4.7%)",
+      "delta_pct": -0.04545454545454549,
+      "delta_str": "Δ 1y: -0.20pp (-4.5%)",
       "spark": [
-        4.2,
         4.1,
         4.1,
         4.2,
@@ -317,7 +316,8 @@
         4.3,
         4.2,
         4.1,
-        4.1
+        4.1,
+        4.2
       ],
       "definition": "Headline unemployment rate (U-3).",
       "why": "Rising unemployment tends to worsen credit performance."
@@ -18830,6 +18830,11 @@
           "date": "2026-08-01",
           "value": 4.1,
           "value_str": "4.10%"
+        },
+        {
+          "date": "2026-09-01",
+          "value": 4.2,
+          "value_str": "4.20%"
         }
       ],
       "bench_points": [
@@ -22560,9 +22565,13 @@
         {
           "date": "2026-08-01",
           "value": 4.543333333333333
+        },
+        {
+          "date": "2026-09-01",
+          "value": 4.5375
         }
       ],
-      "summary_text": "Latest: 4.10% (Healthy). Δ 1y: -0.20pp (-4.7%)."
+      "summary_text": "Latest: 4.20% (Healthy). Δ 1y: -0.20pp (-4.5%)."
     },
     {
       "key": "ICSA_thou",
@@ -61817,6 +61826,7 @@
     "2026-08-15",
     "2026-08-22",
     "2026-08-29",
+    "2026-09-01",
     "2026-09-05",
     "2026-09-12",
     "2026-09-19",
