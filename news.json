@@ -1,44 +1,44 @@
 {
-  "updated": "2026-10-04T17:33:23Z",
+  "updated": "2026-10-05T21:15:53Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "A 'weird' IPO pull, a tainted reputation and the stalled breakout moment for AI wearables",
-          "link": "https://www.cnbc.com/2026/10/04/ai-wearables-oura-ipo-privacy.html",
-          "published": "Sun, 04 Oct 2026 13:22:39 GMT"
+          "title": "'We had a threat': Trump explains U.S. moving long-range bombers from UK",
+          "link": "https://www.cnbc.com/2026/10/05/trump-bombers-uk-iran.html",
+          "published": "Mon, 05 Oct 2026 20:53:33 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump taps Director of National Intelligence Jay Clayton as AI czar",
-          "link": "https://www.cnbc.com/2026/10/03/trump-jay-clayton-ai-czar.html",
-          "published": "Sun, 04 Oct 2026 12:53:12 GMT"
+          "title": "House Democrat targets candidate prediction market trades after opponent’s Kalshi penalty",
+          "link": "https://www.cnbc.com/2026/10/05/don-davis-prediction-market-candidate-trading.html",
+          "published": "Mon, 05 Oct 2026 20:31:19 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Ukraine’s surprise robot offensive exposes a vulnerability in Putin’s war machine",
-          "link": "https://www.cnbc.com/2026/10/04/russia-ukraine-war-putin-zelenskyy-donbas-lyman.html",
-          "published": "Sun, 04 Oct 2026 05:00:01 GMT"
+          "title": "AI researcher warns 'we are racing to build and grow our own adversary' in NYC hearing",
+          "link": "https://www.cnbc.com/2026/10/05/anthropic-openai-google-meta-execs-testify-nyc-council-ai-hearing.html",
+          "published": "Mon, 05 Oct 2026 20:08:19 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Sports betting is increasingly the norm for Gen Z.  Here’s why some financial and mental health experts are worried",
-          "link": "https://www.cnbc.com/2026/10/04/gen-z-sports-betting-financial-and-mental-health-risks.html",
-          "published": "Sun, 04 Oct 2026 12:57:45 GMT"
+          "title": "SpaceX stock climbs to highest since June, returning Musk to trillionaire status",
+          "link": "https://www.cnbc.com/2026/10/05/spacex-stock-climbs-highest-since-june-returning-musk-to-trillionaire.html",
+          "published": "Mon, 05 Oct 2026 20:10:13 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Why brands like E.l.f., Wendy's and Gap are branching out into original music",
-          "link": "https://www.cnbc.com/2026/10/04/elf-wendys-gap-music-marketing.html",
-          "published": "Sun, 04 Oct 2026 12:00:01 GMT"
+          "title": "Lucid's Q3 deliveries fall 6.7% as EV maker cuts production to align with demand",
+          "link": "https://www.cnbc.com/2026/10/05/lucid-group-lcid-q3-2026-deliveries-production.html",
+          "published": "Mon, 05 Oct 2026 21:04:17 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Top Wall Street analysts are upbeat about the prospects for these 3 stocks",
-          "link": "https://www.cnbc.com/2026/10/04/top-analysts-are-upbeat-about-the-prospects-for-these-3-stocks.html",
-          "published": "Sun, 04 Oct 2026 13:24:16 GMT"
+          "title": "GM says hybrid vehicles are coming: 'We're not tone deaf to our customers'",
+          "link": "https://www.cnbc.com/2026/10/05/gm-hybrid-vehicles.html",
+          "published": "Mon, 05 Oct 2026 12:30:01 GMT"
         },
         {
           "source": "Yahoo Finance",
@@ -57,6 +57,12 @@
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "The 2029 tipping point: Western populations are about to start shrinking, piling pressure on public finances",
+          "link": "https://www.cnbc.com/2026/10/05/aging-population-moodys-public-finances.html",
+          "published": "Mon, 05 Oct 2026 05:00:01 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Men are losing ground in the labor market. Here's why",
@@ -86,12 +92,6 @@
           "title": "Private sector jobs rose by 90,000 in September, better than expected, ADP reports",
           "link": "https://www.cnbc.com/2026/09/30/private-sector-jobs-rose-by-90000-in-september-better-than-expected-adp-reports.html",
           "published": "Wed, 30 Sep 2026 14:42:04 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "The Fed's main inflation measure will be released Wednesday. Here's what to expect",
-          "link": "https://www.cnbc.com/2026/09/29/the-feds-main-inflation-measure-will-be-released-wednesday-heres-what-to-expect.html",
-          "published": "Tue, 29 Sep 2026 20:51:43 GMT"
         }
       ]
     }
