@@ -1,50 +1,62 @@
 {
-  "updated": "2026-10-08T19:15:36Z",
+  "updated": "2026-10-09T18:47:42Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Nvidia, Oracle, CoreWeave and other AI stocks sink on OpenAI revenue report",
-          "link": "https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html",
-          "published": "Thu, 08 Oct 2026 18:18:31 GMT"
+          "title": "Americans' debt problems are flashing a warning not seen since the Great Recession",
+          "link": "https://www.cnbc.com/2026/10/09/american-debt-delinquency.html",
+          "published": "Fri, 09 Oct 2026 16:10:41 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "U.S. suspends Microsoft, Adobe from green card labor program in foreign worker crackdown",
-          "link": "https://www.cnbc.com/2026/10/08/microsoft-adobe-green-card-labor-suspension.html",
-          "published": "Thu, 08 Oct 2026 18:52:59 GMT"
+          "title": "Tanker attacks in Strait of Hormuz surge to wartime high as Iran tries to choke off oil exports",
+          "link": "https://www.cnbc.com/2026/10/09/iran-war-strait-hormuz-tanker-attack-oil.html",
+          "published": "Fri, 09 Oct 2026 18:02:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Why a Starbucks takeover of Chipotle would — and wouldn't — make sense for both companies",
-          "link": "https://www.cnbc.com/2026/10/08/starbucks-chipotle-acquisition.html",
-          "published": "Thu, 08 Oct 2026 18:37:46 GMT"
+          "title": "Trump Media advisor Katie Zacharia offered White House press secretary role",
+          "link": "https://www.cnbc.com/2026/10/09/katie-zacharia-white-house-press-secretary.html",
+          "published": "Fri, 09 Oct 2026 18:46:03 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump says U.S. will not attack Iran before midterm election",
-          "link": "https://www.cnbc.com/2026/10/08/iran-war-trump-midterm-election.html",
-          "published": "Thu, 08 Oct 2026 17:41:20 GMT"
+          "title": "Trump created a committee to dig into the Fed's Lisa Cook. What is it and what comes next?",
+          "link": "https://www.cnbc.com/2026/10/09/trump-lisa-cook-fed-firing-committee-explained.html",
+          "published": "Fri, 09 Oct 2026 18:20:57 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Inflation on many everyday items was entirely due to tariffs, NY Fed says",
-          "link": "https://www.cnbc.com/2026/10/08/inflation-tariffs-trump-fed-consumer-goods.html",
-          "published": "Thu, 08 Oct 2026 17:31:03 GMT"
+          "title": "Hurricane Isaias disrupts U.S. oil production in Gulf of Mexico, threatens refineries",
+          "link": "https://www.cnbc.com/2026/10/09/hurricane-isaias-gulf-mexico-oil-refinery.html",
+          "published": "Fri, 09 Oct 2026 17:12:17 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Little relief expected for gas prices ahead of Election Day, according to prediction markets",
-          "link": "https://www.cnbc.com/2026/10/08/little-relief-expected-for-gas-prices-ahead-of-election-day.html",
-          "published": "Thu, 08 Oct 2026 17:51:51 GMT"
+          "title": "Verizon stock heads for worst day since 2002 as SpaceX U.S. network plans whack telcos",
+          "link": "https://www.cnbc.com/2026/10/09/verizon-att-tmobile-stocks-spacex-network.html",
+          "published": "Fri, 09 Oct 2026 18:32:37 GMT"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Americans' debt problems are flashing a warning not seen since the Great Recession",
+          "link": "https://www.cnbc.com/2026/10/09/american-debt-delinquency.html",
+          "published": "Fri, 09 Oct 2026 16:10:41 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Treasury's Bessent hires Trump's controversial former Fed board pick, Judy Shelton, as advisor",
+          "link": "https://www.cnbc.com/2026/10/09/judy-shelton-scott-bessent-treasury.html",
+          "published": "Fri, 09 Oct 2026 13:09:19 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Inflation on many everyday items was entirely due to tariffs, NY Fed says",
@@ -68,18 +80,6 @@
           "title": "Why AI is both the hope and the hazard for world leaders, according to IMF chief Georgieva",
           "link": "https://www.cnbc.com/2026/10/07/economy-inflation-ai-trade-imf-iran-hormuz-trump-.html",
           "published": "Wed, 07 Oct 2026 06:16:39 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "India’s central bank hikes rates for the first time since 2023 as inflation risks build",
-          "link": "https://www.cnbc.com/2026/10/07/india-rbi-interest-rates-inflation.html",
-          "published": "Wed, 07 Oct 2026 11:55:36 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Trade deficit hits $105.6 billion, widest since just before Trump tariffs enacted last year",
-          "link": "https://www.cnbc.com/2026/10/06/trade-deficit-hits-105point6-billion-widest-since-just-before-trump-tariffs-enacted-last-year.html",
-          "published": "Tue, 06 Oct 2026 15:52:22 GMT"
         }
       ]
     }
