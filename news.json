@@ -1,9 +1,21 @@
 {
-  "updated": "2026-10-10T17:50:09Z",
+  "updated": "2026-10-11T18:02:46Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
+        {
+          "source": "CNBC Top News",
+          "title": "AI’s quiet safety gatekeepers are stepping into the spotlight",
+          "link": "https://www.cnbc.com/2026/10/11/ais-quiet-safety-gatekeepers-are-stepping-into-the-spotlight.html",
+          "published": "Sun, 11 Oct 2026 14:08:44 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "Trump says he is 'going to look at' joining Saudi Arabia in the fight against Iran-backed Houthis after deadly airport strike",
+          "link": "https://www.cnbc.com/2026/10/11/trump-saudi-arabia-iran-houthis.html",
+          "published": "Sun, 11 Oct 2026 16:29:55 GMT"
+        },
         {
           "source": "CNBC Top News",
           "title": "Vance says Microsoft replaced laid-off workers with foreign hires. Here’s what the visa data shows",
@@ -12,33 +24,21 @@
         },
         {
           "source": "CNBC Top News",
-          "title": "Nvidia GPUs are everywhere. Here are the ways companies are accessing them",
-          "link": "https://www.cnbc.com/2026/10/10/nvidia-gpus-are-everywhere-heres-how-companies-access-them.html",
-          "published": "Sat, 10 Oct 2026 11:00:01 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "Trump's diesel agreement with Putin accused of contradicting Russia sanctions law",
-          "link": "https://www.cnbc.com/2026/10/09/trump-putin-diesel-russia-sanctions-ukraine.html",
-          "published": "Sat, 10 Oct 2026 02:09:00 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "Putin relayed Iran war proposal to Trump, Kremlin says",
-          "link": "https://www.cnbc.com/2026/10/10/putin-trump-iran-war-russia-diesel.html",
-          "published": "Sat, 10 Oct 2026 13:42:36 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "How Supreme Court justices are leaning in major 401(k) case over private funds and underperformance",
-          "link": "https://www.cnbc.com/2026/10/10/supreme-court-case-401k-private-funds-intel.html",
-          "published": "Sat, 10 Oct 2026 13:00:01 GMT"
+          "title": "NBA commissioner Adam Silver says league could introduce ‘smart ball’ technology as soon as next year",
+          "link": "https://www.cnbc.com/2026/10/11/commissioner-adam-silver-nba-could-launch-smart-ball-tech-next-year.html",
+          "published": "Sun, 11 Oct 2026 12:54:04 GMT"
         },
         {
           "source": "CNBC Top News",
           "title": "JPMorgan makes bullish call in fixed income space, suggests it's a once in a generation opportunity",
           "link": "https://www.cnbc.com/2026/10/10/jpmorgan-sees-once-in-a-generation-opportunity-in-fixed-income-space.html",
           "published": "Sat, 10 Oct 2026 15:00:01 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "AI is automating coding. So why are software developer job postings on the rise?",
+          "link": "https://www.cnbc.com/2026/10/11/ai-software-developer-jobs.html",
+          "published": "Sun, 11 Oct 2026 13:30:01 GMT"
         }
       ]
     },
