@@ -1,50 +1,68 @@
 {
-  "updated": "2026-10-11T18:02:46Z",
+  "updated": "2026-10-12T21:43:05Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "AI’s quiet safety gatekeepers are stepping into the spotlight",
-          "link": "https://www.cnbc.com/2026/10/11/ais-quiet-safety-gatekeepers-are-stepping-into-the-spotlight.html",
-          "published": "Sun, 11 Oct 2026 14:08:44 GMT"
+          "title": "Trump defends Russia diesel deal after bipartisan pushback: 'I made the right choice'",
+          "link": "https://www.cnbc.com/2026/10/12/trump-russia-diesel-putin.html",
+          "published": "Mon, 12 Oct 2026 18:32:03 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump says he is 'going to look at' joining Saudi Arabia in the fight against Iran-backed Houthis after deadly airport strike",
-          "link": "https://www.cnbc.com/2026/10/11/trump-saudi-arabia-iran-houthis.html",
-          "published": "Sun, 11 Oct 2026 16:29:55 GMT"
+          "title": "Elon Musk gives $276 million to Republican groups, becomes biggest known 2026 midterm donor",
+          "link": "https://www.cnbc.com/2026/10/12/elon-musk-republican-donations-2026-midterm-election.html",
+          "published": "Mon, 12 Oct 2026 21:17:58 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Vance says Microsoft replaced laid-off workers with foreign hires. Here’s what the visa data shows",
-          "link": "https://www.cnbc.com/2026/10/10/vance-microsoft-h1b-layoffs-visa-data.html",
-          "published": "Sat, 10 Oct 2026 14:22:23 GMT"
+          "title": "Rep. Ilhan Omar blasts federal criminal raid on home: 'I will not be silenced'",
+          "link": "https://www.cnbc.com/2026/10/12/ilhan-omar-home-raided-dhs-immigration-investigation.html",
+          "published": "Mon, 12 Oct 2026 18:29:28 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "NBA commissioner Adam Silver says league could introduce ‘smart ball’ technology as soon as next year",
-          "link": "https://www.cnbc.com/2026/10/11/commissioner-adam-silver-nba-could-launch-smart-ball-tech-next-year.html",
-          "published": "Sun, 11 Oct 2026 12:54:04 GMT"
+          "title": "Trump 'not happy' with Kimberly Guilfoyle, weighs firing her as ambassador to Greece",
+          "link": "https://www.cnbc.com/2026/10/12/trump-kimberly-guilfoyle-ambassador.html",
+          "published": "Mon, 12 Oct 2026 21:33:35 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "JPMorgan makes bullish call in fixed income space, suggests it's a once in a generation opportunity",
-          "link": "https://www.cnbc.com/2026/10/10/jpmorgan-sees-once-in-a-generation-opportunity-in-fixed-income-space.html",
-          "published": "Sat, 10 Oct 2026 15:00:01 GMT"
+          "title": "Earnings beats are now the norm. What the stock market needs to keep rallying",
+          "link": "https://www.cnbc.com/2026/10/07/here-comes-third-quarter-earnings-season-booming-profits-could-propel-the-sp-500-to-new-heights.html",
+          "published": "Mon, 12 Oct 2026 20:35:51 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "AI is automating coding. So why are software developer job postings on the rise?",
-          "link": "https://www.cnbc.com/2026/10/11/ai-software-developer-jobs.html",
-          "published": "Sun, 11 Oct 2026 13:30:01 GMT"
+          "title": "A massive trade just happened in surging shares of Snap",
+          "link": "https://www.cnbc.com/2026/10/12/a-massive-trade-just-happens-in-surging-shares-of-snap.html",
+          "published": "Mon, 12 Oct 2026 18:43:44 GMT"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "India’s retail inflation jumps to 5.54% in September, above estimates",
+          "link": "https://www.cnbc.com/2026/10/12/india-inflation-oil-energy-iran-war.html",
+          "published": "Mon, 12 Oct 2026 10:49:24 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Nobel prize in economics awarded to Robert E. Hall and Michael Woodford",
+          "link": "https://www.cnbc.com/2026/10/12/nobel-economics-prize-winner-woodford-hall.html",
+          "published": "Mon, 12 Oct 2026 14:09:02 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "World Bank jobs council urges 'crisis-era' employment support measures as IMF warns of AI ‘tsunami’",
+          "link": "https://www.cnbc.com/2026/10/12/imf-world-bank-ai-jobs-inflation-.html",
+          "published": "Mon, 12 Oct 2026 08:58:54 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Americans' debt problems are flashing a warning not seen since the Great Recession",
@@ -62,24 +80,6 @@
           "title": "Inflation on many everyday items was entirely due to tariffs, NY Fed says",
           "link": "https://www.cnbc.com/2026/10/08/inflation-tariffs-trump-fed-consumer-goods.html",
           "published": "Thu, 08 Oct 2026 17:31:03 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Inflation fears on the rise as one-year outlook in Fed survey hits highest level since May 2023",
-          "link": "https://www.cnbc.com/2026/10/07/inflation-fears-on-the-rise-as-one-year-outlook-in-fed-survey-hits-highest-since-may-2023.html",
-          "published": "Wed, 07 Oct 2026 18:44:36 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "ICE came to town and left behind weakened economies",
-          "link": "https://www.cnbc.com/2026/10/07/ice-raids-local-economies.html",
-          "published": "Wed, 07 Oct 2026 12:24:32 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Why AI is both the hope and the hazard for world leaders, according to IMF chief Georgieva",
-          "link": "https://www.cnbc.com/2026/10/07/economy-inflation-ai-trade-imf-iran-hormuz-trump-.html",
-          "published": "Wed, 07 Oct 2026 06:16:39 GMT"
         }
       ]
     }
