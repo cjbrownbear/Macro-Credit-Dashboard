@@ -1,50 +1,74 @@
 {
-  "updated": "2026-10-12T21:43:05Z",
+  "updated": "2026-10-13T19:50:55Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Trump defends Russia diesel deal after bipartisan pushback: 'I made the right choice'",
-          "link": "https://www.cnbc.com/2026/10/12/trump-russia-diesel-putin.html",
-          "published": "Mon, 12 Oct 2026 18:32:03 GMT"
+          "title": "More Republicans come out against Trump's diesel deal with Putin",
+          "link": "https://www.cnbc.com/2026/10/13/trump-russia-diesel-republicans.html",
+          "published": "Tue, 13 Oct 2026 18:19:42 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Elon Musk gives $276 million to Republican groups, becomes biggest known 2026 midterm donor",
-          "link": "https://www.cnbc.com/2026/10/12/elon-musk-republican-donations-2026-midterm-election.html",
-          "published": "Mon, 12 Oct 2026 21:17:58 GMT"
+          "title": "The latest inflation data is expected to show price increases are accelerating",
+          "link": "https://www.cnbc.com/2026/10/13/september-consumer-price-index-inflation.html",
+          "published": "Tue, 13 Oct 2026 18:05:57 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Rep. Ilhan Omar blasts federal criminal raid on home: 'I will not be silenced'",
-          "link": "https://www.cnbc.com/2026/10/12/ilhan-omar-home-raided-dhs-immigration-investigation.html",
-          "published": "Mon, 12 Oct 2026 18:29:28 GMT"
+          "title": "JPMorgan Chase blocks outside AI agents like Muse, Instinct from directly accessing accounts",
+          "link": "https://www.cnbc.com/2026/10/13/jpmorgan-ai-agents-account-access.html",
+          "published": "Tue, 13 Oct 2026 18:46:27 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump 'not happy' with Kimberly Guilfoyle, weighs firing her as ambassador to Greece",
-          "link": "https://www.cnbc.com/2026/10/12/trump-kimberly-guilfoyle-ambassador.html",
-          "published": "Mon, 12 Oct 2026 21:33:35 GMT"
+          "title": "Williams says Fed may not have to hike rates in 2027, at odds with traders",
+          "link": "https://www.cnbc.com/2026/10/13/john-williams-fed-rate-hikes-2027.html",
+          "published": "Tue, 13 Oct 2026 19:46:12 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Earnings beats are now the norm. What the stock market needs to keep rallying",
-          "link": "https://www.cnbc.com/2026/10/07/here-comes-third-quarter-earnings-season-booming-profits-could-propel-the-sp-500-to-new-heights.html",
-          "published": "Mon, 12 Oct 2026 20:35:51 GMT"
+          "title": "Airport attacks put aviation in crosshairs of geopolitical conflicts",
+          "link": "https://www.cnbc.com/2026/10/13/riyadh-airport-attacks-aviation.html",
+          "published": "Tue, 13 Oct 2026 18:33:42 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "A massive trade just happened in surging shares of Snap",
-          "link": "https://www.cnbc.com/2026/10/12/a-massive-trade-just-happens-in-surging-shares-of-snap.html",
-          "published": "Mon, 12 Oct 2026 18:43:44 GMT"
+          "title": "Paul Tudor Jones says 2027 could be a really challenging year for the stock market",
+          "link": "https://www.cnbc.com/2026/10/13/paul-tudor-jones-2027-really-challenging-year.html",
+          "published": "Tue, 13 Oct 2026 19:21:27 GMT"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "The latest inflation data is expected to show price increases are accelerating",
+          "link": "https://www.cnbc.com/2026/10/13/september-consumer-price-index-inflation.html",
+          "published": "Tue, 13 Oct 2026 18:05:57 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "In charts: How one of the world's biggest economies got trapped by debt",
+          "link": "https://www.cnbc.com/2026/10/13/france-2027-budget-debt.html",
+          "published": "Tue, 13 Oct 2026 15:52:24 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "IMF warns bond yields could see a 'disorderly' spike as debt, inflation risks worsen",
+          "link": "https://www.cnbc.com/2026/10/13/treasury-yields-imf-debt-inflation-.html",
+          "published": "Tue, 13 Oct 2026 04:54:07 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "IMF sees milder global slowdown as AI boom offsets war hit — warns resilience is nearing limits",
+          "link": "https://www.cnbc.com/2026/10/12/imf-world-bank-annual-meetings-october-bangkok-asia-.html",
+          "published": "Tue, 13 Oct 2026 04:10:49 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "India’s retail inflation jumps to 5.54% in September, above estimates",
@@ -56,30 +80,6 @@
           "title": "Nobel prize in economics awarded to Robert E. Hall and Michael Woodford",
           "link": "https://www.cnbc.com/2026/10/12/nobel-economics-prize-winner-woodford-hall.html",
           "published": "Mon, 12 Oct 2026 14:09:02 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "World Bank jobs council urges 'crisis-era' employment support measures as IMF warns of AI ‘tsunami’",
-          "link": "https://www.cnbc.com/2026/10/12/imf-world-bank-ai-jobs-inflation-.html",
-          "published": "Mon, 12 Oct 2026 08:58:54 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Americans' debt problems are flashing a warning not seen since the Great Recession",
-          "link": "https://www.cnbc.com/2026/10/09/american-debt-delinquency.html",
-          "published": "Fri, 09 Oct 2026 19:18:24 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Treasury's Bessent hires Trump's controversial former Fed board pick, Judy Shelton, as advisor",
-          "link": "https://www.cnbc.com/2026/10/09/judy-shelton-scott-bessent-treasury.html",
-          "published": "Fri, 09 Oct 2026 13:09:19 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Inflation on many everyday items was entirely due to tariffs, NY Fed says",
-          "link": "https://www.cnbc.com/2026/10/08/inflation-tariffs-trump-fed-consumer-goods.html",
-          "published": "Thu, 08 Oct 2026 17:31:03 GMT"
         }
       ]
     }
