@@ -1,50 +1,56 @@
 {
-  "updated": "2026-10-16T17:22:36Z",
+  "updated": "2026-10-17T16:22:45Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Why Trump and the GOP's billion-dollar midterm blitz isn’t working",
-          "link": "https://www.cnbc.com/2026/10/16/republicans-midterms-spending-trump-musk-2026.html",
-          "published": "Fri, 16 Oct 2026 16:53:12 GMT"
+          "title": "Trump waives broad new Russia sanctions and tariffs under Graham Act, citing national interest",
+          "link": "https://www.cnbc.com/2026/10/17/trump-waives-russia-related-sanctions-tariffs-before-they-take-effect-.html",
+          "published": "Sat, 17 Oct 2026 10:20:44 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "U.S. presses China on Mastercard, Citigroup market access in bilateral Bangkok talks, official says",
-          "link": "https://www.cnbc.com/2026/10/16/us-china-mastercard-citigroup-market-access.html",
-          "published": "Fri, 16 Oct 2026 16:46:18 GMT"
+          "title": "Software’s new consolidator gets big vote of confidence from Berkshire",
+          "link": "https://www.cnbc.com/2026/10/17/bending-spoons-wants-to-revive-software-castoffs-berkshire-investing.html",
+          "published": "Sat, 17 Oct 2026 15:11:30 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump says new White House press secretary Katie Zacharia should 'reconsider' job",
-          "link": "https://www.cnbc.com/2026/10/16/trump-katie-zacharia-white-house.html",
-          "published": "Fri, 16 Oct 2026 17:17:08 GMT"
+          "title": "Berkshire shares buck market sell-off, rally to highest since Buffett said he would step down as CEO",
+          "link": "https://www.cnbc.com/2026/10/17/berkshire-rally-to-highest-since-buffett-announcement.html",
+          "published": "Sat, 17 Oct 2026 12:46:21 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "OpenAI Saudi national bugging case shows threat to U.S. leadership in AI: DNI Clayton",
-          "link": "https://www.cnbc.com/2026/10/16/ai-espionage-openai-jay-clayton.html",
-          "published": "Fri, 16 Oct 2026 16:27:44 GMT"
+          "title": "5 midterm money takeaways: Democrats have candidate cash. Republicans have Elon Musk",
+          "link": "https://www.cnbc.com/2026/10/16/midterm-election-fundraising-elon-musk.html",
+          "published": "Fri, 16 Oct 2026 21:49:13 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Here's how the CoreWeave sell-off is affecting OpenAI vs. Anthropic valuations",
-          "link": "https://www.cnbc.com/2026/10/16/coreweave-openai-anthropic-perps.html",
-          "published": "Fri, 16 Oct 2026 13:43:53 GMT"
+          "title": "'Dead money’ for a decade: Why this hedge fund approach may deliver an advantage over bonds",
+          "link": "https://www.cnbc.com/2026/10/17/dead-money-for-a-decade-hedge-fund-approach-that-may-trump-bonds.html",
+          "published": "Sat, 17 Oct 2026 15:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Here's who Netflix just brought in to run content — and what it means for the streamer",
-          "link": "https://www.cnbc.com/2026/10/16/netflix-peter-rice-chief-content-officer.html",
-          "published": "Fri, 16 Oct 2026 17:02:50 GMT"
+          "title": "Trump's student loan overhaul could lead to more bankruptcy filings, former judge says",
+          "link": "https://www.cnbc.com/2026/10/17/trump-student-loans-bankruptcy.html",
+          "published": "Sat, 17 Oct 2026 13:30:01 GMT"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "U.S. budget deficit swells to almost $2 trillion for fiscal 2026, up 12% in a single year",
+          "link": "https://www.cnbc.com/2026/10/16/us-budget-deficit-2026.html",
+          "published": "Fri, 16 Oct 2026 22:34:29 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could surprise us all",
@@ -73,13 +79,7 @@
           "source": "CNBC Economy",
           "title": "Analysis: Why a $2 trillion deficit and 5% Treasury yields are becoming America's biggest economic challenge",
           "link": "https://www.cnbc.com/2026/10/15/treasury-yields-deficit-national-debt-ai.html",
-          "published": "Thu, 15 Oct 2026 12:11:15 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "China indicates rare earths will keep flowing to EU, regardless of U.S. trade deal expiration",
-          "link": "https://www.cnbc.com/2026/10/15/china-rare-earth-exports-europe.html",
-          "published": "Thu, 15 Oct 2026 09:02:31 GMT"
+          "published": "Fri, 16 Oct 2026 22:33:05 GMT"
         }
       ]
     }
