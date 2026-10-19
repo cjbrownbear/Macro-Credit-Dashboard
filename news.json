@@ -1,50 +1,62 @@
 {
-  "updated": "2026-10-18T16:30:11Z",
+  "updated": "2026-10-19T19:18:25Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Bessent warns Zelenskyy to 'be very careful' about claims U.S. is throttling Starlink",
-          "link": "https://www.cnbc.com/2026/10/18/bessent-zelenskyy-starlink-ukarine-war.html",
-          "published": "Sun, 18 Oct 2026 16:20:10 GMT"
+          "title": "OpenAI bugging case: Saudi consulate offers to pay bail for suspect",
+          "link": "https://www.cnbc.com/2026/10/19/openai-bugging-suspect-alfozan-saudi-royal-family.html",
+          "published": "Mon, 19 Oct 2026 19:16:34 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Iran says it has a 'new operational plan' if the U.S. resumes attacks, as shipping vessels report strikes",
-          "link": "https://www.cnbc.com/2026/10/18/iran-us-war-rezaei-operational-plan-shipping-attacks.html",
-          "published": "Sun, 18 Oct 2026 13:52:24 GMT"
+          "title": "Saudi Arabia postpones big investor conference to 2027 as Iran-backed Houthis escalate attacks on kingdom",
+          "link": "https://www.cnbc.com/2026/10/19/saudi-arabia-postpones-fii-investor-conference-to-2027.html",
+          "published": "Mon, 19 Oct 2026 17:01:26 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Why hedge funds could be making a bond market shock more likely",
-          "link": "https://www.cnbc.com/2026/10/18/hedge-funds-bond-market-turmoil.html",
-          "published": "Sun, 18 Oct 2026 06:13:05 GMT"
+          "title": "Apple announces product launch event for Oct. 28. Analysts expect touchscreen laptop",
+          "link": "https://www.cnbc.com/2026/10/19/apple-product-launch-event-oct-28-analysts-expect-touchscreen-laptop.html",
+          "published": "Mon, 19 Oct 2026 17:25:57 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Always on, always listening: New AI devices are pushing legal limits and could put users in jeopardy",
-          "link": "https://www.cnbc.com/2026/10/18/ai-wearables-privacy-wiretap-laws.html",
-          "published": "Sun, 18 Oct 2026 12:00:01 GMT"
+          "title": "Anthropic is AI trade's last big hope for a major IPO this year",
+          "link": "https://www.cnbc.com/2026/10/19/anthropic-ipo-ai-trade.html",
+          "published": "Mon, 19 Oct 2026 16:42:14 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Roth conversions: When the ‘juice isn't really worth the squeeze,’ according to a top-ranked advisor",
-          "link": "https://www.cnbc.com/2026/10/18/roth-conversion-2026.html",
-          "published": "Sun, 18 Oct 2026 13:30:01 GMT"
+          "title": "Google says it can build data centers the right way. Some experts and residents are skeptical",
+          "link": "https://www.cnbc.com/2026/10/19/how-data-centers-are-reshaping-americas-aging-grid-pine-island-minnesota-google.html",
+          "published": "Mon, 19 Oct 2026 13:36:41 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Boomers are buying into the promise of monthly income from options ETFs, but there's a tax catch",
-          "link": "https://www.cnbc.com/2026/10/18/retirement-income-funds-taxes.html",
-          "published": "Sun, 18 Oct 2026 13:10:33 GMT"
+          "title": "Elon Musk says he'll give a SpaceX share to every child in America next year",
+          "link": "https://www.cnbc.com/2026/10/19/elon-musk-spacex-shares-giveaway-kids.html",
+          "published": "Mon, 19 Oct 2026 16:58:20 GMT"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Women may be at greater risk of AI job losses. Telephone switch operators and PCs show why",
+          "link": "https://www.cnbc.com/2026/10/19/ai-job-losses-women-automation-risk.html",
+          "published": "Mon, 19 Oct 2026 18:36:21 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "India’s finance minister says market liquidity makes it easier for investors to exit",
+          "link": "https://www.cnbc.com/2026/10/18/india-ai-nifty50-sensex-investors.html",
+          "published": "Mon, 19 Oct 2026 08:23:33 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "U.S. budget deficit swells to almost $2 trillion for fiscal 2026, up 12% in a single year",
@@ -68,18 +80,6 @@
           "title": "U.S. Treasury dismisses IMF debt warning and 'messy' forecasting",
           "link": "https://www.cnbc.com/2026/10/15/zervos-imf-us-debt-warning.html",
           "published": "Thu, 15 Oct 2026 13:42:32 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Wholesale prices jumped 6.3% annually in September, biggest gain since 2022",
-          "link": "https://www.cnbc.com/2026/10/15/september-producer-price-index-retail-sales-data.html",
-          "published": "Thu, 15 Oct 2026 16:15:44 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Analysis: Why a $2 trillion deficit and 5% Treasury yields are becoming America's biggest economic challenge",
-          "link": "https://www.cnbc.com/2026/10/15/treasury-yields-deficit-national-debt-ai.html",
-          "published": "Fri, 16 Oct 2026 22:33:05 GMT"
         }
       ]
     }
