@@ -1,44 +1,44 @@
 {
-  "updated": "2026-10-20T17:57:40Z",
+  "updated": "2026-10-22T17:57:27Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Housing is flashing warning signs just as the Fed weighs more interest rate hikes",
-          "link": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html",
-          "published": "Tue, 20 Oct 2026 17:50:11 GMT"
+          "title": "Meta stock sinks 6% as AI spend pushes free cash flow negative",
+          "link": "https://www.cnbc.com/2026/10/22/meta-stock-q3-earnings-free-cash-flow.html",
+          "published": "Thu, 22 Oct 2026 17:48:43 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump sued over 50% tariffs on Canada in latest trade challenge",
-          "link": "https://www.cnbc.com/2026/10/20/trump-tariffs-canada-section-338-lawsuit.html",
-          "published": "Tue, 20 Oct 2026 17:49:38 GMT"
+          "title": "Elon Musk invests about $1 billion in Skydance",
+          "link": "https://www.cnbc.com/2026/10/22/elon-musk-skydance-investment.html",
+          "published": "Thu, 22 Oct 2026 17:42:58 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Investors look to earnings to reset the bull market. The key level to watch on the S&P 500",
-          "link": "https://www.cnbc.com/2026/10/20/santoli-key-sp-500-level-to-watch.html",
-          "published": "Tue, 20 Oct 2026 12:52:29 GMT"
+          "title": "Bill Ackman says 2027 will be an amazing year for stocks as wars, inflation ease",
+          "link": "https://www.cnbc.com/2026/10/22/bill-ackman-talks-meta-and-markets-with-cnbc.html",
+          "published": "Thu, 22 Oct 2026 17:53:08 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Here's what to expect when Netflix reports earnings after the bell",
-          "link": "https://www.cnbc.com/2026/10/20/netflix-nflx-earnings-q3-2026.html",
-          "published": "Tue, 20 Oct 2026 16:00:01 GMT"
+          "title": "Musk's clash with Ukraine accelerates demand for Starlink alternatives. Few exist",
+          "link": "https://www.cnbc.com/2026/10/22/elon-musk-ukraine-starlink-alternatives.html",
+          "published": "Thu, 22 Oct 2026 16:54:26 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Anthropic in talks with neocloud Nscale over second multibillion-dollar deal, source tells CNBC",
-          "link": "https://www.cnbc.com/2026/10/20/anthropic-nscale-data-center-deal.html",
-          "published": "Tue, 20 Oct 2026 14:12:38 GMT"
+          "title": "Trump's approval rating on economy hits all-time low as midterm looms: CNBC survey",
+          "link": "https://www.cnbc.com/2026/10/22/trump-economic-approval-rating-midterms-poll.html",
+          "published": "Thu, 22 Oct 2026 13:18:36 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "If Elon Musk gifts SpaceX stock through Trump Accounts, it will come with a catch",
-          "link": "https://www.cnbc.com/2026/10/20/musk-spacex-trump-account-stock-rules.html",
-          "published": "Tue, 20 Oct 2026 17:29:38 GMT"
+          "title": "Lawsuit accuses Trump of illegally profiting off foreign crypto deals",
+          "link": "https://www.cnbc.com/2026/10/22/trump-world-liberty-crypto-lawsuit-uae.html",
+          "published": "Thu, 22 Oct 2026 17:49:53 GMT"
         }
       ]
     },
@@ -47,39 +47,39 @@
       "items": [
         {
           "source": "CNBC Economy",
+          "title": "Jobless claims near the lowest since the 1960s as low-fire trend continues",
+          "link": "https://www.cnbc.com/2026/10/22/jobless-claims-record-low-weekly.html",
+          "published": "Thu, 22 Oct 2026 16:40:09 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Trump's approval rating on economy hits all-time low as midterm looms: CNBC survey",
+          "link": "https://www.cnbc.com/2026/10/22/trump-economic-approval-rating-midterms-poll.html",
+          "published": "Thu, 22 Oct 2026 13:18:36 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "UK inflation jumps to 3.5% — cementing rate hike expectations",
+          "link": "https://www.cnbc.com/2026/10/21/inflation-uk-cpi-interest-rates.html",
+          "published": "Wed, 21 Oct 2026 07:50:10 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Car buyers are demanding lower prices and better tech. Automakers must deliver both",
+          "link": "https://www.cnbc.com/2026/10/20/car-buyers-china-tech-price-europe.html",
+          "published": "Wed, 21 Oct 2026 01:01:01 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Housing is flashing warning signs just as the Fed weighs more interest rate hikes",
+          "link": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html",
+          "published": "Wed, 21 Oct 2026 11:20:58 GMT"
+        },
+        {
+          "source": "CNBC Economy",
           "title": "Women may be at greater risk of AI job losses. Telephone switch operators and PCs show why",
           "link": "https://www.cnbc.com/2026/10/19/ai-job-losses-women-automation-risk.html",
           "published": "Mon, 19 Oct 2026 18:36:21 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "India’s finance minister says market liquidity makes it easier for investors to exit",
-          "link": "https://www.cnbc.com/2026/10/18/india-ai-nifty50-sensex-investors.html",
-          "published": "Mon, 19 Oct 2026 08:23:33 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "U.S. budget deficit swells to almost $2 trillion for fiscal 2026, up 12% in a single year",
-          "link": "https://www.cnbc.com/2026/10/16/us-budget-deficit-2026.html",
-          "published": "Fri, 16 Oct 2026 22:34:29 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could surprise us all",
-          "link": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html",
-          "published": "Fri, 16 Oct 2026 16:27:31 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Economists: Hot PPI shows Fed's work is not done",
-          "link": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html",
-          "published": "Thu, 15 Oct 2026 15:37:59 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "U.S. Treasury dismisses IMF debt warning and 'messy' forecasting",
-          "link": "https://www.cnbc.com/2026/10/15/zervos-imf-us-debt-warning.html",
-          "published": "Thu, 15 Oct 2026 13:42:32 GMT"
         }
       ]
     }
