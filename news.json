@@ -1,50 +1,62 @@
 {
-  "updated": "2026-10-26T19:14:55Z",
+  "updated": "2026-10-27T18:40:17Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Microsoft offers voluntary buyouts to 60,000 employees as AI leads to efficiency push",
-          "link": "https://www.cnbc.com/2026/10/26/microsoft-msft-voluntary-buyouts.html",
-          "published": "Mon, 26 Oct 2026 17:40:30 GMT"
+          "title": "Anthropic's IPO could be 'speculative fiction' or a 'generational moment' — investors are split",
+          "link": "https://www.cnbc.com/2026/10/27/-anthropic-ipo-investors-growth-losses-s-1.html",
+          "published": "Tue, 27 Oct 2026 17:26:34 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "The arc of Trump: How the president lost the coalition that put him in the White House",
-          "link": "https://www.cnbc.com/2026/10/26/trump-approval-midterms-cnbc-survey.html",
-          "published": "Mon, 26 Oct 2026 17:36:55 GMT"
+          "title": "Fed expected to hold rates steady, but Warsh may point way to more hikes",
+          "link": "https://www.cnbc.com/2026/10/27/federal-reserve-rates-kevin-warsh.html",
+          "published": "Tue, 27 Oct 2026 15:52:26 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Investors are doing just as well this year by shunning AI. How to invest if the tech trade keeps fizzling",
-          "link": "https://www.cnbc.com/2026/10/26/sp-500-ex-ai-index-tech-selloff.html",
-          "published": "Mon, 26 Oct 2026 15:39:55 GMT"
+          "title": "Early third-quarter earnings show a 'resilient' U.S. consumer, with signs of strain",
+          "link": "https://www.cnbc.com/2026/10/27/q3-earnings-resilient-consumer.html",
+          "published": "Tue, 27 Oct 2026 18:12:20 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Apple responds to user reports of broken iPhone Duo screens on new foldable phone",
-          "link": "https://www.cnbc.com/2026/10/26/apple-responds-to-user-reports-of-broken-iphone-duo-screens.html",
-          "published": "Mon, 26 Oct 2026 18:43:25 GMT"
+          "title": "Honda warns 50% Canada auto tariffs would be catastrophic for industry",
+          "link": "https://www.cnbc.com/2026/10/27/honda-warns-50percent-canada-auto-tariffs-would-be-catastrophic.html",
+          "published": "Tue, 27 Oct 2026 17:53:47 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "FTC and 20 states sue Dollar General, alleging retailer overcharged shoppers",
-          "link": "https://www.cnbc.com/2026/10/26/ftc-dollar-general-lawsuit.html",
-          "published": "Mon, 26 Oct 2026 18:37:01 GMT"
+          "title": "Speaker Mike Johnson calls election-transfer concerns ‘absurd’",
+          "link": "https://www.cnbc.com/2026/10/27/speaker-johnson-peaceful-transfer-midterms.html",
+          "published": "Tue, 27 Oct 2026 18:03:02 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Alaska Senate: Peltola seeks quick dismissal of DOJ election lawsuit before midterm",
-          "link": "https://www.cnbc.com/2026/10/26/alaska-senate-peltola-doj-lawsuit-election-sullivan.html",
-          "published": "Mon, 26 Oct 2026 15:55:37 GMT"
+          "title": "JetBlue stock surges 20% as company outlook calms investors",
+          "link": "https://www.cnbc.com/2026/10/26/jetblue-jblu-3q-2026-earnings.html",
+          "published": "Tue, 27 Oct 2026 15:46:31 GMT"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "World Bank's Banga: Availability of capital 'not really an issue' as AI demand drives up borrowing costs",
+          "link": "https://www.cnbc.com/2026/10/27/world-bank-president-ajay-banga.html",
+          "published": "Tue, 27 Oct 2026 16:15:35 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Fed rate hikes are coming, but not this week: CNBC survey",
+          "link": "https://www.cnbc.com/2026/10/27/federal-reserve-rate-hike-timing-expectations.html",
+          "published": "Tue, 27 Oct 2026 15:51:00 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Jobless claims near the lowest since the 1960s as low-fire trend continues",
@@ -68,18 +80,6 @@
           "title": "Car buyers are demanding lower prices and better tech. Automakers must deliver both",
           "link": "https://www.cnbc.com/2026/10/20/car-buyers-china-tech-price-europe.html",
           "published": "Wed, 21 Oct 2026 01:01:01 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Housing is flashing warning signs just as the Fed weighs more interest rate hikes",
-          "link": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html",
-          "published": "Wed, 21 Oct 2026 11:20:58 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Women may be at greater risk of AI job losses. Telephone switch operators and PCs show why",
-          "link": "https://www.cnbc.com/2026/10/19/ai-job-losses-women-automation-risk.html",
-          "published": "Mon, 19 Oct 2026 18:36:21 GMT"
         }
       ]
     }
