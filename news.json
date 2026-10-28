@@ -1,50 +1,56 @@
 {
-  "updated": "2026-10-27T18:40:17Z",
+  "updated": "2026-10-28T18:49:34Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Anthropic's IPO could be 'speculative fiction' or a 'generational moment' — investors are split",
-          "link": "https://www.cnbc.com/2026/10/27/-anthropic-ipo-investors-growth-losses-s-1.html",
-          "published": "Tue, 27 Oct 2026 17:26:34 GMT"
+          "title": "Wendy's shares jump 15% as Nelson Peltz's Trian offers $1.4 billion to buy burger chain",
+          "link": "https://www.cnbc.com/2026/10/28/nelson-peltz-trian-wendys-1point4-billion.html",
+          "published": "Wed, 28 Oct 2026 14:35:51 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Fed expected to hold rates steady, but Warsh may point way to more hikes",
-          "link": "https://www.cnbc.com/2026/10/27/federal-reserve-rates-kevin-warsh.html",
-          "published": "Tue, 27 Oct 2026 15:52:26 GMT"
+          "title": "The 'Magnificent Seven' is no more. Time to pick winners and losers as group's correlation breaks down",
+          "link": "https://www.cnbc.com/2026/10/28/magnificent-seven-stocks-correlation-breakdown.html",
+          "published": "Wed, 28 Oct 2026 13:09:08 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Early third-quarter earnings show a 'resilient' U.S. consumer, with signs of strain",
-          "link": "https://www.cnbc.com/2026/10/27/q3-earnings-resilient-consumer.html",
-          "published": "Tue, 27 Oct 2026 18:12:20 GMT"
+          "title": "Apple brings touch to the Mac, reversing years-old stance on touchscreen laptop",
+          "link": "https://www.cnbc.com/2026/10/28/apple-mac-touchscreen-launch.html",
+          "published": "Wed, 28 Oct 2026 18:44:40 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Honda warns 50% Canada auto tariffs would be catastrophic for industry",
-          "link": "https://www.cnbc.com/2026/10/27/honda-warns-50percent-canada-auto-tariffs-would-be-catastrophic.html",
-          "published": "Tue, 27 Oct 2026 17:53:47 GMT"
+          "title": "Trump is using tariffs as a 'tool for grift,' Raskin says in demand for donor records",
+          "link": "https://www.cnbc.com/2026/10/28/trump-tariffs-corruption-raskin.html",
+          "published": "Wed, 28 Oct 2026 17:39:43 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Speaker Mike Johnson calls election-transfer concerns ‘absurd’",
-          "link": "https://www.cnbc.com/2026/10/27/speaker-johnson-peaceful-transfer-midterms.html",
-          "published": "Tue, 27 Oct 2026 18:03:02 GMT"
+          "title": "At least 68 people dead in high-speed Spain train crash",
+          "link": "https://www.cnbc.com/2026/10/28/spain-high-speed-train-crash.html",
+          "published": "Wed, 28 Oct 2026 15:41:54 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "JetBlue stock surges 20% as company outlook calms investors",
-          "link": "https://www.cnbc.com/2026/10/26/jetblue-jblu-3q-2026-earnings.html",
-          "published": "Tue, 27 Oct 2026 15:46:31 GMT"
+          "title": "Watch Live: Options traders break down a massive Alphabet trade into earnings",
+          "link": "https://www.cnbc.com/2026/10/28/alphabet-microsoft-report-after-the-bell-what-options-trader-see.html",
+          "published": "Wed, 28 Oct 2026 17:56:10 GMT"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "The UK cuts energy bills, taxes banks and boosts defense in high-stakes budget",
+          "link": "https://www.cnbc.com/2026/10/28/uk-autumn-budget-cost-living-defense-ai.html",
+          "published": "Wed, 28 Oct 2026 15:39:14 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "World Bank's Banga: Availability of capital 'not really an issue' as AI demand drives up borrowing costs",
@@ -74,12 +80,6 @@
           "title": "UK inflation jumps to 3.5% — cementing rate hike expectations",
           "link": "https://www.cnbc.com/2026/10/21/inflation-uk-cpi-interest-rates.html",
           "published": "Wed, 21 Oct 2026 07:50:10 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Car buyers are demanding lower prices and better tech. Automakers must deliver both",
-          "link": "https://www.cnbc.com/2026/10/20/car-buyers-china-tech-price-europe.html",
-          "published": "Wed, 21 Oct 2026 01:01:01 GMT"
         }
       ]
     }
