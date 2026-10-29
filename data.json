@@ -1,9 +1,9 @@
 {
-  "updated": "2026-10-28T18:49:34Z",
+  "updated": "2026-10-29T18:56:12Z",
   "overall_status": "tripwire",
   "executive_summary": {
-    "text": "Overall status is Tripwire / Watch. Across the dashboard: 7 healthy, 1 tripwire, 0 stress. Biggest YoY moves: Revolving Consumer Credit (Δ 1y: +44102B (+3.4%)); Initial Jobless Claims (Δ 1y: -28000K (-12.6%)); Net Charge-off Rate (Δ 1y: -0.37pp (-8.8%)).",
-    "updated": "2026-10-28T18:49:34Z",
+    "text": "Overall status is Tripwire / Watch. Across the dashboard: 7 healthy, 1 tripwire, 0 stress. Biggest YoY moves: Revolving Consumer Credit (Δ 1y: +44102B (+3.4%)); Initial Jobless Claims (Δ 1y: -37000K (-16.0%)); Net Charge-off Rate (Δ 1y: -0.37pp (-8.8%)).",
+    "updated": "2026-10-29T18:56:12Z",
     "overall": "tripwire"
   },
   "kpis": [
@@ -333,13 +333,12 @@
       "value": 194000.0,
       "value_str": "194,000K",
       "as_of": "Oct 2026",
-      "avg10": 360095.78544061305,
-      "avg_str": "360,096K",
-      "delta_abs": -28000.0,
-      "delta_pct": -0.12612612612612611,
-      "delta_str": "Δ 1y: -28000K (-12.6%)",
+      "avg10": 359978.92720306513,
+      "avg_str": "359,979K",
+      "delta_abs": -37000.0,
+      "delta_pct": -0.16017316017316016,
+      "delta_str": "Δ 1y: -37000K (-16.0%)",
       "spark": [
-        212000.0,
         210000.0,
         212000.0,
         225000.0,
@@ -362,6 +361,7 @@
         199000.0,
         198000.0,
         200000.0,
+        195000.0,
         194000.0
       ],
       "definition": "Weekly initial claims for unemployment insurance.",
@@ -38186,6 +38186,11 @@
         },
         {
           "date": "2026-10-17",
+          "value": 195000.0,
+          "value_str": "195,000K"
+        },
+        {
+          "date": "2026-10-24",
           "value": 194000.0,
           "value_str": "194,000K"
         }
@@ -50625,10 +50630,14 @@
         },
         {
           "date": "2026-10-17",
-          "value": 220508.33333333334
+          "value": 220516.66666666666
+        },
+        {
+          "date": "2026-10-24",
+          "value": 220275.0
         }
       ],
-      "summary_text": "Latest: 194,000K (Healthy). Δ 1y: -28000K (-12.6%)."
+      "summary_text": "Latest: 194,000K (Healthy). Δ 1y: -37000K (-16.0%)."
     },
     {
       "key": "DSPIC96_bil_usd",
@@ -54689,13 +54698,18 @@
         },
         {
           "date": "2026-07-01",
-          "value": 18415.4,
-          "value_str": "$18,415B"
+          "value": 18414.1,
+          "value_str": "$18,414B"
         },
         {
           "date": "2026-08-01",
-          "value": 18410.5,
-          "value_str": "$18,410B"
+          "value": 18416.2,
+          "value_str": "$18,416B"
+        },
+        {
+          "date": "2026-09-01",
+          "value": 18366.1,
+          "value_str": "$18,366B"
         }
       ],
       "bench_points": [
@@ -57897,11 +57911,15 @@
         },
         {
           "date": "2026-07-01",
-          "value": 16540.4
+          "value": 16540.389166666668
         },
         {
           "date": "2026-08-01",
-          "value": 16575.681666666667
+          "value": 16575.718333333334
+        },
+        {
+          "date": "2026-09-01",
+          "value": 16610.36
         }
       ],
       "summary_text": "Latest reading shown with a 10-year rolling mean benchmark."
@@ -61869,6 +61887,7 @@
     "2026-09-26",
     "2026-10-03",
     "2026-10-10",
-    "2026-10-17"
+    "2026-10-17",
+    "2026-10-24"
   ]
 }
