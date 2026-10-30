@@ -1,50 +1,56 @@
 {
-  "updated": "2026-10-29T18:56:12Z",
+  "updated": "2026-10-30T18:34:31Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Alphabet earnings miss reflects first real sign that AI is taking a bite out of search",
-          "link": "https://www.cnbc.com/2026/10/29/alphabet-google-search-ai-earnings.html",
-          "published": "Thu, 29 Oct 2026 16:25:40 GMT"
+          "title": "Treasury Department announces new Series I bond rate of 5.51% for the next six months",
+          "link": "https://www.cnbc.com/2026/10/30/treasury-i-bond-rate-through-april-2027.html",
+          "published": "Fri, 30 Oct 2026 17:15:53 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Big Oil earnings are set to surge. Why investors may want to be cautious",
-          "link": "https://www.cnbc.com/2026/10/29/big-oil-earnings-are-set-to-surge-why-investors-may-want-to-be-cautious.html",
-          "published": "Thu, 29 Oct 2026 18:13:32 GMT"
+          "title": "Binance hack: Investigators in a 'cat and mouse game' to recover $6.3 billion in stolen funds",
+          "link": "https://www.cnbc.com/2026/10/30/binance-hack-stolen-crypto-recovery.html",
+          "published": "Fri, 30 Oct 2026 18:08:07 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Nvidia responds to report Jensen Huang was target of Chinese asset, says diversion allegations were 'investigated and debunked'",
-          "link": "https://www.cnbc.com/2026/10/29/nvidia-jensen-huang-chinese-intelligence-asset.html",
-          "published": "Thu, 29 Oct 2026 16:22:19 GMT"
+          "title": "'Bad time to troll': Binance cofounder Changpeng Zhao asks Elon Musk for 'respect' after post about bitcoin hack",
+          "link": "https://www.cnbc.com/2026/10/30/binance-hack-elon-musk-tesla-spacex.html",
+          "published": "Fri, 30 Oct 2026 17:12:59 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Steve Eisman gets more conservative with portfolio as AI trade nears 'tipping point'",
-          "link": "https://www.cnbc.com/2026/10/29/steve-eisman-gets-more-conservative-with-portfolio-as-ai-trade-nears-tipping-point.html",
-          "published": "Thu, 29 Oct 2026 14:15:43 GMT"
+          "title": "Why bitcoin held up better after the record Binance hack",
+          "link": "https://www.cnbc.com/2026/10/30/binance-hack-bitcoin-price.html",
+          "published": "Fri, 30 Oct 2026 18:07:00 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Cruise companies aim to keep fuel costs down. Their strategies for doing so differ",
-          "link": "https://www.cnbc.com/2026/10/29/royal-caribbean-carnival-norwegian-fuel-costs.html",
-          "published": "Thu, 29 Oct 2026 17:45:01 GMT"
+          "title": "Tankers defy sharp escalation of Iranian attacks to keep crude oil flowing through Strait of Hormuz",
+          "link": "https://www.cnbc.com/2026/10/30/tanker-attack-strait-hormuz-iran-war-oil.html",
+          "published": "Fri, 30 Oct 2026 18:28:09 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Alaska Gov. orders probe of Peltola Senate campaign's alleged recruitment of 2nd Sullivan",
-          "link": "https://www.cnbc.com/2026/10/29/alaska-senate-governor-investigation-sullivan-peltola-doj.html",
-          "published": "Thu, 29 Oct 2026 18:32:08 GMT"
+          "title": "Chevron and Exxon hit all-time highs as refining profits soar in reaction to Iran and Ukraine wars",
+          "link": "https://www.cnbc.com/2026/10/30/chevron-exxon-cvx-xom-earnings-q3-2026.html",
+          "published": "Fri, 30 Oct 2026 16:44:31 GMT"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Euro zone economy slows to 0.4% growth in Q3 as crisis-hit France contracts",
+          "link": "https://www.cnbc.com/2026/10/30/euro-zone-gdp-france.html",
+          "published": "Fri, 30 Oct 2026 11:16:46 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "European Central Bank keeps key interest rate on hold at 2.5%",
@@ -74,12 +80,6 @@
           "title": "Here are five key takeaways from the Fed rate decision and Warsh news conference",
           "link": "https://www.cnbc.com/2026/10/28/fed-rate-decision-warsh-takeaways.html",
           "published": "Wed, 28 Oct 2026 21:31:46 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Bessent says 'not necessarily' a mistake if the Fed hikes again",
-          "link": "https://www.cnbc.com/2026/10/28/scott-bessent-interview.html",
-          "published": "Wed, 28 Oct 2026 21:06:37 GMT"
         }
       ]
     }
