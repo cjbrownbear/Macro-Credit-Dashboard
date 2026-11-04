@@ -1,50 +1,68 @@
 {
-  "updated": "2026-11-03T20:04:21Z",
+  "updated": "2026-11-04T20:24:28Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Binance co-CEO Richard Teng says hackers used fake job interviews, AI tool to steal $6.3 billion in crypto",
-          "link": "https://www.cnbc.com/2026/11/03/binance-co-ceo-teng-says-hackers-used-fake-job-interviews-to-steal-6point3-billion-in-crypto.html",
-          "published": "Tue, 03 Nov 2026 18:40:37 GMT"
+          "title": "What Republicans' huge loss means for Trump",
+          "link": "https://www.cnbc.com/2026/11/04/trump-midterm-election-results-congress.html",
+          "published": "Wed, 04 Nov 2026 20:23:18 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "CrowdStrike launches AI kill switch that it says can stop internal agents that go rogue",
-          "link": "https://www.cnbc.com/2026/11/03/crowdstrike-ai-kill-switch-rogue-agents.html",
-          "published": "Tue, 03 Nov 2026 19:35:24 GMT"
+          "title": "Democrats take Congress in a blue wave. Here's what it means for your money",
+          "link": "https://www.cnbc.com/2026/11/04/blue-wave-democrats-control-congress-your-money.html",
+          "published": "Wed, 04 Nov 2026 19:53:55 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Disney plans several thousand layoffs, asks some managers to cut costs by up to 20%",
-          "link": "https://www.cnbc.com/2026/11/03/disney-layoffs-cost-cuts.html",
-          "published": "Tue, 03 Nov 2026 17:05:29 GMT"
+          "title": "Hyperscalers and Apple surge after election results remove investor uncertainty",
+          "link": "https://www.cnbc.com/2026/11/04/apple-and-other-big-tech-stocks-surge-after-2026-midterm-elections.html",
+          "published": "Wed, 04 Nov 2026 19:37:43 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Meta seeks to raise up to $25 billion in debt sale as AI spending jumps",
-          "link": "https://www.cnbc.com/2026/11/03/meta-bond-sale-ai-funding.html",
-          "published": "Tue, 03 Nov 2026 18:33:49 GMT"
+          "title": "Democrats map out an agenda to address affordability and corruption after midterm sweep",
+          "link": "https://www.cnbc.com/2026/11/04/congressional-democrats-affordability-oversight.html",
+          "published": "Wed, 04 Nov 2026 19:00:52 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Sen. Chris Murphy still hospitalized after suffering a stroke over the weekend",
-          "link": "https://www.cnbc.com/2026/11/03/chris-murphy-hospitalized-stroke.html",
-          "published": "Tue, 03 Nov 2026 19:36:16 GMT"
+          "title": "CVS Health plans to split itself up. Here's why a breakup could make sense now",
+          "link": "https://www.cnbc.com/2026/11/04/cvs-health-pharmacy-aetna-split.html",
+          "published": "Wed, 04 Nov 2026 19:58:41 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "AI-generated 'slopaganda' in political ads puts internet platforms on alert",
-          "link": "https://www.cnbc.com/2026/11/03/ai-generated-slopaganda-in-political-ads-puts-platforms-on-alert.html",
-          "published": "Tue, 03 Nov 2026 17:37:31 GMT"
+          "title": "Voters rebuff data centers in every ballot measure except one during the 2026 midterms",
+          "link": "https://www.cnbc.com/2026/11/04/data-center-ballot-measures-2026-midterm.html",
+          "published": "Wed, 04 Nov 2026 19:51:18 GMT"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Analysis: The Democrats have one chance to extract concessions from Trump. Markets will hate it",
+          "link": "https://www.cnbc.com/2026/11/04/democrats-trump-debt-ceiling-fight.html",
+          "published": "Wed, 04 Nov 2026 17:32:26 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Private companies added 86,000 jobs in October, slightly higher than expected, ADP says",
+          "link": "https://www.cnbc.com/2026/11/04/private-companies-added-86000-jobs-in-october-slightly-higher-than-expected-adp-says.html",
+          "published": "Wed, 04 Nov 2026 13:49:48 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Euro zone inflation hits 4% for first time in three years as interest rate hike looms",
+          "link": "https://www.cnbc.com/2026/11/04/euro-zone-cpi-inflation-october-ecb-rate-hike.html",
+          "published": "Wed, 04 Nov 2026 10:47:30 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Job openings posted big September gain in positive sign for labor market ahead of payrolls report",
@@ -62,24 +80,6 @@
           "title": "South Korea targets 'world's highest performance' sovereign AI model in record new budget",
           "link": "https://www.cnbc.com/2026/11/02/south-korea-ai-spending-budget.html",
           "published": "Mon, 02 Nov 2026 06:02:03 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Euro zone economy slows to 0.4% growth in Q3 as crisis-hit France contracts",
-          "link": "https://www.cnbc.com/2026/10/30/euro-zone-gdp-france.html",
-          "published": "Fri, 30 Oct 2026 11:16:46 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "European Central Bank keeps key interest rate on hold at 2.5%",
-          "link": "https://www.cnbc.com/2026/10/29/european-central-bank-interest-rates.html",
-          "published": "Thu, 29 Oct 2026 14:48:01 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Third-quarter U.S. GDP increases a better-than-expected 3.4% as September inflation accelerates",
-          "link": "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html",
-          "published": "Thu, 29 Oct 2026 18:06:31 GMT"
         }
       ]
     }
