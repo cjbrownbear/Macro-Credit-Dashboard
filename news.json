@@ -1,44 +1,44 @@
 {
-  "updated": "2026-11-04T20:24:28Z",
+  "updated": "2026-11-05T20:38:19Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "What Republicans' huge loss means for Trump",
-          "link": "https://www.cnbc.com/2026/11/04/trump-midterm-election-results-congress.html",
-          "published": "Wed, 04 Nov 2026 20:23:18 GMT"
+          "title": "Top Democrats call to rein in AI buildout after midterms sweep: 'National data center moratorium now'",
+          "link": "https://www.cnbc.com/2026/11/05/democrats-data-center-restrictions-midterms.html",
+          "published": "Thu, 05 Nov 2026 20:17:16 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Democrats take Congress in a blue wave. Here's what it means for your money",
-          "link": "https://www.cnbc.com/2026/11/04/blue-wave-democrats-control-congress-your-money.html",
-          "published": "Wed, 04 Nov 2026 19:53:55 GMT"
+          "title": "AI meltdown: Chip stocks and neoclouds plunge, pushing Nasdaq to worst day since April 2025",
+          "link": "https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html",
+          "published": "Thu, 05 Nov 2026 20:08:49 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Hyperscalers and Apple surge after election results remove investor uncertainty",
-          "link": "https://www.cnbc.com/2026/11/04/apple-and-other-big-tech-stocks-surge-after-2026-midterm-elections.html",
-          "published": "Wed, 04 Nov 2026 19:37:43 GMT"
+          "title": "Wall Street's fear gauge surges the most since April. Why traders think it should be even higher",
+          "link": "https://www.cnbc.com/2026/11/05/wall-streets-fear-gauge-surges-the-most-since-april-why-traders-think-it-should-be-even-higher.html",
+          "published": "Thu, 05 Nov 2026 19:20:21 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Democrats map out an agenda to address affordability and corruption after midterm sweep",
-          "link": "https://www.cnbc.com/2026/11/04/congressional-democrats-affordability-oversight.html",
-          "published": "Wed, 04 Nov 2026 19:00:52 GMT"
+          "title": "Trump's energy deals are about to face a wave of investigations by Democrats",
+          "link": "https://www.cnbc.com/2026/11/05/trump-election-energy-venezuela-critical-mineral-renewable-iran.html",
+          "published": "Thu, 05 Nov 2026 19:13:06 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "CVS Health plans to split itself up. Here's why a breakup could make sense now",
-          "link": "https://www.cnbc.com/2026/11/04/cvs-health-pharmacy-aetna-split.html",
-          "published": "Wed, 04 Nov 2026 19:58:41 GMT"
+          "title": "Here's what the Democratic election rout could mean for the U.S. economy",
+          "link": "https://www.cnbc.com/2026/11/05/emocratic-midterm-economy.html",
+          "published": "Thu, 05 Nov 2026 14:33:32 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Voters rebuff data centers in every ballot measure except one during the 2026 midterms",
-          "link": "https://www.cnbc.com/2026/11/04/data-center-ballot-measures-2026-midterm.html",
-          "published": "Wed, 04 Nov 2026 19:51:18 GMT"
+          "title": "Democrats to probe JPMorgan's relationship with Jeffrey Epstein when they take Senate control",
+          "link": "https://www.cnbc.com/2026/11/05/jpmorgan-epstein-democrats-erdoes-midterm-election.html",
+          "published": "Thu, 05 Nov 2026 17:42:29 GMT"
         }
       ]
     },
@@ -47,9 +47,27 @@
       "items": [
         {
           "source": "CNBC Economy",
+          "title": "Here's what the Democratic election rout could mean for the U.S. economy",
+          "link": "https://www.cnbc.com/2026/11/05/emocratic-midterm-economy.html",
+          "published": "Thu, 05 Nov 2026 14:33:32 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Bank of England hikes interest rate for the first time since Iran war, warns inflation will near 5%",
+          "link": "https://www.cnbc.com/2026/11/05/interest-rates-inflation-uk.html",
+          "published": "Thu, 05 Nov 2026 16:01:47 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Voters say the economy drove them to the polls — and blame Trump for their troubles",
+          "link": "https://www.cnbc.com/2026/11/04/2026-midterms-trump-economy-iran-war.html",
+          "published": "Thu, 05 Nov 2026 16:07:59 GMT"
+        },
+        {
+          "source": "CNBC Economy",
           "title": "Analysis: The Democrats have one chance to extract concessions from Trump. Markets will hate it",
           "link": "https://www.cnbc.com/2026/11/04/democrats-trump-debt-ceiling-fight.html",
-          "published": "Wed, 04 Nov 2026 17:32:26 GMT"
+          "published": "Wed, 04 Nov 2026 22:46:43 GMT"
         },
         {
           "source": "CNBC Economy",
@@ -62,24 +80,6 @@
           "title": "Euro zone inflation hits 4% for first time in three years as interest rate hike looms",
           "link": "https://www.cnbc.com/2026/11/04/euro-zone-cpi-inflation-october-ecb-rate-hike.html",
           "published": "Wed, 04 Nov 2026 10:47:30 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Job openings posted big September gain in positive sign for labor market ahead of payrolls report",
-          "link": "https://www.cnbc.com/2026/11/03/job-openings-posted-big-september-gain-in-positive-sign-for-labor-market-ahead-of-payrolls-report.html",
-          "published": "Tue, 03 Nov 2026 19:15:21 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Australia hikes rates to 18-year high to fight inflation",
-          "link": "https://www.cnbc.com/2026/11/03/australia-hikes-rates-18-year-high-finflation.html",
-          "published": "Tue, 03 Nov 2026 03:46:20 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "South Korea targets 'world's highest performance' sovereign AI model in record new budget",
-          "link": "https://www.cnbc.com/2026/11/02/south-korea-ai-spending-budget.html",
-          "published": "Mon, 02 Nov 2026 06:02:03 GMT"
         }
       ]
     }
