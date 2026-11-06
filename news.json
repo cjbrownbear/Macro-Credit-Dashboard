@@ -1,50 +1,68 @@
 {
-  "updated": "2026-11-05T20:38:19Z",
+  "updated": "2026-11-06T19:56:22Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Top Democrats call to rein in AI buildout after midterms sweep: 'National data center moratorium now'",
-          "link": "https://www.cnbc.com/2026/11/05/democrats-data-center-restrictions-midterms.html",
-          "published": "Thu, 05 Nov 2026 20:17:16 GMT"
+          "title": "Data center double-down: Hassett says blue wave won't stop AI build-out",
+          "link": "https://www.cnbc.com/2026/11/06/data-centers-ai-elections-hassett.html",
+          "published": "Fri, 06 Nov 2026 18:54:22 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "AI meltdown: Chip stocks and neoclouds plunge, pushing Nasdaq to worst day since April 2025",
-          "link": "https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html",
-          "published": "Thu, 05 Nov 2026 20:08:49 GMT"
+          "title": "Trump says Stephen Miller to replace Susie Wiles as White House chief of staff",
+          "link": "https://www.cnbc.com/2026/11/06/trump-stephen-miller-wiles-chief-of-staff.html",
+          "published": "Fri, 06 Nov 2026 19:51:29 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Wall Street's fear gauge surges the most since April. Why traders think it should be even higher",
-          "link": "https://www.cnbc.com/2026/11/05/wall-streets-fear-gauge-surges-the-most-since-april-why-traders-think-it-should-be-even-higher.html",
-          "published": "Thu, 05 Nov 2026 19:20:21 GMT"
+          "title": "A disturbing employment trend is hiding beneath the latest strong job numbers",
+          "link": "https://www.cnbc.com/2026/11/06/long-term-unemployment-october-jobs-report.html",
+          "published": "Fri, 06 Nov 2026 19:49:09 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump's energy deals are about to face a wave of investigations by Democrats",
-          "link": "https://www.cnbc.com/2026/11/05/trump-election-energy-venezuela-critical-mineral-renewable-iran.html",
-          "published": "Thu, 05 Nov 2026 19:13:06 GMT"
+          "title": "OpenAI bugging suspect Alfozan pleads not guilty",
+          "link": "https://www.cnbc.com/2026/11/06/openai-bugging-alfozan-saudi.html",
+          "published": "Fri, 06 Nov 2026 19:54:04 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Here's what the Democratic election rout could mean for the U.S. economy",
-          "link": "https://www.cnbc.com/2026/11/05/emocratic-midterm-economy.html",
-          "published": "Thu, 05 Nov 2026 14:33:32 GMT"
+          "title": "Top House Oversight Democrat warns Trump family to 'lawyer up'",
+          "link": "https://www.cnbc.com/2026/11/06/robert-garcia-trump-congress-oversight-investigations.html",
+          "published": "Fri, 06 Nov 2026 19:42:36 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Democrats to probe JPMorgan's relationship with Jeffrey Epstein when they take Senate control",
-          "link": "https://www.cnbc.com/2026/11/05/jpmorgan-epstein-democrats-erdoes-midterm-election.html",
-          "published": "Thu, 05 Nov 2026 17:42:29 GMT"
+          "title": "U.S. economy added 165,000 jobs in October, way more than expected; unemployment rate slips to 4.1%",
+          "link": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html",
+          "published": "Fri, 06 Nov 2026 16:06:59 GMT"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "A disturbing employment trend is hiding beneath the latest strong job numbers",
+          "link": "https://www.cnbc.com/2026/11/06/long-term-unemployment-october-jobs-report.html",
+          "published": "Fri, 06 Nov 2026 19:49:09 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "U.S. economy added 165,000 jobs in October, way more than expected; unemployment rate slips to 4.1%",
+          "link": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html",
+          "published": "Fri, 06 Nov 2026 16:06:59 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "The October jobs report is out Friday. Here's everything to expect",
+          "link": "https://www.cnbc.com/2026/11/05/october-jobs-report-preview.html",
+          "published": "Thu, 05 Nov 2026 21:32:52 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Here's what the Democratic election rout could mean for the U.S. economy",
@@ -62,24 +80,6 @@
           "title": "Voters say the economy drove them to the polls — and blame Trump for their troubles",
           "link": "https://www.cnbc.com/2026/11/04/2026-midterms-trump-economy-iran-war.html",
           "published": "Thu, 05 Nov 2026 16:07:59 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Analysis: The Democrats have one chance to extract concessions from Trump. Markets will hate it",
-          "link": "https://www.cnbc.com/2026/11/04/democrats-trump-debt-ceiling-fight.html",
-          "published": "Wed, 04 Nov 2026 22:46:43 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Private companies added 86,000 jobs in October, slightly higher than expected, ADP says",
-          "link": "https://www.cnbc.com/2026/11/04/private-companies-added-86000-jobs-in-october-slightly-higher-than-expected-adp-says.html",
-          "published": "Wed, 04 Nov 2026 13:49:48 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Euro zone inflation hits 4% for first time in three years as interest rate hike looms",
-          "link": "https://www.cnbc.com/2026/11/04/euro-zone-cpi-inflation-october-ecb-rate-hike.html",
-          "published": "Wed, 04 Nov 2026 10:47:30 GMT"
         }
       ]
     }
