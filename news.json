@@ -1,50 +1,68 @@
 {
-  "updated": "2026-11-08T18:19:53Z",
+  "updated": "2026-11-09T22:58:13Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "How Democrats will try to end Trump's tariffs",
-          "link": "https://www.cnbc.com/2026/11/08/trump-tariffs-democrats-congress-canada.html",
-          "published": "Sun, 08 Nov 2026 15:36:39 GMT"
+          "title": "Jensen Huang affair puts Nvidia's future at risk, with no clear successor to the renowned CEO",
+          "link": "https://www.cnbc.com/2026/11/09/jensen-huang-affair-nvidia-succession.html",
+          "published": "Mon, 09 Nov 2026 22:56:39 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Nvidia CEO Jensen Huang faces bipartisan congressional scrutiny over reported China spy link",
-          "link": "https://www.cnbc.com/2026/11/08/jensen-huang-nvidia-china-spy-congress.html",
-          "published": "Sun, 08 Nov 2026 18:18:30 GMT"
+          "title": "Hegseth impeachment articles introduced by Rep. Massie",
+          "link": "https://www.cnbc.com/2026/11/09/pete-hegseth-impeachment-articles-massie.html",
+          "published": "Mon, 09 Nov 2026 22:41:12 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Using miles to fly for Thanksgiving? These are the most expensive and cheapest routes",
-          "link": "https://www.cnbc.com/2026/11/08/frequent-flyer-miles-points-thanksgiving.html",
-          "published": "Sun, 08 Nov 2026 13:00:01 GMT"
+          "title": "A key report for where inflation stood in October comes out Tuesday. Here's what to expect",
+          "link": "https://www.cnbc.com/2026/11/09/october-cpi-report-2026-inflation.html",
+          "published": "Mon, 09 Nov 2026 21:03:55 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Cathie Wood 'always feels better when the market is worried' — here's why",
-          "link": "https://www.cnbc.com/2026/11/08/cathie-wood-ai-selloff.html",
-          "published": "Sun, 08 Nov 2026 06:00:01 GMT"
+          "title": "3 unexpected reasons the October jobs report was so strong",
+          "link": "https://www.cnbc.com/2026/11/09/october-jobs-report-hiring-by-sector.html",
+          "published": "Mon, 09 Nov 2026 22:23:56 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Amazon's Astro home robot has fans but looks destined for the 'trash heap.' Why it's trying again",
-          "link": "https://www.cnbc.com/2026/11/08/amazon-home-robot-fauna-sprout.html",
-          "published": "Sun, 08 Nov 2026 13:00:01 GMT"
+          "title": "Skydance outlines its $6 billion in planned cost savings. Here's the breakdown",
+          "link": "https://www.cnbc.com/2026/11/09/skydance-cost-savings-breakdown.html",
+          "published": "Mon, 09 Nov 2026 22:55:33 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Poppi founders are going after PepsiCo's Gatorade with new beverage startup Jetty",
-          "link": "https://www.cnbc.com/2026/11/08/poppi-founders-jetty-hydration-gatorade.html",
-          "published": "Sun, 08 Nov 2026 14:00:01 GMT"
+          "title": "PepsiCo to cut about 1,000 jobs as North American business struggles",
+          "link": "https://www.cnbc.com/2026/11/09/pepsico-north-america-job-cuts.html",
+          "published": "Mon, 09 Nov 2026 20:41:38 GMT"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "3 unexpected reasons the October jobs report was so strong",
+          "link": "https://www.cnbc.com/2026/11/09/october-jobs-report-hiring-by-sector.html",
+          "published": "Mon, 09 Nov 2026 22:23:56 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "A key report for where inflation stood in October comes out Tuesday. Here's what to expect",
+          "link": "https://www.cnbc.com/2026/11/09/october-cpi-report-2026-inflation.html",
+          "published": "Mon, 09 Nov 2026 21:03:55 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "China wholesale inflation hits highest in more than four years as consumer measure slows",
+          "link": "https://www.cnbc.com/2026/11/09/china-wholesale-inflation-rises-consumer.html",
+          "published": "Mon, 09 Nov 2026 02:50:22 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "A disturbing employment trend is hiding beneath the latest strong job numbers",
@@ -62,24 +80,6 @@
           "title": "The October jobs report is out Friday. Here's everything to expect",
           "link": "https://www.cnbc.com/2026/11/05/october-jobs-report-preview.html",
           "published": "Thu, 05 Nov 2026 21:32:52 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Here's what the Democratic election rout could mean for the U.S. economy",
-          "link": "https://www.cnbc.com/2026/11/05/emocratic-midterm-economy.html",
-          "published": "Thu, 05 Nov 2026 14:33:32 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Bank of England hikes interest rate for the first time since Iran war, warns inflation will near 5%",
-          "link": "https://www.cnbc.com/2026/11/05/interest-rates-inflation-uk.html",
-          "published": "Thu, 05 Nov 2026 16:01:47 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Voters say the economy drove them to the polls — and blame Trump for their troubles",
-          "link": "https://www.cnbc.com/2026/11/04/2026-midterms-trump-economy-iran-war.html",
-          "published": "Thu, 05 Nov 2026 16:07:59 GMT"
         }
       ]
     }
