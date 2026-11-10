@@ -1,50 +1,62 @@
 {
-  "updated": "2026-11-09T22:58:13Z",
+  "updated": "2026-11-10T20:26:59Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Jensen Huang affair puts Nvidia's future at risk, with no clear successor to the renowned CEO",
-          "link": "https://www.cnbc.com/2026/11/09/jensen-huang-affair-nvidia-succession.html",
-          "published": "Mon, 09 Nov 2026 22:56:39 GMT"
+          "title": "Here's the inflation breakdown for October 2026 — in one chart",
+          "link": "https://www.cnbc.com/2026/11/10/october-2026-cpi-inflation-breakdown.html",
+          "published": "Tue, 10 Nov 2026 16:36:40 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Hegseth impeachment articles introduced by Rep. Massie",
-          "link": "https://www.cnbc.com/2026/11/09/pete-hegseth-impeachment-articles-massie.html",
-          "published": "Mon, 09 Nov 2026 22:41:12 GMT"
+          "title": "Jensen Huang's affair with alleged Chinese spy further complicates Nvidia’s China problem",
+          "link": "https://www.cnbc.com/2026/11/10/jensen-huang-nvidia-china-ties.html",
+          "published": "Tue, 10 Nov 2026 15:04:23 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "A key report for where inflation stood in October comes out Tuesday. Here's what to expect",
-          "link": "https://www.cnbc.com/2026/11/09/october-cpi-report-2026-inflation.html",
-          "published": "Mon, 09 Nov 2026 21:03:55 GMT"
+          "title": "Schumer accuses Trump of defending Nvidia CEO Jensen Huang at cost of national security",
+          "link": "https://www.cnbc.com/2026/11/10/moolenaar-nvidia-jensen-huang-affair-chinese-spy.html",
+          "published": "Tue, 10 Nov 2026 20:19:35 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "3 unexpected reasons the October jobs report was so strong",
-          "link": "https://www.cnbc.com/2026/11/09/october-jobs-report-hiring-by-sector.html",
-          "published": "Mon, 09 Nov 2026 22:23:56 GMT"
+          "title": "Nvidia hires law firm Wachtell Lipton to lead Jensen Huang affair probe",
+          "link": "https://www.cnbc.com/2026/11/10/nvidia-wachtell-lipton-huang-affair.html",
+          "published": "Tue, 10 Nov 2026 20:01:18 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Skydance outlines its $6 billion in planned cost savings. Here's the breakdown",
-          "link": "https://www.cnbc.com/2026/11/09/skydance-cost-savings-breakdown.html",
-          "published": "Mon, 09 Nov 2026 22:55:33 GMT"
+          "title": "Traders bet on a pop for Anthropic's historic IPO",
+          "link": "https://www.cnbc.com/2026/11/10/traders-bet-on-a-pop-for-anthropics-historic-ipo.html",
+          "published": "Tue, 10 Nov 2026 19:51:18 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "PepsiCo to cut about 1,000 jobs as North American business struggles",
-          "link": "https://www.cnbc.com/2026/11/09/pepsico-north-america-job-cuts.html",
-          "published": "Mon, 09 Nov 2026 20:41:38 GMT"
+          "title": "10-year Treasury yield races back to 5% as inflation data, Waller comments drive rate hike expectations",
+          "link": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html",
+          "published": "Tue, 10 Nov 2026 19:51:08 GMT"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
+          "link": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+          "published": "Tue, 10 Nov 2026 16:47:05 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "China's goods surplus tops $1 trillion for a second year amid calls for Beijing to rebalance trade",
+          "link": "https://www.cnbc.com/2026/11/10/china-trade-october-exports-imports-surplus-.html",
+          "published": "Tue, 10 Nov 2026 10:24:13 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "3 unexpected reasons the October jobs report was so strong",
@@ -68,18 +80,6 @@
           "title": "A disturbing employment trend is hiding beneath the latest strong job numbers",
           "link": "https://www.cnbc.com/2026/11/06/long-term-unemployment-october-jobs-report.html",
           "published": "Fri, 06 Nov 2026 20:11:17 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "U.S. economy added 165,000 jobs in October, way more than expected; unemployment rate slips to 4.1%",
-          "link": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html",
-          "published": "Fri, 06 Nov 2026 16:06:59 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "The October jobs report is out Friday. Here's everything to expect",
-          "link": "https://www.cnbc.com/2026/11/05/october-jobs-report-preview.html",
-          "published": "Thu, 05 Nov 2026 21:32:52 GMT"
         }
       ]
     }
