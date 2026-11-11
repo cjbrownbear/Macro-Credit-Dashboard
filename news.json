@@ -1,44 +1,44 @@
 {
-  "updated": "2026-11-10T20:26:59Z",
+  "updated": "2026-11-11T20:09:57Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Here's the inflation breakdown for October 2026 — in one chart",
-          "link": "https://www.cnbc.com/2026/11/10/october-2026-cpi-inflation-breakdown.html",
-          "published": "Tue, 10 Nov 2026 16:36:40 GMT"
+          "title": "CoreWeave soars 26% as CEO reaffirms AI compute demand after strong Q3 report",
+          "link": "https://www.cnbc.com/2026/11/11/coreweave-crwv-outlook-earnings-ai.html",
+          "published": "Wed, 11 Nov 2026 17:38:34 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Jensen Huang's affair with alleged Chinese spy further complicates Nvidia’s China problem",
-          "link": "https://www.cnbc.com/2026/11/10/jensen-huang-nvidia-china-ties.html",
-          "published": "Tue, 10 Nov 2026 15:04:23 GMT"
+          "title": "Nvidia shares rebound as Jensen Huang faces scrutiny ahead of earnings",
+          "link": "https://www.cnbc.com/2026/11/11/nvidia-stock-jensen-huang-affair-china.html",
+          "published": "Wed, 11 Nov 2026 17:39:26 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Schumer accuses Trump of defending Nvidia CEO Jensen Huang at cost of national security",
-          "link": "https://www.cnbc.com/2026/11/10/moolenaar-nvidia-jensen-huang-affair-chinese-spy.html",
-          "published": "Tue, 10 Nov 2026 20:19:35 GMT"
+          "title": "Analysis: Is Nvidia too big to fail? Its AI financing web raises the stakes",
+          "link": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html",
+          "published": "Wed, 11 Nov 2026 19:17:19 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Nvidia hires law firm Wachtell Lipton to lead Jensen Huang affair probe",
-          "link": "https://www.cnbc.com/2026/11/10/nvidia-wachtell-lipton-huang-affair.html",
-          "published": "Tue, 10 Nov 2026 20:01:18 GMT"
+          "title": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
+          "link": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html",
+          "published": "Wed, 11 Nov 2026 16:49:02 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Traders bet on a pop for Anthropic's historic IPO",
-          "link": "https://www.cnbc.com/2026/11/10/traders-bet-on-a-pop-for-anthropics-historic-ipo.html",
-          "published": "Tue, 10 Nov 2026 19:51:18 GMT"
+          "title": "Canada’s ambassador warns Trump tariffs are driving up costs, threatening U.S. investment",
+          "link": "https://www.cnbc.com/2026/11/11/canada-ambassador-trump-tariffs-investments.html",
+          "published": "Wed, 11 Nov 2026 20:02:12 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "10-year Treasury yield races back to 5% as inflation data, Waller comments drive rate hike expectations",
-          "link": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html",
-          "published": "Tue, 10 Nov 2026 19:51:08 GMT"
+          "title": "Bessent moved to military base amid 'growing threats' from Iran",
+          "link": "https://www.cnbc.com/2026/11/11/us-iran-war-trump-hormuz-bessent-threats.html",
+          "published": "Wed, 11 Nov 2026 16:59:18 GMT"
         }
       ]
     },
@@ -47,9 +47,21 @@
       "items": [
         {
           "source": "CNBC Economy",
+          "title": "Analysis: Is Nvidia too big to fail? Its AI financing web raises the stakes",
+          "link": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html",
+          "published": "Wed, 11 Nov 2026 19:17:19 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Consumers are showing signs of strain even as they keep spending, CNBC/NRF Retail Monitor shows",
+          "link": "https://www.cnbc.com/2026/11/11/october-retail-sales-cnbc-nrf-2026.html",
+          "published": "Wed, 11 Nov 2026 12:27:47 GMT"
+        },
+        {
+          "source": "CNBC Economy",
           "title": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
           "link": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
-          "published": "Tue, 10 Nov 2026 16:47:05 GMT"
+          "published": "Tue, 10 Nov 2026 23:53:58 GMT"
         },
         {
           "source": "CNBC Economy",
@@ -68,18 +80,6 @@
           "title": "A key report for where inflation stood in October comes out Tuesday. Here's what to expect",
           "link": "https://www.cnbc.com/2026/11/09/october-cpi-report-2026-inflation.html",
           "published": "Mon, 09 Nov 2026 21:03:55 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "China wholesale inflation hits highest in more than four years as consumer measure slows",
-          "link": "https://www.cnbc.com/2026/11/09/china-wholesale-inflation-rises-consumer.html",
-          "published": "Mon, 09 Nov 2026 02:50:22 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "A disturbing employment trend is hiding beneath the latest strong job numbers",
-          "link": "https://www.cnbc.com/2026/11/06/long-term-unemployment-october-jobs-report.html",
-          "published": "Fri, 06 Nov 2026 20:11:17 GMT"
         }
       ]
     }
