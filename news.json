@@ -1,44 +1,44 @@
 {
-  "updated": "2026-11-11T20:09:57Z",
+  "updated": "2026-11-12T20:46:34Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "CoreWeave soars 26% as CEO reaffirms AI compute demand after strong Q3 report",
-          "link": "https://www.cnbc.com/2026/11/11/coreweave-crwv-outlook-earnings-ai.html",
-          "published": "Wed, 11 Nov 2026 17:38:34 GMT"
+          "title": "Alice Huang tied to Nvidia’s biggest Chinese competitor",
+          "link": "https://www.cnbc.com/2026/11/12/alice-huang-jensen-huang-nvidia-huawei.html",
+          "published": "Thu, 12 Nov 2026 20:34:54 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Nvidia shares rebound as Jensen Huang faces scrutiny ahead of earnings",
-          "link": "https://www.cnbc.com/2026/11/11/nvidia-stock-jensen-huang-affair-china.html",
-          "published": "Wed, 11 Nov 2026 17:39:26 GMT"
+          "title": "Jensen Huang is out and Nvidia stock is down—what market pros say about buying dips",
+          "link": "https://www.cnbc.com/make-it/2026/11/12/nvidia-what-market-pros-say-about-buying-dips.html",
+          "published": "Thu, 12 Nov 2026 20:01:29 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Analysis: Is Nvidia too big to fail? Its AI financing web raises the stakes",
-          "link": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html",
-          "published": "Wed, 11 Nov 2026 19:17:19 GMT"
+          "title": "Nvidia: Ex-prosecutor Joon Kim and Wachtell, Lipton bring big track record to investigation",
+          "link": "https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-joon-kim-wachtell-china-spy.html",
+          "published": "Thu, 12 Nov 2026 19:58:11 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
-          "link": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html",
-          "published": "Wed, 11 Nov 2026 16:49:02 GMT"
+          "title": "Here's what Nvidia interim CEO Colette Kress and board chair Harvey Jones wrote to Nvidia employees",
+          "link": "https://www.cnbc.com/2026/11/12/nvidia-kress-jones-employee-emails.html",
+          "published": "Thu, 12 Nov 2026 19:42:41 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Canada’s ambassador warns Trump tariffs are driving up costs, threatening U.S. investment",
-          "link": "https://www.cnbc.com/2026/11/11/canada-ambassador-trump-tariffs-investments.html",
-          "published": "Wed, 11 Nov 2026 20:02:12 GMT"
+          "title": "Donald Trump Jr. exits advisory role at Kalshi prediction market",
+          "link": "https://www.cnbc.com/2026/11/12/donald-trump-jr-exits-kalshi-advisory-role.html",
+          "published": "Thu, 12 Nov 2026 20:03:57 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Bessent moved to military base amid 'growing threats' from Iran",
-          "link": "https://www.cnbc.com/2026/11/11/us-iran-war-trump-hormuz-bessent-threats.html",
-          "published": "Wed, 11 Nov 2026 16:59:18 GMT"
+          "title": "In a policy switch, the Fed says its October 2027 meeting will not see a vote on interest rates",
+          "link": "https://www.cnbc.com/2026/11/12/in-policy-switch-fed-says-its-october-2027-meeting-will-not-see-a-vote-on-interest-rates.html",
+          "published": "Thu, 12 Nov 2026 19:05:25 GMT"
         }
       ]
     },
@@ -47,9 +47,15 @@
       "items": [
         {
           "source": "CNBC Economy",
-          "title": "Analysis: Is Nvidia too big to fail? Its AI financing web raises the stakes",
+          "title": "UK economy expands 0.7% in third quarter as AI provides 'extra engine of growth'",
+          "link": "https://www.cnbc.com/2026/11/12/uk-gdp-third-quarter-2026.html",
+          "published": "Thu, 12 Nov 2026 08:02:15 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Analysis: Nvidia’s leadership crisis tests the chipmaker’s role as the ‘central bank of AI’",
           "link": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html",
-          "published": "Wed, 11 Nov 2026 19:17:19 GMT"
+          "published": "Thu, 12 Nov 2026 17:39:54 GMT"
         },
         {
           "source": "CNBC Economy",
@@ -74,12 +80,6 @@
           "title": "3 unexpected reasons the October jobs report was so strong",
           "link": "https://www.cnbc.com/2026/11/09/october-jobs-report-hiring-by-sector.html",
           "published": "Mon, 09 Nov 2026 22:23:56 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "A key report for where inflation stood in October comes out Tuesday. Here's what to expect",
-          "link": "https://www.cnbc.com/2026/11/09/october-cpi-report-2026-inflation.html",
-          "published": "Mon, 09 Nov 2026 21:03:55 GMT"
         }
       ]
     }
