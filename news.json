@@ -1,50 +1,56 @@
 {
-  "updated": "2026-11-15T19:20:49Z",
+  "updated": "2026-11-16T22:52:06Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Bessent calls for ‘dramatic shakeup’ at Nvidia, urges outside CEO",
-          "link": "https://www.cnbc.com/2026/11/15/bessent-nvidia-ceo-lutnick-megaspeed.html",
-          "published": "Sun, 15 Nov 2026 18:10:18 GMT"
+          "title": "Trump’s accounts traded up to $97.5 million in Nvidia as Huang gained White House access",
+          "link": "https://www.cnbc.com/2026/11/16/trump-nvidia-stock-trades-jensen-huang.html",
+          "published": "Mon, 16 Nov 2026 22:37:45 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Anthropic’s IPO lands as the embattled AI trade looks for a much-needed bright spot",
-          "link": "https://www.cnbc.com/2026/11/15/anthropic-ipo-is-make-or-break-for-the-technology-industry.html",
-          "published": "Sun, 15 Nov 2026 12:00:01 GMT"
+          "title": "JPMorgan Chase says temporary software bug is affecting consumer banking",
+          "link": "https://www.cnbc.com/2026/11/16/jpmorgan-chase-technical-issue.html",
+          "published": "Mon, 16 Nov 2026 22:14:47 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "'We slept here': Flight delays linger but schedule is back on track for Monday",
-          "link": "https://www.cnbc.com/2026/11/15/flight-delays-ground-faa-stop.html",
-          "published": "Sun, 15 Nov 2026 18:22:23 GMT"
+          "title": "Berkshire Hathaway raised its stake in Delta in the third quarter. It also trimmed a key bank holding",
+          "link": "https://www.cnbc.com/2026/11/16/berkshire-hathaway-raised-its-stake-in-delta-air-in-the-third-quarter.html",
+          "published": "Mon, 16 Nov 2026 22:22:52 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump breaks silence about FAA nationwide ground stop, blames Biden administration",
-          "link": "https://www.cnbc.com/2026/11/15/trump-breaks-silence-on-faa-nationwide-ground-stop-blames-biden-.html",
-          "published": "Sun, 15 Nov 2026 16:56:40 GMT"
+          "title": "United Airlines reports system outage affecting departing flights",
+          "link": "https://www.cnbc.com/2026/11/16/united-airlines-outage-faa.html",
+          "published": "Mon, 16 Nov 2026 22:48:52 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Rivian, Lucid, Scout CEOs aren’t counting on Democrats to restore EV federal support after midterm wins",
-          "link": "https://www.cnbc.com/2026/11/15/rivian-lucid-scout-arent-counting-on-dems-to-restore-ev-incentives.html",
-          "published": "Sun, 15 Nov 2026 13:00:02 GMT"
+          "title": "Kalshi plans to launch stock trading soon",
+          "link": "https://www.cnbc.com/2026/11/16/kalshi-plans-to-launch-stock-trading-soon.html",
+          "published": "Mon, 16 Nov 2026 21:23:34 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Eric Trump-backed robot soldier startup can't pay staff after founder borrowed $4.6 million from company to buy home",
-          "link": "https://www.cnbc.com/2026/11/14/foundation-payroll-ceo-loan.html",
-          "published": "Sat, 14 Nov 2026 12:00:01 GMT"
+          "title": "U.S. crude oil declines to $85 a barrel on recovering Middle East exports",
+          "link": "https://www.cnbc.com/2026/11/16/us-crude-oil-declines-to-87-a-barrel-on-recovering-middle-east-exports.html",
+          "published": "Mon, 16 Nov 2026 22:19:02 GMT"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Japan's economy unexpectedly contracts in third-quarter as elevated energy costs bite",
+          "link": "https://www.cnbc.com/2026/11/16/japan-q3-gdp-energy-oil-prices.html",
+          "published": "Mon, 16 Nov 2026 02:56:24 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "AI risks are the biggest threat to the financial system, Fed survey finds",
@@ -74,12 +80,6 @@
           "title": "Analysis: Nvidia’s leadership crisis tests the chipmaker’s role as the ‘central bank of AI’",
           "link": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html",
           "published": "Thu, 12 Nov 2026 23:08:50 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Consumers are showing signs of strain even as they keep spending, CNBC/NRF Retail Monitor shows",
-          "link": "https://www.cnbc.com/2026/11/11/october-retail-sales-cnbc-nrf-2026.html",
-          "published": "Wed, 11 Nov 2026 12:27:47 GMT"
         }
       ]
     }
