@@ -1,50 +1,62 @@
 {
-  "updated": "2026-11-16T22:52:06Z",
+  "updated": "2026-11-17T21:51:44Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Trump’s accounts traded up to $97.5 million in Nvidia as Huang gained White House access",
-          "link": "https://www.cnbc.com/2026/11/16/trump-nvidia-stock-trades-jensen-huang.html",
-          "published": "Mon, 16 Nov 2026 22:37:45 GMT"
+          "title": "Widespread outages hit banks, air travel, the NSA and Apple, disrupting seemingly everything",
+          "link": "https://www.cnbc.com/2026/11/17/apple-microsoft-faa-jpmorgan-outages.html",
+          "published": "Tue, 17 Nov 2026 21:24:20 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "JPMorgan Chase says temporary software bug is affecting consumer banking",
-          "link": "https://www.cnbc.com/2026/11/16/jpmorgan-chase-technical-issue.html",
-          "published": "Mon, 16 Nov 2026 22:14:47 GMT"
+          "title": "Jensen Huang scandal fuels bipartisan push to block AI chip sales to China",
+          "link": "https://www.cnbc.com/2026/11/17/congress-ai-china-jensen-huang-chips.html",
+          "published": "Tue, 17 Nov 2026 21:31:21 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Berkshire Hathaway raised its stake in Delta in the third quarter. It also trimmed a key bank holding",
-          "link": "https://www.cnbc.com/2026/11/16/berkshire-hathaway-raised-its-stake-in-delta-air-in-the-third-quarter.html",
-          "published": "Mon, 16 Nov 2026 22:22:52 GMT"
+          "title": "Homebuilder sentiment plunges to 14-year low, leading more builders to drop prices",
+          "link": "https://www.cnbc.com/2026/11/17/homebuilder-sentiment-plunges-to-14-year-low-leading-more-builders-to-drop-prices.html",
+          "published": "Tue, 17 Nov 2026 15:36:43 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "United Airlines reports system outage affecting departing flights",
-          "link": "https://www.cnbc.com/2026/11/16/united-airlines-outage-faa.html",
-          "published": "Mon, 16 Nov 2026 22:48:52 GMT"
+          "title": "Wall Street's fear gauge is surging again and this time it's not just about AI jitters",
+          "link": "https://www.cnbc.com/2026/11/17/wall-streets-fear-gauge-is-surging-again-and-this-time-its-not-just-about-ai-jitters.html",
+          "published": "Tue, 17 Nov 2026 20:28:07 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Kalshi plans to launch stock trading soon",
-          "link": "https://www.cnbc.com/2026/11/16/kalshi-plans-to-launch-stock-trading-soon.html",
-          "published": "Mon, 16 Nov 2026 21:23:34 GMT"
+          "title": "U.S. officially loses measles elimination status amid ongoing outbreaks",
+          "link": "https://www.cnbc.com/2026/11/17/us-measles-elimination-status.html",
+          "published": "Tue, 17 Nov 2026 18:10:16 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "U.S. crude oil declines to $85 a barrel on recovering Middle East exports",
-          "link": "https://www.cnbc.com/2026/11/16/us-crude-oil-declines-to-87-a-barrel-on-recovering-middle-east-exports.html",
-          "published": "Mon, 16 Nov 2026 22:19:02 GMT"
+          "title": "Anthropic likely to price IPO above the current range of $70 to $78, sources tell CNBC",
+          "link": "https://www.cnbc.com/2026/11/17/anthropic-ipo-price.html",
+          "published": "Tue, 17 Nov 2026 14:34:48 GMT"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "St. Louis Fed's Musalem says four more rate hikes may be needed in coming months",
+          "link": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html",
+          "published": "Tue, 17 Nov 2026 13:40:54 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Analysis: The Fed's chairman sees an AI revolution coming. Now he has to figure out what it means",
+          "link": "https://www.cnbc.com/2026/11/16/kevin-warsh-fed-ai-jobs-productivity-interest-rateshtml.html",
+          "published": "Tue, 17 Nov 2026 15:35:13 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Japan's economy unexpectedly contracts in third-quarter as elevated energy costs bite",
@@ -68,18 +80,6 @@
           "title": "Bessent blames Lutnick’s Commerce as he slams Nvidia chip ‘leakage’ to China",
           "link": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html",
           "published": "Fri, 13 Nov 2026 17:06:57 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "UK economy expands 0.7% in third quarter as AI provides 'extra engine of growth'",
-          "link": "https://www.cnbc.com/2026/11/12/uk-gdp-third-quarter-2026.html",
-          "published": "Thu, 12 Nov 2026 08:02:15 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Analysis: Nvidia’s leadership crisis tests the chipmaker’s role as the ‘central bank of AI’",
-          "link": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html",
-          "published": "Thu, 12 Nov 2026 23:08:50 GMT"
         }
       ]
     }
