@@ -1,50 +1,68 @@
 {
-  "updated": "2026-11-17T21:51:44Z",
+  "updated": "2026-11-18T21:23:33Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Widespread outages hit banks, air travel, the NSA and Apple, disrupting seemingly everything",
-          "link": "https://www.cnbc.com/2026/11/17/apple-microsoft-faa-jpmorgan-outages.html",
-          "published": "Tue, 17 Nov 2026 21:24:20 GMT"
+          "title": "Anthropic prices IPO at $83 per share, above expected range, source tells CNBC",
+          "link": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html",
+          "published": "Wed, 18 Nov 2026 21:22:04 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Jensen Huang scandal fuels bipartisan push to block AI chip sales to China",
-          "link": "https://www.cnbc.com/2026/11/17/congress-ai-china-jensen-huang-chips.html",
-          "published": "Tue, 17 Nov 2026 21:31:21 GMT"
+          "title": "Nvidia interim CEO Kress tells employees ‘let’s move forward’ at first all-hands meeting since Jensen Huang exit",
+          "link": "https://www.cnbc.com/2026/11/18/nvidia-interim-ceo-kress-addresses-staff-after-jensen-huang-exit-.html",
+          "published": "Wed, 18 Nov 2026 19:21:59 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Homebuilder sentiment plunges to 14-year low, leading more builders to drop prices",
-          "link": "https://www.cnbc.com/2026/11/17/homebuilder-sentiment-plunges-to-14-year-low-leading-more-builders-to-drop-prices.html",
-          "published": "Tue, 17 Nov 2026 15:36:43 GMT"
+          "title": "Fed officials expect more rate hikes, worry about AI impact on inflation, minutes show",
+          "link": "https://www.cnbc.com/2026/11/18/fed-minutes-october-2026.html",
+          "published": "Wed, 18 Nov 2026 19:41:59 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Wall Street's fear gauge is surging again and this time it's not just about AI jitters",
-          "link": "https://www.cnbc.com/2026/11/17/wall-streets-fear-gauge-is-surging-again-and-this-time-its-not-just-about-ai-jitters.html",
-          "published": "Tue, 17 Nov 2026 20:28:07 GMT"
+          "title": "Investigators make progress in hunt for cause of FAA ground stop",
+          "link": "https://www.cnbc.com/2026/11/18/faa-ground-stop-router-investigation.html",
+          "published": "Wed, 18 Nov 2026 18:13:25 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "U.S. officially loses measles elimination status amid ongoing outbreaks",
-          "link": "https://www.cnbc.com/2026/11/17/us-measles-elimination-status.html",
-          "published": "Tue, 17 Nov 2026 18:10:16 GMT"
+          "title": "One of AI's most notorious 'doomers' stands to make billions in Anthropic's IPO",
+          "link": "https://www.cnbc.com/2026/11/18/jaan-tallinn-anthropic-ipo-series-a-investment.html",
+          "published": "Wed, 18 Nov 2026 18:43:26 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Anthropic likely to price IPO above the current range of $70 to $78, sources tell CNBC",
-          "link": "https://www.cnbc.com/2026/11/17/anthropic-ipo-price.html",
-          "published": "Tue, 17 Nov 2026 14:34:48 GMT"
+          "title": "Vance scraps schedule to address tech outages as Trump admin insists incidents aren't linked",
+          "link": "https://www.cnbc.com/2026/11/18/trump-tech-outages-nsa-faa-microsoft.html",
+          "published": "Wed, 18 Nov 2026 19:17:27 GMT"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Southeast Asia’s data center boom leaned on Chinese demand. New U.S. rules put that pipeline at risk",
+          "link": "https://www.cnbc.com/2026/11/18/nvidia-us-ai-chip-export-controls-data-centers-.html",
+          "published": "Wed, 18 Nov 2026 14:09:26 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Record diesel prices drive UK inflation to 1-year high of 3.6%",
+          "link": "https://www.cnbc.com/2026/11/18/uk-inflation-cpi-fuel-prices.html",
+          "published": "Wed, 18 Nov 2026 07:57:37 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Japan exports in October surge 20.5%, beating estimates on robust chip shipments",
+          "link": "https://www.cnbc.com/2026/11/18/japan-exports-october-imports-chips.html",
+          "published": "Wed, 18 Nov 2026 00:35:31 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "St. Louis Fed's Musalem says four more rate hikes may be needed in coming months",
@@ -62,24 +80,6 @@
           "title": "Japan's economy unexpectedly contracts in third-quarter as elevated energy costs bite",
           "link": "https://www.cnbc.com/2026/11/16/japan-q3-gdp-energy-oil-prices.html",
           "published": "Mon, 16 Nov 2026 02:56:24 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "AI risks are the biggest threat to the financial system, Fed survey finds",
-          "link": "https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html",
-          "published": "Fri, 13 Nov 2026 21:18:30 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Wholesale prices rose 0.3% in October, putting annual rate at 6.5%, the highest in nearly four years",
-          "link": "https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html",
-          "published": "Fri, 13 Nov 2026 15:44:16 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Bessent blames Lutnick’s Commerce as he slams Nvidia chip ‘leakage’ to China",
-          "link": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html",
-          "published": "Fri, 13 Nov 2026 17:06:57 GMT"
         }
       ]
     }
