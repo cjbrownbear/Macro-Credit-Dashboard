@@ -1,50 +1,56 @@
 {
-  "updated": "2026-11-19T21:27:58Z",
+  "updated": "2026-11-20T21:03:03Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "AMD dives on short-seller report of alleged China exposure",
-          "link": "https://www.cnbc.com/2026/11/19/amd-falls-on-short-seller-report-of-alleged-china-exposure.html",
-          "published": "Thu, 19 Nov 2026 21:14:46 GMT"
+          "title": "Trump vows to stop U.S. companies from building data centers abroad, threatens 'tremendous tax'",
+          "link": "https://www.cnbc.com/2026/11/20/trump-data-centers-ai-companies-tax.html",
+          "published": "Fri, 20 Nov 2026 20:47:58 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Commerce approved sales of more than 879,000 AI chips to Chinese companies, Rep. Mast says",
-          "link": "https://www.cnbc.com/2026/11/19/nvidia-amd-china-chip-sales-congress.html",
-          "published": "Thu, 19 Nov 2026 21:27:33 GMT"
+          "title": "Nvidia stock plunges 12%, rides longest weekly losing streak since 2008 financial crisis",
+          "link": "https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html",
+          "published": "Fri, 20 Nov 2026 19:54:31 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Kash Patel skips House hearing after Mar-a-Lago gala with $50,000 access",
-          "link": "https://www.cnbc.com/2026/11/18/kash-patel-hearing-mar-a-lago-gala.html",
-          "published": "Thu, 19 Nov 2026 14:15:18 GMT"
+          "title": "A massive bearish trade just happened in the chip stocks",
+          "link": "https://www.cnbc.com/2026/11/20/a-massive-bearish-trade-just-happened-in-the-chip-stocks.html",
+          "published": "Fri, 20 Nov 2026 19:33:31 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Intuit to sell Mailchimp to Bending Spoons for $3.68 billion",
-          "link": "https://www.cnbc.com/2026/11/19/intuit-mailchimp-sale-bending-spoons.html",
-          "published": "Thu, 19 Nov 2026 21:18:11 GMT"
+          "title": "The bull market has a new problem. The 'smart money' is selling",
+          "link": "https://www.cnbc.com/2026/11/20/equity-issuance-bull-market-problem.html",
+          "published": "Fri, 20 Nov 2026 14:15:29 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Congress passes bill to protect older investors from financial fraud",
-          "link": "https://www.cnbc.com/2026/11/19/financial-exploitation-prevention-act-older-investors-fraud.html",
-          "published": "Thu, 19 Nov 2026 20:36:48 GMT"
+          "title": "Trump says he still has confidence in Lutnick",
+          "link": "https://www.cnbc.com/2026/11/20/trump-lutnick-commerce-china-ai.html",
+          "published": "Fri, 20 Nov 2026 20:52:08 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump bought Nvidia, Palantir, SpaceX in September as federal deals, White House ties grew",
-          "link": "https://www.cnbc.com/2026/11/19/trump-nvidia-spacex-palantir-stock-trades-september.html",
-          "published": "Thu, 19 Nov 2026 19:43:08 GMT"
+          "title": "Data center construction costs soar 13% in 2026",
+          "link": "https://www.cnbc.com/2026/11/20/data-center-construction-costs-soar-13-percent-in-2026.html",
+          "published": "Fri, 20 Nov 2026 16:52:08 GMT"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Japan core inflation soars to highest this year as energy subsidy expiry pushes up consumer prices",
+          "link": "https://www.cnbc.com/2026/11/20/japan-inflation-cpi-october.html",
+          "published": "Fri, 20 Nov 2026 01:49:03 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Southeast Asia’s data center boom leaned on Chinese demand. New U.S. rules put that pipeline at risk",
@@ -74,12 +80,6 @@
           "title": "Peterson: The Fed's chairman sees an AI revolution coming. Now he has to figure out what it means",
           "link": "https://www.cnbc.com/2026/11/16/kevin-warsh-fed-ai-jobs-productivity-interest-rateshtml.html",
           "published": "Thu, 19 Nov 2026 20:18:47 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Japan's economy unexpectedly contracts in third-quarter as elevated energy costs bite",
-          "link": "https://www.cnbc.com/2026/11/16/japan-q3-gdp-energy-oil-prices.html",
-          "published": "Mon, 16 Nov 2026 02:56:24 GMT"
         }
       ]
     }
