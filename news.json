@@ -1,9 +1,27 @@
 {
-  "updated": "2026-11-21T20:03:24Z",
+  "updated": "2026-11-22T20:18:22Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
+        {
+          "source": "CNBC Top News",
+          "title": "Director of National Intelligence Jay Clayton warns Americans of 'bumps in the road' after tech outages",
+          "link": "https://www.cnbc.com/2026/11/22/jay-clayton-tech-outages-faa-microsoft-thanksgiving.html",
+          "published": "Sun, 22 Nov 2026 17:14:03 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "Employees at Eric Trump-backed robot startup lose health benefits as company's cash crunch deepens",
+          "link": "https://www.cnbc.com/2026/11/22/foundation-future-industries-health-benefits-payroll-base-group.html",
+          "published": "Sun, 22 Nov 2026 18:55:05 GMT"
+        },
+        {
+          "source": "CNBC Top News",
+          "title": "Pizza chains are under pressure. GLP-1 use is only one part of the problem",
+          "link": "https://www.cnbc.com/2026/11/22/pizza-chains-sales-glp-1-demand.html",
+          "published": "Sun, 22 Nov 2026 13:00:01 GMT"
+        },
         {
           "source": "CNBC Top News",
           "title": "Anthropic’s record IPO collides with tech’s worst week on Wall Street since 2020",
@@ -12,33 +30,15 @@
         },
         {
           "source": "CNBC Top News",
-          "title": "Trump says there could be a 'positive spin' from the latest FBI database hack",
-          "link": "https://www.cnbc.com/2026/11/21/trump-fbi-database-hack.html",
-          "published": "Sat, 21 Nov 2026 16:57:34 GMT"
+          "title": "Saudi Arabia, Bahrain report new attacks as Iran says it remains open to a deal with U.S.",
+          "link": "https://www.cnbc.com/2026/11/22/saudi-houthi-bahrain-iran-attacks-araghchi-talks.html",
+          "published": "Sun, 22 Nov 2026 13:25:47 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Tech outages are fueling a new doomsday economy",
-          "link": "https://www.cnbc.com/2026/11/21/emergency-prep-spending-tech-outages.html",
-          "published": "Sat, 21 Nov 2026 15:04:56 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "State and federal battle over prediction markets regulation heats up after midterms",
-          "link": "https://www.cnbc.com/2026/11/21/prediction-market-regulation-kalshi-cftc.html",
-          "published": "Sat, 21 Nov 2026 13:12:41 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "International first class is over for U.S. airlines. Enter the mega business-class cabin",
-          "link": "https://www.cnbc.com/2026/11/21/us-airlines-first-class-business-class.html",
-          "published": "Sat, 21 Nov 2026 12:00:01 GMT"
-        },
-        {
-          "source": "CNBC Top News",
-          "title": "Warren Buffett quadruples Thanksgiving gifts: A breakdown of how much wealth he's giving away",
-          "link": "https://www.cnbc.com/2026/11/21/warren-buffett-quadruples-thanksgiving-gifts.html",
-          "published": "Sat, 21 Nov 2026 13:01:44 GMT"
+          "title": "Quantum computing’s first real-world payoff may come in energy, not drug discovery",
+          "link": "https://www.cnbc.com/2026/11/22/quantum-computing-energy-applications.html",
+          "published": "Sun, 22 Nov 2026 06:00:01 GMT"
         }
       ]
     },
