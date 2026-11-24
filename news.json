@@ -1,50 +1,56 @@
 {
-  "updated": "2026-11-22T20:18:22Z",
+  "updated": "2026-11-24T00:47:31Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Director of National Intelligence Jay Clayton warns Americans of 'bumps in the road' after tech outages",
-          "link": "https://www.cnbc.com/2026/11/22/jay-clayton-tech-outages-faa-microsoft-thanksgiving.html",
-          "published": "Sun, 22 Nov 2026 17:14:03 GMT"
+          "title": "Nvidia surge: What investors should do with the stock and the AI trade now",
+          "link": "https://www.cnbc.com/2026/11/23/nvidia-stock-jensen-huang-ai-trade.html",
+          "published": "Mon, 23 Nov 2026 22:43:38 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Employees at Eric Trump-backed robot startup lose health benefits as company's cash crunch deepens",
-          "link": "https://www.cnbc.com/2026/11/22/foundation-future-industries-health-benefits-payroll-base-group.html",
-          "published": "Sun, 22 Nov 2026 18:55:05 GMT"
+          "title": "Peterson: Here’s what Bessent’s about-face on Jensen Huang reveals about Trump and China",
+          "link": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-trump-bessent-china.html",
+          "published": "Mon, 23 Nov 2026 21:00:59 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Pizza chains are under pressure. GLP-1 use is only one part of the problem",
-          "link": "https://www.cnbc.com/2026/11/22/pizza-chains-sales-glp-1-demand.html",
-          "published": "Sun, 22 Nov 2026 13:00:01 GMT"
+          "title": "Nvidia partner and supplier stocks in Asia jump after Jensen Huang's return",
+          "link": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-asia-chip-stocks.html",
+          "published": "Tue, 24 Nov 2026 00:45:55 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Anthropic’s record IPO collides with tech’s worst week on Wall Street since 2020",
-          "link": "https://www.cnbc.com/2026/11/21/anthropic-ipo-tech-selloff.html",
-          "published": "Sat, 21 Nov 2026 16:40:05 GMT"
+          "title": "Congress shreds Nvidia's 'outrageous' decision to bring back Huang: 'Failure of character'",
+          "link": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-congress-trump.html",
+          "published": "Mon, 23 Nov 2026 20:22:49 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Saudi Arabia, Bahrain report new attacks as Iran says it remains open to a deal with U.S.",
-          "link": "https://www.cnbc.com/2026/11/22/saudi-houthi-bahrain-iran-attacks-araghchi-talks.html",
-          "published": "Sun, 22 Nov 2026 13:25:47 GMT"
+          "title": "Fed's John Williams indicates higher interest rates likely 'over time' to address inflation",
+          "link": "https://www.cnbc.com/2026/11/23/john-williams-fed-inflation-rate-hikes.html",
+          "published": "Mon, 23 Nov 2026 21:02:17 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Quantum computing’s first real-world payoff may come in energy, not drug discovery",
-          "link": "https://www.cnbc.com/2026/11/22/quantum-computing-energy-applications.html",
-          "published": "Sun, 22 Nov 2026 06:00:01 GMT"
+          "title": "Nvidia sets options-trading record after CEO comeback. Here are the big trades",
+          "link": "https://www.cnbc.com/2026/11/23/nvidia-sets-options-trading-record-after-ceo-comeback-here-are-the-big-trades.html",
+          "published": "Mon, 23 Nov 2026 23:24:02 GMT"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Peterson: Here’s what Bessent’s about-face on Jensen Huang reveals about Trump and China",
+          "link": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-trump-bessent-china.html",
+          "published": "Mon, 23 Nov 2026 21:00:59 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Tech outages are fueling a new doomsday economy",
@@ -74,12 +80,6 @@
           "title": "Japan exports in October surge 20.5%, beating estimates on robust chip shipments",
           "link": "https://www.cnbc.com/2026/11/18/japan-exports-october-imports-chips.html",
           "published": "Wed, 18 Nov 2026 00:35:31 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "St. Louis Fed's Musalem says four more rate hikes may be needed in coming months",
-          "link": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html",
-          "published": "Tue, 17 Nov 2026 13:40:54 GMT"
         }
       ]
     }
