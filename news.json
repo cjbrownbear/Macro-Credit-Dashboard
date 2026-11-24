@@ -1,50 +1,62 @@
 {
-  "updated": "2026-11-24T00:47:31Z",
+  "updated": "2026-11-24T22:59:40Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Nvidia surge: What investors should do with the stock and the AI trade now",
-          "link": "https://www.cnbc.com/2026/11/23/nvidia-stock-jensen-huang-ai-trade.html",
-          "published": "Mon, 23 Nov 2026 22:43:38 GMT"
+          "title": "Jensen Huang tells staff that Nvidia doesn't need a succession plan",
+          "link": "https://www.cnbc.com/2026/11/24/jensen-huang-nvidia-employee-meeting.html",
+          "published": "Tue, 24 Nov 2026 20:42:07 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Peterson: Here’s what Bessent’s about-face on Jensen Huang reveals about Trump and China",
-          "link": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-trump-bessent-china.html",
-          "published": "Mon, 23 Nov 2026 21:00:59 GMT"
+          "title": "Trump wanted Jensen Huang back. Now, the president is all alone in Washington",
+          "link": "https://www.cnbc.com/2026/11/24/trump-jensen-huang-nvidia.html",
+          "published": "Tue, 24 Nov 2026 21:13:39 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Nvidia partner and supplier stocks in Asia jump after Jensen Huang's return",
-          "link": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-asia-chip-stocks.html",
-          "published": "Tue, 24 Nov 2026 00:45:55 GMT"
+          "title": "Dell earnings beat on AI strength, company authorizes $25 billion buyback",
+          "link": "https://www.cnbc.com/2026/11/24/dell-earnings-report-q3-2027.html",
+          "published": "Tue, 24 Nov 2026 22:07:45 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Congress shreds Nvidia's 'outrageous' decision to bring back Huang: 'Failure of character'",
-          "link": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-congress-trump.html",
-          "published": "Mon, 23 Nov 2026 20:22:49 GMT"
+          "title": "Drugmaker Insmed shares rally 14% after Sanofi agrees to buy it in pharma’s biggest deal in three years",
+          "link": "https://www.cnbc.com/2026/11/24/insmed-sanofi-deal-stock-pharma.html",
+          "published": "Tue, 24 Nov 2026 21:07:19 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Fed's John Williams indicates higher interest rates likely 'over time' to address inflation",
-          "link": "https://www.cnbc.com/2026/11/23/john-williams-fed-inflation-rate-hikes.html",
-          "published": "Mon, 23 Nov 2026 21:02:17 GMT"
+          "title": "Saudi national charged in OpenAI bugging to be released on $1 million bond",
+          "link": "https://www.cnbc.com/2026/11/24/openai-bugging-aflozan-release-saudi.html",
+          "published": "Tue, 24 Nov 2026 22:03:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Nvidia sets options-trading record after CEO comeback. Here are the big trades",
-          "link": "https://www.cnbc.com/2026/11/23/nvidia-sets-options-trading-record-after-ceo-comeback-here-are-the-big-trades.html",
-          "published": "Mon, 23 Nov 2026 23:24:02 GMT"
+          "title": "Gold is doing something strange. Here's one way to play it",
+          "link": "https://www.cnbc.com/2026/11/24/gold-is-doing-something-strange-heres-one-way-to-play-it-.html",
+          "published": "Tue, 24 Nov 2026 19:25:13 GMT"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Consumer confidence shoots up after Democrats' midterm victories — though inflation worries persist",
+          "link": "https://www.cnbc.com/2026/11/24/consumer-confidence-november-election-midterm.html",
+          "published": "Tue, 24 Nov 2026 18:34:43 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "Why France is at risk of recession — and what could keep it out of one",
+          "link": "https://www.cnbc.com/2026/11/24/france-recession-risk-pmi.html",
+          "published": "Tue, 24 Nov 2026 11:15:30 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Peterson: Here’s what Bessent’s about-face on Jensen Huang reveals about Trump and China",
@@ -68,18 +80,6 @@
           "title": "Southeast Asia’s data center boom leaned on Chinese demand. New U.S. rules put that pipeline at risk",
           "link": "https://www.cnbc.com/2026/11/18/nvidia-us-ai-chip-export-controls-data-centers-.html",
           "published": "Wed, 18 Nov 2026 14:09:26 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Record diesel prices drive UK inflation to 1-year high of 3.6%",
-          "link": "https://www.cnbc.com/2026/11/18/uk-inflation-cpi-fuel-prices.html",
-          "published": "Wed, 18 Nov 2026 07:57:37 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Japan exports in October surge 20.5%, beating estimates on robust chip shipments",
-          "link": "https://www.cnbc.com/2026/11/18/japan-exports-october-imports-chips.html",
-          "published": "Wed, 18 Nov 2026 00:35:31 GMT"
         }
       ]
     }
