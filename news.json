@@ -1,50 +1,62 @@
 {
-  "updated": "2026-11-25T22:28:25Z",
+  "updated": "2026-11-26T22:17:16Z",
   "sections": [
     {
       "title": "Credit / consumer stress",
       "items": [
         {
           "source": "CNBC Top News",
-          "title": "Vance says he was assured Jensen Huang was not under DOJ investigation",
-          "link": "https://www.cnbc.com/2026/11/25/vance-jensen-huang-nvidia-doj-investigation.html",
-          "published": "Wed, 25 Nov 2026 21:00:08 GMT"
+          "title": "Trump demands probe into ‘record setting error’ after third-quarter GDP data gets massive revision higher",
+          "link": "https://www.cnbc.com/2026/11/26/trump-gdp-revision-investigation.html",
+          "published": "Thu, 26 Nov 2026 21:13:17 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "SpaceX wins FCC approval to deploy 1 million orbital data center satellites",
-          "link": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
-          "published": "Wed, 25 Nov 2026 19:52:47 GMT"
+          "title": "Semiconductor chips are the new oil. Here's why",
+          "link": "https://www.cnbc.com/2026/11/26/semiconductor-chips-are-the-new-oil-heres-why.html",
+          "published": "Thu, 26 Nov 2026 17:52:15 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Liesman: Why Greenspan could bet on productivity — and Warsh needs to hike",
-          "link": "https://www.cnbc.com/2026/11/25/kevin-warsh-greenspan-fed-rates-ai-inflation.html",
-          "published": "Wed, 25 Nov 2026 21:56:43 GMT"
+          "title": "Buyer beware? Nvidia's volatile swings expose risks of single-stock ETFs",
+          "link": "https://www.cnbc.com/2026/11/26/nvidias-volatile-swings-expose-risks-of-single-stock-etfs.html",
+          "published": "Thu, 26 Nov 2026 16:00:01 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Macy's postpones Thanksgiving Day Parade due to severe weather",
-          "link": "https://www.cnbc.com/2026/11/25/macys-thanksgiving-day-parade-postponed.html",
-          "published": "Wed, 25 Nov 2026 22:26:56 GMT"
+          "title": "Even the price of toys is on the rise. How Americans are scaling back holiday plans",
+          "link": "https://www.cnbc.com/2026/11/25/holiday-inflation-thanksgiving-travel-food-gifts.html",
+          "published": "Wed, 25 Nov 2026 16:17:13 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
-          "link": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html",
-          "published": "Wed, 25 Nov 2026 16:02:52 GMT"
+          "title": "Microdrama apps chase profits as Hollywood moves into short-form, vertical video",
+          "link": "https://www.cnbc.com/2026/11/26/micro-drama-apps-hollywood-vertical-video.html",
+          "published": "Thu, 26 Nov 2026 18:27:43 GMT"
         },
         {
           "source": "CNBC Top News",
-          "title": "Fed’s preferred inflation gauge accelerated to 3.8% in October, raising the 2027 stakes for the central bank",
-          "link": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html",
-          "published": "Wed, 25 Nov 2026 14:18:45 GMT"
+          "title": "Spain’s Pablo Hernández de Cos set to lead European Central Bank",
+          "link": "https://www.cnbc.com/2026/11/26/pablo-hernandez-de-cos-ecb-president.html",
+          "published": "Thu, 26 Nov 2026 15:28:26 GMT"
         }
       ]
     },
     {
       "title": "Labor / macro signals",
       "items": [
+        {
+          "source": "CNBC Economy",
+          "title": "Spain’s Pablo Hernández de Cos set to lead European Central Bank",
+          "link": "https://www.cnbc.com/2026/11/26/pablo-hernandez-de-cos-ecb-president.html",
+          "published": "Thu, 26 Nov 2026 15:28:26 GMT"
+        },
+        {
+          "source": "CNBC Economy",
+          "title": "U.S. tariff-hike threats pile pressure on partners to sign trade deals",
+          "link": "https://www.cnbc.com/2026/11/26/us-tariffs-hike-trade-agreement.html",
+          "published": "Thu, 26 Nov 2026 12:46:55 GMT"
+        },
         {
           "source": "CNBC Economy",
           "title": "Liesman: Why Greenspan could bet on productivity — and Warsh needs to hike",
@@ -68,18 +80,6 @@
           "title": "‘Ready for any storm’: UAE minister optimistic on economy as IMF lifts forecast",
           "link": "https://www.cnbc.com/2026/11/25/uae-iran-war-economy-oil.html",
           "published": "Wed, 25 Nov 2026 04:06:01 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Consumer confidence shoots up after Democrats' midterm victories — though inflation worries persist",
-          "link": "https://www.cnbc.com/2026/11/24/consumer-confidence-november-election-midterm.html",
-          "published": "Tue, 24 Nov 2026 18:34:43 GMT"
-        },
-        {
-          "source": "CNBC Economy",
-          "title": "Why France is at risk of recession — and what could keep it out of one",
-          "link": "https://www.cnbc.com/2026/11/24/france-recession-risk-pmi.html",
-          "published": "Tue, 24 Nov 2026 11:15:30 GMT"
         }
       ]
     }
